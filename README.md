@@ -85,4 +85,4 @@ Generalize this setup to also work other fuzzing engines, like AFL and Honggfuzz
 
 ## License
 
-All files in this repository are licensed [CC0](https://creativecommons.org/publicdomain/zero/1.0/), except for rust-changes.diff.
+All files in this repository are licensed [CC0](https://creativecommons.org/publicdomain/zero/1.0/), except for rust-changes.diff, which is licensed like the code it modifies.
