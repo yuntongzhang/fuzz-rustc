@@ -6,6 +6,15 @@ edition = "2021"
 
 [dependencies]
 libfuzzer-sys = "0.4.0"
+rand = "0.8.5"
+strum = { version = "0.24", features = ["derive"] }
+strum_macros = "0.24"
+
+[dependencies.rustc_parse]
+path = "./rust/compiler/rustc_parse"
+
+[dependencies.rustc_ast]
+path = "./rust/compiler/rustc_ast"
 
 [dependencies.rustc_data_structures]
 path = "./rust/compiler/rustc_data_structures"
