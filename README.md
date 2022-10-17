@@ -6,7 +6,7 @@ taking inspiration from [cargo-fuzz](https://github.com/rust-fuzz/cargo-fuzz) an
 Because [rustc](https://github.com/rust-lang/rust) is a bootstrapping compiler, its build process has several stages
 and involves juggling many flags, attributes, and environment variables. These complications create some difficulties for
 cleanly setting up fuzz testing. We work around those difficulties with some
-[light modifications to rustc](https://github.com/dwrensha/rust/tree/fuzz) and some additional configuration.
+[light modifications to rustc](rust-changes.diff) and some additional configuration.
 
 
 ## Running
@@ -84,4 +84,4 @@ Generalize this setup to also work other fuzzing engines, like AFL and Honggfuzz
 
 ## License
 
-All files in this repository are licensed [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+All files in this repository are licensed [CC0](https://creativecommons.org/publicdomain/zero/1.0/), except for rust-changes.diff.

@@ -4,7 +4,13 @@ set -e
 set -x
 
 if [ ! -d rust ]; then
-    git clone https://github.com/dwrensha/rust.git --branch fuzz
+    #git clone https://github.com/dwrensha/rust.git --branch fuzz
+
+    # Building the old version above @ 4d06717396b28aff7a36ad8521e80868e8569f76 with 2022-10-13 nightly didn't work for me
+    # Since I don't know how to use git,
+    # Just apply the changes (plus one more) directly to the current version
+    git clone https://github.com/rust-lang/rust.git
+    (cd rust && patch -p1 < ../rust-changes.diff)
 fi
 
 rustup override set nightly
