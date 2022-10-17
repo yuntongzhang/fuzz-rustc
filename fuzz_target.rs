@@ -104,7 +104,7 @@ fn rustc_args(input: &str) -> Vec<String> {
           "dummy_output_file".to_string(),
         ];
 
-    // Pass through certain valid compile flags in the input. (In regression tests, these use e.g. "compile-fags:")
+    // Pass through certain valid compile flags in the input. (In regression tests, these use e.g. "compile-flags:")
 
     if input.contains("--edition=2015") || input.contains("edition:2015") {
         v.push("--edition=2015".to_string());
