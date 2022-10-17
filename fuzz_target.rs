@@ -168,6 +168,10 @@ fuzz_target!(|data: &[u8]| {
         return;
     }
     if let Ok(t) = String::from_utf8(data.into()) {
+        if t.contains("<") && t.contains("#") && t.contains("[") && t.contains(">>") {
+            // Avoid https://github.com/rust-lang/rust/issues/103143
+            return;
+        }
         main_fuzz(t);
     }
 });
