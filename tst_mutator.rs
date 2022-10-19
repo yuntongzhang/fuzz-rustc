@@ -14,7 +14,7 @@ fn tt(source: &'static str, expected_outputs: &'static [&'static str]) {
     println!("{}", source);
     println!("");
     const SHOW_ITERS: usize = 10;
-    const ITERS: usize = 10000;
+    const ITERS: usize = 100000;
     let mut r = StdRng::seed_from_u64(0);
     let s = mutator::ProgramMutator::new(source.to_string());
 
@@ -53,15 +53,35 @@ fn tt(source: &'static str, expected_outputs: &'static [&'static str]) {
     }
 }
 
-
-pub fn exercise_mutator() -> ! {
-    tt("fn main() { println!(\"{}\", 1); }", &[]);
+/// Let's see what kinds of spans we can create, and which inputs create ASTs despite having syntax errors
+pub fn test_exploring_the_spans() {
     tt("fn main() { println!(\"{}\", 2 + 3); }", &[]);
-    tt("fn main() { 5; }", &[]);
     tt("fn main() { 8 + + 9; }", &[]);
-    tt("fn main() { 7 ", &[]);
-    tt("fn f() -> u32 { } ", &[]);
-    
+    tt("fn main() { 7", &[]);
+    tt("fn f() -> u32 { }", &[]);
+    tt("fn main() { std::str::from_utf8(&[65]).unwrap(); }", &[]);
+    tt("fn main() { let _u = 4; }", &[]);
+}
+
+pub fn test_do_not_crash() {
+    // This one makes the some part of rustc sad, so the parser doesn't give me an AST
+    tt("fn main() { 6; } #syntaxerrors#", &[]);
+
+    // This one makes the lexer fail, so we can't even create a parser
+    tt("}", &[]);
+
+    // This one is why we need catch_unwind
+    tt("use { f() }", &[]);
+
+    // This one is why we need `parse_sess.span_diagnostic.reset_err_count()` after parsing
+    // (catch_unwind fails to catch it for some reason!)
+    tt("impl<U> Foo<U", &[]);
+
+    // An unclosed literal.... well it doesn't crash, but it puts the error on stderr instead of letting us capture it
+    tt("'", &[]);
+}
+
+pub fn test_expected_generation() {
     // Test insertion on an empty program
     tt(
         "",
@@ -97,7 +117,7 @@ pub fn exercise_mutator() -> ! {
         ]
     );
 
-    // Test swapping and stuff
+    // Test copying and swapping spans
     tt(
         "fn peh(b: bool) -> u32 { match b { false => 0, _ => 1 } }",
         &[
@@ -114,35 +134,15 @@ pub fn exercise_mutator() -> ! {
         ]
     );
 
-    tt(
-        "fn main() { std::str::from_utf8(&[65]).unwrap(); }",
-        &[]
-    );
-
-    // Swap generic params
+    // Test sawpping generic params
     tt(
         "fn _k<'a, T>(_t: T) { }",
         &["fn _k<T, 'a>(_t: T) { }"]
     );
+}
 
-    tt(
-        "fn main() { let _u = 4; }",
-        &[]
-    );
-
-    // This one makes the some part of rustc sad, so the parser doesn't give me an AST
-    tt("fn main() { 6; } #syntaxerrors#", &[]);
-
-    // This one makes the lexer fail, so we can't even create a parser
-    tt("}", &[]);
-
-    // This one is why we need catch_unwind
-    tt("use { f() }", &[]);
-
-    // This one is why we need `parse_sess.span_diagnostic.reset_err_count()` after parsing
-    // (catch_unwind fails to catch it for some reason!)
-    tt("impl<U> Foo<U", &[]);
-
-    println!("Done!");
-    std::process::abort();
+pub fn exercise_mutator() {
+    test_exploring_the_spans();
+    test_expected_generation();
+    test_do_not_crash();
 }

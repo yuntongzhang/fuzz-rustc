@@ -202,6 +202,11 @@ fn stash_with_suggestions_applied(original_source: &str, diags: &str) {
 }
 
 fuzz_target!(|data: &[u8]| {
+    if true {
+        tst_mutator::exercise_mutator();
+        println!("Bye");
+        std::process::abort();
+    }
     if data.contains(&0x0c) || data.contains(&0x0d) || data.contains(&0x0b) /*|| data.contains (&b'&')*/ {
         return;
     }
@@ -215,7 +220,6 @@ fuzz_target!(|data: &[u8]| {
 
 fuzz_mutator!(|data: &mut [u8], size: usize, max_size: usize, seed: u32| {
     use rand::{rngs::StdRng, Rng, SeedableRng};
-    if false { tst_mutator::exercise_mutator(); }
     match String::from_utf8(data[0..size].to_vec()) {
         Ok(original_source) => {
             let mut rng = StdRng::seed_from_u64(seed as u64);
