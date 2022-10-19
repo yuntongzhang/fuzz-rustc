@@ -262,7 +262,7 @@ const MISC_CRATE_ATTRIBUTES: [&str; 42] = [
     "#![warn(variant_size_differences)]",
 ];
 
-const MISC_ATTRIBUTES: [&str; 15] = [
+const MISC_ATTRIBUTES: [&str; 16] = [
     // Attributes that go on functions (or closures)
     "#[inline]",
     "#[inline(never)]",
@@ -281,6 +281,7 @@ const MISC_ATTRIBUTES: [&str; 15] = [
     "#[repr(C, u8)]",
     "#[repr(u16)]",
     "#[repr(isize)]",
+    "#[repr(transparent)]",  // feature gated
 ];
 
 fn create_from_thin_air(t: SpanTag, r: &mut StdRng) -> String {
