@@ -49,7 +49,12 @@ pub enum SpanTag {
     InlineAsmSym,
 }
 
-const MISC_JUNK: [&str; 140] = [
+const MISC_JUNK: [&str; 143] = [
+    // Whitespace
+    " ",
+    "\n",
+    "\t",
+
     // Keywords from rust/compiler/rustc_span/src/symbol.rs
     " {{root}} ",
     " $crate ",
@@ -172,7 +177,7 @@ const MISC_JUNK: [&str; 140] = [
     "'...'",
     "b'...'",
 
-    // Comment out
+    // Comment out the rest of the line
     "//",
     "//!",
     "///",
@@ -203,57 +208,79 @@ const MISC_JUNK: [&str; 140] = [
     " /* --diagnostic-width=20 */ ",
     " /* --error-format=json */ ",
     " /* --error-format=short */ ",
+
     // Consider adding gated features: list in rust/compiler/rustc_feature/src/active.rs 
 ];
 
-const MISC_ATTRIBUTES: [&str; 44] = [
+const MISC_CRATE_ATTRIBUTES: [&str; 42] = [
+    "#![no_builtins]",  // disables certain optimization patterns
+    "#![recursion_limit = \"4\"]",
+    "#![type_length_limit = \"4\"]",
+
     // Let's turn on some allow-by-default lints
+    // Seems most sensible to do this at the crate level
     // List from https://doc.rust-lang.org/rustc/lints/listing/allowed-by-default.html
-    "#[warn(absolute_paths_not_starting_with_crate)]",
-    "#[warn(box_pointers)]",
-    "#[warn(elided_lifetimes_in_paths)]",
-    "#[warn(explicit_outlives_requirements)]",
-    "#[warn(ffi_unwind_calls)]",
-    "#[warn(fuzzy_provenance_casts)]",
-    "#[warn(keyword_idents)]",
-    "#[warn(lossy_provenance_casts)]",
-    "#[warn(macro_use_extern_crate)]",
-    "#[warn(meta_variable_misuse)]",
-    "#[warn(missing_abi)]",
-    "#[warn(missing_copy_implementations)]",
-    "#[warn(missing_debug_implementations)]",
-    "#[warn(missing_docs)]",
-    "#[warn(must_not_suspend)]",
-    "#[warn(non_ascii_idents)]",
-    "#[warn(non_exhaustive_omitted_patterns)]",
-    "#[warn(noop_method_call)]",
-    "#[warn(pointer_structural_match)]",
-    "#[warn(rust_2021_incompatible_closure_captures)]",
-    "#[warn(rust_2021_incompatible_or_patterns)]",
-    "#[warn(rust_2021_prefixes_incompatible_syntax)]",
-    "#[warn(rust_2021_prelude_collisions)]",
-    "#[warn(single_use_lifetimes)]",
-    "#[warn(trivial_casts)]",
-    "#[warn(trivial_numeric_casts)]",
-    "#[warn(unreachable_pub)]",
-    "#[warn(unsafe_code)]",
-    "#[warn(unsafe_op_in_unsafe_fn)]",
-    "#[warn(unstable_features)]",
-    "#[warn(unused_crate_dependencies)]",
-    "#[warn(unused_extern_crates)]",
-    "#[warn(unused_import_braces)]",
-    "#[warn(unused_lifetimes)]",
-    "#[warn(unused_macro_rules)]",
-    "#[warn(unused_qualifications)]",
-    "#[warn(unused_results)]",
-    "#[warn(unused_tuple_struct_fields)]",
-    "#[warn(variant_size_differences)]",
-    // Other
+    // (These can also be used as crate attributes and perhaps that would be a better use)
+    "#![warn(absolute_paths_not_starting_with_crate)]",
+    "#![warn(box_pointers)]",
+    "#![warn(elided_lifetimes_in_paths)]",
+    "#![warn(explicit_outlives_requirements)]",
+    "#![warn(ffi_unwind_calls)]",
+    "#![warn(fuzzy_provenance_casts)]",
+    "#![warn(keyword_idents)]",
+    "#![warn(lossy_provenance_casts)]",
+    "#![warn(macro_use_extern_crate)]",
+    "#![warn(meta_variable_misuse)]",
+    "#![warn(missing_abi)]",
+    "#![warn(missing_copy_implementations)]",
+    "#![warn(missing_debug_implementations)]",
+    "#![warn(missing_docs)]",
+    "#![warn(must_not_suspend)]",
+    "#![warn(non_ascii_idents)]",
+    "#![warn(non_exhaustive_omitted_patterns)]",
+    "#![warn(noop_method_call)]",
+    "#![warn(pointer_structural_match)]",
+    "#![warn(rust_2021_incompatible_closure_captures)]",
+    "#![warn(rust_2021_incompatible_or_patterns)]",
+    "#![warn(rust_2021_prefixes_incompatible_syntax)]",
+    "#![warn(rust_2021_prelude_collisions)]",
+    "#![warn(single_use_lifetimes)]",
+    "#![warn(trivial_casts)]",
+    "#![warn(trivial_numeric_casts)]",
+    "#![warn(unreachable_pub)]",
+    "#![warn(unsafe_code)]",
+    "#![warn(unsafe_op_in_unsafe_fn)]",
+    "#![warn(unstable_features)]",
+    "#![warn(unused_crate_dependencies)]",
+    "#![warn(unused_extern_crates)]",
+    "#![warn(unused_import_braces)]",
+    "#![warn(unused_lifetimes)]",
+    "#![warn(unused_macro_rules)]",
+    "#![warn(unused_qualifications)]",
+    "#![warn(unused_results)]",
+    "#![warn(unused_tuple_struct_fields)]",
+    "#![warn(variant_size_differences)]",
+];
+
+const MISC_ATTRIBUTES: [&str; 15] = [
+    // Attributes that go on functions (or closures)
+    "#[inline]",
     "#[inline(never)]",
     "#[inline(always)]",
+    "#[cold]",
     "#[no_mangle]",
     "#[must_use = \"it's important\"]",
+
+    // Attributes that go on enum & struct definitions
     "#[derive(Copy, Clone)]",
+    "#[non_exhaustive]",
+    "#[repr(C)]",
+    "#[repr(packed(2))]",
+    "#[repr(align(8))]",
+    "#[repr(C, align(8))]",
+    "#[repr(C, u8)]",
+    "#[repr(u16)]",
+    "#[repr(isize)]",
 ];
 
 fn create_from_thin_air(t: SpanTag, r: &mut StdRng) -> String {
@@ -522,7 +549,11 @@ impl ProgramMutator {
     }
 
     fn random_insertion_mutation(&self, r: &mut StdRng) -> Result<String, &'static str> {
-        if r.gen_bool(0.3) {
+        if r.gen_bool(0.01) {
+            // Add a crate attribute at the top
+            let out = MISC_CRATE_ATTRIBUTES.choose(r).unwrap().to_string() + &self.src;
+            Ok(out)
+        } else if r.gen_bool(0.3) {
             // Insert a pair of matched delimiters
             let (first_caret, second_caret) = ordered_pair(|| self.random_caret(r));
             let (first_ins, second_ins) = [
