@@ -278,7 +278,8 @@ fn create_from_thin_air(t: SpanTag, r: &mut StdRng) -> String {
             "[u32; 1]",
             "(u32,)",
             "(u32,u32)",
-            "!",
+            "!",  // 'never' type
+            "_",  // infer type
             // Traits known to the compiler
             // https://doc.rust-lang.org/reference/special-types-and-traits.html
             // TODO: do these show up in tags other than Ty? Like trait bounds or something
@@ -314,9 +315,16 @@ fn create_from_thin_air(t: SpanTag, r: &mut StdRng) -> String {
         SpanTag::Pat => [
             "",
             "x",
+            "y",
+            "1..5",  // exclusive range (requires opt-in to use as a pattern)
+            "1..=5",  // inclusive range
             "true",
-            "_",
             "Err(e)",
+            "_",  // wildcard pattern
+            "..", // "rest" pattern
+            "(..)",  // tuple of any size (special pattern)
+            "[1, _, _]",
+            "Struct{a: 10, b: 'X', c: _}",
         ].choose(r).unwrap().to_string(),
         SpanTag::Path => [
             "",
@@ -342,8 +350,8 @@ fn create_from_thin_air(t: SpanTag, r: &mut StdRng) -> String {
 fn create_from_same_tag(t: SpanTag, old: &str, r: &mut StdRng) -> String {
     match t {
         SpanTag::Ty => {
-            match r.gen_range(0..17) {
-                0 => "[".to_string() + old + "]",
+            match r.gen_range(0..30) {
+                0 => "[".to_string() + old + "]",  // slice type
                 1 => " Vec<".to_string() + old + "> ",
                 2 => " Box<".to_string() + old + "> ",
                 3 => " std::rc::Rc<".to_string() + old + "> ",
@@ -353,17 +361,49 @@ fn create_from_same_tag(t: SpanTag, old: &str, r: &mut StdRng) -> String {
                 7 => " std::marker::PhantomData<".to_string() + old + "> ",
                 8 => old.to_string() + "::" + &create_from_thin_air(SpanTag::Generics, r),
                 9 => " dyn ".to_string() + old,
+                10 => " & ".to_string() + old,
+                11 => " &mut ".to_string() + old,
+                12 => " &'a ".to_string() + old,
+                13 => " &'static ".to_string() + old,
+                14 => " *const ".to_string() + old,
+                15 => " *mut ".to_string() + old,
+                16 => " impl ".to_string() + old,  // impl (must be followed by a trait?) (only in parameter or return position)
                 _ => create_from_thin_air(t, r)
             }
         },
         SpanTag::Expr => {
-            match r.gen_range(0..10) {
-                0 => "(".to_string() + old + ", " + old + ")",  // tuple, duplicating
+            match r.gen_range(0..30) {
+                0 => "(".to_string() + old + ", " + old + ")",  // tuple, duplicating the expression
                 1 => "(".to_string() + old + ",)",  // tuple with one item
                 2 => "(".to_string() + old + ")",  // just putting parens around it
                 3 => "{".to_string() + old + "}",  // just putting braces around it
-                4 => "(|| ".to_string() + old + ")()",  // closure, executed right away
-                5 => "(move || ".to_string() + old + ")()",  // closure which moves its captures, executed right away
+                4 => "[".to_string() + old + "]",  // array with one element
+                5 => "[".to_string() + old + ", " + old + "]",  // array with two elements, duplicating the expression
+                6 => "[".to_string() + old + "; 3]",  // array with three elements, copying the value
+                7 => "[0_u32; ".to_string() + old + "]",  // use the expression as an array length (error if not const)
+                8 => "(|| ".to_string() + old + ")()",  // closure, executed right away
+                9 => "(move || ".to_string() + old + ")()",  // closure which moves its captures, executed right away
+                10 => "const {".to_string() + old + "}",  // feature gated btw
+                11 => "unsafe {".to_string() + old + "}",
+                12 => "async {".to_string() + old + "}",
+                13 => "async move {".to_string() + old + "}",
+                14 => "loop {".to_string() + old + "}",
+                _ => create_from_thin_air(t, r)
+            }
+        },
+        SpanTag::Pat => {
+            match r.gen_range(0..32) {
+                0 => " ya @ ".to_string() + old,  // bind a new name to the pattern
+                1 => old.to_string() + " @ _ ",  // assume we already have a name, and add a pattern to it
+                2 => old.to_string() + " | " + old,  // or pattern, but duplicating the exact pattern
+                3 => old.to_string() + " | " + &create_from_thin_air(t, r),
+                4 => create_from_thin_air(t, r) + " | " + old,
+                5 => " ref ".to_string() + old,  // assume it's an identifier ...
+                6 => " mut ".to_string() + old,  // assume it's an identifier ...
+                7 => " & ".to_string() + old,
+                8 => "[".to_string() + old + "]",  // just putting brackets around it, creating a slice pattern
+                9 => "[".to_string() + old + ", " + old + "]",  // slice pattern with duplicate pattern
+                10..=20 => "(".to_string() + old + ")",  // just putting parens around it
                 _ => create_from_thin_air(t, r)
             }
         },
@@ -559,7 +599,7 @@ impl ProgramMutator {
         } else {
             // Change span1
             let replacement_contents = {
-                if span2_contents != span1_contents && r.gen_bool(0.8) {
+                if span2_contents != span1_contents && r.gen_bool(0.7) {
                     span2_contents.to_string()
                 } else {
                     create_from_same_tag(span1.tag, span1_contents, r)
