@@ -9,6 +9,7 @@ libfuzzer-sys = "0.4.0"
 rand = "0.8.5"
 strum = { version = "0.24", features = ["derive"] }
 strum_macros = "0.24"
+sha-1 = "0.10.0"  # same version as rustc
 
 [dependencies.rustc_parse]
 path = "./rust/compiler/rustc_parse"

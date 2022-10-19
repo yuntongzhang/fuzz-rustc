@@ -15,6 +15,10 @@ fi
 
 rustup override set nightly
 
+# Include some debugging info in case we need to use rust-lldb.
+# Sadly, {debugunfo=2 + opt>0 + cov} causes llvm to crash while compiling our target
+export RUSTFLAGS="$RUSTFLAGS -C debuginfo=1"
+
 # - enable coverage instrumentation
 export RUSTFLAGS="$RUSTFLAGS -C passes=sancov-module -C llvm-args=-sanitizer-coverage-level=4"
 export RUSTFLAGS="$RUSTFLAGS -C llvm-args=-sanitizer-coverage-trace-compares"
@@ -37,6 +41,10 @@ mkdir -p corpus
 
 # Create artifact output directory.
 mkdir -p artifacts
+
+# Create directory for inputs suggested by the compiler.
+# These can be added in bulk to corpus/seeds in a future run or merge.
+mkdir -p shelved
 
 # Detect the target.
 if [ "$(uname -s)" == "Darwin" ]; then
@@ -77,9 +85,17 @@ export RUSTC_ERROR_METADATA_DST=/tmp/rustc_error_metadata
 
 export RUSTC_INSTALL_BINDIR=/tmp/rustc_install_bindir
 
+# Please crash less
+export RUST_MIN_STACK=20000000
+
 # The --target flag is important because it prevents build.rs scripts from being built with
 # the above-specified RUSTFLAGS.
 cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -artifact_prefix=artifacts/ ${@:1} `pwd`/corpus `pwd`/seeds
+
+# An invocation like this can reduce a corpus:
+# Make sure NOT to pass -only_ascii=1 for this
+#mkdir new-corpus
+#cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -artifact_prefix=artifacts/ ${@:1} -merge=1 `pwd`/new-corpus `pwd`/corpus `pwd`/seeds
 
 # An invocation like this can minimize a crash:
 #cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -minimize_crash=1 ${@:1}

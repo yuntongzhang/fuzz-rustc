@@ -2,6 +2,7 @@
 #[macro_use] extern crate libfuzzer_sys;
 mod mutator;
 mod tst_mutator;
+mod nope;
 use std::sync::Arc;
 use std::io::{self, Write};
 use std::sync::Mutex;
@@ -135,9 +136,10 @@ fn rustc_args(input: &str) -> Vec<String> {
 }
 
 pub fn main_fuzz(input: String) {
-    //let input_byte_len = input.len();
+    println!("\n```rust\n{}\n```\n\n", input);
+    io::stdout().flush().unwrap();
     let args = rustc_args(&input);
-    let file_loader = Box::new(FuzzFileLoader::new(input));
+    let file_loader = Box::new(FuzzFileLoader::new(input.clone()));
     let mut callbacks = FuzzCallbacks;
     let rse = Arc::default();
     let _result = rustc_driver::catch_fatal_errors(|| {
@@ -150,17 +152,53 @@ pub fn main_fuzz(input: String) {
         run_compiler.run()
     }).and_then(|result| result);
 
-    let _stderr = Arc::try_unwrap(rse).expect("Compilation is done").into_inner().unwrap();
-    //let stderr_byte_len = stderr.len();
-    //match String::from_utf8(stderr) {
-    //    Ok(s) => {
-    //        if stderr_byte_len > 1000 && stderr_byte_len > input_byte_len * 30 && !s.contains("unknown start of token") && !s.contains("character constant must be escaped") && !s.contains("delimiter") {
-    //            println!("{}", s);
-    //            panic!("Very long output");
-    //        }
-    //    }
-    //    Err(_) => { panic!("Non UTF-8 diagnostics from run_compiler"); }
-    //}
+    let stderr_bytes = Arc::try_unwrap(rse).expect("Compilation is done").into_inner().unwrap();
+    match String::from_utf8(stderr_bytes) {
+        Ok(stderr) => { stash_with_suggestions_applied(&input, &stderr); }
+        Err(_) => { panic!("Non UTF-8 diagnostics from run_compiler"); }
+    }
+}
+
+fn filter_for_fn(s: &str) -> String {
+    s
+      .chars()
+      .skip(10)
+      .filter(|&c| c.is_ascii_alphanumeric() || c == '_')
+      .take(30)
+      .collect::<String>()
+}
+
+fn sha1_string(s: &str) -> String {
+    use sha1::{Sha1, Digest};
+
+    Sha1::digest(s.as_bytes())
+      .iter()
+      .map(|b| format!("{:02x}", b))
+      .collect::<Vec<_>>()
+      .join("")
+}
+
+fn stash_with_suggestions_applied(original_source: &str, diags: &str) {
+    // Several parts of the rust compiler emit messages with the following format:
+    //     add `#![feature(...)]` to the crate attributes to enable
+    // They do NOT come with span replacement suggestions, just instructions for humans
+    // Stash them so we don't have to violate the libfuzzer contract and stuff
+    // Only store up to 16 files per feature (based on first hex digit of sha1 hash)
+    for line in diags.split('\n') {
+        if line.contains("to the crate attributes to enable") {
+            for part in line.split('`') {
+                if part.starts_with("#!") {
+                    let required_crate_attribute = part.to_string();
+                    let filename = "shelved/".to_string() + &filter_for_fn(&required_crate_attribute) + "_" + &sha1_string(&original_source).get(0..1).unwrap();
+                    let path = std::path::Path::new(&filename);
+                    if let Ok(false) = path.try_exists() {
+                        let new_source = required_crate_attribute + "\n" + original_source;
+                        let _ignored_write_result = std::fs::write(path, new_source);
+                    }
+                }
+            }
+        }
+    }
 }
 
 fuzz_target!(|data: &[u8]| {
@@ -168,8 +206,7 @@ fuzz_target!(|data: &[u8]| {
         return;
     }
     if let Ok(t) = String::from_utf8(data.into()) {
-        if t.contains("<") && t.contains("#") && t.contains("[") && t.contains(">>") {
-            // Avoid https://github.com/rust-lang/rust/issues/103143
+        if nope::do_not_compile(&t) {
             return;
         }
         main_fuzz(t);
@@ -182,7 +219,7 @@ fuzz_mutator!(|data: &mut [u8], size: usize, max_size: usize, seed: u32| {
     match String::from_utf8(data[0..size].to_vec()) {
         Ok(original_source) => {
             let mut rng = StdRng::seed_from_u64(seed as u64);
-            if rng.gen_bool(0.9) && original_source.is_ascii() {
+            if rng.gen_bool(0.9) && original_source.is_ascii() && !nope::do_not_even_parse(&original_source) {
                 //println!("Custom mutator");
                 let mu = mutator::ProgramMutator::new(original_source);
                 let new_source = mu.random_mutation(&mut rng).unwrap();
