@@ -131,7 +131,7 @@ fn rustc_args(input: &str) -> Vec<String> {
 
     //v.push("-Zverbose".to_string());
     v.push("-L".to_string());
-    v.push("FUZZ_RUSTC_LIBRARY_DIR".to_string());
+    v.push(env!("FUZZ_RUSTC_LIBRARY_DIR").to_string());
     v
 }
 
