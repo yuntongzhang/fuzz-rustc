@@ -138,7 +138,7 @@ pub fn main_fuzz(input: String) {
 }
 
 fuzz_target!(|data: &[u8]| {
-    if true {
+    if false {
         tst_mutator::exercise_mutator();
         println!("Bye");
         std::process::abort();
