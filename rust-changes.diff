@@ -1,13 +1,37 @@
-diff --git a/compiler/rustc_driver/Cargo.toml b/compiler/rustc_driver/Cargo.tomlindex 59e93777748..705dda36dc2 100644
+diff --git a/compiler/rustc_attr/src/builtin.rs b/compiler/rustc_attr/src/builtin.rs
+index 753f62dd589..278698378d0 100644
+--- a/compiler/rustc_attr/src/builtin.rs
++++ b/compiler/rustc_attr/src/builtin.rs
+@@ -679,7 +679,17 @@ pub fn eval_condition(
+                 sess.emit_warning(session_diagnostics::UnknownVersionLiteral { span: *span });
+                 return false;
+             };
+-            let rustc_version = parse_version(env!("CFG_RELEASE"), true).unwrap();
++            let rustc_version = match parse_version(env!("CFG_RELEASE"), true) {
++                Some(v) => v,
++                None => {
++                    // For fuzzing:
++                    // I don't know what this code is trying to do,
++                    // or whether run-fuzzer.sh set up the env vars wrong,
++                    // but for now let's just read another env var so we don't crash on the test
++                    // rust/src/test/ui/feature-gates/feature-gate-cfg-version.rs
++                    parse_version(env!("CFG_VERSION"), true).unwrap()
++                }
++            };
+ 
+             // See https://github.com/rust-lang/rust/issues/64796#issuecomment-640851454 for details
+             if sess.assume_incomplete_release {
+diff --git a/compiler/rustc_driver/Cargo.toml b/compiler/rustc_driver/Cargo.toml
+index 59e93777748..705dda36dc2 100644
 --- a/compiler/rustc_driver/Cargo.toml
 +++ b/compiler/rustc_driver/Cargo.toml
 @@ -4,7 +4,7 @@ version = "0.0.0"
  edition = "2021"
-
+ 
  [lib]
 -crate-type = ["dylib"]
 +#crate-type = ["dylib"]
-
+ 
  [dependencies]
  tracing = { version = "0.1.35" }
 diff --git a/compiler/rustc_errors/src/styled_buffer.rs b/compiler/rustc_errors/src/styled_buffer.rs
@@ -21,7 +45,7 @@ index 9abdb5fc97c..9814c688052 100644
 -        debug_assert!(self.lines.iter().all(|r| !r.iter().any(|sc| sc.chr == '\t')));
 +        // Commented out for fuzzing until https://github.com/rust-lang/rust/issues/81614 is fixed
 +        // debug_assert!(self.lines.iter().all(|r| !r.iter().any(|sc| sc.chr == '\t')));
-
+ 
          let mut output: Vec<Vec<StyledString>> = vec![];
          let mut styled_vec: Vec<StyledString> = vec![];
 diff --git a/compiler/rustc_interface/src/util.rs b/compiler/rustc_interface/src/util.rs
@@ -35,14 +59,14 @@ index f7e70d355cf..25505af71ae 100644
 -) {
 +) {/* commented out for fuzzing because this leaks memory
      let tf = sym::target_feature;
-
+ 
      let unstable_target_features = codegen_backend.target_features(sess, true);
 @@ -58,7 +58,7 @@ pub fn add_configuration(
-
+ 
      if sess.crt_static(None) {
          cfg.insert((tf, Some(sym::crt_dash_static)));
 -    }
 +    } */
  }
-
+ 
  pub fn create_session(
