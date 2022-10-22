@@ -43,10 +43,6 @@ mkdir -p corpus
 # Create artifact output directory.
 mkdir -p artifacts
 
-# Create directory for inputs suggested by the compiler.
-# These can be added in bulk to corpus/seeds in a future run or merge.
-mkdir -p shelved
-
 # Detect the target.
 if [ "$(uname -s)" == "Darwin" ]; then
     export TARGET="x86_64-apple-darwin"
