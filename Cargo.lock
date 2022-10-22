@@ -324,7 +324,6 @@ dependencies = [
  "rustc_parse",
  "rustc_session",
  "rustc_span",
- "sha-1",
  "strum",
  "strum_macros",
 ]
