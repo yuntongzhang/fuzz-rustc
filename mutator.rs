@@ -212,7 +212,7 @@ const MISC_JUNK: [&str; 143] = [
     // Consider adding gated features: list in rust/compiler/rustc_feature/src/active.rs 
 ];
 
-const MISC_CRATE_ATTRIBUTES: [&str; 42] = [
+const MISC_CRATE_ATTRIBUTES: [&str; 44] = [
     "#![no_builtins]",  // disables certain optimization patterns
     "#![no_std]",
     "#![no_core]",  // consider disabling no_core, or even adding it to nope.rs, if it causes problems: https://github.com/rust-lang/rust/pull/103003#issuecomment-1277975992
