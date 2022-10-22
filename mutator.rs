@@ -214,6 +214,8 @@ const MISC_JUNK: [&str; 143] = [
 
 const MISC_CRATE_ATTRIBUTES: [&str; 42] = [
     "#![no_builtins]",  // disables certain optimization patterns
+    "#![no_std]",
+    "#![no_core]",  // consider disabling no_core, or even adding it to nope.rs, if it causes problems: https://github.com/rust-lang/rust/pull/103003#issuecomment-1277975992
     "#![recursion_limit = \"4\"]",
     "#![type_length_limit = \"4\"]",
 
@@ -339,6 +341,8 @@ fn create_from_thin_air(t: SpanTag, r: &mut StdRng) -> String {
             "(0)",
             "{0}",
             "{0;0}",
+            "todo!()",  // unifies with all types
+            "loop{}",   // unifies with all types
         ].choose(r).unwrap().to_string(),
         SpanTag::Pat => [
             "",
@@ -365,6 +369,11 @@ fn create_from_thin_air(t: SpanTag, r: &mut StdRng) -> String {
             "str",
             "from_utf8",
             "println",
+        ].choose(r).unwrap().to_string(),
+        SpanTag::Lifetime => [
+            "'static",
+            "'a",
+            "'_",
         ].choose(r).unwrap().to_string(),
         SpanTag::Attribute => {
             MISC_ATTRIBUTES
