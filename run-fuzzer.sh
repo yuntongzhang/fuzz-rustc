@@ -15,9 +15,10 @@ fi
 
 rustup override set nightly
 
-# Include some debugging info in case we need to use rust-lldb.
-# Sadly, {debugunfo=2 + opt>0 + cov} causes llvm to crash while compiling our target
-export RUSTFLAGS="$RUSTFLAGS -C debuginfo=1"
+# Sometimes I'd like to see line numbers or even the ability to use rust-lldb...
+# Sadly, including debuginfo tends to make llvm crash
+# When combined with opt>0 and sancov: debuginfo=1 makes llvm crash sometimes, debuginfo=2 makes llvm crash always
+#export RUSTFLAGS="$RUSTFLAGS -C debuginfo=1"
 
 # - enable coverage instrumentation
 export RUSTFLAGS="$RUSTFLAGS -C passes=sancov-module -C llvm-args=-sanitizer-coverage-level=4"
