@@ -32,28 +32,5 @@ pub fn do_not_compile(prog: &str) -> bool {
     if do_not_even_parse(prog) {
         return true;
     }
-    if might_borrow_too_hard(prog) {
-        //eprintln!("Nope: might nest too deep");
-        return true;
-    }
-    //if might_hit_issue_103202(prog) {
-    //    return true;
-    //}
     false
 }
-
-// https://github.com/rust-lang/rust/issues/103195 - Slow compilation with extremely borrowed type
-fn might_borrow_too_hard(prog: &str) -> bool {
-    let mut ct = 0;
-    for &byte in prog.as_bytes() {
-        if byte == b'&' {
-            ct += 1
-        }
-    }
-    ct > 150
-}
-
-// https://github.com/rust-lang/rust/issues/103202 - ICE
-//fn might_hit_issue_103202(prog: &str) -> bool {
-//    prog.contains("impl") && prog.contains("fn") && prog.contains("self") && prog.contains("::")
-//}
