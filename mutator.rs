@@ -567,6 +567,8 @@ impl ProgramMutator {
             Ok(out)
         } else if r.gen_bool(0.3) {
             // Insert a pair of matched delimiters
+            // (They might be unmatched by things between them, or inside strings, but that's fine in a fuzzer)
+            // This might make more sense at the token level, esp the heirarachical view, but whatever
             let (first_caret, second_caret) = ordered_pair(|| self.random_caret(r));
             let (first_ins, second_ins) = [
                 ("(", ")"),
