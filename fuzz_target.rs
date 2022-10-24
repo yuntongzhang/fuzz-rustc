@@ -3,7 +3,9 @@
 mod mutator;
 mod tst_mutator;
 mod nope;
+mod timecpx;
 use std::io::{self, Write};
+use std::time::Instant;
 
 /// rustc_driver::Callbacks object that stops before codegen.
 pub struct FuzzCallbacks;
@@ -150,7 +152,11 @@ fuzz_target!(|data: &[u8]| {
         if nope::do_not_compile(&t) {
             return;
         }
-        main_fuzz(t);
+        if let Some(allowance) = timecpx::expected_dur(&t) {
+            let start = Instant::now();
+            main_fuzz(t);
+            timecpx::check_dur(start.elapsed(), allowance);
+        }
     }
 });
 
