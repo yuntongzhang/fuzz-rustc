@@ -61,6 +61,27 @@ pub fn test_exploring_the_spans() {
     tt("fn f() -> u32 { }", &[]);
     tt("fn main() { std::str::from_utf8(&[65]).unwrap(); }", &[]);
     tt("fn main() { let _u = 4; }", &[]);
+
+    tt(
+        "const fn call_twice<F>(mut f: F)
+         where
+             F: ~const FnMut() -> () + ~const std::marker::Destruct,
+         {
+             f();
+             f();
+         }",
+    &[]);
+
+    tt(
+        "async fn service<H, F>(r_handler: Arc<H>) -> Result<http::Response<hyper::Body>, Infallible>
+         where
+             H: Fn(&str) -> F + Send,
+             F: Future<Output = http::Response<hyper::Body>> + Send,
+         {
+             r_handler(s).await;
+             todo!()
+         }",
+    &[]);
 }
 
 pub fn test_do_not_crash() {
@@ -134,11 +155,60 @@ pub fn test_expected_generation() {
         ]
     );
 
-    // Test sawpping generic params
+    // Test swapping generic params
     tt(
         "fn _k<'a, T>(_t: T) { }",
         &["fn _k<T, 'a>(_t: T) { }"]
     );
+
+    // Test byte-level replace multiple
+    tt(
+        "AAAAA.p",
+        &[
+            "ppppp.p",  // replace all "A" with "p"
+            "ApApp.p",  // replace about half "A" with "p"
+            "ppA.p",    // replace all (non-overlapping) "AA" with "p"
+        ]
+    );
+
+    // Test span-level replace multiple (by tag + string)
+    tt(
+        "struct Color(u8, u8, u8); struct Spam(i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32);",
+        &[
+            // replace half "u8" with "i32" (Ty -> Ty or several other options)
+            "struct Color(i32, u8, i32); struct Spam(i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32);",
+            // replace all "u8" with "Spam" (Ident -> Ident)
+            "struct Color(Spam, Spam, Spam); struct Spam(i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32, i32);",
+        ]
+    );
+
+    // Test span-level replace multiple (by tag)
+    tt(
+        "struct Smorgasbord(String, u32, i8, (), &'static str, Option<isize>);",
+        &[
+            // replace all ty with u32 (resolving overlap as outer)
+            "struct Smorgasbord(u32, u32, u32, u32, u32, u32);",
+            // replace all ty with u32 (resolving overlap as inner - not implemented)
+            "struct Smorgasbord(u32, u32, u32, u32, &'static u32, Option<u32>);",
+            // replace some with u32
+            "struct Smorgasbord(u32, u32, u32, (), &'static str, Option<isize>);",
+        ]
+    );
+
+    // Test span-initiated but byte-level replace multiple
+    tt(
+        "fn lftim<'a>(_x: &'a str) { }",
+        &[
+            // Replace the 'a that is a Lifetime with 'static
+            "fn lftim<'a>(_x: &'static str) { }",
+            // Replace both instances of 'a with 'static, even though the first is a GenericParam and not a lifetime
+            // (replace-all at the byte level based on information from spans)
+            "fn lftim<'static>(_x: &'static str) { }",
+        ]
+    );
+
+
+
 }
 
 pub fn exercise_mutator() {

@@ -478,7 +478,7 @@ where
     }
 }
 
-#[derive(Debug)]
+#[derive(Debug, PartialEq)]
 pub struct SavedSpan {
     pub tag: SpanTag,
     pub lo: usize,
@@ -601,21 +601,80 @@ impl ProgramMutator {
 
     fn random_byte_modification_mutation(&self, r: &mut StdRng) -> Result<String, &'static str> {
         let (first_index, second_index) = ordered_pair(|| self.random_index(r));
-        let mut out = "".to_string();
-        out += self.src.get(0 .. first_index).unwrap();
-        if r.gen_bool(0.1) {
-            // Replace with ANOTHER byte run from the same program (hopefully with different contents)
-            let (x, y) = ordered_pair(|| self.random_index(r));
-            out += self.src.get(x .. y + 1).unwrap();
-        }
-        else if r.gen_bool(0.5) {
-            // Replace with a single random byte (normal ASCII character)
-            out += std::str::from_utf8(&[r.gen_range(32..128)]).unwrap();
+        let replacement = {
+            if r.gen_bool(0.5) {
+                // Replace with ANOTHER byte run from the same program (hopefully with different contents)
+                let (x, y) = ordered_pair(|| self.random_index(r));
+                self.src.get(x .. y + 1).unwrap().to_string()
+            } else if r.gen_bool(0.2) {
+                // Replace with a single random byte (normal ASCII character)
+                std::str::from_utf8(&[r.gen_range(32..128)]).unwrap().to_string()
+            } else {
+                "".to_string() // Delete
+            }
+        };
+
+        if first_index < second_index && r.gen_bool(0.1) {
+            // Replace several or all occurences of this substring
+            Ok(self.replace_random_substring_matches((first_index, second_index), &replacement, r))
         } else {
-            // Delete
+            // Replace just the one
+            Ok(self.src.get(0 .. first_index).unwrap().to_string() + &replacement + self.src.get(second_index + 1 ..).unwrap())
         }
-        out += self.src.get(second_index + 1 ..).unwrap();
-        Ok(out)
+    }
+
+    fn replace_random_substring_matches(&self, (start, end): (usize, usize), replacement: &str, r: &mut StdRng) -> String {
+        let orig = self.src.get(start .. end).unwrap();
+        let orig_len = end - start;
+        let earliest_possible_overlap = if start < orig_len { 0 } else { start - orig_len };
+        let pct = *([0.1, 0.5, 0.9, 1.0].choose(r).unwrap());  // not gen_float, in part because testing 1.0 is important
+        let victims : Vec<usize> = self.src.match_indices(orig)
+            .map(|(s, _)| s)
+            .filter(|&s| (earliest_possible_overlap <= s && s <= start) || r.gen_bool(pct))
+            .collect();
+        assert!(!victims.is_empty());  // we should always have the original match (or one that overlaps it toward the start)
+        let mut out = self.src.get(0 .. victims[0]).unwrap().to_string();
+        for i in 0 .. victims.len() - 1 {
+            out += replacement;
+            out += self.src.get(victims[i] + orig_len .. victims[i + 1]).unwrap();
+        }
+        out += replacement;
+        out += self.src.get(victims[victims.len() - 1] + orig_len ..).unwrap();
+        out
+    }
+
+    fn replace_random_span_matches(&self, sp: &SavedSpan, replacement: &str, r: &mut StdRng) -> String {
+        let (require_tag_match, require_substring_match) = match r.gen_range(0..3) {
+            0 => (true, true),
+            1 => (true, false),
+            _ => (false, true)
+        };
+        let require_nonempty_for_others = r.gen_bool(0.9);
+        let pct = *([0.1, 0.5, 0.9, 1.0].choose(r).unwrap());  // not gen_float, in part because testing 1.0 is important
+        let orig = self.src.get(sp.lo .. sp.hi).unwrap();
+        let possibly_overlapping_potential_victims = self.ts.iter().filter(|&other_sp| (
+            (sp == other_sp || r.gen_bool(pct)) &&
+            (!require_tag_match || sp.tag == other_sp.tag) &&
+            (!require_substring_match || orig == self.src.get(other_sp.lo .. other_sp.hi).unwrap()) &&
+            (!require_nonempty_for_others || sp == other_sp || other_sp.lo < other_sp.hi)
+        ));
+        let mut victims : Vec<&SavedSpan> = Vec::new();
+        let mut farth = 0;
+        for pv in possibly_overlapping_potential_victims {
+            if pv.lo >= farth {
+                victims.push(pv);
+                farth = pv.hi;
+            }
+        }
+        assert!(!victims.is_empty());
+        let mut out = self.src.get(0 .. victims[0].lo).unwrap().to_string();
+        for i in 0 .. victims.len() - 1 {
+            out += replacement;
+            out += self.src.get(victims[i].hi .. victims[i + 1].lo).unwrap();
+        }
+        out += replacement;
+        out += self.src.get(victims[victims.len() - 1].hi ..).unwrap();
+        out
     }
 
     /// This is where the magic happens: copy, swap, or reinvent spans
@@ -642,7 +701,7 @@ impl ProgramMutator {
             out += self.src.get(span2.hi ..).unwrap();
             Ok(out)
         } else {
-            // Change span1
+            // Change span1... or maybe span1 plus several similar spans
             let replacement_contents = {
                 if span2_contents != span1_contents && r.gen_bool(0.7) {
                     span2_contents.to_string()
@@ -650,12 +709,20 @@ impl ProgramMutator {
                     create_from_same_tag(span1.tag, span1_contents, r)
                 }
             };
-            let mut out = "".to_string();
-            out += self.src.get(0 .. span1.lo).unwrap();
-            out += &replacement_contents;
-            out += self.src.get(span1.hi ..).unwrap();
-            //println!("    {}", out);
-            Ok(out)
+
+            if r.gen_bool(0.4) {
+                // Replace several spans that are "similar to" span1
+                // (Often this ends up only replacing one span anyway, so it doesn't hurt to have the probability high)
+                Ok(self.replace_random_span_matches(span1, &replacement_contents, r))
+            } else {
+                // Replace just span1
+                let mut out = "".to_string();
+                out += self.src.get(0 .. span1.lo).unwrap();
+                out += &replacement_contents;
+                out += self.src.get(span1.hi ..).unwrap();
+                //println!("    {}", out);
+                Ok(out)
+            }
         }
     }
 }
