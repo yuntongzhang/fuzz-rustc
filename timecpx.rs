@@ -59,7 +59,7 @@ pub fn expected_dur(input: &str) -> Option<Duration> {
             eprintln!("timecpx is concerned this testcase could take {} seconds", (allowance_us as f64) / 1_000_000.0);
             None
         } else {
-            Some(Duration::from_micros((allowance_us / 1000) as u64))
+            Some(Duration::from_micros(allowance_us as u64))
         }
     }
 }
