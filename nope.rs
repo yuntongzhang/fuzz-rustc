@@ -4,11 +4,6 @@ pub fn do_not_even_parse(prog: &str) -> bool {
         //eprintln!("Nope: might nest too deep");
         return true;
     }
-    if prog.contains("<") && prog.contains("#") && prog.contains("[") && prog.contains(">>") {
-        // Avoid https://github.com/rust-lang/rust/issues/103143
-        //eprintln!("Nope: issue 103143");
-        return true;
-    }
     false
 }
 
