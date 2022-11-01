@@ -27,5 +27,23 @@ pub fn do_not_compile(prog: &str) -> bool {
     if do_not_even_parse(prog) {
         return true;
     }
+    if prog.contains("rustc_strict_coherence") {
+        // Semi-intentional ICE: https://github.com/rust-lang/rust/issues/103753
+        return true;
+    }
+    if prog.contains("BikeshedIntrinsicFrom") {
+        // Let's give this nightly-only feature a rest for a while:
+        // https://github.com/rust-lang/rust/issues/103634
+        // https://github.com/rust-lang/rust/issues/103751
+        // https://github.com/rust-lang/rust/issues/103783
+        return true;
+    }
+    if prog.contains("generic_const_exprs") || prog.contains("adt_const_params") {
+        // Let's give this nightly-only feature a rest for a while:
+        // https://github.com/rust-lang/rust/issues/103770
+        // https://github.com/rust-lang/rust/issues/103790 (even without the feature gate, but this still helps)
+        return true;
+    }
+
     false
 }
