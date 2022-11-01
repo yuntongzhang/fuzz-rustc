@@ -49,7 +49,7 @@ pub enum SpanTag {
     InlineAsmSym,
 }
 
-const MISC_JUNK: [&str; 143] = [
+const MISC_JUNK: [&str; 158] = [
     // Whitespace
     " ",
     "\n",
@@ -119,6 +119,25 @@ const MISC_JUNK: [&str; 143] = [
     " raw ",
     " union ",
     " yeet ",
+
+    // Non-keywords that are nevertheleess parsed specially, in some contexts, to recover from certain errors
+    " var ",
+    " public ",
+    " of ",
+    " and ",
+    " or ",
+    " not ",
+    " using ",
+
+    // Method names with special diagnostics(?)
+    " new ",
+    " clone ",
+    " map ",
+    " and_then ",
+    " from ",
+    " count ",
+    " as_str ",
+    " int ",
 
     // Operators and symbols from https://doc.rust-lang.org/book/appendix-02-operators.html
     "!",
