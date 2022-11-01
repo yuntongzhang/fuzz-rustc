@@ -4,16 +4,17 @@
 
 // Small file, but like with the nope module, I want this frequently-changing stuff separate and nonconflicting
 
-use std::cmp::min;
 use std::time::Duration;
 
 pub fn expected_dur(input: &str) -> Option<Duration> {
     let size = input.len() as u128;
     let ibytes = input.as_bytes();
+
     let ct_equals = ibytes.iter().filter(|b| **b == b'=').count() as u128;
-    let ct_digits = ibytes.iter().filter(|b| matches!(**b, b'0'..=b'9')).count() as u128;
-    let ct_newline = ibytes.iter().filter(|b| **b == b'\n' || **b == b'\r').count() as u128;
+
     let ct_ampers = ibytes.iter().filter(|b| **b == b'&').count() as u128;
+
+    let highest_nesting_level = highest_nesting(input);
 
     // let longest_line_len ........... (https://github.com/rust-lang/rust/issues/103429 diagnostic arrow messes) (when not error-format=short)
 
@@ -21,9 +22,8 @@ pub fn expected_dur(input: &str) -> Option<Duration> {
         // Only fully exclude things that are _frequently_, _annoyingly_ slow *and* we're confident that the
         // we have a way of exclusing (some) hits in a way that doesn't significantly decrease fuzzer coverage
         // See below for issue numbers
-        ct_ampers > 300 ||
+        ct_ampers > 300
         //ct_equals > 400 ||   // this is pointless because even 100 hits the thing below
-        min(ct_digits, ct_newline) > 300
     {
         eprintln!("timecpx is recommending to skip this input");
         None
@@ -36,16 +36,14 @@ pub fn expected_dur(input: &str) -> Option<Duration> {
 
             // Programs with specific weirdness. Based on measurements on Jesse's laptop. Times Fudge factor of 5.
 
-            // This is here due to a combination of two bugs:
-            // https://github.com/rust-lang/rust/issues/103425 (?) making it really easy to pile up type errors (digits + newlines)
-            // https://github.com/rust-lang/rust/issues/103427 making some ident errors linear in the number of type errors (hence size)
-            // Measured at 6.6 second for 30 type errors and 4 function names. a function call requires 2 bytes (unclosed parens lol)
-            150 * min(ct_digits, ct_newline) * size +
-
             // Actually worse than quadratic, but we nope'd out early for high ampers counts
             // measured at 1us per ampers squared
             // https://github.com/rust-lang/rust/issues/103421
             5 * ct_ampers * ct_ampers +
+
+            // Various exponential or quadratic-and-slow things that just aren't that interesting
+            // These numbers are arbitrary
+            200 * 2_u128.pow(highest_nesting_level.min(40) as u32) +
 
             // https://github.com/rust-lang/rust/issues/103411
             // "1=();" meaused at 75ms per repetition
@@ -72,4 +70,24 @@ pub fn check_dur(elapsed: Duration, allowance: Duration) {
         );
         // Stash it somewhere? With a sha hash??
     }
+}
+
+fn highest_nesting(input: &str) -> usize {
+    let mut highest_nest_level : usize = 0;
+    let mut current_nest_level : usize = 0;
+    for b in input.as_bytes() {
+        match b {
+            b'(' | b'[' | b'{' => {
+                current_nest_level += 1;
+                if highest_nest_level < current_nest_level {
+                    highest_nest_level = current_nest_level;
+                }
+            }
+            b')' | b']' | b'}' => {
+                current_nest_level = current_nest_level.saturating_sub(1);
+            }
+            _ => { }
+        }
+    }
+    highest_nest_level
 }
