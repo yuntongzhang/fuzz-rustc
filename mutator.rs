@@ -374,8 +374,8 @@ fn create_from_thin_air(t: SpanTag, r: &mut StdRng) -> String {
             "{0;0}",
             "todo!()",  // unifies with all types
             "loop{}",   // unifies with all types
-            "{let _: u32 = ();}",  // type errors do surprising things to their surrounding contexts (e.g. #103427)
-            " ident_error ",  // ident errors too, and in different contexts (e.g. #103181)
+            "{let _: u32 = ();}",  // type errors do surprising things to their surrounding contexts (inspired by #103427)
+            " ident_error ",  // ident errors too, and in different contexts (inspired by #103181)
         ].choose(r).unwrap().to_string(),
         SpanTag::Pat => [
             "",
