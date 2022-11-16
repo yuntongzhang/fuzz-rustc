@@ -442,7 +442,7 @@ fn create_from_same_tag(t: SpanTag, old: &str, r: &mut StdRng) -> String {
             }
         },
         SpanTag::Expr => {
-            match r.gen_range(0..30) {
+            match r.gen_range(0..44) {
                 0 => "(".to_string() + old + ", " + old + ")",  // tuple, duplicating the expression
                 1 => "(".to_string() + old + ",)",  // tuple with one item
                 2 => "(".to_string() + old + ")",  // just putting parens around it
@@ -451,13 +451,20 @@ fn create_from_same_tag(t: SpanTag, old: &str, r: &mut StdRng) -> String {
                 5 => "[".to_string() + old + ", " + old + "]",  // array with two elements, duplicating the expression
                 6 => "[".to_string() + old + "; 3]",  // array with three elements, copying the value
                 7 => "[0_u32; ".to_string() + old + "]",  // use the expression as an array length (error if not const)
-                8 => "(|| ".to_string() + old + ")()",  // closure, executed right away
-                9 => "(move || ".to_string() + old + ")()",  // closure which moves its captures, executed right away
-                10 => "const {".to_string() + old + "}",  // feature gated btw
-                11 => "unsafe {".to_string() + old + "}",
-                12 => "async {".to_string() + old + "}",
-                13 => "async move {".to_string() + old + "}",
-                14 => "loop {".to_string() + old + "}",
+                8 => "(|| ".to_string() + old + ")",  // closure
+                9 => "(move || ".to_string() + old + ")",  // closure which moves its captures
+                10 => "(|| ".to_string() + old + ")()",  // closure, executed right away
+                11 => "(move || ".to_string() + old + ")()",  // closure which moves its captures, executed right away
+                12 => " const {".to_string() + old + "}",  // const-eval (feature gated)
+                13 => " unsafe {".to_string() + old + "}",
+                14 => " async {".to_string() + old + "}",
+                15 => " async move {".to_string() + old + "}",
+                16 => " loop {".to_string() + old + "}",
+                17 => " & ".to_string() + old,
+                18 => " &mut ".to_string() + old,
+                19 => " break ".to_string() + old,
+                20 => " continue ".to_string() + old,
+                21 => "(".to_string() + old + " as " + &create_from_thin_air(SpanTag::Ty, r) + ")",
                 _ => create_from_thin_air(t, r)
             }
         },
