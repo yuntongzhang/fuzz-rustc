@@ -125,10 +125,10 @@ fn rustc_args(input: &str) -> Vec<String> {
 }
 
 pub fn main_fuzz(input: String) {
-    println!("\n```rust\n{}\n```\n\n", input);
+    println!("\n```rust\n{}\n```\n\n", &input);
     io::stdout().flush().unwrap();
     let args = rustc_args(&input);
-    let file_loader = Box::new(FuzzFileLoader::new(input.clone()));
+    let file_loader = Box::new(FuzzFileLoader::new(input));
     let mut callbacks = FuzzCallbacks;
     let _result = rustc_driver::catch_fatal_errors(|| {
         let mut run_compiler = rustc_driver::RunCompiler::new(&args, &mut callbacks);

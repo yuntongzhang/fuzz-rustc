@@ -144,3 +144,17 @@ index 2fe3fb2fa56..2871815d081 100644
  }
  
  pub fn create_session(
+diff --git a/compiler/rustc_middle/src/middle/privacy.rs b/compiler/rustc_middle/src/middle/privacy.rs
+index 3a91522d362..0fd5443fa0e 100644
+--- a/compiler/rustc_middle/src/middle/privacy.rs
++++ b/compiler/rustc_middle/src/middle/privacy.rs
+@@ -158,7 +158,8 @@ pub fn set_public_at_level(
+     }
+ 
+     pub fn check_invariants(&self, tcx: TyCtxt<'_>, early: bool) {
+-        if !cfg!(debug_assertions) {
++        // Disabled for fuzzing: https://github.com/rust-lang/rust/issues/104249
++        if true || !cfg!(debug_assertions) {
+             return;
+         }
+         for (&def_id, ev) in &self.map {
