@@ -118,6 +118,13 @@ fn rustc_args(input: &str) -> Vec<String> {
         v.push("--error-format=short".to_string());
     }
 
+    // const eval limit: Revisit after #103877 lands
+    v.push("-Zcrate_attr=feature(const_eval_limit)".to_string());
+    v.push("-Zcrate_attr=const_eval_limit=\"1000\"".to_string());
+
+    // recursion limit: down to 24 for #104225 and down to 14 for #104230
+    v.push("-Zcrate_attr=recursion_limit=\"14\"".to_string());
+
     //v.push("-Zverbose".to_string());
     v.push("-L".to_string());
     v.push(env!("FUZZ_RUSTC_LIBRARY_DIR").to_string());
