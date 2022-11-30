@@ -8,6 +8,10 @@ pub fn do_not_even_parse(prog: &str) -> bool {
         // https://github.com/rust-lang/rust/issues/103620: temporarily here rather than in timecpx(?)
         return true;
     }
+    if highest_nesting_curly(prog) > 12 && prog.match_indices(":").count() > 12 {
+        // https://github.com/rust-lang/rust/issues/105067
+        return true;
+    }
     false
 }
 
@@ -46,6 +50,28 @@ fn highest_nesting_angle_brackets(input: &str) -> usize {
     highest_nest_level
 }
 
+
+fn highest_nesting_curly(input: &str) -> usize {
+    let mut highest_nest_level: usize = 0;
+    let mut current_nest_level: usize = 0;
+    for b in input.as_bytes() {
+        match b {
+            b'{' => {
+                current_nest_level += 1;
+                if highest_nest_level < current_nest_level {
+                    highest_nest_level = current_nest_level;
+                }
+            }
+            b'}' => {
+                current_nest_level = current_nest_level.saturating_sub(1);
+            }
+            _ => {}
+        }
+    }
+    highest_nest_level
+}
+
+
 pub fn do_not_compile(prog: &str) -> bool {
     if do_not_even_parse(prog) {
         return true;
@@ -70,22 +96,66 @@ pub fn do_not_compile(prog: &str) -> bool {
         // https://github.com/rust-lang/rust/issues/104260
         return true;
     }
-    if prog.contains("return_position_impl_trait_in_trait") {
-        // https://github.com/rust-lang/rust/issues/104281
-        return true;
-    }
-    if prog.contains("async") && prog.contains("impl") && prog.contains("for") {
-        // https://github.com/rust-lang/rust/issues/104281  ?
-        return true;
-    }
-    //if prog.contains("trait") && prog.contains("<") && prog.contains("const") && prog.contains("impl") {
+    //if prog.contains("const") && prog.contains("<") && prog.contains("=") && prog.contains(",") &&
+    //    (prog.contains("impl") || prog.contains("struct") || prog.contains("type") || prog.contains("union") || prog.contains("trait"))
+    //    {
     //    // https://github.com/rust-lang/rust/issues/104312
     //    return true;
     //}
     if prog.contains("cfg") && prog.contains("derive") {
+        // https://github.com/rust-lang/rust/issues/104367
         return true;
     }
     if prog.contains("cfg_attr") {
+        // https://github.com/rust-lang/rust/issues/104368
+        return true;
+    }
+    if prog.contains("impl") && prog.contains("for") && prog.contains("dyn") {
+        // https://github.com/rust-lang/rust/issues/104327
+        return true;
+    }
+    if prog.contains("impl") && prog.contains("type") && prog.contains("=") {
+        // https://github.com/rust-lang/rust/issues/104551
+        return true;
+    }
+    if prog.contains("extern") && prog.contains("crate") && prog.contains("[") && prog.contains("#") && prog.contains("=") {
+        // https://github.com/rust-lang/rust/issues/104562
+        return true;
+    }
+    if prog.contains("concat_bytes") {
+        // https://github.com/rust-lang/rust/issues/104769
+        return true;
+    }
+    if prog.contains("packed") && prog.contains("union") {
+        // https://github.com/rust-lang/rust/issues/104802
+        return true;
+    }
+    if prog.contains("auto") && prog.contains("trait") && prog.contains("<") {
+        // https://github.com/rust-lang/rust/issues/104808
+        return true;
+    }
+    if prog.contains("rustc_peek") {
+        // https://github.com/rust-lang/rust/issues/83461
+        return true;
+    }
+    if prog.contains("trait") && prog.contains("type") && prog.contains("where") && prog.contains("for") && prog.contains("<") && prog.contains(":") && prog.contains("'") {
+        // https://github.com/rust-lang/rust/issues/104916
+        return true;
+    }
+    if prog.contains("raw_ref_op") && prog.contains("const") {
+        // https://github.com/rust-lang/rust/issues/105047
+        return true;
+    }
+    if prog.match_indices("use").count() >= 3 && prog.match_indices("::").count() >= 2 && prog.match_indices("enum").count() >= 2 {
+        // https://github.com/rust-lang/rust/issues/105069
+        return true;
+    }
+    if prog.contains("dyn_star") && prog.contains("as") {
+        // https://github.com/rust-lang/rust/issues/105097
+        return true;
+    }
+    if prog.contains("derive") && prog.contains("Default") && prog.contains("enum") && prog.match_indices("default").count() >= 2 {
+        // https://github.com/rust-lang/rust/issues/105101
         return true;
     }
 

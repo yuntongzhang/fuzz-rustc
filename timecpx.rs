@@ -33,6 +33,12 @@ pub fn expected_dur(input: &str) -> Option<Duration> {
         // Revisit after #103877 lands
         input.contains("const_eval_limit") ||
 
+        // https://github.com/rust-lang/rust/issues/104583
+        (input.match_indices("dyn").count() > 5 && input.match_indices("Fn").count() > 5 && highest_nesting_normal_delims(&input) > 5) ||
+
+        // https://github.com/rust-lang/rust/issues/104871
+        (input.contains("||") && input.match_indices("let").count() > 10) ||
+
         // Macros can and do blow up. Examples include:
         //     src/test/ui/issues/issue-65131.rs (10^3)
         //     src/test/ui/enum/issue-42747.rs (4^27) (#104162)
