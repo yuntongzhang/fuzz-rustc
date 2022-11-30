@@ -35,10 +35,10 @@ index 59e93777748..705dda36dc2 100644
  [dependencies]
  tracing = { version = "0.1.35" }
 diff --git a/compiler/rustc_errors/src/diagnostic.rs b/compiler/rustc_errors/src/diagnostic.rs
-index 375e3ebd77d..7add5173259 100644
+index 7d5e4723a6d..71783524c79 100644
 --- a/compiler/rustc_errors/src/diagnostic.rs
 +++ b/compiler/rustc_errors/src/diagnostic.rs
-@@ -621,10 +621,11 @@ pub fn multipart_suggestion_with_style(
+@@ -626,10 +626,11 @@ pub fn multipart_suggestion_with_style(
          style: SuggestionStyle,
      ) -> &mut Self {
          assert!(!suggestion.is_empty());
@@ -54,7 +54,7 @@ index 375e3ebd77d..7add5173259 100644
  
          self.push_suggestion(CodeSuggestion {
              substitutions: vec![Substitution {
-@@ -703,10 +704,11 @@ pub fn span_suggestion_with_style(
+@@ -708,10 +709,11 @@ pub fn span_suggestion_with_style(
          applicability: Applicability,
          style: SuggestionStyle,
      ) -> &mut Self {
@@ -70,7 +70,7 @@ index 375e3ebd77d..7add5173259 100644
          self.push_suggestion(CodeSuggestion {
              substitutions: vec![Substitution {
                  parts: vec![SubstitutionPart { snippet: suggestion.to_string(), span: sp }],
-@@ -766,10 +768,11 @@ pub fn span_suggestions_with_style(
+@@ -771,10 +773,11 @@ pub fn span_suggestions_with_style(
          let mut suggestions: Vec<_> = suggestions.into_iter().collect();
          suggestions.sort();
  
@@ -86,7 +86,7 @@ index 375e3ebd77d..7add5173259 100644
  
          let substitutions = suggestions
              .into_iter()
-@@ -794,13 +797,14 @@ pub fn multipart_suggestions(
+@@ -799,13 +802,14 @@ pub fn multipart_suggestions(
          applicability: Applicability,
      ) -> &mut Self {
          let suggestions: Vec<_> = suggestions.into_iter().collect();
@@ -144,17 +144,16 @@ index 2fe3fb2fa56..2871815d081 100644
  }
  
  pub fn create_session(
-diff --git a/compiler/rustc_middle/src/middle/privacy.rs b/compiler/rustc_middle/src/middle/privacy.rs
-index 3a91522d362..0fd5443fa0e 100644
---- a/compiler/rustc_middle/src/middle/privacy.rs
-+++ b/compiler/rustc_middle/src/middle/privacy.rs
-@@ -158,7 +158,8 @@ pub fn set_public_at_level(
+diff --git a/compiler/rustc_middle/src/ty/error.rs b/compiler/rustc_middle/src/ty/error.rs
+index a61f41b9c58..50ae1e8fd5f 100644
+--- a/compiler/rustc_middle/src/ty/error.rs
++++ b/compiler/rustc_middle/src/ty/error.rs
+@@ -989,7 +989,7 @@ fn constrain_associated_type_structured_suggestion(
      }
  
-     pub fn check_invariants(&self, tcx: TyCtxt<'_>, early: bool) {
--        if !cfg!(debug_assertions) {
-+        // Disabled for fuzzing: https://github.com/rust-lang/rust/issues/104249
-+        if true || !cfg!(debug_assertions) {
-             return;
-         }
-         for (&def_id, ev) in &self.map {
+     pub fn short_ty_string(self, ty: Ty<'tcx>) -> (String, Option<PathBuf>) {
+-        let length_limit = 50;
++        let length_limit = usize::MAX;  // don't spam files while fuzzing
+         let type_limit = 4;
+         let regular = FmtPrinter::new(self, hir::def::Namespace::TypeNS)
+             .pretty_print_type(ty)
