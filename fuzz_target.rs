@@ -128,6 +128,10 @@ fn rustc_args(input: &str) -> Vec<String> {
     //v.push("-Zverbose".to_string());
     v.push("-L".to_string());
     v.push(env!("FUZZ_RUSTC_LIBRARY_DIR").to_string());
+
+    // less printing on screen
+    v.push("--error-format".to_string());
+    v.push("short".to_string());
     v
 }
 

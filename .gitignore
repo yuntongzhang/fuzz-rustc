@@ -3,3 +3,5 @@ seeds
 corpus
 artifacts
 rust
+
+.vscode

@@ -4,15 +4,17 @@ set -e
 set -x
 
 if [ ! -d rust ]; then
-    #git clone https://github.com/dwrensha/rust.git --branch fuzz
-
-    # Building the old version above @ 4d06717396b28aff7a36ad8521e80868e8569f76 with 2022-10-13 nightly didn't work for me
-    # Since I don't know how to use git,
-    # Just apply the changes (plus one more) directly to the current version
     git clone https://github.com/rust-lang/rust.git
-    (cd rust && patch -p1 < ../rust-changes.diff)
+    cd rust
+    # the latest nightly version, built on 21 July 2023
+    git checkout 0308df23e
+
 fi
 
+# Make sure some nightly version has been install by rustup before this
+# Since Rust uses bootstrapping compiler, the Rust version to build rustc should not be
+# too old. To make sure we can always build rustc, make sure the installed nightly
+# version is the same as the one we are building
 rustup override set nightly
 
 # Sometimes I'd like to see line numbers or even the ability to use rust-lldb...
@@ -87,7 +89,7 @@ export RUST_MIN_STACK=20000000
 
 # The --target flag is important because it prevents build.rs scripts from being built with
 # the above-specified RUSTFLAGS.
-cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -artifact_prefix=artifacts/ ${@:1} `pwd`/corpus `pwd`/seeds
+cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -rss_limit_mb=0 -artifact_prefix=artifacts/ ${@:1} `pwd`/corpus `pwd`/seeds
 
 # An invocation like this can reduce a corpus:
 # Make sure NOT to pass -only_ascii=1 for this

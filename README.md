@@ -1,5 +1,7 @@
 # Fuzz Rustc
 
+**Built on top of https://github.com/jruderman/fuzz-rustc, which was based on https://github.com/dwrensha/fuzz-rustc.**
+
 This repo contains configuration for fuzz-testing the Rust compiler using [libfuzzer-sys](https://github.com/rust-fuzz/libfuzzer),
 taking inspiration from [cargo-fuzz](https://github.com/rust-fuzz/cargo-fuzz) and [fuzz-targets](https://github.com/rust-fuzz/targets).
 
