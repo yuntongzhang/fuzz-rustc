@@ -5,10 +5,10 @@ set -x
 
 if [ ! -d rust ]; then
     git clone https://github.com/rust-lang/rust.git
-    cd rust
+    pushd rust
     # the latest nightly version, built on 21 July 2023
     git checkout 0308df23e
-
+    popd
 fi
 
 # Make sure some nightly version has been install by rustup before this
