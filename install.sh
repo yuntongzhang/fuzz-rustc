@@ -6,7 +6,7 @@
 curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf -o install-rustup.sh
 chmod +x install-rustup.sh
 # use default installation mode
-echo "1" | ./install-rustup.sh
+./install-rustup.sh -y
 rm install-rustup.sh
 source "$HOME/.cargo/env"
 
