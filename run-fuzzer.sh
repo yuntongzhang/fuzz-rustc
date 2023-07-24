@@ -59,7 +59,7 @@ fi
 # should consider itself to have. This is used when loading precompiled libstd and other
 # crates. If the rustc version recorded in those crates' metadata does not match this,
 # then the compiler quits early.
-export CFG_VERSION=`rustc --version | cut -f2- -d ' '`
+export CFG_VERSION=$(rustc --version | cut -f2- -d ' ')
 
 # Usually we can use the precompiled libstd from rustup.
 TOOLCHAIN_ROOT=${RUSTUP_BASE:-$HOME/.rustup}/toolchains/nightly-$TARGET
@@ -89,7 +89,7 @@ export RUST_MIN_STACK=20000000
 
 # The --target flag is important because it prevents build.rs scripts from being built with
 # the above-specified RUSTFLAGS.
-cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -rss_limit_mb=0 -artifact_prefix=artifacts/ ${@:1} `pwd`/corpus `pwd`/seeds
+cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -rss_limit_mb=0 -artifact_prefix=artifacts/ ${@:1} $(pwd)/corpus $(pwd)/seeds
 
 # An invocation like this can reduce a corpus:
 # Make sure NOT to pass -only_ascii=1 for this
