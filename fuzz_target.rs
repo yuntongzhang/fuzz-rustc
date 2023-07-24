@@ -12,6 +12,7 @@ pub struct FuzzCallbacks;
 
 impl rustc_driver::Callbacks for FuzzCallbacks {
     fn after_analysis<'tcx>(&mut self,
+                            _handler: &rustc_session::EarlyErrorHandler,
                             _compiler: &rustc_interface::interface::Compiler,
                             _queries: &'tcx rustc_interface::Queries<'tcx>,) -> rustc_driver::Compilation {
         // Stop before codegen.
@@ -49,6 +50,14 @@ impl rustc_span::source_map::FileLoader for FuzzFileLoader {
             Err(std::io::Error::new(std::io::ErrorKind::NotFound, "tried to open nonexistent file".to_string()))
         }
     }
+
+    fn read_binary_file(&self, path: &std::path::Path) -> io::Result<Vec<u8>> {
+        if self.file_exists(path) {
+            Ok(self.input.clone().into_bytes())
+        } else {
+            Err(std::io::Error::new(std::io::ErrorKind::NotFound, "tried to open nonexistent file".to_string()))
+        }
+    }
 }
 
 /// CodegenBackend that panics when being called to do any actual codegen.
@@ -56,6 +65,10 @@ impl rustc_span::source_map::FileLoader for FuzzFileLoader {
 pub struct NullCodegenBackend;
 
 impl rustc_codegen_ssa::traits::CodegenBackend for NullCodegenBackend {
+    fn locale_resource(&self) -> &'static str {
+        ""
+    }
+
     fn codegen_crate<'tcx>(&self,
                            _: rustc_middle::ty::TyCtxt<'tcx>,
                            _: rustc_metadata::EncodedMetadata,
@@ -69,7 +82,7 @@ impl rustc_codegen_ssa::traits::CodegenBackend for NullCodegenBackend {
         _sess: &rustc_session::Session,
         _outputs: &rustc_session::config::OutputFilenames,
     ) -> Result<(rustc_codegen_ssa::CodegenResults,
-                 rustc_data_structures::fx::FxHashMap<rustc_middle::dep_graph::WorkProductId,
+                 rustc_data_structures::fx::FxIndexMap<rustc_middle::dep_graph::WorkProductId,
                                                       rustc_middle::dep_graph::WorkProduct>),
                 rustc_errors::ErrorGuaranteed> {
         unimplemented!()
@@ -118,10 +131,6 @@ fn rustc_args(input: &str) -> Vec<String> {
         v.push("--error-format=short".to_string());
     }
 
-    // const eval limit: Revisit after #103877 lands
-    v.push("-Zcrate_attr=feature(const_eval_limit)".to_string());
-    v.push("-Zcrate_attr=const_eval_limit=\"1000\"".to_string());
-
     // recursion limit: down to 24 for #104225 and down to 14 for #104230
     v.push("-Zcrate_attr=recursion_limit=\"14\"".to_string());
 
@@ -129,9 +138,6 @@ fn rustc_args(input: &str) -> Vec<String> {
     v.push("-L".to_string());
     v.push(env!("FUZZ_RUSTC_LIBRARY_DIR").to_string());
 
-    // less printing on screen
-    v.push("--error-format".to_string());
-    v.push("short".to_string());
     v
 }
 
