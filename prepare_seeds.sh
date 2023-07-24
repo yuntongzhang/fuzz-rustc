@@ -3,7 +3,7 @@
 # Prepare seeds from glocier
 mkdir -p seed-source
 pushd seed-source
-git clone https://github.com/rust-lang/glacier/tree/master
+git clone https://github.com/rust-lang/glacier.git 
 popd
 
 # just make sure seeds directory exists
