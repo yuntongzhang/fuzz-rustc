@@ -1,10 +1,12 @@
 #!/bin/bash
 
 # Prepare seeds from glocier
-mkdir -p seed-source
-pushd seed-source
-git clone https://github.com/rust-lang/glacier.git 
-popd
+if [ ! -d seed-source ]; then
+    mkdir -p seed-source
+    pushd seed-source
+    git clone https://github.com/rust-lang/glacier.git 
+    popd
+fi
 
 # just make sure seeds directory exists
 mkdir -p seeds
