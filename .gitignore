@@ -6,3 +6,7 @@ rust
 
 .vscode
 seed-source
+
+# Since the rust version we are building (and using to build)
+# may change, do not include the lock file
+Cargo.lock
