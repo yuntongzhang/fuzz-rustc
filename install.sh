@@ -11,5 +11,5 @@ rm install-rustup.sh
 source "$HOME/.cargo/env"
 
 # install rust nightly
-rustup update nightly
+rustup install nightly-2023-07-21
 

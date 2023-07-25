@@ -6,8 +6,9 @@ set -x
 if [ ! -d rust ]; then
     git clone https://github.com/rust-lang/rust.git
     pushd rust
-    # the latest nightly version, built on 21 July 2023
-    git checkout 0308df23e
+    # rust version 1.73.0-nightly (399b06823 2023-07-20)
+    # the version you get when do `rustup install nightly-2023-07-21`
+    git checkout 399b06823
     popd
 fi
 
@@ -15,7 +16,7 @@ fi
 # Since Rust uses bootstrapping compiler, the Rust version to build rustc should not be
 # too old. To make sure we can always build rustc, make sure the installed nightly
 # version is the same as the one we are building
-rustup override set nightly
+rustup override set nightly-2023-07-21
 
 # Sometimes I'd like to see line numbers or even the ability to use rust-lldb...
 # Sadly, including debuginfo tends to make llvm crash
