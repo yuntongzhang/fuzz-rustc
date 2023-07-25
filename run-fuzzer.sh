@@ -12,11 +12,13 @@ if [ ! -d rust ]; then
     popd
 fi
 
+export TOOLCHAIN="nightly-2023-07-21"
+
 # Make sure some nightly version has been install by rustup before this
 # Since Rust uses bootstrapping compiler, the Rust version to build rustc should not be
 # too old. To make sure we can always build rustc, make sure the installed nightly
 # version is the same as the one we are building
-rustup override set nightly-2023-07-21
+rustup override set $TOOLCHAIN
 
 # Sometimes I'd like to see line numbers or even the ability to use rust-lldb...
 # Sadly, including debuginfo tends to make llvm crash
@@ -63,7 +65,7 @@ fi
 export CFG_VERSION=$(rustc --version | cut -f2- -d ' ')
 
 # Usually we can use the precompiled libstd from rustup.
-TOOLCHAIN_ROOT=${RUSTUP_BASE:-$HOME/.rustup}/toolchains/nightly-$TARGET
+TOOLCHAIN_ROOT=${RUSTUP_BASE:-$HOME/.rustup}/toolchains/$TOOLCHAIN-$TARGET
 
 # If a metadata change has landed on master and is not yet in a nightly release,
 # we may need to compile our own libstd. `./x.py build --stage 1` should suffice.
