@@ -1,0 +1,19 @@
+trait constant {}
+
+struct constant {
+    constant: constant,
+    constant: fn(&constant) -> constant<constant >,
+}
+
+const constant: &[constant] = &[
+    constant {
+        constant: 0,
+        factory: |&constant| constant!(),
+    },
+    constant {
+        constant: "Hello world".constant(),
+        constant: 0,
+    },
+];
+
+fn constant() {}

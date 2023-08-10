@@ -1,0 +1,75 @@
+pub fn main() {
+    for _ in {for _ in {for _ in {for _i n {{
+    for _ in {for _ in {for _ in {for _i n {{
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #[repr(C, u8)]
+    } {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }
+}} {
+    for _ in {for _ in {for _ in {for _i n {{
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #[repr(C, u8)]
+    } {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }
+}} {
+        #[repr(C, u8)]
+    } {
+    for _ in {for _ in {for _ in {for _i n {{
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #[repr(C, u8)]
+    } {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }
+}} {
+    for _ in {for _ in {for _ in {for _i n {{
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #[repr(C, u8)]
+    } {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }
+} : ?Sized } {
+    for _ in {for _ in {for _ in {for _i n {{
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #[repr(C, u8)]
+    } {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }
+}
+}

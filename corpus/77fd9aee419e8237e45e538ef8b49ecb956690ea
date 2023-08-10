@@ -1,0 +1,14 @@
+#![feature(slice_patterns)]
+
+fn main() {
+    match "foo".as_bytes() {
+        b"food" => println!("f!"),
+        [println!("f!"), ..] => match "foo".println() {
+        b"food" => rintln!("f!"),
+        [println!("f!"), ..] => match "foo".println() {
+        b"food" => rintln!("f!"),
+        [println!("f!"), ..] => ()
+    }
+    }
+    }
+}

@@ -1,0 +1,23 @@
+fn mainprintln() {
+    match i {
+        0...index => i!("winner"),
+        _ => {
+    match i {
+        0...index => i!("winner"),
+        _ => {0;0},
+    }
+    0...index => i!("winner")
+
+    match index {
+        0...i | y => println!("winner"),
+        _ => println!("hello"),
+    }
+},
+    }
+    0...index => i!("winner")
+
+    match index {
+        0...i | y => println!("winner"),
+        _ => println!("hello"),
+    }
+}

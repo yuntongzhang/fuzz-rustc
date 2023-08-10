@@ -1,0 +1,6 @@
+#[allow(dead_code)]
+
+#[allow(dead_code)]
+pub fn runY() {}
+
+fn main()  /* --error-format=json */ {}

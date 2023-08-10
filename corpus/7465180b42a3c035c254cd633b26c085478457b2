@@ -1,0 +1,9 @@
+#[must_use = "it's important"]
+
+fn main() {
+    let f: fn([f]) = *slice;
+    
+    let slice: Box<[u8]> = Box::new("it's important");
+    
+    slice(*u8);
+}

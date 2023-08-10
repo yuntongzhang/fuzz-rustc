@@ -1,0 +1,7 @@
+#![feature(type_alias_impl_trait)]
+
+type f<'b> = impl Sized;
+
+fn foo(f: &dyn Fn(f)) {}
+
+fn main() {}

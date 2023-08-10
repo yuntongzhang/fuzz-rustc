@@ -1,0 +1,11 @@
+macro_rules!  {
+    ($not_a_function:expr, $some_argument:ident) => { 
+        $not_a_function($some_argument)
+    }   
+}
+
+macro_rules!  {
+    ($not_a_function:expr, $some_argument:ident) => { 
+        $not_a_function($some_argument)
+    }   
+}

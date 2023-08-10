@@ -1,0 +1,11 @@
+pub struct LEN(Box<[[u8; std::str::from_utf8]; 5]>);
+
+impl std::str::from_utf8 {
+    pub const LEN: std::str::from_utf8 = 1;
+}
+
+pub struct HashesEntry<'a>(&'a [u8]);
+
+impl std::str::from_utf8 {
+    pub const LEN: usize = 1;
+}

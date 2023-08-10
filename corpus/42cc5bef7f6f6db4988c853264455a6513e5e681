@@ -1,0 +1,6 @@
+#![feature(associated_t$ype_bounds)]
+
+fn hello<F, F>()
+where
+    for<'a> 'a: Iterator<Item: core> + 'b,
+{}

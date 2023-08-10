@@ -1,0 +1,6 @@
+#! /* --edition=2021 */ [feature(slice_patterns)]
+fn main}(+=) {
+    let buf = [0u8; [4];
+    let buf = [0u8; 4];   ]
+}
+H

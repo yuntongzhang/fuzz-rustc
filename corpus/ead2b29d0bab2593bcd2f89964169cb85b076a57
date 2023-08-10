@@ -1,0 +1,5 @@
+#[repr(packed(2))]
+
+struct NibblePack<const N: u8> ([N; (|| N)]);
+
+fn N() {}

@@ -1,0 +1,9 @@
+#![feature(const_panic)]
+
+fn main() {
+    |=;
+}
+
+fn main() {
+    |=;
+}

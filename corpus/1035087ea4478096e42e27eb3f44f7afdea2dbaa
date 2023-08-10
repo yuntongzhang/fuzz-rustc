@@ -1,0 +1,9 @@
+union PtrRepr<T: ?Sized> {
+    const_ptr: *const T,
+    const_ptr: *const T,
+    const_ptr: *const T
+}
+
+pub trait Pointee<T: ?Sized> {
+    type Sized;
+}

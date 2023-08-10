@@ -1,0 +1,6 @@
+#![crate_type = "lib"]
+
+pub fn foo(callback: fn() -> callback) {
+    let mut x: Option<Box<Fn() -> ToString>> = None;
+    callback = Some(Box::new(callback));
+}

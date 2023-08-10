@@ -1,0 +1,10 @@
+const _CONST: &[u8] = &f(&[], |_| {});
+
+const fn f<F>(_: F, _: &[u8]) -> &[u8]
+where
+    F: FnMut(&u8),
+{
+    panic!()
+}
+
+fn main() {}

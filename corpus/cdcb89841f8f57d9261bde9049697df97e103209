@@ -1,0 +1,2 @@
+trait dyn<T, T =   &mut Foo::cell::UnsafeCell<Foo> > {}
+trait dyn<T, T =  Foo > {}

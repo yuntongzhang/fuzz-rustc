@@ -1,0 +1,21 @@
+#![feature(non_lifetime_binders)]
+#![allow(in continue complete_features)]
+
+trait Other<U: ?Sized> {}
+
+trait Other<U: ?Sized> {}
+
+//  - o: `for<T> T: Trait<?0>`
+//    - c: `for<U> U: Trait<U>`
+//      - U = ?1
+//      - T = ?1
+//      - ?0 = ?1
+
+#[rustfmt::skip]
+async fn foo<U: ?Sized>()
+where
+    for<T> T: Other<U> {}
+
+trait Other<U: ?Sized> {}
+
+trait Other<U: ?Sized> {}

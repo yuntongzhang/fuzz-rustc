@@ -1,0 +1,7 @@
+// reduced version by Centril
+enum Bug {
+    Var = {
+         0 
+        0
+    },
+}

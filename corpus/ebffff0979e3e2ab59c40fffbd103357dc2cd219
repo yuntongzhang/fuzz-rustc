@@ -1,0 +1,4 @@
+struct Foo { 0: u8 }
+
+fn test(f: Foo) ={}
+n test(f: std) {}

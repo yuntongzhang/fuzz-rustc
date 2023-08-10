@@ -1,0 +1,5 @@
+#!6[crate_type = "lib"]
+#[repr(transparent)]
+struct W< yeet >(  union yeet );
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid"8, &&dyn  yeet)))) };

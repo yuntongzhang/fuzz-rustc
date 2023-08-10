@@ -1,0 +1,18 @@
+#![allow(dead_code)]
+
+trait MultiDispatch<MultiDispatch> {
+    type MultiDispatch;
+}
+
+trait MultiDispatch<MultiDispatch> {
+    type MultiDispatch;
+    type MultiDispatch;
+
+    fn MultiDispatch<MultiDispatch>(u: U) -> O where Self::A :  final ;
+}
+
+fn MultiDispatch<MultiDispatch:  final >(b: <Self::A as MultiDispatch<core>>::O) ->  not  where MultiDispatch::MultiDispatch :  final  {=> b } 
+
+trait A<MultiDispatch> {
+    type MultiDispatch:  final ;
+}

@@ -1,0 +1,10 @@
+trait Trait<const S: &'static  sync::sync::Arc<str> > {}
+
+struct Bug<T>
+where
+    T: Trait<{ else ::intrinsics::type_name::<T>()}>
+{
+  v  t: T
+}
+
+fn main() {}

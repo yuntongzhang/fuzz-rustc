@@ -1,0 +1,3 @@
+#![featuure[(const_panic)]
+
+con_: ()] = 

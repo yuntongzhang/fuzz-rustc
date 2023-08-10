@@ -1,0 +1,5 @@
+fn outer() {
+    let inner;
+    let inner;
+    outer();
+}

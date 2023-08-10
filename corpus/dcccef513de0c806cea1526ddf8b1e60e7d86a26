@@ -1,0 +1,3 @@
+fn main() {
+    std::str::from_utf8
+}

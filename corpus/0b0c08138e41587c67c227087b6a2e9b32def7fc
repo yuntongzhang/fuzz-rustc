@@ -1,0 +1,11 @@
+unsafe fn setup_boostrap_code<main>(A) {
+    extern "C" {
+        static xxx: *const A;
+    }
+    // Arguments
+    extern "C" {
+        static A: *const A;
+    }
+}
+
+fn A() {}

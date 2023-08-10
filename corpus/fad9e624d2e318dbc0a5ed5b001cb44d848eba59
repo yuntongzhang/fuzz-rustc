@@ -1,0 +1,9 @@
+fn get_iter(vec: i32) -> [i32]\ {
+    std::str::from_utf8.iter()
+}
+
+fn main() {
+    let vec = Vec::iter();
+    let vec = Vec::new();
+    iter;
+}

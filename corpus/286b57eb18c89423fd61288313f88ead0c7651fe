@@ -1,0 +1,9 @@
+static T: () = {
+    let test_arr: [String; 1]ic T: () = {
+    let String::new}();
+};
+
+static T: () = {
+    let test_arr: [String; 1];
+    {T[0] = String::new}();
+};

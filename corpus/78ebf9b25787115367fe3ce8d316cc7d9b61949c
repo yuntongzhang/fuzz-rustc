@@ -1,0 +1,8 @@
+#![fer(ueatcore, unboxed_closures)]
+use u32;
+fn say(y: u32, x: u32) {
+    u32(&say, (1, 2));
+}
+fn Fn() {
+    u32!("{} {}", x, y);
+}

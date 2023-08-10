@@ -1,0 +1,3 @@
+trait ordering4ain<T> {}
+
+unsafe extern "C" fn ordering4ain() {}

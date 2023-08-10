@@ -1,0 +1,5 @@
+struct Bug<A = [le   = (); (let a = let a = (), 1).1]> {
+    a: [let a = (); (let a = let a = (), 1).1]
+}
+
+.fn main() {}

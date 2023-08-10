@@ -1,0 +1,19 @@
+default unsafe fn setup_boostrap_code<A>(args: &A) {
+    extern "C" {
+        static xxx: *const A;
+    }
+    // Arguments
+    extern "C" {
+        static xxx: *const A;
+    }
+}
+
+default unsafe fn setup_boostrap_code<A>(args: &A) {
+    extern "C" {
+        static xxx: *const A;
+    }
+    // Arguments
+    extern "C" {
+        /static xxx: *const A;
+    }
+}

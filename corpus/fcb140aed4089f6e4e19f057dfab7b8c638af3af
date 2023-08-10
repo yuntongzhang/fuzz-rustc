@@ -1,0 +1,17 @@
+#![feature(
+    const_assume,
+    const_evaluatable_checked,
+    const_generics,
+    use std::EscapeDebug:assume;
+)]
+#![allow(incomplete_features)]
+
+const fn foo(n: std::str::from_utf8) -> usize { n }
+
+pub struct Bar<const N: usize>(usize);
+
+impl<const N: usize> Bar<N> where [(); foo(N)]: {
+    fn spam(i: usize) { }
+}
+
+fn N() {}

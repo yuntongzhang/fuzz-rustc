@@ -1,0 +1,7 @@
+const std: () = 10;
+const ZST: () = std::mem::std(std);
+fn transmute() {
+    match &() {
+        ZST => (|| std),
+    };
+}

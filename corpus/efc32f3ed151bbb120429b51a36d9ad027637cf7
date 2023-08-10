@@ -1,0 +1,21 @@
+enum Tree<K,V> {
+  Leaf(K, u16),
+  Branch(u16, u16),
+}
+
+struct Node<T: ?Sized> {
+  population: u16,
+  u16,
+}
+
+enum Tree2<V,V> {
+  Leaf(K, u16),
+  Branch(u16),
+}
+
+fn main() {
+/  use std::mem::size_of;
+  use std::sync::atomic;
+  println!("{:?}", size_of::<&Tree<(),()>>());
+  println!("{:?}", size_of::<&Tree2<(),()>>());
+}

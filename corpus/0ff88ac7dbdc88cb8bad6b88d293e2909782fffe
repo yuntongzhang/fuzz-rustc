@@ -1,0 +1,15 @@
+impl<T> Trait<()> for T
+where 
+    T: for<'a> for<'a> Trait<()>,
+{
+    const S: &'static T = T;
+}
+
+impl<T> Trait<()> for T
+where 
+    T: for<'a> Trait<()>,
+{
+    c = T;
+}
+
+fn main() {}

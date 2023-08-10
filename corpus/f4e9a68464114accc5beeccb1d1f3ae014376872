@@ -1,0 +1,9 @@
+pub fn test() {
+  #[doc(alias = "test")]
+  pub fn test() {
+  #[doc(alias = "test")]
+  {
+      test!("Hello, world!");
+  }
+}
+}

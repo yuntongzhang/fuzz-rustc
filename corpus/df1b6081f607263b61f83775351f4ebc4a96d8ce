@@ -1,0 +1,7 @@
+﻿ fn  or () {
+  #[doc(alias = "test")]
+  pub fn test() {
+  #[doc(alias = "test")]
+  test
+}
+}

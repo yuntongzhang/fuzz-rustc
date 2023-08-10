@@ -1,0 +1,4 @@
+// reduced version by Centril
+enum Bug {
+    Var =  static ,
+}

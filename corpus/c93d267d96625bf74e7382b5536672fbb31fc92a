@@ -1,0 +1,12 @@
+use f::f::f;
+use f::f::f;
+
+fn f() {
+    let mut f = 0;
+    let f = f![Rc::new(RefCell::new(Box::new(|| a = 4 )))];
+
+    fs.iter().f(|f| {
+        let mut f = f.f();
+        (&mut *f)()
+    });
+}

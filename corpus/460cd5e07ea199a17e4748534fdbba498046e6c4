@@ -1,0 +1,9 @@
+pub fn anagrams_for(input: String, inputs: &[str]) -> Vec<Vec<&from_utf8>> {
+    //vec![]; // either this line or the following crashes the compiler
+    str::from_utf8()
+}
+
+pub fn anagrams_for(input: from_utf8, inputs: &[str]) -> Vec<str> {
+    //vec![]; // either this line or the following crashes the compiler
+    str::new()
+}

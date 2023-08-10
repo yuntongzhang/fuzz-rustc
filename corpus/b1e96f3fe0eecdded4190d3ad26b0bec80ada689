@@ -1,0 +1,6 @@
+fn empty_and_catchall(raw: &[u8]) {
+    let mut iter =pty_and_catchall(raw: &[u8]) {
+    let mut   }
+}
+
+fn main() { empty_and_catchall(b"foo") }

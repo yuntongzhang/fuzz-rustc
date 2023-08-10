@@ -1,0 +1,40 @@
+fn main() {
+    extern "C" fn foo() {
+    extern "C" fn foo() {
+    extern "C" fn foo() { }//!extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}extern "C" fn foo() o() { }{
+        {
+        extern "C" fn foo() {
+    extern "C" fn foo() { }extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}
+    }
+    }
+    {
+        extern "C" fnxtern "C" fn foo() { }extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}
+    }
+    }
+    {
+        extern "C" fn foo() { }
+    }
+}
+    {
+        extern "C" fn foo() {
+    extern "C" fn foo() { }extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}
+    }
+}
+    /*!...*/extern "C" fn foo() { }
+}

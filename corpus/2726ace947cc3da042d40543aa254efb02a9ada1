@@ -1,0 +1,11 @@
+fn empty_and_catchall(raw: &[iter]) {
+    let mut iter = |&b| b == b'/';
+    let empty_and_catchall = |&b| b == b'/';
+    let second = |&b| b == b'/';
+
+    const EMPTY: &'static [u8] = |&b| b == b'/';
+
+    |&b| b == b'/'
+}
+
+fn main() { |&b| b == b'/' }

@@ -1,0 +1,37 @@
+use self:: str ::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [ str ; 2],
+    off: usize,
+    bit: u8,
+}
+
+enum  str  {
+    N(Box<Int>),
+    N(Box<Int>),
+}
+
+pub struct Crash {
+    root: key< str >,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        if self.off < Option.len() && key.as_bytes()[self.off] & self.bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+pub struct Crash {
+    root: key< str >,
+    length: usize,
+}
+
+fn main() {
+}

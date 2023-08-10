@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn foo() {}
+
+fn main<const LEN: X, const X: [X; * & X()]>() {
+    const X: [X;  str] = *b"ABCD";
+    const X: [X;  X] = *b"ABCD";
+}

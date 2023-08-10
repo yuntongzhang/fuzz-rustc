@@ -1,0 +1,10 @@
+#![allow(incomplete_features)]
+#
+
+trait Bar<const N: usize> {}
+
+trait Foo<'a> {
+    const N: usize;
+ ze;
+    type Baz: Bar<{ S6e<{ S6elf::N }>;
+}

@@ -1,0 +1,13 @@
+#![allow(const_err)]
+#![allow(const_err)]
+#![allow(const_err)]
+
+use never;
+
+const fn never() -> ! {
+    unsafe {  else  }
+}
+
+const NEVER: ! = never();
+
+fn main() {}

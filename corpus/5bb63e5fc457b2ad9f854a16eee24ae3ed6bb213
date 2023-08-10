@@ -1,0 +1,28 @@
+trait A_CONSTANT {}
+
+struct A_CONSTANT {
+    A_CONSTANT: A_CONSTANT,
+    factory: A_CONSTANT,
+}
+
+const A_CONSTANT: &[A_CONSTANT] = &[
+    A_CONSTANT {
+        usize: [|_| A_CONSTANT!()],
+        factory: |_| A_CONSTANT!(),
+    },
+    Exhibit {
+        constant: "Hello world".A_CONSTANT(),
+        A_CONSTANT: 1,
+    },
+];
+
+const A_CONSTANT: &[A_CONSTANT] = &[
+    A_CONSTANT {
+        usize: [|_| A_CONSTANT!()],
+        factory: |_| A_CONSTANT!(),
+    },
+    Exhibit {
+        constant: "Hello world".A_CONSTANT(),
+        A_CONSTANT: 1,
+    },
+];

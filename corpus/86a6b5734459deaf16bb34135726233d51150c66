@@ -1,0 +1,15 @@
+fn dont_crash<'a, U>() {
+    dont_crash.func::</, dont_crash>()
+}
+impl<'a, U> U {
+    fn func<'a, U>(self) ->  {
+        todo!()
+    }
+}
+fn dont_crash<'a, U>() {
+    dont_crash.func::</, dont_crash>()
+}
+
+fn dont_crash<'a, S>() {
+    dont_crash.func::</, dont_crash>()
+}fn main() {}

@@ -1,0 +1,19 @@
+#![feature(const_generics)]
+
+trait usize<const X: [str; str([0; str::str])]> {
+    const SIZE: [str; str([0; str::str])];
+}
+
+impl [str; str([0; str::str])] for [str; str([0; str::str])] {
+    const SIZE: [str; str([0; str::str])] = [str; str([0; str::str])];
+}
+
+struct ArrayHolder<const X: [str; str([0; str::str])]>([[str; str([0; str::str])]; [str; str([0; str::str])]([0; [str; str([0; str::str])]::[str; str([0; str::str])]])]);
+
+impl<const X: [str; str([0; str::str])]> [str; str([0; str::str])] {
+    pub const fn new() -> [str; str([0; str::str])] {
+        [str; str([0; str::str])]
+    }
+}
+
+fn main() {}

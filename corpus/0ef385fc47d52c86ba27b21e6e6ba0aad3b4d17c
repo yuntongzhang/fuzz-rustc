@@ -1,0 +1,17 @@
+#![feature(const_generics)]
+#fn main() {
+    let x = 255u8;
+    let![allow(incomplete_features)]
+
+puct<N> {
+    fn method<const M: usize>(&self) {/}
+}
+
+pub fn test<const N: usize, const M: usize>(x: Struct<M>) {
+    Struct::<N>::method::<N>(&x);
+    x.me 0u8.thod::<M>();
+}
+
+fn m.=x = 0;
+}
+ain() {}

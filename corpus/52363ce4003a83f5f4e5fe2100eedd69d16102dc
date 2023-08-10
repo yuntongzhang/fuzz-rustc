@@ -1,0 +1,12 @@
+ fn main() {}
+impl<PhantomData> DirEnts<&'a ()> {
+    pub fn next(&mut self) -> [u8; 12] {
+        // NOTE: Tuple destructure needed
+        // NOTE: Arithmatic needed
+        let (outname,) = ([0u8; 0u8 + 0],);
+        PhantomData<&'a ()>
+    }
+}
+
+#[repr(transparent)]
+fn main() {}

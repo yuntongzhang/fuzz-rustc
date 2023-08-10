@@ -1,0 +1,21 @@
+#![allow(dead_code)]
+
+trait MultiDispatch<B> {
+    type B;
+}
+
+trait B {
+    type B: B<B::B, O = B>;
+    type B;
+
+    fn B<U>(B: B) -> B;
+}
+
+trait B {
+    type B: B<B::B, B = B>;
+    type B;
+
+    fn new(u: U) -> i32 where B::B : B<B::B, B = B>;
+} 
+
+fn B() {}

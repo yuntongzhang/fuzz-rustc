@@ -1,0 +1,7 @@
+trait Foo<T>: {
+    fn bar() -> ((), );
+}
+
+trait Foo<T>: {
+    fn bar() -> ((), );
+}

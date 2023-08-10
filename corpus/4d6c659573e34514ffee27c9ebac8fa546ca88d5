@@ -1,0 +1,4 @@
+#[repr(align)]
+#[inline(always)]
+#[repr(align)]
+pub struct   ref  <>;

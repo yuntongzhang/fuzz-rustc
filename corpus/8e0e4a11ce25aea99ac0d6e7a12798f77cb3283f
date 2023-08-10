@@ -1,0 +1,10 @@
+#![crate_type = "lib"]
+#[inline(always)]
+
+#[inline]
+pub struct Simd(pub[x; 8]);
+
+ fn to_array_outer(x: str) -> x {
+     type 
+     u8 
+}

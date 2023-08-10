@@ -1,0 +1,4 @@
+#![feature(rustc_attrs)]
+#![rusta_if_this_changed]
+
+fn main() {}

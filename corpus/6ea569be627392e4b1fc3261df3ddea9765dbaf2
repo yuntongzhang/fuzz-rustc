@@ -1,0 +1,7 @@
+#![feature(associated_type_bounds)]
+
+struct Bug<T: ?/**...*/>(T);
+
+impl Bug<dyn /**...*/> {}
+
+fn main() {}

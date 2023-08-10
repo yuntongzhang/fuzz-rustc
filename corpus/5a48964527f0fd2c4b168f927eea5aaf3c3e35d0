@@ -1,0 +1,14 @@
+fn main() {}
+
+str! {
+    len;
+    is_empty;
+}
+
+macro_rules! main {
+2    ( $( $fn:ident; )* ) => {
+        $(
+   $        const A = "A".$fn();
+        )*
+    }
+}

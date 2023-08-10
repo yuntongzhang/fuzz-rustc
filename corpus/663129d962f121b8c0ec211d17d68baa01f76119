@@ -1,0 +1,4 @@
+pub st'a : [Header{value: [Header{value: &28]}; 128];
+}
+
+fn main() {}

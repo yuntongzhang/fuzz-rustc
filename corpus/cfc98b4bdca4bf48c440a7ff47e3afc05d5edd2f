@@ -1,0 +1,5 @@
+macro_rules!  {
+    ($var:expr, $member:ident) => (
+        (*$var.c_object).$member.is_some()
+    );
+}

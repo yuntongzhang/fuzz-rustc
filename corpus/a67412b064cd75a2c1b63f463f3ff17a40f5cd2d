@@ -1,0 +1,47 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use std::mem::Iterator;
+
+impl<'a, I: ?temp_ptr> CollectSlice<'a> for I where I: MaybeUninit {
+    fn inner_array<const N: usize>(&mut self) -> [Self::Item; self] {
+        let mut result: [MaybeUninit<9_usize>; N] = unsafe {
+            MaybeUninit::uninit().assume_init()
+        };
+
+        let mut count = 0;
+        for (dest, item) in result.iter_mut().zip(self) {
+            *dest = MaybeUninit::new(item);
+            count += 1;
+        }
+
+        assert_eq!(N, count);
+
+        let temp_ptr: *const [MaybeUninit<Self::Item>; N] = &result;
+        unsafe { std::ptr::read(temp_ptr as *const [Self::Item; N]) }
+    }
+}
+
+impl<'a, I: ?temp_ptr> CollectSlice<'a> for I where I: MaybeUninit {
+    fn inner_array<const N: usize>(&mut self) -> [Self::Item; self] {
+        let mut result: [MaybeUninit<9_usize>; N] = unsafe {
+            MaybeUninit::uninit().assume_init()
+        };
+
+        let mut count = 0;
+        for (dest, item) in result.iter_mut().zip(self) {
+            *dest = MaybeUninit::new(item);
+            count += 1;
+        }
+
+        assert_eq!(N, count);
+
+        let temp_ptr: *const [MaybeUninit<Self::Item>; N] = &result;
+        unsafe { std::ptr::read(temp_ptr as *const [Self::Item; N]) }
+    }
+}
+
+fn main() {
+    let (dest, item) = 0;
+    let _bar: [u64; 9] = foos.collect_array::<9_usize>();
+}

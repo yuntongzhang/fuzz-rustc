@@ -1,0 +1,10 @@
+#![feature(allocator_api)]
+use alloc;
+
+fn  alloc () {
+    *alloc::alloc::alloc(alloc, &alloc::alloc::alloc(alloc, &alloc));
+}
+
+pub fn alloc<alloc>(alloc: alloc) {
+    *alloc::alloc::alloc(alloc, &alloc::alloc::alloc(alloc, &alloc));
+}

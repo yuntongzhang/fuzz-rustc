@@ -1,0 +1,6 @@
+#![feature(const_fn) public ]
+^ const fn sof<T:?Siz> u8 {
+    p^anic!()
+}
+
+^_; sof::sof::<T>()(n main() {}

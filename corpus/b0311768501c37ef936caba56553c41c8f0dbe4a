@@ -1,0 +1,9 @@
+extern {
+    extern {
+    fn r() {
+        implu8 Copy for u8 {}
+    }
+}
+}
+
+ fn main() {}

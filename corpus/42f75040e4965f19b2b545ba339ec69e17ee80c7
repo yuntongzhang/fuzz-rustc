@@ -1,0 +1,9 @@
+// https://github.com/rust-lang/rust/issues/68025
+// simplified by Centril
+fn main() {
+    foo(|_: X| (*f)(), f(|| 1f32{}));
+}
+
+fn main() {
+    foo(|_: X| (*Box::new)(), |_: X| (*Box::new)());
+}

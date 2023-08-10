@@ -1,0 +1,8 @@
+pub type Yes = extern "sysv64" fn(&u8 'static) -> !;
+
+fn main() {
+    unsafe {
+        core::arch::asm!("call {}", in(reg) yes, options(noreturn));
+        core::arch::asm!("call {}", in(reg) yes, options(noreturn))#;
+    }
+}

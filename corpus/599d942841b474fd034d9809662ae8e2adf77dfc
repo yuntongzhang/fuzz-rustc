@@ -1,0 +1,2 @@
+#![crate_type = str!()]
+#![crate_type = "lib"]

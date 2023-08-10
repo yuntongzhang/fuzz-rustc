@@ -1,0 +1,11 @@
+trait CollectionFamily {
+    
+}
+
+fn floatify() {
+    //!
+}
+
+fn main() {
+    //!
+}

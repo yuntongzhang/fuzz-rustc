@@ -1,0 +1,10 @@
+#![crate_type = "rlib"]
+
+use core;
+
+async fn F(slf: &F)
+where
+    F: 	,
+{
+    (&())((&())).await;
+}

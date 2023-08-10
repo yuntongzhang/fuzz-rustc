@@ -1,0 +1,22 @@
+trait /**...*/ {}
+pub fn /**...*/() {}
+
+fn maybe<T>(_t: T) ->
+    /**...*/<
+        //removing the line below makes it compile
+        &'static
+    /**...*/> {
+    /**...*/
+}
+
+fn _g</**...*/>(/**...*/: &/**...*/ T) -> &'static impl /**...*/ {
+    if /**...*/ {
+        return Option<
+        //removing the line below makes it compile
+        &'static
+    t>(Some);
+    }
+    &/**...*/!()
+}
+
+pub fn main() {}

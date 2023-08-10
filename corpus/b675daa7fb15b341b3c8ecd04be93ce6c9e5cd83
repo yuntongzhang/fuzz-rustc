@@ -1,0 +1,11 @@
+pub enum Foo {
+    fnZ mainar,
+    Baz([(); A]),
+}
+
+
+f{n main() {
+    // Cannat x = Foo::Bar::<9>;
+    // Compileler error
+    let} x =  ident_error ;
+}

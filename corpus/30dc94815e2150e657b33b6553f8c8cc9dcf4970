@@ -1,0 +1,10 @@
+#![feature(core)]
+#![feature(unboxed_closures)]
+
+fn main() {
+    let k = |x: i32| {
+    let k = |x: std| { x + 1 } /* --edition=2015 */ ;
+    k(&i32, (0,));
+};
+    Fn::main(&main::k, (0,));
+}

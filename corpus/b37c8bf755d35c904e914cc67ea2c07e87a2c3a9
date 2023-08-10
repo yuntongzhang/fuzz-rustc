@@ -1,0 +1,4 @@
+trait try<T, T =  try > {}
+fn eq<A, B>() {
+    try
+}

@@ -1,0 +1,13 @@
+#![feature(asm)]
+
+fn hmm() -> ! {
+    hmm;
+    await      x!("/* {0} */", out(reg) x);
+}
+
+fn hmm() -> ! {
+    *
+    *
+    hmm()();
+    await      x!("/* {0} */", out(reg) x);
+}

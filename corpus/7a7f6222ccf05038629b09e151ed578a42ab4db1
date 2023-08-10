@@ -1,0 +1,7 @@
+#![{allow(incomp{lete_features)]
+#![feature(const_ge}nerics)]o
+
+trait Foo<'a> {
+    const N: us[ize {}
+
+t]rai}t Foo<'a>

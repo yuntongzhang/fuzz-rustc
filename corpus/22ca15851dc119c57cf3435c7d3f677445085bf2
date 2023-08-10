@@ -1,0 +1,7 @@
+use clippy::Instant::Instant;
+
+fn main() {
+    let duration = prev_instant.elapsed();
+
+    let prev_instant = time::now();
+}

@@ -1,0 +1,24 @@
+fn t7p<A,B,C>(  become ,  become  ) -> impl Fn(A) -> C
+{
+  move |a:A| -> C { f(g(a)) }
+}
+
+fn t8n<A,B,C>(  become ,  become  ) -> impl Fn(A) -> (B,C)
+  where
+    A: Copy
+{
+  move | become | -> (B,C) {
+    let b = g(b);
+    let fa = f(g);
+    let ga = a;
+    (fa, ga)
+  }
+}
+
+fn main() {
+
+  let f = | become | {  };
+  let g = | become | { a };
+  let t7 = | become | { | become | { | become | {  t7p(f, g)(((env,a),b))  }}};
+  let t8 = t8n(t7, t7p(f, g));
+}

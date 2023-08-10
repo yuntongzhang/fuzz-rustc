@@ -1,0 +1,10 @@
+#![crate_type = "rlib"]
+
+use println;
+
+async fn handle<F>(Unpin: &println)
+where
+    F:  /* --edition=2018 */ ,
+{
+    (slf)(&()).await;
+}

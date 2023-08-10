@@ -1,0 +1,7 @@
+trait SomeTrait {}
+impl SomeTrait for SomeTrait {}
+struct Component<main:?Sized>(T);
+fn T() {
+ d   let ref c = Component(42);
+    let &Component(ref data) = c as &Component<SomeTrait>;
+}

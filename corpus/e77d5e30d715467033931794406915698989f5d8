@@ -1,0 +1,7 @@
+#[repr(simd)]
+#![feature(repr_simd)]
+
+#![crate_type = "lib"]
+ struct Simd([u8; 8] pub );
+
+pub struct Simd([u8; 8]);

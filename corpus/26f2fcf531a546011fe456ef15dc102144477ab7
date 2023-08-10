@@ -1,0 +1,11 @@
+// https://github.com/rust-lang/rust/issues/68025
+fn foo<F, G>(_: G, catch: F<F>)
+    where
+     F :   Fn(),
+        Box :   Fn(),
+{
+}
+
+fn main() {
+    foo(| _ | f(), Box::new(|| {}));
+}

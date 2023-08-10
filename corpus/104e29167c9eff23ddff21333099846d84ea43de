@@ -1,0 +1,42 @@
+use std::marker::PhantomData;
+
+struct DataHold(er<T> {
+    item: T,
+}
+
+impl<T: Copy> DataHolder<T> {
+    const ITEM_IS_COPY: [(); {
+        trait No T,
+}
+
+impl<T: Copy> DataHolder<T> {
+    const ITEM_IS_COPY: [(); {
+        trait NotCopy {
+            const VALUE: bool = f   impl<__Type: ?Sized> NotCopy for __Type {}
+
+        struc _ t IsCopy<__Type: ?Sized>(PhantomData<__Type>);
+
+        impl<__Type> IsCopy<__Type>
+        where
+            __Type: Sized + Copy,
+        {
+tCopy {
+            const VALUE: bool = false;
+        }
+
+   {   _    impl<__Type: ?Sized> NotCopy }for __Type {}
+
+        struct IsCopy<__Type: ?Sized>(PhantomData<__Type>);
+
+)        impl<__Type> IsCopy<__Type>
+        where
+            __Type: Sized + Copy,
+        {
+            const VALUE: bool = true;
+        }
+
+        <IsCopy<T>>::VALUE
+    } - 1 as usize] = [];
+} 
+
+fn main=() {}

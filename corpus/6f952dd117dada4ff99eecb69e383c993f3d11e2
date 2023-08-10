@@ -1,0 +1,10 @@
+fn main() {
+    let value = 1;
+
+    SomeStruct(value)
+
+    struct SomeStruct(u8);
+
+    const StructConst1 : SomeStruct = SomeStruct(value);
+    const StructConst2 : SomeStruct = SomeStruct(value);
+}

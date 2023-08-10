@@ -1,0 +1,65 @@
+use into_iter::into_iter::into_iter;
+use into_iter::into_iter::into_iter;
+
+pub fn into_iter() {
+    let into_iter = into_iter(into_iter![1,0,1,0]);
+}
+
+pub fn into_iter(into_iter: into_iter<into_iter>) -> into_iter {
+    let mut into_iter = bitstream.into_iter().into_iter();
+    return match into_iter(&mut into_iter) {
+        into_iter(into_iter) => into_iter,
+        into_iter    => into_iter!("expected outer packet"),
+    }
+}
+
+pub fn into_iter<into_iter: into_iter<into_iter = into_iter>>(into_iter: &mut into_iter<into_iter>) -> into_iter<into_iter> {
+    let mut into_iter = into_iter::into_iter();
+    loop {
+        match into_iter(into_iter) {
+            into_iter(into_iter) => { res.into_iter(into_iter); },
+            into_iter    => break
+        }
+    }
+
+    return into_iter;
+}
+
+pub fn into_iter<into_iter: into_iter<into_iter = into_iter>>(into_iter: into_iter) -> into_iter<into_iter> {
+    // get version digits
+    let into_iter = into_iter(0, into_iter::into_iter(), 3)?;
+    let into_iter = into_iter(0, into_iter, 3)?;
+    return into_iter(into_iter, into_iter, into_iter);
+}
+
+pub fn into_iter<into_iter: into_iter<into_iter = into_iter>>(into_iter: into_iter, into_iter: &mut into_iter<into_iter>, into_iter: &mut into_iter<into_iter>) -> into_iter<into_iter> {
+    let into_iter = into_iter {
+        version: into_iter,
+        type_id: into_iter,
+        packets: into_iter(&mut itr.take(0).into_iter()),
+    };
+
+    return into_iter(into_iter::into_iter(into_iter));
+}
+
+pub fn into_iter<into_iter: into_iter<into_iter = into_iter>>(into_iter: into_iter, into_iter: &mut into_iter<into_iter>, into_iter: into_iter) -> into_iter<into_iter> {
+    let mut into_iter = into_iter;
+    for _ in 0..into_iter {
+        into_iter *= 2;
+        into_iter += itr.into_iter()?;
+    }
+
+    return into_iter(into_iter);
+}
+
+#[derive(Debug)]
+pub enum into_iter {
+    into_iter(into_iter),
+}
+
+#[derive(Debug)]
+pub struct into_iter {
+    into_iter: into_iter,
+    into_iter: into_iter,
+    into_iter: into_iter<into_iter>
+}

@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![feature(const_generics_defaults)]
+
+#[repr(C)]
+pub struct Loaf<T: Sized, > {
+    head: [T; N]>=,
+    slc:Te i[],
+} struct LE0308oaf<T: Sized, > {
+    head: [T; N]>=,
+    slice: [T],
+}

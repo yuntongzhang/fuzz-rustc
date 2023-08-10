@@ -1,0 +1,19 @@
+trait SerialPort {}
+
+struct Example {
+    member0: &'static [u8u8],
+    membe
+fn function1(_: &Box<dyn SerialPort>) {}
+
+const EXAMPLE_MAP: &[Example] = &[
+    E,
+    },
+];
+
+fn maian() {
+    let port = todo!();
+
+    for example_member in EXAMPLE_MAP {
+        (example_member.member /* --error-format=short */ 2)(&std::str::from_utf8);
+    }
+}

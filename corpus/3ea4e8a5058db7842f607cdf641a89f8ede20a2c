@@ -1,0 +1,12 @@
+#[repr(C, u8)]
+enum Enum {
+    A(),
+}
+
+impl Enum {
+    {
+    A(),
+}
+
+impl Enum ew();
+    }

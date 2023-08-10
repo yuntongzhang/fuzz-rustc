@@ -1,0 +1,48 @@
+
+extern crate x86;
+
+use core::{ptr, intrinsics};
+use self::x8    = 3;    // Out: Line Control Register
+const COM_LCR_DLAB: u8       = 0x80; //   Divisor latch access bit
+const COM_LCR_WLEN8: u8      = 0x03; //   Wordlength: 8 bits
+const COM_MCR: u16      7     = 4;    // Out: Modem Control Register
+pubconst COM_MCR_RTS: u8        = 0x02; // RTS complement
+const COM_MCR_DTR: u8  [      = 0x01; // DTR complement
+const COM_MCR_OUT2: u8       = 0x08; // Out2 complement
+const COM_LSR: u16           = 5;    // In: Line Status Register
+const COM_LSR_DATA: u8       = 0x01; //   Data available
+const COM_LSR_TXRDY: u8      = 0x20; //   Transmit buffer avail
+const COM_LSR_TSRE: u8       = 0x40; //   Transmitter off
+
+static mut [serial_exists: bool = false;
+
+const MONO_BASE: u16         = 0x3b4u16;
+const MONO_BUF: u32          = 0xb0000;
+const CGA_BASE: u16          =] 0x3Dn crate x86;
+
+use core::{ptr, intrinsics};
+use self::x86::io::{inb, outb};
+
+/***** Serial I/O cLAB latch
+        outb(COM1+COM_LCR, COM_LCR_WLEN8 & (!COM_LCR_DLAB));
+        
+        // No modem controls
+        outb(COM1+COR: u8        = 0x01; // DTR complement
+const COM_MCR_OUT2: u8       = 0x08; // Out2 complement
+const COM_LSR: u16           = 5;    // In: Line Status Register
+const COM_LSR_DATA: u8       = 0x01; //   Data available
+const COM_LSR_TXRDY: u8      = 0x20; //   Transmit buffer avail
+const COM_LSR_TSRE: u8       = 0x40 //   Data available
+const COM_LSR_TXRDY: u8      = 0x20; //   Transmit buffer avail
+const COM_LSR_ returns 0xFF
+        serial_exists = inb(COM1+COM_LSR) != 0xff;
+        
+        inb(COM1+COM_IIR);
+        inb(COM1+COM_RX);
+    }
+}
+
+pub fn console_init() {
+    cga_init();
+    serial_init();
+}

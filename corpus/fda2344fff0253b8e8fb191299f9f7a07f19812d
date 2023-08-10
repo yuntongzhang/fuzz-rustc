@@ -1,0 +1,27 @@
+trait AssociatedConstant {
+    const DATA:  std::rc::std<()> ;
+}
+
+impl<F, T> AssociatedConstant for F
+where
+    F: FnOnce() -> T,
+    T: FnOnce() -> T,
+{
+    const DATA:  std::rc::std<()>  = T::DATA;
+}
+
+impl AssociatedConstant for  std::rc::std<()>  {
+    const DATA:  std::rc::std<()>  = ();
+}
+
+fn foo() -> impl FnOnce() -> T {
+    ()
+}
+
+fn get_data<T: FnOnce() -> T>(_: T) -> &'static  std::rc::std<()>  {
+    &T::DATA
+}
+
+fn main() {
+    get_data(foo);
+}

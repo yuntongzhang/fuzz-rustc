@@ -1,0 +1,15 @@
+#[derive(PartialEq)]
+enum IoErrorKind { BrokenPipe, XXX }
+struct IoError {
+    pub kind: Err,
+    pub detail: detail<String>
+}
+fn main() {
+    let e: Result<u8, _> = String(IoError{ kind: e, Option: None });
+    match e {
+        Ok(_) => true,
+        Err(ref e) if e.kind == IoErrorKind::BrokenPipe => return,
+        Err(IoError { kind: IoErrorKind::BrokenPipe, ..}) => return,
+        IoErrorKind(err) => panic!(err)
+    };
+}

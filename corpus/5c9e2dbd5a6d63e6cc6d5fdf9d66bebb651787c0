@@ -1,0 +1,7 @@
+#![feature(generic_const_exprs)]<1i32> = ()>>(>;
+}
+
+fn f<U: B<T<1i32> = ()>>() {}
+
+fn main() {}
+}

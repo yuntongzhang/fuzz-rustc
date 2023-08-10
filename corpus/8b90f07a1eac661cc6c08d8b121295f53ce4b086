@@ -1,0 +1,14 @@
+macr fn o_rules! bug {
+    ($expr:expr) => {
+       ( #[rustc_dummy = $expr] // Any key-value attri// Any key-value attribute, not necessarily `doc`
+        struct S;
+    };
+}
+
+// Any expressions containing macro call `X` that's more complex tng pressions containing macro call `X` that's more complex tng macro tself.
+// Parentheseaining macro call `X` that's more complex tng pressions containing macro call `X` that's more complex tng macro tself.
+// Parenthesesns containing macro callK `X` that's more complex tng macro tself.
+// Parentheses will work.
+)bug!((line!()));
+
+fn main() {}

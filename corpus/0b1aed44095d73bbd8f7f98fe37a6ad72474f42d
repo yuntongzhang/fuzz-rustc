@@ -1,0 +1,3 @@
+fn or<'a>(first: &'1.0static i32) -> dyn 'a +  'a  {}
+
+fn  or () {}

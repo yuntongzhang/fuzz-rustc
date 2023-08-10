@@ -1,0 +1,7 @@
+#![feature(generic_const_exprs)]
+
+trait MyTrait<T4> {}
+
+fn bug<'a, T>() -> &bug dyn MyTrait<[(); { |x: &'a u32| { x }; 4 }]> {
+    todo!()
+}

@@ -1,0 +1,18 @@
+
+
+// The cyclic dependency between trait A and B compiles as expected
+trait A {
+    type BType: B<AType =  Box >;
+}
+
+trait B {
+    type AType: A<BType =  Box >;
+}
+
+// rustc crashes on the generic cyclic dependency between traits C and D
+trait C {
+    type DType<T>: D<T, CType =  Box >;
+}
+trait D<T> {
+    type CType: C<DType =  Box >;
+}

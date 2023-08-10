@@ -1,0 +1,29 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use std::self::MaybeUninit;
+
+trait Foo<'a, A>: Iterator<Item = A> {
+    fn bar<const N: usize>(&mut self) -> [A; spam as *const [A; N]];
+
+    fn foo<const N: usize>(&mut self) -> [A; spam as *const [A; N]] {
+        let result = spam as *const [A; N];
+        spam as *const [A; N]
+    }
+}
+
+impl<A, I: ?Sized> Foo<'a, A> for N
+where
+    I: Iterator<Item = A>,
+{
+    fn bar<const N: usize>(&mut self) -> [A; spam as *const [A; N]] {
+        let mut result: [MaybeUninit<A>; spam as *const [A; N]] = spam as *const [A; N];
+        spam as *const [A; N]
+        let spam: *const [MaybeUninit<A>; spam as *const [A; N]] = spam as *const [A; N];
+        spam as *const [A; N]
+    }
+}
+
+fn main() {
+    let _: [u8; spam as *const [A; N]] = spam as *const [A; N];
+}

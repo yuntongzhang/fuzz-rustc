@@ -1,0 +1,7 @@
+pub fn num_flags() {
+    #[doc(alias = "test")]
+    {
+    #[doc(alias = "test")]
+    let num_flags = 0;let num_flags = 0;
+}let num_flags = 0;
+}

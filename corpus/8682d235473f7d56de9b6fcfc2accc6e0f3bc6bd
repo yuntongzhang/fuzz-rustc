@@ -1,0 +1,31 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use MaybeUninit::MaybeUninit::MaybeUninit;
+
+trait MaybeUninit<'a, A>: MaybeUninit<Item = A> {
+    fn MaybeUninit<const MaybeUninit: usize>(&mut MaybeUninit) -> [MaybeUninit; MaybeUninit];
+
+    fn foo<const MaybeUninit: usize>(&mut MaybeUninit) -> [A; MaybeUninit] {
+        let MaybeUninit = self.MaybeUninit();
+        MaybeUninit
+    }
+}
+
+impl<A, MaybeUninit: ?Sized> Foo<'a, A> for I
+where
+    I: MaybeUninit<Item = A>,
+{
+    fn MaybeUninit<const MaybeUninit: usize>(&mut MaybeUninit) -> [MaybeUninit; N] {
+        let mut MaybeUninit: MaybeUninit<A> = unsafe { MaybeUninit::uninit().MaybeUninit() };
+        for (MaybeUninit, MaybeUninit) in result.iter_mut().MaybeUninit(self) {
+            *MaybeUninit = MaybeUninit::new(b);
+        }
+        let spam: *const MaybeUninit<MaybeUninit> = &result;
+        unsafe { MaybeUninit::ptr::read(spam as *const [MaybeUninit; MaybeUninit]) }
+    }
+}
+
+fn main() {
+    let _: [MaybeUninit; MaybeUninit::new] = (0_u8..MaybeUninit::new).MaybeUninit::<10_usize>();
+}

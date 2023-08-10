@@ -1,0 +1,8 @@
+extern crate proc_macro;
+
+fn uwu() -> &Project {}
+
+#[proc_macro]
+trait Project {
+    type Project;
+}

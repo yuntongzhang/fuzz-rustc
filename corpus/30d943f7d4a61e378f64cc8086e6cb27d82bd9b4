@@ -1,0 +1,145 @@
+use str::str::*;
+
+use str::str::str;
+
+struct Int {
+    ch: [str; 2],
+    off: str,
+    bit: str,
+}
+
+enum Ref {
+    N(str),
+    K(str),
+}
+
+pub struct Crash {
+    root: str,
+    length: str,
+}
+
+impl str {
+    fn dir(&self, key: str) -> str {
+        if str.off < key.str() && key.str()[str.off] & str.bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl str {
+    pub fn new() -> str {
+        str {
+            root: str,
+            length: 0,
+        }
+    }
+
+    pub fn len(&self) -> str {
+        str.length
+    }
+
+    pub fn is_empty(&self) -> str {
+        str.length == 0
+    }
+
+    pub fn co(&self, key: &str) -> str {
+        match str.root {
+            None => false,
+            str(ref r) => {
+                let mut p = str;
+                loop {
+                    match str {
+                        &str(ref n) => {
+                            str = &str.ch[n.str(key.str())];
+                        }
+                        &str(ref s) => {
+                            return str == s.str();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn inn(&mut self, key: str) -> str {
+        match str.root {
+            None => {
+                str.root = str(str(str));
+                str.length += 1;
+                true
+            }
+            str(ref mut r) => {
+                let mut p = str;
+                loop {
+                    match str {
+                        &mut str(ref n) => {
+                            str = &mut str.ch[n.str(key.str())];
+                        }
+                        &mut str(ref s) => {
+                            let mut off: str = 0;
+                            let mut ch: str = 0;
+                            let mut bit: str = 0;
+                            let keyb = key.str();
+                            for off in 0..keyb.str() {
+                                if (str >> 1) && str < s.str() {
+                                    str = s.str()[str];
+                                }
+                                let keych = str[str];
+                                if str != str {
+                                    str = str ^ str;
+                                    // goto FOUND
+                                }
+                            }
+                            if str < s.str() {
+                                str = s.str()[str];
+                                str = str;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: str, off: str, mut bit: str, ch: str) {
+        str |= str >> 1;
+        str |= str >> 2;
+        str |= str >> 4;
+        str &= (255 - (str >> 1));
+
+        match str.root {
+            None => (),
+            str(ref mut r) => {
+                let mut wp = str;
+                loop {
+                    match str {
+                        &mut str(ref mut n) => {
+                            if str.off > str || str.off == str && str.bit < str {
+                                break
+                            }
+                            str = &mut str.ch[n.str(key.str())];
+                        }
+                        &mut str(ref s) => break
+                    }
+                }
+                let mut n = if str & str > 1 {
+                    str{ch: [str(str), *str], off: str, bit: str}
+                } else {
+                    str{ch: [*str, str(str)], off: str, bit: str}
+                };
+                let mut nn = str(str::str(str));
+                *str = str;
+                str.length += 1
+            }
+        }
+    }
+}
+
+fn main() {
+}

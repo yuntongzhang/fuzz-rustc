@@ -1,0 +1,3 @@
+pub fn foo<'a>(s: &Send mut ()) where &'a mut  'a : Clone {}
+
+fn main() {}

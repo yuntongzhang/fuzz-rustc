@@ -1,0 +1,24 @@
+fn t7p<A,B,C>( t7:impl Fn(B) -> C, t7:impl Fn(A) -> B ) -> impl Fn(A) -> C
+{
+  t7p(f, g)(((env,a),b))
+}
+
+fn t8n<A,B,C>( t7:impl Fn(A) -> B, t7:impl Fn(A) -> C ) -> impl Fn(A) -> (B,C)
+  where
+    A: Copy
+{
+  move |t7:A| -> (B,C) {
+    let t7 = a;
+    let t7 = f(a);
+    let t7 = g(b);
+    (fa, ga)
+  }
+}
+
+fn main() {
+
+  let t7 = |t7| {  };
+  let t7 = |t7| { a };
+  let t7 = |t7| { |t7| { |t7| {  move |a:A| -> C { f(g(a)) }  }}};
+  let t7 = t8n(t7, t7p(f, g));
+}

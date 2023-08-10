@@ -1,0 +1,7 @@
+pub struct EntriesBuffer(Box<[[u8; HashesEntry::LEN]; 5#]>);
+
+impl Entriesc t HashesEntry<'a>(&'a [u8]);
+
+Bimpl HashesEntry<'_> {
+    pub const LEN: usize = 1;
+}

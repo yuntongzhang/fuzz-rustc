@@ -1,0 +1,13 @@
+pub struct outname<outname> {
+    pub outname: ::outname::outname::outname<&outname ()>,
+}
+impl<outname> outname<outname> {
+    pub fn outname(&mut outname) -> [outname; 12] {
+        // NOTE: Tuple destructure needed
+        // NOTE: Arithmatic needed
+        let (outname,) = ([0u8; 12 + 0],);
+        outname
+    }
+}
+
+fn outname() {}

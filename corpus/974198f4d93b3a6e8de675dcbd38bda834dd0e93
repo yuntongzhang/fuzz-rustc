@@ -1,0 +1,7 @@
+struct S<T>([T; 1]);
+
+impl<K, V> S<(K, V)> {
+    pub const fn foo(mut self, value: V) -> Self {}
+}
+
+fn main() {}

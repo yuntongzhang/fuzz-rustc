@@ -1,0 +1,13 @@
+fn main<'a, T>() {
+    fn main<'a, 'a>() {
+    struct S;
+    {
+    fn main<'a, T>() {
+    struct S;
+    usize as *const  &'a *const ();
+}
+    usize as *const *const ();
+} as *const  &'a *const *const ();
+}
+    usize as *const *const ();
+}

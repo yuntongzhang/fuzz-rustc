@@ -1,0 +1,10 @@
+#[repr(C)]
+#![feature(const_trait_impl)]
+
+const fn foo<T: ~const Drop>(_: T) {}
+
+const fn bar() {
+    T(|| ());
+}
+
+pub fn main() {}

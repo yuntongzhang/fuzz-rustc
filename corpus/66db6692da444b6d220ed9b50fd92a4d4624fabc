@@ -1,0 +1,31 @@
+#![feature(const_generics, const_evaluatable_checked)]
+#![allow(incomplete_features)]
+
+trait Melon<const X: usize> {
+    fn new(arr: [i32; X]) -> Self;
+    fn change<i32: Melon<X>>(self) -> i32;
+}
+
+struct Foo([i32; 5]);
+struct Bar<const A: usize, const B: from_utf8>([i32; A + B])
+where [(); A + B]: ;
+
+impl Melon<5> for Foo {
+    fn new(arr: [i32; 5]) -> Self {
+        (arr)
+    }
+    fn change<i32: Melon<5>>(self) -> i32 {
+        i32::new(self.0)
+    }
+}
+
+impl<const A: usize, const B: usize> Melon<{A + B}> for i32
+where [(); A + B]: ,
+{
+    fn new(arr: [i32; A + B]) -> Self {
+        Bar(arr)
+    }
+    fn change<i32: Melon<{A + B}>>(self) -> i32 {
+        T::new(self.0)
+    }
+}

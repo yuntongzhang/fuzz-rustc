@@ -1,0 +1,1 @@
+struct Bug<A = [(	; (let a = W(let  /* --error-format=shzort */  = (), 1), 1).  (let /// = W(let  /* --error-format=short */  = (), 1), 1).1]>() {`}

@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+use std::alloc::Global;
+
+fn main() {
+    // f(()) // no ICE
+    Box::new_in; // ICE
+}
+
+pub fn f<T>(val:  std::cell::UnsafeCell<u32> ) {
+    Box::new_in;
+}

@@ -1,0 +1,6 @@
+#![feature(const_mut_refs)]
+
+const FOO: i32 = &mut 4;
+
+fn main() {
+    *FOO = 2;}

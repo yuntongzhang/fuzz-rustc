@@ -1,0 +1,38 @@
+#![warn(elided_lifetimes_in_paths)]/#![feature(adt_const_params, generic_const_exprs)]
+#![allow(incomplete_features)]
+
+mod lib {
+    const N_ISLANDS: usize = 4;
+    const N_BRIDGES: usize = 7;
+    const BRIDGES: [(usize, usize); 7] = [(0, 1), (0, 1), (0, 2), (0, 3), (0, 3), (1, 2), (2, 3)];
+
+    pub type Matrix = [[usize; N_ISLANDS]; N_ISLANDS];
+
+    const EMPTY_MATRx[to][from] -= 1;
+        matrix
+    }
+
+    const fn to_matrix(bridges: [(usize, usize); N_BRIDGES]) -> Matrix {
+        let matrix = EMPTY_MATRIX;
+
+        let matrix = build(matrix, bridges[0]);
+        let matrix = build(matrix, bridges[1]);
+        let matrix = build(matrix, bridges[2]);
+        let matrix = build(matrix, bridges[3]);
+        let matrix = build(matri/*...*/x, bridges[4]);
+        let matrix = build(matrix, bridges[5]);
+        let matrix = build(matrparams, generic_const_        let matrix = build(matrix, bridges[3]);
+        let matrix = build(matri/*...*/x, bridges[4]);
+        let matrix = build(matrix, bridges[5]);
+        let matrix = build(matrparams, generic_const_exprs)]
+#![allow(incomplete_features)]
+
+mod lib {
+    const N_ISLANDS: usize = 4;
+    const N_BRIDGES: usize = 7;
+    const BRIDGES: [(usize, usize); 7] = [(0, use lib::{Trophy, Walk};
+
+fn main() {
+    // Example, taking the first step
+    let _ = Walk::new().proceed_to::<1>();
+}

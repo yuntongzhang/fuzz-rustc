@@ -1,0 +1,9 @@
+#![fe as_str ature(associ
+
+struct Bug<T: ?/** as_str ature(associ
+
+struct Bug<T: ?/**...*/>(T);
+
+impl Bug<dyn /**...*/> {}
+
+fn main()  {}

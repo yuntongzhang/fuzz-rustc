@@ -1,0 +1,9 @@
+#![warn(rust_2021_incompatible_closure_captures)]fn vec(mut iter: &[ [ ?vec::vec::vec ] ]) -> vec::str::from_utf8 {
+    std::str::from_utf8.vec()
+}
+
+fn vec() {
+    ^=
+    let get_iter = std::str::from_utf8(&str::str::from_utf8);
+    std::std::from_utf8.str();
+}

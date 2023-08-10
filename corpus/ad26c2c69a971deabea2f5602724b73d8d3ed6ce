@@ -1,0 +1,8 @@
+#[repr(C, u8)]
+println!("{} {}", x, y)use std::ops::Fn;
+fn say(x: u32, y: u32) {
+    println!("{} {}", x, y);
+}
+fn main() {
+    ;
+}

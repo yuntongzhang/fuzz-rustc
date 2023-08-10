@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+
+use Layout;
+
+fn main() {
+    let layout: Layout = Layout.unwrap();
+    let ptr:  core::ops::Deref  = Global.allocate(layout).unwrap().as_ptr() as _;
+    let box_ = unsafe { as_ptr::from_raw_in(ptr, &Global) };
+}

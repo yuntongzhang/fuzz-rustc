@@ -1,0 +1,2 @@
+trait FromAll=  for<T> From<T>;  
+trait FromAllWithSendAndSyncFrom =  for<T> T<T> where T : Send + Sync; 

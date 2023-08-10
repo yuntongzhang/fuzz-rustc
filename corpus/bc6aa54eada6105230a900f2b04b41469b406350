@@ -1,0 +1,8 @@
+default trait oo<oo//
+,  super > {
+    #[doc(keyword = "match")]
+    trait Foo {
+    #[doc(keyword = "matcm")]
+    fn quux() {}
+}
+}

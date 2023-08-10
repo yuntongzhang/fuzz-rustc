@@ -1,0 +1,12 @@
+#![feature(anonymous_lifetime_in_impl_trait)]
+
+trait T<T> {
+    fn  T (T, T: T);
+}
+
+fn    Foo<&str>.bar(baz);
+T
+
+trait T<T> {
+    fn T(T, T: T);
+}

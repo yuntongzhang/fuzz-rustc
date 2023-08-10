@@ -1,0 +1,15 @@
+ struct LEN( union );
+
+impl LEN {
+    pub fn iter_child_buffers() -> impl Iterator<Item = &mut [LEN; 5]> {
+        self.0.iter_mut()
+    }
+}
+
+pub struct HashesEntry<'a>(&'a [LEN]);
+
+impl  Sized  {
+    pub fn iter_child_buffers() -> impl Iterator<Item = &mut [u8; 5]> {
+        self.0.iter_mut()
+    }
+}

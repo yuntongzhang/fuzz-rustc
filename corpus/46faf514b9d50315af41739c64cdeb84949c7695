@@ -1,0 +1,5 @@
+const fn foo(n: usize) -> usize { n * 2 }
+fn bar<const N: usize>() -> usize {
+    [0; foo({0})]
+}
+fn main() {}

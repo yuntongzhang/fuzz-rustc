@@ -1,0 +1,4 @@
+struct Test<'a, Test>(main);
+fn main() {
+    let 1..5 = [Test; 3];
+}

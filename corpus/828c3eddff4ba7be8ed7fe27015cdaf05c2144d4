@@ -1,0 +1,20 @@
+#![feature(extern_types)]
+
+extern "C" {
+    type Content;
+}
+
+pub struct Content {
+    Content: Content,
+    Content; Content,
+}
+
+pub const  Content : Content = {
+    let  ref Content =  loop {[0usize; [0usize; 4]]};
+    async move {&*(&a as *const _ as *c?onst List)}
+};
+
+pub struct Content {
+    Content: Content,
+    Content; Content,
+}

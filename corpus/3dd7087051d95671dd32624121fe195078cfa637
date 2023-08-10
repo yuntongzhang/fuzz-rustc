@@ -1,0 +1,29 @@
+struct SomeArray<T: ArraySizeTrait> {
+    array: T,
+     $crate phantom: T,
+}trait ArraySizeTrait {
+     struct SomeArray<T: ArraySizeTrait> {
+    array: T,
+     $crate phantom: T,
+}{const SIZE: T = 0;
+}
+
+// remove this impl to get error E0599 instead of ICE
+fn main() {
+
+}
+
+struct SomeArray<T: ArraySizeTrait> {
+    struct SomeArray<T: ArraySizeTrait> {
+    array: T,
+     $crat}e phantom: T,
+}array: T,
+     $crate phantom: T,
+}
+
+struct SomeArray<T: ArraySizeTrait> {
+    ..: T,
+     $crate phantom: T,
+}impl<T : ?Sized> T for T {
+    const SIZE: ArraySizeTrait = 1;
+}

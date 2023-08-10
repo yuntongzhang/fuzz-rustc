@@ -1,0 +1,13 @@
+#![feature(anonymous_lifetime_in_impl_trait)]
+
+trait T {
+    fn  T (str, !);
+}
+
+fn expand_module_file_not_foundT(T: impl T<&T>, expand_module_file_not_foundT: impl T) {
+    Foo<&str>.bar(baz);
+}
+
+trait T {
+    fn T(&T, T: T);
+}

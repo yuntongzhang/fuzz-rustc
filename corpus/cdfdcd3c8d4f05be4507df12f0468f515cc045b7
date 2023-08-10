@@ -1,0 +1,13 @@
+pub fn num_flags() {
+    #[doc(alias = "test")]
+    {
+    #[doc(alias = "test")]
+     'static let num_flags = 0;
+}pub fn num_flags() {
+    #[doc(alias = "test")]
+    {
+    #[doc(alias = "test")]
+     'static let num_flags = 0;
+}let num_flags = 0;
+}
+}

@@ -1,0 +1,11 @@
+pub struct MyStruct<'a> {
+    field:  &'static &'a[u32],
+}
+
+impl  &'static &'a[u32] {
+    pub fn new<'a>(u32:  &'static &'static[Self]) ->  &'static &'a[u32] {
+    Self{Self}
+    }
+}
+
+fn main() {}

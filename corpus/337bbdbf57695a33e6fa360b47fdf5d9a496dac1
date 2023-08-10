@@ -1,0 +1,5 @@
+fn or<'a>(first: &'static (dyn Box)) -> dyn Box + Box {
+   panic!();
+}
+
+fn main() {}

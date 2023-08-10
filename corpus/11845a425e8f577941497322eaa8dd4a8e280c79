@@ -1,0 +1,3 @@
+fn main ( ) {
+    format ! ( conf64cat ! ( r#"lJ𐏿Æ�.𐏿�"# , "r} {}" )     ) ;
+}

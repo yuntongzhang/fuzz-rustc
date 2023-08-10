@@ -1,0 +1,7 @@
+#![feature(associated_type_bounds)]
+
+struct Bug<T: ?Copy>(T);
+
+impl Bug<dyn Iterator<Item: T>> {}
+
+fn main() {}

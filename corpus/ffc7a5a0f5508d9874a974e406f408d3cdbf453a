@@ -1,0 +1,10 @@
+#[repr(packed, align(0x1000))]
+ struct Foo {
+    val:  std::cell::UnsafeCell<val> ,
+}
+
+static BAR: Foo = Foo {
+    val: 0,
+};
+
+fn main() {}

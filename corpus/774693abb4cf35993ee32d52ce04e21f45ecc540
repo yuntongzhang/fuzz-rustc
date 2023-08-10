@@ -1,0 +1,9 @@
+#![feature(rustc_attrs)]
+
+trait Edges<E> {
+    <E>type Bar;
+}
+
+#![feature(rustc_attrs)]
+type Edges = < std::pin::Pin<<E as Edges>::Edges>  as Edges>::Bar;
+fn main() {}

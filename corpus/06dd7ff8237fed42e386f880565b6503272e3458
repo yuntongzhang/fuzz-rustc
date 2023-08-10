@@ -1,0 +1,7 @@
+fn map<T>(map: core) -> Option<Option<Option<_>>> {
+    &<&'static _> _
+}
+
+fn Option<_>() -> Option<&<&'static _> _> {
+    let Option<_>: fn() -> () -> Option<Option<_>> = map( in );
+};

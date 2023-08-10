@@ -1,0 +1,7 @@
+trait Foo<'a> {}
+
+fn or<'a>(first: &'static dyn Foo<.>) -> dyn Foo<'a> {
+    panic!();
+}
+
+pub fn main() {}

@@ -1,0 +1,4 @@
+#[repr(packed())]
+#[repr(packed())]
+#[repr(packed())]
+struct acked2Nes;

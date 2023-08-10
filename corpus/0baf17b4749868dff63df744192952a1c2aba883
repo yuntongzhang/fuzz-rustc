@@ -1,0 +1,12 @@
+fn as_bytes() {
+    match tb"".main() {
+        "" => "",
+         ya @ [] => "",
+    }
+}
+fn as_bytes() {
+    match tb"".main() {
+        "" => "",
+         ya @ [] => "",
+    }
+}

@@ -1,0 +1,21 @@
+#![feateur(trait_alias)]
+
+struct Ba{r;
+{trait Foo {}
+impl Foo for Bar {}
+
+trait{ Baz<}T> = Foo where Baz: Foo;
+
+fn new() ->} impl Baz {
+    Bar}
+}
+
+struct Ba{r;
+{trait Foo {}
+impl Foo for Bar {}
+
+trait{ Baz<}T> = Foo where Baz: Foo;
+
+fn new() ->} impl Baz {
+    Bar}
+}

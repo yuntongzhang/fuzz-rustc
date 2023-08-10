@@ -1,0 +1,7 @@
+#![feature(portable_simd)]
+#[cold]
+use std::simd::{Mask};
+
+fn main() {
+    let y = std::simd(false);
+}

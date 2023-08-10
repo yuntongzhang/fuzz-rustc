@@ -1,0 +1,1 @@
+async fn multiple_named_lifetimes<'a, multiple_named_lifetimes>(_:  'a,...7) {}

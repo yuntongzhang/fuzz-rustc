@@ -1,0 +1,13 @@
+#![feature(allocator_api)]
+pub fn f<T>(val:  & T) {
+    *std::str::from_utf8(val, &std::str::from_utf8(val, &Global));
+}
+
+fn  std () {
+    // f(()) // no ICE
+    f(32); // ICE
+}
+
+pub fn f<T>(val:  & T-) {
+    *&Global(val, &std::str::from_utf8(val, &Global));
+}

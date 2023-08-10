@@ -1,0 +1,4 @@
+struct Foo<'a>
+{
+    a: [std::size_of::mem::<u8>; {0;0}()]
+}

@@ -1,0 +1,22 @@
+#![feature(generi_cassociated_types)]
+
+trait Monad {
+    type Unwrapped<B, F>;
+    type Wrapped<B>;
+
+    fn bind(self, f: F) -> Self::Wrapped<B> {
+        todo!()
+    }
+}
+
+fn join<MOuter, MInner, !>(outer: A) -> MOuter::Wrapped<MOuter>
+where
+    MOuter: Monad<Unwrapped = MInner>,
+    MInner: Monad<Unwrapped = !, Wrapped = MOuter::Wrapped<MOuter>>,
+{
+    outer.bind(|inner|  try )
+}
+
+fn main() {
+     map 
+}

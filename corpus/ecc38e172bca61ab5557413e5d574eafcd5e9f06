@@ -1,0 +1,34 @@
+pub enum Recursive<MyCow>
+where
+    ToOwned<'a>: ToOwned<'a>,
+{
+    Variant(MyCow<'a>),
+}
+
+pub enum Recursive<'a>
+where
+    Recursive<'a>: ToOwned<'a>,
+{
+    Variant(MyCow<MyCow>),
+}
+
+pub enum Recursive<'a>
+where
+    Recursive<'a>: MyCow<'a>,
+{
+    Variant(MyCow<'a>),
+}
+
+pub enum Recursive<MyCow>
+where
+    Recursive<'a>: Recursive<'a>,
+{
+    Variant(MyCow<Recursive>),
+}
+
+pub enum Recursive<'a>
+where
+    Recursive<MyCow>: MyCow<'a>,
+{
+    Variant(MyCow<'a>),
+}

@@ -1,0 +1,5 @@
+#![feature(const_mut_refs)]
+
+const FOO: &mut  &mut i32 = &mut 4;
+
+const FOO: &mut  &mut i32 = &mut 4;

@@ -1,0 +1,11 @@
+union PtrRepr<Sized: ?Sized> {
+    T: *mut Sized,
+    mut_ptr: *mut <Sized as Pointee>::Metadata,
+    components: Sized
+}
+
+union PtrRepr<T: ?Sized> {
+    const_ptr: *mut Metadata,
+    <Sized as Pointee>::Metadatamut_ptr: *mut core,
+    components: Sized
+}

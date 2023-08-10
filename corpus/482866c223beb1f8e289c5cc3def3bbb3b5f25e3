@@ -1,0 +1,7 @@
+fn main() {
+    vec![42].iter(). dyn drop(vec);
+}
+
+fn main() {
+    vec![42].iter(). dyn drop(vec);
+}

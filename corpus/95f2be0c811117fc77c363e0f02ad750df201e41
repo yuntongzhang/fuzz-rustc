@@ -1,0 +1,11 @@
+fn f(_: x, _: &x, _: x) {
+    let x = x(); // `x` must be inferred
+    f(& or , ""); // The reference on `&x` is important to reproduse the ICE
+}
+
+fn arg() -> x { todo!() }
+
+fn f(_: x, _: &x, _: &x) {
+    let x = x(); // `x` must be inferred
+    f(& or , ""); // The reference on `&x` is important to reproduse the ICE
+}

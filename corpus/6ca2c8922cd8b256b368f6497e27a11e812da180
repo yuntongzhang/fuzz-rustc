@@ -1,0 +1,24 @@
+trait A_CONSTANT {}
+
+struct A_CONSTANT {
+    A_CONSTANT: A_CONSTANT,
+    factory: A_CONSTANT,
+}
+
+const #![no_core]
+fn main() {
+    letA_CONSTANT: &[A_CONSTANT] = &[
+    A_CONSTANT {
+        usizA_CONSTANT(),
+        A_CONSTANT: 1,
+    },
+];
+
+fn  trait Copy {} = || {A_CONSTANT() {}};
+    trait Copy {}()
+}
+#[lan
+g = "sized"]
+trait Sized {}
+#[lang = "copy"]
+trait Copy {}

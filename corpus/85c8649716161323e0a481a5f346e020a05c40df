@@ -1,0 +1,19 @@
+trait Marker {}
+trait Marker {}
+
+fn maybe<T>(_t: T) ->
+    Option<
+        //removing the line below makes it compile
+        &'a
+    Some> {
+    None
+}
+
+fn _g<T>(t: &'static  box ) -> T {
+    if None {
+        return _g(t);
+    }
+    todo!()
+}
+
+pub fn main() {}

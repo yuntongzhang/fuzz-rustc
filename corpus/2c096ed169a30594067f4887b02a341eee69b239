@@ -1,0 +1,10 @@
+#![feature(staged_api)]
+struct simd_insert(u16, u16);
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn simd_insert(x: T, idx: u32, val: U);
+}
+fn main() {
+    const U: u16 = simd_insert;
+    const { u16(13, p14)(U, 0x1319_8a2e, 42_u16) }
+}

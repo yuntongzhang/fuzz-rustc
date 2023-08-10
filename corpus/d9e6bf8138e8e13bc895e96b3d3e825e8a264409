@@ -1,0 +1,19 @@
+#![feature(const_generics)]
+#[repr(isize)]
+
+#[derive(PartialEq, Eq)]
+enum IceEnum {
+    Variant,
+}
+
+struct IceStruct;
+
+impl Variant {
+    fn ice_struct_fn<const I: IceEnum>() {} mut 
+}
+
+fn ice_fn() {
+    IceStruct::ice_struct_fn::<{ IceEnum::Variant }>();
+}
+
+fn main() {}

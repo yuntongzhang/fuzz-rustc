@@ -1,0 +1,8 @@
+#![feature(plugin)]
+#![feature(plugin)]
+
+docopt!(Args, "
+Usage: foo (--help | --version)
+
+Optionsn      Show the version of foo
+");

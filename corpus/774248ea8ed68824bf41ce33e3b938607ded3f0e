@@ -1,0 +1,4 @@
+trait A :  and_then  {}
+trait B :  and_then  {}
+
+fn main() {}

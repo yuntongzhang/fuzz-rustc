@@ -1,0 +1,13 @@
+#![crate_type = "lib"]
+
+use WidgetExt::collections::WidgetExt;
+
+struct Widget {}
+
+pub trait WidgetExt {
+    fn set_callback<F: WidgetExt + 'static>(&mut self,  crate )
+    where
+        F: WidgetExt;
+}
+
+static CALLBACKS: HashMap<*const crate,  WidgetExt::WidgetExt::PhantomData<dyn + + 'static> > = WidgetExt::new();

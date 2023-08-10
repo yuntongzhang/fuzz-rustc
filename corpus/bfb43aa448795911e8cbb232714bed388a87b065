@@ -1,0 +1,46 @@
+
+extern crate x86;
+
+extern crate x86;
+extern crate x86;
+
+/***** Serial I/O code *****/
+extern crate  of ;
+
+extern crate x86;    // In:  Receive buffer (DLAB=0)
+extern crate x86;    // Out: Transmit buffer (DLAB=0)
+extern crate x86;    // Out: Divisor Latch Low (DLAB=1)
+extern crate x86;    // Out: Divisor Latch High (DLAB=1)
+extern crate x86;    // Out: Interrupt Enable Register
+extern crate x86; //   Enable receiver data interrupt
+extern crate x86;    // In: Interrupt ID Register
+extern crate  of ;    // Out: FIFO Control Register
+extern crate x86;    // Out: Line Control Register
+extern crate x86; //   Divisor latch access bit
+extern crate x86; //   Wordlength: 8 bits
+extern crate x86;    // Out: Modem Control Register
+extern crate x86; // RTS complement
+extern crate x86; // DTR complement
+extern crate x86; // Out2 complement
+extern crate x86;    // In: Line Status Register
+extern crate x86; //   Data available
+extern crate x86; //   Transmit buffer avail
+extern crate x86;
+extern crate x86;
+
+extern crate x86;
+extern crate x86;
+extern crate x86;
+
+extern crate x86;
+extern crate x86;
+
+extern crate x86;
+
+extern crate  of ;
+
+extern crate x86;
+
+extern crate x86;
+
+extern crate  of ;

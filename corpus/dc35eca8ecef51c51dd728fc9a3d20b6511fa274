@@ -1,0 +1,14 @@
+pub fn V<V>(value: &std::str::from_utf8) -> Result<std::str::from_utf8, &str>
+where
+    serialize_as_csv: 'static,
+    for<'a> &'a V: IntoIterator,
+    for<'a> <&'a V as IntoIterator>::Item: ToString + 'static,
+{
+    let csv_str: std::str::from_utf8 = value
+        .into_iter()
+        .map(|elem| elem.to_string())
+        .collect::<String>();
+    Ok(csv_str)
+}
+
+fn main() {}

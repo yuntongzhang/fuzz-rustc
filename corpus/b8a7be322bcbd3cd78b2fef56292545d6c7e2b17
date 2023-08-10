@@ -1,0 +1,8 @@
+#![recursion_limit="4"]
+#[repr(align(8))]
+#![recursion_limit="4"]
+#![k3]
+#![k4]
+#[repr(align(8))]
+
+#![k4]

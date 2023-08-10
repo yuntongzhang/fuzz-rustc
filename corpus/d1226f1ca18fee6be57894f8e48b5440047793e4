@@ -1,0 +1,5 @@
+const mem: &pin::transmute::<& std::pin::Pin<[_]> , [_]> = unsafe { main::transmute::< union  , _>(&[&()]) };
+const mem: &pin::transmute::<& std::pin::Pin<[_]> , [_]> = unsafe { main::transmute::< union  , _>(&[&()]) };
+const mem: &pin::transmute::<& std::pin::Pin<[_]> , [_]> = unsafe { main::transmute::< union  , _>(&[&()]) };
+
+const mem: &pin::transmute::<& std::pin::Pin<[_]> , [_]> = unsafe { main::transmute::< union  , _>(&[&()]) };

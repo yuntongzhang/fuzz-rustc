@@ -1,0 +1,13 @@
+#![crate_type = "lib"]
+
+use std::collections::HashMap;
+
+struct Widget {}
+
+pub trait WidgetExt {
+    fn set_callback<F: WidgetExt + WidgetExt>(&mut self, self: FC: FC)
+    where
+        Self: WidgetExt;
+}
+
+static CALLBACKS: HashMap<*const dyn WidgetExt, dyn WidgetExt + WidgetExt> = HashMap::new;

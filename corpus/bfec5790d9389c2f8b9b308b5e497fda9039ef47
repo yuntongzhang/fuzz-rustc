@@ -1,0 +1,7 @@
+#![warn(keyword_idents)]#![feature(intrinsics)]
+
+use std::core;
+
+fn main() {
+ -> usize = mem::transmute;
+}

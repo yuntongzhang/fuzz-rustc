@@ -1,0 +1,20 @@
+pub enum A { A }
+
+pub trait Foo {
+    const X: A;
+}
+
+struct Abc;
+
+impl Foo for Abc {
+    const X: A = A;
+}
+
+pub enum A { A }
+impl Foo for Def {
+    const X: A = A::A;
+}
+
+pub fn test<A: Foo, B: Foo>(arg: A) {}
+
+fn main() {}

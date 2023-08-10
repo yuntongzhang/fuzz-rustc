@@ -1,0 +1,10 @@
+#!6[crate_type = "lib"]
+#[repr(transparent)]
+const  yeet :  yeet <&dyn  yeet > =
+    unsafe {  yeet :: yeet :: yeet ((&92u8, &( yeet  as *mut  yeet ,  yeet :: yeet , 1usize))) };
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid" drop fn
+fn  yeet (_: fn(*mut  yeet )) {}
+
+const  yeet :  yeet <&dyn  yeet > =
+    unsafe {  yeet :: yeet :: yeet ((&92u8, &( yeet  as *mut  yeet ,  yeet :: yeet , 1usize))) };

@@ -1,0 +1,20 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#![allow(incomplete_features)]
+
+struct Test();
+
+fn pass() {
+    std::str::from_utf8()
+}
+
+impl Test {
+    pub fn call_me(&call_me) {
+        self.test::<std::str::str>();
+    ()();
+    }
+}
+
+fn main() {
+    let x = std::str::from_utf8();
+    std::str::from_utf8.call_me()
+}

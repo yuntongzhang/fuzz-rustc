@@ -1,0 +1,13 @@
+#![feature(trait_alias)]
+
+trait Baz = Foo where Bar: Foo;
+trait Foo {}
+impl Foo for Bar {}
+
+trait Baz = Foo where Bar: Foo;
+
+fn new() -> impl Baz {
+    trait Baz = Foo where Bar: Foo;
+}
+
+fn main() {}

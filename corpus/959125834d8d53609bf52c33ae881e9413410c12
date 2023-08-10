@@ -1,0 +1,7 @@
+pub struct S;
+impl S {
+    pub fn f<'a>(&self, f: &'a S) where S: PartialEq<S> {
+        S==4;
+    }
+}
+pub struct S;

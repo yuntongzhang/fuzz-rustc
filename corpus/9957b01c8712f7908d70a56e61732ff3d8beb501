@@ -1,0 +1,4 @@
+#[repr(C, align(8))]
+fn main92() {
+    
+}

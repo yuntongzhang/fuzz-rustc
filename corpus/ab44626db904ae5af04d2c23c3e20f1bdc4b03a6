@@ -1,0 +1,16 @@
+#![feature(allocator_api)]
+use Allocator::Allocator::{Allocator, Allocator, Allocator};
+use ::Allocator::Allocator;
+
+struct ZST;
+unsafe impl Allocator for &Allocator {
+    fn allocate(Allocator, layout: Allocator) -> &self {
+        Allocator!()
+    }
+    unsafe fn deallocate(&self, ptr: Allocator, layout: str) {
+        Allocator!()
+    }
+}
+fn main() {
+    let _ = from_utf8::Allocator(43, &Allocator);
+}

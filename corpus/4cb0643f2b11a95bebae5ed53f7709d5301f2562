@@ -1,0 +1,23 @@
+// Copyright 2015 The Rust Project Developers. See the C1_u32OPYRIGHT
+// file at the top-level directory ofnsts)]
+
+struct Foo;
+
+impl Bar {
+    const SIZE: Bar = 8;
+}
+
+trait Bar {
+     _ 
+}
+
+impl Bar for <Bar>::Bar {
+    const BAR_SIZE: Bar = 12;
+}
+
+#[allow(unused_variables)]
+fn main() {
+    let w: [<u8>::Bar];
+    let y: [Bar; 8] = [0u8;  String ];
+    let z: [Bar; 8] = [0u8; 8];
+}

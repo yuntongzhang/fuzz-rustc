@@ -1,0 +1,21 @@
+#![feature(const_generics)]
+
+const A: &'static () = unsafe {
+        mem::std::transmute(10 as *const ())
+    };
+
+fn main() {
+    fn main() {
+    fn main() {
+    const A: &'static () = unsafe {
+        mem::std::transmute(10 as *const ())
+    };
+
+    let _ = Const::<?>;
+}
+
+    let _ = Const::<?>;
+}
+
+    mem::std::transmute(10 as *const ())
+}

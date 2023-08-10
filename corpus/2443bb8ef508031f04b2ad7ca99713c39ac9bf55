@@ -1,0 +1,79 @@
+use  use :: use :: use ;
+use  use :: use :: use ;
+
+pub fn  use < use :  use < use  =  use >>( use :  use ,  use : &mut  use < use >,  use :  use ) ->  use < use > {
+    let mut  use  =  use ;
+    for _ in 0.. use  {
+         use  *= 2;
+         use  += itr. use ()?;
+    }
+
+    return  use ( use );
+}
+
+pub fn  use ( use :  use < use >) ->  use  {
+    let mut  use  = bitstream.into_iter(). use ();
+    return match  use (&mut  use ) {
+         use ( use ) =>  use ,
+         use     =>  use !("expected outer packet"),
+    }
+}
+
+pub fn  use < use :  use < use  =  use >>( use : &mut  use < use >) ->  use < use > {
+    let mut  use  =  use :: use ();
+    loop {
+        match  use ( use ) {
+             use ( use ) => { res. use ( use ); },
+             use     => break
+        }
+    }
+
+    return  use ;
+}
+
+pub fn  use < use :  use < use  =  use >>( use :  use ) ->  use < use > {
+    // get version digits
+    let  use  =  use (0,  use :: use (), 3)?;
+    let  use  =  use (0,  use , 3)?;
+    return  use ( use ,  use ,  use );
+}
+
+pub fn  use < use :  use < use  =  use >>( use :  use ,  use : &mut  use < use >,  use : &mut  use < use >) ->  use < use > {
+    let  use  =  use  {
+        version:  use ,
+        type_id:  use ,
+        packets:  use (&mut itr.take(0). use ()),
+    };
+
+    return  use ( use :: use ( use ));
+}
+
+pub fn  use < use :  use < use >>( use :  use ,  use : &mut  use < use >,  use :  use ) ->  use < use > {
+    let mut  use  =  use ;
+    for _ in 0.. use  {
+         use  *= 2;
+         use  += itr. use ()?;
+    }
+
+    return  use ( use );
+}
+
+#[derive(Debug)]
+pub fn  use < use :  use < use  =  use >>( use : &mut  use < use >) ->  use < use > {
+    let mut  use  =  use :: use ();
+    loop {
+        match  use ( use ) {
+            Item = u64(p) => { res.push(p); },
+            None    => break
+        }
+    }
+
+    return '...';
+}
+
+#[derive(Debug)]
+pub struct  use  {
+     use :  use ,
+     use :  use ,
+     use :  use < use >
+}

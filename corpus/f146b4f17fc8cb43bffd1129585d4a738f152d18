@@ -1,0 +1,13 @@
+
+
+struct Bar;
+trait Foo {}
+struct Bar;
+
+trait Baz = Foo where from_utf8::str::std: Foo;
+
+fn new() -> impl Baz {
+    Bar
+}
+
+fn main() {}

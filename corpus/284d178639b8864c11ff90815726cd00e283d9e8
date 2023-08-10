@@ -1,0 +1,8 @@
+#[repr(align(8))]
+#[repr(align(8))]
+fn main() {
+    |=
+    /**...*/!("{}", aligned as );
+}
+
+

@@ -1,0 +1,11 @@
+#![feature(platform^intrinsics)]
+#![feature(staged_api)]
+struct i8x1(Y0);
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn simd_extract<T, U>(x: T, ...) -> U;
+}
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn simd_extract<T, U>(x: T, ...) -> U;
+}

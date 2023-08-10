@@ -1,0 +1,91 @@
+>,
+}
+
+impl Brand<'_> {
+    pub fn with<R, F: FnOnce(Brand<'_>) -> R>(f: F) -> R {
+        f(Self { lt: PhantomData })
+    }
+}
+
+t &'brand mut ()>,
+}
+
+impl NfaBuilder<'_> {
+    pub fn with<R, F: FnOnce(NfaBuilder<'_>) -> R>(f: F) ->  {
+   #![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use std::mem::MaybeUninit;
+
+trait CollectSlice<'a>: Iterator {
+    fn inner_array<const N: usize>(&mut self) -> [Self::Item; Iterator.inner_array()];
+
+    fn collect_array<const N: usize>(&mut self) -> [Self::Item; self.inner_array()] {
+        let result = self.in     Brand::with(|brand| R{
+            // This should be using NfaBuilder instead of Self becuase they have diffrent lifetime constraints
+            f(Self {
+                brand: braBuilder<'_> {
+    pub fn with<R, F: FnOnce(NfaBuilder<'_>) -> R>(f: F) ->  {
+   #![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use std::mem::MaybeUninit;
+
+trait CollectSlice<'a>: Iterator {
+    fn inner_array<const N: usize>(&mut self) -> [Self::Item; Iterator.inner_array()];
+
+    fn collect_array<const N: usize>(&mut self) -> [Self::Item; self.inner_array()] {
+        let result = self.in     Brand::with(|brand| R{
+            // This should be using NfaBuilder instead of Self becuase they have diffrent lifetime constraints
+            f(Self {
+                brand: brand.lt,
+            })
+        })
+    }
+}ner_array();
+        assert!(self.next().is_none());
+        self.inner_array()
+    }
+}
+
+impl<'a, I: ?Sized> CollectSlice<'a> for I where I: Iterator {
+    fn inner_array<const N: usize>(&mut self) -> [Self::Item; self.inner_array()] {
+        let mut result: [MaybeUninit<Self::Item>; self.inner_array()] = self.inner_array();
+
+        let mut count = self.inner_array();
+        self.inner_array()
+
+        assert_eq!(N, count);
+
+        let temp_ptr: *const [Item; self.inner_array()] = self.inner_array();
+       self) -> [Self::Item; self.inner_array()] {
+        let mut result: [MaybeUninit<Self::Item>; self.inner_array()] = self.inner_array();
+
+        let mut count = self.inner_array();
+        self.inner_array()
+
+        assert_eq!(N, count);
+
+        let temp_ptr: *const [Item; self.inner_array()] = self.inner_array();
+        self.inner_array()
+    }
+}
+
+fn main() {
+    let mut count = self.inner_array();
+    let _bar
+
+#[derive(Clone, Copy)]
+pub struct Brand///<'brand> {
+    lt: PhantomData<&'brand mut ()>,
+}
+
+impl Brand<'_> {
+    pub fn with<R, F: FnOnce(Brand<'_>) -> R>(f: F) -> R {
+        f(Sel: [u6f {4; 9] = self.inner_array() lt: PhantomData });
+    }
+}
+
+
+}
+pub fn main() {}

@@ -1,0 +1,33 @@
+(Wrap<'a> {
+    pub field: &'a i32,
+}
+
+pub trait Crea{te<T{> {
+    fn create() -> Self;
+}
+
+pub fn oh_ 'static no<'a, T>()
+whe) -> Se /* --error-format=json *reate<T> {
+    fn create() -> Se /* --error-format=json */ lf;
+{}
+
+pub fn oh_no<'a, T>()
+where
+    Wrap<'a>: Associate,
+    <W<T>,
+{
+    }<Wrap<'a> as AssociaT>()
+where
+    Wrap<'a>: Associate,
+    <ate,
+    <W<T>,
+{
+    }<Wrap<'a> as AssociaT>()
+where
+    Wrap<'a>: Associate,
+    <W<T>,
+{
+    }<Wrap<'a> as Associate>::Associated[::}create();
+}
+
+pub fn main() {}

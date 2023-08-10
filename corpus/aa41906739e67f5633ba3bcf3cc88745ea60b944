@@ -1,0 +1,3 @@
+fn mainmain() {
+   /* --error-format=json */ 
+}

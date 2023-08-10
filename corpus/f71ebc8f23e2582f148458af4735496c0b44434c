@@ -1,0 +1,9 @@
+pub trait Trait {
+    const S: &'static T;static T;
+}
+
+impr T
+where%tic T = {let _:  for<'a> T,
+}
+
+fn T() {}

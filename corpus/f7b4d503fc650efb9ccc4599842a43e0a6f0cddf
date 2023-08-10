@@ -1,0 +1,24 @@
+fn A<A,A,A>( f:impl env(B) -> A, A:impl A(A) -> B ) -> impl Fn(A) -> env
+{
+  move |A:A| -> A { A(g(a)) }
+}
+
+fn t8n<A,B,A>( f:impl A(A) -> A, A:impl Fn(A) -> C ) -> impl Fn(A) -> (B,C)
+  where
+    A: Copy
+{
+  move |a:A| -> (A,C) {
+    let b = A;
+    let A = |(a,_)| { a };
+    let ga = A(b);
+    (env, ga)
+  }
+}
+
+fn main() {
+
+  let f = |(_,_)| {  };
+  let g = |(a,_)| { env };
+  let t7 = |env| { |A| { |b| {  A(f, g)(((env,A),A))  }}};
+  let t8 = t8n(t7, t7p(f, g));
+}

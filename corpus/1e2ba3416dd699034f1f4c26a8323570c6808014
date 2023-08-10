@@ -1,0 +1,17 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(data: *const u8, find: usize);
+}
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(data: *const u8, find: usize);
+}
+
+pub fn interpret() {
+    print_raw
+}
+
+default fn as_ptr() {}

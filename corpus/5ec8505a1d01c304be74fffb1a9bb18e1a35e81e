@@ -1,0 +1,10 @@
+#![feature(asm)]
+
+ struct Wrapper(u32);
+
+fn main() {
+    7
+    unsafe {
+        String 
+    }
+}

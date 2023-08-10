@@ -1,0 +1,6 @@
+#![allow(incmoplete_features)]
+#![feature(inline_const)]
+
+fn main() {
+    %
+}

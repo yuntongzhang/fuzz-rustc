@@ -1,0 +1,13 @@
+#![crate_type = "lib"]
+
+use  super :: super :: super ;
+
+struct Widget {}
+
+pub trait WidgetExt {
+    fn set_callback<F:  super  + 'static>(F, F)
+    where
+         super :: super :  super ;
+}
+
+static F:  F  =  super ();

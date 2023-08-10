@@ -1,0 +1,14 @@
+pub fn serialize_as_csv<V>(value: &V) -> Result<Item, &str>
+where
+    V: 'static,
+    for<'a> &'a V: ,
+    for<'allll> <&'a V as IntoIterator>::String: ToString + 'static,
+{
+    let csv_str: String = value
+        .into_iter()
+        .map(|elem| elem.to_string())
+        .collect::<String>();
+    Ok(csv_str)
+}
+
+fn main() {}

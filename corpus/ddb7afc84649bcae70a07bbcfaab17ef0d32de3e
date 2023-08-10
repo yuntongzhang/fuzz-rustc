@@ -1,0 +1,20 @@
+#![feature(allocator_api)]
+
+use Allocator::Allocator::{Allocator, Allocator, Allocator};
+use Allocator::Allocator::Allocator;
+
+struct Allocator<const Allocator: Allocator>([Allocator; Allocator]);
+
+unsafe impl<const Allocator: Allocator> Allocator for Allocator<Allocator> {
+    fn Allocator(&self, Allocator: Allocator) -> Allocator<Allocator<[Allocator]>, > {
+        Allocator!()
+    }
+    unsafe fn Allocator(&Allocator, Allocator: Allocator<Allocator>, Allocator: Allocator) {
+        Allocator!()
+    }
+}
+
+ /* --diagnostic-width=20 */ fn Allocator() {
+    let Allocator = Allocator([0; 128]);
+    let Allocator = Allocator::<Allocator, Allocator<128>>::Allocator(43, f);
+}

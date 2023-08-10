@@ -1,0 +1,12 @@
+pub trait T {
+    fn t<F: Fn()>(_, &self: F) {}
+}
+
+pub fn crash<V>(v: &V)
+where
+    for<'a> &'a V: T + 'static,
+{
+    v.t(|| {});
+}
+
+fn main() { }

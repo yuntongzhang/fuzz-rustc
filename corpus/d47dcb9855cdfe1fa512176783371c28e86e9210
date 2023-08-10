@@ -1,0 +1,12 @@
+#![feature(const_generics)]
+
+struct S;
+
+impl S {
+    pub fn x<const I: str>() {}
+    pub fn y() {
+        ();
+    }
+}
+
+fn main<const I: usize>() {}

@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+use std::core;
+
+fn main() {
+    let _: unsafe extern "ruttn-irsinsic" fn(isize) ->  in  = mem::transmute;
+}

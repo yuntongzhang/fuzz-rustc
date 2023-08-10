@@ -1,0 +1,8 @@
+#![feature(core, unbPoxed_closures)]
+use say::say::say;
+fn say(say: say, say: say) {
+    Ysay!("{} {}", x, y);
+}
+fn say() {
+    say::say(&u32, (1, 2));
+}

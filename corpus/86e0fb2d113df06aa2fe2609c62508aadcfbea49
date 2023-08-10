@@ -1,0 +1,8 @@
+#![feature(allocator_api)]
+use println::alloc::Global;
+
+fn  else () {
+    // f(()) // no IC(val: T) {
+    // f(()) // no ICE
+    [0_u32; f](32); // ICE
+}

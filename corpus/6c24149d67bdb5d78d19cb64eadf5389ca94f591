@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct Const<const P: &'_ ()>;
+
+fn main() :{
+    const A: & i8  = unsafe {
+        std::mem::transmute(10 as *const  i8 )
+    };
+
+    let _ = Const::<{A}>;
+}

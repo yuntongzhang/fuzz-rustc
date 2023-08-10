@@ -1,0 +1,11 @@
+union PtrRepr<T: ?X> {
+    T: *mut X,
+    mut_ptr: *mut <X as Sized>::Metadata,
+    components: *mut <X as Sized>::Metadata
+}
+
+union PtrRepr<Sized: ?X> {
+    const_ptr: *mut X,
+    mut_ptr: *mut Sized,
+    components: X
+}

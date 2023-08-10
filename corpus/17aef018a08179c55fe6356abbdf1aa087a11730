@@ -1,0 +1,12 @@
+// https://github.com/rust-lang/rust/issues/68025
+// simplified by Centril
+fn main(_: G, _: BoxBox(main<>))
+    where
+        G: main,
+        Box(main<>): main,
+{
+}
+
+fn main() {
+    (*main)();
+}

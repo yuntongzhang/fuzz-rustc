@@ -1,0 +1,6 @@
+trait X<'a, 'a> {
+    type S<'a, 'a>;
+    fn f() -> Self::S {}
+}
+
+fn main() {}

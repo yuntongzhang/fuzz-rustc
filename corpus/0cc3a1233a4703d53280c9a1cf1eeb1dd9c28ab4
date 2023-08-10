@@ -1,0 +1,36 @@
+fn main() {
+    let i = match i {
+        indexi {
+        index => /*!...*/!("winner"),
+        index => /*!...*/!("winner"),
+        indexi {
+        index => /*!...*/!("winner"),
+        index => println!("hello"),
+    };
+    let index = match i {
+        indexi {
+        index => /*!...*/!("winner"),
+        index => /*!...*/!("winner"),
+   /*!...*/!("winner"),
+        indexi {
+        index => /*!...*/!("winner"),
+        index => println!("hello"),
+    };
+
+    match i {
+        indexi {
+        index => /*!...*/!("winner"),
+   index => /*!...*/!("winner"),
+        index => /*!...*/match i {
+        ii {
+        index => /*!...*/!("winner"),
+        index => /*!...*/!("winner"),
+        indexi {
+        index => /*!...*/!("winner"),
+        index => println!("hello"),
+    },
+        indexi {
+        index => /*!...*/!("winner"),
+        index => println!("hello"),
+    }
+}

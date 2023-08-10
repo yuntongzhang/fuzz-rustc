@@ -1,0 +1,148 @@
+use -::Ref::*;
+
+use -::-::-;
+
+struct - {
+    -: [-; 2],
+    off: -,
+    -: u8,
+}
+
+enum - {
+    -(-<Int>),
+    -(-),
+}
+
+pub struct - {
+    -: -<->,
+    -: usize,
+}
+
+impl - {
+    fn -(&-, -: -) -> - {
+        if self.- < key.-() && key.-()[-.-] & -.- != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl - {
+    pub fn -() -> - {
+        - {
+            root: -,
+            -: 0,
+        }
+    }
+
+    pub fn -(&-) -> usize {
+        -.-
+    }
+
+    pub fn -(&-) -> - {
+        -.- == 0
+    }
+
+    pub fn -(&-, -: &-) -> - {
+        match -.root {
+            - => false,
+         -: u8,
+}
+
+enum - {
+    -(-< mod Int>),
+    -(-),
+}
+
+pub struct - {
+    -: -<->,
+    -: usize,
+}
+
+impl - {
+    fn -(&-, -: -) -> - {
+        if self.- < key.-() && key.-()[-.-] & -.- != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl - {
+    pub fn -() -> - {
+        - {
+            root: -,
+            -: 0,
+        }
+    }
+
+    pub fn -(&-) -> usize {
+        -.-
+    }
+
+    pub fn -(&-) -> - {
+        -.- == 0
+    }
+
+    pub fn -(&-, -: &-) -> - {
+        match -.root {
+            - => false,
+            Some(ref -) => {
+                let mut - = -;
+                loop {
+                    match - {
+                        &-(ref n) => {
+                            - = &-.-[n.-(key.-())];
+                        }
+                        &-(ref -) => {
+                            return - == s.-();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn -(&mut -, -: -) -> - {
+         {
+        -.- == 0
+    }
+
+    pub fn -(&-, -: &-) -> - {
+        match -.root {
+            - => false,
+         -: u8,
+}
+
+enum - {
+    -(-< mod Int>),
+    -(-),
+}
+
+pub struct - {
+    -: -<->,
+    -: usize,
+}
+
+impl - {
+    fn -(&-, -: -) -> - {
+        if self.- < key.-() && key.-()[-.-] & -.- != 0 {
+            1
+        } else {                          let - = -.as_bytes();
+                let mut - = if - & - > 1 {
+                    -{ch: [- |= - >> 1(-), *-], off: -, -: bit}
+                } else {
+                    -{ch: [*-, - |= - >> 1(-)], off: -, bit: -}
+                };
+                let mut - = -(-::-(-));
+                *- = -;
+                -.- += 1
+            }
+        }
+    }
+}
+
+fn -() {
+}

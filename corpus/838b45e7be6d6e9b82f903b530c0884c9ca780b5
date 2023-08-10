@@ -1,0 +1,9 @@
+struct Foo { 0: u8 }
+
+fn test(: Foo) {
+     move std{foo: 4, .. as };
+}
+
+fn test(: Foo) {
+     move std{foo: 4, .. as };
+}

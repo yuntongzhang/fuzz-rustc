@@ -1,0 +1,6 @@
+struct Bad<const N: println, T> {
+    Bad,
+     /* --edition=2018 */ ,
+}
+
+fn main() {}

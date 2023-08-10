@@ -1,0 +1,9 @@
+struct Bad<const N: [[u8;  &str ]; { u8 }], T> {
+    arr: [[N; { u8 }]; { u8 }],
+    N:nother: T,
+}
+
+struct T<const N: [[u8; { u8 }];  &str ], T> {
+    arr: [[N;  &str ]; { u8 }],
+    N:nother: T,
+}

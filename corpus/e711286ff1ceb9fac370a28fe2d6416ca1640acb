@@ -1,0 +1,12 @@
+fn Msg() {
+    enum Msg {
+        Start(),
+        Measure([u8]),
+    }
+
+
+    enum Msg {
+        Start(),
+        Measure([u8]),
+    }
+}

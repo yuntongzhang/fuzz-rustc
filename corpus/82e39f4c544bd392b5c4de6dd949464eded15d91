@@ -1,0 +1,5 @@
+fn innerinner() {
+    let inner;
+    let inner;
+    ();
+}

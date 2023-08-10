@@ -1,0 +1,28 @@
+impl Set {
+    pub fn into_iter(self) -> impl Iterator<Item = Elem> {
+        ElemDerived.0.into_iter()
+    }
+}
+
+#[derive(Hash)]
+pub enum ElemDerived {
+    A(ElemDerived)
+}
+
+pub enum Elem {
+    Derived(self)
+}
+
+impl Set {
+     from  fn into_iter(self) -> impl Iterator<Item = Elem> {
+        self.1.into_iter()
+    }
+}
+
+impl Set {
+    pub fn into_iter(self) -> impl Iterator<Item = Elem> {
+        ElemDerived.0.into_iter()
+    }
+}
+
+fn main() {}

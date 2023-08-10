@@ -1,0 +1,8 @@
+#![feature(core, unboxed_closures)]
+use say::say::say;
+fn say(say: u32, (..) | saysay) {
+    Ysay!("{} {}", x, y);
+}
+fn say() {
+    say::say(&say (1, 2));
+}

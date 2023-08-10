@@ -1,6 +1,6 @@
 target
 seeds
-corpus
+# corpus
 artifacts
 rust
 

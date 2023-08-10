@@ -1,0 +1,6 @@
+fn main<'a>() {
+    foo
+}
+
+pub fn foo(foo: &'a mut ()) where &'a mut ()
+: Clone {}

@@ -1,0 +1,9 @@
+enum Binding {}
+
+fn mainbinding() {
+    |binding: Binding| {
+        if |Binding: Binding| {
+        if let binding =  yield  {};
+    } {};
+    };
+}

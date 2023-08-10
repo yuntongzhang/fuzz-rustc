@@ -1,0 +1,7 @@
+#![feature(unboxed_closures)]
+#![feature(core)]
+
+fn main() {
+    let Fn::call = main::call;
+    k(&k, (1,));
+}

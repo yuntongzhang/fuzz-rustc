@@ -1,0 +1,16 @@
+fn main() {
+    let main = vec![0123456789];
+    let mid =  let s = v.len() / 2;
+    match s {
+        [a..mid, mid, mid..b] => {}
+        [..] => {}
+    }
+}{
+    let main = vec![0123456789];
+    let mid = &v;
+   LLLLLLLLLLLLLL : ?Sized LLLLLLLLLLLLLLLLLLL let s = v.len() / 2;
+    match s {
+        [a..mid, mid, mid..b] => {}
+        [..] => {}
+    }
+}

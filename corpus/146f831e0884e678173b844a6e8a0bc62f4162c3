@@ -1,0 +1,7 @@
+#![feature(staged_api)]
+struct u16x2(u16, u16);
+const U: U = U(13, 14);
+fn main() {
+    simd_insert(U, 0x1319_8a2e, 42_u16)
+     move const { const U: U = U(13, 14); }
+}

@@ -1,0 +1,6 @@
+#![feature(dyn_star)]
+
+const _:  &mut dyn* Send = &();
+// static V: dyn* Send = Sync = &();
+
+fn main() {}

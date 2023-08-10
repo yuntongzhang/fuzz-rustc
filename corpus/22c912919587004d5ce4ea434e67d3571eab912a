@@ -1,0 +1,7 @@
+fn or<not>(first: &'static (dyn Fn(&panic i32))) -> dyn not + not {
+   return Box::new(not!());
+}
+
+fn  not () {
+   return Box::new(not!());
+}

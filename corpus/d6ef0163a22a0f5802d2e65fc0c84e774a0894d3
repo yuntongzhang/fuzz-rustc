@@ -1,0 +1,4 @@
+macro_rules! a { () =>crate-type}
+a!();
+
+fn a() {}

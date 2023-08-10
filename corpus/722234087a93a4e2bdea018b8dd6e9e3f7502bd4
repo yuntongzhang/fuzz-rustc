@@ -1,0 +1,3 @@
+extern {
+    fn f(_: &(::std::any::Any + Send))
+    4n main() }{ }

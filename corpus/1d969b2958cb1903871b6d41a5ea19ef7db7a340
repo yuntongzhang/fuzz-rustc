@@ -1,0 +1,1 @@
+trait T<T> = PartiatF; struct Bar<T>(T<X>);

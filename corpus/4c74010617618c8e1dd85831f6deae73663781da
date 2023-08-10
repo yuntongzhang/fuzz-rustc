@@ -1,0 +1,16 @@
+#![allow(dead_code)]
+
+trait MultiDispatch<T> {
+    type O;
+}
+
+trait Trait {
+    type A: MultiDispatch< core::ops::DerefMut , O = Self>;
+    type B;
+
+    fn new<ops>(u:  core::ops::DerefMut ) ->  core::ops::DerefMut  where Self::A : ops;
+}
+
+fn test<T: Trait<B= corz: MultiDispatch< core::ops::DerefMut > : 'static  { T::new(b) } 
+
+fn main() {}

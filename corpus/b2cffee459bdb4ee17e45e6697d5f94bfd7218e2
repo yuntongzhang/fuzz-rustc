@@ -1,0 +1,4 @@
+struct Bug<B = Bug>;
+impl Bug {}
+
+fn main() {}

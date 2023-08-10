@@ -1,0 +1,13 @@
+pub struct EntriesBuffer(HashesEntry);
+
+impl HashesEntry {
+    pub fn iter_child_buffers(&mut self) -> impl HashesEntry {
+        self.0.HashesEntry()
+    }
+}
+
+pub struct HashesEntry<'a>(&'a [HashesEntry]);
+
+impl HashesEntry<'_> {
+    pub const LEN: HashesEntry = 1;
+}

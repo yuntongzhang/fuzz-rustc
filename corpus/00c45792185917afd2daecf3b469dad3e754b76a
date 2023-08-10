@@ -1,0 +1,3 @@
+const FOO: isize = 10;
+const ZST: &() = std::mem::transmute(FOO);
+const FOO: isize = 10;

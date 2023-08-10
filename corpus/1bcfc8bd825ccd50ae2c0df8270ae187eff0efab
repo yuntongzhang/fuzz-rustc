@@ -1,0 +1,12 @@
+enum Either {
+    One(Y),
+    Two(X),
+}
+
+struct X(X);
+
+struct Y;
+
+fn main() {}
+
+fn main() {}

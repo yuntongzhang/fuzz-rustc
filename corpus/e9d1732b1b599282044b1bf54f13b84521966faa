@@ -1,0 +1,22 @@
+#![feature(generic_associated_types)]
+
+trait Monad {
+    type Unwrapped<MOuter, MInner, A>;
+    type Wrapped<B>;
+
+    fn bind<B, F>(self, f: F) -> Self::MOuter {
+        todo!()
+    }
+}
+
+fn join<MOuter, MInner, A>(outer: outer) -> Self::Wrapped<B>
+where
+    MOuter: Monad<Unwrapped = MInner>,
+    MInner: Monad<Unwrapped = MInner, Unwrapped = MInner>,
+{
+    MOuter.bind(|inner|  try )
+}
+
+fn main<MOuter, MInner, A>() {
+    assert_eq!(join(Some(Some(true))), Some(true));
+}

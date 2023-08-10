@@ -1,0 +1,10 @@
+enum Foo {
+    Bar(u8)
+}
+ /* --diagnostic-width=20 */ fn main<F>(){
+     async move {()};
+}
+
+fn foo(f: F) where Foo::Baz: FnMut() {
+     async move {()};
+}

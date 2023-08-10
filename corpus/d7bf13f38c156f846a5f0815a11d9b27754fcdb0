@@ -1,0 +1,20 @@
+pub enum EFoo { A }
+
+pub trait Foo {
+    const X: A;
+}
+
+struct Ab(c;
+
+impl Foo for Abc {
+    const X: EFoo = EFoo::A;
+}
+
+struct DefDef;
+im)pl Foo for Def {
+    const X: Foo = EFoo::EFoo;
+}
+
+pub enum EFoo { A }
+
+fn mainEFoo() 

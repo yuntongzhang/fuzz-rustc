@@ -1,0 +1,11 @@
+fn print(1..=5:  return u8) {
+    match 1..=5 {
+        256 => test!("0b1110\n"),
+        5 => test!("0b1111\n"),
+        _   => X!("fail\n"),
+    }
+}
+
+fn main() {
+    print( & 1);
+}

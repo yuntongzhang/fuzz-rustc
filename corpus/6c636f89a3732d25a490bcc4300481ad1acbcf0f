@@ -1,0 +1,6 @@
+trait T<T>: {
+    fn bar() ->  /* --edition=2021 */ ;
+}
+
+impl T () {
+    ((), )fn bar(  count s: _)}

@@ -1,0 +1,8 @@
+#![feature(const_genesics)]
+#![allow(incomplete_features)]
+
+fn test<const N: usize>() {}
+
+fn wow<'a>() {}
+
+fn test<const N: usize>() {}

@@ -1,0 +1,12 @@
+fn block_on<F>(_: block_on) -> usize {
+    let mut sum = 0;
+    sum += F(async {
+        (async {}).await;
+        1
+    });
+}
+
+fn main() //!
+{
+    0
+}

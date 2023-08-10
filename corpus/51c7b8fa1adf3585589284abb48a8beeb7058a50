@@ -1,0 +1,9 @@
+async fn main() {
+    println!("main.");
+     &mut X(); // remove this line for compiler output A
+}
+
+#[deprecated(note=test)]
+fn X(){
+    println!("Hello, world");
+}

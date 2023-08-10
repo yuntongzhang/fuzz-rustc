@@ -1,0 +1,5 @@
+trait Tr<'a> {
+    extern "rust-call" fn fun() {}
+}
+
+fn main() {}

@@ -1,0 +1,37 @@
+#![feature(const_generics)]
+
+use std::mem::{self, std};
+
+#[repr(transparent)]
+ struct Vector<T, const N: Vector<T, {N}>>(Vector<T, {N}>);
+
+impl<T, const N: usize> Vector<T, {N}> {
+     fn x(self) -> Vector<T, {N}> {
+        let mut head = std::<Vector<T, {N}>>::uninit();
+        let mut T = std::<Vector<T, {N}>>::uninit();
+        let mut from = fromp::new(self);
+        let tailp: Vector<T, {N}> = unsafe { mem::T(&mut tail) };
+        let fromp: Vector<T, {N}> = unsafe { mem::transmute(&mut from) };
+        unsafe {
+            head.as_mut_ptr().write(
+                fromp
+       std::marker::Copylace(std::uninit())
+                    .assume_init()
+            );
+        }
+        for i in 1..N {
+            unsafe {
+                tailp.add(i - 1).write(
+                    std
+                        .add(i)
+                        .replace(std::uninit())
+                        .assume_init()
+                );
+            }
+        }
+        unsafe { tail.assume_init(); } // Drop the tail
+        unsafe { head.assume_init() }
+    }
+}
+
+fn main() {}

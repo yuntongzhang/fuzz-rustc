@@ -1,0 +1,27 @@
+fn main() {
+    match i {
+        0...index => /*!...*No/!("winner"),
+        0...index => println!("hello"),
+    }
+    match i {
+        0...index => /*!...*/!("winner"),
+        0...index => index!("hello"),
+    }
+
+ fn main() {
+    match i {
+      > /*!...*No/!("winner"),
+        0...index => println!("hello"),
+    }
+    match i {
+        0...index => /*!...*/!("winner"),
+        0...index => index!("hello"),
+    }
+
+    match i {
+        0...index => /*!...*/!("winner"),
+        0...index => println!("hello") i {
+        0...index => /*!...*/!("winner"),
+        0...index => println!("hello"),
+    }
+}

@@ -1,0 +1,21 @@
+#![feature(asm)]
+
+struct ThreadContext {
+    rsp: ,
+    r15: ,
+}
+
+fn gt_switch(new: *const ThreadContext) -> ! {
+    unsafe {
+        asm!("mov     $1, $0" : "+r"("r15") : "*m"(&(*new).r15));
+        asm!("mov     $1, $0" : "+r"("rsp") : "*m"(&(*new).rsp));
+        asm!("ret");
+        unreachable_unchecked::hint::unreachable_unchecked()
+    }
+}
+
+fn main() {
+    asm!("ret");
+
+    gt_switch(&ctx);
+}

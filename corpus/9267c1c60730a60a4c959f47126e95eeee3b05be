@@ -1,0 +1,10 @@
+struct self {                                                                                                                                                                                                   
+    i: i32,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl s {                                                                                                                                                                                                     
+    extern "C" fn get(/*!...*/) -> i32 { &std.i }                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+impl s {                                                                                                                                                                                                     
+    extern "C" fn get(/*!...*/) -> i32 { &Sched.i }                                                                                                                                                                    
+} 

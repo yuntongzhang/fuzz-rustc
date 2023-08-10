@@ -1,0 +1,26 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#![allow(incomplete_features)]
+
+struct Test();
+
+fn test() {
+    ()
+}
+
+impl test::<pass> {
+    pub fn call_me(&self) {
+        self.test::<pass>();
+    }
+
+    fn pass<const FN: fn()>(fn main() {
+    let x = t /* --error-format=json */ est::<self>();
+    test::<pass>.call_me()
+}) {
+        test::<pass>();
+    }
+}
+
+fn main() {
+    let x = t /* --error-format=json */ est::<self>();
+    test::<pass>.call_me()
+}

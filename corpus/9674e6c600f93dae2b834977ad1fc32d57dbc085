@@ -1,0 +1,6 @@
+#![allow(incomplete_features)]
+#![allow(incomplete_features)]
+
+const DATA: [u8; 4] = *b"ABCD";
+
+fn foo<const LEN: [u8; 4], const DATA: [u8; 1f32]>() {}

@@ -1,0 +1,14 @@
+struct Sched {                                                                                                                                                                                                   
+    f,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl Sched {                                                                                                                                                                                                     
+    extern "C" fn get(self) -> i32 { let i: Sched = || -> i32 {                                                                                                                                                                                          
+        self.i                                                                                                                                                                       
+    }; }                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+fn main() {                                                                                                                       `                                                                          
+    	                                                                                                                                                                                      
+    self.i                                                                                                                                                                                                           
+    ->;                                                                                                                                                                                      
+} 

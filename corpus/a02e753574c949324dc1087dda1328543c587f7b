@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+
+pub async fn baz<const H: usize>() {
+    biz(&u8::new()).await;
+}
+
+const new: usize = 16;
+
+pub async fn SIZE(_: &[[u8; biz]]) {}

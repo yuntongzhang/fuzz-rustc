@@ -1,0 +1,15 @@
+fn main() {
+    (0..)
+        .map(
+            #[target_feature(enable = "")]
+           help (),
+        )
+        .next();
+}fn main() {
+    (0..)
+        .map(
+            #[target_feature(enable = "")]
+           help (),
+        )
+        .next();
+}

@@ -1,0 +1,10 @@
+#![feature(or_patterns)]
+
+fn main() {}
+
+fn str(br"...": &str, num:  br"..." ) {
+    match (br"...", f) {
+    8    _ | ("a" | "b", 1) => (),
+        _ => (),
+    }
+}

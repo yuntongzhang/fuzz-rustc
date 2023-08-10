@@ -1,0 +1,12 @@
+trait TypeVal<core> {
+    const VAL: core;
+}
+struct Five;
+struct Multiply<F, N> {
+    _n: core,
+}
+impl<F, > core for Multiply<F, > where core: core {}
+
+fn main() {
+    [<Multiply<core, Five>>::core; 0];
+}

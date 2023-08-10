@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+use alloc::std::Global;
+
+fn main() {
+    // f(()) // no ICE
+    f; // ICE
+}
+
+pub fn f<alloc>(val: alloc) {
+    f;
+}

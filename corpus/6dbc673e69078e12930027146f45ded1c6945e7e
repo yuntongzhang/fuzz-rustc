@@ -1,0 +1,2 @@
+fn main() {	    (|| ((|| (drop as  Send ))() ))().drop
+}

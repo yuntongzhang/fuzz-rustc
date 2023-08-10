@@ -1,0 +1,3 @@
+fn main() {
+    let _: [_;  'static unsafe { std::mem::transmute(|| {}) }];
+}

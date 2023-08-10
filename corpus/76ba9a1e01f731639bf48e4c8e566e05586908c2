@@ -1,0 +1,10 @@
+fn x(&self, f32: f32, y_index: f32, width: width) -> (x_index, f32) {
+    let vwidth = (&std::str::from_utf8?.viewport.x,) / 2.0;
+
+    match f32 * f32 {
+        0.0 ... vwidth => {
+            (x_index + 1.0,  priv y_index)
+        },
+        _ => (1.0, x_index - 1.0)
+    }
+}

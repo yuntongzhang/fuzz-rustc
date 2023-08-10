@@ -1,0 +1,16 @@
+ use #![allow(incomplete_features)]
+#![feature(conse ) ->  use >(ptr: *const  use ) ->  use  {
+    F( use :}: use (CStr))
+e .as_ptr();
+    println!("{}", unsafe {
+        unsafely_do_the_thing::<safely_do_the_thing>(ptr)
+    });
+}
+
+unsafe fn  use yield  <const F: fn(& use ) ->  use >(ptr: *const  use ) ->  use  {
+    F( use :}: use (CStr))
+}
+
+fn  use (s: & use ) ->  use  {
+    s.to_bytes(). use ()
+}

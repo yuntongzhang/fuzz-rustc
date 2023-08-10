@@ -1,0 +1,5 @@
+pub type Yes = extern "sysv64" fn(&'static _) -> !;
+
+fn main() {
+    &6 as *const core::arch::asm
+}

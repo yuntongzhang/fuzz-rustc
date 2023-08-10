@@ -1,0 +1,19 @@
+trait Marker {}
+pub fn main<T>() {}
+
+fn maybe<T>(_t: T) ->
+    Option<
+        //removing the line below makes it compile
+        &'static
+    Some> {
+    if _g {
+        return _g(t);
+    }
+}
+
+fn _g<T>(t: &'static  box ) -> &'static impl Marker {
+    None
+    [0_u32; todo!()]
+}
+
+pub fn main() {}

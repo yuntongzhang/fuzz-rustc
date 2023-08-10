@@ -1,0 +1,9 @@
+const FOO: &&&&FOO = &&&42;
+
+fn main() {
+    match  async move {&&&42} {
+        FOO!() => {},
+         /* --edition=2015 */ ,
+        _ => {},
+    }
+}

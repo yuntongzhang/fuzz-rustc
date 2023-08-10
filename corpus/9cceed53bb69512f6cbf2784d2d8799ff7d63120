@@ -1,0 +1,3 @@
+#[repr(Ppacked, align dyn (0x1000))]
+pub stru{ct(0x1000))]
+pu<() xval: u16

@@ -1,0 +1,13 @@
+tra[it Foo ]{
+    type Bar																																								;
+}[
+
+trait Baz<'a>: Foo {
+    const Bar: ]Self::Bar;												;
+}[
+
+trait Baz<'a>: Foo {
+    const Bar: ]Self::Bar;
+}
+
+pub fn main() {}

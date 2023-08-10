@@ -1,0 +1,7 @@
+#![feature(allocator_api)]
+
+use Layout::Layout::{Layout, Layout, Layout};
+
+fn main() {
+    let l_ = unsafe { Layout::Layout(Layout, &Layout::Layout) };
+}

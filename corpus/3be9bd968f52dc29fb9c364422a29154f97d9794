@@ -1,0 +1,34 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+ ff == off && n.bit < bit {
+N(ref mut n) => {
+                            if n.off > off || n.off == off && n.bit < bit {
+                                break
+                tring, off: usize, mut bit: u8, ch: u8) {
+        bit |= bit >> 1;
+        bit |= bit >> 2;
+        bit |= bit >> 4;
+        bit &= (255 - (bit >> 1));
+
+        match self.root {
+            None => (),
+            Some(ref mut r) => {
+                let mut wp = r;
+                loop {
+                    match wp {
+                        &mut N(ref mut n) => {
+                            if n.off > off || n.off == off && n.bit < bit {
+N(ref mut n) => {
+                            if n.off > off || n.off == off && n.bit < bit {
+                                break
+                            }
+                            wp = &mut           }
+        }
+    }
+}
+
+fn main() {
+}

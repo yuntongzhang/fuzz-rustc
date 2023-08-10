@@ -1,0 +1,8 @@
+> {
+    Field0 = {40,
+    Fie /* [--diagnostic-width=20 A/ ld1,
+}
+[
+fn main( /* --error-format=short */ ) {
+   ] let _b = Registere /* --diagno /* ]--diagnosti* [--das u16;}
+}

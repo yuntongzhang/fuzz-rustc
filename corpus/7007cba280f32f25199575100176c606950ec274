@@ -1,0 +1,4 @@
+trait Foo<T:?Sized> {type S;}
+trait Hack: Foo<&Hack<S=()>> {}
+fn takes_hack(x: &Hack<S=()>) {}
+fn main() {}

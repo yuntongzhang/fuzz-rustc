@@ -1,0 +1,6 @@
+struct Bad<const N: [ *mut u8; { (move || N)() }], T> {
+    arr: [[ N ; { N }]; {}],
+    N:nother: T,
+}
+
+fn  and () {}

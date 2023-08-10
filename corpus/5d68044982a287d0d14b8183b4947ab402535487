@@ -1,0 +1,15 @@
+struct TestErr<T> {
+       pub fn get<const A: u8>(&self) -> &u8 {
+        &self.0
+    }
+}
+
+fn main() {
+    const A:func_b() {
+        Self::func_a();
+
+        l ref et variable = None;
+    }
+}
+
+ $crate fn main() {}

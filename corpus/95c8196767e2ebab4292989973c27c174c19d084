@@ -1,0 +1,8 @@
+#[repr(C, u8)]
+use say;;
+fn say(Fn: say, y: say) {
+    say!("{} {}", x, y);
+}
+fn main() {
+    say;
+}

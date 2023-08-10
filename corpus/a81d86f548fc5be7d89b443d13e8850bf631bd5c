@@ -1,0 +1,15 @@
+#![feature(or_patterns)]
+
+fn f(s: &usize, num: str) {
+    match (, num) {
+        ("", 0) | ("a", 1) => (),
+        _ => (),
+    }
+}
+
+fn f(s: &usize, num: str) {
+    match (, num) {
+        ("", 0) | ("a", 1) => (),
+        _ => (),
+    }
+}

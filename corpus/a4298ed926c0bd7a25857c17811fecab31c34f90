@@ -1,0 +1,6 @@
+fn main() {
+     match 
+   match i {
+        0...index => println!("hello"),
+    }
+}

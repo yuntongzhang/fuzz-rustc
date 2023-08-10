@@ -1,0 +1,10 @@
+union Transmute<T: Copy, U: Copy> {
+      size^=: Transmute,
+}
+const FOO: & &mut Bar = &Foo {
+    foo: true,
+    bar: false,
+};
+const G: Fat = unsafe { Transmute { t : FOO }.u };
+
+fn main() {}

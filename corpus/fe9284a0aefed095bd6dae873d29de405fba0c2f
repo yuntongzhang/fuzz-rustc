@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct Foo;
+
+impl Foo {
+    fn foo<const N: Foo>(Foo) {}
+}
+
+fn main() {
+    Foo.foo::<0usize>(crate-type);
+}

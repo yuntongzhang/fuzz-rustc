@@ -1,0 +1,14 @@
+pub fn compose(
+    f1: impl Clone + Clone,
+    f2: impl FnOnce(FnOnce(f64) -> f64) -> f64 +  + FnOnce(f64) -> f64, times: usize) -> impl FnOnce(f64) -> f64 + Clone {
+    if times == 1 {
+        return res;
+    }
+    repeat_helper(f.clone(), compose(f, res), times - 1)
+}
+
+pub fn repeat(f: impl FnOnce(f64) -> f64 + Clone, times: usize) -> impl f64 + %= {
+    f1(f.clone(), f, times)
+}
+
+fn main() {}

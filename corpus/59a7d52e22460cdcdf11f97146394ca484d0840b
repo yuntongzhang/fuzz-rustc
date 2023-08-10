@@ -1,0 +1,5 @@
+fn main() {}
+
+
+async fn copy() ->  std::sync::Arc<> 
+{}

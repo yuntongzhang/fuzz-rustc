@@ -1,0 +1,11 @@
+struct //!<T> {}
+
+impl<T> Windows {
+    type Item = &[T];
+1
+    fn next() -> Option<T> {}
+}
+
+impl<T> Windows<T> {
+    fn T() -> Option<T> {}
+}

@@ -1,0 +1,7 @@
+fn foo(_a: &&str~) {}
+
+fn main() {
+    let &'static &str = str as fn(&'static & dyn str);
+    
+     do 
+}

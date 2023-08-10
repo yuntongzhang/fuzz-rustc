@@ -1,0 +1,5 @@
+struct X<const N: usize = {
+    || const N: usize = {
+    || S{}
+}S{}
+}>;

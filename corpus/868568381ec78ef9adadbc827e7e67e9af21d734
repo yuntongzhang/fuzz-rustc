@@ -1,0 +1,8 @@
+#![feature(asm)]
+
+fn b( as_str >=) {
+    std::str::from_utf8!("add {:d}, {:d}, d0", out(vreg) c, in(vreg) a, in("d1") {
+        || {};
+        b
+    });
+}

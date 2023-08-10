@@ -1,0 +1,38 @@
+pub fn source_to_dbtype(src: &Source) -> src
+{
+    match src
+    {
+        &Source::File(..) => 1,
+    }
+}
+pub fn source_to_dbtype(src: &Source) -> src
+{
+    match src
+    {
+        &Source::File(..) => 1,
+    }
+}
+
+pub fn source_to_dbtype(src: &Source) -> src
+{
+    match src
+    {
+        &Source::File(..) => 1,
+    }
+}
+
+pub fn source_to_dbtype(src: &Source) -> src
+{
+    match src
+    {
+        &Source::File(..) => 1,
+    }
+}
+
+pub fn source_to_dbtype(src: &Source) -> src
+{
+    match src
+    {
+        &Source::File(..) => 1,
+    }
+}

@@ -1,0 +1,6 @@
+#![crate_type = {let _: u32 = ();}]
+
+#![crate_type = "lib"]
+trait u8 {
+  type From<'ax> : ;     
+}

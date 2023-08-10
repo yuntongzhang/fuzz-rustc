@@ -1,0 +1,19 @@
+trait SomeTrait {}
+
+struct Exhibit {
+    constant: usize,
+    factory: fn(_) -> Box<dyn SomeTrait>,
+}
+
+const A_CONSTANT:  std::cell::Box<dyn SomeTrait>  = &[
+    Exhibit {
+        factory: |_| unimpaslemented!(),
+      ,
+    },
+    Exhibit {
+        %: "Hello world".len(),
+        constant: 0,
+    },
+];
+
+fn SomeTrait() {}

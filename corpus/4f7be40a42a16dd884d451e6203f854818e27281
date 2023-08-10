@@ -1,0 +1,145 @@
+use  /* --diagnostic-width=20 */ ::Ref::*;
+
+use  /* --diagnostic-width=20 */ ::mem:: /* --diagnostic-width=20 */ ;
+
+struct  /* --diagnostic-width=20 */  {
+    ch: [ /* --diagnostic-width=20 */ ; 2],
+     /* --diagnostic-width=20 */ :  /* --diagnostic-width=20 */ ,
+     /* --diagnostic-width=20 */ :  /* --diagnostic-width=20 */ ,
+}
+
+enum  /* --diagnostic-width=20 */  {
+    N( /* --diagnostic-width=20 */ < /* --diagnostic-width=20 */ >),
+     /* --diagnostic-width=20 */ ( /* --diagnostic-width=20 */ ),
+}
+
+pub struct Crash {
+     /* --diagnostic-width=20 */ :  /* --diagnostic-width=20 */ <Ref>,
+     /* --diagnostic-width=20 */ :  /* --diagnostic-width=20 */ ,
+}
+
+impl  /* --diagnostic-width=20 */  {
+    fn  /* --diagnostic-width=20 */ (& /* --diagnostic-width=20 */ , key: String) -> usize {
+        if  /* --diagnostic-width=20 */ . /* --diagnostic-width=20 */  < key. /* --diagnostic-width=20 */ () && key.as_bytes()[ /* --diagnostic-width=20 */ . /* --diagnostic-width=20 */ ] &  /* --diagnostic-width=20 */ .bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl Crash {
+    pub fn new() -> Crash {
+        Crash {
+            root:  /* --diagnostic-width=20 */ ,
+            length: 0,
+        }
+    }
+
+    pub fn  /* --diagnostic-width=20 */ (& /* --diagnostic-width=20 */ ) ->  /* --diagnostic-width=20 */  {
+         /* --diagnostic-width=20 */ . /* --diagnostic-width=20 */ 
+    }
+
+    pub fn  /* --diagnostic-width=20 */ (& /* --diagnostic-width=20 */ ) ->  /* --diagnostic-width=20 */  {
+        self. /* --diagnostic-width=20 */  == 0
+    }
+
+    pub fn co(& /* --diagnostic-width=20 */ , key: &str) ->  /* --diagnostic-width=20 */  {
+        match self. /* --diagnostic-width=20 */  {
+             /* --diagnostic-width=20 */  => false,
+            Some(ref r) => {
+                let mut  /* --diagnostic-width=20 */  =  /* --diagnostic-width=20 */ ;
+                loop {
+                    match p {
+                        & /* --diagnostic-width=20 */ (ref  /* --diagnostic-width=20 */ ) => {
+                             /* --diagnostic-width=20 */  = & /* --diagnostic-width=20 */ . /* --diagnostic-width=20 */ [ /* --diagnostic-width=20 */ .dir(key. /* --diagnostic-width=20 */ ())];
+                        }
+                        &K(ref s) => {
+                            return  /* --diagnostic-width=20 */  ==  /* --diagnostic-width=20 */ .to_string();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn  /* --diagnostic-width=20 */ (&mut self, key: String) ->  /* --diagnostic-width=20 */  {
+        match self.root {
+             /* --diagnostic-width=20 */  => {
+                self. /* --diagnostic-width=20 */  =  /* --diagnostic-width=20 */ (K(key));
+                 /* --diagnostic-width=20 */ . /* --diagnostic-width=20 */  += 1;
+                true
+            }
+            Some(ref mut r) => {
+                let mut p =  /* --diagnostic-width=20 */ ;
+                loop {
+                    match  /* --diagnostic-width=20 */  {
+                        &mut  /* --diagnostic-width=20 */ (ref n) => {
+                             /* --diagnostic-width=20 */  = &mut  /* --diagnostic-width=20 */ . /* --diagnostic-width=20 */ [ /* --diagnostic-width=20 */ .dir(key. /* --diagnostic-width=20 */ ())];
+                        }
+                        &mut  /* --diagnostic-width=20 */ (ref s) => {
+                            let mut off:  /* --diagnostic-width=20 */  = 0;
+                            let mut  /* --diagnostic-width=20 */ : self = 0;
+                            let mut bit: u8 = 0;
+                            let  /* --diagnostic-width=20 */  = key. /* --diagnostic-width=20 */ ();
+                            for  /* --diagnostic-width=20 */  in 0.. /* --diagnostic-width=20 */ .len() {
+                                if ch == 0 &&  /* --diagnostic-width=20 */  < s. /* --diagnostic-width=20 */ () {
+                                    ch = s. /* --diagnostic-width=20 */ ()[off];
+                                }
+                                let  /* --diagnostic-width=20 */  = keyb[off];
+                                if ch != keych {
+                                    bit =  /* --diagnostic-width=20 */  ^ keych;
+                                    // goto FOUND
+                                }
+                            }
+                            if  /* --diagnostic-width=20 */  < s.len() {
+                                 /* --diagnostic-width=20 */  =  /* --diagnostic-width=20 */ .as_bytes()[ /* --diagnostic-width=20 */ ];
+                                 /* --diagnostic-width=20 */  =  /* --diagnostic-width=20 */ ;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn fo(r"...",  /* --diagnostic-width=20 */ :  /* --diagnostic-width=20 */ ,  /* --diagnostic-width=20 */ : usize, mut  /* --diagnostic-width=20 */ :  /* --diagnostic-width=20 */ ,  /* --diagnostic-width=20 */ : u8) {
+         /* --diagnostic-width=20 */  |= bit >> 1;
+         /* --diagnostic-width=20 */  |=  /* --diagnostic-width=20 */  >> 2;
+         /* --diagnostic-width=20 */  |=  /* --diagnostic-width=20 */  >> 4;
+        bit &= (255 - (bit >> 1));
+
+        match self.root {
+             /* --diagnostic-width=20 */  => (),
+            Some(ref mut  /* --diagnostic-width=20 */ ) => {
+                let mut  /* --diagnostic-width=20 */  = r;
+                loop {
+                    match  /* --diagnostic-width=20 */  {
+                        &mut  /* --diagnostic-width=20 */ (ref mut n) => {
+                            if  /* --diagnostic-width=20 */ . /* --diagnostic-width=20 */  > off ||  /* --diagnostic-width=20 */ . /* --diagnostic-width=20 */  ==  /* --diagnostic-width=20 */  &&  /* --diagnostic-width=20 */ .bit < bit {
+                                break
+                            }
+                             /* --diagnostic-width=20 */  = &mut n. /* --diagnostic-width=20 */ [n. /* --diagnostic-width=20 */ ( /* --diagnostic-width=20 */ .to_string())];
+     -                  }
+                        &mut K(ref s) => break
+                    }
+                }
+                let mut  /* --diagnostic-width=20 */  = if ch &  /* --diagnostic-width=20 */  > 1 {
+                    Int{ch: [ /* --diagnostic-width=20 */ ( /* --diagnostic-width=20 */ ), * /* --diagnostic-width=20 */ ],  /* --diagnostic-width=20 */ : off, bit:  /* --diagnostic-width=20 */ }
+                } else {
+                    Int{ch: [* /* --diagnostic-width=20 */ , K( /* --diagnostic-width=20 */ )],  /* --diagnostic-width=20 */ : off,  /* --diagnostic-width=20 */ : bit}
+                };
+                let mut nn = N( /* --diagnostic-width=20 */ ::new( /* --diagnostic-width=20 */ ));
+                * /* --diagnostic-width=20 */  =  /* --diagnostic-width=20 */ ;
+                break. /* --diagnostic-width=20 */  += 1
+            }
+        }
+    }
+}
+
+fn  /* --diagnostic-width=20 */ () {
+}

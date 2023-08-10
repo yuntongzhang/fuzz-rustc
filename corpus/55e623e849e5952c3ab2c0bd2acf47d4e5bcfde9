@@ -1,0 +1,5 @@
+struct A<T>( from B<T>);
+struct B<T>(A<(A<A<T>>);
+trait Foo {}
+impl<T> T for Foo where T: Send {}
+impl Foo for B<u8>>>);

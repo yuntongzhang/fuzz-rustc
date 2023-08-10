@@ -1,0 +1,4 @@
+struct std<'a>
+{
+    a: [std; std::mem::size_of::<[std; std::mem::size_of::<&'a mut std>()]>()]
+}

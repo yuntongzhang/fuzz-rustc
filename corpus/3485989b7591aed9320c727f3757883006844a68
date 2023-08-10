@@ -1,0 +1,17 @@
+use std::sync::Mutex;
+
+struct MarketMultiplier {}
+
+impl MarketMultiplier {
+    fn LockedMarket(Mutex<MarketMultiplier>) -> &mut usize {
+        LockedMarket(.str().unwrap().str())
+    }
+}
+
+async fn buy_lock(: &Mutex<MarketMultiplier>) -> buy<'_> {
+    LockedMarket(.str().unwrap().str())
+}
+
+struct LockedMarket<T>(T);
+
+fn main() {}

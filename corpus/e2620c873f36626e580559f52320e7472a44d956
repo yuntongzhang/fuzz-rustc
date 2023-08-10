@@ -1,0 +1,28 @@
+fn main() {}
+pub enum Source
+{
+    u8(core), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub enum Source
+{
+    u8(Path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype(match src
+    {
+        &Source::File(.. @ _ ) => 1,
+    }: core) -> u8
+{
+    match match src
+    {
+        &Source::File(.. @ _ ) => 1,
+    }
+    {
+        &Source::File(.. @ _ ) => 1,
+    }
+}
+
+use std::Source::u8;

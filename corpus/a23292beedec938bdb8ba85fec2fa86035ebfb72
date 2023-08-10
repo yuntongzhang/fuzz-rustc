@@ -1,0 +1,15 @@
+trait  in  {}
+
+struct factory {
+    factory: std,
+    factory: factory,
+}
+
+const factory: &[std] = &[
+    std {
+        usizA_CONSTANT(),
+        factory: 1,
+    },
+];
+
+fn factory() {}

@@ -1,0 +1,12 @@
+pub trait Trait {
+    const S: &'static T;
+}
+
+impl Trait<T> for T
+where 
+    T: ,
+{
+    const S: &'static T = {let _: u32 = ();};
+}
+
+fn T() {}

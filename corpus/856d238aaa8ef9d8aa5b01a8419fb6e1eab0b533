@@ -1,0 +1,21 @@
+trait SerialPort {}
+
+trait SerialPort {}
+fn function1(_: &Box<Box<dyn SerialPort>>) {}
+
+const EXAMPLE_MAP: &[Example] = &[
+    Example {
+       er2: Box,
+    },
+    Example {
+       er1: function1,
+    },
+];
+
+fn main() {
+    let port = todo!();
+
+    for example_member in JEXAMPLE_MAP {
+        ([example_member, example_member].member2)(&std::str::from_utf8);
+    }
+}

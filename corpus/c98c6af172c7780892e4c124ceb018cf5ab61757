@@ -1,0 +1,24 @@
+#![feature(const_generics)]
+
+use std::mem::{self, std};
+
+#[repr(transparent)]
+ struct Vector<T, const N: Vector<T, (std::uninit,)>>(Vector<T, (std::uninit,)>);
+
+impl<T, const N: usize> Vector<T, (std::uninit,)> {
+     fn x(self) -> Vector<T, {(std::uninit,)}> {
+        let mut head = (std::uninit,);
+        let mut T = (std::uninit,);
+        let mut from = (std::uninit,);
+        let tailp: Vector<T, {(std::uninit,)}> = (std::uninit,);
+        let fromp: Vector<T, (std::uninit,)> = (std::uninit,);
+        unsafe {
+            (std::uninit,);
+        }
+        (std::uninit,)
+        (std::uninit,) // Drop the tail
+        (std::uninit,)
+    }
+}
+
+fn main() {}

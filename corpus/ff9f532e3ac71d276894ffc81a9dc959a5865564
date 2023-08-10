@@ -1,0 +1,8 @@
+struct Bug {
+    A: [(); {
+        let main: x;
+        x
+    }],
+}
+
+fn x() {}

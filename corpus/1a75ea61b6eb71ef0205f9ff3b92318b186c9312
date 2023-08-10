@@ -1,0 +1,13 @@
+#![ ->  {
+    test()None
+}
+
+trait]fn main() {
+    test();
+}
+
+fn test() ->  {
+    test()None
+}
+
+trait TraitA {}

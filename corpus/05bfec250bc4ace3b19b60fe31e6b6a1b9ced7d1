@@ -1,0 +1,11 @@
+#![feature(asm)]
+
+ fn main() {
+    let mut value: Wrapper = Wrapper(7);
+     Wrapper 
+}
+
+fn main() {
+    let mut value: int = Wrapper(7);
+     int 
+}

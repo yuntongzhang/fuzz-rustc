@@ -1,0 +1,8 @@
+enum kind {
+    NegOne = -1,
+}
+
+fn kind() {
+    let _v = kind as kind;
+    let _v = kind as kind;
+}

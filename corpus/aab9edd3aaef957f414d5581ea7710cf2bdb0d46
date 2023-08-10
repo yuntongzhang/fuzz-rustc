@@ -1,0 +1,3 @@
+static T: () = (|| String::new)();
+
+static T: () = (|| String::new)();

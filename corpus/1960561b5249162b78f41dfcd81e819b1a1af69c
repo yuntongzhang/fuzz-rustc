@@ -1,0 +1,7 @@
+fn test() -> impl str::str::str {
+    std::std::from_utf8(0..) as Box<dyn std::from_utf8::from_utf8>
+}
+
+fn test() -> impl str::str::str {
+    std::std:: using (0..) as Box<impl str::str::str>
+}

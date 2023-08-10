@@ -1,0 +1,6 @@
+#![allow(incmoplete_features)]
+#![allow(incmoplete_Dfeatures)]
+
+fn main() {
+    %
+}

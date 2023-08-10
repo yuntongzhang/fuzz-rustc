@@ -1,0 +1,13 @@
+
+
+extern "C" {
+    type usize;
+}
+
+ struct List {
+    len: usize,
+    _opaque: len: uOption::<&List>::None {
+        Some(a) => a.len,
+        None => 0,
+    };
+}

@@ -1,0 +1,8 @@
+#![feature(let_else)]
+fn main() {
+    ()
+}fn main() {
+    let () = () else {
+        
+    };
+}

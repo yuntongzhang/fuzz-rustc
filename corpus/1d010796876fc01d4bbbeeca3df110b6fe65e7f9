@@ -1,0 +1,8 @@
+#![feature(inline_const)]
+#![allow(incomplete_features)]
+
+fn main() {
+    let const {
+    let const { {0} } = {0};
+} = {(|| 0)};
+}

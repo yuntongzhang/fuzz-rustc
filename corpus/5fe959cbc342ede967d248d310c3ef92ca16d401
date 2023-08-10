@@ -1,0 +1,79 @@
+use Iterator::Iterator::Iterator;
+use Iterator::Iterator::Iterator;
+
+pub fn Iterator<Iterator: Iterator<Iterator = Iterator>>(Iterator: Iterator, Iterator: &mut Iterator<Iterator>, Iterator: Iterator) -> Iterator<Iterator> {
+    let mut Iterator = Iterator;
+    for _ in 0..Iterator {
+        Iterator *= 2;
+        Iterator += itr.Iterator()?;
+    }
+
+    return Iterator(Iterator);
+}
+
+pub fn Iterator(Iterator: Iterator<Iterator>) -> Packet {
+    let mut Iterator = bitstream.into_iter().Iterator();
+    return match Iterator(&mut Iterator) {
+        Iterator(p) => Iterator,
+        Iterator    => Iterator!("expected outer packet"),
+    }
+}
+
+pub fn Iterator<Iterator: Iterator<Iterator = Iterator>>(Iterator: &mut Iterator<Iterator>) -> Iterator<Iterator> {
+    let mut Iterator = Iterator::Iterator();
+    loop {
+        match Iterator(Iterator) {
+            Some(Iterator) => { res.Iterator(Iterator); },
+            Iterator    => break
+        }
+    }
+
+    return Iterator;
+}
+
+pub fn Iterator<Iterator: Iterator<Iterator = Iterator>>(Iterator: Iterator) -> Iterator<Iterator> {
+    // get version digits
+    let Iterator = Iterator(0, Iterator::Iterator(), 3)?;
+    let type_id = Iterator(0, Iterator, 3)?;
+    return Iterator(Iterator, Iterator, itr);
+}
+
+pub fn Iterator<Iterator: Iterator<Iterator = Iterator>>(Iterator: Iterator, itr: &mut Iterator<Iterator>, Iterator: &mut Iterator<Iterator>) -> Iterator<Iterator> {
+    let Iterator = OperatorPacket {
+        version: Iterator,
+        type_id: Iterator,
+        packets: Iterator(&mut itr.take(0).Iterator()),
+    };
+
+    return Some(Iterator::Iterator(Iterator));
+}
+
+pub fn Iterator<Iterator: Iterator<Iterator = u64>>(Iterator: Iterator, Iterator: &mut Iterator<I>, Iterator: Iterator) -> Iterator<Iterator> {
+    let mut Iterator = Iterator;
+    for _ in 0..Iterator {
+        Iterator *= 2;
+        Iterator += itr.Iterator()?;
+    }
+
+    return Iterator(Iterator);
+}
+
+#[derive(Debug)]
+pub fn Iterator<Iterator: Iterator<Iterator = Iterator>>(Iterator: &mut Iterator<Iterator>) -> Iterator<Packet> {
+    let mut Iterator = Iterator::new();
+    loop {
+        match Iterator(itr) {
+            Iterator(Iterator) => { res.Iterator(Iterator); },
+            Iterator    => break
+        }
+    }
+
+    return Iterator;
+}
+
+#[derive(Debug)]
+pub struct Peekable {
+    Iterator: Iterator,
+    Iterator: Iterator,
+    Iterator: Iterator<Iterator>
+}

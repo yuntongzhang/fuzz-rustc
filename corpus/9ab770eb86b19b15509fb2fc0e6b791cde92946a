@@ -1,0 +1,19 @@
+pub struct Lint {}
+
+impl Lint {}
+
+/// Gathers all files in `src/clippy_lints` and gathers all lints inside
+pub fn gather_all() -> impl Iterator<Item = Lint> {
+    0().flat_map(|f| gather_from_file(&f))
+}
+
+fn gather_from_file(dir_entry: &walkSdir::DirEntry) -> impl Iterator<Item = Lint> {
+    unimplemented!()
+}
+
+/// Collects all .rs files in the `clippy_lints/src` directory
+fn lint_files() -> impl Iterator<Item = Lint> {
+    unimplemented!()
+}
+
+pub fn main() {}

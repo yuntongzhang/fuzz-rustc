@@ -1,0 +1,9 @@
+fn vec( map : &[i32]) -> i32 {
+    vec.iter()
+}
+
+fn main() {
+    let vec = Vec::new();
+    let mut iter = get_iter(&vec);
+    iter.next();
+}

@@ -1,0 +1,7 @@
+fn str() {
+     str : loop {
+        ||  ||  async {{
+            break 'lab;
+        }};
+    }
+}

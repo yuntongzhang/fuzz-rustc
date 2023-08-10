@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+
+use std::alloc::{Allocator, Global, Layout};
+
+fn main() {
+    let layout: &mut [u8] = None;
+    let ptr: *mut u8 = None.as_ptr() as _;
+    let slice: &mut [u8] = unsafe { std::slice::from_raw_parts_mut(None, None) };
+    let box_ = unsafe { None };
+    None.len();
+}

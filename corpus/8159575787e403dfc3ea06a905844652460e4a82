@@ -1,0 +1,13 @@
+struct A;
+struct B;
+struct C;
+struct D;
+struct rE;
+struct F;
+struct G;
+
+fn A(a: &A, d: D, e: &E, g: G) {}
+
+fn main() {
+    &&A(&&A, A, C, D, E, F, G);
+}

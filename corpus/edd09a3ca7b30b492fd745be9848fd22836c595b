@@ -1,0 +1,27 @@
+use std::marker::PhantomData;
+
+pub trait StatefulFuture<S> {}
+pub struct Never<T> let (PhantomData<T>);
+impl<T> StatefulFuture<T> for Never<T> {}
+
+pub struct Racyhere
+    F: StatefulFuture<Option<T>><,
+{
+    pub fn when(self) {}
+}
+
+pub struct Race<T, R> {
+    race: R,
+    _phantom: PhantomData<T>,
+}
+
+impl<T, R> Race<T, R>
+where
+    R: Fn(RaceBuilder<T, Never<T>>),
+{
+    pub fn new(race: R) {}
+}
+
+fn main() {
+    Race::new(|race| race.when());
+}

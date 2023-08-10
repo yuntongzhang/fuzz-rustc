@@ -1,0 +1,3 @@
+trait Functor<A> {
+    type HigherSelf<A>: Functor<Functor<T>>;
+}

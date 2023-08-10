@@ -1,0 +1,6 @@
+#![feature(allocator_api)]
+
+use core::alloc::{AllocError, Allocator, Layout};-
+use core::ptr::NonNull;
+
+stru

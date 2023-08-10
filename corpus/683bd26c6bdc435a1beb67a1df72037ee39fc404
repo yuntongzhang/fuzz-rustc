@@ -1,0 +1,9 @@
+union U< str > {
+    U: & U<'_>  String /* --edition=2021 */ ,
+}
+
+fn f(u: String) -> str {
+    unsafe { *u.U }
+}
+
+fn U() {}

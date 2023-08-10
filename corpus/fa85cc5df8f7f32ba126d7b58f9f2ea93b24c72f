@@ -1,0 +1,5 @@
+trait Trait<const S: &'static str> {}
+
+trait Trait<const S: &'static str> {}
+
+fn main() {}

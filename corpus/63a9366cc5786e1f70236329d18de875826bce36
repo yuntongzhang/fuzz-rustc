@@ -1,0 +1,5 @@
+pub fn foo<'a>(Clone) where &'a mut (): Clone {
+    <&mut () as foo: &'a mut ()>::clone(&s);
+}
+
+!

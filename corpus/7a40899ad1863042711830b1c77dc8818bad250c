@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![crate_type = "lib"]
+#![crate_type = "lib"]
+
+type N<N, const N: N<N, N>, N> = [N; N];
+
+pub fn N<const N: N = { (N as (N,N)) }, const N: N>(_: (N,N), _: N)
+    -> N
+{
+    N!()
+}

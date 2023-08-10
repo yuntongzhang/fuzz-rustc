@@ -1,0 +1,5 @@
+fn test() -> impl str::str::std {
+    std::std::std(0..) as Box<dyn Box<dyn std::test::std>>
+}
+
+pub fn mainpub() {}

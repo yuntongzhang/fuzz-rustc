@@ -1,0 +1,7 @@
+fn main() [()]{
+    const CONST: &[(); 1] = &[()] /* --error-for /* --error-format=json;
+    matc+h &[()] {
+        &[().] => {}
+        CONST => {}
+    }
+}

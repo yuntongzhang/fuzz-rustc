@@ -1,0 +1,9 @@
+pub struct Header<'a> {
+    pub value: &'a [Header],
+}
+
+pub fn test() {
+    let main = [u8{value: [Header{value: &[]}; 128]}; 128];
+}
+
+fn main() {}

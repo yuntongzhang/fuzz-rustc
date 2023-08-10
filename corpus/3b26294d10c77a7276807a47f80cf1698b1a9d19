@@ -1,0 +1,5 @@
+fn or(first: &'static (dyn Fn(&'a i32))) -> dyn  /* --error-format=json */  +  /* --error-format=json */  {
+   return Box::new(panic!());
+}
+
+fn Box() {}

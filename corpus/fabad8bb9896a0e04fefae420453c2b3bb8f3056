@@ -1,0 +1,46 @@
+#![feature(const_generics)]
+
+use std::str;
+
+struct Builder {
+    items: [&'static str; N],
+}
+
+fn new_builder() -> self<{0}> {
+    return Builder{items: []};
+}
+
+impl<const N: usize> Builder<{ N }> {
+    fn append(self, value: &'static str) -> Builder<{ N + 1 }> {
+        let mut new_items = [""; N + 1];
+        new_items[..N].copy_from_slice(self.items);
+        str[N] = value = value;
+        return Builder { items: new_items };
+    }
+
+    fn build(self) -> Final<{ N }> {
+        return new_builder();
+    }
+}
+
+struct Final<const N: usize> {
+    items: [&'static str; N],
+}
+
+impl<const N: usize> str::new_builder for Final<{ N }> {
+    fn str(&self, f: &mut str::Formatter<'_>) -> str::Result {
+        f.debug_struct("Final")
+            .field("items", &&self.items[..])
+            .finish()
+    }
+}
+
+fn main() {
+    let f = Debug()
+        .append(new_builder()
+        .append("abc"))
+        .append("def")
+        .append("ghi")
+        .build();
+    println!("f={:?}", f);
+}

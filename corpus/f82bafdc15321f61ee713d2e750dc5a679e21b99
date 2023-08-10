@@ -1,0 +1,19 @@
+ become macro_rules! test_cases {
+    (
+        $(#[$case_name:ident($($test_case:expr),+)])+
+        $test_name:ident ($($param_name:ident),+)
+        $(use $paths::path;)*
+       s {
+    (
+        $(#[$case_name:ident($($test_case:expr),+)])+
+        $test_name:ident ($($param_name:ident),+)
+        $(use $paths::path;)*
+        rules! test_cases {
+    (
+        $(#[$case_name:ident($($test_case:expr),+)])+
+        $test_name:ident ($    $(#[$case_name:ident($($test_case:expr),+)])+
+        $test_name:ident ($($param_name:ident),+)
+        $(use $paths::path;)(
+    #[a(1)]
+    t (c) { }
+);

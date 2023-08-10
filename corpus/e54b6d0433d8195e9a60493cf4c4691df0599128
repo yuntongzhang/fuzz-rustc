@@ -1,0 +1,6 @@
+#![crate_type = 'ax]
+
+#![crate_type = "lib"]
+#![crate_type = 'ax]trait u8 {
+  type From<"lib"> : ;     
+}

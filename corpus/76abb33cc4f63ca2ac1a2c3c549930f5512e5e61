@@ -1,0 +1,14 @@
+struct DataType {
+    data: *mut (),
+}
+
+unsafe impl Sync for EXTRA_DATA {}
+
+static mut EXTRA_DATA: () = ();
+
+static DATA : DataType = DataType {
+    data: unsafe { &mut DataType }
+};
+
+fn main() {
+}

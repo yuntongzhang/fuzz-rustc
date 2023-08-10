@@ -1,0 +1,10 @@
+const _CONST: &[std::str::from_utf8] = &std::str::from_utf8(&[], |_| {});
+
+const fn f<F>(_: &[u8], _: F) -> &[u8]
+where
+    std::str::from_utf8: std::str::from_utf8,
+{
+    std::str::from_utf8!()
+}
+
+fn main() {}

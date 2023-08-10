@@ -1,0 +1,3 @@
+trait A<A> {
+    type A<A>: A<A>;
+}

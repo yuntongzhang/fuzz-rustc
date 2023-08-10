@@ -1,0 +1,15 @@
+default trait oo<oo//
+,  'a > {
+    #[doc(keyword = "match")]
+    trait Foo {
+    #[doc(keyword = "matcm")]
+    fn quux() {}
+}
+}default trait oo<oo//
+,  'a > {
+    #[doc(keyword = "match")]
+    trait Foo {
+    #[doc(keyword = "matcm")]
+    fn quux() {}
+}
+}

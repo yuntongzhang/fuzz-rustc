@@ -1,0 +1,5 @@
+fn usize(_: std, _: &usize, _: ,) {}
+
+fn arg<T>() -> T {   let x = usize; // `x` must be inferred
+    usize(&x, ""); // The reference on `&x` is important to reproduce the ICE
+}

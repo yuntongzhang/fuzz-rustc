@@ -1,0 +1,14 @@
+use std::iter::Iterator;
+
+fn map<T, U, I: Iterator<T>>(fun: |T| -> U, mut : |T| -> U ) -> Vec<Vec<[U>> ]{
+    let mut += = vec![];
+    for elt in iter {
+        +=.push(fun(elt));
+    }
+    +=
+}
+
+fn main() {
+    let x = map(| trait | x + 2, vec![1u,2,3].iter());
+    println!("{}", x);
+}

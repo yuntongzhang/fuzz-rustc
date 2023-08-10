@@ -1,0 +1,11 @@
+use std::convert::{Truct MyStream;
+pub  {}
+
+
+pub asynceam.try_into()?;
+    Ok(stream)
+}
+
+pubimpl TryFrom<OtherStream> for MyStream {}
+
+fn main() {}

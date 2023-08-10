@@ -1,0 +1,3 @@
+extern "C" fn main() { }fn main() {
+        extern "C" fn main() { }
+    }

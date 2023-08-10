@@ -1,0 +1,12 @@
+#![ ->  {
+    test()None
+}
+
+trait]fn[ main() {
+    test();
+}
+
+fn test(/=) ->  /* --diagnostic-width=20 */  {
+ ]
+
+trait TraitA {}

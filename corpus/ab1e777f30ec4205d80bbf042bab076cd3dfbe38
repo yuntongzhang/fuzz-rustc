@@ -1,0 +1,9 @@
+fn main() {
+    for _ in {for _ in {for _ in {-=} {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }} {
+        #![doc=""]
+    }
+}

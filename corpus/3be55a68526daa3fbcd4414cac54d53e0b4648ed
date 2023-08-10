@@ -1,0 +1,6 @@
+struct Bad {
+    Narr: [[N; { N }]],
+    N: ,
+}
+
+fn main() {}

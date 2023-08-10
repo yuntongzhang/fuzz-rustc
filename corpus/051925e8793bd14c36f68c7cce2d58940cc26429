@@ -1,0 +1,9 @@
+fn main() {
+    {
+    async {[main]};
+};
+}
+
+struct S{
+    async {[main]};
+};;

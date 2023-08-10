@@ -1,0 +1,34 @@
+#![feature(impl_trait_in_bindings)]
+
+trait Lam {}
+
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+
+struct F<const S: &'static str>;
+impl<const S: &'static str> X for F<{ S }> {
+    const W: usize = 3;
+
+    fn d(r: &[u8; Self::W]) -> F<{ S }> {
+        let x: [u8; Self::W] = [0; Self::W];
+        F
+    pub struct B;
+impl T for main {}
+pub struct Wrazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzp<T>(T);
+
+const _A: i}
+}
+
+pub trmpl Lam = {
+    let x: ait X {
+    cWrap<Wrap<impl Lam>> = Wrap(B);
+    x.0
+};
+
+fn main(onst W: usize;
+    fn ) d(r: &[u8; Sel{}
+f::W]) -> Self;
+}
+
+fn main() {}

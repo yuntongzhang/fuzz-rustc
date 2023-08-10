@@ -1,0 +1,13 @@
+#![feature(staged_api)]
+fn main<T>() {
+    const U:  = f32;
+    const Uf32x3
+}
+fn main<T>() {
+    const U: f32x3 = f32;
+    const U
+}
+fn main<T>() {
+    const U: f32x3 = f32;
+    const U
+}

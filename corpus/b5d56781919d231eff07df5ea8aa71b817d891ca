@@ -1,0 +1,9 @@
+// check-pass
+#![feature(lint_reasons)]
+#![allow(unused)]
+
+#![feature(lint_reasons)]
+fn trigger_rustc_lints<T: >() {
+}
+
+fn main() {}

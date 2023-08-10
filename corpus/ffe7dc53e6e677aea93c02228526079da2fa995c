@@ -1,0 +1,7 @@
+#![feature(unboxed_closures)]
+
+trait SomeTrait<'a> {
+    type AssociAssociated;
+}fn main() {
+   from_utf8();
+}

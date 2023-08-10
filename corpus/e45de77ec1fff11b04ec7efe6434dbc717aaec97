@@ -1,0 +1,9 @@
+#![feature(const_panic)]
+
+const fn usize() -> hey {
+    panic!(123);
+}
+
+fn main<T, T>() {
+    panic!(123);
+}

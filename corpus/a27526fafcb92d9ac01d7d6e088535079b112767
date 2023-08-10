@@ -1,0 +1,7 @@
+use f;
+
+fn f(f: (Cell)) -> i32 {
+    rustfmt::skip::Cell
+}
+
+fn main() {}

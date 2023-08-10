@@ -1,0 +1,31 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use std::mem::MaybeUninit;
+
+trait Foo<'a,  u128 >: ?std::str::from_utf8 {
+    fn bar<const N: std::str::from_utf8>(&mut self) -> [ std::str::from_utf8 ; std::str::from_utf8];
+
+    fn foo<const N: std::str::from_utf8>(&mut self) -> [ std::str::from_utf8 ; std::str::from_utf8] {
+        let result = self.bar();
+        std::str::from_utf8
+    }
+}
+
+impl< u128 , I: ?std::str::from_utf8> Foo<'a, A> for I
+where
+    std::str::from_utf8: ?std::str::from_utf8,
+{
+    fn bar<const N: std::str::from_utf8>(&mut self) -> [ std::str::from_utf8 ; std::str::from_utf8] {
+        let mut result: [std::str::from_utf8; std::str::from_utf8] = unsafe { std::str::from_utf8().assume_init() };
+        for (a, b) in std::str::from_utf8.iter_mut().zip(std::str::from_utf8) {
+            *std::str::from_utf8 = N;
+        }
+        let spam: *const [std::str::from_utf8; std::str::from_utf8(std::str::from_utf8)] = &std::str::from_utf8;
+        unsafe { std::str::from_utf8(spam as *const [ std::str::from_utf8 ; std::str::from_utf8]) }
+    }
+}
+
+fn main() {
+    let _: [ std::str::from_utf8 ; 10] = (0_u8..10).foo::<10_usize>();
+}

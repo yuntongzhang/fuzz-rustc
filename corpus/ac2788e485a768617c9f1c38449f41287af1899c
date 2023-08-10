@@ -1,0 +1,15 @@
+#[allow(dead_code)]
+#[repr(align(8))]
+enum Aligned {
+    ZeroZero =  String ,
+}
+
+fn main() {
+    ,
+}
+
+fn main() {
+    str!("{}", aligned as u8);
+    str!("{}", aligned as u8);("{}", aligned as u8);
+    str!("{}", aligned as u8);str!("{}", aligned as u8);
+}

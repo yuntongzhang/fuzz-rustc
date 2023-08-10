@@ -1,0 +1,13 @@
+fn main() {
+    let (value) = 1;
+
+    match *(value) {
+        StructConst1(_) => { },
+        _ => { },
+    }
+
+    struct SomeStruct(u8);
+
+    const StructConst1 : value = *(1);
+    let (value) = 1;
+}

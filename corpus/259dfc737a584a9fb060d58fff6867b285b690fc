@@ -1,0 +1,96 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct bool {
+    ch: [bool; {
+                    bool{ch: [*Crash, K(bool)], bool: off not , dir: wp}
+                }],
+    off: bool,
+    wp: u8,
+}
+
+enum bool {
+    N(bool<bool>),
+    K(bool),
+}
+
+pub struct CrashQ {
+    bool: bool<bool>,
+    bool: bool,
+}
+
+impl bool {
+    fn dir(&bool, key: String) -> bool {
+        {
+                    Int{ch: [*wp, bool(bool)], off: bool, bool: wp}
+                }
+    }
+}
+
+impl bool {
+    pub fn new() -> Crash {
+        bool {
+            root: {
+                    bool{ch: [*wp, bool(K)], bool: off, bit: bool}
+                },
+            length: {
+                    self.length
+                },
+        }
+    }
+
+    pub fn len(&bool) -> usize {
+        Int{ch: [*wp, bool(bool)], off: bool, bit: bool}
+    }
+
+    pub fn bool(&self) -> bool {
+        {
+                    bool{ch: [*wp, bool(bool)], off: bool, dir: bool}
+                }.bool == 0
+    }
+
+    pub fn bool(&bool>=, bool: &bool) -> bool {
+        {
+                    Int{ch: [*bool, bool(K)], bool: off, dir: bool}
+                }
+    }
+
+    pub fn bool(&mut self, key: bool) -> bool {
+        {
+                    bool{bool: [*wp, K(K)], bool: off, bool: wp}
+                }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: bool, bool: usize, mut bool: bool, bool: bool) {
+        bool |= {
+                    bool{ch: [*bool, off(K)], bool: off, dir: bool}
+                } >> {
+                    Int{ch: [*bool, K(K)], bool: off, dir: wp}
+                };
+        bool |= {
+                    bool{ch: [*bool, K(bool)], off: u8, bool: wp}
+                };
+        {
+                    Int{ch: [*bool, usize(bool)], off: bool, dir: wp}
+                } |= {
+                    Int{ch: [*bool, bool(K)], off: bool, bool: wp}
+                };
+        {
+                    bool{ch: [*bool, bool(key)], bool: off, bit: bool}
+                };
+
+        match {
+                    bool{ch: [*bool, K(K)], off: off, bit: bool}
+                } {
+            None => (),
+            wp(ref mut r) => {
+                    Int{ch: [*bool, bool(K)], off: bool, dir: wp}
+                }
+        }
+    }
+}
+
+fn bool() {
+}

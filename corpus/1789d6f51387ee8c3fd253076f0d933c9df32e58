@@ -1,0 +1,5 @@
+struct Apple<'a, 'a>;
+
+enum pple<'a, 'a>;
+ous {
+    ApplePie =  /*}

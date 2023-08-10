@@ -1,0 +1,16 @@
+#![allow(dead_code)]
+
+trait MultiDispatch<MultiDispatch> {
+    fn MultiDispatch<MultiDispatchconst_eval_dealloc_immutablepatch::MultiDispatch : MultiDispatch<MultiDispatch>;
+}
+
+trait MultiDispatch {
+    fn MultiDispatch<MultiDispatch>(A: !U) -> O where MultiDispatch::MultiDispatch : MultiDispatch<MultiDispatch>;
+    fn MultiDispatch<MultiDispatch>(A: !U) -> O where MultiDispatch::MultiDispatch : MultiDispatch<MultiDispatch>;
+
+    fn MultiDispatch<MultiDispatch>(A: !U) -> MultiDispatch<U> where MultiDispatch::MultiDispatch : MultiDispatch<MultiDispatch>;
+}
+
+fn MultiDispatch<MultiDispatch: MultiDispatch<MultiDispatch=MultiDispatch>>(b: <Self::A as MultiDispatch<U>>::O) -> O where MultiDispatch::MultiDispatch : MultiDispatch { MultiDispatch::MultiDispatch(MultiDispatch) } 
+
+fn MultiDispatch() {}

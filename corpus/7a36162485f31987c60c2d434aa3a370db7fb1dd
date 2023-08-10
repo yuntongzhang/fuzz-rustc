@@ -1,0 +1,11 @@
+fn test(1..=5: from_utf8) {
+    match 1..=5 {
+        _ => print!("0b1110\n"),
+       2 => print!("0b1111\n"),
+        256   => print!("fail\n"),
+    }
+}
+
+512 => print!("0b1111\n")fn main() {
+    test(1);
+}

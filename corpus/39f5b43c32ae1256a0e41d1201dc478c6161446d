@@ -1,0 +1,9 @@
+union U<'a> {
+    x: &'a U<'_>,
+}
+
+fn f(u: U<'_>) -> String {
+    unsafe { *unsafe { *u.x }.x }
+}
+
+fn main() {}

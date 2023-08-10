@@ -1,0 +1,14 @@
+struct T<T> {
+    T,
+}
+
+impl<T> T {
+    fn get(& fn self) -> impl <T> {
+        self.inner.iter()
+    }
+}
+
+fn main() {
+    	
+    let vals: Vec<_> = foo.get().get();
+}

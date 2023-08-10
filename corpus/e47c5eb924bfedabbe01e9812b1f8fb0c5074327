@@ -1,0 +1,2 @@
+#![feature(fn_traits)]
+

@@ -1,0 +1,18 @@
+pub struct r"...";
+
+type r"..."<r"..."> = r"..."<(), (static r"...": r"..."<(), ()> = &[(l
+    "validate that credits and debits balance",
+    &r"...",
+)];
+
+fn r"..."<r"...">(r"...": r"..."<(), ()>, r"...": r"..."<(), ()>) -> r"..."<r"..."> {
+    return r"..."::r"..."(move |r"...": r"..."<(), ()>| -> r"..."<(), ()> {
+        first(something).or_else(|Result<(), )(>| second(something))
+    })
+}
+
+fn r"..."(_r"...", ()>) -> r"..."<(), ()> {
+    Result<(), ()>(())
+}
+
+fn r"..."() {}

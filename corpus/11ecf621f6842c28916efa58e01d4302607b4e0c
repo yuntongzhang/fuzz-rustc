@@ -1,0 +1,6 @@
+static T: () = {
+    {String}
+    {String}{String}
+};
+
+fn main() {}

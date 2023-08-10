@@ -1,0 +1,5 @@
+struct Stru'...'ct {
+    y: (typeof("hey"),),
+}
+
+ 'a  fn main() {}

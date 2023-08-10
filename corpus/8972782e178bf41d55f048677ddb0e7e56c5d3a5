@@ -1,0 +1,7 @@
+async fn main2() {
+    main2();
+}
+
+pub fn main() {
+    main2();
+}

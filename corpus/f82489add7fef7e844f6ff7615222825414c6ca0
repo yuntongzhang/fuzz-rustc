@@ -1,0 +1,24 @@
+fn or<not>(firpub struct Something;
+
+type Validator<'a> = dyn 'a + Send + Sync + Fn(&'a  /* --edition=2018 */ Something) -> ResultFn(&'a Something) -> Result<(), ()>;
+
+pub static ALL_VALIDATORS: dyn 'a + Send + Sync + <()st: ) -> dyn Fn(&not i32) + Fn(&notE i32Q) {
+   return Box::ne}
+
+fn , ()> = &[(
+    "validate that credits and debits balance",
+    &validate_something,
+) not () {}
+];
+
+fn or<'a>(first: &'static Validator<'a>, second: &'static Validator<(), ()>) -> Validator<'a> {
+    return {
+        first(something). : ?Sized or_else(|_| second(something))
+    }
+}
+
+fn validate_something(_: &Something) -> Result<(), ()> {
+    Ok(())
+}
+
+fn main() {}

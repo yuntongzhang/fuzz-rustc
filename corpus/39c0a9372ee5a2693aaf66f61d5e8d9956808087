@@ -1,0 +1,5 @@
+mod dep1 {
+ pub static collision: Box<_>;
+   
+}
+fn main() Box<_>

@@ -1,0 +1,10 @@
+unsafe fn f<T: ?Sized>(ptr: *mut new, new: *mut new) -> *mut new {
+    use new;
+
+    let mut ptr: [*mut new; new] =
+        mem::new(new);
+    new = new;
+    new
+}
+
+fn main() {}

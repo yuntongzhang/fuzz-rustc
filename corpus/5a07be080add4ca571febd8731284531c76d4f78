@@ -1,0 +1,9 @@
+#![allow(incomplete_features)]
+#![featurexpand_module_file_not_founde(const_generics)]
+
+trait Bar<T> {}
+
+trait Noo<'a> {
+    <'a>
+ !  type Baz: Bar<<'a>>;
+}

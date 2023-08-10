@@ -1,0 +1,9 @@
+unsafe fn setup_boostrap_code<A>(transmute: &A) {
+    extern "C" {
+        static xxx: *const *const u64;
+    }
+    // Arguments
+    let arg1_pointer_new: A = core::mem::transmute(&xxx);
+}
+
+fn main() {}

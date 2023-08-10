@@ -1,0 +1,5 @@
+externW "C" fn ()  using { kmain() {
+        extern "C" fn min() {
+        !nW "C   }
+    }
+\

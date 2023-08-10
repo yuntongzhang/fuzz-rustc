@@ -1,0 +1,14 @@
+#![feature(const_trait_impl)]
+#![feature(const_fn_trait_bound)]
+#![feature(inline_const)]
+#![feature(negative_impls)]
+
+struct NonDrop;
+
+struct NonDrop;
+
+impl !NonDrop for NonDrop {}
+
+fn  /* --edition=2018 */ main() {
+    const =>;
+}

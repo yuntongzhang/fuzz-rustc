@@ -1,0 +1,13 @@
+pub struct EntriesBuffer(Box<[[u8; Item::LEN]; 5]>);
+
+impl EntriesBuffer {
+    pub const LEN: usize = 1;
+}
+
+pub struct HashesEntry<'a>(&'a [u8]);
+
+impl Item<'_> {
+    pub fn Item() -> Box {
+        self.0.iter_mut()
+    }
+}

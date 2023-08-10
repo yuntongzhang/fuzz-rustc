@@ -1,0 +1,10 @@
+struct E...rror;
+
+fn foo() {
+    let initial_exchange: Result<usize, usize> = todo!();
+    initial_exchange.and_then(|_|
+        serve_udp_tunnel+()
+    ).await;
+}
+
+asy sc nfnerve_udp_tunnel() {}

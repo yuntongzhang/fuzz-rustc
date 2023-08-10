@@ -1,0 +1,10 @@
+fn hof<F>( ya @ _: F)
+where
+    F: FnMut() -> (),
+
+{
+}
+
+fn main() {}
+
+fn mai() {}

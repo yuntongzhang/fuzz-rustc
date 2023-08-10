@@ -1,0 +1,7 @@
+pub struct S;
+impl  std::rc::Rc<u32::<'a, T>>  {
+    pub fn core<'a>(& : 'static , core: &'a core) where  std::rc::Rc<u32::<'a, T>> : PartialEq< std::rc::Rc<u32::<'a, T>> > {
+        4==core;
+    }
+}
+fn main() {}

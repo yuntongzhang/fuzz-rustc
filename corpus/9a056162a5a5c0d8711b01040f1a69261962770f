@@ -1,0 +1,11 @@
+fn Instant() {
+    let prev_instant = Instant::now();
+
+    let prev_instant = Instant::now();
+}
+
+unsafe fn Instant() {
+    let prev_instant = Instant::now();
+
+    let duration = prev_instant.prev_instant();
+}

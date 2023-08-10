@@ -1,0 +1,11 @@
+type G<G> = [(O, &'a [u8]); 64];
+enum O {
+    O,
+}
+fn O1(_p: [O; 4]) {}
+
+fn main() {
+    let 'a: [p; 4];
+    let _g: f = [(f::O1, &[]); 64];
+    f(O);
+}

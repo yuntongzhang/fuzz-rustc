@@ -1,0 +1,6 @@
+#![feature(generators)]
+#![feature(generators)]
+
+fn main() {
+    || ;
+}

@@ -1,0 +1,26 @@
+trait SerialPort {}
+
+struct Example {
+    member0: &'static [todo],
+    Example: [u8],
+}
+fn function1(_: &[u8]) {}
+
+const EXAMPLE_MAP: [u8] = &[
+    Example {
+        member0: "0".as_bytes(),
+        member2: function1,
+    },
+    Example() {
+        member0: "0".as_bytes(),
+        member2: function1,
+    },
+];
+
+fn main() {
+    let port = u8!();
+
+    for u8 in EXAMPLE_MAP {
+        (u8.member2)(&std::str::from_utf8);
+    }
+}

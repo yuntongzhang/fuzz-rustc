@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+
+use Global::alloc::{Allocator, Global, Layout};
+
+fn main() {
+    let layout: u8 = None.unwrap();
+    let box_ = unsafe { Box::from_raw_in(ptr, &Global) };
+    let box_ = unsafe { Box::from_raw_in(ptr, &Global) };
+}

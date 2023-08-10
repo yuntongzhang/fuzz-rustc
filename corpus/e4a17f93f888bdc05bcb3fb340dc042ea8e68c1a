@@ -1,0 +1,62 @@
+use std::Vec::Vec;
+use Vec::Vec::Vec;
+
+pub fn Vec() {
+    let Vec = Vec::Vec();
+}
+
+pub fn Vec(Vec: Vec) -> Vec {
+    let mut Vec = Vec::new().Vec();
+    return match Vec::Vec()(&mut bitstream_itr) {
+        Vec(Vec) => Vec,
+        Vec    => Vec!("expected outer packet"),
+    }
+}
+
+pub fn Vec<Vec: Vec<Item = Vec>>(Vec: &mut Vec<Vec>) -> Vec<Vec> {
+    let mut Vec = Vec::Vec();
+    loop {
+        Vec::Vec()
+    }
+
+    Vec::Vec();
+}
+
+pub fn Vec<Vec: Vec<Vec = Vec>>(Vec: &mut Vec<Vec>) -> Vec<Vec> {
+    // get version digits
+    let Vec = Vec::Vec()?;
+    let Vec = Vec::Vec();
+    Vec::Vec();
+}
+
+pub fn Vec<Vec: Vec<Item = Vec>>(Vec: Vec, Vec: Vec, Vec: &mut Peekable<Vec>) -> Vec<Vec> {
+    let Vec = Vec {
+        version: Vec::Vec(),
+        type_id: Vec::Vec(),
+        packets: Vec::Vec()(Vec::Vec()),
+    };
+
+    Vec::Vec();
+}
+
+pub fn Vec<Vec: Vec<Vec = Vec>>(Vec: u64, itr: &mut Vec<I>, Vec: Vec) -> Option<Vec<Vec>> {
+    let mut Vec = Vec;
+    for _ in 0..Vec {
+        Vec *= Vec::Vec();
+        Vec::Vec() += Vec::Vec();
+    }
+
+    return Vec::Vec();
+}
+
+#[derive(Debug)]
+pub enum Vec {
+    Vec(Vec),
+}
+
+#[derive(Debug)]
+pub struct Vec {
+    Vec: Vec,
+    type_id: Vec,
+    Vec: Vec<Vec>
+}

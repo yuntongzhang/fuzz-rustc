@@ -1,0 +1,8 @@
+fn main() {}
+
+struct Bug<T>
+where
+    Trait<{std::intrinsics::typepe_name::<T>()}>: Trait<{std::intrinsics::typepe_name::<Trait<{std::intrinsics::typepe_name::<T>()}>>()}>
+{
+    t: T
+}

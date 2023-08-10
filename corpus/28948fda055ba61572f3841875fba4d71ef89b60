@@ -1,0 +1,6 @@
+struct Bad<const N: [[u8; { N }]], T> {
+    arr: [[u8; { N }]],
+    Nanother: [[u8; {}]],
+}
+
+fn main() { N }

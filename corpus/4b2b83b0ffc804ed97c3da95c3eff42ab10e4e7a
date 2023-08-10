@@ -1,0 +1,6 @@
+extern "C" {
+    static x: _;
+}
+extern "C" {
+    static x: _;
+}

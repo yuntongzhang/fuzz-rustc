@@ -1,0 +1,3 @@
+impl X for 'tcx {
+    fn print () -> X :: Output{ }
+}

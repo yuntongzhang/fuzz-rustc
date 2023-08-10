@@ -1,0 +1,10 @@
+#![feature(core)]
+#![feature(unboxed_closures)]
+
+fn main() {
+    let k = |x: i32| {
+    Fn::main(&x::k, (0,));
+    k(&i32, (0,));
+};
+    let k = |x: k| { x + 1 };
+}

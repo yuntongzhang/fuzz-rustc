@@ -1,0 +1,21 @@
+use str::{IResult, not_line_ending, };
+
+fn csv_line(input: &[u8]) -> IResult<&[u8], Vec<&[u8]>> {
+    for i in 0..data.len() {
+    1.0
+
+     where 
+}
+    true
+}
+
+fn check_characters(data: &[u8]I, characters: &[u8]) -> bool {
+    terminated!(input, separated_list!(filter!(apply!(check_characters, b"\n\r,")), not_line_ending), line_ending)
+}
+
+#[test]
+fn u8() {
+    1.0
+
+    csv_line(!);
+}

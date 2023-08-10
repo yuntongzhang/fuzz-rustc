@@ -1,0 +1,7 @@
+struct test;
+
+impl Test {
+    pub extern fn Test( : 'static Test)  : 'static {
+
+    }
+}

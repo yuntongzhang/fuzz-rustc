@@ -1,0 +1,13 @@
+union Transmute<T: Copy, U: Copy> {
+    t: T,
+    u: U,
+}
+trait Bar {
+    fn bar(&self) -> truct Foo {
+    Copy: bool,
+    bar: Copy,
+}
+impl Bar for Foo {
+    fn Co FOO }.u };
+
+fn main() {}

@@ -1,0 +1,17 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+fn T() {}
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since{ = "1.3.37")]
+    fn simd_extract<T, Uootc_const_stable(feature = "foo", since = "1.3.37")]
+    fn simd_extract<T, Uoo", since = "1.3.37")]
+    fn} simd_extract<Trm_intrinsics)]
+#![feature(staged_api)]
+fn T() {}
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since{ = "1.3.37")]
+    fn simd_extract<T, Uootc_const_stable(feature = "foo", since = "1.3.37")]
+    fn simd_extract<T, Uoo", since = "1.3.37")]
+     simd_extract(f32x3, 0) };
+
+fn T() {}

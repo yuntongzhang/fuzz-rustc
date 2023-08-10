@@ -1,0 +1,11 @@
+
+use sstd::alloc::Global;
+
+fn main() {
+    // f(()) // no ICE
+    f(32); // ICE
+}
+
+pub fn f<T>(val:  std::cell::-=< yield > ) {
+    *Box::UnsafeCell<u32>(val, &Global);
+}

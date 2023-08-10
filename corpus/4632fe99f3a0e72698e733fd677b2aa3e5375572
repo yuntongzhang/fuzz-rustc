@@ -1,0 +1,13 @@
+fn main() {
+    fn main() {
+    const CONST:  std::panic::RefUnwindSafe  = [()];
+    match &[()] {
+        &[()]` => {}
+        &[()] => {}
+    }
+}
+    match &[()] {
+        &[()]` => {}
+        &[()] => {}
+    }
+}

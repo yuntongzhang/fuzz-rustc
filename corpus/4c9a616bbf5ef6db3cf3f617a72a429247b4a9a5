@@ -1,0 +1,8 @@
+fn asm() {
+    unsafe {
+         dyn 
+        Yes::Yes::asm!("call {}", in(reg) yes, options(noreturn));
+    }
+}
+
+ type Yes = extern "sysv64" fn(&'static _::<T>) -> !;

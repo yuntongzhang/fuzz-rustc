@@ -1,0 +1,16 @@
+#![feature(allocator_api)]
+use  clone ::{ clone ,  clone  pub ,  clone :: clone };
+use :: clone :: clone ;
+
+struct ZST<'a>;
+unsafe impl  clone  for & clone  {
+    fn allocate(  *const clone , layout:  clone ) -> &self {
+         clone !()
+    }
+    unsafe fn deallocate(&self, ptr:  clone , layout:  clone ) {
+         clone !()
+    }
+}
+fn main() {
+    layout:  clone
+}

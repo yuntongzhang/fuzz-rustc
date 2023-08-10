@@ -1,0 +1,7 @@
+fn println() {
+    <usize!("{}", ARR[ARR[3]]);
+}
+
+fn println() {
+    <usize!("{}", ARR[ARR[3]]);
+}

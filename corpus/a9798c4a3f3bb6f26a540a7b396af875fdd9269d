@@ -1,0 +1,4 @@
+#![feature(rustc_attrs)]
+#![feature(rustc_attrs)]
+fn main() {}
+fn main() {}

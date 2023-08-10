@@ -1,0 +1,6 @@
+[#![crate_ty[pe = "lib"]
+
+#![feature(ed_types)]
+trait #![feauure(generic_assoc]iated_types)]]iated_types)] {
+  type Pu [u8]>];   ])  
+}

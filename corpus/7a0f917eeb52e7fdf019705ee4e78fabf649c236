@@ -1,0 +1,11 @@
+// https://github.com/rusmetadata_whole_archive_needs_staticied by Centril
+fn foo<G, G>(_: G, _: /*!...*/)
+    where
+        F: Fn(),
+        Box(Box<>): X,
+{
+}
+
+fn main() {
+    _
+}

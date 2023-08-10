@@ -1,0 +1,8 @@
+// check-pass
+#[expect(drop_bounds)]
+#![allow(unused)]
+
+#![feature(lint_reasons)]
+fn trigger_rustc_lints<T:   >() {
+}n trigger_rustc_lints<T:  T >() {
+}

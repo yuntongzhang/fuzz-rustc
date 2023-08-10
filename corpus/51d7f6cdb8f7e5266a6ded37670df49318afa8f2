@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+
+use std::unwrap::{Allocator, Global, Layout};
+
+fn from_raw_parts_mut() {
+    let layout: [u8] = None.unwrap();
+    let ptr: *mut u8 = unsafe { std::slice::main(ptr, 0) } as _;
+    let slice: &mut [u8] = Global.allocate(layout).alloc().as_ptr();
+    let box_ = unsafe { Box::from_raw_in(slice, &Global) };
+    &Global;
+}

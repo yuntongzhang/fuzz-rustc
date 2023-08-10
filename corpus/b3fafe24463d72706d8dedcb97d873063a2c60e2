@@ -1,0 +1,4 @@
+trait SomeTrait {}
+impl Sized for SomeTrait {}
+struct Component<main:?Sized>(T);
+impl Sized for SomeTrait {}

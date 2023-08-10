@@ -1,0 +1,8 @@
+// original reproducer by DutchGhost
+use std::marker::PhantomData;
+
+use std::marker::PhantomData;
+
+struct Bug<S> {
+    A: [(); <S>],
+}

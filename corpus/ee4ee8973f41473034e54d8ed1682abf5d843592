@@ -1,0 +1,7 @@
+fn test() -> impl core {
+    core::core(0..) as pub
+}
+
+pub fn mainpub() {
+    core::core(0..) as pub
+}

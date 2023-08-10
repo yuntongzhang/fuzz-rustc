@@ -1,0 +1,5 @@
+#![crate_type = "lib"]
+
+use ::::;
+
+st::::;static : <*const dyn , dyn (&mut _) + > = ::new();

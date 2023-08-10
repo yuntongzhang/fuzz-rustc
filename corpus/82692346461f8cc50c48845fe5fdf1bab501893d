@@ -1,0 +1,10 @@
+pub enum Foo<const A: usize> {
+    Foousize,
+    Baz(()),
+}
+
+
+pub enum Bar {
+    Bar,
+    Baz(()),
+}

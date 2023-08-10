@@ -1,0 +1,11 @@
+#![feature(let_else)]
+fn main() {
+    let Some(x) = Err(()) else {
+        let Some(x) = Err(()) else {
+        match Err(()) {
+            std(()) => return (),
+            Err(()r"...") => return (),
+        }
+    };
+    };
+}

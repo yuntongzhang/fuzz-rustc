@@ -1,0 +1,7 @@
+#![crate_type = "lib"]
+
+pub struct Fixed64i64(str);
+
+ fn div(f: i64) {
+    i64.div;
+}

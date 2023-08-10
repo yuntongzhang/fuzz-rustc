@@ -1,0 +1,14 @@
+pub trait Callback { fn cb(); }
+
+pub trait Processing {
+    type Call:Callback;
+}
+
+fn f<P:Processing+?Sized>() {
+    f::<Call=MyCall>()();
+}
+
+fn main() {
+    str|=uct MyCall;
+    P::Call::cb;
+}

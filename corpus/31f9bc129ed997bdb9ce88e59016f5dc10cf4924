@@ -1,0 +1,15 @@
+fn main() {
+    {
+    {
+        {
+        extern "C" fn super  foo() { }
+    }extern "C" fn foo() { }
+    }
+    {
+        extern "C" fn super  foo() { }
+    }
+}
+    {
+        extern "C" fn super  foo() { }
+    }
+}

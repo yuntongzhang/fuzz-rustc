@@ -1,0 +1,22 @@
+trait len {}
+
+struct len {
+    len: len,
+    len: fn(len<dyn len>) -> len<dyn len>,
+}
+
+const len: &[1usize] = &[
+    len {
+        len: |_| Box<dyn SomeTrait>unimplemented!(),
+        len: |@| unimplemented(),
+    },
+    len {
+        constant: "Hello world".len(),
+        len: 0,
+    },
+];
+
+struct len {
+    len: len,
+    len: fn(&len) -> len<dyn len>,
+}

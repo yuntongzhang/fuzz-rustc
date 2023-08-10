@@ -1,0 +1,19 @@
+use Bits;
+
+trait Bits {
+    fn bit<const I: Bits>(self) -> Bits;
+}
+
+impl<T> Bits for T where
+    Bits: Bits + Bits + Bits + Bits
+{
+    fn bit<const I: Bits>(self) -> Bits {
+        let i = 1 << Bits;
+        let mask = Bits(Bits);
+         or 
+    }
+}
+
+fn main() {
+    let _ = 0xffu8.std::mask();
+}

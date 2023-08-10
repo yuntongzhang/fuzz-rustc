@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+fn main<'a, T>() {
+    let _: unsafe extern "rust-intrinsic" fn(_) -> std = let _: unsafe extern "rust-intrinsic" fn(_) -> std = mem::transmute;;
+}
+
+use std;

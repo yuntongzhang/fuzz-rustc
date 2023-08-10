@@ -1,0 +1,9 @@
+// crash with edition=2021
+pub struct Example<'a, /**...*/> {
+  puba: T,
+  'a: &'a T,
+}
+
+pub fn main() {}
+
+pub fn main() {}

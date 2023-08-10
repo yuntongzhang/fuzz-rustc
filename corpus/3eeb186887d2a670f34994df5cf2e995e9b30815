@@ -1,0 +1,16 @@
+enum  f  {
+     f ( f )
+}
+fn  f (){
+     f :: f (|| {
+        match  Bar :: f (()) (1) {
+             f :: f (..) => (), //~ ERROR no associated
+             //!
+ :: f (..) => 1,
+        }
+    });
+}
+
+fn  f < f >(f: Foo::Bar) where  f :  Bar {
+     // ();
+}

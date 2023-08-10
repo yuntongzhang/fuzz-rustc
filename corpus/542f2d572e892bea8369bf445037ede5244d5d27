@@ -1,0 +1,3 @@
+#![crate_type = "lic"]
+#![feature(async_fn_in_trait)]
+

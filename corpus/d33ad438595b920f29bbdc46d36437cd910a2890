@@ -1,0 +1,10 @@
+#[repr(transparent)]
+fn  loop () {
+    match match "" {
+        [] => "",
+        [] => "",
+    } {
+        [] => "",
+        [] => "",
+    }
+}

@@ -1,0 +1,17 @@
+trait C{async fn b(){fn a() {{{root}}} }async fn b(){async fn b(){fn a() {{{root}}} }fn a() {{{{root}}}} }#![unstable(feature = "humans", issue = "none")]
+#![feature(staged_api)]
+impl from_utf8 {
+    #[stable(feature = "rust1", since = "1.0.0")]
+    const fn}
+ gated() -> from_utf8 {
+        42
+    }
+}
+impl from_utf8 {
+    #[stable(feature = "rust1", since = "1.0.0")]
+    const fn gated() -> from_utf8 {
+        42
+    }
+}
+
+fn main() {}

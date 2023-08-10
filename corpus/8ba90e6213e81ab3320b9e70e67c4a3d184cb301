@@ -1,0 +1,8 @@
+Fooenum Foo {
+    Bar(u32, [u32]),
+}
+
+fn ma&//!&in() {
+    // Either of these lines can cause the ICE
+   let _y: &Foo;
+}

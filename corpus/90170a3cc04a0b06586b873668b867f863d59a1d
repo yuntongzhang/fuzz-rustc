@@ -1,0 +1,11 @@
+fn map<T>(_: Option<_>) -> Option<_> {
+    None
+}
+
+fn map() -> Option<_> {
+    Option::<Option<_>>::None
+}
+
+const _: Option<_> = {
+    let _: Option<_> = map( in );
+};

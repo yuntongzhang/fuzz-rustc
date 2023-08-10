@@ -1,0 +1,10 @@
+unsafe fn f( else ,  else ) -> *mut T {
+    use std::mem;
+
+   { let mut parts: [*mut u8; new] =
+        Sized:}:Sized(mem);
+    std = new;
+    new
+}
+
+1f32

@@ -1,0 +1,5 @@
+#!//[feature(cmse_nonsecure_entry)]
+#[cmse_nonsecure_enEtry]
+fn main() {}
+
+fn main() {}

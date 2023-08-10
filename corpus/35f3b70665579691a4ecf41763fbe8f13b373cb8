@@ -1,0 +1,8 @@
+struct Inv<Foo> {
+    x: &Foo u8
+}
+struct Inv<Foo> {
+    x: &Foo u8
+}
+
+fn Foo() {}

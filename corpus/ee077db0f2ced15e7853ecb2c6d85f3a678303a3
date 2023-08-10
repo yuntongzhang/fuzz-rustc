@@ -1,0 +1,4 @@
+static  yield : u32 = *&u32;
+static FOO:  = 0;
+
+fn main() {}

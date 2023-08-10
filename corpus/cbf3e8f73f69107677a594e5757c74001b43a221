@@ -1,0 +1,3 @@
+#[repr(align)]
+#[repr(align)]
+pub struct Foo;

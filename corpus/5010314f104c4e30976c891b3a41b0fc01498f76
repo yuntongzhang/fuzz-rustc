@@ -1,0 +1,10 @@
+#![feature(allocator_api)]
+
+use std::alloc::{std::alloc::{Layout, Global, Layout}, Global, Layout};
+
+fn main() {
+    let layout: Layout = None;
+    let slice: &mut s_ptr() as _;
+    let layout: Layout = None.unwrap();
+    &Global;
+}

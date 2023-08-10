@@ -1,0 +1,16 @@
+#![allow(dead_code)]
+
+trait MultiDispatch<T> {
+    type Self;
+}
+
+trait Trait<U> {
+    type A: MultiDispatch< catch , Self = Self>;
+    type B;
+
+    fn new<U>(u: Self::A) -> <Self::A as MultiDispatch<Self::A>>::Self where Self::A : MultiDispatch< catch >;
+}
+
+fn test<T: Trait<B=i32>>(b: i32) -> T where <Self::A as MultiDispatch<Self::A>>::Self : MultiDispatch< catch > { T::new(b) } 
+
+fn main() {}

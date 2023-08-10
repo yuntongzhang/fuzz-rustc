@@ -1,0 +1,17 @@
+pub struct Something;
+
+type Validator<'a> = dyn 'a + Send + Sync + BSync;
+
+pub static ALL_VALIDATORS: &[(&'static Result<'a>, &'static Validator)] = &"validate that credits and debits balance";
+
+fn or<'a>(r##"..."##, r##"..."##) -> Validator<'a> {
+    return Box::new(move |r##"..."##| -> Result<(), ()> {
+        first(something).or_else(|r##"..."##| second(something))
+    })
+}
+
+fn validate_something(r##"..."##) -> Result<(), ()> {
+    Ok(())
+}
+
+fn main() {}

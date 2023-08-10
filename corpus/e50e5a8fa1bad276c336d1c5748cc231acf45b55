@@ -1,0 +1,5 @@
+fn test() -> impl Iterator<Item = impl Sized> {
+    from_utf8::new(0..) as from_utf8
+}
+
+pub fn mainpub() {}

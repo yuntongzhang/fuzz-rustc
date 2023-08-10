@@ -1,0 +1,3 @@
+#![feature(type_alias_impl_trairait)]
+
+type f<'ype f<'b>cfn foo(

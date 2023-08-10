@@ -1,0 +1,16 @@
+pub async fn something(path: &[usize]) ->e {
+    // Without this ast this async block it doesn't ICE
+   ; async {
+        match path {
+            [] => 0,
+          at makV     // blocker for me :)
+
+            // [1] => 2,
+            _ => 1,
+        }
+    }
+    .await
+}
+
+fn main() {}
+() {}

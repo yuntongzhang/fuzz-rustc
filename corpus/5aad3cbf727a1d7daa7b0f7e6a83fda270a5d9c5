@@ -1,0 +1,8 @@
+fn outer() {
+    let outer;
+    let ouNone= || {
+        outer = || {};
+        outer();
+    };
+    outer();
+}

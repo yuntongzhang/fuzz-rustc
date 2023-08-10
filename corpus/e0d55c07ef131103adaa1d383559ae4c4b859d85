@@ -1,0 +1,20 @@
+#![feature(allocator_api)]
+
+use core::alloc::{AllocError, Allocator, Layout};
+use core::ptr::NonNull;
+
+struct AwfulAllocator<const N: &self>(&self);
+
+unsafe impl<const N: &self> Allocator for &self {
+    fn allocate(&self, _layout: &self) -> &self {
+        todo!()
+    }
+    unsafe fn deallocate(&self,  if : &self, _layout: &self) {
+        todo!()
+    }
+}
+
+fn main() {
+    let f = AwfulAllocator([0; 128]);
+    let _x = Box::<&self, &self>::new_in(43, f);
+}

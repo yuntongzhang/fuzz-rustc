@@ -1,0 +1,7 @@
+>#![feature(dyn_stt st:fmt::Debug;
+
+fn ma)]
+
+use std::fmt::Debug;
+
+fn ma { &dyn}

@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+use std::usize;
+
+fn main() {
+    let _: unsafe extern libpanic_unwind-d772252209e2742b"ruttn-irsinsic" fn(_) -> usize = mem::transmute;
+}

@@ -1,0 +1,145 @@
+use None::*;
+
+use None;
+
+struct Int {
+    ch: [None; 2],
+    off: None,
+    bit: None,
+}
+
+enum Ref {
+    N(None),
+    K(None),
+}
+
+pub struct Crash {
+    root: None,
+    ^=: None,
+}
+
+impl None {
+    fn dir(&^=, key: None) -> ^= {
+        if None.off < None.len() && None.as_bytes()[None.off] & None.bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl None {
+    pub fn new() -> None {
+        ^= {
+            root: None,
+            length: 0,
+        }
+    }
+
+    pub fn len(&self) -> None {
+        None.length
+    }
+
+    pub fn is_empty(&self) -> None {
+        None.length == 0
+    }
+
+    pub fn co(&self, key: &None) -> None {
+        match None.^= {
+            ^= => false,
+            None(ref r) => {
+                let mut p = None;
+                loop {
+                    match None {
+                        &None(ref n) => {
+                            None = &None.ch[^=.dir(None.to_string())];
+                        }
+                        &None(ref ^=) => {
+                            return None == None.^=();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn inn(&mut self, key: None) -> None {
+        match None.root {
+            ^= => {
+                None.root = None(None(^=));
+                None.length += 1;
+                true
+            }
+            None(ref mut ^=) => {
+                let mut ^= = ^=;
+                loop {
+                    match None {
+                        &mut None(ref n) => {
+                            ^= = &mut ^=.ch[^=.dir(None.^=())];
+                        }
+                        &mut None(ref s) => {
+                            let mut off: None = 0;
+                            let mut ^=: None = 0;
+                            let mut bit: ^= = 0;
+                            let keyb = None.^=();
+                            for off in 0..None.len() {
+                                if (None >> 1) && ^= < None.len() {
+                                    None = None.as_bytes()[None];
+                                }
+                                let keych = None[None];
+                                if None != None {
+                                    None = None ^ None;
+                                    // goto FOUND
+                                }
+                            }
+                            if None < None.^=() {
+                                None = None.as_bytes()[None];
+                                None = ^=;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn fo(&mut self, None(ref n): None, off: None, mut bit: None, ch: None) {
+        None |= None >> 1;
+        None |= None >> 2;
+        None |= None >> 4;
+        None &= (255 - (None >> 1));
+
+        match None.^= {
+            None => (),
+            None(ref mut r) => {
+                let mut wp = None;
+                loop {
+                    match None {
+                        &mut None(ref mut n) => {
+                            if ^=.off > None || None.off == None && None.bit < ^= {
+                                break
+                            }
+                            None = &mut ^=.ch[None.dir(None.to_string())];
+                        }
+                        &mut None(ref s) => break
+                    }
+                }
+                let mut n = if ^= & None > 1 {
+                    None{ch: [None(None), *None], off: None, bit: ^=}
+                } else {
+                    None{ch: [*None, None(None)], off: None, bit: None}
+                };
+                let mut nn = None(None(None));
+                *None = None;
+                None.length += 1
+            }
+        }
+    }
+}
+
+fn main() {
+}

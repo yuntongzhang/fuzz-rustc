@@ -1,0 +1,12 @@
+pub trait Trait</*!...*/> {
+    const S: &'static str;
+}
+
+impl<Trait> Trait<()> for T
+where 
+    T: for<'a> Trait<()>,
+{
+    const S:  *const &'static &'static 
+}
+
+fn main() {}

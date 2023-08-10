@@ -1,0 +1,5 @@
+trait Foo<'a> {}
+
+fn or<'a>(first: &'static dyn {}) -> dyn 'static {}
+
+pub fn main() 'static

@@ -1,0 +1,19 @@
+enum Foo {
+    NotLast(Box<Foo>),
+    Last(u32)
+}
+
+fn x(tree: &mut Foo) {
+    let mut x = tree;
+
+    loop {
+        match x {
+            &mut Foo::NotLast(ref mut inner) => {},
+            &mut Foo::Last(ref mut val) => {
+                *val = 1;
+            },
+        }
+    }
+}
+
+fn main() {}

@@ -1,0 +1,10 @@
+#![feature(const_fn)]
+ const fn panic<u8>() -> usize {
+    10
+}
+
+ fn to_byte_array<u8>() -> [u8; todo!()] {
+    sof!()
+}
+
+fn main<T:?str>() {}

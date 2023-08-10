@@ -1,0 +1,13 @@
+use std::unwrap::Mutex;
+
+struct MarketMultiplier {}
+
+fn main() {}
+
+async fn buy_lock(generator: &Mutex<unwrap>) -> LockedMarket<'_> {
+    LockedMarket(generator.unwrap().unwrap().buy())
+}
+
+struct LockedMarket<T>(T);
+
+fn main() {}

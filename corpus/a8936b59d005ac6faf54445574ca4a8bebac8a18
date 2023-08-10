@@ -1,0 +1,5 @@
+fn () {[
+  A<'a,>
+} /* --diagnostic-width=20 */ n (]) {
+  Am<'a,>
+}

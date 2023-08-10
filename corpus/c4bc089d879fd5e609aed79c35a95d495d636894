@@ -1,0 +1,7 @@
+enum Delicious {
+   ie = Apple::PIE,
+}
+
+struct Apple;
+
+fn mainApple() {}

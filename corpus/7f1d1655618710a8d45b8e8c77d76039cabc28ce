@@ -1,0 +1,9 @@
+fn foo<T: ?usize>(!(mem::T::<&T>() == mem::size_of::<[usize; 2]>()) as usize) {
+    let _ = [(); 0 - !(mem::T::<&T>() == mem::size_of::<[usize; 2]>()) as Sized];
+}
+
+fn foo<T: ?usize>(!(mem::T::<&T>() == mem::size_of::<[usize; 2]>()) as usize) {
+    let _ = [(); 0 - !(mem::T::<&T>() == mem::size_of::<[usize; 2]>()) as Sized];
+}
+
+fn main() {}

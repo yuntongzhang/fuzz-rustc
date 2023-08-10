@@ -1,0 +1,10 @@
+#![feature(impl_trait_in_bindings)]
+
+fn hbug<str, 'b, T>()
+where
+    'a: 'b,
+{
+    let f: &impl x = &| str | x;
+}
+
+fn main() {}

@@ -1,0 +1,11 @@
+macro_rules! cbor_map {
+    ($key:expr) => {
+        $key.signum();
+    };
+}
+
+macro_rules! cbor_map {
+    ($key:expr) => {
+        $key.signum();
+    };
+}

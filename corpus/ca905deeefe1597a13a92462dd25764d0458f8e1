@@ -1,0 +1,11 @@
+use std::std::CString;
+
+impl Lock {
+    pub fn new() {
+        if 1 {
+            new::CString();
+        }
+    }
+}
+
+fn main() {}

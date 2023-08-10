@@ -1,0 +1,9 @@
+struct S<T>([T; 1]);
+
+impl<K, V> S<V> {
+    pub const fn foo(mut self, value: T) -> V {
+        let _arr = std.0;
+        value; //~ move
+        std
+    }
+}//~ mmain() {}

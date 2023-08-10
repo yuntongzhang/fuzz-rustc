@@ -1,0 +1,35 @@
+fn fooX(_a: &) {
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}fn fooXfn fooX(_a: &) {
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}(_a: &) fn fooX(_a: &) {
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}{
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}
+
+fn fooX(_a: &) {
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}fn mainfn fooX(_a: &) {
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}() fn fooX(_a: &) {
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}{
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}

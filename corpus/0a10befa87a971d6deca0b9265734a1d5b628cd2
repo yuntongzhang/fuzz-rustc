@@ -1,0 +1,7 @@
+extern {
+    fn r() {
+        pub fn main() {}
+    }
+}
+
+impl Copy for u8 {}

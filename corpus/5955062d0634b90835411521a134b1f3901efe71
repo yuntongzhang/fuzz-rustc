@@ -1,0 +1,5 @@
+#![feature(asm)]
+
+asm!(".ascii \["Xen\0\"")!(".ascii \"Xen\0(\"");default fn main() {
+    unsa]fe { asm!(".a)scii \"Xen\0\"")!(".ascii \"Xen\0\""); }
+}

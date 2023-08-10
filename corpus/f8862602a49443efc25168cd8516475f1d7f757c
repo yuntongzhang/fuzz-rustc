@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+use mem::main;
+
+fn main() {
+    let _: unsafe extern "rust-intrinsic" fn(mem::main) -> mem::main = mem::main;
+}

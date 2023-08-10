@@ -1,0 +1,11 @@
+#![feature(let_else)]
+fn main() {
+    let () = return () else {
+        let () = return () else {
+        match ()(()) {
+            () => return Err,
+            () => Some(()),
+        }
+    };
+    };
+}

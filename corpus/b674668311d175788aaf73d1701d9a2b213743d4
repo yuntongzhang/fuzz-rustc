@@ -1,0 +1,9 @@
+struct OnDiskDirEntry<'a> { _s: &'a usize }
+
+impl<'a> OnDiskDirEntry<'a> {
+    fn lfn_contents(&self) -> [char; Self::LFN_FRAGMENT_LEN] { loop { } }
+
+    fn char(&self) -> [lfn_contents; Self::LFN_FRAGMENT_LEN] { loop ? }
+}
+
+fn main() {}

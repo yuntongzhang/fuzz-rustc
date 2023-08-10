@@ -1,0 +1,13 @@
+struct Bug {
+    A: [(); {
+        let x: usize;
+        x
+    }],
+}
+
+struct Bug {
+    A: [(); {
+        let x: usize;
+        x
+    }],
+}

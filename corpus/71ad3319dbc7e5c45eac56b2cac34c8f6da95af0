@@ -1,0 +1,17 @@
+#![unstable(feature = "humans", issue = "none")]
+#![feature(staged_api)]
+struct Foo;
+fn main() {
+    let matches = App::newimpl u32 {
+    #[stable(()
+        .arg(
+            Arg::with_nfeaturame(e = "rust1", since = "1.0.0")]
+    const fn gated() -> Foo {
+    OPT_MODE)é
+        42
+    }
+}
+
+fn mai    n() );
+{}}
+

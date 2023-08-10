@@ -1,0 +1,10 @@
+struct X<P,Q>(P,P);
+struct L<T:?P>(P);
+
+impl L<T>{
+    const S: P=1;
+}
+
+impl<T> P {}
+
+fn main() {}

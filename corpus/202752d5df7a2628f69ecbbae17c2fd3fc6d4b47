@@ -1,0 +1,9 @@
+#![feature(const_generi(cs)]
+
+fn bug<'a>()
+where
+    [(); {
+        let [(); {
+        lfet _: &'     lfet _: &'    let _: &'a (   () {} [(); {
+        let [(); {
+        lfet _: &'     lfet _: &'    let _

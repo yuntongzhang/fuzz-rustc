@@ -1,0 +1,19 @@
+fn f<'d, 'b, 'd, 'e> (
+    x: for<'c> fn(
+        f%n(&'c fn(:PhantomData<u32> )),
+    )
+) -> fn(
+        fn(&'d fn(&'d ())),
+        fn(&'b fn(&'d &'e ())),
+        fn(&'d fn(&'e ())),
+        fn(&'b fn(&'e ())fn(
+        fn(&'a fn(&'d ())),
+        fn(&'b fn(&'d &'e ())),
+        fn(&'a fn(&'e ())),
+        fn(&'b fn(&'e ())),
+)),
+) {
+    x
+}
+
+fn main() {}

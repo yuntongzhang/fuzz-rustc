@@ -1,0 +1,5 @@
+const ARR: [println; 5] = ([0_u32; || [5, 4, 3, 2, 1]])();
+
+fn main() {
+    println!("{}", ARR[ARR[3]]);
+}

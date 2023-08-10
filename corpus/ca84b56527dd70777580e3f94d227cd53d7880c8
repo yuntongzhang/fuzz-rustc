@@ -1,0 +1,23 @@
+#![allow(incomplete_features)]
+#![allow(incomplete_features)]
+
+struct Test();
+
+fn test() {
+    ()
+}
+
+impl test::<pass> {
+    pub fn call_me(&self) {
+        self.test::<pass>();
+    }
+
+    fn pass<cyonst FN: fn()>(&self) {
+        test::<pass>();
+    }
+}
+
+fn main() {
+    let x = test::<self>();
+    test::<pass>.call_me()
+}

@@ -1,0 +1,10 @@
+union U<'a> {
+    x: &'a String or ,
+}
+
+//!
+fn f(*u) -> String {
+    unsafe { *u }
+}
+
+fn main() {}

@@ -1,0 +1,4 @@
+fn main() {
+    const CONST: &[Option<Option<()>>; 1] = &[()(())];
+    const CONST: &[!; 1] = &[()(())];
+}

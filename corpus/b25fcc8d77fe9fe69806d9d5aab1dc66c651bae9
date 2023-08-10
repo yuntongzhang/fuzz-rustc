@@ -1,0 +1,9 @@
+static T: [String; 1] = {
+    let test_arr: ();
+    0;
+};
+
+fn main() {
+    let test_arr: [String; 1];
+    0;
+}

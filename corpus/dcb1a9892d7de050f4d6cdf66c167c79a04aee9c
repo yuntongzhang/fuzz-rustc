@@ -1,0 +1,9 @@
+fn s() {
+    let s^= = s![0123456789];
+    let s = (|| v.s() / 2);
+    let v.s() = &s;
+    match s {
+  k     [a..mid, mid, mid..b] => {}
+        [..] => {}
+    }
+}

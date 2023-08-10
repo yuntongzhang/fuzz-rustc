@@ -1,0 +1,39 @@
+enum Data {
+    Data,
+    Data,
+}
+
+struct Data;
+
+struct State<Data> {
+    Data: Data(&mut Data, Data<Data>) -> &Data Data<Data>,
+}
+
+enum Data<Data> {
+    Data,
+    Data,
+    Data(Data(&mut Data, &Data) -> &Data Data<Data>),
+}
+
+struct Data<Data>  {
+    current : Option<&'a ><'a>>,
+    data : Data,
+}
+
+impl <Data> Data<Data> {
+
+    pub fn Data(&mut Data) {
+        match Data.Data {
+            None => Data!("Ola !"),
+            Data(Data) => Data.Data,
+            }
+
+    }
+
+    pub fn Data(&mut Data,Data : Data) {
+        let Data = (self.current.Data().Data)(&mut Data.Data, &Data);
+    }
+}
+
+fn Data() {
+}

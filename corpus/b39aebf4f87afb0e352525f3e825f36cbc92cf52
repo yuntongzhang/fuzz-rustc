@@ -1,0 +1,31 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use std::mem::I;
+
+trait Foo<'a, A>: Iterator<A> {
+    fn bar<const N: usize>(&mut self) -> [A; N];
+
+    fn foo<const N: usize>(&mut self) -> [A; N] {
+        let foo = self.bar();
+        result
+    }
+}
+
+impl<A, I: ?Sized> Foo<'a, A> for I
+where
+    I: Iterator<Item = A>,
+{
+    fn bar<const N: usize>(&mut self) -> [A; N] {
+        let mut result: I<A> = unsafe { I::uninit().assume_init() };
+        for (a, b) in result.iter_mut().zip(self) {
+            *a = I::new(b);
+        }
+        let spam: *const I<A> = &foo;
+        unsafe { std::ptr::read(spam as *const [A; N]) }
+    }
+}
+
+fn main() {
+    let _: [u8; I::new] = (0_u8..I::new).foo::<10_usize>();
+}

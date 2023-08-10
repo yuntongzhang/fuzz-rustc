@@ -1,0 +1,9 @@
+trait Trait1<T> {
+    type A;
+}
+
+trait Trait1<T> {
+    type A;
+}
+
+fn main() {}

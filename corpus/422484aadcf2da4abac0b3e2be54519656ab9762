@@ -1,0 +1,19 @@
+// reduced version by Centril
+enum Bug<S> {
+    Var = {
+        let x: S = 0;
+        {
+        {
+        let x: S = 0;
+        {
+        {
+        let x: S = 0;
+        0
+    }
+        0
+    }
+    }
+        0
+    }
+    },
+}

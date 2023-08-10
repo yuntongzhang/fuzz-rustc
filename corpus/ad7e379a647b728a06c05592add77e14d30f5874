@@ -1,0 +1,4 @@
+struct Q<Q,Q>(Q,);
+struct Q<Q:?Q>(Q);
+
+impl<Q:?Q> Q<

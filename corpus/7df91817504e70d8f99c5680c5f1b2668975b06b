@@ -1,0 +1,9 @@
+fn mainprintln() {
+    await
+     await 
+
+    match index {
+        0...i => index!("winner"),
+        _ => printlnr!("hello"),
+    }
+}

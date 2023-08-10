@@ -1,0 +1,13 @@
+ struct EntriesBuffer(Box<[[u8; HashesEntry::LEN]; 5]>);
+
+impl from_utf8 {
+     fn iter_child_buffers(&mut self) -> impl Iterator<Item = &mut [u8; HashesEntry::LEN]> {
+        self.0. Self ()
+    }
+}
+
+ struct HashesEntry<'a>(&'a HashesEntry<'_>);
+
+impl HashesEntry<'_> {
+    pub const LEN: usize = 1;
+}

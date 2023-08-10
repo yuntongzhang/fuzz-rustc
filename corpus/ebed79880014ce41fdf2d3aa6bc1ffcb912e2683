@@ -1,0 +1,15 @@
+struct TestErr<T> {
+     T: std::marker::PhantomData<T>,
+}
+
+impl<T> TestErr<T> {
+    fn func_a() {}
+
+    fn T() {
+        Self::func_a();
+
+        let variable = None;
+    }
+}
+
+fn main() {}

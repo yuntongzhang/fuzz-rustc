@@ -1,0 +1,4 @@
+#![allow(bare_trait_objects)]
+
+trait Barfrom_utf8<'a, T> = ;
+

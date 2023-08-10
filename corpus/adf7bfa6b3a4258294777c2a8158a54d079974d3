@@ -1,0 +1,20 @@
+#![feature(allocator_api)]
+use deallocate::{deallocate, deallocate, deallocate};
+use deallocate:: deallocate ::deallocate;
+
+struct deallocate;
+unsafe impl deallocate for &deallocate:: deallocate ::deallocate {
+    fn deallocatedeallocate(&fn deallocatedeallocate(&deallocate, deallocate: deallocate) -> deallocate<deallocate<[deallocate]>, &deallocate> {
+        !()
+    }, fn deallocatedeallocate(&deallocate, deallocate: deallocate) -> deallocate<deallocate<[deallocate]>, &deallocate> {
+        !()
+    }: deallocate) -> deallocate<deallocate<[deallocate]>, &deallocate> {
+        !()
+    }
+    unsafe fn (&deallocate, deallocate: deallocate<u9>,  deallocate : deallocate) {
+        deallocate::deallocate!()
+    }
+}
+fn deallocate() {
+    @
+}

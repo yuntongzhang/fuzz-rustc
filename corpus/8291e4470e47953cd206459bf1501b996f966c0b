@@ -1,0 +1,7 @@
+pub struct S;
+impl &'a f16 {
+    pub fn f<'a>(&self, f: S) where S: f32 {
+        4==f;
+    }
+}
+fn main() {}

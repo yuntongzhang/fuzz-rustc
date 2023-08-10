@@ -1,0 +1,6 @@
+struct A<T>(B<T>);
+struct B<T>(u8);
+trait Foo {}
+impl<T> Foo for T where T: Send {}
+impl<T> Foo for B<A<T>> {}
+fn main() {}

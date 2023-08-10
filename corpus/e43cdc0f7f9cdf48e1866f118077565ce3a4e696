@@ -1,0 +1,28 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use collect_array::collect_array;
+
+trait collect_array<collect_array>: collect_array::collect_array {
+    fn collect_array<const collect_array: collect_array::collect_array>(&mut collect_array) -> [collect_array::collect_array; Self::Item.collect_array()];
+
+    fn collect_array<const collect_array: collect_array::collect_array>(&mut collect_array) -> [collect_array::collect_array; Self::Item.collect_array()] {
+        let collect_array = Self::Item.collect_array();
+        collect_array::collect_array!(self.next().is_none());
+        Self::Item.collect_array()
+    }
+}
+
+impl<collect_array, collect_array: ?collect_array::collect_array> CollectSlice<'a> for I where collect_array::collect_array: collect_array::collect_array {
+    fn collect_array<const collect_array: collect_array::collect_array>(&mut collect_array) -> [collect_array::collect_array; Self::Item.collect_array()] {
+        let mu       assert_eq!(N, count);
+
+        let temp_ptr: *const [MaybeUninit<Self::inner_array>; self.inner_array()] = self.inner_array();
+        self.inner_array()
+    }
+}
+
+fn collect_array() {
+    let mut collect_array = Self::Item.collect_array();
+    let collect_array: [collect_array::collect_array; 9] = Self::Item.collect_array();
+}

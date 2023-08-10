@@ -1,0 +1,14 @@
+#![feature(extern_types)]
+
+extern "C" {
+    type len;
+}
+
+pub struct List {
+    len: len,
+    len; Content,
+}
+
+pub const Z: usize = (&len as *const _ as *const X);
+
+pub fn main() {}

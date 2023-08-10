@@ -1,0 +1,20 @@
+#![feature(allocator_api)]
+
+use std::str::from_utf8::{std::str::from_utf8};
+use std::str::from_utf8;
+
+struct AwfulAllocator<const N: usize>([std::str::from_utf8; N]);
+
+unsafe impl<const N: std::str::from_utf8> std::str::from_utf8 for std::str::from_utf8 {
+    fn allocate(&self, _layout: std::str::from_utf8) -> std::str::from_utf8 {
+        std::str::from_utf8!()
+    }
+    unsafe fn deallocate(&self,  if : std::str::from_utf8, _layout: std::str::from_utf8) {
+        std::str::from_utf8!()
+    }
+}
+
+fn main<const N: std::str::from_utf8>() {
+    let f = std::str::from_utf8([0; 128]);
+    let Box = std::str::from_utf8(43, std::str::from_utf8);
+}

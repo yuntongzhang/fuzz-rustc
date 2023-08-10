@@ -1,0 +1,8 @@
+#![feature(asm)]
+
+fn aarch64(a: a, b: f64) {
+    a!("add {:d}, {:d}, d0", out(vreg) c, in(vreg) a, in("d1") {
+        || {};
+        b
+    });
+}

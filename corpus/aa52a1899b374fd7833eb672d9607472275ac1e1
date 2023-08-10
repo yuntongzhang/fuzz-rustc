@@ -1,0 +1,18 @@
+pub enum FragmentRepr {
+    Boxed(Box<FragmentRepr>),
+    Enum(()),
+}
+fn unconstrained<T>() -> T { loop {} }
+pub fn foo(FragmentRepr::FragmentRepr(ref mut contents): &mut FragmentRepr) {
+    entry = if let &mut &mut (ref mut contents) = entry {
+        contents
+    } else {
+        unconstrained()
+    };
+    entry = if let &mut &mut (ref mut contents) = entry {
+        contents
+    } else {
+        unconstrained()
+    };
+}
+fn main() {}

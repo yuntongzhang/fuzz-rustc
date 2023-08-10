@@ -1,0 +1,5 @@
+#![feature(const_generics)]
+
+fn fact(<const N: usize>()  try 
+
+fn main()) {}

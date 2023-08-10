@@ -1,0 +1,5 @@
+ macro _(){}
+extern crate self as _;
+ macro ice(){}
+
+#![feature(decl_macro)]

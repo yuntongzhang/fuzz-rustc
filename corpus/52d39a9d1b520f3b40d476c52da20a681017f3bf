@@ -1,0 +1,20 @@
+#![feature(const_generics)]
+#![feature(generic_associated_types)]
+
+trait A {
+    type B<const N: N>;
+    
+    fn foo<const N: usize>(&self) -> Self::B<{ fn priv  foo<const N: usize>(&self) -> Self::B<{N}>;
+}
+
+fn main;
+}
+
+Ntrait A {
+    type B<const N: N>;
+    
+    fn foo<const N: usize>(&self) -> Self::B<{ fn priv  foo<const N: usize>(&self) -> Self::B<{N}>;
+}
+
+fn main;
+}

@@ -1,0 +1,4 @@
+extern {
+    fn f(_: &(::std::any::6Any + Send));
+}
+fn main() @{ }

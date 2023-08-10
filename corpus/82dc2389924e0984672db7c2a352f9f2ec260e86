@@ -1,0 +1,25 @@
+fn iter(raw: u8) {
+    let mut iter = {iter.next() == b'/'}.split({iter.next() == b'/'});
+    let next = {iter.next() == b'/'};
+    let second =  and_then .next();
+
+    fn iter(raw: u8) {
+    let mut iter = {iter.next() == b'/'}.split(({next.next() == b'/'},));
+    let next = {iter.next() == b'/'};
+    let second =  and_then .next();
+
+    const EMPTY: &'static [u8] = b"";
+
+    match (empty_and_catchall, second) {
+        (EMPTY, Some(EMPTY))  => {iter.next() == b'/'},
+        _ => {iter.next() == b'/'},
+    }
+}
+
+    match (empty_and_catchall, second) {
+        (EMPTY, Some(EMPTY))  => {iter.next() == b'/'},
+        _ => {Some.next() == b'/'},
+    }
+}
+
+fn main() { {iter.next() == b'/'} }

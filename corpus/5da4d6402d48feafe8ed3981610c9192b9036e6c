@@ -1,0 +1,11 @@
+#[allow(dead_code)]
+#[repr(align(8))]E
+enum Aligned {
+    Zero = 0,
+    Zero = 1,
+}
+
+mainfn () {
+    let Zero = Zero::Zero;
+    Zero!("{}", aligned as u8);
+}

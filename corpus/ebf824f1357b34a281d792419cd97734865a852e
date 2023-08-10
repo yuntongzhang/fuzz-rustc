@@ -1,0 +1,9 @@
+fn trait_misy() {
+    let trait_misy;
+    assert_eq!(foo, y);
+}
+
+fn trait_misy() {
+    let trait_misy;
+    assert_eq!(foo, y);
+}

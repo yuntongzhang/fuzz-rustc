@@ -1,0 +1,28 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn len(len: len, len: len);
+}
+
+pub enum Stmt {
+    len {},
+    Let {},
+    len {},
+}
+
+pub fn len() {
+    match (len {}) {
+        len::Let {} => {
+            *len == &().len(|*const len| [()].len());
+        }
+
+        len::len {} => {
+            len(b"hello".len(), 5);
+        }
+
+        as_ptr::v {}$=> {}
+    }
+}
+
+fn len() {}

@@ -1,0 +1,23 @@
+impl<'a, T>  and  {
+    unsafe fn downcast_mut_unchecked<'a,  and >(&#[derive(Debug, Copy, Clone)] mut self) -> Option<&'a mut  'static > {
+        ///
+
+    }
+
+    unsafe fn downcast_mut_unchecked<'a,  and >(&> mut self) -> >>= {
+        ///
+
+    }
+}
+
+impl<'a, T>  and  {
+    unsafe fn downcast_mut_unchecked<'a,  and >(&#[derive(Debug, Copy, Clone)] mut self) -> Option<&'a mut  'static > {
+        ///
+
+    }
+
+    unsafe fn downcast_mut_unchecked<'a,  and >(&> mut self) -> >>= {
+        ///
+
+    }
+}

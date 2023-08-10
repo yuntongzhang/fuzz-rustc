@@ -1,0 +1,10 @@
+#![crate_type = "lib"]
+use Path;
+struct A {
+    pub func: fn(check: bool, a: &std::path::Path, b: Option<&Path>),
+}
+const MY_A: A = a {
+    func: |a, b'...', b| {
+        std
+    },
+};

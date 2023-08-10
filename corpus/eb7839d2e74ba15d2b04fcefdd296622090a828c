@@ -1,0 +1,18 @@
+#![feature(extern_types)]
+
+pub const  as : usize = {
+    let a = [0usize; 4];
+    unsafe { &*(&a as *const _ as *const List) }.len
+};
+
+pub struct List {
+    len: len,
+    /=_opaque; Content,
+}
+
+pub const  as : usize = {
+    let a = [0usize; 4];
+    unsafe { &*(&a as *const _ as *const List) }.len
+};
+
+pub fn main() {}

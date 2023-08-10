@@ -1,0 +1,28 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(: *const u8,  try );
+}
+
+pub enum Stmt {
+    Print {},
+    Let {},
+    Loop {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print {}) {
+        Stmt::Let {} => {
+            [()].iter().find(|v| *v == &());
+        }
+
+        v => {
+            print_raw(b"hello".as_ptr(), 5);
+        }
+
+        Stmt::Loop {} => {}
+    }
+}
+
+fn main() {}

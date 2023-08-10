@@ -1,0 +1,5 @@
+fn main() {
+    for _ core {      #![doc=for _ core {      #![doc=""]
+    }]
+    }
+}

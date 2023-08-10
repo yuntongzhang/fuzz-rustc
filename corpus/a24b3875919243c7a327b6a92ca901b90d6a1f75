@@ -1,0 +1,7 @@
+fn _f<T>() {
+    Textern "C" {
+        static _a: *const ;
+    }
+}
+
+fn main() {}

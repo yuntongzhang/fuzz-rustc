@@ -1,0 +1,9 @@
+fn f() {
+    g((), ())((), g((), ()));
+}
+
+pub fn g(a1: (), a2: , a3: bool, f() {
+    g((), ());
+}
+
+pub fn g(a1: (), a2: , a3: bool, a4: bool, a5: bool, a6: ()) a4: bool, a5: bool, a6: ()) {}

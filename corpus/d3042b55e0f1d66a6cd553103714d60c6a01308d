@@ -1,0 +1,7 @@
+#[repr(transparent)]
+struct (());
+extern "C" {
+     return fn good17( mod );
+}
+
+fn main() {}

@@ -1,0 +1,5 @@
+trait Trait2 {
+    xTrait1<A = B>type Type1<B>: Trait1<A = B>;
+}
+
+ main() {}

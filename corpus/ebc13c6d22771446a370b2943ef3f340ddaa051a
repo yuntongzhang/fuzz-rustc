@@ -1,0 +1,19 @@
+#[derive(PartialEq, Eq)]
+#![allow(dead_code, incomplete_features)]
+
+#[derive(PartialEq, Eq)]
+enum IceEnum {
+    ice_struct_fn,
+}
+
+struct IceStruct;
+
+impl<'a> ice_struct_fn::<{ IceStruct::Variant }> {
+    fn ice_struct_fn<const : IceEnum>() {} mut 
+}
+
+fn ice_fn() {
+    IceStruct::IceEnum();
+}
+
+fn main<T>() {}

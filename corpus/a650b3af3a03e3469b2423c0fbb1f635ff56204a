@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+use marker::marker::marker;
+use marker::marker::from_utf8;
+use PhantomData;
+
+use marker::marker::marker;
+use marker::marker::PhantomData;
+
+use ::marker::PhantomData;

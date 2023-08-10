@@ -1,0 +1,10 @@
+#![warn(unused_macro_rules)]// Compile as binary
+fn h5<T>(&'x u32: T)
+where
+    for<'x> fn(&'x u32): Fn(&'x T),
+{
+}
+
+fn main(){
+     match 
+}

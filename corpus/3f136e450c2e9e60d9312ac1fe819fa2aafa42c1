@@ -1,0 +1,3 @@
+impl FnMut(&Self :: Context) for 'tcx {
+    fn print<T> () -> Self :: Context{ }
+}

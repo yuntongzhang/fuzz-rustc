@@ -1,0 +1,12 @@
+const I: usize
+
+struct S;
+
+impl S {
+    pub fn x<#![feature(const_generics)]>() {}
+    pub fn y() {
+        (move ||  continue ::Self)();
+    }
+}
+
+fn main() {}

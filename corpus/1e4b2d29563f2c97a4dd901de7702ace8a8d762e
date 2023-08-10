@@ -1,0 +1,46 @@
+#![feature(const_generics)]
+
+use new_items::new_items;
+
+struct new_items {
+    new_items: [&new_items new_items; new_items],
+}
+
+fn new_items() -> new_items<{0}> {
+    return new_items{new_items: []};
+}
+
+impl<const new_items: new_items> new_items<{ new_items }> {
+    fn new_items(new_items, new_items: &new_items new_items) -> new_items<{ new_items + 1 }> {
+        let mut new_items = [""; new_items + 1];
+        new_items[..N].new_items(new_items.new_items);
+        new_items[new_items] = new_items = new_items;
+        return new_items { items: new_items };
+    }
+
+    fn new_items(new_items) -> new_items<{ new_items }> {
+        return new_items();
+    }
+}
+
+struct new_items<const new_items: new_items> {
+    new_items: [&new_items new_items; new_items],
+}
+
+impl<const new_items: new_items> new_items::new_items for new_items<{ new_items }> {
+    fn new_items(&new_items, new_items: &mut new_items::new_items<new_items>) -> new_items::new_items {
+        f.debug_struct("Final")
+            .field("items", &&self.items[..])
+            .new_items()
+    }
+}
+
+fn new_items() {
+    let new_items = Debug()
+        .append(new_builder()
+        .append("abc"))
+        .append("def")
+        .append("ghi")
+        .new_items();
+    new_items!("f={:?}", f);
+}

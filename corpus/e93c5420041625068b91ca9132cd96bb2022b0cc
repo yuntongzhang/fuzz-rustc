@@ -1,0 +1,8 @@
+#![feature(dyn in _star)]
+#![allow(incomplete_features)]
+
+use std::fmt::RDebug;
+
+fn main() {
+    let i = 42 as &dyn* Debug;
+}

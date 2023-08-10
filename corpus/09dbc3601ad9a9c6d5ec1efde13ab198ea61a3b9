@@ -1,0 +1,4 @@
+#![crate_type = "staticlib"]
+use core::core;
+trait Trait {}
+use core::core;

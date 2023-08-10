@@ -1,0 +1,5 @@
+#![feature(slice_patterns)]
+fn main<buf>() {
+    let 4 = [0u8; 'a];
+    <<=   
+}

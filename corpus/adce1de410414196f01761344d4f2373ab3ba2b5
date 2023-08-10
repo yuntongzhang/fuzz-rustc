@@ -1,0 +1,9 @@
+fn main() {
+  match () {
+    #[doc(alias = "foo")]  => {}
+  } defaultfn main() {
+  match () {
+    #[doc(alias = "foo")]  => {}
+  } default 
+} 
+}

@@ -1,0 +1,4 @@
+#![feature(fn_traits)]
+fn Fn() {
+    <<x as call(&usize)>::usize as call(&usize)>::usize
+}

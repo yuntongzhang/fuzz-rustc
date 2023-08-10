@@ -1,0 +1,27 @@
+#![feature(const_generics)]
+
+struct Foo<
+    const N: [u8; {
+        fn main() {}
+
+        impl<const N:  i128 >  i128  {
+            fn value() -> [ i128 ; {
+        struct Foo<const N: X>;
+
+        impl<const %N: usize> X {
+            fn value() -> X {
+                X
+            }
+        }
+
+        X()
+    }] {
+                X
+            }
+        }
+
+        X()
+    }],
+>;
+
+struct Foo<const N:  i128 >;

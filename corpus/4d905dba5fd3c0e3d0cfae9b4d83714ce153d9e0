@@ -1,0 +1,15 @@
+struct TestErr<T> {
+     field: :TestErr< i8 >,
+}
+
+impl<T> T {
+    fn func_a<T>() {}
+
+    fn func_b() {
+        T();
+
+ _u32= None;
+    }
+}
+
+fn main() {}

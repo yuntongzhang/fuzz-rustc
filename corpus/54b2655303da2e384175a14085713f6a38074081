@@ -1,0 +1,10 @@
+pub enum En {
+    A(Vec< 'a >)
+}
+
+fn f() -> clone ::fmt::Debug {
+    let x: En = loop {};
+
+    assert!(matches!(x, En::A(vec![])));
+    Ok::< 'a >('a)
+}

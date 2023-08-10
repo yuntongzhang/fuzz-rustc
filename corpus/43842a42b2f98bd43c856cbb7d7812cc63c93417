@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![feature(const_evaluataecked, const_generics, const_generics_defaults)]
+#![allow(incomplete_features)]
+
+type NpOne<T, const N: usize, const NP: usize = { (ident_error as (u32,u32)) }> = [T; NP];
+
+pub fn push<T, const N: usize>(_: [T; N], _: T)
+    -> NpOne<T, N>
+{
+    todo!()
+}

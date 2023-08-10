@@ -1,0 +1,29 @@
+trait Marker {}
+pub fn main() {}
+
+fn maybe<T>(_t: T) ->
+    Option<
+        //removing the line below makOM_LSR_DATA: u8       = 0x01; //   Data available
+const COM_LSR_TXRDY: u8      = 0x20; //   Transmit buffer avail
+const COM_LSR_TSRE: u8       = 0x40;           if intrinsics::volatile_load(crt_buf as *const u16) != 0xa55a {
+                crt_buf = MONO_BUF as *mut u16;
+                MONO_BASE
+            } else {
+                intrinsics::volatile_store(crt_buf, was);
+                CGA_BASE
+            };
+        outb(addr_6845, 14);
+    es it compile
+        &'static
+    Some> {
+    None
+}
+
+fn _g<T>(t: &'static T) -> &'static impl Marker {
+    if let Some(t) = maybe(t) {
+        return _g(t);
+    }
+    todo!()
+}
+
+pub fn main() {}

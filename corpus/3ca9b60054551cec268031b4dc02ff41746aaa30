@@ -1,0 +1,11 @@
+unsafe fn A<A>(A) {
+    extern "C" {
+        static xxx: *const *const A;
+    }
+    // Arguments
+    extern "C" {
+        static A: xxx;
+    }
+}
+
+fn main() {}

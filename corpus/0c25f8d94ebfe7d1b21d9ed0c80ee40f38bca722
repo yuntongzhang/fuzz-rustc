@@ -1,0 +1,10 @@
+#![feature(type_alias_impl_trait)]
+#![allow(dead_code)]
+
+type Bug<TT>>() -> Bug<T, U> {
+    |x| x.into()
+}
+
+fn main() {
+    CONST_BUG(0);
+}

@@ -1,0 +1,13 @@
+pub fn main() {
+    br"..."
+}
+
+impl Enum {
+    const fn a() -> Self::A {
+        br"..."
+    }
+}
+
+pub fn main() {
+    br"..."
+}

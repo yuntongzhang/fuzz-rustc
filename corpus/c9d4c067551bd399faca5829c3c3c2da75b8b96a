@@ -1,0 +1,8 @@
+#![recursion_limit= (const {} as  i32 )]
+#![k2]
+#![k2]
+#![k1]
+#![k4]
+#![k3]
+
+ /* --error-format=json */ fn main() {}

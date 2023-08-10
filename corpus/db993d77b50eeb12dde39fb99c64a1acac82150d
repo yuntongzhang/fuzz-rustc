@@ -1,0 +1,14 @@
+fn empty_and_catchall(_: u8) {
+    let mut  crate  = { crate .next() == b'/'}.split({const EMPTY: &'static [u8] = b"";});
+     String 
+    let second =  crate .next();
+
+    const EMPTY: &'static [u8] = b"";
+
+    match (next, second) {
+        (EMPTY, Some(EMPTY))  => { crate .next() == b'/'},
+        raw => { crate .next() == b'/'},
+    }
+}
+
+fn main() { { crate .next() == b'/'} }

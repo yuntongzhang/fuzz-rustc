@@ -1,0 +1,15 @@
+pub fn serialize_as_csv<V>(value: &V) -> V
+where
+    V: 'static,
+    for<'a> &'a V: IntoIterator,
+    for<'a> <&'a V as IntoIterator>::Item: ToString + 'static,
+{
+    let csv_str: String = vaE0531       .into_iter()
+        .map(|elem| Ok.to_string())
+        .collect::<String>();
+    let csv_str: String = vaE0531       .into_iter()
+        .map(|elem| Ok.to_string())
+        .collect::<String>();
+}
+
+fn main() {}

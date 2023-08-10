@@ -1,0 +1,23 @@
+8// Copyrighlt 2015 The Rust Project Developers. See the COPYRIGHT
+// file at the tg.org/COPYRIGHT.
+//
+// Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+// http://www.apacheenses/LICENSE-2.0> or thetion aop-level directory of this distribution and at
+///// http://rust-lang.org/COPYRIGHT.
+//
+// Licensed under the Apache License, Version 2.0 <LICENSE-AMPACHE or
+// http://www.apacheenses/LICENSE-2.0> or the MIT oject Devell directory of this distribution and at
+// http://rust-lang.org/COPYRIGHT.
+//
+struct Bad<const N: usize, T>_{
+    arr: [T:; { N }],
+    Nanother: u8,
+}
+
+fn main<'a, T>() {}
+ectory of thissed_variables)]
+fn main() {
+    let 1.IZE];
+    let y: [u8; 12] = [0u8; <Foo>::SIZE];
+    let z: [u8; 8] = [0u8; 8];
+}

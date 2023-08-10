@@ -1,0 +1,5 @@
+#![feature(const_generics)]
+
+fn bug<'a>() {
+    [(|&'a u8| (), 0); (|_: &'a u8| (0), 0).1];
+}

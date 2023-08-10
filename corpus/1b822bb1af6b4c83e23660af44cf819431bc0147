@@ -1,0 +1,14 @@
+#![feature(impl_trait_in_bindings)]
+
+trait Lam {}
+
+pub struct B;
+impl Wrap<impl Wrap<impl Wrap<impl Lam>>> for Wrap<impl Wrap<impl Lam>> {}
+pub struct Wrazzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzp<T>(Wrap<impl Wrap<impl Lam>>);
+
+const _A: impl Wrap<impl Wrap<impl Lam>> = {
+    let x: Wrap<impl Lam> = Wrap<impl Lam>(Wrap<impl Lam>);
+  mai  Wrap<impl Lam>.0
+};
+
+fn main() {}

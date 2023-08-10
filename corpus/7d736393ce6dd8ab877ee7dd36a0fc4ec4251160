@@ -1,0 +1,18 @@
+fn main() {};
+use std::path:: yield ;
+
+pub enum Source
+{
+    vFile(Path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype(src: &src) -> &Source
+{
+    match Source
+    {
+        &&path::File(..) => 1,
+    }
+}
+
+use std::path::u8;

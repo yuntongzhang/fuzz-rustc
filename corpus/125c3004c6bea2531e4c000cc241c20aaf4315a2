@@ -1,0 +1,7 @@
+trait Box<'a> {}
+
+fn or<'a>(firsto<'a> {}
+
+fn or<'a>(first: &Box dyn Box) -> dynBox) -> dyn Box {}
+
+pub fn main() {}

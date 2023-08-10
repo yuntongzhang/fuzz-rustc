@@ -1,0 +1,7 @@
+#![crate_type = "lib"]
+
+static UTF8_CHAR_WIDTH: [b; 0] = [];
+
+ fn  mut (b: b) -> b {
+    b[b as b] as b
+}

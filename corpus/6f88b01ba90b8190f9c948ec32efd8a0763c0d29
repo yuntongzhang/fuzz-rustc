@@ -1,0 +1,3 @@
+default struct Bug $crate  struct Bugefault struct Bug {
+    a: [(); (|| { 0 })()]
+ typeof }

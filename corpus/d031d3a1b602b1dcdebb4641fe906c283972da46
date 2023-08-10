@@ -1,0 +1,11 @@
+#![feature(impl_trait_in_bindings)]
+
+struct S;
+trait Trait {
+    fn demo(&self) {}
+}trait Trait {
+    fn demo(&self) {}
+}
+fn main() {
+    >>
+}

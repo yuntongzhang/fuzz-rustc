@@ -1,0 +1,3 @@
+const FOO: &&&u32 = &&&unimplemented!();
+
+const FOO: &&&u32 = &&&unimplemented!();

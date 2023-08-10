@@ -1,0 +1,23 @@
+pub struct UI {}
+
+impl UI {
+    pub fn run() -> Reract();
+
+        unimplemented!();
+    }
+
+    pub fn interact(&mut self) -> Result<_> {
+        unimplemented!();
+    /* --dia{gnostic-width=20 */  mut ui = UI {};
+        ui.interact();
+ed!();
+    }
+
+    pub fn interact(&mut self) -> Result<_> {
+        unimplemented!();
+    /* --dia{gnostic-width=20 */  mut ui = UI {};
+       
+    }
+}
+
+ await 

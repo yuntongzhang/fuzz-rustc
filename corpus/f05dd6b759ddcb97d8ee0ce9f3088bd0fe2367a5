@@ -1,0 +1,5 @@
+// Note: Cento5[feature(type_ascription)]
+
+enum Bug<S> {
+    Var = 0: typeof  S,
+}

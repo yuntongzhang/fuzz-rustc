@@ -1,0 +1,10 @@
+#![feature(const_generics)]
+#![feature(const_generics)]
+
+trait A {
+    type B<const N: Self::B<{N}>>;
+    
+    fn foo<const N: Self::B<{N}>>(&self) -> Self::B<{N}>;
+}
+
+fn main() {}

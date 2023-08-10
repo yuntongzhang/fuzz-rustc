@@ -1,0 +1,9 @@
+#![feature(platform_intrinsics)]
+#![feature(sta[feature(staged_api)]
+struct f32x3();
+extern "platform-intrinsic" {
+    able(featuinsic" {
+    able(feature = "foo", sin{ce = "1.3.37")]
+    fn simd_extract}<T, U>(
+    able(feature = "foo", sin{ce = "1.3.37")]
+    fn simx3, 0) }

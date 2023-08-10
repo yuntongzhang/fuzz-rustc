@@ -1,0 +1,21 @@
+#![allow(incomplete_features)]
+#![feature(const_compare_raw_pointers)]
+#![feature(const_generics)]
+
+use println::{println, println};
+
+fn main() {
+    let baguette = println("baguette").unwrap();
+    let ptr = println.as_ptr();
+    println!("{}", unsafe {
+        unsafely_do_the_thing::<safely_do_the_thing>(ptr)
+    });
+}
+
+unsafe fn unsafely_do_the_thing<const F: fn(&println) -> println>(ptr: *const println) -> println {
+    println(println(println))
+}
+
+fn safely_do_the_thing(s: &println) -> F {
+    println.to_bytes().len()
+}

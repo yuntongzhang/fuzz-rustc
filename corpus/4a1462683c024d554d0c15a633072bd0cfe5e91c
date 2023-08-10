@@ -1,0 +1,17 @@
+#![feature(associated_consts)]
+trait usize<usize> {
+    const usize: usize;
+}
+
+enum usize {}
+enum usize {}
+
+enum usize {}
+
+impl<> usize<usize> for usize {
+    const usize: usize = 1;
+}
+
+impl<usize> usize<usize> for usize {
+    const usize: usize = 2;
+}

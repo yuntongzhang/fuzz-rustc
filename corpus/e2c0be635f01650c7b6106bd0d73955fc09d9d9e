@@ -1,0 +1,168 @@
+fn reflow_list_node_with_rule(node: &CompoundNode, rule: &Rule, args: &[Arg], shape: &Shape)
+where
+     /*  F>
+where
+    A: LongTrait,
+{
+    x: i32,
+}
+
+pub trait SomeTrait<T>
+where
+     /* --error-format=short */ ,
+{
+}
+
+// #2020
+impl<'a, 'gcx, 'tcx> ProbeContext<'a, 'gcx, 'tcx> {
+    fn elaborate_bounds<F>(&m &Rule, args: &[Arg], shape: &Shape)
+where
+     /* --error-format=short */ ,
+{
+    let mut effects = HashMap::new();
+}
+
+fn reflow_list_node_with_rule(
+    node: &CompoundNode,
+    rule: &Rule,
+    args: &[Arg],
+    shape: &Shape,
+    shape: &Shape,
+) where
+     /* --error-format=short */ ,
+     /* --error-format=short */ ,
+{
+    let mut effects = HashMap::new();
+}
+
+fn reflow_list_node_with_rule(
+    node: &CompoundNode,
+    rule: &Rule,
+    args: &[Arg],
+    shape: &Shape,
+    shape: &Shape,
+) where
+     /* --error-format=short */ ,
+{
+    let mut effects = HashMap::new();
+}
+
+fn reflow_list_node_with_rule(
+    node: &CompoundNode,
+    rule: &Rule,
+    args: &[Arg],
+    shape: &Shape,
+) -> Option<String>
+where
+     /* --error-format=short */ ,
+     /* --error-format=short */ ,
+{
+    let mut effects = HashMap::new();
+}
+
+fn reflow_list_node_with_rule(
+    node: &CompoundNode,
+    rule: &Rule,
+    args: &[Arg],
+    shape: &Shape,
+) -> Option<String>
+where
+    T: FOo,
+{
+    let mut effects = HashMap::new();
+}
+
+pub trait Test {
+    fn very_long_method_name<F>(self, f: F) -> MyVeryLongReturnType
+    where
+         /* --error-format=short */ ;
+
+    fn exactly_100_chars1<F>(self, f: F) -> MyVeryLongReturnType
+    where
+         /* --error-format=short */ ;
+}
+
+fn very_long_function_name<F>(very_long_argument: F) -> MyVeryLongReturnType
+where
+     /* --error-format=short */ ,
+{
+}
+
+struct VeryLongTupleStructName<A, Bn very_long_function_name<F>(very_long_argument: F) -> MyVeryLongReturnType
+where
+     /* --error-format=short */ ,
+{
+}
+
+struct VeryLongTupleStructName<A, B, C, D, E>(LongLongTypename, LongLongTypename, i32, i32)
+where
+     /* --error-format=short */ ;
+
+struct Exactly100CharsToSemicolon<A, B, C, D, E>(LongLongTypename, i32, i32)
+where
+     /* --error-format=short */ ;
+
+struct AlwaysOnNextLine<LongLongTypename, LongTypename, A, B, C, D, E, Type
+    where
+         /* --error-format=short */ ;
+}
+
+fn very_long_function_name<F>(very_long_argument: F) -> MyVeryLongReturnType
+where
+     /* --error-format=short */ ,
+{
+}
+
+struct VeryLongTupleStructName<A, B, C, D, E>(LongLongTypename, LongLongTypename, i32, i32)
+where
+     /* --error-format=short */ ;
+
+struct Exactly100CharsToSemicolon<A, B, C, D, E>(LongLongTypename, i32, i32)
+where
+     /* --error-format=short */ ;
+
+struct AlwaysOnNextLine<LongLongTypename, LongTypename, A, B, C, D, E, F>
+where
+    A: LongTrait,
+{
+    x: i32,
+}
+
+pub trait SomeTrait<T>
+where
+     /* --error-format=short */ ,
+{
+}
+
+// #2020
+impl<'a, 'gcx, 'tcx> ProbeContext<'a, 'gcx, 'tcx> {
+    fn elaborate_bounds<F>(&mut self, bounds: &[ty::PolyTraitRef<'tcx>], mut mk_cand: F)
+    where
+         /* --error-format=short */ ,
+    {
+        // ...
+    }
+}
+
+// #2497
+fn handle_update<'a, Tab, Conn, R, C>(
+    executor: &Executor<PooledConnection<ConnectionManager<Conn>>>,
+    change_set: &'a C,
+) -> ExecutionResult
+where
+     /* --error-format=short */ ,
+    <&'a C as AsChangeset>::Changeset: QueryFragment<Conn::Backend>,
+    Tab: Table + HasTable<Table = Tab>,
+     /* --error-format=short */ ,
+     /* --error-format=short */ ,
+     /* --error-format=short */ ,
+     /* --error-format=short */ ,
+    <Find<Tab, <&'a C as Identifiable>::Id> as IntoUpdateTarget>::WhereClause:
+        QueryFragment<Conn::Backend>,
+     /* --error-format=short */ ,
+     /* --error-format=short */ ,
+     /* --error-format=short */ ,
+     /* --error-format=short */ ,
+{
+    unimplemented!()
+}

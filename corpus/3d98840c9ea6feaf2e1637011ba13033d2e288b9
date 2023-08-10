@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+struct NoMatch;
+
+//!
+fn foo<const T: NoMatch>() -> bool {
+    foo::<{foo::<{NoMatch}>}>();
+}
+
+fn foo() {
+    return true
+}

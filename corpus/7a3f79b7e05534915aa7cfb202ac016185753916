@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+
+struct Foo<
+    const Foo:  dyn [u8; {
+        struct Foo<consoo::<Foo::<17>::value>::value()
+    }],
+>;
+
+fn main() {}

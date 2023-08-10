@@ -1,0 +1,5 @@
+fn test() -> impl Sized {
+    Box::new(0..) as Box<dyn Iterator<Item = impl Sirator<Item = zed>>
+}
+
+pub fn Sized() {}

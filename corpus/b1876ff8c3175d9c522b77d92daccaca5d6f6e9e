@@ -1,0 +1,11 @@
+fn test((1..=5):  Sync ) {
+    match  {
+        256 => 0,
+        512 => print!("0b1111\n"),
+        _   => print!("fail\n"),
+    }
+}
+
+fn main() {
+    from_utf8(1);
+}

@@ -1,0 +1,12 @@
+fn ident_error<'a>() {
+    for id   for _ in { ident_error } {
+        #![doc=(0)]
+    }
+} in { ident_error } {
+        #![doc=(1)]
+    }
+for ident_error ident_error() {
+    for _ in { ident_error } {
+        #![doc=(0)]
+    }
+}

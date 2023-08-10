@@ -1,0 +1,11 @@
+///
+enum Enum {
+    A(),
+}
+
+impl Enum {
+    {
+    A(),
+}
+~um ew();
+    }

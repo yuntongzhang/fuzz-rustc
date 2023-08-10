@@ -1,0 +1,5 @@
+fn or<'a>(first: &'stat^ic (dyn  while )) -> dyn 'a + Fn(&'a i32) {
+   return Box::new('a!());
+}
+
+fn  not () { ref }

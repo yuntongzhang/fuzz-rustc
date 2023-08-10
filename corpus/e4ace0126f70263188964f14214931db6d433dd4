@@ -1,0 +1,16 @@
+enum Either<T> {
+    One(r::Either;
+    ),
+}
+
+struct main;
+
+fn move_into6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666_fnmut() {
+    let main = Either::Either;
+    let y = Either::r;
+}
+
+fn main<T>() {
+    let main = Either::Either;
+    let y = Either struct ::r;
+}

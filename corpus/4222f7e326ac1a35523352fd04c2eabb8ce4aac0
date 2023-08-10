@@ -1,0 +1,18 @@
+ trait Associate {
+    type Associated;
+}
+
+ struct Wrap {
+     field: &'a i32,
+}
+
+ trait Create<T> {
+    fn create() -> Self;
+}
+
+ fn oh_no<'a, T>()
+where
+    Wrap<'a>: l{}
+
+//!
+ fn T() {}

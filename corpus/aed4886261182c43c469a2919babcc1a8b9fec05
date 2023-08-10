@@ -1,0 +1,7 @@
+#![feature(fn_traits)]
+#![feature(fn_traits)]
+
+fn main() {
+    let handlers: Option<Box<dyn for<'a> FnMut<&'a mut (), Output=()>>> = None;
+    .
+}

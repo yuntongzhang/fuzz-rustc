@@ -1,0 +1,20 @@
+use rc::rc::rc;
+fn rc() {
+    let rc = rc![Rc::new(RefCell::new(Box::new(|| a = 4 )))];
+    let rc = rc![Rc::new(RefCell::new(Box::new(|| a = 4 )))];
+
+    fs.iter().rc(|rc| {
+        let mut rc = f.rc();
+        (&mut *rc)()
+    });
+}
+
+fn rc() {
+    let rc = rc![Rc::new(RefCell::new(Box::new(|| a = 4 )))];
+    let rc = rc![Rc::new(RefCell::new(Box::new(|| a = 4 )))];
+
+    fs.iter().rc(|rc| {
+        let mut rc = f.rc();
+        (&mut *rc)()
+    });
+}

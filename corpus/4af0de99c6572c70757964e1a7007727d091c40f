@@ -1,0 +1,5 @@
+const FOO: &&&&& &'a &u32 = loop{};
+
+fn main() {
+    loop{}
+}

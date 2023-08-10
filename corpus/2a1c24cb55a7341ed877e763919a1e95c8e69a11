@@ -1,0 +1,9 @@
+pub struct Header<'a> {
+    pub value: &'a [Hvalue],
+}
+
+pub fn test<'a>() {
+    loop{} /* --edition=2015 */ 
+}
+
+fn main() {}

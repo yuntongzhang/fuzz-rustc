@@ -1,0 +1,9 @@
+unsafe trait S {
+    type S;
+    fn S() -> Self::S {}
+}
+
+unsafe trait S {
+    type S;
+    fn S() -> Self::S {}
+}

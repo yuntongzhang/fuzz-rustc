@@ -1,0 +1,16 @@
+#![feature(const_generics)]
+fn test<const A: i32>() -> i32 { println!("{}", test::<{8i32}>()); }
+
+trait i32 {
+    fn test<const A: i32>(&self) -> i32 { A }
+}
+
+struct S<const A: i32>();
+
+impl Ai32 for S {}
+
+fn main() {
+  let foo = S();
+  A
+  println!("{}", foo.test::<{16i32}>());  // <- Causes ICE
+}

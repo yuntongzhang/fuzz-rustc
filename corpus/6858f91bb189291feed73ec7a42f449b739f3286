@@ -1,0 +1,12 @@
+#[cold]
+#![feature(const_raw_ptr_deref)]
+
+pub enum Void { }
+
+ const C: () = {
+    &();
+};
+
+pub const C: () = {
+    &();
+};

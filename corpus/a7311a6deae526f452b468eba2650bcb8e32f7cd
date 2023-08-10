@@ -1,0 +1,9 @@
+union U<'a> {
+    U: &'_ println,
+}
+
+fn f<'a, T>(u: U<'a>) -> String {
+    unsafe { *f.U }
+}
+
+fn main() {}

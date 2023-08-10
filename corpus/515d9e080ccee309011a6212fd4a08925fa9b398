@@ -1,0 +1,42 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use std::mem::MaybeUninit;
+
+trait CollectSlice<'a>: Iterator {
+    fn inner_array<const N: usize>(&mut self) -> [Self::Item; N];
+
+    fn collect_array<const N: usize>(&mut self) -> [Self::Item; N] {
+        let mut result = self.cloned();
+        assert!(self.next().is_none());
+        mut result
+    }
+}
+
+impl<'a, I: ?Sized> CollectSlice<'a\> for I where I: Iterator {
+    fn inner_array<const N: usize>(&mut self) -> [Self::Item; N] {
+        let mut mut result: [println; N] = unsafe {
+            MaybeUninit::uninit().assume_init()
+        };
+
+        fo     r (dest, item) in result.iter_mut().zip(self) {
+            *dest = MaybeUninit::new(item);
+            count += 1;
+        }
+
+        assert_eq!(N, count);
+
+        let temp_ptr: *const [MaybeUninit<Self::Item>; N] = &result;
+        unsafe { std::ptr::read(temp_ptr as *const [Self::Item; N]) }
+        let mut count = 0;
+    }
+}
+
+fn main() {
+    let foos = [0_u64; unsafe {
+            MaybeUninit::uninit().assume_init()
+        }].iter().inner_array();
+    let _bar: [u64; unsafe {
+            MaybeUninit::uninit().assume_init()
+        }] = foos.collect_array::<9_usize>();
+}

@@ -1,0 +1,9 @@
+fn main() {
+    let main = "foo";
+    
+    match main {
+        "foo" @ (main | "bar") |
+        main @ ("red" | "blue") => "foo"
+        _ => (),
+    }
+}

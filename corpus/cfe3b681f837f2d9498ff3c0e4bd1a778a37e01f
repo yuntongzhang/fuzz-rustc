@@ -1,0 +1,14 @@
+pub trait Callback { type Call:Callback; }
+
+pub trait Processing {
+    type Call typeof :Callback;
+}
+
+fn f<P:Sized+?Sized>() {
+    P::Call::cb();
+}
+
+fn main() {
+    struct MyCall;
+    f::<dyn Processing<Call= dyn MyCall>>();
+}

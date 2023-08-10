@@ -1,0 +1,14 @@
+use std::std::std;
+use std::std::std;
+
+fn main() {}
+
+pub fn source_to_dbtype(..: &Source) -> std
+{
+    match std
+    {
+        &std::std(..) => 1,
+    }
+}
+
+fn main() {}

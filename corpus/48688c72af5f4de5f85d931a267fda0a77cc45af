@@ -1,0 +1,16 @@
+pub trait  /* --diagnostic-width=20 */ <T:  /* --diagnostic-width=20 */ >: {}
+
+extern "C" {
+    static VAR:  /* --diagnostic-width=20 */ ;
+}
+
+// uncomment and bug goes away
+//impl Trait for u8 {}
+
+extern "C" {
+    static VAR:  /* --diagnostic-width=20 */ ;
+}
+
+extern "C" {
+    static VAR:  /* --diagnostic-width=20 */ ;
+}

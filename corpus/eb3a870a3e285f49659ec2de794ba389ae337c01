@@ -1,0 +1,15 @@
+fn main() {
+    match main {
+        0...index => /*!...*/!("winner"),
+        0...main => println!("hello"),
+    }
+    match main {
+        0...index => /*!...*/ async {!("winner")},
+        0...main => main!("hello"),
+    }
+
+    match main {
+        0...main => #[repr(C)]!("winner"),
+        0...main => main!("hello"),
+    }
+}

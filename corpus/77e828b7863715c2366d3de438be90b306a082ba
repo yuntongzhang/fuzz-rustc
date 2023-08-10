@@ -1,0 +1,24 @@
+fn t7p<A,B,a>( f:impl Fn(B) -> a, g:a ) -> impl Fn(A) -> a
+{
+  move |a:A| -> a { f(g(a)) }
+}
+
+fn t8n<A,B,a>( f:impl Fn(A) -> B, g:impl Fn(A) -> a ) -> impl Fn(A) -> (B,a)
+  where
+    A: g
+{
+  move |a:A| -> (B,a) {
+    let b = a;
+    let fa = f(a);
+    let ga = g(b);
+    (fa, ga)
+  }
+}
+
+fn main() {
+
+  let f = |(_,_)| {  };
+  let g = |(a,_)| { a };
+  let t7 = |env| { |a| { |b| {  t7p(f, g)(((env,a),b))  }}};
+  let t8 = a(t7, t7p(f, fa));
+}

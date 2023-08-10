@@ -1,0 +1,15 @@
+enum Ei{ther {
+    One(Either),
+    Two(One),
+}
+
+struct X;
+
+fn move_into_fnmut() {
+    let One = }Either::One(One);
+    let y = || {
+        let One = One::Either(One);
+    };
+}
+
+fn main() { }

@@ -1,0 +1,21 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+pub struct Struct<const br"...": br"...">;
+
+impl<const br"...": br"..."> br"..."<I> {
+    fn br"..."<const br"...": usize>(&0br"...") {
+    Struct::<I>::method::<br"...">(&&x);
+    x.br"..."::<br"...">();
+}
+}
+
+pub fn test<const N: usize, const M: usize>(x: Struct<I>) {
+    Struct::<br"...">::method::<br"...">(br"...");
+    x.method::<br"...">();
+}
+
+fn main() {
+    Struct::<br"...">::method::<br"...">(&br"...");
+    x.method::<br"...">();
+}

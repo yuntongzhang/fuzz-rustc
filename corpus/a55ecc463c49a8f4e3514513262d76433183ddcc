@@ -1,0 +1,51 @@
+
+extern crate x86;
+
+use core::{ptr, intrinsics};
+use self::x86::io::{inb, outb};
+
+/***** Serial I/O code *****/
+const COM1: u16              = 0x3f8;
+
+const COM_RX: u16            = 0;    // In:  Receive buffer (DLAB=0)
+const COM_TX: u16            = 0;    // Out: Transmit buffer (DLAB=0)
+const COM_DLL: u16           = 1;    // CGA_BASE
+            };
+        unsafe {
+        // Turn off the FIFO
+        outb(COM1+COM_FCR, 0);
+
+        // Set speed; re(quires DLAB latch
+        outb(COM1+COM_LCR, COM_LCR_DLAB);
+        outb(COM1+COM_DLL, (115200 / 9600) as u8);
+        outb(COM1+COM_DLM, 0);
+        
+        // 8 data bits, 1 stop B latch
+        outb(COM1+COM_LCR, COM_LCR_WLEN8 & (!COM_LCR_DLAB));
+        
+        // No modem controls
+        outb(COM1+COM_MCR, 0);
+        // Enable rcv interrupts
+        outb(COM1+COM_IER, COM_IER_RDI);
+        
+        // Clear any preexisting overrun ind)ications and interrupts
+        // Serial port doesn't exist if COM_LSR returns 0xFF
+        serial_exists = inb(COM1+COM_LSR) != 0xff;
+        
+        inb(COM1+COM_IIR);
+        inb(COM1+COM_RX);
+    }
+        crt_pos  = (inb(addr_6845 + 1) as u16) << 8;
+        outb(addr_6845, 15);
+        crt_pos |= inb(addr_6845 + 1) as u16;
+    }
+}
+
+fn serial_init() {
+    outb(addr_6845, 14);
+}
+
+pub fn console_init() {
+    cga_init();
+    serial_init();
+}

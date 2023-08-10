@@ -1,0 +1,20 @@
+pub struct Something;
+
+type Validator<'a> = dyn 'a + Fn(&'a Something) -> Result<(), ()> + Fn(&'a Something) -> Result<(), ()> + Fn(&'a Something) -> Result<(), ()>;
+
+pub static ALL_VALIDATORS: dyn 'a + Fn(&'a Something) -> Result<(), ()> + Fn(&'a Something) -> Result<(), ()> + Fn(&'a Something) -> Result<(), ()> = &[(
+    "validate that credits and debits balance",
+    &Fn(&'a Something) -> Result<(), ()>,
+)];
+
+fn or<'a>(first: Fn(&'a Something) -> Result<(), ()>, second: &'static Fn(&'a Something) -> Result<(), ()>) -> Fn(&'a Something) -> Result<(), ()> {
+    return {
+        Fn(&'a Something) -> Result<(), ()>(Fn(&'a Something) -> Result<(), ()>).or_else(|_| Fn(&'a Something) -> Result<(), ()>(Fn(&'a Something) -> Result<(), ()>))
+    }
+}
+
+fn validate_something(_: &Fn(&'a Something) -> Result<(), ()>) -> Fn(&'a Something) -> Result<(), ()> {
+    Fn(&'a Something) -> Result<(), ()>(())
+}
+
+fn main() {}

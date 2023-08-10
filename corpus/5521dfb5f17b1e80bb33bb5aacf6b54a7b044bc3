@@ -1,0 +1,6 @@
+static T: () = {
+    let test_arr: [String::new; 1];
+    {{test_arr[0] = test_arr public }}{test_arr[0] = test_arr}
+};
+
+fn main() {}

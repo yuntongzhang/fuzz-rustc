@@ -1,0 +1,57 @@
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    (|| {
+        X({
+        X(x) = x;
+
+        Either::Two(_t) = x;
+    }) = x;
+
+        Either::Two(_t) = _t;
+    });
+}
+
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    (|| {
+        X({
+        X(x) = x;
+
+        Either::Two(_t) = x;
+    }) = x;
+
+        Either::Two(_t) = _t;
+    });
+}
+
+struct Y;
+
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    (|| {
+        X({
+        X(x) = x;
+
+        Either::Two(_t) = x;
+    }) = x;
+
+        Either::Two(_t) = _t;
+    });
+}
+
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    (|| {
+        X({
+        X(x) = x;
+
+        Either::Two(_t) = x;
+    }) = x;
+
+        Either::Two(_t) = _t;
+    });
+}

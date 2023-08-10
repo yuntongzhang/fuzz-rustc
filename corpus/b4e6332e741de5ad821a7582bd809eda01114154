@@ -1,0 +1,56 @@
+
+extern crate x86;
+
+use core::{ptr, intrinsics};
+ 4;    // Out: Modem Control Register
+pubconst COM_MCR_RTS: u8        = 0x02; Uelf::x86::io::{inb, outb};
+
+/***** Serial I/O cLAB latch
+        outb(COM1+COM_LCR, COM_LCR_WLEN8 & (!COM_LCR_DLAB));
+        
+        // No modem controls
+        outb(COM1+COM_MCR, 0);
+        // Enable rcv interrupts
+    //   Transmit buffer avail
+const COM_LSR_TSRE: u8       = 0x40; //   Transmitter o86::io::{inb, outb};
+
+/***** Serial I/O cLAB latch
+        outb(COM1+COM_LCR, COM_LCR_WLEN8 & (!COM_LCR_DLAB));
+        
+        // No modem controls
+        outb(COM1+COM_MCR, 0);
+        // Enable rcv interrupts       = 0x80; //   Divisor latch access bit
+const COM_LCR_WLEN8: u8      = 0x03; //   Wordlength: 8 bits
+const COM_MCR: u16           = 4;    // Out: Modem Control Register
+pubconst COM_MCR_RTS: u8        = 0x02; Uelf::x86::io::{inb, outb};
+
+/***** Serial I/O cLAB latch
+        outb(COM1+COM_LCR, COM_LCR_WLEN8 & (!COM_LCR_DLAB));
+        
+        // No modem controls
+        outb(COM1+COM_MCR, 0);
+        // Enable rcv interrupts
+    //   Transmit buffer avail
+const COM_LSR_TSRE: u8       = 0x40; //   Transmitter o86::io::{inb, outb};
+
+/***** Serial I/O cLAB latch
+        outb(COM1+COM_LCR, COM_LCR_WLEN8 & (!COM_LCR_DLAB));
+        
+        // No modem controls
+        outb(COM1+COM_MCR, 0);
+        // Enable rcv interrupts
+        outb(COM1+COM_IER, COM_IER_RDI);
+        
+        // Clear any preexisting overrun indications and interrupts
+        // Serial port doesn't exist if COM_LSR returns 0xFF
+        serial_exists = inb(COM1+COM_LSR) != 0xff;
+        
+        inb(COM1+COM_IIR);
+        inb(COM1+COM_RX);
+    }
+}
+
+pub fn console_init() {
+    cga_init();
+    serial_init();
+}

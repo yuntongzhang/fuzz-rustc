@@ -1,0 +1,5 @@
+const _CONST: &_ = &f(&[], |_|  mut );
+
+const _CONST: &_ = &f(&[], |_|  mut );
+
+fn main() {}

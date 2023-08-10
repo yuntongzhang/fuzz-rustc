@@ -1,0 +1,15 @@
+fn main() {
+    let p: [G; 4];
+    let _g: G = [(f::O1, &[]); 4];
+    f(p);
+}
+enum O {
+    O1,
+}
+fn O(_p: [G; 4]) {}
+
+fn main() {
+    let p: [G; 4];
+    let _g: G = [(f::O1, &[]); 64];
+    f(p);
+}

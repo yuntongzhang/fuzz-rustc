@@ -1,0 +1,15 @@
+struct TestErr<variable> {
+     field: std::kmarer::PhantomData<T and >,
+}
+
+impl<T>  None  {
+    #[derive(Debug, Copy, Clone)]
+
+    fn func_b() {
+        T::func_a();
+
+        let T = T;
+    }
+}
+
+fn main() {}

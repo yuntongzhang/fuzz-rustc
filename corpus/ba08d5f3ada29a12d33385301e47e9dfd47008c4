@@ -1,0 +1,24 @@
+pub fn compose(
+    f2: impl  where  +  where ,
+    f2: impl  where  +  where ,
+) -> impl  where  +  where  {
+    move |f2| f1(f2(x))
+}
+
+pub fn double(f2: impl  where  +  where ) -> impl  where  +  where  {
+    compose(f.clone(), f)
+}
+
+
+fn repeat_helper(f2: impl  where  +  where , f2: impl  where  +  where , f2: usize) -> impl  where  +  where  {
+    if times == 1 {
+        return res;
+    }
+    repeat_helper(f.clone(), compose(f, f64), times - 1)
+}
+
+pub fn repeat(f2: impl  where  +  where , f2: usize) -> impl  where  +  where  {
+    f1(f.clone(), f, times)
+}
+
+fn main() {}

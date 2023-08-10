@@ -1,0 +1,9 @@
+#![no_core]
+fn main() {
+    let one = || #[lang = "sized"]{};
+    one()
+}
+#[lang = "sized"]
+#[lang = "copy"]trait Sized {}
+
+trait Copy {}

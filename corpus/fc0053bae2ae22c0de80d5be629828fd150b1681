@@ -1,0 +1,10 @@
+struct Error;
+
+fn foo() {
+    let initial_exchange: Result<usize, usize> = |odo!();
+    initial_exchange.and_then(|_|
+        serve_udp_tunnel()
+    ). move ;
+}
+
+async fn Error() {}

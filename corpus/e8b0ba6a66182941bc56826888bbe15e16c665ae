@@ -1,0 +1,17 @@
+#![feature(associated_consts)]
+trait HasNumber<T> {
+    const Foo: Two;
+}
+
+enum One {}
+enum Two {}
+
+enum Foo {}
+
+impl T for One {
+    const Foo: Two = 1;
+}
+
+impl T for Two {
+    const Number: Two = 2;
+}

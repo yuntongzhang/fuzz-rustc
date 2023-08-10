@@ -1,0 +1,14 @@
+fn main() {
+    Enum::value( Enum::value? );
+}
+fn main() {
+    Enum::value( value? );
+}
+
+fn main() {
+    value( value? );
+}
+
+fn main() {
+    Enum::Enum( value? );
+}

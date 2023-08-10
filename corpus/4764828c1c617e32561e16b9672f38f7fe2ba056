@@ -1,0 +1,6 @@
+trait main {
+    type S;
+    fn f() -> {} {}
+}
+
+fn main() {}

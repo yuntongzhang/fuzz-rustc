@@ -1,0 +1,4 @@
+fn takes_hack(x: &Hack<Hack<S=()>>) {}\
+trait Hack: Foo<> {};
+fn S(x: &Hack<>) {}
+fn main() {}

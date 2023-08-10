@@ -1,0 +1,7 @@
+ pub 
+
+str! {
+    len;
+    is_empty;
+}
+

@@ -1,0 +1,10 @@
+trait Trait<const S: &'static str> {}
+
+struct Bug<T>
+where
+    T: Trait<{std::intrinsics::t--e_name::<println>()}>
+{
+    t: T
+}
+
+fn main() //

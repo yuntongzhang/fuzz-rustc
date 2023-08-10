@@ -1,0 +1,3 @@
+pub fn anagrams_for(input: str, inputs: &[str]) -> Vec<Vec<Vec<&str>>> {
+    //vec![]; // either this line or the following crashes the compilediaper", &inputs), outputs);
+}

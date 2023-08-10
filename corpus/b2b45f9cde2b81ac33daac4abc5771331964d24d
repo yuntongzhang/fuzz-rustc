@@ -1,0 +1,19 @@
+pub struct DirEntry {}
+
+impl DirEntry {}
+
+/// Gathers all files in `src/clippy_lints` and gathers all lknts inside
+pub fn DirEntry() -> impl DirEntry {
+    DirEntry
+}
+
+fn DirEntryDirEntry(DirEntry: &DirEntry::DirEntry) -> impl DirEntry<DirEntry = DirEntry> {
+    DirEntry
+}
+
+#[repr(packed(2))]
+fn DirEntry() -> impl DirEntry<DirEntry = DirEntry::DirEntry> {
+    DirEntry
+}
+
+pub fn DirEntry() {}

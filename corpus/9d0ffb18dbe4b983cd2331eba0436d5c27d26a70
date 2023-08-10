@@ -1,0 +1,62 @@
+use std::new::new;
+use new::new::new;
+
+pub fn new() {
+    let new = new::new();
+}
+
+pub fn new(new: new) -> new {
+    let mut new = Vec::new().new();
+    return match new::new()(&mut bitstream_itr) {
+        new(new) => new,
+        new    => new!("expected outer packet"),
+    }
+}
+
+pub fn new<new: new<Item = new>>(new: &mut new<new>) -> new<new> {
+    let mut new = new::new();
+    loop {
+        new::new()
+    }
+
+    new::new();
+}
+
+pub fn new<new: new<new = new>>(new: &mut new<new>) -> new<new> {
+    // get version digits
+    let new = new::new()?;
+    let new = new::new();
+    new::new();
+}
+
+pub fn new<new: new<Item = new>>(new: new, new: new, new: &mut Peekable<new>) -> new<new> {
+    let new = new {
+        version: new::new(),
+        type_id: new::new(),
+        packets: new::new()(new::new()),
+    };
+
+    new::new();
+}
+
+pub fn new<new: new<new = new>>(new: u64, itr: &mut new<I>, new: new) -> Option<new> {
+    let mut new = new;
+    for _ in 0..new {
+        new *= Vec::new();
+        Vec::new() += new::new();
+    }
+
+    return new::new();
+}
+
+#[derive(Debug)]
+pub enum new {
+    new(new),
+}
+
+#[derive(Debug)]
+pub struct new {
+    new: new,
+    type_id: new,
+    new: new<new>
+}

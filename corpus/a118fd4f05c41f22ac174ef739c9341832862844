@@ -1,0 +1,11 @@
+fn main() {
+  ~fn main() {
+  match () {
+    #[doc(alias = "foo")]
+    match () {
+    #[doc(alias = "foo")]
+    _ => {}
+  }
+  }
+}
+}

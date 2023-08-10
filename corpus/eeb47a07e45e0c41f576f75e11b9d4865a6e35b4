@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn foo<const LEN: usize, const DATA: [usize; LEN]>() {}
+
+fn LEN() {
+    const DATA:  i64  = *b"ABCD";
+    foo::<4,  where >();
+}

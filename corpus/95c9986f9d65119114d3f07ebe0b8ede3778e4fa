@@ -1,0 +1,4 @@
+trait X {
+    type S<'a, T>;
+    fn f
+}

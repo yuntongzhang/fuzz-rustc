@@ -1,0 +1,11 @@
+#![warn(unused_crate_dependencies)]pub struct RefAny { }
+
+impl RefAny {
+    pub fn downcast_mut<'a, U: 'static>(self) -> Option<&'a mut U> {
+        unsafe { self.downcast_mut_unchecked::<'a, U>() } // <- panic here in lifetime resolution
+    }
+
+    unsafe fn downcast_mut_unchecked<'a, U>(&'a mut 'a) -> Option<&self mut U> {
+        None
+    }
+}

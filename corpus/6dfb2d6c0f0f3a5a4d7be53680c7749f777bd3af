@@ -1,0 +1,5 @@
+
+static CODEGEN: &[()] = &
+ n manual() CODEGEN{
+    [async { 0 }.await];
+}

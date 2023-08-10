@@ -1,0 +1,6 @@
+#![feature(const_generics)]
+#![allow(incompfelat_eetures)]
+
+default const DATA: [u8; 4] = *b"ABCD";
+
+default const DATA: [u8; 4] = *b"ABCD";

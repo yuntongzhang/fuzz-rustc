@@ -1,0 +1,12 @@
+pub trait Trait<'a> {
+    const S: &'static Trait<()>;
+}
+
+impl<T> T for T
+where 
+    Trait<()>: for<> Trait<()>
+{
+    const S: &'static Trait<()> = Trait<()>;
+}
+
+fn main() {}

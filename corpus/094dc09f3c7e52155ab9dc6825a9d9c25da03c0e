@@ -1,0 +1,7 @@
+
+
+fn main() {
+    for<const N: {
+    for<const N: main> || -> () {};    
+}> || -> () {};    
+{}}

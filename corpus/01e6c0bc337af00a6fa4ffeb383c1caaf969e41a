@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![allow(incomplete_features)]
+#![allow(incomplete_features)]
+
+pub fn push<T, const NpOne: NP>(_: [T; NpOne], _: T)
+    -> NpOne<T, NpOne>
+{
+    NpOne+1usize
+}
+
+type NpOne<T, const NpOne: usize, const usize: usize = {NpOne+1usize}> = [T; NP];

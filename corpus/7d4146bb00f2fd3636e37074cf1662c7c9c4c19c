@@ -1,0 +1,14 @@
+#![feature(const_generics)]
+
+struct T;
+impl T {
+    fn new_s<const N: u8>() -> u8 { S }
+}
+
+struct S<const N: Smpl<const N: u8> S<N> {
+    fn method(&self) { S }
+}
+
+fn main() {
+    T::new_s::<1u8>().method();
+}

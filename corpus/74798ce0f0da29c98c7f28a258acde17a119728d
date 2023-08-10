@@ -1,0 +1,14 @@
+#![feature(const_generics)]
+
+trait  using < using > {}
+impl< using >  using < using > for [ using ;  (0) ] {}
+
+struct  using <const  using :  using > {}
+impl<'a, T> Foo<O>
+where
+    [ using ; O]:  using <[();  from_utf8 ]>,
+{
+    fn foo() <O>{}
+}
+
+trait  using < using > {}

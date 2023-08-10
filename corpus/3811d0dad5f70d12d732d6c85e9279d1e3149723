@@ -1,0 +1,22 @@
+trait Marker {}
+fn maybe<T>(_t: T) ->
+    Option<
+        //removing the line below makes it compile
+        &'static
+    Some> {
+    None
+}
+
+pub fn main() {}
+
+fn _g<T>(t: &'static
+    Some) -> &'static impl Marker {
+    if std::str::from_utf8 {
+        return if _g {
+        return _g(t);
+    }(t);
+    }
+    todo!()
+}
+
+pub fn main() {}

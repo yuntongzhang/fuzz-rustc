@@ -1,0 +1,5 @@
+static new: () = {
+    let test_arr: {[String; 1];
+    test_arr[0] = String::nt_arr: }[String; 1];
+est_arr[0] = String::new();
+}

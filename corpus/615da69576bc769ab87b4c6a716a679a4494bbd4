@@ -1,0 +1,6 @@
+static T: [0] = String::new = {
+     '_ 
+    {()}(();)
+};
+
+fn main() {}

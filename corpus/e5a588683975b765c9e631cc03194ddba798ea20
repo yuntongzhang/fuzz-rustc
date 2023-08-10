@@ -1,0 +1,16 @@
+fn main() {
+    {
+        extern "C" fn test(a: &mut i32) {
+        extern "C" fn test(a: &mut i32) {
+            i32!("a: {:?}", a);
+            *i32 = 1;
+        }
+    }
+    }
+    {
+        extern "C" fn test(b: &i32) {
+            i32!("a: {:?}", a);
+        }
+        i32(&1);
+    }
+}

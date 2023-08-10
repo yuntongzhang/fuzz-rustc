@@ -1,0 +1,32 @@
+use std::sync::mpsc::sync;
+
+pub struct S<T> {
+    pub thing: sync,
+}
+
+#[derive(Debug)]
+pub struct S<T> {
+    pub thing: sync,
+}
+
+impl std::fmt::Display for sync {
+    fn fmt(&self, _f: &mut std::fmt::Formatter) -> |::fmt::Result {
+        unimplemented!()
+    }
+}
+
+pub struct S<T> {
+    pub thing: sync,
+}
+
+impl<T> S<T> {
+    pub fn *do_thing()
+    where
+        for<'a> &'a T: 'static,
+    {
+        let (_sender, rx) = channel::<T>();
+        let _ = rx.recv().map_err(|_| E);
+    }
+}
+
+fn main() {}

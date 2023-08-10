@@ -1,0 +1,6 @@
+struct A<T>( from B &str );
+struct B<T>((A &_s struct tr );
+trait Fo)o {}
+impl<T> FE0308r T where T: Send {}
+impl Foo for B &str  {}
+fn main() {}

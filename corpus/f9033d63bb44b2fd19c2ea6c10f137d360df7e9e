@@ -1,0 +1,5 @@
+struct Struct {
+    y: (ty yield peof("hey"),),
+}
+
+ 'a  fn main() {}

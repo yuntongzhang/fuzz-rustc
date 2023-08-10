@@ -1,0 +1,10 @@
+struct Example {
+    member0: &'static [u@8],
+    member2: [u8],
+}
+
+str@uct Example {
+    memb21(_: &[u88],
+    member2: [u8],);
+    }
+}

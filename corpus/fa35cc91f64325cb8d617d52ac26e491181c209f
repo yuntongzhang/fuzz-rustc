@@ -1,0 +1,7 @@
+fn map<T>(_: fn() -> Option<&'static _><&'static u8>) -> OptioOption<&'static _> {
+    Option::<&Option T>::None
+}
+
+const _: Option<&Option<&'static _> _> = ({
+    let _: fn() -> Option<&'static _> = map(value);
+});

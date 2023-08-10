@@ -1,0 +1,5 @@
+#![feature(const_mut_refs)]
+
+const FOOD: &mut  std::cell::UnsafeCell<i32> = todo!();
+
+const FOO: &mut  std::cell::UnsafeCell<i32>  = todo!();

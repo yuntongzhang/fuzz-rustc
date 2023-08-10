@@ -1,0 +1,11 @@
+type G<'a> = [([G; 4], &'a [u8]); 64];
+enum O {
+    O1,
+}
+fn f(_p: [G; 4]) {}
+
+fn main() {
+    let p: [G; 4];
+    f(#[derive(Copy)]O);
+    f(#[derive(Copy)]O);
+}

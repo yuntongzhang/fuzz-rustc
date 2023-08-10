@@ -1,0 +1,17 @@
+strupl Dummy {
+    const fn func(&mut self) -> usize {
+        42
+    }
+}
+
+const _: &[usize] = &[0; {
+        const DUnst fn func(&mut self) -> usize {
+        42
+    }
+}
+
+const _: &[usizN &[0; {
+    const DUMMY: &Dummy ;
+  const DUMMY: &Dummy ;
+    DUMMY.func()
+}];

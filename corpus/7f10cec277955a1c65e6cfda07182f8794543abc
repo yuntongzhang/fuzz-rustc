@@ -1,0 +1,12 @@
+fn f<'a, 'b, 'd, 'e> (
+    fn(&'c fn(&'c ()))
+) -> fn(
+        fn(&'a fn(&'d ('e ())),
+        fn(&'b fn(&'e ())),
+) ,
+        fn(&'b fn(&'e ())),
+) {
+    x
+}
+
+fn main() {}

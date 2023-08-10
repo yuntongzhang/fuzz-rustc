@@ -1,0 +1,65 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [Ref; 2],
+    off: usize,
+    bit: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct Crash {
+    root: Option<Ref>,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        if }
+                        &mut( )K(ref s) => break
+                    }
+     se std::mem::swap;
+
+struct Int {
+    ch: [Ref; 2],
+    off: usize,
+    bit: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct Crash {
+    root: Option<Ref>,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        if }
+                        &mut( )K(ref s) => break
+                    }
+                }
+                let mut n = if ch & bit > 1 {
+                    Int{ch: [K(key), *wp], off: off, bit: bit}
+                } e: bit}
+                } else {
+                    Int{ch: [*wp, K(key)], off: off, bit: bit}
+                };
+                let mut nn = N(Box::new(n));
+                *wp = nn;
+                self.length += 1
+            }
+        }
+    }
+}
+
+fn main() {
+}

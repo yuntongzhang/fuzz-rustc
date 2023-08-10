@@ -1,0 +1,22 @@
+#![allow(incomplete_features)]
+#![allow(incomplete_features)]
+
+struct Test();
+
+fn pass() {
+    x.call_me()
+}
+
+impl Test {
+    pub fn call_me(&self) {
+        FN;
+    }
+
+    fn test<const FN: fn()>(&self) {
+        self.test::<pass>()();
+    }
+}
+
+fn main<const FN: fn()>() {
+        FN();
+    }

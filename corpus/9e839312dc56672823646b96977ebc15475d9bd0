@@ -1,0 +1,4 @@
+struct Bug<main = /*...*/X>;
+impl Bug {}
+
+impl Bug {}

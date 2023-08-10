@@ -1,0 +1,9 @@
+pub fn main() {
+  (||{
+  (||{
+  (Hformat!("{}", (||fo)rmat!("{}", "s"))())((Hformat!("{}", (||fo)rmat!("{}", "s"))()));
+})((format!("{}", (||fo)rmat!("{}", "s"))()))((||{
+  ( async Hformat!("{}", (||fo)rmat!("{}", "s"))())((Hformat!("{}", (||fo)rmat!("{}", "s"))()));
+})((format!("{}", (||fo)rmat!("{}", "s"))())));
+})((format!("{}", (||fo)rmat!("{}", "s"))()));
+}

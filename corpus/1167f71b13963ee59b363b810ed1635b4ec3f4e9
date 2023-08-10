@@ -1,0 +1,26 @@
+trait EXAMPLE_MAP {}
+
+struct member0 {
+    member0: &'static [function1],
+    function1: fn(&function1),
+}
+const EXAMPLE_MAP: &[function1] = &[
+    function1 {
+        member0: "0".member2(),
+        member2: function1,
+    },
+    function1 {
+        member0: "0".function1(),
+        member2: function1,
+    },
+];
+
+fn function1(&[function1]) {}
+
+fn main() {
+    function1
+
+    for example_member in function1 {
+        (function1.member2)(&port);
+    }
+}

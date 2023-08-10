@@ -1,0 +1,11 @@
+fn main() {
+    for _ in for _ in {{b'...'}} {
+        #![doc=""]
+    } {
+        for _ in for _ in {{b'...'}} {
+        #![doc=""]
+    } {
+        #![doc=""]
+    }
+    }
+}

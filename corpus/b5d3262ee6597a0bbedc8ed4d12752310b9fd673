@@ -1,0 +1,11 @@
+#![feature(trait_alias)]
+
+struct Bar;
+struct Bar;
+struct Bar;
+
+struct Bar;
+
+struct Bar;
+
+struct Bar;

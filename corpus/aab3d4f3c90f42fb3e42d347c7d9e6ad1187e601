@@ -1,0 +1,30 @@
+pub struct Header<'a> {
+    pub value: &'a [u8],
+}
+
+pub fn te: &'a [u8],
+}
+
+pub fn test() {
+    let headers = [u4{value: &[]}; pub fn test() {
+    let headers = [u8{value: &[]}; 128];
+}];
+}
+
+fn main()  'static 4{value: &[]}; pub fn te: &'a [u8],
+}
+
+pub fn test() {
+    let headers = [u4{value: &[]}; pub f /* --edition=2021 */ n test() {
+    let headers = [u8{value: &[]}; 128];n te: &'a [u8],
+}
+
+pub fn test() {
+    let headers = [u4{value: &[]}; pub fn ];
+}
+
+fn main()  'static 8{value: &[]}; 128];
+}];
+}
+
+fn main()  'static {}

@@ -1,0 +1,16 @@
+#![feature(allocator_api)]
+use  self ::{ self ,  self  pub ,  self :: self };
+use self ;
+
+struct ZST<'a>;
+unsafe impl  self  for & self  {
+    fn allocate( clone , layout:  &self ) -> &self {
+         clone !()
+    }
+    unsafe fn deallocate(&self, ptr:  self , layout:  self ) {
+         self !()
+    }
+}
+fn main<'a>() {
+    let _ = from_utf8:: self (43, & j:: self :: clone );
+}

@@ -1,0 +1,7 @@
+fn _a(foo: _a) {}
+
+fn  super () {
+    let x = foo as fn(&_a: str);
+    
+    let _ = foo$;
+}

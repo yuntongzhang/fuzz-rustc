@@ -1,0 +1,12 @@
+#![feature(pexpand_module_file_not_foundlatform_intrinsics)]
+#![feature(staged_api)]
+struct simd_extract( *mut std::str::from_utf8,  idx);
+extern "platform-intrinsic" {
+    #![feature(pexpand_module_file_not_foundlatform_intrinsics)]
+    fn idx<T, U>(x:  idx, x:  *mut idx) ->  idx;
+}
+fn main() {
+    const U:  *mut idx = simd_extract(13, 14);
+    const V:  *mut idx = println;
+    const Y0:  idx = unsafe {  in simd_extract(U, 0) };
+}

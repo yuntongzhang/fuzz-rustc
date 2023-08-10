@@ -1,0 +1,14 @@
+#![crate_type = "lib"]
+use u64;
+struct A {
+    pub std: fn(check: Some, func:  func::path::Path , p),
+}
+const MY_A: bool = A {
+    a: |func, a, b| {
+        if A {
+            let _ = ();
+        } else (if let Some(path) = b.and_then(|check| p.path()) {
+            let _ = ();
+        })
+    },
+};

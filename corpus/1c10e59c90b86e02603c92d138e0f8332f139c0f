@@ -1,0 +1,9 @@
+fn main() {
+    let x @ _ = "foo";
+    
+    match x {
+        x @ _ => {
+        }
+        x @ _ => (),
+    }
+}

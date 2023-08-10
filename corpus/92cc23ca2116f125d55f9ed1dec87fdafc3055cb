@@ -1,0 +1,33 @@
+fn main() {
+    extern "C" fn foo() {
+    extern "C" fn foo() {
+    extern "C" fn foo() { }extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}extern "C" fn foo() {
+     self extern "C" fn foo() { }extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}
+    {
+        extern "C" fn foo() {
+    extern "C" fn foo() { }extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}
+    }
+}
+    {
+        {
+        extern "C" fn foo() {
+    extern "C" fn foo() { }extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}
+    }
+    }
+}

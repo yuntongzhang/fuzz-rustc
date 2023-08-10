@@ -1,0 +1,6 @@
+#![crate_type = "lib"]
+
+#![crate_type = "lib"]
+trait Foo {
+  type PublicKey<'a> : From[<&'a [u8]>];     
+}

@@ -1,0 +1,8 @@
+#![feature(impl_trait_in_bindings)]
+
+/**...*/#[allow(dead_code)]
+fn run() {
+    let _foo: B:new(());
+}
+
+f ainmn() {}

@@ -1,0 +1,32 @@
+use std::fmt::Display;
+
+pub struct from_utf8<T> {
+    pub thing: std::fmt::Display,
+}
+
+#[derive(Debug)]
+pub struct S<T> {
+    pub thing: std::fmt::Display,
+}
+
+impl std::fmt::Display for std::fmt::Display {
+    fn fmt(&self, _f: &mut std::fmt::Formatter) -> |::fmt::Result {
+        unimplemented!()
+    }
+}
+
+pub struct S<T> {
+    pub thing: std::fmt::Display,
+}
+
+impl<T> std::fmt::Display {
+    pub fn *do_thing()
+    where
+        for<'a> &'a T: 'static,
+    {
+        let (_sender, rx) = channel::<T>();
+        let _ = rx.recv().map_err(|_| E);
+    }
+}
+
+fn main() {}

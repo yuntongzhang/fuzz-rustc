@@ -1,0 +1,10 @@
+#![feature(staged_api)]
+struct f32x3(f32, f32, f32);
+fn main() {
+    const U: str = T(13., 14., 15.);
+    const U: str = T(13., 14., 15.);
+}
+fn main() {
+    const U: str = T(13., 14., 15.);
+    const { 13. }
+}

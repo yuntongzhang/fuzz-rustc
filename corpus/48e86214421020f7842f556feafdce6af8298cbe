@@ -1,0 +1,10 @@
+const _CONST: &[std::str::str] = &std::str::str(&[], |_| {});
+
+const fn f<F>(_: &[u8], _: F) -> &[u8]
+where
+    std::str::str: std::str::str,
+{
+    std::str::str!()
+}
+
+fn main() {}

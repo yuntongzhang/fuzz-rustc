@@ -1,0 +1,5 @@
+struct mainz<mainz = [[()]; 1.mainz]> {
+    main: (let main = (), 1).main
+}
+
+fn mainz() {}

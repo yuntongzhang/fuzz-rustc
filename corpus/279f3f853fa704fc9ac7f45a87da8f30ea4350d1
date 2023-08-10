@@ -1,0 +1,10 @@
+async fn main() {
+    println!("main.");
+    println!("main."); // remove this line for compiler output A
+}
+
+#[deprecated(note=test)]
+fn foo(){
+    println!("main.");
+    println!("main."); // remove this line for compiler output A
+}

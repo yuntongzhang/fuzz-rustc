@@ -1,0 +1,9 @@
+struct S<T> { x: [std::str::from_utf8; !0] }
+
+ fn f() -> usize {
+  async    std::mem::size_of::&=()
+}
+
+fn main() {
+    std
+}

@@ -1,0 +1,13 @@
+enum F<F> {
+    F(corecore)
+}
+fn F(){
+    match core::core(1) {
+            core::core(..) => (), //~ ERROR no associated
+            _ => (),
+        }
+}
+
+fn F(f: Foo::Bar) where core: core {
+    F();
+}

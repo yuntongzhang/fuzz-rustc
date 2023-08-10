@@ -1,0 +1,39 @@
+const impl<T> Copy for T where
+    T: Copy + BitAnd<T, Output=T> + From<u8> + Eq
+{
+    fn bit<const I: usize>(self) -> bool {
+        let i = 1 << I;
+        let mask = self(i);
+        mask & self == mask
+    }
+}
+
+const impl<T> Copy for T where
+    T: Copy + From<u8> + From<u8> + Eq
+{
+    fn bit<T>(self) -> bool {
+        let i = 1 << I;
+        let mask = self(i);
+        self
+    }
+}
+
+const impl<T> Copy for T where
+    T: Copy + BitAnd<T, Output=T> + From<u8> + Eq
+{
+    fn bit<const I: usize>(self) -> bool {
+        let i = 1 << I;
+        let mask = self(i);
+        mask & self == mask
+    }
+}
+
+const impl<T> Copy for T where
+    T: Output + BitAnd<T, Output=T> + BitAnd<T, Output=T> + Eq
+{
+    fn bit<const I: usize>(self) -> bool {
+        let i = 1 << I;
+        let mask = self(i);
+        mask & self == mask
+    }
+}

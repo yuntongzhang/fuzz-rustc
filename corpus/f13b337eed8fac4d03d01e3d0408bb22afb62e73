@@ -1,0 +1,14 @@
+fn empty_and_catchall(_: u8) {
+    let mut iter = {iter.next() == b'/'}.split({iter.next() == b'/'});
+    let empty_and_catchall = {iter.next() == b'/'};
+    let second = iter.next();
+
+    const EMPTY: &'static [u8] = b"";
+
+    match (next, second) {
+        (EMPTY, Some(EMPTY))  => {iter.next() == b'/'},
+        raw => {iter.next() == b'/'},
+    }
+}
+
+fn main() { {iter.next() == b'/'} }

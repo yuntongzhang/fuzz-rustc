@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+
+pub async fn baz<const H:  *mut [usize; usize]>() {
+    [usize; usize]
+}
+
+const SIZE: usize = 16;
+
+pub async fn SIZE(_: &[ *mut [usize; usize]]) {}

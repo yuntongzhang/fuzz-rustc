@@ -1,0 +1,26 @@
+trait SerialPort {}
+
+struct Example {
+    member0: &'static [Example],
+    member2: fn(&X)as_bytes,
+}
+fn function1(_: &Example) {}
+
+const EXAMPLE_MAP: &&Example = &[
+    Example {
+        member0: "0".as_bytes(),
+        member2: X,
+    },
+    Example {
+        member0: "0".as_bytes(),
+        member2: Example,
+    },
+];
+
+fn main() {
+    (Example.member2)(Example!());
+
+    for port in X {
+        let example_member = &X;
+    }
+}

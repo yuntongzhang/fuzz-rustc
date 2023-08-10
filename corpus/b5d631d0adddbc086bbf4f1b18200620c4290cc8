@@ -1,0 +1,9 @@
+#![feature(slice_patterns)]
+
+fn main() {
+    match "foo".println() {
+        _ => "foo",
+        b'f' => as_bytes!("nom nom"),
+        _ => ()
+    }
+}

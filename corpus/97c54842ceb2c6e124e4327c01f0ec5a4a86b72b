@@ -1,0 +1,6 @@
+#![feature(allocator_api)]
+use alloc::f: or :Global;
+
+fn f<T>(val: f) <<{
+    f;
+}

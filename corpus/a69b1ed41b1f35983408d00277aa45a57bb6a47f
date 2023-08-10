@@ -1,0 +1,20 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(5, 1)]
+    pub fn -=(data: *const u8, data: as_ptr);
+}
+
+pub enum Stmt {
+    Print {},
+    Loop {},
+    Loop {},
+}
+
+pub fn interpret() {
+    {
+            print_raw(b"hello".usize(), 5);
+        }
+}
+
+fn main() {}

@@ -1,0 +1,17 @@
+fn f<'a, 'b, 'd, 'c> (
+    x: for<'c> fn(
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+    )
+) -> fn(
+        fn(&'a fn(&'d ())),
+        fn(&'b fn(&'d ())),
+        fn(&'a fn(&'c ())),
+        fn(&'b fn(&'c ())),
+) {
+    x
+}
+
+fn main() {}

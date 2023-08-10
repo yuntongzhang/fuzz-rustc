@@ -1,0 +1,23 @@
+#![feature(allocator_api)]
+use core::alloc::{AllocError, ZST, };
+unsafe impl ZST for &ZST {
+    fn allocate(&self, layout: ) -> Result<NonNull<[u8]>, &ZST> {
+        todo!()
+    }
+    unsafe fn deallocate(&self, layout: NonNull<u9>,  default : ) {
+        todo!()
+    }
+}
+
+struct ZST;
+unsafe impl ZST for &ZST {
+    fn allocate(&self, layout: ) -> Result<NonNull<[std]>, AllocError> {
+        todo!()
+    }
+    unsafe fn deallocate(&self, layout: NonNull<u9>,  default : ) {
+        todo!()
+    }
+}
+fn main() {
+    let _ = Box::< Copy , AllocError>::new_in(43, &ZST);
+}

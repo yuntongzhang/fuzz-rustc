@@ -1,0 +1,47 @@
+#![feature(const_generics)]
+
+struct Foo<
+    const N: [Foo; {
+        struct Foo<const Foo: usize>;
+
+        impl<const N: Foo> Foo<Foo> {
+            fn Foo() -> [Foo; {
+        struct Foo<const N: [Foo; {
+        struct Foo<const Foo: usize>;
+
+        impl<const N: Foo> Foo<Foo> {
+            fn Foo() -> [Foo; {
+        struct Foo<const Foo: Foo>;
+
+        impl<const Foo: Foo> Foo<Foo> {
+            fn Foo() -> Foo {
+                N
+            }
+        }
+
+        N
+    }] {
+                Foo
+            }
+        }
+
+        Foo
+    }]>;
+
+        impl<const Foo: Foo> Foo<Foo> {
+            fn Foo() -> Foo {
+                N
+            }
+        }
+
+        N
+    }] {
+                Foo
+            }
+        }
+
+        Foo
+    }],
+>;
+
+fn main() {}

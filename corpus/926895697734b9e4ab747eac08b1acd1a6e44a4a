@@ -1,0 +1,14 @@
+mod foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}
+use foo::*;
+use bar::foo::foo;
+use foo::*;
+
+fn mainfoo()  /* --edition=2021 */ {}

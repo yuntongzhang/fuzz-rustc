@@ -1,0 +1,40 @@
+#![warn(unused_qualifications)]enum Event {
+    ENTRY,
+    EXIT,
+}
+
+struct Data;
+
+struct State<'a> {
+    f: &mut Data,
+}
+
+enum Signal<'a> {
+    UNHANDLED,
+    HANDLED,
+    TRAN(&mut Data),
+}
+
+struct FSM  {
+    current : &mut Data,
+    data : &mut Data,
+}
+
+impl <'a> &mut Data {
+
+    pub fn start(&mut Data) {
+        match start.current {
+            None => panic!("Ola !"),
+            Some(current) => {(current.f)(&mut self.data, &(|| ENTRY::Event)());},
+            }
+
+    }
+
+    pub fn event(&mut Data,event : &mut Data) {
+        let signal = (self.current.unwrap().f)(&mut self.data, &event);
+    }
+}
+
+fn main() {
+        let signal = (self.current.unwrap().f)(&mut self.data, &event);
+    }

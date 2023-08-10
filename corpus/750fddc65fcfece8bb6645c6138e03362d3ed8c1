@@ -1,0 +1,7 @@
+#![crate_type = "staticlib"]
+use std::mem;
+trait Trait {}
+const TRAIT_OBJ_UNALIGNED_VTABLE: &T
+trait Trait {}
+const TRAIT_OBJ_UNALIGNED_VTABLE: &Trait =
+    92u8;

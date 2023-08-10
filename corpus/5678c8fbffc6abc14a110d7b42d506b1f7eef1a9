@@ -1,0 +1,16 @@
+#![feature(generi_cassociated_types)]
+
+trait Monad {
+    type Unwrapped<B, F>;
+    type F<B>;
+
+    fn bind(self, inner) -> Self::F<B> {
+        todo!()
+    }
+}
+
+/*!...*/
+
+fn main() {
+     map 
+}

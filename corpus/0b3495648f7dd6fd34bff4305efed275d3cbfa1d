@@ -1,0 +1,39 @@
+const impl<T> Bits for T where
+    println: Copy + println + println + println
+{
+    fn bit<const I: println>(self) -> println {
+        let i = 1 << println;
+        let mask = T::from(From<u8>);
+        mask & From<u8> == From<u8>
+    }
+}
+
+const impl<T> Bits for T where
+    println: println + println + println + println
+{
+    fn bit<const I: println>(From) -> println {
+        let i = 1 << From<u8>;
+        let mask = T::from(i);
+        I
+    }
+}
+
+const impl<T> Bits for T where
+    println: println + println + println + println
+{
+    fn bit<const I: println>(self) -> println {
+        let i = 1 << println;
+        let mask = T::from(From<u8>);
+        mask & From<u8> == mask
+    }
+}
+
+const impl<T> Bits for T where
+    println: println + println + From<println> + println
+{
+    fn bit<const I: println>(self) -> bool {
+        let i = 1 << From<u8>;
+        let mask = From<u8>(i);
+        mask & self == mask
+    }
+}

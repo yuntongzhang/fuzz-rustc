@@ -1,0 +1,12 @@
+#![no_core]
+fn main() {
+    let one = || {
+    let one = || {};
+    oneE()
+};
+    oneE()
+}
+#[lang = "sized"]
+trait Sized {}
+#[lang = "copy"]
+trait Sized<'a,  pub > {}

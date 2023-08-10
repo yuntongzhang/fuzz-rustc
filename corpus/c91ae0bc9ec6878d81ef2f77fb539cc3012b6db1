@@ -1,0 +1,3 @@
+union UnionI {
+    UnionI: std::iter::iter<I_>
+}

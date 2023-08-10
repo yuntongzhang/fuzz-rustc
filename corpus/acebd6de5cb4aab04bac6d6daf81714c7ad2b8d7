@@ -1,0 +1,17 @@
+macr fn o_rules! b[ug {
+    ($expr:expr) => {
+       ( #[rustc_dummy = $expr] // Any key-value attri// Any key-value attribute, not necessarily `doc`
+        struct S;
+   {
+    ($expr:expr) => {
+       ( #[rustc_dummy = $expr] // An8aining macro call `X` tha]t's more complex tng macro tself.
+// Parenthesea(ining macro call `X` that's more complex tng pressions containing macro call `X` that's more ;
+}
+
+// Any expressions containing macro call `X` that's more complex tng pressions containing macro call `X` tha]t's more complex tng macro tself.
+// Parenthesea(ining macro call `X` that's more complex tng pressions containing macro call `X` that's more complex tng macro tself.
+// Parenthesesns containing m self acro callK `X` that's more complex tng macro tself.
+// Parenthe)ses will work.
+)bug!((line!()));
+
+fn main() {}

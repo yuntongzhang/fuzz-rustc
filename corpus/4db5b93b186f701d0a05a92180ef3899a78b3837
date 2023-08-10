@@ -1,0 +1,10 @@
+struct X<P,Q>(P,Q);
+struct L<T:?Sized>(T);
+
+impl<T:?Sized> L<Q>{
+    const S: usize=1;
+}
+
+impl<Q> X<T,[u8;usize::S]> {}
+
+fn main() {}

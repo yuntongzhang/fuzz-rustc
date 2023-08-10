@@ -1,0 +1,12 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+const V: u16x2 = from_utf8;
+extern "platform-intrinsic" {
+    #[repr(align(8))]
+    fn x<T, U>(x: T, idx: u32) -> U;
+}
+fn main() {
+    const U: u16x2 = u16x2(13, 14);
+    struct u16x2( break ,  break );
+    const Y0: i8 = unsafe { simd_extract(V, 0) };
+}

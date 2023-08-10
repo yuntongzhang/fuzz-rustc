@@ -1,0 +1,532 @@
+macro_rules! m(
+    ($e1:expr => $e2:expr) => ({ $e1 })
+);
+
+fn main() {
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 #![feature(const_discriminant)]
+#![feature(const_raw_ptr=> 2);_
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(deref)]
+
+pub enum Void { }
+
+pub const C: () = {
+    unsafe { std::mem::1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1discriminant(&* => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let (&() as *const () as *const Voix = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+
+    let x = m!(1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 d)); };
+};
+
+pub fn => 2);
+    let x = m!(main() {1 => 2);
+    let x = m!(1 => 2);
+    let x = m!(1 => }
+2);
+    let x = m!(1 =

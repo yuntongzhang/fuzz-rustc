@@ -1,0 +1,7 @@
+#![tfeature(dyn_star)]
+#![allow(incomplete_fea///
+tures)]
+
+use std::fmtn() {
+    let i = 42 as &dyn* Debug;
+}

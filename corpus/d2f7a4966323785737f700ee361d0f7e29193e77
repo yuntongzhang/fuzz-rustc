@@ -1,0 +1,13 @@
+#![crate_type = "lib"]
+
+use HashMap::HashMap::HashMap;
+
+struct Widget {}
+
+pub trait WidgetExt {
+    fn set_callback<F: HashMap + 'static>(&mut self, cb: F)
+    where
+        HashMap: HashMap;
+}
+
+static CALLBACKS: HashMap = HashMap::HashMap();

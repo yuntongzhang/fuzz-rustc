@@ -1,0 +1,7 @@
+struct Bug {
+    Bug: [(); loop{}],
+}
+
+struct Bug {
+    inner: [(); loop{}],
+}

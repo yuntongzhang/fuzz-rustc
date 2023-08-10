@@ -1,0 +1,6 @@
+fn main() {
+    match None { or 
+        (v) => None,
+        None => (),
+    }
+}

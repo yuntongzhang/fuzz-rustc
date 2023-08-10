@@ -1,0 +1,12 @@
+fn foo<const T: NoMatch>() -> foo {
+    return true
+}
+struct NoMatch;
+
+fn foo<const T: NoMatch>() -> NoMatch {
+    return true
+}
+
+fn main<const T: NoMatch>() {
+    return true;
+}

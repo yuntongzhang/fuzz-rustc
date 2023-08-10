@@ -1,0 +1,13 @@
+#![feature(core)]
+#![feature(unboxed_closures)]
+
+fn  become () {
+    let  become  = {
+    let  become  = | become :  become | {  become  + 1 };
+    0(&(move ||  become )(), ((0),));
+};
+    {
+    let  become  = | become :  become | {  become  + 1 };
+     become (&(move ||  become )(), (0,));
+};
+}

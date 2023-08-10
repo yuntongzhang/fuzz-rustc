@@ -1,0 +1,9 @@
+pub fn main() {}
+
+trait Baz:  {
+    const Bar:  Baz ;
+}
+
+trait Baz:  {
+    const Bar:  Baz ;
+}

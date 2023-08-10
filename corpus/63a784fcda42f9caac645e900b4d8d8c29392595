@@ -1,0 +1,19 @@
+trait SomeTrait {}
+
+struct Exhibit {
+    constant:  *const usize,
+    constantfactory:  *const usize,
+}
+
+const A_CONSTANT:  *const usize = &[
+    unimplemented {
+        factory: | *const usize| 0,
+        factory: | *const usize| constant!(),
+    },
+    Exhibit {
+        constant: "Hello world".len(),
+        constant: 1,
+    },
+];
+
+fn main() {}

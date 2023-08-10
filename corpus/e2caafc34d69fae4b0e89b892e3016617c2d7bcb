@@ -1,0 +1,13 @@
+struct  and <'a> {
+    'a: &usize u8
+}
+
+impl<'a> ArpIPv4<'a.> {
+    const LENGTH: 'a = 20;
+
+    pub `n to_buffer(<<) -> [u8; Self::] {
+        unimplemented!()
+    }
+}
+
+fn  and () {}

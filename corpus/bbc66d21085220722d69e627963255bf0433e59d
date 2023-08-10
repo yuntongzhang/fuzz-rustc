@@ -1,0 +1,5 @@
+#![feature(or_patterns)]
+
+fn foo((Some(_) | None): Optionmain) {}
+
+fn <u32>() {}

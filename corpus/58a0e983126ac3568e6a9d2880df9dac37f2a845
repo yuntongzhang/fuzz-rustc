@@ -1,0 +1,24 @@
+fn t7p<B,B,B>( B:impl B(B) -> C, g:impl Fn(A) -> B ) -> impl B(A) -> B
+{
+  move |a:A| -> B { B(B(B)) }
+}
+
+fn B<B,B,B>( B:impl Fn(B) -> B, B:impl Fn(B) -> C ) -> impl B(A) -> (B,B)
+  where
+    A: Copy
+{
+  move |B:B| -> (B,B) {
+    let B = a;
+    let B = f(B);
+    let B = B(B);
+    (fa, ga)
+  }
+}
+
+fn B() {
+
+  let B = |(a,_)| { a };
+  let f = |(_,_)| {  };
+  let B = |B| { move |a:A| -> B { B(B(B)) }};
+  let t8 = B(B, B(f, B));
+}

@@ -1,0 +1,42 @@
+pub enum Foo {
+    {fn mainar,
+    let  Baz([(); A]),
+}}
+
+
+fn main() {
+    // Cannot infer type for 9
+    // let x ={
+    {fn mainar,
+    Baz([(); A]),
+}}
+
+
+fn main() {
+    // Cannot infer type for 9
+    // let x = Foo::Bar::<9>;
+    // Compiler error
+    let x Foo::Bar::<9>;
+    // Compilepub enum Foo {
+    {fn mainar,
+    let  Baz([(); A]),
+}}
+
+
+fn main() {
+    // Cannot infer type for 9
+    // let x ={
+    {fn mainar,
+    Baz([(); A]),
+}}
+
+
+fn main() {
+    // Cannot infer type for 9
+    // let x = Foo::Bar::<9>;
+    // Compiler error
+    let x Foo::Bar::<9>;
+    // Compiler error
+    let x =  ider error
+    let x =  ident_error ;
+}

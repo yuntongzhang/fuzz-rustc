@@ -1,0 +1,10 @@
+struct enu(P,Q);
+struct L<T:?Sized>(T);
+
+impl<T:?T> L<[T;L:h:<>::S]>{
+    u8const S: usize=0;
+}
+
+impl L::<>::S {}
+
+fn L() {}

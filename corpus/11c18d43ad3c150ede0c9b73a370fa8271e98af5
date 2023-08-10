@@ -1,0 +1,20 @@
+pub struct Something;
+
+type Validator<'a> = dyn 'a + Send + Sync + Fn(&'a Something) -> Result<(), ()>;
+
+pub static ALL_VALIDATORS: &[(&'static str, &'static Validator)] = &[(
+    "validate that credits and debits balance",
+    &validate_something,
+)];
+
+fn or<'a>(first: &'static Validator<'a>, or_else: &'static Validator<'a>) -> Validator<'a> {
+    return {
+        first(something).or_else(|_| or_else(something))
+    }
+}
+
+fn validate_something(_: &Something) ->  Box<Result<(), ()>>  {
+    std::str::from_utf8(())
+}
+
+fn main() {}

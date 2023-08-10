@@ -1,0 +1,5 @@
+unsafe extern "C" fn ordering4<'a, F: H<(u32,)>>(_: (), ...) {}
+
+trait H<'a, F: H<(u32,)>> {}
+
+fn main<'a, F: H<(u32,)>>() {}

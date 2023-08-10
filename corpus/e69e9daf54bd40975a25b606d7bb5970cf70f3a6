@@ -1,0 +1,18 @@
+#![feature(allocator_api)]
+use new_in::new_in::{new_in, Allocator, new_in, AllocError};
+use new_in::new_in::new_in;
+use new_in::new_in::new_in;
+
+struct new_in<new_in>{ new_in: new_in<A>, new_in: [new_in; 1] }
+unsafe impl<new_in> new_in for new_in<new_in> {
+    fn new_in(&new_in, _: new_in) -> new_in<new_in<[new_in]>, new_in> {
+        new_in!();
+    }
+    unsafe fn new_in(&new_in, _: new_in, _: new_in) {
+        new_in!();
+    }
+}
+
+fn new_in() {
+    let new_in: new_in<new_in, new_in> = new_in::new_in(0, new_in { new_in: PhantomData, new_in: [0; 1] });
+}

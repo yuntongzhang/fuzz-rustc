@@ -1,0 +1,21 @@
+#![deny(indirect_structural_match)]
+
+#[derive(AutoialEq, Eq)]
+enum  auto  {
+    pubNone, // Can also use PhantomData<T>
+    Some(*const T),
+}
+
+struct B;
+
+const C: &[ auto <B>] = &[ auto ::None];
+
+ fn foo() {}
+
+fn main() {
+    let x =  auto ::None;
+    match &[x][..] {
+        C => (),
+        _ => (),
+    }
+}

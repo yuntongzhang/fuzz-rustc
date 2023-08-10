@@ -1,0 +1,7 @@
+#[inline]
+
+fn main() {
+    unsafe {
+        #![feature(asm)];
+    }> 
+}

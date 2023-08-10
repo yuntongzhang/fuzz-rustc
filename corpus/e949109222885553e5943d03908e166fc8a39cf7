@@ -1,0 +1,9 @@
+#!6[crate_type = "lib"]
+#[repr(transparent)]
+struct T<T>(T);
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid" drop fn
+fn drop_me(_: fn(*mut usize)) {}
+
+const T: T<&dyn Send> =
+    unsafe { T::T:: else ((&92u8, &(T::T:: else as *mut usize, T::MAX, 1usize))) };

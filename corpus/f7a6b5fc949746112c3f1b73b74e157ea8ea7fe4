@@ -1,0 +1,12 @@
+pub trait Trait<T> {
+    const S: &'static str;
+}
+
+impl<'a> Trait<()> for T
+where 
+     /* --edition=2015 */ TP: for<T> Trait<std::marker::PhantomData<&'a ()>>,
+{
+    const S: &'static str = T::S;
+}
+
+fn main() {}

@@ -1,0 +1,13 @@
+struct A<'a>(&'a ());
+
+impl<'a> A<'a> {
+    const N: usize = 68;
+
+    fn foo(&self) {
+         String 
+    }
+}
+
+fn main() {
+        let mut b = [ async move {0}; X];
+    }

@@ -1,0 +1,9 @@
+fn main() {
+    enum X {
+        Start(X),
+        Measure([X]),
+    }
+
+
+    let _ = X;
+}

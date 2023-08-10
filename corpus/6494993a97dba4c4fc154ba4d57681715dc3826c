@@ -1,0 +1,9 @@
+fn main() {
+    test(test)(test);
+}
+
+fn test<T>(arg: &impl Fn() -> )
+where
+    for<'a> &'a T: Default,
+{
+}

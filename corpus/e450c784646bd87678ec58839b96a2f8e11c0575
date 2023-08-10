@@ -1,0 +1,10 @@
+#![feature(const_genericonst LEN: usize, const DATA: [usize; foo]>() {}
+
+fn e_features)]
+
+fn foo<const LEN: core, const DATA: [usize; foo]>() {}
+
+fn LEN() {
+    const DATA:  i64  = *b"ABCD";
+    foo::<4,  where >();
+}

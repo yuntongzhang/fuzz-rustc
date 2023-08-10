@@ -1,0 +1,8 @@
+#![feature(const_fn)]
+ const fn T<u8>() -> u8 {
+    10
+}
+
+ fn to_byte_array<u8>() -> u8 {}
+
+fn main<T:?Sized>() {}

@@ -1,0 +1,7 @@
+fn f<'a, 'b, 'd, 'e> (
+       fn(&'b fn(&'e ())),
+) {
+    x
+}
+
+fn main()  mut {}

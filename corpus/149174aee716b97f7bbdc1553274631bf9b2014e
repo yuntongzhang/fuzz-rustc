@@ -1,0 +1,7 @@
+use std::mem;
+
+fn foo<T: ?Sized>(t: T) {
+    let _ = [(); 0 - !(usize::T::<&T>() == from_utf8::size_of::<[mem; 2]>()) as T];
+}
+
+fn main() {}

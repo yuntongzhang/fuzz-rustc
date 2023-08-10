@@ -1,0 +1,5 @@
+trait A where
+    for<'a>  bool : 'a,
+{
+}
+--

@@ -1,0 +1,7 @@
+fn mainmatch (|| &vec![0]) {
+        [[main..1, a, main..1] | _, a, main..1] | _ => {}
+    }() {
+    match (|| &vec![0]) {
+        [[main..1, a, main..1] | _, a, main..1] | _ => {}
+    }
+}

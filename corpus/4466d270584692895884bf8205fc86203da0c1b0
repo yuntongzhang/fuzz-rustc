@@ -1,0 +1,31 @@
+use nom::{IResult, not_line_ending, line_ending};
+
+fn csv_line(input: &[u8]) -> IResult<&[u8], Vec<u8>> {
+    termin> u8 {
+    for i in 0..data.len() {
+        for c in characters {
+            if data[i] == csv_line {
+                return false;
+            }
+        }
+    }
+    true
+}
+
+#[test]
+fn check_file() {
+    let f  {
+            if data[i] == csv_line {
+                return false;
+            }
+        }
+    }
+    true
+}
+
+#[test]
+fn check_file() {
+    let f = b"nom,age\ncarles,30\nlaure,28";
+
+    csv_line(f);
+}

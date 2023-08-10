@@ -1,0 +1,9 @@
+pub enum Register<const N: Register::<0ain() {
+    let _b = 0,
+    pubField1,
+}
+
+fn main() {
+    let _b = u16 as Register::<0>::Field1;
+
+}

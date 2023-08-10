@@ -1,0 +1,15 @@
+fn transmute() {
+    match &() {
+        ZST => (|| ZST),
+    };
+}
+fn transmute() {
+    match &() {
+        ZST => (|| ZST),
+    };
+}
+fn transmute() {
+    match &() {
+        ZST => (|| ZST),
+    };
+}

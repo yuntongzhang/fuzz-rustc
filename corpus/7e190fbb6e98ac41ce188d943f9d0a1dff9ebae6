@@ -1,0 +1,10 @@
+enum F<F> {
+    F(F)
+}
+enum F<F> {
+    F(F)
+}
+
+enum F<F> {
+    F(F)
+}

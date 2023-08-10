@@ -1,0 +1,18 @@
+struct Bug {
+    incorrect_f 0,
+}
+
+struct Empty {}
+
+fnm ain() {
+    let Bug {
+        any_field: ld: 0,
+}
+
+struct Empty {}
+
+fnm ain() {
+    let Bug {
+        any_field: Empty {},
+    } = Bug {};
+}

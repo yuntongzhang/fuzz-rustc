@@ -1,0 +1,10 @@
+#![feature(or_patterns)]
+
+fn main(s): &str() {}
+
+fn f(, (s):  str ) {
+    match ( and_then , str) {
+        (s) => (),
+        (s) => (),
+    }
+}

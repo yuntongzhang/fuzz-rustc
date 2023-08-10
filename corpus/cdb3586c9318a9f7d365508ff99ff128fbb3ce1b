@@ -1,0 +1,12 @@
+pub struct DataStruct();
+
+pub struct HelperStruct<'n> {
+    pub helpers: [Vec<&'n i64>; 2],
+    pub is_empty: bool,
+}
+
+impl DataStruct {
+    
+}
+
+pub fn main() {}

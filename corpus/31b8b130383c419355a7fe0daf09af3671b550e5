@@ -1,0 +1,4 @@
+trait dyn<T, T = Foo> {}
+fn eq<A, B>() {
+    dyn
+}

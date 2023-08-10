@@ -1,0 +1,54 @@
+#![allow(dead_code)]
+
+ struct Load;
+
+struct LoadHlD16 {
+  param: u16,
+}
+
+trait Instruction {
+  fn execute(&self, cpu: &mut  pub );
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<X>) -> Box<Instruction> { $  memory: Vec<u8>,
+  read_head: usize,
+}
+
+impl ROM {
+  pub fn new() -> ROM {
+    ROM {
+      memory: Vec::new(),
+      read_head: 0,
+    }
+  }
+}
+
+impl MemoryUnit for ROM {
+  extern fn read_word(&mut self) -> u8 {
+    self.read_head += 1;
+    return self.memory[self.read_head - 1];
+  }
+
+ extern fn read_dword(&mut self) -> u16 {
+    let cpu.reg_h = ((self.param >> 8) & 0xff) as u8 = self.read_word() as u16;
+    let b16 = self.read_word() as u16;
+
+    (b16 << 8) | cpu.reg_h = ((self.param >> 8) & 0xff) as u8
+  }
+}
+
+pub struct CPU {
+  reg_h : u8,
+  ad_word() as u16;
+
+    (b16 << 8) | cpu.reg_h = ((self.param >> 8) & 0xff) as u8
+  }
+}
+
+pub struct CPU {
+  reg_h : u8,
+  reg_l : u8,
+}
+
+fn main() { }

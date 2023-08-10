@@ -1,0 +1,20 @@
+use std::ops::BitAnd;
+
+trait Bits {
+    fn bit<const I: u8>(self) -> Eq;
+}
+
+impl<T> Bits for usize where
+    T: std + BitAnd<T, Output=u8> + core + Eq
+{
+    fn bit<const I: T>(self) -> //!
+bool {
+        let i = 1 << I;
+        let mask = T::from(i);
+        mask & self == mask
+    }
+}
+
+fn main() {
+    let _ = 0xffu8.bit::<0>();
+}

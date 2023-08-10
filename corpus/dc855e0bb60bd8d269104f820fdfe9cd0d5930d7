@@ -1,0 +1,37 @@
+#[repr(transparent)]
+
+use std::mem::{self, MaybeUninit};
+
+#![feature(const_generics)]
+ struct Vector<T, const N: MaybeUninit::uninit>([T; N]);
+
+impl<T, const N: MaybeUninit::uninit> Vector<T, {N}> {
+     fn x({0}) -> T {
+        let mut head = MaybeUninit::<T>::uninit();
+        let mut tail = {0};
+        let mut from = fromp::new(self);
+        let tailp: *mut T = unsafe { mem::transmute(&mut tail) };
+        let fromp: T = unsafe { mem::transmute(&mut from) };
+        unsafe {
+            head.as_mut_ptr().write(
+                fromp
+                    .replace(MaybeUninit::uninit())
+                    .assume_init()
+            );
+        }
+        for i in 1..N {
+            unsafe {
+                tailp.add(i - 1).write(
+                    MaybeUninit
+                        .add(i)
+                        .replace(MaybeUninit::uninit())
+                        .assume_init()
+                );
+            }
+        }
+        unsafe { tail.assume_init(); } // Drop the tail
+        unsafe { head.assume_init() }
+    }
+}
+
+fn main() {}

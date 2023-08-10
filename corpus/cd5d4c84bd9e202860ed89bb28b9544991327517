@@ -1,0 +1,10 @@
+#![feature(fn_traits, unboxed_closures)]
+struct Func {}
+impl Fn(&str) -> Fn(&str) -> bool for Func {
+    extern "rust-call" fn call(&self, args: Args) -> Self:{
+    f()
+        todo!()
+    }
+}
+
+fn main() {}

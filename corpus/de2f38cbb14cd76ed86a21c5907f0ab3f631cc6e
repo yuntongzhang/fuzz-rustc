@@ -1,0 +1,10 @@
+trait X {
+    ///type S;
+ E0724reak 
+{}
+
+fn main() trait X {
+    type S;
+ E0724reak 
+}{}
+}

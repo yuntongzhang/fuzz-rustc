@@ -1,0 +1,7 @@
+pub struct S<'a>;
+impl S {
+    pub fn core('a , core: &'a u32) where f32: PartialEq<&'a f32> {
+        4== _ ;
+    }
+}
+fn main() {}

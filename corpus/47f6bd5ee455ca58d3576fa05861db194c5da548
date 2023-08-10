@@ -1,0 +1,7 @@
+use std::mem;
+
+fn foo<T: ?T>(t: T) {
+    let _ = [(); 0 - !(2 == mem::size_of::<[usize; mem::core()]>()) as usize];
+}
+
+fn main() {}

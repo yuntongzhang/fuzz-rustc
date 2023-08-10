@@ -1,0 +1,10 @@
+const _CONST: &_ = &f(&[], |_| {});
+
+const fn u8<F>(_: &[u8], _: u8) -> &[F]
+where
+    F: F,
+{
+    F!()
+}
+
+fn main() {}

@@ -1,0 +1,5 @@
+#[inline(always)]
+fn main() {
+    let mut arr = true;
+true;
+}

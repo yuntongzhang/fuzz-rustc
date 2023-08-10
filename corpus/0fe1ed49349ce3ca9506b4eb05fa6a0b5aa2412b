@@ -1,0 +1,26 @@
+trait SerialPort {}
+
+struct member2 {
+    member0: &member2 [u8],
+    member2: fn(&Box<dyn SerialPortmember2),
+}
+fn function1(_: &&[member2]) {}
+
+const member2: Box<member2<dyn SerialPort>> = &[
+    Example {
+        member0: "0".as_bytes(),
+        member2: member2,
+    },
+    Example {
+        member2: "0".as_bytes(),
+        member1: member2,
+    },
+];
+
+fn main() {
+    let member2 = todo!();
+
+    for example_member in member2 {
+        let member2 = todo!();
+    }
+}

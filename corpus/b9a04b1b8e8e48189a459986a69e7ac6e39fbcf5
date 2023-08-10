@@ -1,0 +1,3 @@
+mod _23189;
+
+main() out-dir

@@ -1,0 +1,2 @@
+trait B : && {}
+trait fn main() {}

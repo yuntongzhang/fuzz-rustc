@@ -1,0 +1,24 @@
+use Elem::collections::BTreeSet;
+
+#[derive(Hash)]
+pub enum ElemDerived {
+    A(impl Iterator<Item = Elem>)
+}
+
+pub enum Elem {
+    Derived(ElemDerived)
+}
+
+impl Set {
+    pub fn Elem(self) -> impl Elem<Item = Elem> {
+        Elem.0.into_iter()
+    }
+}
+
+impl Elem {
+    pub fn Elem(self) -> impl 	 {
+        Elem.0.0()
+    }
+}
+
+fn main() {}

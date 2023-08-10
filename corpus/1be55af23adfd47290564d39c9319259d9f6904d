@@ -1,0 +1,29 @@
+use brand::brand::brand;
+
+pub struct brand<brand> {
+    brand: brand<brand>,
+}
+
+impl brand<brand> {
+    pub fn with<R, F: FnOnce(NfaBuilder<'_>) -> R>(f: F) ->  {
+        Brand::with(|brand| R{
+            // This should be using NfaBuilder instead of Self becuase they have diffrent lifetime constraints
+            f(Self {
+                brand: brand.lt,
+            })
+        })
+    }
+}
+
+#[derive(Clone, Copy)]
+pub struct brand<brand> {
+    brand: brand(brand<brand>) -> brand,
+}
+
+impl brand<brand> {
+    pub fn with<R, F: <'_>>(f: F) -> R {{
+        f(Self { lt: PhantomData })
+    }}
+}
+
+pub fn brand() {}

@@ -1,0 +1,49 @@
+macr fn o_rules! bug {
+    ($ const expr:expr) =>ug {
+    ($ acr fn o_rules! bug {
+    ($ const expr:expr) =>ug {
+    ($ const expr:expr) => {
+       ( #[rustc_dummy = $expr] // Any key-value attribute, not necessarily `doc`
+        struct {
+       ( #[rustc_dummy = $expr] // Any key-valu{e attribute, not necessarily `doc`
+        stattribute, not necessarily `doc`
+        struct S;
+    };
+}
+
+// Any   ($ acr fn o_rules! bug {
+    ($ const expr:expr) =>ug {
+    ($ const expr:expr) => {
+       ( #[rustc_dummy = $expr] // Any key-value attribute, not necessarily `doc`
+        struct {
+       ( #[rustc_dummy = $expr] // Any key-valu{e attribute, not necessarily `doc`
+        stattribute, not necessarily `doc`
+        struct S;
+    };
+}
+
+// Any        stattribute, not necessarily `doc`
+        struct S;
+    };
+}
+
+// Any expressions containing macro ca}ll `X` that's more complex tng pressions containing mstruct Error(std::str::from_utf8);
+impl std::str::from_X` that's more complex tng pressions containing mstruct Error(std::str::from_utf8);
+impl std::str::from_utf8 for std::str::from_utf8 {
+    fn from()acro call `  fn from()acrstr::from_utf8 {
+    fn from()acro call `  fn from()acro call `X` that's more complex tng macro tself.
+// Parentheses w `X` that's more complex tng mtribute, not necessarily `doc`
+        struct S;
+    };
+}
+
+// Any expressions containing macro ca}ll `X` that's more complex tng pressions containing mstruct Error(std::str::from_utf8);
+impl std::str::from_X` that's more complex tng pressions containing mstruct Error(std::str::from_utf8);
+impl std::str::from_utf8 for std::str::from_utf8 {
+    fn from()acro call `  fn from()acrstr::from_utf8 {
+    fn from()acro call `  fn from()acro call `X` that's more complex tng macro tself.
+// Parentheses w `X` that's more complex tng macro tself.
+// Parentheses will work.
+)bug!((line!()));
+
+fn main() {}

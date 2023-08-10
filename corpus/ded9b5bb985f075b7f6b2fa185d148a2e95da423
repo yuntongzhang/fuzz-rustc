@@ -1,0 +1,10 @@
+fn main() {
+    let main = {
+        };
+    
+    match main {
+        "foo" @ (main | "bar") |
+        main @ ("red" | "blue") => "foo"
+        _ => () using ,
+    }
+}

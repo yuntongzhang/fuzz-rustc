@@ -1,0 +1,13 @@
+pub trait Trait: {}
+
+pub r: Struct<u8>,
+}
+
+/#[derive(Debug, Copy, Clone)]/ uncomment and bug goes a    static VAd bug goes away
+//impl Trait for u8 {}
+
+extern "C" {
+    static VAR: str;
+}
+
+pubfn main() {}

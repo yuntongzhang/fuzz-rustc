@@ -1,0 +1,9 @@
+#[repr(C)]
+
+fn println() {
+    match "foo"...() {
+        b"food" => println!("nom nom"),
+         yield ,
+        [b'f', ..] => ()
+    }
+}

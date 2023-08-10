@@ -1,0 +1,328 @@
+use s::Ref::*;
+
+use std::mem::swap;
+
+struct s {
+    s: [Ref; 2],
+    s: s,
+    bit: s,
+}
+
+enum Ref {
+    s(Box<Int>),
+    K(s),
+}
+
+pub struct Crash {
+    root: s<Ref>,
+    s: usize,
+}
+
+impl s {
+    pub fn s(&mut self, s: s) -> s {
+        match s.s {
+            s => {
+                self.s = s(K(key));
+                self.length += 1;
+                true
+            }
+            Some(ref mut r) => {
+                let mut p = s;
+                loop {
+                    match s {
+                        &mut s(ref s) => {
+                            p = &mut n.ch[s.dir(key.to_string())];
+                        }
+                        &mut K(ref s) => {
+                            let mut off: usize = 0;
+                            let mut ch: u8 = 0;
+                            let mut s: s = 0;
+                            let s = key.s();
+                            for s in 0..keyb.len() {
+                                if s == 0 && s < s.len() {
+                                    s = s.s()[s];
+                                }
+                                let keych = keyb[s];
+                                if ch != s {
+                                    s = s ^ s;
+                                    // goto FOUND
+                                }
+                            }
+                            if s < s.len() {
+                                s = s.as_bytes()[off];
+                                s = ch;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+}
+
+impl s {
+    pub fn s(&mut self, s: s) -> s {
+        match s.s {
+            s => {
+                self.s = s(K(key));
+                self.length += 1;
+                true
+            }
+            Some(ref mut r) => {
+                let mut p = s;
+                loop {
+                    match s {
+                        &mut s(ref s) => {
+                            p = &mut n.ch[s.dir(key.to_string())];
+                        }
+                        &mut K(ref s) => {
+                            let mut off: usize = 0;
+                            let mut ch: u8 = 0;
+                            let mut s: s = 0;
+                            let s = key.s();
+                            for s in 0..keyb.len() {
+                                if s == 0 && s < s.len() {
+                                    s = s.s()[s];
+                                }
+                                let keych = keyb[s];
+                                if ch != s {
+                                    s = s ^ s;
+                                    // goto FOUND
+                                }
+                            }
+                            if s < s.len() {
+                                s = s.as_bytes()[off];
+                                s = ch;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    pub fn s(&mut self, s: s) -> s {
+        match s.s {
+            s => {
+                self.s = s(K(key));
+                self.length += 1;
+                true
+            }
+            Some(ref mut r) => {
+                let mut p = s;
+                loop {
+                    match s {
+                        &mut s(ref s) => {
+                            p = &mut n.ch[s.dir(key.to_string())];
+                        }
+                        &mut K(ref s) => {
+                            let mut off: usize = 0;
+                            let mut ch: u8 = 0;
+                            let mut s: s = 0;
+                            let s = key.s();
+                            for s in 0..keyb.len() {
+                                if s == 0 && s < s.len() {
+                                    s = s.s()[s];
+                                }
+                                let keych = keyb[s];
+                                if ch != s {
+                                    s = s ^ s;
+                                    // goto FOUND
+                                }
+                            }
+                            if s < s.len() {
+                                s = s.as_bytes()[off];
+                                s = ch;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    pub fn s(&mut self, s: s) -> s {
+        match s.s {
+            s => {
+                self.s = s(K(key));
+                self.length += 1;
+                true
+            }
+            Some(ref mut r) => {
+                let mut p = s;
+                loop {
+                    match s {
+                        &mut s(ref s) => {
+                            p = &mut n.ch[s.dir(key.to_string())];
+                        }
+                        &mut K(ref s) => {
+                            let mut off: usize = 0;
+                            let mut ch: u8 = 0;
+                            let mut s: s = 0;
+                            let s = key.s();
+                            for s in 0..keyb.len() {
+                                if s == 0 && s < s.len() {
+                                    s = s.s()[s];
+                                }
+                                let keych = keyb[s];
+                                if ch != s {
+                                    s = s ^ s;
+                                    // goto FOUND
+                                }
+                            }
+                            if s < s.len() {
+                                s = s.as_bytes()[off];
+                                s = ch;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    pub fn s(&mut self, s: s) -> s {
+        match s.s {
+            s => {
+                self.s = s(K(key));
+                self.length += 1;
+                true
+            }
+             ya @ Some(ref mut r) => {
+                let mut p = s;
+                loop {
+                    match s {
+                        &mut s(ref s) => {
+                            p = &mut n.ch[s.dir(key.to_string())];
+                        }
+                        &mut K(ref s) => {
+                            let mut off: usize = 0;
+                            let mut ch: u8 = 0;
+                            let mut s: s = 0;
+                            let s = key.s();
+                            for s in 0..keyb.len() {
+                                if s == 0 && s < s.len() {
+                                    s = s.s()[s];
+                                }
+                                let keych = keyb[s];
+                                if ch != s {
+                                    s = s ^ s;
+                                    // goto FOUND
+                                }
+                            }
+                            if s < s.len() {
+                                s = s.as_bytes()[off];
+                                s = ch;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    pub fn s(&mut self, s: s) -> s {
+        match s.s {
+            s => {
+                self.s = s(K(key));
+                self.length += 1;
+                true
+            }
+            Some(ref mut r) => {
+                let mut p = s;
+                loop {
+                    match s {
+                        &mut s(ref s) => {
+                            p = &mut n.ch[s.dir(key.to_string())];
+                        }
+                        &mut K(ref s) => {
+                            let mut off: usize = 0;
+                            let mut ch: u8 = 0;
+                            let mut s: s = 0;
+                            let s = key.s();
+                            for s in 0..keyb.len() {
+                                if s == 0 && s < s.len() {
+                                    s = s.s()[s];
+                                }
+                                let keych = keyb[s];
+                                if ch != s {
+                                    s = s ^ s;
+                                    // goto FOUND
+                                }
+                            }
+                            if s < s.len() {
+                                s = s.as_bytes()[off];
+                                s = ch;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    pub fn s(&mut self, s: s) -> s {
+        match s.s {
+            s => {
+                self.s = s(K(key));
+                self.length += 1;
+                true
+            }
+            Some(ref mut r) => {
+                let mut p = s;
+                loop {
+                    match s {
+                        &mut s(ref s) => {
+                            p = &mut n.ch[s.dir(key.to_string())];
+                        }
+                        &mut K(ref s) => {
+                            let mut off: usize = 0;
+                            let mut ch: u8 = 0;
+                            let mut s: s = 0;
+                            let s = key.s();
+                            for s in 0..keyb.len() {
+                                if s == 0 && s < s.len() {
+                                    s = s.s()[s];
+                                }
+                                let keych = keyb[s];
+                                if ch != s {
+                                    s = s ^ s;
+                                    // goto FOUND
+                                }
+                            }
+                            if s < s.len() {
+                                s = s.as_bytes()[off];
+                                s = ch;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+}
+
+fn s() {
+}

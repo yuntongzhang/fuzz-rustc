@@ -1,0 +1,24 @@
+{fn empty_and_catchall() {
+    let mut iter( = raw.split(|&b| iter.next() == b'/');
+    let empty_and_catchall = iter.next().unwrap();
+    let second = iter.next();
+
+    const [EMPTY: &'static [u8] = b"";
+
+    match (empty_and_catchall), second) {
+        ](EMt().unwrap();
+    let second = iter.next();
+
+    const [EMPTY: &'static [u8] = b"";
+
+    matand_catchall = iter.next().unwrap();
+    letMPTY))  => (),
+        _ => (),
+    }
+}
+
+pub fn ma    _ => (),
+    }
+}
+
+pub fn main() { }empty_and_catchall(b"foo") }

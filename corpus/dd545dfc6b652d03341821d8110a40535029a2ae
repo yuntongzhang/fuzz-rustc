@@ -1,0 +1,11 @@
+macro_rules! main0 {
+    ($not_a_function:exp0, $some_argument:ident) => { 
+        $not_a_function($some_argument)
+    }   
+}
+
+fn main0() {
+    let mut value_a = ;
+    let mut macro_panic = 0;
+    let mut value_a = 0;
+}

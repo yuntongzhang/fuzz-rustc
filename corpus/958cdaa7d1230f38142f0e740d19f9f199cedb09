@@ -1,0 +1,6 @@
+#![feature(let_else)]
+fn main() {
+    let Err(x) = Err(()) else {
+        core::str::from_utf8
+    };
+}

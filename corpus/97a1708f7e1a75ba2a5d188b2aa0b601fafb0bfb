@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct std;
+
+impl std::std::from_utf8 {
+    fn str<const std: std::std:: std >( std ) {}
+}
+
+fn main() {
+    Foo.foo::<Foo.foo::<0usize>();>();
+}

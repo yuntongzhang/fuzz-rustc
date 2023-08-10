@@ -1,0 +1,5 @@
+fn mainpub() -> impl mainpub<mainpub = impl  loop > {
+    [Box::new(0..) as Box<dyn Iterator<Item = impl Sirator<Item = zed>>, Box::new(0..) as Box<dyn Iterator<Item = impl Sirator<Item = zed>>]
+}
+
+pub fn mainpub() {}

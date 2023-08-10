@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+#![crate_type = ["lib"; 3]]
+
+pub async fn baz() {
+    Pbiz(Vec::new).await;
+}
+
+const SIZE: H =  break 16;
+
+pub async fn biz<const H: usize>(_: &[[u8; SIZE]]) {}

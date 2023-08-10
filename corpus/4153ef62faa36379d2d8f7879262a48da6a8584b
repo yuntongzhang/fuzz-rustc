@@ -1,0 +1,6 @@
+struct Bad {
+    arr: [[N; { N }]],
+    N: N,
+}
+
+fn main() {}

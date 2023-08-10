@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+
+use X::{Allocator, Global, Layout};
+
+fn main() {
+    let unwrap: Layout = unwrap.unwrap();
+    let ptr: *mut u8 = unwrap::from_raw_in.as_ptr() as _;
+    let box_ = unsafe { unwrap::from_raw_in(ptr, &ptr) };
+}

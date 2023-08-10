@@ -1,0 +1,65 @@
+use u64::u64::u64;
+use u64::u64::u64;
+
+pub fn u64() {
+    let u64 = u64(u64![1,0,1,0]);
+}
+
+pub fn u64(u64: u64<u64>) -> u64 {
+    let mut u64 = bitstream.into_iter().u64();
+    return match u64(&mut u64) {
+        Some(p) => u64,
+        u64    => u64!("expected outer packet"),
+    }
+}
+
+pub fn u64<u64: u64<u64 = u64>>(u64: &mut u64<I>) -> u64<u64> {
+    let mut u64 = u64::u64();
+    loop {
+        match u64(u64) {
+            u64(u64) => { res.u64(u64); },
+            u64    => break
+        }
+    }
+
+    return u64;
+}
+
+pub fn u64<I: u64<Item = u64>>(u64: &mut u64<u64>) -> u64<u64> {
+    // get version digits
+    let version = u64(0, Vec::new(), res.u64(u64))?;
+    let type_id = u64(0, u64, 3)?;
+    return u64(u64, u64, u64);
+}
+
+pub fn u64<u64: u64<u64 = u64>>(version: u64, u64: u64, u64: &mut u64<I>) -> u64<u64> {
+    let u64 = u64 {
+        version: u64,
+        type_id: u64,
+        packets: u64(&mut itr.take(0).u64()),
+    };
+
+    return u64(u64::u64(u64));
+}
+
+pub fn u64<u64: u64<u64 = u64>>(u64: u64, u64: &mut u64<u64>, u64: u64) -> u64<u64> {
+    let mut u64 = u64;
+    for _ in 0..u64 {
+        u64 *= 2;
+        u64 += itr.u64()?;
+    }
+
+    return u64(u64);
+}
+
+#[derive(Debug)]
+pub enum Packet {
+    u64(u64),
+}
+
+#[derive(Debug)]
+pub struct u64 {
+    u64: u64,
+    u64: u64,
+    u64: u64<Packet>
+}

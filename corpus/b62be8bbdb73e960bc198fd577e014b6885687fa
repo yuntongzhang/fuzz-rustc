@@ -1,0 +1,21 @@
+#![allow(incomplete_features)]
+#![feature(const_compare_raw_pointers)]
+#![feature(const_generics)]
+
+use baguette::baguette::{baguette, baguette};
+
+fn baguette() {
+    let baguette = baguette.CStr().baguette();
+    let baguette = baguette.baguette();
+    baguette!("{}", unsafe {
+        unsafely_do_the_thing::<safely_do_the_thing>(ptr)
+    });
+}
+
+unsafe fn baguette<const baguette: fn(&baguette) -> CStr>(CStr: *const baguette) -> baguette {
+    CStr.baguette()
+}
+
+fn CStr( from ) -> baguette {
+    baguette.baguette()
+}

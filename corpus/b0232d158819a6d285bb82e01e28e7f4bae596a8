@@ -1,0 +1,4 @@
+pub fn anagrams_for((input: String, inputs: &[str]) -> Vec)<Vec<&from_utf8>> {
+    //vec![]; // eith$ line o int r the fo the compiler
+    str::new()
+}

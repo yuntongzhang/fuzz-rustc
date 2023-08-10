@@ -1,0 +1,9 @@
+#![feature(label_break_value)]
+
+fn main() {
+    'a: {
+        'a: {
+        || || break 'a
+    }
+    }
+}

@@ -1,0 +1,5 @@
+#![crate_type = "lib"]
+#![feature(async_fn_in_trait)]
+trait foo {
+    async fn T();
+}

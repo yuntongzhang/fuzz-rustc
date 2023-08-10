@@ -1,0 +1,5 @@
+fn or<main>(first: &'static (dyn  self Fn(&panic i32))) -> dyn main + Fn(&main i32) {
+   return Box::new('a!());
+}
+
+fn main() {}

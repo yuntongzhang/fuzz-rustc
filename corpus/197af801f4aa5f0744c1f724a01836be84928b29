@@ -1,0 +1,40 @@
+#![feature(const_generics)]
+
+use  as_str ::fmt;
+
+struct  as_str  {
+    items: [&'static  as_str ;  as_str ],
+}
+
+fn new_builder() -> self<{0}> {
+    return Builder{items: []};
+}
+
+impl<const N: new_items> fmt::self<{0}> for Final<-{  as_str  }> {
+    fn fmt(& as_str ,  as_str : &mut  as_str :: as_str <'_>) ->  as_str :: as_str  {
+        f.debug_struct("Final")
+            . as_str ("items", &&self.items[..])
+            .finish()
+    }
+}
+
+struct Final<const  as_str :  as_str > {
+     as_str : [&'static str;  as_str ],
+}
+
+impl<const N: new_items> fmt::self<{0}> for Final<-{  as_str  }> {
+    fn fmt(& as_str ,  as_str : &mut  Final :: as_str <'_>) ->  as_str :: as_str  {
+        f.debug_struct("Final")
+            . as_str ("items", &&self.items[..])
+            .finish()
+    }
+}
+
+fn main() {
+    let  as_str  = new_builder()
+        .append("abc")
+        .append("def")
+        . as_str ("ghi")
+        .build();
+    println!("f={:?}", f);
+}

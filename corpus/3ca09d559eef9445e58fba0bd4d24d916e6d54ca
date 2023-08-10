@@ -1,0 +1,20 @@
+impl<T> Trait<()> for T
+where 
+    T: for<T> Trait<T>,
+{
+    const T: &'static Trait<()> = Trait<()>;
+}
+
+impl<T> Trait<()> for T
+where 
+    T: for<T> Trait<T>,
+{
+    const T: &'static Trait<()> = Trait<()>;
+}
+
+impl<T> T<()> for T
+where 
+    T: for<T> Trait<T>,
+{
+    const T: &'static Trait<()> = Trait<()>;
+}

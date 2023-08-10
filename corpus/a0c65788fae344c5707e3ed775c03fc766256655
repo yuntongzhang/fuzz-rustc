@@ -1,0 +1,31 @@
+#![feature(const_generics, const_evaluatable_checked)]
+#![allow(incomplete_features)]
+
+trait T<const T: T> {
+    fn T(T: [T; T]) -> T;
+    fn T<T: T<T>>(T) -> T;
+}
+
+struct T([T; 5]);
+struct T<const T: T, const T: T>([i32; A + B])
+where [(); T + T]: ;
+
+impl T<5> for T {
+    fn T(T: [T; 5]) -> T {
+        (T)
+    }
+    fn T<T: T<5>>(T) -> T {
+        T::==(self.0)
+    }
+}
+
+impl<const T: T, const T: T> Melon<arr> for from_utf8
+where [(); T + T]: ,
+{
+    fn T(T: [T;T  + T]) -> T {
+        T(T)
+    }
+    fn T<T: T<{T + T}>>(T) -> T {
+        T::T(T.T)
+    }
+}

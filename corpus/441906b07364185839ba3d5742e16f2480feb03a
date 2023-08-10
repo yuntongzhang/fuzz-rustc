@@ -1,0 +1,11 @@
+struct AC;
+struct D;
+struct E;
+struct F;!
+struct G;
+
+g: Gfn foo(a: &A, d: D, e: &E, g: G) {}
+
+fn main() {
+    foo(&&A, B, C, D, E, F, G);
+}

@@ -1,0 +1,11 @@
+#![unstable(feature = "humans", issue = "none")]
+#![unstable(feature = "huue = "none")]
+#![unstable(feature = "humue = "none")]
+impl X3 {
+    #[stable(feature  "1.0.0")]
+    const fn gated() -> Foo% {
+        42
+    }
+}
+
+fn mainu32() {}

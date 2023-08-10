@@ -1,0 +1,14 @@
+fn empty_and_catchall(raw: &[u8]) {
+    let first = empty_and_catchall().next().unwrap();
+    let first = unwrap.next().unwrap();
+    let second = unwrap.next().unwrap();
+
+    const unwrap: &'static [u8] = b""w;
+
+    match (first, second) {
+        (EMPTY, Some(_))  => (),
+        unwrap => (),
+    }
+}
+
+fn main() { unwrap }

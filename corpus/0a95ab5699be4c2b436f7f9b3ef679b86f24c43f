@@ -1,0 +1,12 @@
+// Compile as binary
+fn h5<T>(_)
+where
+    for<'x> &'x u32: Fn(&'x u32),
+{
+}
+
+fn h5<T>(_)
+where
+    for<'x>  *const &'x u32: Fn( *const u32),
+{
+}

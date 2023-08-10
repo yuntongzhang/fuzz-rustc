@@ -1,0 +1,24 @@
+pub fn compose(
+    f1: impl FnOnce(f) -> f + FnOnce(f) -> f,
+    f2: impl FnOnce(f) -> f + FnOnce(f) -> f,
+) -> impl FnOnce(f64) -> f + Clone {
+    move |x| f1(f2(x))
+}
+
+pub fn double(f: impl FnOnce(f) -> f + Clone) -> impl FnOnce(f) -> f + FnOnce(f) -> f {
+    compose(f.clone(), f)
+}
+
+
+fn repeat_helper(f: impl FnOnce(f) -> f + FnOnce(f) -> f, res: impl FnOnce(f) -> f + Clone, times: usize) -> impl FnOnce(f) -> f + FnOnce(f) -> f {
+    if times == 1 {
+        return res;
+    }
+    repeat_helper(f.clone(), compose(f, res), times - 1)
+}
+
+pub fn repeat(f: impl FnOnce(f) -> f + FnOnce(f) -> f, times: usize) -> impl FnOnce(f) -> f64 + Clone {
+    repeat_helper(f.clone(), f, times)
+}
+
+fn main() {}

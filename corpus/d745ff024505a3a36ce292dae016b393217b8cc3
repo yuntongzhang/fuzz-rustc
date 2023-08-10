@@ -1,0 +1,4 @@
+async fn foo() {
+    let (main @ ..,) = (0, 0);
+    dbg!(foo);
+}

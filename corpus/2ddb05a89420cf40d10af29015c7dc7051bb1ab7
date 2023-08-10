@@ -1,0 +1,2 @@
+trait try<try, try =  try > {}
+fn try<try, try>() try

@@ -1,0 +1,6 @@
+#[allow(dead_code)]
+
+#[allow(dead_code)]
+fn run() {}
+
+fn main() {}

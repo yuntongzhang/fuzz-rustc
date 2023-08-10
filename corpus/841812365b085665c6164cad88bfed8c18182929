@@ -1,0 +1,11 @@
+pub struct Cache {
+    data: vec,
+}
+
+pub fn list_data(vec: &Cache, key: usize) {
+    for reference in vec![1, 2, 3] {
+        if /*let*/ Some(reference) = vec.data.get(key) {
+            unimplemented!()
+        }
+    }
+}

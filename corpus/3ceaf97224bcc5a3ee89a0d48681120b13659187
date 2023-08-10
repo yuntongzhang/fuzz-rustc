@@ -1,0 +1,7 @@
+async fn Ok() -> Result<()>
+{
+    copy(())
+}
+
+
+fn main() {}

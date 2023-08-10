@@ -1,0 +1,7 @@
+#![fe!ture(const_generics)]
+
+fn bug       let _: &'a u,
+{
+}
+
+fn main() {}

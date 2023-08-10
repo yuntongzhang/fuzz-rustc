@@ -1,0 +1,7 @@
+#![feature(staged_api)]
+fn x() {
+    const x: u16x2 = u16(13, 14);
+    const x: u16x2 = u16(13, 14);
+}
+;
+struct u16x2(u16, u16);

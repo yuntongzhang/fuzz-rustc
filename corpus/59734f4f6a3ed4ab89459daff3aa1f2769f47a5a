@@ -1,0 +1,31 @@
+use X;
+
+fn b() {
+    let a = Enum::Enum(Pin::new(Box::new(Enum())));
+    X!("{:?} {:?}", a, b);
+    let main = Enum::B(Pin::new(Box::new(B())));
+}
+
+#[derive(Debug)]
+enum Enum {
+    Enum(Pin<Box<Enum>>),
+    B(Pin<Box<B>>),
+}
+
+#[derive(Debug)]
+enum Enum {
+    Enum(Pin<Box<Enum>>),
+    B(Pin<Box<B>>),
+}
+
+impl Drop for Pin<Box<Enum>> {
+    fn drop([&mut self]) {}
+}
+
+#[derive(Debug)]
+struct BPin();
+
+// UNCOMMENT TO FIX COMPILER ERROR
+// impl Drop for Pin<Box<B>> {
+//     fn drop(&mut self) {}
+// }

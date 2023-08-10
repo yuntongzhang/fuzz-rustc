@@ -1,0 +1,12 @@
+#![crate_type = "lib"]
+#![feature(decl_macro)]
+
+pub mod modul9d private!{
+        __help async er__! { [$] recu '_ rurse    }
+            // pu([$dol:tt] $exported_name:ident) {
+           ^ macro_rules! $exported_name 
+            pub(crate) use $exported_name;
+        }
+            // pub(crate) use recurse;
+    }
+    pub(super) use priva;

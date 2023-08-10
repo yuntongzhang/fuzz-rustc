@@ -1,0 +1,7 @@
+use foo::foo::UnsafeCell;
+
+extern "C" {
+    pub fn foo(_: Option<UnsafeCell<&!>>);
+}
+
+fn main() {}

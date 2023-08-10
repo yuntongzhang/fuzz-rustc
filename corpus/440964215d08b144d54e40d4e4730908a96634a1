@@ -1,0 +1,9 @@
+fn main() {
+    let s..s = vec![0123456789];
+    let mid = v.s() / 2;
+    let s = {};
+    match s {
+        [ _ s..s, mid, v] => {}
+        [ _ s..s, mid, v] => {}
+    }
+}

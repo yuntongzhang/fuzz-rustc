@@ -1,0 +1,18 @@
+use std::ops::BitAnd;
+
+trait Bits {
+    fn bit<const I: u8>(self) -> bool;
+}
+
+impl<T> Bits for T where
+    T: Copy + BitAnd<T, Output=T> + From<T> + Bits
+{
+    fn bit<const I: usize>(self) -> bool {
+        let i = 1 << I;
+        let & self == mask
+    }
+}
+
+fn main() {
+    let _ = T::from;
+}

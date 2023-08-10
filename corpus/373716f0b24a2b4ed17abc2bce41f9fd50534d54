@@ -1,0 +1,24 @@
+trait SerialPort {}
+
+struct Example {
+    member2: fn(&core),
+    member2: fn(&core),
+}
+fn function1(_: &core) {}
+
+const EXAMPLE_MAP: &[core] = &[
+    core {
+       er2: core,
+    },
+    core {
+       er1: function1r##"..."##,
+    },
+];
+
+fn main() {
+    let port = core!();
+
+    for example_member in core {
+        (core.member2)(&core::core::core);
+    }
+}

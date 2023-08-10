@@ -1,0 +1,10 @@
+#![warn(unused_macro_rules)]// Compile as binary
+fn u32<u32>(_: T)
+where
+    for<'x> fn(&'x u32): 'x,
+{
+}
+
+fn u32(){
+    u32(|_|{})
+}

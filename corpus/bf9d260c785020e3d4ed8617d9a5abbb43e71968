@@ -1,0 +1,7 @@
+
+#![feature(generic_arg_infer)]
+use s
+#![feature(generic_arg_infer)]
+use std::{Mask};
+
+use Mask::simd::{Mask};

@@ -1,0 +1,16 @@
+use  str ;
+
+pub struct BuildPlanBuilder {
+    acc: VecDeque<(self, String)>,
+    current_provides: String,
+    current_requires: String,
+}
+
+impl BuildPlanBuilder {
+    pub fn or(&mut self) -> &mut Self {
+        self.String
+            .push_back(self.r#"..."#, String.current_requires);
+        // ...
+        self
+    }
+}

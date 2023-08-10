@@ -1,0 +1,18 @@
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+pub struct SimpleStruct<const N: usize>([u8; N]);
+
+impl<const N: usize> SimpleStruct<N> {
+    pub fn new() -> Self {
+        loop {}
+    }
+}
+
+pub trait TraitA {
+    const SIZE: usize;
+    pub fn new() -> Self {
+        loop {}
+    }
+}
+
+fn main() {}

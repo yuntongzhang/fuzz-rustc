@@ -1,0 +1,24 @@
+enum Either {
+    One(X),
+    Two(X),
+}
+
+struct X(Y);
+
+struct Y;
+
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    consume_fnmut(|| {
+        consume_fnmut(|| {
+        X(_t) = x;
+
+        Either::Two(z_t) = x;
+    });
+
+        Either::Two(z_t) = x;
+    });
+}
+
+fn main() {}

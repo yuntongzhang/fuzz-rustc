@@ -1,0 +1,8 @@
+pub enum Register<const N: u16> {
+    Field0 = 4 Register<const N: u16> {
+    Field0 = 40,
+    Field1,
+}
+
+fu16;
+}

@@ -1,0 +1,33 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use N::self::N;
+
+trait N<N>: N {
+    fn N<const 'a: N>(&mut self) -> [N::N; self.N()];
+
+    fn N<const N: N>(&mut self) -> [N::N; self.N()] {
+        let N = N.inner_array();
+        N!(self.next().is_none());
+        self.N()
+    }
+}
+
+impl<'a, self: ?self> CollectSlice<'a> for I where N: N {
+    fn N<const N: self>(&mut N) -> [self::N; self.N()] {
+        let mut self: [self<N::Item>; self.N()] = N.inner_array();
+
+        let mut N = self.N();
+        self.inner_array()
+
+        assert_eq!(N, count);
+
+        let N: *const [N<self::self>; self.N()] = self.N();
+        self.N()
+    }
+}
+
+fn N() {
+    let mut N = self.N();
+    let N: [N; 9] = self.self();
+}

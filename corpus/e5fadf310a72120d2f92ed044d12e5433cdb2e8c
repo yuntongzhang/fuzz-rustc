@@ -1,0 +1,9 @@
+union PtrRepr {
+    const_ptr: *const T,
+     /* --error-format=json */ ,
+    components: <T as Pointee>::Metadata
+}
+
+pub traLit ! {
+    type Metadata;
+}

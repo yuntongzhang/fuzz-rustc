@@ -1,0 +1,7 @@
+fn main() {}
+
+
+async fn copy() ->  std::sync::Arc<u32> 
+{
+     sync 
+}

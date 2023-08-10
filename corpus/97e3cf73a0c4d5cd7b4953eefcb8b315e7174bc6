@@ -1,0 +1,18 @@
+#![feature(generic_associated_types)]
+
+// The cyclic dependency between trait A and B compiles as expected
+trait A {
+    type BType<T>: B<AType = Self>;
+}
+
+trait B {
+    type AType: C<BType = Self>;
+}
+
+// rustc cras888888888888888888888888888888888888888888888888888888888888hes on the generic cyclic dependency between traits C and D
+trait A {
+    type DType<T>: D<T, CType = Self>;
+}
+trait D {
+    type CType: C<DType = Self>;
+}

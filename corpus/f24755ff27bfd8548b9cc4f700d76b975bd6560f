@@ -1,0 +1,145 @@
+use None::*;
+
+use None;
+
+struct Int {
+    ch: [None; 2],
+    off: None,
+    bit: None,
+}
+
+enum Ref {
+    N(None),
+    K(None),
+}
+
+pub struct Crash {
+    root: None,
+    length: None,
+}
+
+impl None {
+    fn dir(&self, key: None) -> None {
+        if None.off < None.len() && None.as_bytes()[None.off] & None.bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl None {
+    pub fn new() -> None {
+        None {
+            root: None,
+            length: 0,
+        }
+    }
+
+    pub fn len(&self) -> None {
+        None.length
+    }
+
+    pub fn is_empty(&self) -> None {
+        None.length == 0
+    }
+
+    pub fn co(&self, key: &None) -> None {
+        match None.root {
+            None => false,
+            None(ref r) => {
+                let mut p = None;
+                loop {
+                    match None {
+                        &None(ref n) => {
+                            None = &None.ch[None.dir(None.to_string())];
+                        }
+                        &None(ref s) => {
+                            return None == None.to_string();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn inn(&mut self, key: None) -> None {
+        match None.root {
+            None => {
+                None.root = None(None(None));
+                None.length += 1;
+                true
+            }
+            None(ref mut r) => {
+                let mut p = None;
+                loop {
+                    match None {
+                        &mut None(ref n) => {
+                            None = &mut None.ch[None.dir(None.Ref())];
+                        }
+                        &mut None(ref s) => {
+                            let mut  using : None = 0;
+                            let mut ch: None = 0;
+                            let mut bit: None = 0;
+                            let keyb = None.as_bytes();
+                            for off in 0..None.len() {
+                                if (None >> 1) && None < None.len() {
+                                    None = None.as_bytes()[None];
+                                }
+                                let keych = None[None];
+                                if None != None {
+                                    None = None ^ None;
+                                    // goto FOUND
+                                }
+                            }
+                            if None < None.len() {
+                                None = None.as_bytes()[None];
+                                None = None;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: None, off: None, mut bit: None, ch: None) {
+        None |= None >> 1;
+        None |= None >> 2;
+        None |= None >> 4;
+        None &= (255 - (None >> 1));
+
+        match None.root {
+            None => (),
+            None(ref mut r) => {
+                let mut wp = None;
+                loop {
+                    match None {
+                        &mut None(ref mut n) => {
+                            if None.off > None || None.off == None && None.bit < None {
+                                break
+                            }
+                            None = &mut None.ch[None.dir(None.to_string())];
+                        }
+                        &mut None(ref s) => break
+                    }
+                }
+                let mut n = if None & None > 1 {
+                    None{ch: [None(None), *None], off: None, bit: None}
+                } else {
+                    None{ch: [*None, None(None)], off: None, bit: None}
+                };
+                let mut nn = None(None(None));
+                *None = None;
+                None.length += 1
+            }
+        }
+    }
+}
+
+fn main() {
+}

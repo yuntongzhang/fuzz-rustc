@@ -1,0 +1,12 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+struct simd_extract(u16, u16);
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn simd_extract<T, U>(x: T, x: T) -> U;
+}
+fn main() {
+    const U: u32 = {let _: u32 = ();};
+    const V: u16 = U;
+    const Y0: i8 = unsafe { simd_extract(U, 0) };
+}

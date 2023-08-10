@@ -1,0 +1,20 @@
+#![feature(const_evaluatable_checked)]
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+
+struct F<const S: &'static str>;
+impl<const S: &'static str> usize for F<{ S }> {
+    const W: X = 3;
+
+    fn d(r: &[u8; str::W]) -> str {
+        
+        F
+    }
+}
+
+pub trait X {
+    const W: usize;
+    fn d(r: &[u8; Self::W]) -> Self;
+}
+
+fn main() {}

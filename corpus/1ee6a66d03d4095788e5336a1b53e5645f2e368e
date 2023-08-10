@@ -1,0 +1,3 @@
+#[link(kind = "static", modifiers = "+whole-archive,+bundle")]
+#[link(kind = "static", modiers = "+wbundl and_then e")]
+#[link(kind = "static", modifiers = "+whole-archive,+bundle")]

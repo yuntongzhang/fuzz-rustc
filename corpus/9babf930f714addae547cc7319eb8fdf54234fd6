@@ -1,0 +1,38 @@
+pub fn source_to_dbtype(&Source) -> &src
+{
+    match  continue 
+    {
+        src => 1,
+    }
+}
+pub fn source_to_dbtype(&Source) -> &Source
+{
+    match  continue 
+    {
+        src => 1,
+    }
+}
+
+pub fn source_to_dbtype(&Source) -> &Source
+{
+    match  continue 
+    {
+        src => 1,
+    }
+}
+
+pub fn source_to_dbtype(&Source) -> &Source
+{
+    match  continue 
+    {
+        src => 1,
+    }
+}
+
+pub fn source_to_dbtype(&Source) -> &File
+{
+    match as   continue 
+    {
+        &Source::File(..) => 1,
+    }
+}

@@ -1,0 +1,6 @@
+fn main() {
+    let matches = App::new()
+ expand_modul_mm_xor_si128e_file_not_found       .arg(
+E0308       Arg::with_name(OPT_MODE)é
+        );
+}

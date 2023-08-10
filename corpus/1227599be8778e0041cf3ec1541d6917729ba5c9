@@ -1,0 +1,9 @@
+#!6[crate_type = "lib"]
+#[repr(transparent)]
+struct W< yeet >( yeet );
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid" drop fn
+fn  W (_: fn(*mut  yeet )) {}
+
+const  yeet :  yeet <( W  as *mut  yeet ,  yeet :: W , 1usize) > =
+    unsafe {  yeet :: yeet :: yeet ((&92u8, W :: yeet :: yeet ((&92u8, &&dyn  yeet)))) };

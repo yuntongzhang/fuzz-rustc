@@ -1,0 +1,28 @@
+#![feature(const_evaluatable_checked)]
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use ::fmt::Debug;
+use T::marker::PhantomData;
+
+struct Inline<T>
+where
+    [u8; ::T::mem::size_of::<>() + 1]: ,
+{
+    _phantom: PhantomData<>,
+    buf: [u8; ::::mem::size_of::<>() + 1],
+}
+
+impl<> Inline<T>
+where
+    [u8; Inline::<dyn Debug>::new(0)]: ,
+{
+    pub fn new(val: T) -> Inline<> {
+        todo!()
+    }
+}
+
+fn main() {
+    // let dst = Inline::<usize>::new(0); OK
+    let dst = Inline::<dyn >::new(0); // BANG!
+}

@@ -1,0 +1,7 @@
+fn main() {}
+
+fn fact<const N: X>() {
+     match fact::<{ N - 1 }>();
+}
+
+fn main() {}

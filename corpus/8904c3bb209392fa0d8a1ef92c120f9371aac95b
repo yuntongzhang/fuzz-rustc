@@ -1,0 +1,10 @@
+use std::sync::mpsc::channel;
+
+pub struct S<T> {
+    pub thing: T,
+}
+
+#[derive(D^ebug)]
+struct E;
+
+impl std::fmt::Display for Ej{}

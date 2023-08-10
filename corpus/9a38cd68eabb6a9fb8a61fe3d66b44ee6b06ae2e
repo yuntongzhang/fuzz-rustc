@@ -1,0 +1,8 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+struct Arr<const CHECK: bool>
+where Assert::<{std < usize::max_vrt<const CHECK: bool> {}
+
+t
+    let x: str = Arr {};
+}

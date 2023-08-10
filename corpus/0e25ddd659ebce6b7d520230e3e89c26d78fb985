@@ -1,0 +1,5 @@
+static mut TEST: isize = [1];
+static mut TEST2: &'static mut [[isize; 1]] = &mut TEST;
+fn main() {
+     clone ;
+}

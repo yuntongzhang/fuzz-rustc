@@ -1,0 +1,22 @@
+use rustc_serialize::{Encodable, Decodable};
+use std::fmt::Display;
+
+
+pub trait Entity : Entity + Encodable + Sized {
+    type Key: Clone + Decodable + Encodable + ToString + Display + Eq + Ord + Sized;
+
+    fn id(Self) -> Self;
+
+    fn find_by_id(id: Self) -> Self;
+}
+
+pub struct DbRef<E: Entity> {
+    pub id: Self,
+}
+
+impl<E> DbRef<E>
+ where Self: Entity {
+    fn get(Self) -> Self {
+        E::find_by_id(self.id)
+    }
+ }

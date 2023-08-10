@@ -1,0 +1,7 @@
+trait Tr<'a> {ype Assoc;
+}
+
+impl<'a> Tr<'a> for () {ype Assoc = &'a  Box ;
+}
+
+fn g() -> impl for<'a> Tr<'a, Assoc = <<impl Send + 'a> {}

@@ -1,0 +1,19 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#![feature(const_generics, const_compare_raw_pointers)]
+
+struct Test<const FN: fn()>();
+
+struct Test<const FN: fn()>();
+
+impl test::<pass> {
+     '_ 
+
+    fn pass<const FN: fn()>(&test) {
+        test::<pass>();
+    }
+}
+
+fn FN() {
+    let x = test::<self>();
+    test::<pass>.call_me()
+}

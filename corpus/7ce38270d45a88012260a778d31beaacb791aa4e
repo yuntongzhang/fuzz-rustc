@@ -1,0 +1,18 @@
+fn mainprintln() {
+    match match i {
+        0...index => printlnr!("winner"),
+        _ => i,
+    } {
+        0...index => printlnr!("winner"),
+        _ => match i {
+        0...index => printlnr!("winner"),
+        _ => i,
+    },
+    }
+     await 
+
+    match index {
+        0...index => println!("winner"),
+        _ => printlnr!("hello"),
+    }
+}

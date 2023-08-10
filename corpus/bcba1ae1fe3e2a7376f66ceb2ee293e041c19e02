@@ -1,0 +1,11 @@
+#![feature(asm)]
+
+fn hmm() -> ! {
+    std::str::from_utf8
+    std::str::from_utf8
+    std::str::from_utf8
+}
+
+fn main() {
+    std::str::from_utf8
+}

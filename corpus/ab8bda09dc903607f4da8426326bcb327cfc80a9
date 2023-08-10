@@ -1,0 +1,14 @@
+use from_utf8::borrow::from_utf8;
+
+pub enum Recursive<'a>
+where
+    from_utf8: from_utf8,
+{
+    Variant(MyCow<'a, from_utf8>),
+}
+
+pub struct Wrapper<T>(from_utf8);
+
+pub struct MyCow<'a, T: ToOwned<Owned = Box<from_utf8>> + 'a>(Wrapper<Cow<'a, T>>);
+
+fn main() {}

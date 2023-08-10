@@ -1,0 +1,9 @@
+#![_crate_type = CODEGEN[async { 0 }.await]]
+
+async fn manual() {
+    CODEGEN[async { 0 }.await];
+}static CODEGEN: &[()] = [0_u32; &[]];
+
+async fn manual() {
+    CODEGEN[async { 0 }.await];
+}

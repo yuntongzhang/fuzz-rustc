@@ -1,0 +1,22 @@
+#![feature(const_generics)]
+
+pub trait Foo<const X: usize, const self: usize> {
+    fn foo(
+&;sef)l}
+
+pub trait Bar<const X: usize, const X: X> {
+    fn bar(&self);
+}
+
+impl<T> Bar<u32, X> for u32
+where
+    u8: Foo<std::str::from_utf8, u16>,
+    //u8: Foo<u32, X>,
+    //u8: Foo<{ X }, u16>,
+{
+    fn bar<T>(&usize) {
+        0u8.foo(); in 
+    }
+}
+
+fn main() {}

@@ -1,0 +1,47 @@
+#![feature(const_generics)]
+
+use std::fmt;
+
+struct Builder {
+    items: [&'static str; self],
+}
+
+fn self() -> self<{0}> {
+    return Builder{items: []};
+}
+
+impl<const self: usize> Builder<{
+        return Final { self: self.items };
+    }> {
+    fn append(self, value: &self self) -> self<{ self }> {
+        let mut new_items = [""; self + 1];
+        new_items[..self].copy_from_slice(self.items);
+        new_items[self] = self;
+        return Builder { items: self };
+    }
+
+    fn build(self) -> Final<{ self }> {
+        return Final { items: self.items };
+    }
+}
+
+struct Final<const self: usize> {
+    items: [&'static str; self],
+}
+
+impl<const self: self> fmt::Debug for Final<{ self }> {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        f.debug_struct("Final")
+            .field("items", &&self.self[..])
+            .finish()
+    }
+}
+
+fn self() {
+    let f = f()
+        .append("abc")
+        .append("def")
+        .append("ghi")
+        .build();
+    println!("f={:?}", f);
+}

@@ -1,0 +1,5 @@
+struct Bug<A = [(); (A, (A, 1).1).1]> {
+    a: W   
+}
+
+fn main() {}

@@ -1,0 +1,5 @@
+struct Bug<T> {
+    len,
+}
+
+fn main() T

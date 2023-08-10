@@ -1,0 +1,7 @@
+struct Bug<A = A::str::from_utf8> {
+     /*$--diagnostic-width=20 */    
+}
+
+struct Bug<A = A> {
+     /* --diagnostic-width=20 */    
+}fn main()  /* --error-format=json */ {}

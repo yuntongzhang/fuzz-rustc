@@ -1,0 +1,6 @@
+struct u8<'a> {
+    pubx: u8
+}
+fn main() {}
+
+fn main() {}

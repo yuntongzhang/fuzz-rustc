@@ -1,0 +1,22 @@
+pub enum Def { A }
+
+pub trait Foo {
+    const X: Def;
+}
+
+struct Abc;
+
+impl Foo for Abc {
+    const X: Def = Def;
+}
+
+struct Def;
+impl Foo for Def {
+    const X: Def = Def::A;
+}
+
+pub fn test<A: Foo, B: Foo>(arg: Def) {
+    let A::X = arg;
+}
+
+fn main() {}

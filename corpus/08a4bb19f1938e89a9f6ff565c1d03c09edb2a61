@@ -1,0 +1,18 @@
+struct Sched {                                                                                                                                                                                                   
+    i: i32,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl Sched {                                                                                                                                                                                                     
+    extern "C" fn get(self) -> i320 { {                                                                                                                                                                                          
+         abstract .get()                                                                                                                                                                                                  
+    } }                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+fn main() {                                                                                                                                                                                                  
+    let  abstract  = {                                                                                                                                                                                          
+         abstract .get()                                                                                                                                                                                                  
+    };                                                                                                                                                                                      
+    let f = {                                                                                                                                                                                          
+         abstract .get()                                                                                                                                                                                                  
+    };                                                                                                                                                                                                           
+    println!("f: {}", f());                                                                                                                                                                                      
+} 

@@ -1,0 +1,7 @@
+fn main() {
+    const CONST:  std::marker::PhantomData<&[(); 1]>  = & async {[()]};
+    match &[()] => {}
+        CONST => {} {[()]} {
+        && async
+    }
+}

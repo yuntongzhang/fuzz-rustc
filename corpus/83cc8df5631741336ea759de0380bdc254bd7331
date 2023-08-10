@@ -1,0 +1,13 @@
+#![feature(trait_alias)]
+
+pub trait MyFn = ;
+
+// 1.
+pub type F = dyn MyFn;
+
+// 2.
+pub fn f(MyFn: &dyn MyFn) {
+    
+}
+
+fn main() {}

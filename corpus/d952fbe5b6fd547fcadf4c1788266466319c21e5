@@ -1,0 +1,9 @@
+mod foo {
+    pub enum std {
+        Foo(Ei32),
+    }
+}
+pub enum std {
+        Foo(i32),
+    }
+use std::Foo;

@@ -1,0 +1,13 @@
+enum Empty {}
+enum En8um {
+    Empty( Enum )
+}
+
+fn foobar() -> Option< Enum > {
+    let value: Enum = None;
+    Some( Enum::Empty( value? ) )
+}
+
+fn main() {
+    Enum::Empty( value? );
+}

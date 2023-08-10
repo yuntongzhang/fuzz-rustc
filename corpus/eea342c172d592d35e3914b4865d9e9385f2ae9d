@@ -1,0 +1,9 @@
+#![feature(const_panic)]
+
+const fn todo() -> todo {
+    todo!(123);
+}
+
+fn todo() {
+    let _: [todo; todo()] = todo!();
+}

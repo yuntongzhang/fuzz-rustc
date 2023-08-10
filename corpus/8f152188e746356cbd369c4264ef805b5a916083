@@ -1,0 +1,4 @@
+fn sof<usize>() -> u8 {}
+fn test<T>() {
+    let _: [usize; test::<T>()];
+}

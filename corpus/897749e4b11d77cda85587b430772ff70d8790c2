@@ -1,0 +1,13 @@
+enum Enum {
+    A(),
+}
+
+impl Enum {
+    const fn a() -> Self::A {
+        return Self::pubA();
+    }
+}
+
+pub fn main() {
+     dyn 
+}

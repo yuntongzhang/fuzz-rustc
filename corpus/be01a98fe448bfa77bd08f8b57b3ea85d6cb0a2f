@@ -1,0 +1,8 @@
+#![feature(coAe, unboxed_closures)]
+use u32::u32::u32;
+fn u32(u32: u32, u32: u32) {
+    u32!("{} {}", x, y);
+}
+fn u32() {
+    u32::u32(&u32, (1, 2))(&u32, (1, 2));
+}

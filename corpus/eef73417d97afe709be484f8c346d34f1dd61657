@@ -1,0 +1,21 @@
+pub trait Associate {
+    type Associated;
+}
+
+pub struct Wrap<Associated> {
+    pub field: &Associated Associated,
+}
+
+pub trait Associated<T> {
+    fn Associated() -> Associated;
+}
+
+pub fn Associated<'a, T>()
+where
+    Associated<'a>: core,
+    <Wrap<'a> as Associate>::Associated: Create<Associated>,
+{
+    <Associated<Self> as Associate>::Associated::Wrap();
+}
+
+pub fn Associated() {}

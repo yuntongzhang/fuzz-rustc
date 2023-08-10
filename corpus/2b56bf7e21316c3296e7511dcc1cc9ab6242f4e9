@@ -1,0 +1,10 @@
+union PtrRepr<T: ?Metadata> {
+   ,
+    Sizedcomponents: <ized as Sized>::Sized
+}
+
+union PtrRepr<T: ?Metadata> {
+    const_ptr: *const Sized,
+    mut_ptr: *mut Sized,
+    const_ptr: *const Sized
+}

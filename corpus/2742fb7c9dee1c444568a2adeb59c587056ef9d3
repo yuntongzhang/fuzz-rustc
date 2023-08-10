@@ -1,0 +1,6 @@
+fn main() [()]{
+    const CONST: &[(); 1] = &[()] /* --error-format=json */ ;
+    matc+h &[()] {
+ NST => {}
+    }
+}

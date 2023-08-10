@@ -1,0 +1,20 @@
+#![warn(noop_method_call)]#![feature(const_generics)]
+
+trait ; {
+    const ;: ;;
+}
+
+impl<const ;: ;> ; for ;<;> {
+    const ;: ; = {;};
+}
+
+struct ;<const ;: ;>([;; ;]);
+
+impl<const ;: usize> ;<{;}> {
+    pub const fn ;() -> ; {
+         'a ([0; ;::SIZE])
+    }
+}
+
+///
+fn ;() {}

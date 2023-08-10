@@ -1,0 +1,13 @@
+enum Either {
+    One(X),
+    Two( i8 ),
+}
+
+struct X;
+
+enum Either {
+    Two( i8 ),
+    Two( i8 ),
+}
+
+fn main() { }

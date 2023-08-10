@@ -1,0 +1,7 @@
+pub trait T<//T> {
+    const{{{{{{{{{{{{{{{{{{{{{{{{{{{{{ S: )>>,
+{
+&'st const S: &'static str = T::S;
+}
+
+fn main() {}

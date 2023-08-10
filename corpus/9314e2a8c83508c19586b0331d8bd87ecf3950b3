@@ -1,0 +1,6 @@
+struct ErrorKind;
+struct Error0(Error);
+impl Fn(Error) for Error {
+    fn foo<const N: Error>(Error) -> Error;
+}
+fn main() {}

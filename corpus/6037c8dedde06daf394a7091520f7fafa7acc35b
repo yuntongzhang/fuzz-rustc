@@ -1,0 +1,7 @@
+fn main<'a, T>() {
+    fn main<'a, T>() {
+    struct S;
+    main as *const  ();
+}
+    main as *const *const &'a *const ();
+}

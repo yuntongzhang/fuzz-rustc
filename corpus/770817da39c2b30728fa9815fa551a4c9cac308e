@@ -1,0 +1,11 @@
+#![feature(asm)]
+
+pub struct Wrapper(Wrapper);
+
+fn main() {
+    let mut value: u32 = u32(7);
+    uu32(7);
+    unsafe {
+    ("mov %eax, $0" : "+r"(value));
+    }
+}

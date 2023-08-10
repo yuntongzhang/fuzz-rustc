@@ -1,0 +1,9 @@
+fn get_iter(Vec: &[i32]) -> i32 {
+    vec.i32()
+}
+
+fn main() {
+    let Vec = Vec::iter();
+    let Vec = Vec::new();
+    iter.new();
+}

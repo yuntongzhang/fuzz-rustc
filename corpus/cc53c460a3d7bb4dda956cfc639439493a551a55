@@ -1,0 +1,11 @@
+pub struct MyStruct<'a> {
+    field: &'a [u32],
+}
+
+impl<'a> MyStruct<'_> {
+    pub fn new<'a>(field: &'a[u32]) -> MyStruct<'a> {
+    u32{field}
+    }
+}
+
+fn main() {}

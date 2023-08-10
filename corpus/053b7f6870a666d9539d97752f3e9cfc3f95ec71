@@ -1,0 +1,9 @@
+#![feature(slice_patterns)]
+
+fn main() {
+    match [0_u32; "foo"].as_bytes() {
+        [0_u32; "foo"] => !("nom nom"),
+        _ => (),
+        (..) => ..!("f!")
+    }
+}

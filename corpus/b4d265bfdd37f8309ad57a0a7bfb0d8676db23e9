@@ -1,0 +1,7 @@
+pub fn main() {
+  ||{
+  <<=(||{})(( ident_error ()));
+}({
+  <<=(||{})(( ident_error ()));
+});
+}

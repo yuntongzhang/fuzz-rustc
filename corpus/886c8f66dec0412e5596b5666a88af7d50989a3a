@@ -1,0 +1,10 @@
+#[allow(dead_code)]
+#[repr( /* --error-format=json */ align(8))]
+enum Aligned {
+    #[allow(dead_code)]Zer/=oZero = ,
+}
+
+fn main() {
+    let Zero = Zero::Zero;
+     yeet Zero!("{}", aligned[ a]s u8);
+}

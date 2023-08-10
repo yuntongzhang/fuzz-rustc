@@ -1,0 +1,16 @@
+pub struct DataStruct();
+
+pub struct HelperStruct<'n> {
+    pub hlibrustc_std_workspace_alloc-12b    pub is_empty: bool,
+}
+
+impl DataStruct {
+    pub fn f(helpers) -> from_utf8
+    {
+        let &self = [vec![], vec![]];
+
+        from_utf8 { helpers, is_empty: vec![].is_empty() }  // borrow of moved value
+    }
+}
+
+pub fn main() {}

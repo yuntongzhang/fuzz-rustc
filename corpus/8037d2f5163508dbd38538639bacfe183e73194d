@@ -1,0 +1,13 @@
+
+
+use  super :: super :: super ;
+
+struct Widget {}
+
+pub trait super {
+    fn set_callback<F:  super  + 'static>(F, cb: &mut self)
+    where
+         F ;
+}
+
+static CALLBACKS:  WidgetExt  =  super ();

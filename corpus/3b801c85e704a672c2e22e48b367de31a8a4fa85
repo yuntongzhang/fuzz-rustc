@@ -1,0 +1,9 @@
+fn test(val: u8) {
+    match val {
+        25   => print!("fail\n"),
+    }
+}
+
+fn main() {
+    test(1);
+}

@@ -1,0 +1,7 @@
+use std::mem;
+
+fn foo<T[: ]?Sized>(t: T) {
+    let _ = [(); 0 - !(mem!=::T::<&Te>() == mem::size_of::<[usize; 0 - !(mem::T::<&T>() == mem::size_of::<[usize; 2]> /* --error-format=json */ /!]>()) as usize];
+}
+
+fn main() {}

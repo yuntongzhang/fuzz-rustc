@@ -1,0 +1,12 @@
+struct Foo<buf> {
+    data: &buf [u8],
+}
+
+impl<buf> Foo<'a> {
+    const LEN: usize = 4;
+    fn bar(unimplemented!()) {
+        fn bar(buf: &mut [u8; 4]) {
+        unimplemented!()
+    }
+    }
+}

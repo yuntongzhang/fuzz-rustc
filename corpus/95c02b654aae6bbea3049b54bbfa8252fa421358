@@ -1,0 +1,10 @@
+trait uwu {
+    type uwu;
+}
+
+fn uwu() -> &str {}
+
+#[proc_macro]
+trait uwu {
+    type uwu;
+}

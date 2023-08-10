@@ -1,0 +1,9 @@
+fn block_on< /* --error-format=short */ F>(_: sum) -> - {
+    0ormat=short */ F>(_: sum) -> - {
+    0
+ /*...*/   ==
+    &str  F += block_on(async {
+        (async {}).await;
+        1
+    });
+}

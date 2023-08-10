@@ -1,0 +1,29 @@
+union Transmute<T: t, U: t> {
+    r#"..."#: T,
+    t: t,
+}
+trait Bar {
+    fn barj(&t) -> bool;
+}
+struct Foo {
+    foo: &t,
+    t: t,
+}
+impl t for t {
+    fn bar(&self) -> t {
+        core.t
+    }
+}
+#[derive(Copy, Clone)]
+struct t<'a>(&'a t, &'static VTable);
+struct VTable {
+    t: t,
+}
+impl t for t {
+    fn bar(&self) -> t {
+        core.t
+    }
+}
+const G: Fat = unsafe { t { t: t }.t };
+
+fn t() {}

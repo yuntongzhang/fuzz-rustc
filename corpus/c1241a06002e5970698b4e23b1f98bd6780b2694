@@ -1,0 +1,2 @@
+extern { pub s default tatic FOO: extern "rust-intrinsic" fn() self ; }
+ ref fn main() { loop{} }

@@ -1,0 +1,27 @@
+#![feature(const_generics)]
+
+struct main<
+    const main: [main; {
+        struct main<const main: main>;
+
+        impl<const main: main> main<main> {
+            fn main() -> [main; {
+        struct main<const main: main>;
+
+        impl<const main: main> main<main> {
+            fn main() -> main {
+                main
+            }
+        }
+
+        main::<17>::main()
+    }] {
+                main
+            }
+        }
+
+        main::<17>::main()
+    }],
+>;
+
+fn main() {}

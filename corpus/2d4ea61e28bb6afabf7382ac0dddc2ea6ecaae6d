@@ -1,0 +1,9 @@
+struct S<T> { x: [T; !0] }
+
+pub fn f() -> S {
+    std::mem::size_of:: /* --edition=2015 */ ()
+}
+
+fn main() {
+     move 
+}

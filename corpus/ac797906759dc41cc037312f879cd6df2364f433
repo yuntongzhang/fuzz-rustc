@@ -1,0 +1,4 @@
+trait Foo<T, T = std::str::B> {}
+fn T<'a, T>() {
+    T::<dyn, from_utf8>
+}

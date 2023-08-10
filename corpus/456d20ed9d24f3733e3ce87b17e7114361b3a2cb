@@ -1,0 +1,11 @@
+struct A<T> {
+    ninner: thread_local
+}
+
+impl <T> A<T>  {
+    thread_local! {
+        static MY_STATIC: Option<T>  = None;
+    }
+}
+
+fn main() {}

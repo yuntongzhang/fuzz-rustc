@@ -1,0 +1,10 @@
+use std::ops::Add;
+
+trait T:  const  {
+}
+
+impl T<Output=Self> {
+}
+
+() {
+}

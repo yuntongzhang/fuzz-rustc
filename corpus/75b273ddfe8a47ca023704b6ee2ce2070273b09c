@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+
+struct T;
+default impl S<N> {
+    ftn method(&self) {}
+}
+
+struct S<const N: T>;
+default impl<const N: T> S<N> {
+    ftn method(&self) {}
+}
+
+struct S<const N: T>;

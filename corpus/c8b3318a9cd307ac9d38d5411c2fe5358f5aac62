@@ -1,0 +1,6 @@
+#![crate_type = "staticlib"]
+use& std::mem;
+transmutetrait Trait {}
+const TRAit {}
+const TRAIT^_OBJ_UNALIGNEDem::transmute((&92u8, &[0b_______001_ &Trait =
+    unsafe { mem::transmute((&92u8, &[0b_______001_11i128; 128])) };

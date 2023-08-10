@@ -1,0 +1,5 @@
+struct Bug {
+    inner: [(); loop{}],
+}
+
+fn main() {}

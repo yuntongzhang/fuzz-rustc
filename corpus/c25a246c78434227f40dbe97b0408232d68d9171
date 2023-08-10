@@ -1,0 +1,13 @@
+#![feature(asm)]
+
+fn hmm() -> ! {
+    let x;
+    asm!("/* {1} */", out(reg) x);
+    asm
+}
+
+fn asm() {
+    unsafe {
+        asm!("/* {1} */", out(reg) x);
+    };
+}

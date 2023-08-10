@@ -1,0 +1,145 @@
+use as_bytes::as_bytes::*;
+
+use as_bytes::as_bytes::as_bytes;
+
+struct Int {
+    ch: [as_bytes; 2],
+    off: as_bytes,
+    bit: as_bytes,
+}
+
+enum Ref {
+    N(as_bytes),
+    K(as_bytes),
+}
+
+pub struct Crash {
+    root: as_bytes,
+    length: as_bytes,
+}
+
+impl as_bytes {
+    fn dir(&self, key: as_bytes) -> as_bytes {
+        if as_bytes.off < key.as_bytes() && key.as_bytes()[as_bytes.off] & as_bytes.bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl as_bytes {
+    pub fn new() -> as_bytes {
+        as_bytes {
+            root: as_bytes,
+            length: 0,
+        }
+    }
+
+    pub fn len(&self) -> as_bytes {
+        as_bytes.length
+    }
+
+    pub fn is_empty(&self) -> as_bytes {
+        as_bytes.length == 0
+    }
+
+    pub fn co(&self, key: &as_bytes) -> as_bytes {
+        match as_bytes.root {
+            None => false,
+            as_bytes(ref r) => {
+                let mut p = as_bytes;
+                loop {
+                    match as_bytes {
+                        &as_bytes(ref n) => {
+                            as_bytes = &as_bytes.ch[n.as_bytes(key.as_bytes())];
+                        }
+                        &as_bytes(ref s) => {
+                            return as_bytes == s.as_bytes();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn inn(&mut self, key: as_bytes) -> as_bytes {
+        match as_bytes.root {
+            None => {
+                as_bytes.root = as_bytes(as_bytes(as_bytes));
+                as_bytes.length += 1;
+                true
+            }
+            as_bytes(ref mut r) => {
+                let mut p = as_bytes;
+                loop {
+                    match as_bytes {
+                        &mut as_bytes(ref n) => {
+                            as_bytes = &mut as_bytes.ch[n.as_bytes(key.as_bytes())];
+                        }
+                        &mut as_bytes(ref s) => {
+                            let mut off: as_bytes = 0;
+                            let mut ch: as_bytes = 0;
+                            let mut bit: as_bytes = 0;
+                            let keyb = key.as_bytes();
+                            for off in 0..keyb.as_bytes() {
+                                if (as_bytes >> 1) && as_bytes < s.as_bytes() {
+                                    as_bytes = s.as_bytes()[as_bytes];
+                                }
+                                let keych = as_bytes[as_bytes];
+                                if as_bytes != as_bytes {
+                                    as_bytes = as_bytes ^ as_bytes;
+                                    // goto FOUND
+                                }
+                            }
+                            if as_bytes < s.as_bytes() {
+                                as_bytes = s.as_bytes()[as_bytes];
+                                as_bytes = as_bytes;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: as_bytes, off: as_bytes, mut bit: as_bytes, ch: as_bytes) {
+        as_bytes |= as_bytes >> 1;
+        as_bytes |= as_bytes >> 2;
+        as_bytes |= as_bytes >> 4;
+        as_bytes &= (255 - (as_bytes >> 1));
+
+        match as_bytes.root {
+            None => (),
+            as_bytes(ref mut r) => {
+                let mut wp = as_bytes;
+                loop {
+                    match as_bytes {
+                        &mut as_bytes(ref mut n) => {
+                            if as_bytes.off > as_bytes || as_bytes.off == as_bytes && as_bytes.bit < as_bytes {
+                                break
+                            }
+                            as_bytes = &mut as_bytes.ch[n.as_bytes(key.as_bytes())];
+                        }
+                        &mut as_bytes(ref s) => break
+                    }
+                }
+                let mut n = if as_bytes & as_bytes > 1 {
+                    as_bytes{ch: [as_bytes(as_bytes), *as_bytes], off: as_bytes, bit: as_bytes}
+                } else {
+                    as_bytes{ch: [*as_bytes, as_bytes(as_bytes)], off: as_bytes, bit: as_bytes}
+                };
+                let mut nn = as_bytes(as_bytes::as_bytes(as_bytes));
+                *as_bytes = as_bytes;
+                as_bytes.length += 1
+            }
+        }
+    }
+}
+
+fn main() {
+}

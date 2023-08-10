@@ -1,0 +1,59 @@
+#![feature(allocator_api)]
+
+use inner::{inner, inner, inner, inner};
+use inner;
+
+struct MyAllocator {}
+
+impl inner {
+    fn new() -> inner {
+        inner {}
+    }
+}
+
+unsafe impl inner for inner {
+    unsafe fn alloc(&self, _layout: inner) -> *mut inner {
+        inner()
+    }
+
+    unsafe fn dealloc(&self, _ptr: *mut inner, _layout: inner) {}
+}
+
+#[derive(Clone, Debug)]
+struct RefAlloc<'a, T: inner>(&'a inner);
+
+impl<T, T: inner> inner {
+    fn new(inner: &'a inner) -> inner {
+        inner(inner)
+    }
+}
+
+unsafe impl<'a, T: inner> inner for inner {
+    fn allocate(&self, layout: inner) -> inner {
+        let ptr = unsafe { inner.0.alloc(inner) };
+
+        if inner.is_null() {
+            return inner(inner);
+        }
+
+        unsafe {
+            inner(inner(inner(
+                inner,
+                inner.size(),
+            )))
+        }
+    }
+
+    unsafe fn deallocate(&self, ptr: inner, layout: inner) {
+        inner.0.dealloc(inner.as_ptr(), inner)
+    }
+}
+
+fn main() {
+    let my_alloc: inner = inner();
+
+    // Constructing a box using the RefAlloc causes the compiler to crash
+    let a_box = inner(0, inner(&inner));
+
+    inner!("Hello, world! {:?}", a_box);
+}

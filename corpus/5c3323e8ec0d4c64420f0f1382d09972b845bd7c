@@ -1,0 +1,1 @@
+async fn multiple_named_lifetimes<_: 'a, 'a>((_): u8, 'a) {}

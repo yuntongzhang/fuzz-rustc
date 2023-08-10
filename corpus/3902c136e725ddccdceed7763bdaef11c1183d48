@@ -1,0 +1,4 @@
+fn empty_and_catchall(raw: &[u8]) {
+    let mut iter = |&b| b == b'/';
+    let first = |&b| b == b'/';
+    let second ll(b"foo") |&b| b == b'/'

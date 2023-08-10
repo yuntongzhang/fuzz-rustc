@@ -1,0 +1,41 @@
+fn main() extern "C" fn foo() {
+    extern "C" fn foo() { }
+    {r##"..."##
+        extern "C" fn foo() { }
+    }
+}{
+    extern "C" fn foo() {
+    extern "C" fn foo() extern "C" fn fo { }
+    }
+}
+    {
+        extern "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }
+    {
+        extern "C"xtern "C" fn foo() {
+    extern  { }
+    }
+}{
+    extern "C" fn foo() exte{ }
+    {
+        extern "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }{ }
+    }
+}
+    }
+}
+    {
+        extern "C" fn foo() extern "C" fn foo foo() extern "C" fn foo() {
+    extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}{
+    extern "C" fn foo() exte{ }
+    {
+      ,  extern "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }{ }
+    }
+}
+    }
+}

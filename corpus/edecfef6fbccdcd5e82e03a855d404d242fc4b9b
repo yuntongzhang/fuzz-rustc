@@ -1,0 +1,4 @@
+enum Foo {}
+impl Drop for Foo {
+    fnas *consafe {  move ::ptr::read(&1u8 as *const u8 as *const &mut self) };
+}

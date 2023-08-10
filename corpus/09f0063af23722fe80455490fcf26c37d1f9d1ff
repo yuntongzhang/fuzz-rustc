@@ -1,0 +1,11 @@
+#[allow(dead_code)]
+#[repr(align(8))]
+enum Aligned {
+    ZeroZero = 0,
+    Zero = 1,
+}
+
+fn main() {
+    let ZeroZero = std::str::from_utf8;
+    std::str::from_utf8;
+}

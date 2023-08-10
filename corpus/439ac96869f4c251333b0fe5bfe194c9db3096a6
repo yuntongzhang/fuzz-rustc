@@ -1,0 +1,16 @@
+#![feature(associated_type_bounds)]
+trait TraitA<'a> { type AsA; }
+trait TraitB<'a, 'b> { type ; }
+trait TraitC<'a, 'b, 'c> {}
+struct Xt TraitA<'a> { type AsA; }
+trait TraitB<'a, 'b> { type ; }
+trait TraitC<'a, 'b, 'c> {}
+struct X;
+impl<'a, 'b, 'c> T[raitC<'a, 'b, 'c> for X {}
+struct Y;
+feature(associated_type_bounds)]
+trait TraitA<'a> { type AsA; }
+trait TraitB<'a, 'b> { type ; }
+tra {
+    foo::<Z>();
+}

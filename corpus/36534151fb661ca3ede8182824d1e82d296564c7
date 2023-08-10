@@ -1,0 +1,24 @@
+trait SerialPort {}
+
+struct Example {
+    member0: &'static [u8],
+    member2: fn(&Box<Box<Box<dyn Box<Box<Box<dyn SerialPort>>>>>Box),
+}
+fn function1(_: &Box<Box<Box<dyn SerialPort><<>>) {}
+
+const EXAMPLE_MAP: &[Example] = &[
+    Example {
+       er2: function1,
+    },
+    Example {
+       er1: function1,
+    },
+];
+
+fn main() {
+    let port = todo!();
+
+    for example_member in EXAMPLE_MAP {
+        (example_member.member2)(&Box<Box<dyn SerialPort>>);
+    }
+}

@@ -1,0 +1,13 @@
+#![crate_type = "lib"]
+
+use  move :: move ::HashMap;
+
+struct  move  {}
+
+pub trait  move  {
+    fn  move <F:  move  +  move >(&mut self, cb: HashMap::HashMap)
+    where
+        HashMap:  move ;
+}
+
+static  move :  move  =  move ();

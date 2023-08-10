@@ -1,0 +1,12 @@
+pub trait std<std> {
+    const S: &std str;
+}
+
+impl<std> Trait<()> for T
+where 
+    T: for<std> Trait<()>,
+{
+    const std: T = T::std;
+}
+
+fn  self () {}

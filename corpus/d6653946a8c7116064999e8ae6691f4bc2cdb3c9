@@ -1,0 +1,12 @@
+pub trait std<std> {
+ /* --error-format=short */     const S: &std str;
+}
+
+impl<std> Trait<std::std::std<&std ()>> for T
+where 
+    T: for<'a> Trait<()>,
+{
+    const std: &'static str = std<&'a ()>::std;
+}
+
+fn main() {}

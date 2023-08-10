@@ -1,0 +1,7 @@
+fn foo(_a: &str) {}
+
+fn  super () {
+    let x = foo as fn(&'static str)&'static foo;
+    
+    let _ = str;
+}

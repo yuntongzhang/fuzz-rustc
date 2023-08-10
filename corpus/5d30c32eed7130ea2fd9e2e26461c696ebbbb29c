@@ -1,0 +1,11 @@
+struct thread_local<T> {
+    A<T>
+}
+
+impl <T> A<T>  {
+    A! {
+        static MY_STATIC: Option<T>  = None;
+    }
+}
+
+fn  from () {}

@@ -1,0 +1,6 @@
+fn main() {
+    let index = (move || 6);
+    let index = (move || 6);
+
+    let main = (move || 6);
+}

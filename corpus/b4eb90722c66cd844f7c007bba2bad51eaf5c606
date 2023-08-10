@@ -1,0 +1,7 @@
+fn test(1..=5: u8) {
+    test(1);
+}
+
+fn main() {
+    test(1);
+}

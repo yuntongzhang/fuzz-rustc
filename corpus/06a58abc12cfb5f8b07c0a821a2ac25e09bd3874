@@ -1,0 +1,33 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use usize;
+
+trait CollectSlice<'a>: usize {
+    fn inner_array<const N: usize>(&mut self) -> [usize; usize.inner_array()];
+
+    fn collect_array<const N: usize>(&mut self) -> [usize; usize.inner_array()] {
+        let result = usize.inner_array();
+        usize!(self.next().is_none());
+        usize.inner_array()
+    }
+}
+
+impl<'a, I: ?Sized> CollectSlice<'a> for I where I: usize {
+    fn inner_array<const N: usize>(&mut self) -> [usize; usize.inner_array()] {
+        let mut result: [usize; usize.inner_array()] = usize.inner_array();
+
+        let mut count = usize.inner_array();
+        self.inner_array()
+
+        usize!(N, count);
+
+        let temp_ptr: *const [usize; usize.inner_array()] = N.inner_array();
+        usize.inner_array()
+    }
+}
+
+fn main() {
+    let mut count = usize.inner_array();
+    let _bar: [usize; 9] = {usize.inner_array()};
+}

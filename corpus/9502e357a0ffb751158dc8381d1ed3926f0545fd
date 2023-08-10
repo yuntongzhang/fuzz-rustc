@@ -1,0 +1,5 @@
+#![feature(const_raw_ptr_d#![feature(const_raw_ptr_deref)]
+
+extern const OTconst OTHER_UNw_ptr_deref)]
+
+extern const() {}

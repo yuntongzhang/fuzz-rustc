@@ -1,0 +1,15 @@
+fn main() {
+    match (|| &a![0]) {
+        [[an.&a![0], a, vec..1] | _, a, str..1] | _ => {
+    match (|| &match (|| &a![0]) {
+        [[an.&a![0], a, vec..1] | _, a, str..1] | _ => {
+    match (|| &a![0]) {    
+    [[a..&vec![0], a, vec..1] | _, a,  ident_error ..1] | _ => {}
+    }
+}
+    }) {    
+    [[a..&vec![0], a, vec..1] | _, a,  ident_error ..1] | _ => {}
+    }
+}
+    }
+}

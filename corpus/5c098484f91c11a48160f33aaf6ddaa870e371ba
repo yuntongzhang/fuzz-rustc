@@ -1,0 +1,10 @@
+unsafe fn main<main: ?main>(main: main, main: *mut main) -> main {
+    use main;
+
+    let mut main: [*mut main; main] =
+        main::main(main);
+    main = main;
+    main
+}
+
+fn main() {}

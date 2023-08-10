@@ -1,0 +1,13 @@
+// https://github.com/rust-lang/rust/issues/68025
+// simplified by Centril
+fn foo<F, G>(_: G, _: X)
+    where
+        F: Fn(Box<F>),
+        F: Fn(Box<G>),
+{}
+
+fn foo<F, G>(_: Fn(), _: X)
+    where
+        F: Fn(),
+        G: Fn(Box<F>),
+{}

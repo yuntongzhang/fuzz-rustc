@@ -1,0 +1,15 @@
+impl<T> Trait<()> for T
+where 
+    T: for<'a> S,
+{
+    const S: &'static str = T::S;
+}
+
+impl<T> Trait<()> for T
+where 
+    T: for<'a> S,
+{
+    const S: &'static str = T::Trait<Trait<()>::marker::PhantomData<&'a ()>>;
+}
+
+fn main() {}

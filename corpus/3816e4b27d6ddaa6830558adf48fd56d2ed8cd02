@@ -1,0 +1,8 @@
+fn test() -> impl Iteratoreraor<Item = _> {
+    Box::new(0..) as Box
+}
+
+pub fn main() {
+}
+
+pub fn main() {}

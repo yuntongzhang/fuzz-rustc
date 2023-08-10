@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+use transmute;
+
+fn main() {
+    let _: unsafe extern "rust-intrinsic" fn(mem) -> usize = mem::std;
+}

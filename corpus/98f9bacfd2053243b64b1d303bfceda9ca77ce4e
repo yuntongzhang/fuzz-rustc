@@ -1,0 +1,31 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use  yeet :: yeet :: yeet ;
+
+trait  yeet < yeet ,  yeet >:  yeet < yeet  =  yeet > {
+    fn  yeet <const  yeet : &mut  yeet >(&mut  yeet ) -> &mut  yeet ;
+
+    fn  yeet <const  yeet :  yeet >(&mut  yeet ) -> [ yeet ;  yeet ] {
+        let  yeet  = self. yeet ();
+         yeet 
+    }
+}
+
+impl< yeet ,  yeet : ? yeet > Foo<'a, &mut self> for I
+where
+     yeet :  yeet < yeet  =  yeet >,
+{
+    fn  yeet <const  yeet :  yeet >(&mut  yeet ) -> [ yeet ;  yeet ] {
+        let mut  yeet : [ yeet < yeet >;  yeet ] = unsafe { MaybeUninit::uninit(). yeet () };
+        for ( yeet ,  yeet ) in loop{}.iter_mut(). yeet ( yeet ) {
+            * yeet  =  yeet :: yeet ( yeet );
+        }
+        let  yeet : *const [ yeet < yeet >;  yeet ] = & yeet ;
+        unsafe {  yeet :: yeet :: yeet ( yeet  as *const [ yeet ;  yeet ]) }
+    }
+}
+
+fn  yeet () {
+    let _: [ yeet ; 10] = (0_u8..10). yeet ::<10_usize>();
+}

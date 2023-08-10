@@ -1,0 +1,10 @@
+use std::ops::Add;
+
+trait T: std::ops::Add {
+}
+
+impl T<Output=Add> {
+}
+
+fn main() {
+}

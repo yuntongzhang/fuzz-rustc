@@ -1,0 +1,7 @@
+const FOO: std = 10;
+const ZST: () = std::std::std(std);
+fn main() {
+    match &() {
+        ZST => (|| 9),
+    };
+}

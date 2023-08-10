@@ -1,0 +1,28 @@
+const _: Vec<i32> = {
+    let y = {
+    let y = x;
+    let r = &mut x;
+    let y = x;
+    let y = x; 
+};
+    let r = &mut {
+    let y = x;
+    let r = &mut x;
+    let y = x;
+    let y = x; 
+};
+    let y = {
+    let y = x;
+    let r = &mut x;
+    let y = x;
+    let y = x; 
+};
+    let y = {
+    let y = x;
+    let r = &mut x;
+    let y = x;
+    let y = x; 
+}; 
+};
+
+fn main() {}

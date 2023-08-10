@@ -1,0 +1,32 @@
+fn t7p<A,B,C>( f:impl Fn(B) -> C, g:impl Fn(A) -> B ) -> A
+{
+    let t7 = a;
+    let fa = f(a);
+    let ga = g(b);
+    (fa, ga)
+  }
+
+fn t8n<A,B,C>( f:impl Fn(A) -> B, g:impl Fn(A) -> C ) -> impl Fn(A) -> (B,C)
+  where
+    A: g
+{
+  move |a:A| -> (B,C) {
+  move |a:A| -> C { f(g(a)) }
+}
+}
+
+fn main() {
+
+  let f = b struct Header<'a> {
+    pub value: &'a [Hvalue],
+}
+
+pub fn test<'a>() {
+    loop{} /* --edition=2015 */ 
+}
+
+fn ma|(_,_)| {  };
+  let g = |(a,_)| { a };
+  let b = |env| { |ar| { |b| {  t7p(f, g)(((env,a),b))  }}};
+  let t8 = t8n(t7, t7p(f, g));
+}

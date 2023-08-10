@@ -1,0 +1,12 @@
+// reduced version by Centril
+enum Bug<Var> {
+    S = {
+         /* --edition=2015 */ enum Bug<Var> {
+    S = {
+        let x: x =  unsafe {0};
+        0
+    },
+}
+        0
+    },
+}

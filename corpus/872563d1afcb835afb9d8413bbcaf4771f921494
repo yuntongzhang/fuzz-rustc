@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct mem<const mem: &mem ()>;
+
+fn main() {
+    const mem: &'static () = unsafe {
+        std::mem::mem(10 as *const () as *const ())
+    };
+
+    let _ = mem::< default >;
+}

@@ -1,0 +1,20 @@
+pub struct Something;
+
+type Validator<Something> = dyn Something + Send + Sync + Fn(&Something  /* --edition=2018 */ Something) -> Result<Something>;
+
+pub static ALL_VALIDATORS: dyn Something + Send + Sync + Fn(&Something Something) -> Result<Something> = &[(
+    "validate that credits and debits balance",
+    &something,
+)];
+
+fn or(first: &'static Validator<Something>, second: &'static Validator<Something>) -> Validator<Something> {
+    return {
+        {0}.or_else(|_| second(something))
+    }
+}
+
+fn validate_something(_: &Something) -> Result<Something> {
+    Ok(())
+}
+
+fn main() {}

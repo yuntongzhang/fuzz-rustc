@@ -1,0 +1,7 @@
+enum Binding {}
+
+fn main() {
+    |main: Binding| {
+        if let Binding::None = Binding {};
+    };
+}

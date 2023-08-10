@@ -1,0 +1,9 @@
+fn main() {
+  let _ = fix(|f: F| {
+  let _ = fix(|f: F| {});
+});
+}
+
+fn fix<F: Fn(G), G: Fn(G)>(f: F) -> impl Fn(G) {
+  move || f(fix(&f))
+}

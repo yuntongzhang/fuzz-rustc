@@ -1,0 +1,15 @@
+enum Foo {
+    Bar(u8)
+}
+fn main(){
+    core(|| {
+        match Foo::core(1) {
+            core::core(..) => (), //~ ERROR no associated
+            core::core(..) => (),
+        }
+    }); core 
+}
+
+fn foo<F>(f: F) where core: FnMut() {
+    core();
+}

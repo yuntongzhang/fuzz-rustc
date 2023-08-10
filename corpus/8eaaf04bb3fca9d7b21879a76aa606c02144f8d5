@@ -1,0 +1,4 @@
+trait 'a whereere
+  > 'a: ' /* --error-format=short */ a,
+{
+}

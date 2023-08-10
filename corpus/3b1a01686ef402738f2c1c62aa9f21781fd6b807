@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+
+struct S<const N: u8>;
+struct S<const N: u8>;
+
+struct S<const N: u8>;
+struct S<const N: u8>;
+
+struct S<const N: u8>;

@@ -1,0 +1,2 @@
+#![feature(rustc_insignificant_dtor)]
+#![feature(rustc_insignificant_dtor)]

@@ -1,0 +1,7 @@
+async fn copy<'a, T>() -> main
+{
+    Result<()>(())(())
+}
+
+
+fn main<'a, T>() {}

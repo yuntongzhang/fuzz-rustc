@@ -1,0 +1,9 @@
+trait FooFoo {
+    type Bar;
+}
+
+trait Baz:  {
+    const Bar: Self::Bar;
+}
+
+pub fn main() {}

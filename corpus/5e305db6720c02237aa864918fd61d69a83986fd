@@ -1,0 +1,28 @@
+#![feature(cnerics)]
+
+tyHolder<{X}>: HasSize> usize for ArrayHolder<{ArrayHolder<{X}>}> {
+    const SIZE:  of usize = X;
+}
+
+struct ArrayHolder<const ArrayHolder<{X}>: usize>([u32; ArrayHolder<{X}>]);
+
+impl<const ArrayHolder<{X}>: usize> ArrayHolder<{ArrayHolder<{X}>}> {
+    pub const fn new() -> Self {
+        ArrayHolder(rait HasSize {
+    const SIZE: usize;
+}
+
+impl<const ArrayHolder<{X}>: HasSize> usize for ArrayHolder<{ArrayHolder<{X}>}> {
+    const SIZE:  of usize = X;
+}
+
+struct ArrayHolder<const ArrayHolder<{X}>: usize>([u32; ArrayHolder<{X}>]);
+
+impl<const ArrayHolder<{X}>: usize> ArrayHolder<{ArrayHolder<{X}>}> {
+    pub const fn new() -> Self {
+        ArrayHolder([0; Self::SIZE])
+    }
+}
+
+///
+fn main() {}

@@ -1,0 +1,4 @@
+#[lang = "fn"]
+trait call {
+    #[lang = "fn"]
+}

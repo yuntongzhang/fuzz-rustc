@@ -1,0 +1,43 @@
+fn CONST() {
+    const CONST: &[[(); match &[()] {
+       0{}
+        main => {}
+    }]; match &[()] {
+       0{}
+        main => {}
+    }] = match &[()] {
+       0{}
+        main => {}
+    };
+    match &[()] {
+       0{}
+        main =>fn m {}
+    }
+ain() extern "C" fn f/*...*/oo}() {
+    extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}{
+    extern "C" fn foo() {
+
+    extern "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }
+  "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }
+    {
+        extern "C" fn foo{() { }
+    }
+}{
+   () { }
+    {
+        extern "C" fn foo() { }
+    }
+}{ }
+   foo() { }
+    }
+}{ }
+    }
+}
+    }
+}

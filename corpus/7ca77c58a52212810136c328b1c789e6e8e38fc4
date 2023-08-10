@@ -1,0 +1,3 @@
+fn default() {
+    let default = (default::default(), default::default());
+}

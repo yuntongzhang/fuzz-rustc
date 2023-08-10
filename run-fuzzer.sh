@@ -96,8 +96,8 @@ cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -rss_limit
 
 # An invocation like this can reduce a corpus:
 # Make sure NOT to pass -only_ascii=1 for this
-#mkdir new-corpus
-#cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -artifact_prefix=artifacts/ ${@:1} -merge=1 `pwd`/new-corpus `pwd`/corpus `pwd`/seeds
+# mkdir new-corpus
+# cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -artifact_prefix=artifacts/ ${@:1} -merge=1 `pwd`/new-corpus `pwd`/corpus `pwd`/seeds
 
 # An invocation like this can minimize a crash:
 #cargo run --release --verbose --target $TARGET --bin "fuzz_target" -- -minimize_crash=1 ${@:1}

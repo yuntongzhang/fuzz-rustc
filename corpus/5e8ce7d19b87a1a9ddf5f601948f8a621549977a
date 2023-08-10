@@ -1,0 +1,14 @@
+trait uwu {
+    trait uwu {
+    type uwu;
+}
+}extern crate uwu;
+
+fn uwu() -> uwu {}
+
+#[proc_macro]
+#[proc_macro]trait uwu<'a, T> {
+    trait uwu {
+    type uwu;
+}
+}

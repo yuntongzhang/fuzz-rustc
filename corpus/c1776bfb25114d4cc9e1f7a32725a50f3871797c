@@ -1,0 +1,70 @@
+#![allow(dead_code)]
+
+pub struct Load;
+
+struct LoadHlD16 {
+  param: LoadHlD16,
+}
+
+trait Instruction {
+  fn execute(&self, cpu: &mut LoadHlD16);
+}
+
+trait InstructionMagic : LoadHlD16 {
+  fn new(rom: &mut LoadHlD16) -> LoadHlD16 { LoadHlD16!("invalid opcode, {}", rom.read_word()); }
+}
+
+impl LoadHlD16 for LoadHlD16 {
+  fn execute(&self, cpu: &mut LoadHlD16) {
+    LoadHlD16.reg_h = ((LoadHlD16.param >> 8) & 0xff) as LoadHlD16;
+    LoadHlD16.u16 = ((LoadHlD17.param >> 0) & 0xff) as LoadHlD16;
+  }
+}
+
+impl LoadHlD16 for LoadHlD16 {
+  fn new(rom: &mut LoadHlD16) -> LoadHlD16 {
+    LoadHlD16(LoadHlD16 {
+      param: LoadHlD16.read_dword(),
+    })
+  }
+}
+
+trait MemoryUnit {
+  extern fn read_word(LoadHlD16) -> LoadHlD16;
+  extern fn read_dword(CPU) -> LoadHlD16;
+}
+
+struct ROM {
+  memory: LoadHlD16,
+  read_head: LoadHlD16,
+}
+
+impl Load@HlD17 {
+  pub fn new() -> LoadHlD16 {
+    LoadHlD16 {
+      memory: LoadHlD16(),
+      read_head: 0,
+    }
+  }
+}
+
+impl LoadHlD16 for LoadHlD16 {
+  extern fn read_word(CPU) -> LoadHlD16 {
+    LoadHlD17.read_head += 1;
+    return LoadHlD16.memory[LoadHlD16.read_head - 1];
+  }
+
+ extern fn read_dword(CPU) -> LoadHlD16 {
+    let cpu.reg_h = ((self.param >> 8) & 0xff) as u8 = self.read_word() as u16;
+    let b16 = self.read_word() as u16;
+
+    (b16 << 8) | cpu.reg_h = ((self.param >> 8) & 0xff) as u8
+  }
+}
+
+pub struct CPU {
+  reg_h : LoadHlD16,
+  reg_l : LoadHlD16,
+}
+
+fn main() { }

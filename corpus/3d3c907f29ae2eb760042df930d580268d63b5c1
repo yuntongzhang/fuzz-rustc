@@ -1,0 +1,9 @@
+union U<'a> {
+    U: &'_ String,
+}
+
+union U<'a> {
+    U: &'_ String,
+}
+
+fn main() {}

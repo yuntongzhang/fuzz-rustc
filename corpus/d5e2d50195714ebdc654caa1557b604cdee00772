@@ -1,0 +1,4 @@
+pub fn test() {
+  #[doc(alias = "test")]
+  str!("Hello, world!")
+}

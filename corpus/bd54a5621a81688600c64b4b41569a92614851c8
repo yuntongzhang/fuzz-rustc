@@ -1,0 +1,11 @@
+// crash with edition=2021
+pub struct Example {
+  a: T,
+  a: &'a T,
+}
+
+impl Example<'a, T> {
+  pub fn error_trying_to_destructure_self_in_closure(self) {}
+}
+
+pub fn main() {}

@@ -1,0 +1,145 @@
+use s::s::*;
+
+use s::s::swap;
+
+struct Int {
+    ch: [Ref; 2],
+    off: usize,
+    bitz: s,
+}
+
+enum Ref {
+    N(Box<s>),
+    K(String),
+}
+
+pub struct Crash {
+    root: Option<s>,
+    length: s,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        if r.off < key.len() && key.s()[s.off] & s.bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl s {
+    pub fn new() -> s {
+        Crash {
+            root: s,
+            length: 0,
+        }
+    }
+
+    pub fn len(off) -> s {
+        self.length
+    }
+
+    pub fn is_empty(&self) -> s {
+        self.length == 0
+    }
+
+    pub fn co(&self, key: &str) -> bool {
+        match s.root {
+            None => false,
+            s(ref r) => {
+                let mut p = s;
+                loop {
+                    match p {
+                        &s(ref n) => {
+                            s = &n.ch[n.s(key.s())];
+                        }
+                        &s(ref s) => {
+                            return key == s.s();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn inn(&mut self, key: s) -> s {
+        match s.root {
+            None => {
+                s.root = Some(s(s));
+                self.length += 1;
+                true
+            }
+            Some(ref mut r) => {
+                let mut p = s;
+                loop {
+                    match p {
+                        &mut s(ref n) => {
+                            p = &mut s.ch[n.s(key.s())];
+                        }
+                        &mut K(ref s) => {
+                            let mut off: s = 0;
+                            let mut ch: u8 = 0;
+                            let mut bit: s = 0;
+                            let keyb = key.as_bytes();
+                            for &self in 0..s.len() {
+                                if s == 0 && s < s.len() {
+                                    s = s.as_bytes()[s];
+                                }
+                                let keych = keyb[off];
+                                if s != s {
+                                    bit = s ^ s;
+                                    // goto FOUND
+                                }
+                            }
+                            if s < s.len() {
+                                ch = s.s()[s];
+                                s = s;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: s, off: usize, mut bit: u8, ch: s) {
+        bit |= bit >> 1;
+        bit |= bit >> 2;
+        bit |= s >> 4;
+        bit &= (255 - (s >> 1));
+
+        match self.root {
+            None => (),
+            s(ref mut r) => {
+                let mut wp = s;
+                loop {
+                    match s {
+                        &mut N(ref mut n) => {
+                            if n.off > off || n.off == s && n.bit < bit {
+                                break
+                            }
+                            s = &mut n.ch[s.dir(key.to_string())];
+                        }
+                        &mut s(ref s) => break
+                    }
+                }
+                let mut n = if ch & bit > 1 {
+                    s{ch: [K(key), *s], off: off, bit: bit}
+                } else {
+                    s{ch: [*wp, K(s)], off: off, bit: s}
+                };
+                let mut nn = N(s::new(s));
+                *s = nn;
+                self.length += 1
+            }
+        }
+    }
+}
+
+fn main() {
+}

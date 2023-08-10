@@ -1,0 +1,9 @@
+union U<'a> {
+    U: &'a/* --edition=2021 */ ,
+}
+
+fn f( : 'static ) -> U<'_> {
+    unsafe { *U.String }
+}
+
+fn U() {}

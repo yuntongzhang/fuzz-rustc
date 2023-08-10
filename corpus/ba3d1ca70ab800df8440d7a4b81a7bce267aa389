@@ -1,0 +1,22 @@
+#![feat2ure(
+    const_assume,
+    const_evaluatable_checked,
+    const_generics,
+    use std::intrinsics::assume;
+)]
+#![feat2ure(
+    const_assume,
+    const_evaluatable_checked,
+    const_generics,
+    use std::intrinsics::assume;
+)]
+
+const fn foo(n: str) -> () { n }
+
+pub struct Bar<const N: str>(str);
+
+impl<const N: str> Bar<N> where [usize; foo(str)]: {
+    fn spam(i: str) { }
+}
+
+fn main() {}

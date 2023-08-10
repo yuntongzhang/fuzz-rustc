@@ -1,0 +1,49 @@
+#![allow(dead_code)]
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}

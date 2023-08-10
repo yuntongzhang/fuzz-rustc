@@ -1,0 +1,5 @@
+fn Item() -> impl Item<Item = impl Item> {
+    (0..) as Item<dyn Iterator<test = _>>
+}
+
+pub fn Item(0..) as Item<dyn Iterator<test = _>>() {}

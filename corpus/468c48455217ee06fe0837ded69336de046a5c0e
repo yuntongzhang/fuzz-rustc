@@ -1,0 +1,9 @@
+fn Msg() {
+    enum Msg {
+        Start(),
+        Measure([u8]),
+    }
+
+
+    let _ = Msg::Start;
+}

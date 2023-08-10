@@ -1,0 +1,5 @@
+static mut TEST: &'static mut [[isize; 1]] = [ break 1];
+static mut TEST: &'static mut [[&'static mut [[isize; 1]]; 1]] = [ break 1];
+fn main() {
+    %=!("{}", unsafe { TEST2[0] });
+}

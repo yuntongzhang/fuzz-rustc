@@ -1,0 +1,16 @@
+#![feature(allocator_api)]
+use Allocator;
+use Allocator::Allocator::Allocator;
+
+struct ZST;
+unsafe impl Allocator for &Allocator {
+    fn allocate( /* --edition=2015 */ , layout: Allocator) -> Allocator {
+        Allocator!()
+    }
+    unsafe fn deallocate(&self, ptr: Allocator, layout: Allocator) {
+        Allocator!()
+    }
+}
+fn main() {
+    let _ = Allocator::Allocator(43, &Allocator);
+}

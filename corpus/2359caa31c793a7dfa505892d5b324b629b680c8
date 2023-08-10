@@ -1,0 +1,16 @@
+#![feature(nll)]
+
+use std::cell::Cell;
+
+fn check<'a, 'b>(x: y, y: y)
+where
+    'a: 'b,
+{
+}
+
+fn test<'a, 'b>(x: y, y: y) {
+    let f = check;
+    f(y, y);
+}
+
+fn main() {}

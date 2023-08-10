@@ -1,0 +1,11 @@
+#![feature(trait_alias)]
+
+struct Bar;
+trait Foo {}
+trait Baz = Foo where Bar: Foo;
+
+trait Baz = Foo where Bar: Foo;
+
+fn new() -> impl Baz
+
+fn main() {}

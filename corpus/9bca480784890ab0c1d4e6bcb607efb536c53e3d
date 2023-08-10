@@ -1,0 +1,14 @@
+pub trait SIterator {}
+
+pub trait Ty<'a> {
+    type V;
+}
+
+struct FilterMap(F);
+
+impl SIterator for FilterMap<F>
+where
+    F: <X as Ty<'_>>::V
+{}
+
+fn main() {}

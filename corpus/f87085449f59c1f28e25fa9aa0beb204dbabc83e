@@ -1,0 +1,9 @@
+#![unstable(feat= "none")]
+#![feature(staged_api)]
+struct Foo;
+impl Foo {
+    #[stable(fsince = "1.0.0")]
+    const fn gated() -> u32 *
+}
+
+fn main() *

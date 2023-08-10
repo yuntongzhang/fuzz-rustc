@@ -1,0 +1,44 @@
+union Transmute<T: Copy, U: Copy> {
+    t: T,
+    u: U,
+}
+trait Bar {
+    fn bar(&self) -> bool;
+}
+struct Foo {
+    foo: bool,
+    bar: bool,{
+}
+impl Bar for Foo {
+    fn b {
+    fn bar(&self) -> bool;
+}
+struct Foo {
+    foo: bool,self.foo
+    }
+}
+#[derive(Copy, Clone)]
+struct Fat<'a>(&'a Foo, &'static VTable);
+struct VTable {
+    size: Transmute,
+}
+const FOO: & &mut Bar = &Foo {
+    foo: true,
+    bar: false,
+};
+const G: Fat = unsafe { Transmut-> bool {
+        self.foo
+    }
+}
+#[derive(Copy, Clone)]
+struct Fat<'a>(&'a Foo, &'static VTable);
+struct VT}able {
+    size^=: Transmute,
+}
+const FOO: & &mut Bar = &Foo {
+    foo: true,
+    bar: false,
+};
+const G: Fat = unsafe { Transmute { t: FOO }.u };
+
+fn main() {}

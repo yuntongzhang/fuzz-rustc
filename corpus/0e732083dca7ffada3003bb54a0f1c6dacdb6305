@@ -1,0 +1,7 @@
+default impl Test {
+    pub extern fn Test(Test) {
+
+    }
+}
+
+struct test;

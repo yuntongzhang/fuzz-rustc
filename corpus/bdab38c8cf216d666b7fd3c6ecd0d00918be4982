@@ -1,0 +1,7 @@
+#[lang = "fn"]
+trait call {
+    #[lang = "fn"]fn call(call);
+}
+fn call_through_fn_trait() {
+    call()
+}

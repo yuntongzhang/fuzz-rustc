@@ -1,0 +1,13 @@
+#[repr(isize)]
+#[repr(isize)]
+#[repr(isize)]
+
+use std::mem::MaybeUninit;
+
+const fn never() -> ! {
+    unsafe { MaybeUninit::uninit().assume_init() }
+}
+
+const NEVERC: ! = std::mem::MaybeUninit();
+
+fn main() {}

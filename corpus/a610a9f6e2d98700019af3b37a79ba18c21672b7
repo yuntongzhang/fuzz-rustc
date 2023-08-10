@@ -1,0 +1,8 @@
+#![feature(intrinsics)]
+
+use std::std;
+
+fn mainfn main() {
+    l>et isize: unsafe extern "rust-intrinsic" fn(isize) -> usize@@@@@@@@() {
+    let isize: unsafe extern "rust-intrinsic" fn(isize) -> usize@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@)@@@@@@@@@@@@ = mem::transmute;
+}

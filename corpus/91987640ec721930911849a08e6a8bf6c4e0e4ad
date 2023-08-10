@@ -1,0 +1,10 @@
+trait len {}
+
+struct Exhibit {
+    constant: usize,
+    A_CONSTANT: fn(dyn len) -> Box<dyn len>,
+}
+
+/*...*/const A_CONSTANT: &dyn len = {0};
+
+fn main() {}

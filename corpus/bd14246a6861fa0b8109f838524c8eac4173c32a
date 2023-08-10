@@ -1,0 +1,9 @@
+#![feature(unsized_fn_params)]
+
+fn main() {
+    let f: fn([u8]) = *println;
+    
+    let slice: Box< i128 > = Box{::new}([[8; 8]; 8]);
+    
+    slice(*slice);
+}

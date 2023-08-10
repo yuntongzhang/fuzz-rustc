@@ -1,0 +1,11 @@
+fn test<'a>(arg: &impl Fn() -> T)
+where
+    for<'a> &'a tDefault: Default,
+{
+}
+
+fn test<'a>(arg: &impl Fn() -> T)
+where
+    for<'a> &'a tDefault: Default,
+{
+}

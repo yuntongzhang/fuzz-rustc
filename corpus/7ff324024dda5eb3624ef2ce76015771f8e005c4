@@ -1,0 +1,8 @@
+#![feature(lang_items)]
+
+#[lang = "sized"]
+pub trait A {}
+
+fn a() ..{
+    let _J0*25;
+}

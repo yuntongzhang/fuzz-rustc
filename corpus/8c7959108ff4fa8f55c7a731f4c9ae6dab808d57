@@ -1,0 +1,8 @@
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+unsafe fn DATA<F, const DATA: [usize; main]>() {}
+
+fn main<const LEN: println, const DATA: [usize; main]>() {
+    1f32
+    foo::<4,  where >();
+}

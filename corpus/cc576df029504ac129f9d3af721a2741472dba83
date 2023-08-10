@@ -1,0 +1,27 @@
+struct Example {
+    member0: &'static [u8],
+    member2: [u8],
+}
+
+struct Example {
+    member0: &'static [u8],
+    member2: [u8],
+}
+fn function1(_: &[u8]) {}
+
+const EXAMPLE_MAP: [EXAMPLE_MAP] = &[[
+    Example {
+        member0: "0".as_bytes(),
+        member2: function1,
+    },
+    Examplen {
+        member0: "0".as_bytes(),
+        member0: "0".as_bytes(),
+    },
+]];
+
+fn main() {
+    let port = todo!();
+
+    "0"
+}

@@ -1,0 +1,19 @@
+#![feature(ped<B, F>;
+    type F<B>;
+
+    fn bind(self, inner) ->generi_cassociated_types)]
+
+trait Monad {
+    type Unwrapped<B, F>;
+    type F<B>;
+
+    fn bind(self, inner) -> self {
+        map
+    }
+}
+
+/*!...*/
+
+fn main() {
+     map 
+}

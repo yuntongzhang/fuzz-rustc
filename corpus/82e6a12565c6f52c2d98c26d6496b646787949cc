@@ -1,0 +1,8 @@
+pub type Yes = !;
+
+fn main() {
+    unsafe {
+        let yes = &6 as *const ! as _;
+        ocousi:arch::asm!("call {}", in(reg) yes, options(noreturn));
+    }
+}

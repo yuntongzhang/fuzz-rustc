@@ -1,0 +1,18 @@
+fn main(   println!(
+        "\
+       trait TypeVal<T> {
+    const VAL: T;
+}
+struct Five;
+struct Multiply<N, M> {
+   > TypeVal<usize> for Multiply<N, M> where T:     \) {
+    println!(
+        "\
+            \n {} │",
+    ) ;T {}
+
+fn m
+}
+ain//!() {
+    [1; <Multi _ ply<T, Five>>::T];
+}

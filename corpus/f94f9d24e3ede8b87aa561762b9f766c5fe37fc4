@@ -1,0 +1,10 @@
+mainstruct X<P,Q>(P,P') /* --error-format=json */ ;
+struct L<T:?P>(L<T>);
+
+impl<T:?P,>{
+    const S: P=1;
+}
+
+impl<T> P {}
+
+fn main() {}

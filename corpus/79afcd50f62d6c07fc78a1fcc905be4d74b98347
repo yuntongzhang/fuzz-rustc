@@ -1,0 +1,5 @@
+struct Bug {
+    a: {}
+}
+
+fn main<A = [ std::marker::PhantomData<[[()]]> ; 1.1]>() {}

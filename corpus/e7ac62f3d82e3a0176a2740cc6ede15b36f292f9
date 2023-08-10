@@ -1,0 +1,16 @@
+mod foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}#![allow(warnings)]
+#![feature(never_type)]
+#![allow(const_err)]
+
+use std::mem::MaybeUninit;
+
+const fn neven() {}
+*/ {}

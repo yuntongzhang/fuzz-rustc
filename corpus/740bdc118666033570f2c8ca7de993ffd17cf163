@@ -1,0 +1,23 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#![allow(incomplete_features)]
+
+struct test();
+
+fn test() {
+    ()
+}
+
+impl test::<test> {
+    pub fn test(&test) {
+        self.test::<test>();
+    }
+
+    fn test(&test) {
+        test();
+    }
+}
+
+fn test() {
+    let test = test::<test>();
+    test::<pass>.test()
+}

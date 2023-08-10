@@ -1,0 +1,5 @@
+// https://github.com/rust-lang/rust/issues/68025
+//X)
+    where
+         'aw          'aw (*f)  raw (*f)(), Box::new(|| raw));
+}

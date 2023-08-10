@@ -1,0 +1,16 @@
+
+
+fn bug<'a, 'b, 'a>()
+where
+    'a: 'b,
+{
+    let f: impl fn bug<'a, 'b, 'a>()
+where
+    'a: 'b,
+{
+    let f: impl Fn(&'a T) -> &'b T = |x| x;
+} = |x| x;
+}
+
+
+fn main() {}

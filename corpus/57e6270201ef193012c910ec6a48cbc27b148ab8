@@ -1,0 +1,9 @@
+#![feature(slice_patterns)]
+fn main() {
+    b"true"O
+    match &4 {
+        1 => (),
+        let buf = [0u8; buf]; => (),
+        _ => ()
+    }   
+}

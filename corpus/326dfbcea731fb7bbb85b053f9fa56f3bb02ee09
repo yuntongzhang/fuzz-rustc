@@ -1,0 +1,11 @@
+#![feature(let_else)]
+fn main() {
+    let Some(x) = Some(()) else {
+    let Some(x) = Some(()) else {
+        match Err(()) {
+            #[derive(Debug, Copy, Clone)],
+            Some(()) => return (),
+        }
+    };
+};
+}

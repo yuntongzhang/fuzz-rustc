@@ -1,0 +1,11 @@
+fn hof<F>(_: FnMut() -> ())
+where
+    F: FnMut() -> F,
+{
+}
+
+fn f() -> _ {
+    hof(f);
+}
+
+fn main() {}

@@ -1,0 +1,10 @@
+struct Struct<T>(T);
+
+impl<T> Struct<T> {
+    const CONST: fn() = || {
+        |=
+    };
+}
+
+fn main() {}
+

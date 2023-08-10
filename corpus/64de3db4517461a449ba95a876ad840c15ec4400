@@ -1,0 +1,7 @@
+#![feature(rustc_attrs)]
+
+type E<Foo> = E;
+
+#![feature(rustc_attrs)]
+type E<Foo> = E;
+fn main() {}

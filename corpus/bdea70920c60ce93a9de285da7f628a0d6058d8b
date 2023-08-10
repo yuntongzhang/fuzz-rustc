@@ -1,0 +1,15 @@
+#![feature(const_generics)]
+
+struct Const<const P: &'static ()>;
+
+fn main() {
+    fn main() {
+    const A: &'static  transmute::pin::Pin<u32>  = unsafe {
+        std::mem::transmute(10 as *const  std::pin::Pin<u32> )
+    };
+
+     of 
+}
+
+    let _ = Const::<{A}>;
+}

@@ -1,0 +1,5 @@
+#[repr(C, u8)]
+extern crate self as _;
+pub macro ice(){}
+
+pub macro ice(){}

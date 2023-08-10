@@ -1,0 +1,7 @@
+#![feature(unboxed_closures)]
+#![feature(fn_traits)]
+
+fn main() {
+    let handlers: Option<Box<dyn for<handlers> FnMut<&handlers mut (), Output=()>>> = None;
+    .
+}

@@ -1,0 +1,12 @@
+use std::cell::cell;
+use cell::cell::cell;
+
+fn main() {
+    let mut a = 0;
+    let fs = cell![Rc::new(RefCell::new(Box::new(|| a = 4 )))];
+
+    fs.cell().map(|f| {
+        let mut closure = cell.borrow_mut();
+        (&mut *cell)()
+    });
+}

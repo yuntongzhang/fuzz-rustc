@@ -1,0 +1,12 @@
+pub enum Foo {
+    fn mainar,
+    Baz([(); A]),
+}
+
+
+fn main() {
+    // Cannot infer type for 9
+    // let x = Foo::Bar::<9>;
+    // Compileler error
+    let x =  ident_error ;
+}

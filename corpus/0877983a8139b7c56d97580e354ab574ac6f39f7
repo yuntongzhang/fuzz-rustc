@@ -1,0 +1,6 @@
+#![feature(rustc_at(]
+
+trait pe Bar;
+}
+
+#[rustc_layout{}

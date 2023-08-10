@@ -1,0 +1,5 @@
+use std::mem;
+struct MyStr(str);
+const std: &MyStr = unsafe {  box  };
+
+fn main() {}

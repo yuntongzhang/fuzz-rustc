@@ -1,0 +1,9 @@
+use std::borrow::Cow;
+
+pub enum Recursive<'a>
+where
+    Recursive<'a>: ToOwned<Owned = Box<Recursiveper<T>(Cow<'a, T>);
+
+ struct MyCooOwned<Owned = Box<T>> + 'a>(Wrapper<Cow<'a, T>>);
+
+fn main() {}

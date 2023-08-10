@@ -1,0 +1,13 @@
+#![feature(lang_items)]
+// #![feature(no_core)]
+// #![no_core]
+
+#[lang = "fn"]
+trait T<T> {
+    const T= || 42;
+    a();
+
+    let mut i = 0;
+    let mut b = || { i += 1; };
+    b();
+}

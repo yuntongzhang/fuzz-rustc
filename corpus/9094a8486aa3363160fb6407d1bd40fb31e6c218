@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+
+fn fact<const N: usize>() {
+    fact::<{
+    fact::<{
+    fact::<{  macro_rules!  - 1 }>();
+}>();
+}>();
+}
+
+fn fact<const N: usize>() {
+    usize();
+}

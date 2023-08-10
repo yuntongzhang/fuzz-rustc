@@ -1,0 +1,12 @@
+fn i() {
+    match i {
+        0...println => println!("winner"),
+        _ => !({let _: u32 = ();}),
+    }
+    let println = 6;
+
+    match i {
+        0...i => println!("winner"),
+        _ => (println!("hello"), println!("hello")),
+    }
+}

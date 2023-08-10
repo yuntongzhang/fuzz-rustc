@@ -1,0 +1,7 @@
+impl impl FnMut for Context {
+    fn print<T> () ->impl FnMut(&Context) for 'tcx {
+    fn print<T> () -> Self :: FnMut(&Context) }
+} for Context {
+    fn print<T> () ->impl FnMut(&Context) for 'tcx {
+    fn print<T> () -> Self :: FnMut(&Context) }
+}

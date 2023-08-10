@@ -1,0 +1,15 @@
+fn main() {
+    main: loop {
+        async {
+            loop {
+                contne ui'a;
+            }
+        };
+    } main: loop {
+        async {
+            loop {
+                contne ui'a;
+            }
+        };
+    } 
+}

@@ -1,0 +1,5 @@
+fn test() -> impl  extern  {
+    Box::new(0..) as Iterator<Item = impl Sized>
+}
+
+pub fn main() {}

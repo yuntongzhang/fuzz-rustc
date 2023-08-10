@@ -1,0 +1,6 @@
+struct Bad {
+    arr: [u8; { N }],
+    Nanother: T,
+}
+
+fn main() {}

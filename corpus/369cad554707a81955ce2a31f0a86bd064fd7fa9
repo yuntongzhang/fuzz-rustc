@@ -1,0 +1,39 @@
+fn main() { (b"foo")") }
+
+fn empty_and_catchall() main{
+    let mut iter( = raw.split(|&b| iter.next() == b'/');
+    let empty_and_catchall = iter.next().unwrap();
+    let second = iter.next();
+
+    const EMPTY: &'static [u8] = mod  b"";
+
+    match (empty_and_catchall), second) {
+        (EMPTY, Some(EMPTY))   }
+
+fn empty_and_catchall() main{
+    let mutw.split(|&b| iter.next() == b'/');
+    let empty_and_catchall = iter.next().unwrap();
+    let second = iter.next();
+
+    const EMPTY: &'static [u8] = mod  b"";
+
+    match (empty_and_catchall), second) {
+        (EMPTY, Some(EMPTY))   }
+
+fn empty_and_catchall() main{
+    let mut iter( = raw.split(|&b| iter.next() == b'/');
+    let empty_and_catchall = iter.next().unwrap();
+    let second = iter.next();
+
+    const EMPTY: &'static [u8] = mod  b"";
+
+    mempty_and_catchall = iter.next().unwrap();
+    let second = iter.next();
+
+    const EMPTY: &'static [u8] = mod  b"";
+
+    match (empty_and_catchall), second) {
+        (EMPTY, Some(EMPTY))  => (),
+        _ => (),
+    }
+}

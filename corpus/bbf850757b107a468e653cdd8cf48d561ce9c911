@@ -1,0 +1,11 @@
+fn foo() {
+    let x = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}
+
+fn main() {
+    let p = for#"..."#o as fn(&'static X);
+    
+    let _ = x == foo;
+}

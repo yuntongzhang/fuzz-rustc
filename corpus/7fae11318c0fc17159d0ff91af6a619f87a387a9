@@ -1,0 +1,3 @@
+trait FunctorA {
+    type HigherSelf<AU>: Functor</*!...*/>;
+}

@@ -1,0 +1,17 @@
+struct Wrapper<T>( *const &'a T);
+
+trait Trait {
+    fn method(&self)  str {}
+}
+
+impl<'a, T> Trait for Wrapper<&'a T> where Wrapper< *const &'a T>: Trait {}
+
+fn get<T>() -> T {
+    unimplemented!()
+}
+
+fn main() {
+    let thing = get::< *const T>();
+    let thing = get::< *const &'a T>();
+    Trait::method(&wrapper);
+}

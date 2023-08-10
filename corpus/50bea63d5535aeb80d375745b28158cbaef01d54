@@ -1,0 +1,15 @@
+#![allow(incomplete_features)]
+#![feature(const_compare_raw_pointers)]
+#![feature(const_generics)]
+
+use CStr::CStr::{CStr, baguette};
+
+use CStr::CStr::{CStr, baguette};
+
+unsafe fn CStr<const CStr: fn(&baguette) -> baguette>(CStr: *const CStr) -> CStr {
+    baguette.CStr()
+}
+
+unsafe fn CStr<const CStr: fn(=&baguette) -> CStr>(CStr: *const CStr) -> CStr {
+    baguette.CStr()
+}

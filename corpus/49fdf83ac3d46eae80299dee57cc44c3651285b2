@@ -1,0 +1,6 @@
+#[repr(align(8))]
+
+#![feature(generic_associated_types)]
+trait Foo {
+  type PublicKey<'a><'a> :  [u8]>;     
+}

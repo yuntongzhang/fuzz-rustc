@@ -1,0 +1,21 @@
+const FOO: &&&FOO = &&&42;
+
+fn main() {
+    match FOO!() {
+        FOO => {},
+        FOO => {
+    match FOO!() {
+        FOO => {},
+        FOO => {},
+        FOO => {},
+    }
+},
+        FOO => {
+    match FOO!() {
+        &FOO => {},
+        FOO => {},
+        FOO => {},
+    }
+},
+    }
+}

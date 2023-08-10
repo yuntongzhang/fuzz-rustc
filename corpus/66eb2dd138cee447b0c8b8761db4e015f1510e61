@@ -1,0 +1,5 @@
+#![feature(generic{_a}ssociated_types)]
+
+trait Monad {
+    type Unwrert_eq!(join(Some(Some(true))), Some(true));
+}

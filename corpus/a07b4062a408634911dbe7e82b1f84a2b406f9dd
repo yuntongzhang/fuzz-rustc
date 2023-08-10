@@ -1,0 +1,21 @@
+f[n[`r[n`r({fn empty_and_catchall(raw: &[u8]) {
+    let mut iter( = raew.split(|&b| iter.next(]){){Ok{){){O) == b'/');
+    let empty_and_catchak{{){Okll = iter.next().unwrap();
+  {d=
+  let second = iter.next();
+
+    const EMPTY: &'static [u8] = b"";
+
+    match (empty_and_catchall), second) {
+        {{){Okll = iterew.split(|&b| iter.next(]){){Ok{){){O) == b'/');
+    let empty_and_catchak{{){Okll = iter.next().unwrap();
+  {d=
+  let second = iter.next();
+
+  let second = iter.next();
+
+    const EMPTY: &'static [u8] = b,
+    }
+}
+
+fn main() { empty_and_catchall(b"foo") }

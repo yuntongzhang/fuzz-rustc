@@ -1,0 +1,5 @@
+static mut TEST: isize = ([1] as  u128 );
+static mut TEST: isize = ([1] as  u128 );
+fn main() {
+    isize;
+}

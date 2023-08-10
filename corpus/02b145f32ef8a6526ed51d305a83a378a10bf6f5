@@ -1,0 +1,7 @@
+const FOO: isize = 10;
+const ZST: &isize = std::mem::transmute(FOO);
+fn main() {
+    match loop{} {
+        ZST => 9,
+    };
+}

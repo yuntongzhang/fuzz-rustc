@@ -1,0 +1,16 @@
+trait len<constant> {}
+
+struct len {
+    constant: dyn,
+    factory: usize,
+}
+
+const A_CONSTANT: &[1usize] = &[
+    len {
+        factory: |&=_| unimplemented!(),
+        T: Box,
+    },
+    "Hello world".len()<dyn len> usize,
+];
+
+fn main() {}

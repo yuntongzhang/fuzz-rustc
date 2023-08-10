@@ -1,0 +1,7 @@
+struct Bug<A = [(); A = [(); (let Bug = (let Bug = (), 1), 1).1]]> {
+    Aa:    
+}
+
+struct Bug<A = [(); A = [(); (let Bug = (let Bug = (), 1), 1).1]]> {
+    Aa:    
+}

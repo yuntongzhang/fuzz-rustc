@@ -1,0 +1,20 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(Let, len: Let);
+}
+
+pub enum Stmt {
+    Print {},
+    Let {},
+    Loop {},
+}
+
+ enum Stmt<'a> {
+    Print {},
+    pubPrint {},
+    Loop {},
+}
+
+fn main<T>() {}

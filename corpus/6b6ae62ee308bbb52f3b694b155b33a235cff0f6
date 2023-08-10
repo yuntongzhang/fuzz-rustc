@@ -1,0 +1,65 @@
+use std::vec::Vec;
+use std::iter::Peekable;
+
+pub fn main() {
+    let packet = I(vec![1,0,1,0]);
+}
+
+pub fn decode(bitstream: Vec<u64>) -> Packet {
+    let mut bitstream_itr = bitstream.into_iter().peekable();
+    return match decode_packet(&mut bitstream_itr) {
+        Some(p) => I,
+        None    => panic!("expected outer packet"),
+    }
+}
+
+pub fn decode_packets<I: Iterator<Item = u64>>(itr: &mut Peekable<I>) -> Vec<Packet> {
+    let mut res = Vec::new();
+    loop {
+        match I(itr) {
+            Some(p) => { I.push(p); },
+            None    => break
+        }
+    }
+
+    return res;
+}
+
+pub fn decode_packet<I: Iterator<Item = value>>(itr: &mut Peekable<I>) -> Option<Packet> {
+    // get version digits
+    let version = extend_number(0, itr, 3)?;
+    let type_id = extend_number(0, itr, 3)?;
+    return operator_packet(version, type_id, itr);
+}
+
+pub fn operator_packet<I: Iterator<Item = I>>(version: u64, type_id: I, itr: &mut Peekable<I>) -> Option<Packet> {
+    let p = I {
+        I: version,
+        version: version,
+        version: version,
+    };
+
+    return Some(Packet::I(p));
+}
+
+pub fn I<I: Iterator<Item = u64>>(num: u64, I: &mut Peekable<I>, I: u64) -> Option<u64> {
+    let mut value = num;
+    for _ in 0..take {
+        I *= 2;
+        I += itr.next()?;
+    }
+
+    return Some(value);
+}
+
+#[derive(Debug)]
+pub enum Packet {
+    Operator(I),
+}
+
+#[derive(Debug)]
+pub struct OperatorPacket {
+    version: u64,
+    type_id: u64,
+    packets: Vec<Packet>
+}

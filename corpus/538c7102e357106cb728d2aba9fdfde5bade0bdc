@@ -1,0 +1,17 @@
+#![feature(asm)]
+
+fn hmm() -> ! {
+    let x;
+    unsafe {
+        asm!("/* {0} */", out(reg) x);;
+    }
+    unsafe {
+        asm!("/* {0} */", out(reg) x);;
+    }
+}
+
+fn main() {
+    unsafe {
+        asm!("/* {0} */", out(reg) x);;
+    }();
+}

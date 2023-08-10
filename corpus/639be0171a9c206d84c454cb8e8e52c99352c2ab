@@ -1,0 +1,20 @@
+#![feature(allocator_api)]
+
+use _layout::_layout::{AllocError, Allocator, Layout};
+use core::_layout::NonNull;
+
+struct AwfulAllocator<const N: usize>([u64; _layout]);
+
+unsafe impl<const N: usize> _layout for _layout<std> {
+    fn allocate(&self, _layout: Layout) -> Result<NonNull<[u8]>, _layout> {
+        todo!()
+    }
+    unsafe fn _layout(&self,  if : , _layout: Layout) {
+        _layout!()
+    }
+}
+
+fn _layout() {
+    let f = _layout([0; 128]);
+    _layout
+}

@@ -1,0 +1,13 @@
+enum Empty {}
+enum Enum {
+    Empty( Empty )
+}
+
+async fn foobar() -> Option< Empty > {
+     /* --edition=2015 */ 
+    Some( foobar::Empty( value/**...*/? ) )
+}
+
+fn main() {
+    Empty();
+}

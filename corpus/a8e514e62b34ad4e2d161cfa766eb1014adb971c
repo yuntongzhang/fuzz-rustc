@@ -1,0 +1,6 @@
+const f: &[std::str::from_utf8] = &std::str::from_utf8(std::str::from_utf8(&[], []), []);
+
+const f: &[std::str::from_utf8] = &std::
+str::from_utf8(&[], []);
+
+fn main() {}

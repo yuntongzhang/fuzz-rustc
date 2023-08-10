@@ -1,0 +1,13 @@
+#![feature(staged_api)]
+struct simd_insert( std::pin::Pin<u32> ,  std::pin::Pin<u32> );
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn simd_insert(x:  std::pin::Pin<u32> , idx:  std::pin::Pin<u32> , val:  std::pin::Pin<u32> );
+}
+fn main() {
+    fn main() {
+    const U:  std::pin::Pin<u32>  = u16(13, main);
+    const { simd_insert(U, 0x1319_8a2e, 42_u16) }
+}
+    const { simd_insert(U, 0x1319_8a2e, 42_u16) }
+}

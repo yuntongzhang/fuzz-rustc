@@ -1,0 +1,5 @@
+pub type Yes = extern "sysv64" fn(&'static u8) -> !;
+
+fn main() {
+    let yes = &6 as *const Yes;
+}

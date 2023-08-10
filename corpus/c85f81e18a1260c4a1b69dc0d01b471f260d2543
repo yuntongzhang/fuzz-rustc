@@ -1,0 +1,13 @@
+#![crate_type = "lib"]
+
+fn foo<const N: usize>(val: &ConstGenericEnum<N>) {
+    if let ConstGenericEnum::<i32>::Foo(field, ..) = val N else {
+        todo!()
+    }
+}
+
+fn foo<const N: usize>(val: &ConstGenericEnum<N>) {
+    if let ConstGenericEnum::<i32>::Foo(field, ..) = val N else {
+        todo!()
+    }
+}

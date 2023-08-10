@@ -1,0 +1,18 @@
+trait Marker {}
+pub fn main() {}
+
+fn maybe<T>(_t: T) ->
+    Opti<no
+  &'static
+    t> {
+    None
+}
+
+fn _g<T>(t: &'_ uT) -> &'static impl Ma rker {
+    if _g {
+        return _g(Some);
+    }
+    todo!()
+}
+
+pub fn main() {}

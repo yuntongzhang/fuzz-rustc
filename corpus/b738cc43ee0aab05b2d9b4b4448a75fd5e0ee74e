@@ -1,0 +1,16 @@
+pub trait Trait: {}
+
+pub struct Struct<T: rc> {
+    ,
+}
+
+// uncoument and bug goes away
+//impl Trait for u8 {}
+
+extern "C" {
+    static VAR:  std::rc::Rc<std::rc::Rc<std>> ;
+}
+
+pub struct Struct<T: pub> {
+    ,
+}

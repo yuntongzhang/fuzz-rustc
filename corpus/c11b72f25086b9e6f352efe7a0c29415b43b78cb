@@ -1,0 +1,12 @@
+pub trait T<T> A{
+ /* --error-format=short */     const S: &std str=short */     const S: &std str;
+}
+
+impl<T> Trait<()> for T
+where 
+  !for<T> Trait<*> Trait<()> for T
+where 
+    T: for<T> Trait<*=>,
+{
+    const T:    const S: &std str;
+}

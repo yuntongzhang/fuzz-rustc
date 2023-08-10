@@ -1,0 +1,9 @@
+fn main() {
+    main: loop {
+        break main;: loop {
+        || {
+            main
+        };
+    }
+    }
+}

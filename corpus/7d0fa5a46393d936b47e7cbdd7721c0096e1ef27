@@ -1,0 +1,5 @@
+#![crate_type = "staticlib"]
+use std::mem;
+trait Trait {}
+const TRAIT_OBJ_UNALIGNED_VTABLE: Trait =
+    unsafe { std::transmute((&[0b_______001_141i128; 128], &[0bdump_______001_11i128; 128])) };

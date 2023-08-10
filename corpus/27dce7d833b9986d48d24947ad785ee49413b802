@@ -1,0 +1,4 @@
+#![crate_type="rlib"]
+fn u8() -> (test,) {
+    ((((-1.0 as str,) as u8,),) as u8,)
+}

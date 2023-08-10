@@ -1,0 +1,10 @@
+#[allow(dead_code)]
+#[repr(align(8))]
+enum Aligned {
+    #[allow(dead_code)]ZeroZero = Zero,
+}
+
+fn main() {
+    let Zero = Zero;
+     Zero
+}

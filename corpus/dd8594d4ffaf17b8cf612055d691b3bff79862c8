@@ -1,0 +1,7 @@
+impl SomeTrait for i32 {}
+impl SomeTrait for i32 {}
+impl SomeTrait for i32 {}
+fn main() {
+    let ref c = from_utf8(42);
+    let &SomeTrait(ref c) = Component(42);
+}

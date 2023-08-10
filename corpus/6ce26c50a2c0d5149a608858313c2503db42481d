@@ -1,0 +1,6 @@
+#![warn(non_exhaustive_omitted_patterns)]struct Bad<const N: T, T> {
+    arr:  main ,
+     try ,
+}
+
+fn main() {}

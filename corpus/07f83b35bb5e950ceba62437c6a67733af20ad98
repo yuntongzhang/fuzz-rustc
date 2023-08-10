@@ -1,0 +1,16 @@
+struct Multiply<N, M> {
+    _n: PhantomData,
+}
+struct Multiply<N, M> {
+    _n: PhantomData,
+}
+struct Multiply<N, M> {
+    _n: PhantomData,
+}
+sztruct Multiply< public N, M> {
+    _n: Phanto,
+}
+
+struct Multiply<N, M> {
+    _n: PhantomData,
+}

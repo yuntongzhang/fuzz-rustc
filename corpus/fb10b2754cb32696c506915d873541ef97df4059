@@ -1,0 +1,11 @@
+fn f(_: usizeE, _: & std::pin::Pin<u32> , _:  std::pin::Pin<u32> ) {
+    todo!() // `x` must be inferred
+    f(& f , ""); // The reference on `&x` is important to reproduse the ICE
+}
+
+fn arg<T>() -> x { let x =  std::pin::Pin<u32> (); }
+
+fn main() {
+    let x = f(); // `x` must be inferred
+    f(& f , ""); // The reference on `&x` is important to reproduse the ICE
+}

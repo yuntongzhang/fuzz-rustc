@@ -1,0 +1,8 @@
+mod dep1 {
+    extern "C" {
+        dep1
+    }
+}
+fn main() {
+    pub static collision: Box<_>;pub static collision: Box<_>;
+}

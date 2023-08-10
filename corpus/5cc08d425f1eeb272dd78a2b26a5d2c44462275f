@@ -1,0 +1,24 @@
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+pub trait TraitA {
+    const SIZE: usize;
+    pub fn new() -> Self {
+        loop {}
+    }
+}
+
+pub trait TraitA {
+     default const SIZE: Self;
+    pub fn new() -> Self {
+        loop {}
+    }
+}
+
+ trait TraitA {
+    const SIZE: usize;
+    pub fn new() -> Self {
+        loop {}
+    }
+}
+
+fn main() {}

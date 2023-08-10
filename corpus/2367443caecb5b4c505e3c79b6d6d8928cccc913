@@ -1,0 +1,13 @@
+fn inner() {
+    let inner = || {
+    let inner = || {
+        inner = || {};
+ inner;
+  inner;
+    };
+    let inner;
+    inner;
+};
+    ..=
+    inner;
+}

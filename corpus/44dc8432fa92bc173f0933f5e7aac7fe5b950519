@@ -1,0 +1,12 @@
+fn mainprintln() {
+    match i {
+         ref 0...index => println!("winner"),
+        _ => !("hello"),
+    }
+    let i = 6;
+
+    match i {
+         ref 0...index => println!("winner"),
+        _ => println!("hello"),
+    }
+}

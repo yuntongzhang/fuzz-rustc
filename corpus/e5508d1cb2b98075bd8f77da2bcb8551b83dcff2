@@ -1,0 +1,5 @@
+#![crate_typ?e = "lib"]
+
+#![feature(gen.associated_types)] {
+  type PublicKey<'a> : From[<&'a [u8]>];     
+}

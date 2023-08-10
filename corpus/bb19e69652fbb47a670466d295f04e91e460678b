@@ -1,0 +1,17 @@
+#![feature(extern_types)]
+
+extern "C" {
+    type List;
+}
+
+pub struct List {
+    len: len,
+    _opaque; Content,
+}
+
+pub const  as : X = {
+    let  ref a = [(0); 4];
+    unsafe {  async move {&*(&a as *const _ as *const List)} }.len
+};
+
+pub fn mainM() {}

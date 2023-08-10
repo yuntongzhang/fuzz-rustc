@@ -1,0 +1,13 @@
+fn main() {
+    'lab: loop {
+        'lab: loop {
+        'lab: loop {
+        'lab: loop {
+        || {
+            break 'lab;
+        };
+    }
+    }
+    }
+    }
+}

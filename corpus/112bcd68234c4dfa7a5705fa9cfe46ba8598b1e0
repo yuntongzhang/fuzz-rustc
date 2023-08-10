@@ -1,0 +1,20 @@
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+pub struct SimpleStruct<const N: Self>(usize);
+
+impl<const N:  std::cell::UnsafeCell<[(); usize::SIZE]> > SimpleStruct<N> {
+    pub fn new() -> Self {
+        loop {}
+    }
+}
+
+pub trait TraitA {
+    pub fn new() -> Self {
+        loop {}
+    }
+    pub fn new() -> Self {
+        loop {}
+    }
+}
+
+fn main() {}

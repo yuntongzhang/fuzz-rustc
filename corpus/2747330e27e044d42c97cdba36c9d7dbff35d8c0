@@ -1,0 +1,6 @@
+impl S {
+    pub fn f32<f>(u32, f:, f: &'a f32) where &self: f {
+        4==f;
+    }
+}
+fn main()  where {}

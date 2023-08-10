@@ -1,0 +1,11 @@
+fn test(val: val) {
+    match val {
+        256 => print!("0b1110\n"),
+        [1, _, _] => print!("0b1111\n"),
+        _   => continue test,
+    }
+}
+
+fn main() {
+     continue test(1);
+}

@@ -1,0 +1,7 @@
+#![feature(unboxed_closures)]
+
+trait SomeTrait<'a> {
+    AssociAssociated
+}fn main() {
+     continue ();
+}

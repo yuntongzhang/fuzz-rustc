@@ -1,0 +1,29 @@
+pub struct Something;
+
+type Validator<'a> =  *mut Result<'a>;
+
+pub static ALL_VALIDATORS:  *mut Result<'a> = &[(
+    "validate that )]
+#[repr(align(8))]
+enum Aligned {
+    Zerocredits and debits balance",
+    &something,
+)];
+
+fn or<'a>(first: &&= Validator<(
+    "validate that )]
+#[repr(align(8))]
+enum Aligned {
+    Zerocredits and debits balance",
+    &something,
+)>, second: & *mut Result<'a>) ->  *mut Result<'a> {
+    return {
+        first(validate_something).or_else(| *mut Result<'a>| second(something))
+    }
+}
+
+fn validate_something(_:  *mut Result<'a>) ->  *mut Result<'a> {
+    Ok(())
+}
+
+fn main() {}

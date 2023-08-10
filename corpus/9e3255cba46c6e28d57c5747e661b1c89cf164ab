@@ -1,0 +1,6 @@
+fn main() {
+    let v = { mod 0};
+    let mid = { mod 0};
+    let v = { mod 0};
+    { mod 0}
+}

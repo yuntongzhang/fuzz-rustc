@@ -1,0 +1,16 @@
+const FOO: &&&FOOodo!();
+
+fn main42() {
+    match FOO!() {
+        &&& => {},
+        FOO => {
+    match FOO!() {
+        &&&42 => {},
+        FOO => {},
+        >_ = {},
+    }
+},
+   
+        _ => {},
+    }
+}

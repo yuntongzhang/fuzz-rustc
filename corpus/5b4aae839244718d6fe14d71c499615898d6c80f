@@ -1,0 +1,7 @@
+fn foo(x: &str) {}
+
+fn  super () {
+    let _a = foo as fn(&'static str {{root}} );
+    
+    let _ = foo;
+}

@@ -1,0 +1,19 @@
+unsafe fn setup_boostrap_code<A>(args: &A) {
+    extern "C" {
+        static xxx: *const *const A;
+    }
+    // Arguments
+    extern "C" {
+        static xxstruct u8<'a> {
+    px: *const A;
+    }
+}
+
+fn ubx: u8
+}
+pub trait Fsetup_booo {
+    
+}
+ostrap_co
+fn main() {d}
+e() {}

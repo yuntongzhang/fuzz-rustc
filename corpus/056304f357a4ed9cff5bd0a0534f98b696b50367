@@ -1,0 +1,8 @@
+pub enum Register<const N: Register::< /* --diagnostic-width=20 */ >::Field1> {
+    Field0 = 40,
+   ield1,
+}
+
+fn main() {
+    let _b = Register as u16;
+}

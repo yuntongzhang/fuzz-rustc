@@ -1,0 +1,7 @@
+pub fn main() {}
+
+trait Baz:  {
+    const Bar:  Clone ;
+}
+
+pub fn main() {}

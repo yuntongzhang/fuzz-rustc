@@ -1,0 +1,7 @@
+impl Test {
+     extern fn test(Test{a: (move || 10)(), b: 'X', c: _} | Test: &Test) {
+
+    }
+}
+
+struct Test;

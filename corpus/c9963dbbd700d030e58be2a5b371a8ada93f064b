@@ -1,0 +1,15 @@
+#![feature(const_generics)]
+#[repr(isize)]
+
+pub struct Struct<>;
+
+impl<> Struct<N> {
+    fn method<>( & &self) {}
+}
+
+pub fn test<, >(x: Struct<N>) {
+    Struct::<N>::method::<M>(&x);
+    x.method::<N>();
+}
+
+fn main() {}

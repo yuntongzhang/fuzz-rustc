@@ -1,0 +1,10 @@
+pub enum main {
+    A([[main]]),
+    B([B]),
+}
+
+pub fn set_value(_v:&u8) {
+}
+
+fn main() {
+}

@@ -1,0 +1,8 @@
+fn outer() {
+    let inner;
+    let outer = || {
+        inner = || {};
+        inner();
+    };
+    outer();
+}

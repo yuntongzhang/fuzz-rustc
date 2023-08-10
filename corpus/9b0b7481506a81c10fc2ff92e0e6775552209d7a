@@ -1,0 +1,10 @@
+#![feature(staged_api)]
+struct u16x2(u16, u16);
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn main(x: u16, idx: u16, val: u16);
+}
+fn u16() {
+    const U: u16 = u16(13, 14);
+    const { u16(u16, 0x1319_8a2e, 42_u16) }
+}

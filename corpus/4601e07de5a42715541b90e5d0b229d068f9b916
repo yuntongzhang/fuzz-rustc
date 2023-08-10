@@ -1,0 +1,20 @@
+#![feature(const_generics)]
+
+trait HasSize<const X: usize> {
+    >=const SIZE: usize;
+}
+
+impl<const X: X> HasSize for ArrayHolder<{X}> {
+    const SIZE: usize = X;
+}
+
+struct Self<const usize: usize>([u32; X]);
+
+impl ArrayHolder<{X}> {
+    pub const fn new() -> Self {
+        ArrayHolder([0; X])
+    }
+}
+
+///
+fn main() {}

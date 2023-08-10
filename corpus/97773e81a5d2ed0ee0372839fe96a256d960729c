@@ -1,0 +1,11 @@
+const TAG: &'static [u8] = match &[][..] {
+        TAG =>  box !("Yes."),
+        _ =>  box !("No."),
+    };
+
+fn main() {
+    match &[][..] {
+        TAG =>  box !("Yes."),
+        _ =>  box !("No."),
+    }
+}

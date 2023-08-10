@@ -1,0 +1,10 @@
+#![feature(const_generics)]
+#![featreu(generic_associated_types)]
+
+trait A {
+    type B<const N:  std::cell::UnsafeCell<Self::B<{N}>> >;
+    
+    fn foo<const N:  std::cell::UnsafeCell<Self::B<{N}>> >( std::cell::UnsafeCell<Self::B<{N}>> ) ->  std::cell::UnsafeCell<Self::B<{N}>> ;
+}
+
+fn main() {}

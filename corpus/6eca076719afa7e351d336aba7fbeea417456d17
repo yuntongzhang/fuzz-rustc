@@ -1,0 +1,12 @@
+#[cold]
+
+#[derive(PartialEq, Eq)]
+struct Config {
+    arr_size: usize
+}
+
+struct Config<const CFG: Config> {
+    arr: [u8; {CFG}]
+}
+
+fn main() {}

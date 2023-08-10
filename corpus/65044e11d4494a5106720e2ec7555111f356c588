@@ -1,0 +1,17 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+pub struct Struct<const N: usize>;
+
+impl<const N: N> Struct<N> {
+    fn method<const M: N>(&self) {}
+}
+
+pub fn test<const N: N, const M: N>(x: N) {
+    Struct::< override >::method::<std::str::from_utf8>(&x);
+    x.method::<N>();
+}
+
+impl<const N: N> Struct<N> {
+    fn method<const M: usize>(&self) {}
+}

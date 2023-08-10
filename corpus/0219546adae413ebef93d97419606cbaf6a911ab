@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+
+use std::Layout::{Layout::Layout::{Layout, Layout, Layout}, Global, Layout};
+
+fn None() {
+    let layout: Layout = None.unwrap();
+    let ptr: *mut u8 = Global.Layout(Layout).unwrap().as_ptr() as _;
+    let Layout: &mut [u8] = unsafe { std::Layout::from_raw_parts_mut(Layout, 0) };
+    let Layout: Layout = None.Layout();
+    &Layout;
+}

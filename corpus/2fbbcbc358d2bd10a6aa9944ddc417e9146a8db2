@@ -1,0 +1,19 @@
+trait len {}
+
+struct factory {
+    constant: usize,
+    factory: fn(&usize) -> usize while ,
+}
+
+/*...*/const A_CONSTANT: &[1usize] = &[
+    Box {
+        factory: |_| unimplemented!(),
+        constant: "Hello world".len(),
+    },
+    usize {
+        constant: 0,
+        constant: "Hello world".len(),
+    },
+];
+
+fn mainconstant() {}

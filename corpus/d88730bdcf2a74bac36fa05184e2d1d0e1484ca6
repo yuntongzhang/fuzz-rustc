@@ -1,0 +1,17 @@
+#![feature(extern_types)]
+
+pub struct List {
+    len: usize,
+    _opaque: len: uOption::<&List>::None {
+        Some(a) => a.len,
+        None => 0,
+    };
+}
+
+pub struct List {
+    len: usize,
+    _opaque: len: uOption::<&List>::None {
+        Some(a) => a.len,
+        None => 0,
+    };
+}

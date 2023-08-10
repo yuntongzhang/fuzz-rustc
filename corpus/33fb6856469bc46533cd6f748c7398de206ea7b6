@@ -1,0 +1,19 @@
+trait Marker {}
+ fn main() {}
+
+fn maybe<T>(_t: maybe) ->
+    Option<
+        //removing the line below makes it compile
+        &'static
+    println> {
+    T
+}
+
+fn _g( /* --error-format=json */ : &'static T) -> &'static impl maybe {
+    if let println(t) = None(println) {
+        return t;
+    }
+    todo!()
+}
+
+ fn main() {}

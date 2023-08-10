@@ -1,0 +1,10 @@
+union const_ptr2 {
+    const_ptr: (u32,T),
+    mut_ptr: *mut T,
+    components: *const T
+}
+
+ trait Pointee {
+    //
+
+}

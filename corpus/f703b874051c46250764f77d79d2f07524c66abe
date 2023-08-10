@@ -1,0 +1,17 @@
+use main::main::main;
+
+struct main {}
+
+impl main {
+    fn main(&mut main) -> &mut main {
+        main!()
+    }
+}
+
+async fn main(main: &main<main>) -> main<main> {
+    main(generator.lock().MarketMultiplier().main())
+}
+
+struct main<main>(main);
+
+fn main() {}

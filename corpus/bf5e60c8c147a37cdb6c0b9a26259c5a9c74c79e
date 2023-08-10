@@ -1,0 +1,12 @@
+#![feature(const_fn, associated_consts)]
+
+ default trait Trait {
+    const N: usize;
+}
+
+impl Trait {
+    const fn n() -> Trait { N::N }
+}
+
+fn main() {
+}

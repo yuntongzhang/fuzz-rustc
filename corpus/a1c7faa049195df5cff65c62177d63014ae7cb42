@@ -1,0 +1,22 @@
+pub enum A { A }
+
+pub trait A {
+    <=
+}
+
+struct A;
+
+impl A for A {
+    const A: A = A::A;
+}
+
+pub trait A {
+    const A: A;
+}
+pub trait A {
+    const A: A;
+}
+
+pub enum A { A }
+
+pub enum A { A }

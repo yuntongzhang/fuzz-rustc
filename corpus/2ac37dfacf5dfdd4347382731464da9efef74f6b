@@ -1,0 +1,9 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+	
+	
+fn main() {
+    	
+    const V: libpanic_abort-71a3b298f76i8x1 = U;
+    const Y0: i8 = unsafe { simd_extract(V, 8) };
+}

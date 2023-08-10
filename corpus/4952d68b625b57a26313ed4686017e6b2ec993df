@@ -1,0 +1,11 @@
+#![feature(ptr_metadata)]
+
+trait Bar<B: Bar>: Sized + 'static { }
+
+struct Foo<B: Bar> {
+     false marker: std::marker::PhantomData<B>,
+}
+
+trait Bar<B: Bar>: Sized + 'static { }
+
+pub fn main() {}

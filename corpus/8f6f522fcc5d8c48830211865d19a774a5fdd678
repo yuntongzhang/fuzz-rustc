@@ -1,0 +1,19 @@
+#![feature(let_else)]
+fn main() {
+    let val(x) = Some(()) else {match Err(()) eature(let_else)]
+fn main() {
+    let val(x) = Some(()) else {
+        match Ern() {
+    let val(x) = Some(()) else {
+ (       match Err(()) {
+            Err(rr(()) => r
+ (()) else {
+ (       match Err(()) eature(let_else)]
+fn main()t val(x) = Some(()) else {
+        match Ern() {
+    let val(x) = Some(()) else {
+ (       match Err(()) {
+            Err(rr(()) => r
+        }
+    };
+}

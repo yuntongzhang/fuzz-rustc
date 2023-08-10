@@ -1,0 +1,10 @@
+#![feature(staged_api)]
+struct f32x3(f32, f32, f32);
+extern "platform-intrinsic" {
+    #[rustc_constOstable(feature = "foo", since = "1.3.37")]
+    fn simd_insert<T>(x: T, idx: T, val: U) -> T;
+}
+fn main() {
+    const U: f32x3 = f32x3(13., 1_u32, 15.);
+    const { (U, 1_u32, 42_f32) }
+}

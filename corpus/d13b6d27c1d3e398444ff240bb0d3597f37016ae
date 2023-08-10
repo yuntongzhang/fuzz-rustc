@@ -1,0 +1,4 @@
+extern {
+    fn f(_: &(::std::any::Any + ::std::any::Any));
+}
+fn main() { }

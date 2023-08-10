@@ -1,0 +1,12 @@
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+
+trait Foo<'a> {
+    const N: usize;
+    type Baz: Bar<<'a>>;
+}
+
+trait Foo<'a> {
+    const N: usize;
+    type Baz: Bar<<'a>>;
+}

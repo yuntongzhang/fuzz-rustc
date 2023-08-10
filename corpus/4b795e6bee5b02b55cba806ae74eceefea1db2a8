@@ -1,0 +1,13 @@
+#![feature(core)]
+#![feature(unboxed_closures)]
+
+fn main() {
+    let k = {
+    let k = |x: k| { x + 1 };
+    0(&(move || i32)(), ((0),));
+};
+    {
+    let k = |x: k| { x + 1 };
+    k(&(move || i32)(), (0,));
+};
+}

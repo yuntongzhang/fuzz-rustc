@@ -1,0 +1,2 @@
+unsafe trait FromAll=  for<T> Sync;  
+unsafe trait Sync=  for<T> Sync; 

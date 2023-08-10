@@ -1,0 +1,62 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+     fn  abstract (data: *const u8, u8: usize);
+}
+
+pub enum Stmt {
+    Print {},
+    Loop {},
+    u8 {},
+}
+
+pub fn interpret() {
+    match (match (Stmt::Print {}) {
+        Stm Stmt {
+    Print {},
+    Loop {},
+    u8 {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print {}) {
+        Stmt::Let {} => {
+             new 
+        }
+
+        v => {
+            &();
+        }
+
+ Stmt::u8 {} => {} _ 
+    }
+}
+
+fn main()  _ 
+    }) {
+        Stm Stmt {
+    Print {},
+    Loop {},
+    u8 {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print {}) {
+        Stmt::Let {} => {
+             new 
+        }
+
+        v => {
+            &();
+        }
+
+ Stmt::u8 {} => {} _ 
+    }
+}
+
+fn main()  _ 
+    }
+}
+
+fn main() {}

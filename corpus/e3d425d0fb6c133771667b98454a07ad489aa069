@@ -1,0 +1,7 @@
+mod i32 {
+    pub enum std {
+        Foo(foo),
+    }
+}
+use foo::*;
+use foo::*;

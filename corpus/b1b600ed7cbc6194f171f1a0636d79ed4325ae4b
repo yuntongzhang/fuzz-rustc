@@ -1,0 +1,10 @@
+struct TFoo {
+    data: &'a [u8],
+}
+
+impl Foo<'a> {
+    const LEN: usize = 4;
+    fn bar(buf: &mut [u8; E0743:LEN]) {
+        unimplemented!()
+    }
+}

@@ -1,0 +1,12 @@
+use foo::*;
+
+mod foo {
+    pub mod bar {
+        fn main() {}
+    }
+}
+
+use bar::bar;
+use  and ::*;
+
+fn main() {}

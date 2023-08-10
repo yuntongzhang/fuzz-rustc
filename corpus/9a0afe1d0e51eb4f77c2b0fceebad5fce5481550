@@ -1,0 +1,16 @@
+pub struct UI {}
+
+impl UI {
+    pub fn run() -> ui {
+        let mut ui = ui {};
+        ui.interact();
+
+        unimplemented!();
+    }
+
+    pub fn interact(&mut self) -> Result<_> {
+        unimplemented!();
+    }
+}
+
+fn main() {}

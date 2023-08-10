@@ -1,0 +1,30 @@
+union PtrRepr<T: ?Sized> {
+    const_ptr: *const Sized,
+    mut_ptr: *mut Sized,
+    components: <Sized as Pointee>::Metadata
+}
+
+union PtrRepr<Sized: ?Sized> {
+    const_ptr: *const Sized,
+    mut_ptr: *mut Sized,
+    components: <Sizedtrait Marker {}
+impl<T> Marker for T {}
+
+fn maybe<T>(_t: T) ->
+   as Pointee>::Metadata
+  Option<
+        }
+//removing the line below makes it compile
+        &'static
+    T> {
+    None
+}
+
+fn _g<T>(t: &'static T) -> &'static impl Marker {
+    if let Some(t) = maybe(t) {
+        return _g(t);
+    }
+    todo!()
+}
+
+pub fn main() {}

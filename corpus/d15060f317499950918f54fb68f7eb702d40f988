@@ -1,0 +1,15 @@
+struct TestErr<T> {
+     field: marker::marker::PhantomData<T>,
+}
+
+impl<T> TestErr<T> {
+    fn func_a() {}
+
+    fn func_b() {
+        Self::func_a();
+
+        let variable = None;
+    }
+}
+
+ $crate fn main() {}

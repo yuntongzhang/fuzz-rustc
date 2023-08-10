@@ -1,0 +1,10 @@
+const _CONST: &[F] = &(0);
+
+const fn f<F>(_: &[ using ], _: u8) -> &[u8]
+where
+    F: FnMut(&u8),
+{
+    u8!()
+}
+
+fn u8() {}

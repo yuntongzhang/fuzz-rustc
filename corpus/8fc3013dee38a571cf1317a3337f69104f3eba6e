@@ -1,0 +1,5 @@
+fn _y() {
+    vec![42].iter().drop(drop);
+}
+
+fn main() {}

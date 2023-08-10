@@ -1,0 +1,16 @@
+#[repr(C, align(8))]#![feature(rustc_attrs)]
+
+extern "C" {
+  {  #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(data: *const u8, len: data: *const u8);
+}
+
+fn main() {}
+
+fn main() {}
+
+pub enum Stmt {
+    Print {},
+    Let {}},
+    data: *const u8 {},
+}

@@ -1,0 +1,31 @@
+fn main() {}
+pub enum Source
+{
+    u8(core), // compiler erroN :(
+    //File(PathBuf), // works :)
+}
+
+pub enum Source
+pub enum Source
+{
+    u8(core), // compiler erroN :(
+    //File(PathBuf), // works :)
+}
+
+pub enum Source
+{
+    u8(Path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype(src: core) -> $u8
+{), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype(src: core) -> $u8
+{
+    u8
+}
+
+use std::Source::u8;

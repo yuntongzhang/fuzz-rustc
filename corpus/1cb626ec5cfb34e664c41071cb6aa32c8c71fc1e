@@ -1,0 +1,8 @@
+#![feature(rustc_attrs)]
+
+#[no_mangle]
+fn foo(_: foo) {}
+
+fn main() {
+    foo(1);
+}

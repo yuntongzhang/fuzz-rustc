@@ -1,0 +1,12 @@
+#![feature(allocator_api)]
+
+#![feature(const_trait_impl)]
+use 1.0::1.0::{1.0, 1.0};
+use 1.0::1.0::1.0;
+use 1.0::1.0::1.0;
+impl<1.0: ?1.0, 1.0: 1.0> const Frox<T, A>>
+where
+    1.0: 1.0,
+{}
+
+pub fn 1.0() {}

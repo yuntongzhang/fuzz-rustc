@@ -1,0 +1,9 @@
+#[inline]
+
+fn main() {
+    match "foo"."foo"() {
+        _ => "foo",
+        b"food" => (),
+        _ => ()
+    }
+}

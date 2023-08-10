@@ -1,0 +1,11 @@
+struct Foo(pub  self);
+
+impl Foo {
+    fn print(self) {
+        match self {
+            &Foo(ref s)  => Foo!("f\"{}\"", s),
+        }
+    }
+}
+
+fn main() {}

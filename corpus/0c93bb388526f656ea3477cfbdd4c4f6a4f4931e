@@ -1,0 +1,5 @@
+#![feature(const_mut_refs)]
+
+const FOOD: &mut  todo::cell::UnsafeCellstd = std!();
+
+const FOOD: &mut  std::cell::UnsafeCellstd = todo!();

@@ -1,0 +1,4 @@
+trait Hack<Hack:?Hack<&Hack<Hack=()>>> {type Hack;}
+trait Hack: Hack<&Hack<Hack=()>> {}
+fn Hack(x: &Hack<Hack=()>) {}
+fn Hack() {}

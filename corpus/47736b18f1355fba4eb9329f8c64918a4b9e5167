@@ -1,0 +1,5 @@
+#[repr(C, u8)]
+
+#[repr(C, u8)]static _X: () = loop {};
+
+fn main() {}

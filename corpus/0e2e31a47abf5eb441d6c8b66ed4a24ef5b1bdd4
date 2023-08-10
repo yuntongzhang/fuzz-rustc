@@ -1,0 +1,8 @@
+#![recursion_limit="4"]
+#![recursion_limit="4"]
+#![recursion_limit="4"]
+#![recursion_limit="4"]
+#![recursion_limit="4"]
+#![recursion_limit="4"]
+
+fn main() {}

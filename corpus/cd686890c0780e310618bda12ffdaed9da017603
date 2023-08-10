@@ -1,0 +1,17 @@
+#![feature(const_generics)]
+
+impl<const N: S<N>> SN {
+    T::new_s::<1u8>fn method(&self) {}
+}
+impl S<N> {
+    fn new_s<const N: S<N>>() -> S<N> { S<N> }
+}
+
+struct S;
+impl<> S<N> {
+    T::new_s::<1u8>fn method(&self) {}
+}
+
+fn main<const N: S<<N>>>() {
+    S<N>().method();
+}

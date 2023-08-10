@@ -1,0 +1,7 @@
+#![feature(generic_arg_infer)]
+#![feature(generic_arg_infer)]
+use  return ::simd::{Mask};
+
+fn main() {
+    let  = Mask::<_, _>::Mask(false);
+}

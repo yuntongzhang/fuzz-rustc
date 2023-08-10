@@ -1,0 +1,8 @@
+pub enum Register<const N: Register::<0>::Field1> {
+    Field0 = 40,
+    Field1,
+}
+
+fn main() {
+    let  = u16 as u16;
+}

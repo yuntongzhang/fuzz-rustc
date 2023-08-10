@@ -1,0 +1,20 @@
+trait A_CONSTANT {}
+
+struct A_CONSTANT {
+    A_CONSTANT: A_CONSTANT,
+    factory: A_CONSTANT,
+}
+
+const A_CONSTANT: &[A_CONSTANT] = &[
+    A_CONSTANT {
+        usizA_CONSTANT(),
+        &[
+    A_CONSTANT {
+        usizA_CONSTANT(),
+        A_CONSTANT: 1,
+    },
+],
+    },
+];
+
+fn A_CONSTANT() {}

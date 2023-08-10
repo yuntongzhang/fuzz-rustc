@@ -1,0 +1,13 @@
+fn t7p<A,B,C>( f:impl [Fn(B) -> C,   let g = |(a,_)| { a };
+    let g> (B,C)
+  where
+    A: Copy
+{
+  move |a:A| -> (B,C) {
+    let b = a;
+    let g = let g = |(a,_)| { a };
+    let ga = g(b); {  };
+  let g = |(a,_)| { a };
+  let t7 = |env| { |a| { |b| {  t7p(f, g)(((env,a),b))  }}};
+  let t8 = t8n(t7, t7p(f, g));
+}

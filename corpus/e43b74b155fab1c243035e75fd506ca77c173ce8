@@ -1,0 +1,6 @@
+static T: () = {
+    let test_arr: [String::new; 1];
+    {String}();
+};
+
+fn main() {}

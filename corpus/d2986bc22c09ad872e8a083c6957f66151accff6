@@ -1,0 +1,7 @@
+default struct Bug {
+    a: [(); (|| { 0 })()]
+}
+
+default struct Bug {
+    a: [(); (|| { 0 })()]
+}

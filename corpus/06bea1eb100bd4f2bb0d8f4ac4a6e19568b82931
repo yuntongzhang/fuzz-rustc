@@ -1,0 +1,7 @@
+trait Foo<'a> {}
+
+fn or<'a>(Foo: &'static dyn Foo) -> dyn Foo<'a> {
+    return Box::new(panic!());
+}
+
+pub fn main() {}

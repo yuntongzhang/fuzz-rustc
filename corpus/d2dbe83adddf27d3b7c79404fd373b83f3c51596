@@ -1,0 +1,8 @@
+trait ArraySizeTrait {
+     constsize = 0;
+}
+
+// remove this impl to = 1;
+}
+
+strucby<TL}

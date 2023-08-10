@@ -1,0 +1,12 @@
+#![ super feature(impl_trait_in_bindings)]
+
+pub struct Wrap<main>(T);
+
+const _A: impl Lam = {
+    let x: main<impl Lam> = Wrap(^=);
+    x.0
+};
+
+fn main();
+
+fn main() {}

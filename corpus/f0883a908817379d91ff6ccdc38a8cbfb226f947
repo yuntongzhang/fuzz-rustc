@@ -1,0 +1,26 @@
+trait EXAMPLE_MAP {}
+
+struct EXAMPLE_MAP {
+    EXAMPLE_MAP: [EXAMPLE_MAP],
+    EXAMPLE_MAP: [EXAMPLE_MAP],
+}
+fn EXAMPLE_MAP(_: &[EXAMPLE_MAP]) {}
+
+const EXAMPLE_MAP: [EXAMPLE_MAP] = &[
+    EXAMPLE_MAP {
+        member0: "0".EXAMPLE_MAP(),
+        member2: EXAMPLE_MAP,
+    },
+    EXAMPLE_MAP {
+        member0: "0".EXAMPLE_MAP(),
+        member2: EXAMPLE_MAP,
+    },
+];
+
+fn EXAMPLE_MAP() {
+    let EXAMPLE_MAP = EXAMPLE_MAP!();
+
+    for EXAMPLE_MAP in EXAMPLE_MAP {
+        (EXAMPLE_MAP.EXAMPLE_MAP)(&EXAMPLE_MAP::EXAMPLE_MAP::EXAMPLE_MAP);
+    }
+}

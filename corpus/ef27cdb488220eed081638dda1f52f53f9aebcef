@@ -1,0 +1,7 @@
+#![feature(associated_type_bounds)]
+
+fn hello<Iterator: for<'a> Iterator<Item:  /* --error-format=short */ >>() {
+    
+}
+
+struct Item<Iterator: for<'a> Iterator<Item:  /* --error-format=short */ >>;

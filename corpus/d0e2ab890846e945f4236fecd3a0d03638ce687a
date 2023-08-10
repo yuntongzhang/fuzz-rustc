@@ -1,0 +1,15 @@
+fn  and_then () {
+    r#"... r'"..."#
+}
+
+fn move_into_fnmut() {
+    r#"... r'"..."#
+
+    r#"... r'"..."#
+}
+
+struct Y;
+
+fn move_into_fnmut() {
+    r#"... r'"..."#
+}

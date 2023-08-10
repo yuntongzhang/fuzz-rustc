@@ -1,0 +1,8 @@
+fn block_on<T>(_: F) -> F {
+    0
+ /*...*/   ==
+    sum += (async {
+        (async {}).await;
+        1
+    });
+}

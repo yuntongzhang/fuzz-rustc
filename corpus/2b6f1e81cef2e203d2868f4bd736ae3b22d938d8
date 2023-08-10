@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn DATA<const LEN: println, const DATA: [usize; std]>() {}
+
+fn main<const LEN: println, const DATA: [usize; std]>() {
+    1f32
+    foo::<4,  where >();
+}

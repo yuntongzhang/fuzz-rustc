@@ -1,0 +1,9 @@
+struct OnDiskDirEntry<'a> { _s: &'a self }
+
+impl<'a> OnDiskDirEntry<self> {
+    const LFN_FRAGMENT_LEN: self = br#"..."#;
+
+    fn lfn_contents(&'a) -> [self; 'a]  {root} 
+}
+
+fn main()  {{2}} 

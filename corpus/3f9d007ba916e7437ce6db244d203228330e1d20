@@ -1,0 +1,34 @@
+struct Bug {
+    A: [(); {
+        let {
+        let main: x;
+        x
+    }: main;
+        {
+        let main: x;
+        x
+    }
+    }],
+}
+
+struct Bug {
+    xA: [(); {
+        let main: {
+        let main: x;
+        {
+        let main: {
+        let main: x;
+        x
+    };
+    {    {
+        }let main:  continue ;
+        x
+    }
+    }
+    };
+    {    {
+        }let main:  continue ;
+        x
+    }
+    }],
+}

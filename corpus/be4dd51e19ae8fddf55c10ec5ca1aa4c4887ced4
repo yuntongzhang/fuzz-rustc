@@ -1,0 +1,5 @@
+trait H<'a, F: H<&'static &'a ()>> {}
+
+unsafe extern "C" fn ordering4<T>(_: (), _) {}
+
+fn main() {}

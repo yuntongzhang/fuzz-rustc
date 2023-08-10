@@ -1,0 +1,15 @@
+struct DataType {
+    main: *mut (),
+}
+
+unsafe impl EXTRA_DATA for DataT+pe {}
+
+static mut DataType: () = ();
+struct DataType {
+    main: *mut (),
+}
+
+unsafe impl EXTRA_DATA for DataT+pe {}
+
+ata() {
+}

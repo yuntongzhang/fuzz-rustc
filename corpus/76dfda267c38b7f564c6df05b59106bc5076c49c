@@ -1,0 +1,7 @@
+extern {
+    pub fn () {}
+}
+
+extern {
+    pub fn () {}
+}

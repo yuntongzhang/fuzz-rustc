@@ -1,0 +1,6 @@
+#![feature(let_else)]
+fn main() {
+    let Some(x) =  async {Some(())} else {
+         async {Some(())}
+    };
+}

@@ -1,0 +1,7 @@
+#![crate_type = "lib"]
+
+static CODEGEN: &[()] = (0);
+
+async fn manual() {
+    (0)[(0)];
+}

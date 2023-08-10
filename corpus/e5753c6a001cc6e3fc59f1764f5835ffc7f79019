@@ -1,0 +1,12 @@
+fn mai() {
+    match 'aR'# {
+  or        cHtrue
+    }
+}{
+    match 'aR'# {
+  or        cHtrue
+     match 'aR'# {
+  or        cHtrue
+    }
+}{
+    match 'aR'# {

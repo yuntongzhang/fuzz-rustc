@@ -1,0 +1,6 @@
+impl * () {
+    fn bar( s: _)((), )}
+
+trait Foo: {
+    fn bar() -> ();
+}

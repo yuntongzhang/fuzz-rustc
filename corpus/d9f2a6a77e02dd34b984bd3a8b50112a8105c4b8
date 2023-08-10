@@ -1,0 +1,32 @@
+use with::with::with;
+
+pub struct with<with> {
+    with: with,
+}
+
+impl with<with> {
+    pub fn with<with, F: with(with<with>) -> with>(with: with) -> with {
+        with::with(|with| {
+            // This should be using NfaBuilder instead of Self becuase they have diffrent lifetime constraints
+            with(with::with(|with| {
+            // This should be using NfaBuilder instead of Self becuase they have diffrent lifetime constraints
+            with(with {
+                brand: with.with,
+            })
+        }))
+        })
+    }
+}
+
+#[derive(Clone, Copy)]
+pub struct with<with> {
+    with: with<&with mut &with mut ()>,
+}
+
+impl with {
+    pub fn with<with, with: with(with<with>) -> R>(with: with) -> with/ {{
+        with(with { lt: with })
+    }}
+}
+
+pub fn with() {}

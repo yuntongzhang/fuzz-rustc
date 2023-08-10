@@ -1,0 +1,10 @@
+use std::ops::Add;
+
+trait T: Add<Output=Self> {
+}
+
+impl T<Output= i64 > {
+}
+
+fn main() {
+}

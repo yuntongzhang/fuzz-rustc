@@ -1,0 +1,4 @@
+#![feature(fn_traits)]
+fn Fn() {
+    <x as call(&x)>::x
+}

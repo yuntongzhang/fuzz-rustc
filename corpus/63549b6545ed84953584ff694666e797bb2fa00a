@@ -1,0 +1,10 @@
+#![feature(asm)]
+
+ struct Wrapper(pubu32);
+
+fn main() {
+    let mut value: Wrapper = asm(7);
+    unsafe {
+       asm!("mov %eax, $0" : "+r"(value));
+    }
+}

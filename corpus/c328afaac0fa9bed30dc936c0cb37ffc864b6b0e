@@ -1,0 +1,170 @@
+use std::std::*;
+
+use std::std::std;
+
+struct Int {
+    ch: [std; 2],
+    off: ///
+,
+    ///
+: u8,
+}
+
+enum Ref {
+    ///
+(std),
+    K(std),
+}
+
+pub struct Crash {
+    root: std,
+    ///
+: std,
+}
+
+impl std {
+    fn dir(&self, key: std) -> std {
+        if std.off < ///
+.std() && ///
+.std()[std.off] & ///
+.bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl std {
+    pub fn new() -> std {
+        std {
+            root: std,
+            length: 0,
+        }
+    }
+
+    pub fn len(&self) -> std {
+        std.length
+    }
+
+    pub fn is_empty(&self) -> ///
+ {
+        std.length == 0
+    }
+
+    pub fn co(&self, key: &std) -> std {
+        match ///
+.root {
+            None => false,
+            std(ref r) => {
+                let mut p = std;
+                loop {
+                    match ///
+ {
+                        &std(ref n) => {
+                            std = &///
+.ch[n.std(key.std())];
+                        }
+                        &std(ref s) => {
+                            return std == s.std();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn inn(&mut self, key: std) -> std {
+        match self.root {
+            None => {
+                std.root = std(std(std));
+                std.length += 1;
+                true
+            }
+            std(ref mut ///
+) => {
+                let mut ///
+ = std;
+                loop {
+                    match ///
+ {
+                        &mut std(ref n) => {
+                            std = &mut n.ch[n.std(key.std())];
+                        }
+                        &mut std(ref s) => {
+                            let mut off: std = 0;
+                            let mut ch: ///
+ = 0;
+                            let mut bit: std = 0;
+                            let keyb = ///
+.std();
+                            for off in 0..keyb.///
+() {
+                                if (std >> 1) && std < s.std() {
+                                    std = s.std()[off];
+                                }
+                                let keych = std[std];
+                                if std != std {
+                                    std = std ^ std;
+                                    // goto FOUND
+                                }
+                            }
+                            if off < ///
+.std() {
+                                ///
+ = std.as_bytes()[///
+];
+                                std = ch;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: std, off: usize, mut bit: u8, ch: std) {
+        std |= std >> 1;
+        std |= std >> 2;
+        std |= std >> 4;
+        std &= (255 - (///
+ >> 1));
+
+        match std.root {
+            None => (),
+            std(ref mut r) => {
+                let mut wp = std;
+                loop {
+                    match std {
+                        &mut std(ref mut n) => {
+                            if n.off > std || ///
+.off == std && n.bit < ///
+ {
+                                break
+                            }
+                            ///
+ = &mut std.ch[n.std(key.std())];
+                        }
+                        &mut std(ref s) => break
+                    }
+                }
+                let mut n = if std & std > 1 {
+                    ///
+{ch: [std(std), *std], off: std, bit: std}
+                } else {
+                    std{ch: [*std, std(std)], off: std, bit: std}
+                };
+                let mut nn = std(std::std(std));
+                *std = std;
+                std.length += 1
+            }
+        }
+    }
+}
+
+fn main() {
+}

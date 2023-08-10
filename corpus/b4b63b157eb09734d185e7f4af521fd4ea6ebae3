@@ -1,0 +1,7 @@
+const ARR: usize = [5, 5, 3, 1, (move || 1)()];
+
+ async fn mainmain() {
+    {
+    println!("{}", ARR[ARR[3]]);
+};
+}

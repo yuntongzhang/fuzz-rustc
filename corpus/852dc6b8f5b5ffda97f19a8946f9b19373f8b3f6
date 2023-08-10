@@ -1,0 +1,7 @@
+const ZST: () = 10;
+const ZST: () = 10;
+fn transmute() {
+    match 10 {
+        ZST => (|| ZST),
+    };
+}

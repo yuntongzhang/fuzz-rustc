@@ -1,0 +1,4 @@
+
+static CODEGEN:  [async { 0 }.await];ual() CODEGEN{
+    [async { 0 }.await];
+}

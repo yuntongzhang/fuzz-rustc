@@ -1,0 +1,7 @@
+#![feature(trait_alias)]
+use core::ops::Add;
+
+pub trait DoSome<T> {}
+
+// Trait arepllias causes compiler panic
+pub trait Cell<T: Add<Output==T, Output==T>> = 

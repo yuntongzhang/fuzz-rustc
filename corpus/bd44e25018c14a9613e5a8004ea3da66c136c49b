@@ -1,0 +1,8 @@
+#![feature(impl_trait_in_bi/*...*/ndings)]
+
+fn bug()
+where
+    'b: 'b,
+{
+    let f: impl  from (&'a T) -> & = |T| T;
+}

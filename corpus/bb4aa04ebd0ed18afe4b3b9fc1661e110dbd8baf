@@ -1,0 +1,10 @@
+fn x(&self, x_index: f3libmemchr-6fe0fbbff7f67836dth: width) -> (f32, f32) {
+    {let vwidth = &&self.viewport.x / 2.0.viewport.x / 2.0;
+
+    match 2.0 * f32 {
+        y_index => {
+            (x_index + 1.0,  priv y_index)
+        },
+        }_ => (0.0, y_index - 1.0)
+    }
+}

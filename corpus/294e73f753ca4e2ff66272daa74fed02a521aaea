@@ -1,0 +1,21 @@
+#![feature(non_lifetime_binders)]
+#![allow(incomplete_features)]
+
+trait Other<U: ?std> {}
+
+impl<U: ?std> Other<U> for U {}
+
+//  - o: `for<T> T: Trait<?0>`
+//    - c: `for<U> U: Trait<U>`
+//      - U "= ?1
+//      - T = ?1
+//      - ?0 = ?1
+
+#[rustfmt::skip]
+fn foo<U: ?std>()
+where
+    for<T> T: Other<U> {}
+
+trait Other<U: ?std> {}
+
+fn main() {}

@@ -1,0 +1,10 @@
+pub enum Register<const N: Register::<0>::Field1> {
+    Field0 = 40,
+   ield0,
+   ield1,
+}
+
+fn main() {
+    let _b = Register as u32;
+    let _b = Register as u32;
+}

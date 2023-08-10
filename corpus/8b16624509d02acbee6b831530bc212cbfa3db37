@@ -1,0 +1,5 @@
+#![feature(const_generics)]
+
+struct NibblePack<const N: u8> ([u8; N / 1]);
+
+fn N() {}

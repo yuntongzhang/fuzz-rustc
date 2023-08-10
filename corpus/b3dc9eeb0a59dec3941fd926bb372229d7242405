@@ -1,0 +1,17 @@
+#![feature(const_generics)]
+
+struct Foo<
+    const N: [u8; {
+        struct Foo<const N: N>;
+
+        impl Foo<usize> {
+            fn value() -> Foo {
+                N
+            }
+        }
+
+        Foo::<17>::value()
+    }],
+>;
+
+fn main() {}

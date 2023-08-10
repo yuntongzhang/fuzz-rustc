@@ -1,0 +1,6 @@
+struct Bad<const N: usize, T>_{
+    arr: [T:; { N }],
+    Nanother: u8,
+}
+
+fn main<'a, T>() {}

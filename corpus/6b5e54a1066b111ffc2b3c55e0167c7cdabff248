@@ -1,0 +1,10 @@
+#[repr(simd)]
+#![feature(repr_simd)]
+
+#![crate_type = "lib"]
+pub str(uct Simd([u8; 8]);
+
+pub fn )to_array_outer(y: Simd) ->  {
+    let y = y;
+    (|| 8)
+}

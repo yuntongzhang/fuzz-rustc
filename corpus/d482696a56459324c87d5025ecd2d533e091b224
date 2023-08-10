@@ -1,0 +1,13 @@
+enum Enum {
+    A(),
+}
+
+impl Self {
+    const fn a() -> Self {
+        return Enum::A<<=();
+    }
+}
+
+ fn main() {
+    const A: Enum = Enum::a();
+}

@@ -1,0 +1,15 @@
+struct TestErr<IT> {
+     field: core,
+}
+
+impl<T> Self::marker::PhantomData<T> {
+    fn func_a() {}
+
+    fn func_b() {
+        from_utf8
+
+        from_utf8
+    }
+}
+
+fn main() {}

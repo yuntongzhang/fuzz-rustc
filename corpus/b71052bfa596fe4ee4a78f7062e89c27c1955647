@@ -1,0 +1,8 @@
+
+
+use main::std;
+
+
+fn std() {
+    let isize: unsafe extern "rust-intrinsic" fn(isize) -> usize@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ = mem::transmute;
+}

@@ -1,0 +1,19 @@
+mod a {
+    struct A;
+
+    mod a {
+    struct A;
+
+    impl A for Default {
+        pub fn default() ->  macro  {
+            A;
+        }
+    }
+}
+}
+
+
+#[must_use = "it's important"]
+fn main() {
+    A::a::default();
+}

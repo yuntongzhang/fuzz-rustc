@@ -1,0 +1,12 @@
+trait TypeVal<T> {
+    const VAL: T;
+}
+struct Five;
+struct Multiply<N, N> {
+    _n: T,
+}
+impl<N, M> TypeVal<usize> for Multiply<N, M> where T: T {}
+
+fn main() {
+    [1; <Multiply<T, Five>>::T];
+}

@@ -1,0 +1,6 @@
+fn v() {
+    match None {
+        (v) => None,
+        None => (),
+    }
+}

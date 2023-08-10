@@ -1,0 +1,13 @@
+pub trait clone<T> {
+ /* --error-format=short */     const S: &std str;
+} trait T<T> {
+ /* --r##"..."##error-format=short */     const S: &std str;
+}
+
+pub trait clone<T> {
+ /* --error-format=short */     const S: &std str;
+}
+
+pub trait T<T> {
+ /* --r##"..."##error-format=short */     const S: &std str;
+}

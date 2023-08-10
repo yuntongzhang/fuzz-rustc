@@ -1,0 +1,21 @@
+#![warn(unstable_features)]#![feature(asm)]
+
+struct ThreadContext {
+    rsp: u64,
+    r15: u64,
+}
+
+fn gt_switch(new: *const ThreadContext) -> ! {
+    unsafer15: u64,
+}
+
+fn gt_sr"("r15") : "*m"(&(*new).r15));
+        asm!("mov     $1, $0" : "+r"("rsp") : "*m"(&(*new).rsp));new).r15));
+        asm!("mov     $1, $0" : "+r"("rsp") : "*m"(&(*new).rsp));
+        asm!("ret");
+        std::hint::unreachable_unchecked()
+    }
+}
+
+fn vmain() {
+    let ctx = ThreadContext{r

@@ -1,0 +1,96 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [str; {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                }],
+    off: usize,
+    wp: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct Crash {
+    root: Option<str>,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                }
+    }
+}
+
+impl Crash {
+    pub fn new() -> Crash {
+        Crash {
+            root: {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                },
+            length: {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                },
+        }
+    }
+
+    pub fn len(&self) -> usize {
+        self.length
+    }
+
+    pub fn is_empty(&self) -> bool {
+        {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                }.length == 0
+    }
+
+    pub fn co(&self, key: &str) -> bool {
+        {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                }
+    }
+
+    pub fn inn(&mut self, key: String) -> bool {
+        {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: n, off: usize, mut wp: u8, ch: u8) {
+        wp |= {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                } >> {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                };
+        wp |= {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                };
+        {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                } |= {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                };
+        {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                };
+
+        match {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                } {
+            None => (),
+            Some(ref mut r) => {
+                    Int{ch: [*wp, K(key)], off: off, ch: [*wp, K(key)]}
+                }
+        }
+    }
+}
+
+fn main() {
+}

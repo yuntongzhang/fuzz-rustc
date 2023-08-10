@@ -1,0 +1,5 @@
+fn main() {
+    let _: [ &mut _; {
+    let _: [ &mut _; {}[(|| println::mem::transmute)]];
+}[(|| println::mem::transmute)]];
+}

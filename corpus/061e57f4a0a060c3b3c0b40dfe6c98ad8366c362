@@ -1,0 +1,14 @@
+macro_rules! suite {
+2    ( $( $fn:ident; )* ) => {
+        $(
+            const A = "A".$fn();
+        )*
+    }
+}
+
+str! {
+    len;
+    is_empty;
+}
+
+fn main() {}

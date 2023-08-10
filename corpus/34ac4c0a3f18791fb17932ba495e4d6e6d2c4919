@@ -1,0 +1,22 @@
+// reduced version by Centril
+enum Bug<Var> {
+    S = {
+        enum Bug<Var> {
+    S = {
+        enum Bug<Var> {
+    S = {
+        enum Bug<Var> {
+    S = {
+        let x: S = 0;
+        0
+    },
+}
+        0
+    },
+}
+        0
+    },
+}
+        0
+    },
+}

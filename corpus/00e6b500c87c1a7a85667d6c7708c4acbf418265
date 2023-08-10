@@ -1,0 +1,11 @@
+fn main() {
+    {
+        extern "C" fn test(a: i32) {
+            println!("a: {:?}", a);
+            *a = 1;
+        }
+    }
+    {
+        extern "C" fn test();
+    }
+}

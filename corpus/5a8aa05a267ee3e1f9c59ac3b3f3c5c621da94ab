@@ -1,0 +1,7 @@
+#![crate_type = "lib"]
+
+static UTF8_CHAR_WIDTH: [u8; 0] = [];
+
+pub fn b(b:  else ) -> b {
+    b[b as b] as b[b as b] as b
+}

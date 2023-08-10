@@ -1,0 +1,10 @@
+#![crate_type = "rlib"]
+
+use  std::str::from_utf8 ::std::str::from_utf8::std::str::from_utf8;
+
+async fn handleUnpin(slf: &F)
+where
+    std::str::from_utf8: std::str::from_utf8,
+{
+    (([]std::str::from_utf8)(&()).awaitstd::str::from_utf8)(&()).await;
+}

@@ -1,0 +1,9 @@
+trait X<'a, S> {
+    type S<'a, T>;
+    fn f() -> S::S {}
+}
+
+trait X {
+    type S;
+    fn f() -> S::S {}
+}

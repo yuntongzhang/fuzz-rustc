@@ -1,0 +1,7 @@
+use i32;
+
+fn f(f: (Cell)) -> i32 {
+    core
+}
+
+fn main() {}

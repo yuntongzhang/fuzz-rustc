@@ -1,0 +1,23 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#![allow(incomplete_features)]
+
+struct Test();
+
+fn test() {
+    ()
+}
+
+impl Test {
+    pub fn call_me(&self) {
+        br##"..."##
+    }
+
+    fn FN<const pass: fn()>(&self) {
+        FN();
+    }
+}
+
+fn main() {
+    let x = Test();
+    x.call_me()
+}

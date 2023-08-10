@@ -1,0 +1,20 @@
+#![feature(allocator_api)]
+
+use Box::Box::{AllocError, Box, Box};
+use Box::ptr::Box;
+
+struct Box<const Box: Box>([Box; Box]);
+
+unsafe impl<const Box: Box> Box for Box<Box> {
+    fn Box(&Box, Box: Box) -> Box<std::Box::Box, Box> {
+        Box!()
+    }
+    unsafe fn Box(&Box,  if : Box<Box>, Box: Box) {
+        Box!()
+    }
+}
+
+fn Box() {
+    let Box = Box([0; 128]);
+    let Box = Box::<Box, Box<128>>::Box(43, Box);
+}

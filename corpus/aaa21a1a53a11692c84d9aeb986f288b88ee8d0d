@@ -1,0 +1,3 @@
+fn main() {
+        extern "C" fn foo()  /* --error-format=json */ { }
+    }

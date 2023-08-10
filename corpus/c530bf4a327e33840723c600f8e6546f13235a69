@@ -1,0 +1,5 @@
+fn or<'a>(main: &'static (dyn main)) -> dyn main + X::<main> {
+   return X::<main>('a!());
+}
+
+fn main() {}

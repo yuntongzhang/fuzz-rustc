@@ -1,0 +1,26 @@
+mod foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}
+use foo::*;foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}
+use foo::*;
+use bar::bar::bar;
+pubuse bar::*;
+
+fn main() {se bar::bar::bar;
+pubuse bar::*;
+
+fn main() {}

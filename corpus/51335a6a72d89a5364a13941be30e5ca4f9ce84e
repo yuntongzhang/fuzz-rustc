@@ -1,0 +1,39 @@
+enum Event {
+    ENTRY,
+    EXIT,
+}
+
+struct Data;
+
+struct State<'a> {
+    f: Fn( u16 , &Event) -> &'a Signal<'a>,
+}
+
+enum Signal<'a> {
+    UNHANDLED,
+    HANDLED,
+    TRAN(Fn(&mut Data, &Event) -> &'a Signal<'a>),
+}
+
+struct FSM<'a>  {
+    Fn(&mut Data, &Event) -> &'a Signal<'a> : Option<&'a State<'a>>,
+    data : Data,
+}
+
+impl <'a> FSM<'a> {
+
+    pub fn start(&mut self) {
+        match self.current {
+            None => panic!("Ola !"),
+            Some(Fn(&mut Data, &Event) -> &'a Signal<'a>) => {(Fn(&mut Data, &Event) -> &'a Signal<'a>.f)(&mut self.data, &Event::ENTRY);},
+            }
+
+    }
+
+    pub fn event(&mut self,event : Event) {
+        let signal = (self.Fn(&mut Data, &Event) -> &'a Signal<'a>.unwrap().f)(&mut self.data, &event);
+    }
+}
+
+fn main() {
+}

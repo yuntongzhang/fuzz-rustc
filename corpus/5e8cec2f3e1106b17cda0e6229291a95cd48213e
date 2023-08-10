@@ -1,0 +1,9 @@
+trait Foo<T>: {
+    fn bar() -> _;
+}
+
+impl Foo<> () {
+    fn bar<T>( s: _) -> ((), ) {}
+}
+
+fn main() {}

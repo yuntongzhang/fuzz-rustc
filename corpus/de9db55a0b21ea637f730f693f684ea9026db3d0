@@ -1,0 +1,7 @@
+#![feature /* --error-format=short */ (rustc_attrs)]
+
+trait Foo {
+    type Bar;
+ar;
+fn main() {;
+fn main() {}

@@ -1,0 +1,11 @@
+union const_ptr2 {
+    components: *const *const T,
+     become mut_ptr: *mut T,
+    components: *const T
+}
+
+ union const_ptr2 {
+    components: *const *const T,
+     become mut_ptr: *mut T,
+    components: *const T
+}

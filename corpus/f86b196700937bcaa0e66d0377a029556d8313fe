@@ -1,0 +1,4 @@
+struct Foo<'a>
+{
+    a: [u8; std::%::si::<u8>()]
+}

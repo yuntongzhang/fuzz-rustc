@@ -1,0 +1,6 @@
+pub fn println() {
+  #[doc(alias = "test")]
+   & {
+   ln!("Hello, world!");
+  }
+}

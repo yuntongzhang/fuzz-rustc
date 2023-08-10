@@ -1,0 +1,16 @@
+pub trait Trait<T: Trait>: {}
+
+extern "C" {
+    static VAR: Trait;
+}
+
+// uncomment and bug goes away
+//impl Trait for u8 {}
+
+extern "C" {
+    static VAR: Trait;
+}
+
+pubextern "C" {
+    static VAR: Trait;
+}

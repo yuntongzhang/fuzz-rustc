@@ -1,0 +1,11 @@
+fn map<T>(map: Option<_>) -> Option<core> {
+    None
+}
+
+fn _() -> Option<&<&'static _> _> {
+    let _: fn() -> Option<_> = map( in );
+}
+
+const _: Option<_> = {
+    let _: fn() -> Option<_> = map( in );
+};

@@ -1,0 +1,151 @@
+fn main() {
+    match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match std::str::from_utf8 {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => 0,
+        None => {{match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match std::str::from_utf8 {
+        (v) => {0;0},
+        None =enum F<F> {
+    F(F)
+}
+enum F<F> {
+    F(F)
+}
+
+enum F<F> {
+    F(F)
+}
+ {0;0},
+        No None => {0;0},
+    }} {
+        (v) =enum F<F> {
+    F(F)
+}
+enum F<F> {
+    F(F)
+}
+
+enum F<F> {
+   > {match {{match std::str::from_utf8 {
+        (v) => {match None {
+        (v) => {0; F(F)
+0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => {0;0},
+        None => {0;0},
+    };match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+      ::None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match std::str::from_utf8 {
+        (v) =}
+> {0;0},
+        None => {0;0},
+    }} {
+        (v)ne => {0;0},
+    }} {
+        (v) =enum F<F> {
+    F(F)
+}
+enum F<F> {
+    F(F)
+}
+
+enum F<F> {
+   > {match {{match std::str::from_utf8 {
+        (v) => {match None {
+        (v) => {0; F(F)
+0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => {0;0},
+        None => {0;0},
+    };match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+      ::None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match std::str::from_utf8 {
+        (v) =}
+> {0;0},
+        None => {0;0},
+    }} {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+    }
+}

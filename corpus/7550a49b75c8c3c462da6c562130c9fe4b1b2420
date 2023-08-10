@@ -1,0 +1,27 @@
+fn main() extern "C" fn f/*...*/oo() {
+    extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}{
+    extern "C" fn foo() {
+    extern "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }
+  "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }
+    {
+        extern "C" fn foo{() { }
+    }
+}{
+   () { }
+    {
+        extern "C" fn foo() { }
+    }
+}{ }
+   foo() { }
+    }
+}{ }
+    }
+}
+    }
+}

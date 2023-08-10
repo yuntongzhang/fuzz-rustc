@@ -1,0 +1,10 @@
+#![feature(staged_api)]
+struct f32x3(f32, f32, f32);
+extern "platform-intrinsic" {
+    #![feature(staged_api)]
+    fn simd_insert<T>(x: T, idx: u32,  f32) -> T;
+}
+fn main() {
+    simd_insertconst U: f32x3 = T(13., 14., 15.);
+    const 42_f32
+}

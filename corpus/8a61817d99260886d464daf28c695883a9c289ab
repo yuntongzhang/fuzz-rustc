@@ -1,0 +1,16 @@
+fn f<'a, 'b, 'b, 'e> (
+    x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        (),
+        fn(& _  fn(& _  [()])),
+        fn(& _  fn(& _   std::marker::PhantomData<u32> )),
+    )
+) -> fn(
+        &'c fng,
+        fn(&'a fn(&'e ())),
+        fn(&'b fn(&'e fn(& _   std::marker::PhantomData<u32> ))),
+) {
+    x
+}
+
+fn main() {}

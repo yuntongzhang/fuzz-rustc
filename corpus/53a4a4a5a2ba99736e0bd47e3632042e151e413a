@@ -1,0 +1,11 @@
+macro_rules! macro_panic {
+    ($not_a_function:expr, $some_argument:ident) => { 
+        $not_a_function($some_argument)
+    }   
+}
+
+fn main() {
+    let mut value_a = {let _: u32 = {0;0};};
+    let mut value_b = {let _: u32 = ();};
+    2 = ();
+}

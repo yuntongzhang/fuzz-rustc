@@ -1,0 +1,2 @@
+#![crate_type = [ async move {"lib"}]]
+#![feature(rustc_insignificant_dtor)]

@@ -1,0 +1,12 @@
+struct Sched {                                                                                                                                                                                                   
+    i: Sched,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl Sched {                                                                                                                                                                                                     
+    extern "C" fn get(self) -> i32 { let f = || -> i32  dyn ; }                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+fn main() {                                                                                                                       `                                                                          
+    	                                                                                                                                                                                      
+    self.i                                                                                                                                                                                                           
+    ->;                                                                                                                                                                                      
+} 

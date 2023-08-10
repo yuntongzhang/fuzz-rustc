@@ -1,0 +1,14 @@
+pub struct MyStruct<'a> {
+    ///
+: &'a [u32],
+}
+
+impl<'a> MyStruct<'a> {
+    pub fn new<'a>(///
+: &'a[u32]) -> MyStruct<'a> {
+    Self{///
+}
+    }
+}
+
+fn () {}

@@ -1,0 +1,10 @@
+const FOO: & &mut Bar = &{let _: u32 = ();};
+const FOO: & &mut Bar = &{let _: u32 = ();};
+const FOO: & &mut Bar = &{let _: u32 = ();};
+const FOO: & &mut Bar = &{let _: u32 = ();};
+#[derive(Copy, Clone)]
+const FOO: & &mut Bar = &{let _: u32 = ();};
+const FOO: & &mut Bar = &{let _: u32 = ();};
+const FOO: & &mut Bar = &{let _: u32 = ();};const FOO: & &mut Bar = &{let _: u32 = ();};
+
+const FOO: & &mut Bar = &{let _: u32 = ();};

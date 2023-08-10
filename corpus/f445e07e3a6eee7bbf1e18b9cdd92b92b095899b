@@ -1,0 +1,7 @@
+pub struct T<'a>(&T T);
+
+pub fn T(_: T<T>) -> _ {}
+
+pub fn T(_: T<T>) -> _ {}
+
+pub struct T<T>( &T T );

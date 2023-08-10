@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+
+fn bug<'a>()
+where
+    [(); (0)]: ,
+{
+}
+
+fn main() {}

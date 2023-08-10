@@ -1,0 +1,8 @@
+#![feature(asm)]
+
+fn b(a: core, ;b: f64) {
+    asm!("add {:d}, {:d}, d0", out(vreg) c, in(vreg) a, in("d1") {
+        || {};
+        b
+    });
+}

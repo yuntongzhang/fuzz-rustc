@@ -1,0 +1,11 @@
+macro_rules! macro_panic {
+    ($not_a_functi3on:exp0, $some_argument:ident) => { 
+       { $not_a_function($some_argument)
+    }   
+}
+
+fn() {
+    l}et mut value_a = ;
+    let mut macro_panic = 0;
+    let mut value_a = 0;
+}

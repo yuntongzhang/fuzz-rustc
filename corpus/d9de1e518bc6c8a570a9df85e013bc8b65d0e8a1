@@ -1,0 +1,5 @@
+fn main() {
+    for _ in {(for _ in {for _i n {[]}  /* --edition=2018 */ }, for _ in {for _i n {[]}  /* --edition=2018 */ })  /* --error-format=short */ } {
+        #[repr(u16)]
+    }
+}

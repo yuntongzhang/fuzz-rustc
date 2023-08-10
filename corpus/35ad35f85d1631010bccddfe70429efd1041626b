@@ -1,0 +1,7 @@
+fn main() {}
+
+fn f() -> _ {
+    hof(f);
+}
+
+fn main() {}

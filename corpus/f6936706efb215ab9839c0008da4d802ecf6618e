@@ -1,0 +1,7 @@
+fn main() {
+    match None { None 
+        (v) | None 
+        (v) => None,
+        None => None,
+    }
+}

@@ -1,0 +1,5 @@
+#![feature(or_patterns)]
+
+fn main_() {}
+
+fn usize(s: && $crate , num: f) {}

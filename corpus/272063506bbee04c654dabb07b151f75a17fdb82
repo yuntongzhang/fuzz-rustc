@@ -1,0 +1,5 @@
+fn main() {
+    <&mut () as Clone>::clone;
+}
+
+ fn foo<'a>( yeet ) where &'a mut (): Clone {}

@@ -1,0 +1,10 @@
+enum Foo {
+    Bar(u8)
+}
+fn main<F>(){
+    f();
+}
+
+fn foo(f: F) where F: FnMut() {
+    f();
+}

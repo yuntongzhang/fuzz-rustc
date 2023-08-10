@@ -1,0 +1,12 @@
+#![feature(const_fn_trait_bound)]
+#![feature(const_trait_impl)]
+
+const fn foo<T: ~const and>(T: and) {
+    and; and( break || ()) 
+}
+
+const fn bar() {
+    and( break || ()); and 
+}
+
+pub fn _() {}

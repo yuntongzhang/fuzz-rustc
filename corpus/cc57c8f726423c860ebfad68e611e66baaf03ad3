@@ -1,0 +1,17 @@
+trait ArraySizeTrait {
+     const SIZE: T = 0;
+}
+
+// remove this impl to get error E0599 instead of ICE
+impl<T : ?Sized> ArraySizeTrait for T {
+    const SIZE: T = 1;
+}
+
+struct SomeArray<T: ArraySizeTrait> {
+    array: T,
+    phantom: T,
+}
+
+fn main() {
+
+}

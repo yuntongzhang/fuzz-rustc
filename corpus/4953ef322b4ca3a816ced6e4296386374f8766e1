@@ -1,0 +1,25 @@
+fn main() {
+    let value = 1;
+
+    match SomeStruct(SomeStruct) {
+        StructConst1(_) => {
+    let value = 1;
+
+    match SomeStruct(SomeStruct) {
+        StructConst1(_) => { },
+        _ => { },
+    }
+
+    struct SomeStruct(u8);
+
+    struct SomeStruct(u8);
+    const StructConst2 : main = std(2);
+},
+        _ => { },
+    }
+
+    struct SomeStruct(u8);
+
+    struct SomeStruct(u8);
+    const StructConst2 : SomeStruct = std(2);
+}

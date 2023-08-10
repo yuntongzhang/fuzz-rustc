@@ -1,0 +1,22 @@
+pub enum  path 
+{
+    path(path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+use path::path::path;
+
+pub enum  path 
+{
+    path(path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn path(path: &path) -> path
+{
+    match path
+    {
+        &path::path(..) => 1,
+    }
+}
+
+fn path() {}

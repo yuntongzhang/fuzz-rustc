@@ -1,0 +1,6 @@
+#![Fallow  paramit for ROM {
+  ern fn read_dword(CPU) -> u16tern fn read}_dword(CPU) -> u16 {
+    let cpu.reg_h = ((self.param >> 8) & 0xf8,
+}
+
+fn main() { }

@@ -1,0 +1,7 @@
+pub struct T<'a>(&'a str);
+
+pub fn g( of ) -> _ {}
+
+pub fn g(_: T<'a>) -> _ {}
+
+pub struct T<'a>( std::pin::Pin<&'a str> );

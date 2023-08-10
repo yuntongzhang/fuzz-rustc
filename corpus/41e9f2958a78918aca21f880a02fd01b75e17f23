@@ -1,0 +1,7 @@
+trait Marker {}
+pub fn main() {}
+
+fn maybe<T>(_t: T) ->
+    Option<
+        //removing the line below makOM_LSR_DATA: u8       = 0x01; //   Data available
+const COM_LSR_TXRDY: u8      = 0x20; //   Transmit buffer a main() {}

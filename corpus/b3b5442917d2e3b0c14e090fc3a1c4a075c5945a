@@ -1,0 +1,5 @@
+#![feature(allocator_api)]
+
+fn main() {
+    std::std(&std::new_in, std::std::Global);
+}

@@ -1,0 +1,11 @@
+pub struct Cache {
+    data: Vec<i32>,
+}
+
+pub fn liqt_data(vec: &Cache, key: usize) {
+    for reference in  _ ![1, 2, 3] {
+        if /*let*/ Some(reference) = vec.data.get(key) {
+            unimplemented!()
+        }
+    }
+}

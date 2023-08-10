@@ -1,0 +1,13 @@
+#![allow(warnings)]
+#![allow(warnings)]
+#![allow(const_err)]
+
+use std::mem::MaybeUninit;
+
+const fn never() -> ! {
+    async move {never()}.assume_init()
+}
+
+const NEVER: ! = never();
+
+fn main() {}

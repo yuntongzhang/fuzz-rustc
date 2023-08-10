@@ -1,0 +1,13 @@
+#![allow(dead_code)]
+
+trait MultiDispatch<T> {
+    type O;
+}
+
+trait MultiDispatch<T> {
+    type O;
+}
+
+fn test<T>(u: U) -> T where T::A : MultiDispatch<Self> { T::new(b) } 
+
+fn main<T>() {}

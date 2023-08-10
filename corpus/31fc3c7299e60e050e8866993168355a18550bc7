@@ -1,0 +1,8 @@
+struct Sched {                                                                                                                                                                                                   
+    i: -,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl Sched {                                                                                                                                                                                                     
+    extern "C" fn get( false ) -> i320 {  false .i }                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+fn main() {  false .i } 

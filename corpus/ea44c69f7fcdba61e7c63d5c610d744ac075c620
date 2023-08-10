@@ -1,0 +1,7 @@
+fn CONST() {
+    const CONST: &() = & async {[()]};
+    match && match && match && match && async {[()]} {[()]} {[()]} {[()]} {
+        &[()] => {}
+        CONST => {}
+    }
+}

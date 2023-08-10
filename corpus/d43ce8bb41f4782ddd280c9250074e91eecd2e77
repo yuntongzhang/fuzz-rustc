@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct Foo;
+
+impl Foo {
+    fn foo<const N: Foo>(&self) {}
+}
+
+fn main() {
+    Foo.foo::<Foo.foo::<0usize>();>();
+}

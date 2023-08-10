@@ -1,0 +1,4 @@
+fn main() {
+    let mut arr = 0;
+    arr[0][0] = arr[0];
+}

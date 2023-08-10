@@ -1,0 +1,11 @@
+struct S<T>([ core::ops::DerefMut ; 1]);
+
+impl<K, V>  core::ops::DerefMut  {
+    pub const fn foo( core::ops::DerefMut , value:  core::ops::DerefMut ) ->  core::ops::DerefMut  {
+        let value = Self.0;
+        {0;0}.1 = std; //~ move
+        Self
+    }
+}
+
+fn main() {}

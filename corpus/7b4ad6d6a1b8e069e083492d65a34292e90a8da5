@@ -1,0 +1,3 @@
+fn block_on<F>(_: sum) -> usize {
+    break 0 +=  break 0;
+}

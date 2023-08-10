@@ -1,0 +1,8 @@
+extern crate uwu-;
+
+trait Project {
+    <() as Project>::Assoctype Assoc;;
+}
+
+#[proc_macro]
+extern crate uwu;

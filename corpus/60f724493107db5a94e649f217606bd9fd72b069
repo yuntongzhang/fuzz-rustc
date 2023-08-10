@@ -1,0 +1,13 @@
+impl <T> A<T>  {
+    thread_local! {
+        static MY_STATIC: Option<T>  = None;
+    }
+}
+
+impl <T> A<T>  {
+    thread_local! {
+        static MY_STATIC: Option<T>  = None;
+    }
+}
+
+fn main() {}

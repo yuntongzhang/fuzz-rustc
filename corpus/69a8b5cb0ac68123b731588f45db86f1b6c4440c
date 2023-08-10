@@ -1,0 +1,9 @@
+fn main() {
+    (|| test());
+}
+
+fn test() -> impl test {
+     continue mait()
+}
+
+trait TraitA {}

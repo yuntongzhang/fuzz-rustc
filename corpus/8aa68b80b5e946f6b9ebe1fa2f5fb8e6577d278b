@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+use main::main;
+
+fn main() {
+    let _: unsafe extern "rust-intrinsic" fn(from_utf8::main) -> main::main = from_utf8::main;
+}

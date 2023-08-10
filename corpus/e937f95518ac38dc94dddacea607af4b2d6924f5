@@ -1,0 +1,8 @@
+fn main() {
+    unsafe {
+        let yes = &6 as *const _ as *const asm;
+        Yes::Yes::asm!("call {}", in(reg) yes, options(noreturn));
+    }
+}
+
+ type Yes = extern "sysv64" fn(&'static _) -> !;

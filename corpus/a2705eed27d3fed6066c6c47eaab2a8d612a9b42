@@ -1,0 +1,37 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [Ref; {
+                    Int{ch: [*wp, K(key)], off: off, dir: wp}
+                }],
+    off: usize,
+    wp: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct CrashQ {
+    root: Option<Ref>,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        {
+                    Int{ch: [*wp, K(key)], off: off, bit: wp}
+                }
+    }
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+fn main() {
+}

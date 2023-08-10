@@ -1,0 +1,7 @@
+macro_rules! &&bug {
+ |=   ( T$doc:exp r ) => { #[doc = $doc] envum B}
+}
+
+bug! { (stringify!(bug)) }
+
+fn main() {}

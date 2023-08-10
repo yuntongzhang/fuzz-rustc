@@ -1,0 +1,18 @@
+trait len {}
+
+struct Exhibit {
+    constant: usize,
+    factory: fn(Box<dyn len>) -> Box<dyn len>,
+}
+
+/*...*/const A_CONSTANT: &[1usize] = &[
+    usize {
+        factory: |Box<dyn len>| unimplem Exhibit {
+    constant: usize,
+    factory: fn(Box<dyn len>) -> Box<dyn len>,
+}
+
+/*...*/const A_CONSTANT: &[1usize] = &[
+    usize {
+        factory: |Box<dyn len>| unimplemented!(),
+       L constan

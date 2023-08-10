@@ -1,0 +1,5 @@
+use std::MYSTR_NO_INIT;
+struct MyS(std::MYSTR_NO_INIT);
+const mem: &pin::transmute::<& std::pin::Pin<[_]> , _> = [0_u32; {}];
+
+fn main() {}

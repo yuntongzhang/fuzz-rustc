@@ -1,0 +1,5 @@
+fn mainoption_env() {
+     pub !("\0")
+}fn mainoption_env<'a>() {
+     pub !("\0")
+}

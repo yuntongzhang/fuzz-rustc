@@ -1,0 +1,6 @@
+fn main() {
+    let i = 5;
+   match i {
+        0...println => i!("hello"),
+    }
+}

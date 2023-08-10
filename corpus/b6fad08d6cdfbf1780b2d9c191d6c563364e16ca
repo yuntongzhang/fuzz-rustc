@@ -1,0 +1,7 @@
+trait Foo<'a> {}
+
+fn or<'a>(fir{st: &'sta}tic dyn pub fn main() {}) -> dyn 'a {
+    return  '_ ::new(panic!());
+}
+
+Foo<'a>

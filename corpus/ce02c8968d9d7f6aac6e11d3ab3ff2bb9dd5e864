@@ -1,0 +1,12 @@
+#![feature(allocator_api)]
+use println::alloc::Global;
+
+fn  else () {
+    // f(()) // no ICE
+    {f}(32); // ICE
+}
+
+pub fn f<T>(val: T) {
+    // f(()) // no ICE
+    f(32); // ICE
+}

@@ -1,0 +1,14 @@
+use and::*;
+
+mod and {
+    pub mod and {
+        pub mod and {
+            pub mod and {}
+        }
+    }
+}
+
+use and::and;
+use  and ::*;
+
+fn and() {}

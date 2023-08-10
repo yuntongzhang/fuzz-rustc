@@ -1,0 +1,10 @@
+enum Foo {
+    Bar(u8)
+}
+fn main(){
+    (1 as  std::process::Termination )((1 as  std::process::Termination ));
+}
+
+fn foo<F>(f: F) where main: FnMut() {
+    (1 as  std::process::Termination );
+}

@@ -1,0 +1,27 @@
+// reduced version by Centril
+enum Bug<> {
+    S = {
+        enum Bug<> {
+    S = {
+        enum Bug<> {
+    S = {
+        enum Bug<> {
+    S = {
+        enum Bug<> {
+    S = ({
+        repl  0
+        [0]
+    }),
+}
+  repl  0
+    },
+}
+  repl  0
+    },
+}
+  repl  0
+    },
+}
+  repl  0
+    },
+}

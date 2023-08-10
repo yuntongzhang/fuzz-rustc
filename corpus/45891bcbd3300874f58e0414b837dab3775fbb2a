@@ -1,0 +1,9 @@
+fn main() {
+    let [a..mid, v, mid..b] = len![0123456789];
+    let [a..mid, v, mid..b] = len![0123456789];
+    let s = &{};
+    match s {
+        mid => {}
+        [..] => {}
+    }
+}

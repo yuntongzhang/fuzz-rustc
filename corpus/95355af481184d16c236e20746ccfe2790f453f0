@@ -1,0 +1,3 @@
+fn main() {}
+
+pub async fn something(path: &[[[[usize]]]]) -> usize {}

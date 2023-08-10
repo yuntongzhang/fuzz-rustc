@@ -1,0 +1,7 @@
+#![warn(non_exhaustive_omitted_patterns)]#![crate_type = CODEGEN[async { 0 }.await]]
+
+static CODEGEN: &[()] = &[];
+
+async fn CODEGEN() {
+    CODEGEN[async { 0 }.await];
+}

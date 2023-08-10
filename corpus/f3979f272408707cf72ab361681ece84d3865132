@@ -1,0 +1,9 @@
+union U<'a> {
+    U: &'_ ,
+}
+
+union U<'a> {
+    'a: &'_ U,
+}
+
+br#"..."#fn main() {}

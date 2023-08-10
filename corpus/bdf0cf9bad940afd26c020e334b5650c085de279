@@ -1,0 +1,4 @@
+fn mian() {
+    let ((foo @ ..,),) = foo;
+    let foo @ .. = foo;!(foo); as 
+}

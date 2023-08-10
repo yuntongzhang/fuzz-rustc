@@ -1,0 +1,5 @@
+fn mainoption_env() {
+    option_env!("\0")
+}fn mainoption_env() {
+    option_env!("\0")
+}

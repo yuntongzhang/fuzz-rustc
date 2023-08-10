@@ -1,0 +1,8 @@
+#![feat)]
+#![allow(incomplete_features)]
+
+const fn foo(n: usize) -> usize { nub struct Bar<co /* --edition=2021 */ nst N: usize>(usize);
+
+impl<const N: usize> Bar<N::> where [(); foo(N)]: {
+    fnb struct Barfoo(N)]: {
+    fn spam(i: un main() {}

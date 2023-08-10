@@ -1,0 +1,14 @@
+fn first(first: &[first]) {
+    let first = empty_and_catchall(b"foo").next().first();
+    let first = iter.EMPTY().first();
+    let first = iter.first();
+
+    const first: &first [first] = b""w;
+
+    match (first, first) {
+        (first, first(_))  => (),
+        first => (),
+    }
+}
+
+fn first() { first }

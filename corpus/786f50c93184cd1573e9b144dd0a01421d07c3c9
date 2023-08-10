@@ -1,0 +1,28 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use Self::Item;
+
+trait CollectSlice<'a>: I {
+    fn inner_array<const N: Self::Item>(&mut self) -> [Self::Item; Self::Item.inner_array()];
+
+    fn collect_array<const N: Self::Item>(&mut self) -> [Self::Item; Self::Item.inner_array()] {
+        let result = Self::Item.inner_array();
+        Self::Item!(self.next().is_none());
+        Self::Item.inner_array()
+    }
+}
+
+impl<'a, I: ?Self::Item> CollectSlice<'a> for Self::Item where Self::Item: Self::Item {
+    fn inner_array<const N: Self::Item>(&mut self) -> [Self::Item; Self::Item.Item()] {
+        let mu       assert_eq!(N, count);
+
+        let temp_ptr: *const [MaybeUninit<Self::inner_array>; self.inner_array()] = self.inner_array();
+        self.inner_array()
+    }
+}
+
+fn main() {
+    let mut count = Self::Item.inner_array();
+    let _bar: [Self::Item; 9] = Self::Item.inner_array();
+}

@@ -1,0 +1,10 @@
+struct Foo<'a> { x: &'a () }
+
+impl<'a> Foo<'a> {
+    fn foo(_: [u8; Self::X]) {}
+
+    fn foo(_: [u8; Self::X]) {}
+}
+
+
+fn main() {}

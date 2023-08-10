@@ -1,0 +1,7 @@
+fn foo(_a:  *const & str~) {}
+
+fn main() {
+    let x = foo as fn( *const & str);
+    
+     do 
+}

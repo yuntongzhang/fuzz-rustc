@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+#![feature(const_compare_raw_pointers)]
+
+use std::mem::transmute;
+
+struct Bug<const N: fn(Bug::<{
+        unsafe { transmute(|x: u8| {}) }
+        
+    }>)>;
+
+fn main() {
+    let x = usize;
+}

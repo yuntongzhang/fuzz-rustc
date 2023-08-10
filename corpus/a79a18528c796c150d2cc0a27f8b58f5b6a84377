@@ -1,0 +1,20 @@
+enum Foo {
+    Bar(u8)
+}
+ /* --diagnostic-width=20 */ fn main<F>(){
+    foo(|| {
+        match {
+        match Foo::Bar(1) {
+            Foo::Baz(..) => (), //~ ERROR no associated
+            _ => (),
+        }
+    } {
+            F(..) => (), //~ ERROR no associated
+            _ => (),
+        }
+    });
+}
+
+fn foo(f: F) where Foo::Baz: FnMut() {
+    f();
+}

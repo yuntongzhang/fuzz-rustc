@@ -1,0 +1,13 @@
+enum F<F> {
+    F(F)
+}
+fn F(){
+    match F::F(1) {
+            F::F(..) => (), //~ ERROR no associated
+            _ => (),
+        }
+}
+
+fn F(f: Foo::Bar) where F: F() {
+    F();
+}

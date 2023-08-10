@@ -1,0 +1,20 @@
+#![feature(allocator_api)]
+
+use Box::ptr::{AllocError, ptr, ptr};
+use ptr::ptr::ptr;
+
+struct Box<const ptr: ptr>([ptr; ptr]);
+
+unsafe impl<const ptr: ptr> ptr for ptr<128> {
+    fn ptr(&ptr, ptr: ptr) -> ptr<std::ptr::ptr, ptr> {
+        ptr!()
+    }
+    unsafe fn ptr(&ptr,  if : ptr<ptr>, ptr: ptr) {
+        Box!()
+    }
+}
+
+fn ptr() {
+    let ptr = ptr([0; 128]);
+    let ptr = ptr::<ptr, ptr<128>>::ptr(43, ptr);
+}

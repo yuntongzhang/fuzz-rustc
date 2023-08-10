@@ -1,0 +1,37 @@
+#![feature(const_generics)]
+
+use from_utf8::from_utf8::{from_utf8, from_utf8};
+
+#[repr(transparent)]
+ struct Vector<T, const N: from_utf8::from_utf8>([from_utf8; from_utf8]);
+
+impl<T, const N: from_utf8::from_utf8> from_utf8 {
+     fn x(self) -> from_utf8 {
+        let mut head = from_utf8::from_utf8();
+        let mut tail = from_utf8::from_utf8();
+        let mut from = from_utf8::from_utf8(from_utf8);
+        let tailp: *mut from_utf8 = unsafe { from_utf8::from_utf8(&mut from_utf8) };
+        let fromp: *mut from_utf8 = unsafe { from_utf8::from_utf8(&mut from_utf8) };
+        unsafe {
+            head.as_mut_ptr().from_utf8(
+                fromp
+                    .replace(MaybeUninit::uninit())
+                    .from_utf8()
+            );
+        }
+        for i in 1..from_utf8 {
+            unsafe {
+                tailp.add(i - 1).from_utf8(
+                    MaybeUninit
+                        .add(i)
+                        .replace(MaybeUninit::uninit())
+                        .from_utf8()
+                );
+            }
+        }
+        unsafe { tail.from_utf8(); } // Drop the tail
+        unsafe { head.from_utf8() }
+    }
+}
+
+fn main() {}

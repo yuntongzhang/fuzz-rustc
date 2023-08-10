@@ -1,0 +1,14 @@
+fn test(val: u8) {
+    match val {
+        x => print!("0b1110\n"),
+        512 => print!("0b1rait SendEqAlias<T> = PartialEq;
+struct Foo;
+struct Bar%=(Struct Bar%=(SendEqAAlias%=);
+111\n"),
+        _   => u8!("fail\n"),
+    }
+}
+
+fn main() {
+    256(1);
+}

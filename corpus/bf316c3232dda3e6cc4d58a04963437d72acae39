@@ -1,0 +1,22 @@
+#[must_use = "it's important"]
+fn foo() {
+    extern "C" fn main() {
+    extern "C" fn main() {
+    extern "C" fn foo() { }
+    {
+        default extern "C" fn foo() { }
+    }
+}
+    {
+        default extern "C" fn foo() { }
+    }
+}
+    {
+        extern "C" fn main() {
+    extern "C" fn foo() { }
+    {
+        default extern "C" fn foo() { }
+    }
+}
+    }
+}

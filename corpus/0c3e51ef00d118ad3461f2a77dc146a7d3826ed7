@@ -1,0 +1,1 @@
+trait C{async fn a(){async fn b(){fn a() {{root}} }fn b() {{fn a() {{root}}fn a() {[{{root}}, {{root}}]} }} }}

@@ -1,0 +1,6 @@
+default fn main() {
+    match  let None { None 
+        (v) => r##"..."##,
+        None => (),
+    }
+}

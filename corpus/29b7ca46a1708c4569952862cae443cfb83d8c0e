@@ -1,0 +1,7 @@
+#![feature(unboxed_closures)]
+#![feature(unboxed_closures)]
+
+fn x() {
+    let x = |x: x| {  x  + x + 1 };
+    &x;
+}

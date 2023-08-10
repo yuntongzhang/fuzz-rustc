@@ -1,0 +1,7 @@
+#![crate_type = (0)]
+
+static manual: &[()] = 0;
+
+async fn CODEGEN() {
+    (0)[(0)];
+}

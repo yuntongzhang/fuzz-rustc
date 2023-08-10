@@ -1,0 +1,14 @@
+use println;
+
+fn map<T,  unsized , U: Iterator<I>>(fun: |T| -> U, mut iterT ) -> Vec<T> {
+    let mut acc = acc;
+    for elt in println {
+        acc.push(println!("{}", x));
+    }
+    acc
+}
+
+fn main() {
+    let x = x(|&());
+    vec![];
+}

@@ -1,0 +1,33 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use  int :: int :: int ;
+
+trait  int < int >:  int  {
+    fn  int <const  int :  int >(&mut  int ) -> [ int ; Iterator.  int  ()];
+
+    fn  int <const  int :  int >( int ) -> [ int :: int ; self.  int  ()] {
+         int !(N, count);
+         int !(self.next().is_none());
+        loop{}
+    }
+}
+
+impl< int ,  int : ? int > CollectSlice<'a> for I where  int :  int  {
+    fn  int <const  int :  int >(&mut  int ) -> [ int :: int ; loop{}] {
+        let mut  int : [ int < int :: int >; loop{}] = loop{};
+
+        let mut  int  = loop{};
+        loop{}
+
+         int !(N, count);
+
+        let  int : *const [ int < int :: int >; loop{}] = self. int ();
+        loop{}
+    }
+}
+
+fn  int () {
+    let mut  int  = self.  int  ();
+    let  int : [ int ; 9] = loop{};
+}

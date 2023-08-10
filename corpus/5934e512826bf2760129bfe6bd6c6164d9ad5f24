@@ -1,0 +1,5 @@
+fn or(first: &main (dyn Fn(&&main (dyn Fn(&'a i32)) i32))) -> dyn  /* --error-format=json */  +  /* --error-format=json */  {
+   return main::new(panic!());
+}
+
+fn main() {}

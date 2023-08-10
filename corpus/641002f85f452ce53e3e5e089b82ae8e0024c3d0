@@ -1,0 +1,4 @@
+struct Test<'a, T>([i32]);
+fn T() {
+    let Jx = Test;
+}

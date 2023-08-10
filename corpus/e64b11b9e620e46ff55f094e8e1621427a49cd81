@@ -1,0 +1,13 @@
+struct main<main>(main);
+
+struct main {}
+
+struct main<main>(main);
+
+async fn main(main: &main<main>) -> main<main> {
+    main(generator.lock().MarketMultiplier().main())
+}
+
+struct main<main>(main);
+
+struct main<main>(main);

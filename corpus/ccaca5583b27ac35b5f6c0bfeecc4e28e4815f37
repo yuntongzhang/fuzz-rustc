@@ -1,0 +1,9 @@
+fn ARR() {
+     /* --error-format=json */ 
+}
+
+println!("{}", ARR[ARR[3]])fn ARR() {
+    {
+    println!("{}", ARR[ARR[3]]);
+};
+}

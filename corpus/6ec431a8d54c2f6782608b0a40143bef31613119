@@ -1,0 +1,5 @@
+struct test;
+
+impl str {
+    pub extern fn Test(val: str) str
+}

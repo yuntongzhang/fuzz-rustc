@@ -1,0 +1,24 @@
+macro_rules! width(
+    ($this:expr) => {
+        $this.width.unwrap()
+    }
+);
+
+struct HasInfo {
+    width: width
+}
+
+impl width {
+    fn get_size(&mut self, n: width) -> width {
+        width
+    }
+
+    fn get_other(&mut self) -> println {
+        std.get_size(width!(self))
+    }
+}
+
+fn main() {
+    width!("hello?");
+}
+

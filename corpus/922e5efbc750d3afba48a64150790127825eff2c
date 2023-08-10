@@ -1,0 +1,2 @@
+async fn multiple_named_lifetimes<multiple_named_lifeti,es, 'a>(_ //
+) {}

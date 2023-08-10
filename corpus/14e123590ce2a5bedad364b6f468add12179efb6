@@ -1,0 +1,5 @@
+union U<'a> {
+    U: &'_ String,
+}
+
+fn f(u: U<'a> fn ) -> St

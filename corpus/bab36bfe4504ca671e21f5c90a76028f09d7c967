@@ -1,0 +1,7 @@
+fn mail() {
+    std::str::from_utf8
+}
+
+fn main() {
+    std::str::from_utf8
+}

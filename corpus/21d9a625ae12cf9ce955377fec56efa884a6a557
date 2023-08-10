@@ -1,0 +1,7 @@
+trait floatify {
+    type floatify<floatify>;
+}
+
+fn floatify() {}
+
+fn floatify() {}

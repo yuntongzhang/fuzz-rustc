@@ -1,0 +1,5 @@
+enum Binding {}
+
+fn main() {
+    |binding: Binding| {0;0};
+}

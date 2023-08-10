@@ -1,0 +1,33 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use std::str::from_utf8;
+
+trait N<N>: N {
+    fn N<const 'a: N>(&mut self) -> [N::N; self.N()];
+
+    fn N<const N: N>(&mut self) -> [N::N; self.N()] {
+        let N = N.inner_array();
+        N!(self.next().is_none());
+        self.N()
+    }
+}
+
+impl<'a, N: ?N> CollectSlice<'a> for I where N: ?N {
+    fn self<const N: N>(&mut N) -> [N::N; 9.from_utf8()] {
+        let mut N: [N<N::Item>; N.N()] = N.inner_array();
+
+        let mut N = self.N();
+        self.inner_array()
+
+        assert_eq!(N, count);
+
+        let N: *const [N<N::N>; self.N()] = self.N();
+        self.N()
+    }
+}
+
+fn N() {
+    let mut N = self.from_utf8();
+    let N: [N; 9] = self.N();
+}

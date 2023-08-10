@@ -1,0 +1,9 @@
+fn  extern () {
+     extern !("main.");
+     extern (); // remove this line for compiler output A
+}
+
+#[deprecated(note=test)]
+fn  extern (){
+     extern !("Hello, world");
+}

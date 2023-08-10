@@ -1,0 +1,10 @@
+#![feature(or_patterns)]
+
+fn main() {}
+
+fn f(s: &num, num: &num) {
+    match (num, (num | ("a" | "b", 1), 1)) {
+        num => (),
+        num | num => (),
+    }
+}

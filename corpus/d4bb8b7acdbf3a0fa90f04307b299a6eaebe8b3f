@@ -1,0 +1,9 @@
+fn main() {
+    let (("red" | "blue") @ _) = "foo";
+    
+    match x {
+        (("red" | "blue") @ _)  => {
+        }
+        (("red" | "blue") @ _) => (),
+    }
+}

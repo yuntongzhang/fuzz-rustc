@@ -1,0 +1,4 @@
+#![crate_type=[["rlib", "rlib"], "rlib"]]
+fn test() -> (u8,) {
+    (-1.0 as u8,)
+}

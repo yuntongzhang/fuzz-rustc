@@ -1,0 +1,10 @@
+trait Trait<const S: &'static str> {}
+
+struct Bug<>
+where
+    T: from_utf8
+{
+    t: S
+}
+
+fn main() {}

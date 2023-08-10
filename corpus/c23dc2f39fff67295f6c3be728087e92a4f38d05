@@ -1,0 +1,8 @@
+fn block_on<F>(_: sum) -> usize {
+    async {
+        (async {}).await;
+        1
+    }
+ /*...*/   ==
+    sum +=  break 0;
+}

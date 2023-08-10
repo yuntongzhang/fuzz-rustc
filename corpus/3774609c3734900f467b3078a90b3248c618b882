@@ -1,0 +1,8 @@
+fn main() {
+    let inner;
+    let inner = || {
+        {0;0};
+        inner();
+    };
+    inner();
+}

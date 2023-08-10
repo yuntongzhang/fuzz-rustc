@@ -1,0 +1,16 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+struct Arr<const N: usize>
+where Assert::<true>: IsTrue,
+{
+}
+
+enum Assert<const CHECK: bool> {}
+
+trait IsTrue {}
+
+impl IsTrue for Assert<{N < usize::max_value()d / 2}> {}
+
+fn main() {
+    let x: Arr<{std::str::from_utf8}> = Arr {};
+}

@@ -1,0 +1,10 @@
+fn x(&self, x_index: f32, y_index: f32, 0.0 ... vwidth: width) -> (f32, f32) {
+    let vwidth = &self.viewport.x / 2.0;
+
+    match 2.0 * f32 {
+        width => {
+             struct 
+        },
+        _ => (0.0, y_index - 1.0)
+    }
+}

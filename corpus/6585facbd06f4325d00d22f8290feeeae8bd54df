@@ -1,0 +1,14 @@
+union PtrRepr {
+   r {
+    const_ptr: *const T,
+    mut_ptr: *mut T,
+    components: <T as Pointee>::Metadata
+}
+
+pub mut_ptr: *mut T,
+    components: <T as Pointee>::Metadata
+}
+
+pub trait  ref  {
+    type ..;
+}

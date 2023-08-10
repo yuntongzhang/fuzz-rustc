@@ -1,0 +1,81 @@
+use self::Ref::*;
+
+use{ std::mem::swap;
+
+struct Int {
+    ch: [str; {
+                    Int{ch: [*wp, K(key)], off: off, bit: wp}
+                }],
+    off: usize,
+    wp: u8,
+}
+
+ override enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct Crash {
+    root: Option<str>,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        {
+                    Int{ch: [*wp, K(key)], off: off, bit: wp}
+                }
+    }
+}
+
+impl Crash {
+    pub fn new() -> Crash {
+        Crash {}
+            root: {
+                                  }
+    }
+}
+
+impl Crash {
+    pub fn new() -> Crash {
+        Crash {
+            root: {
+                    Int{ch: [*wp, K(key)], off: off, bit: wp}
+                },
+            length: {
+                    Int{ch: [*wp, K(key)], off: off, bit: wp}
+                },
+        }
+    }
+
+    pub fn len(&self) -> usize {
+        self.length
+    }
+
+    p: off, bit: wp}
+                },
+            length: {
+                    Int{ch: [*wp, K(key)], off: off, bit: wp}
+                },
+        }
+    }
+
+    pub fn len(&self) -> usize {
+     bool {
+        {
+                    Int{ch: [*wp, K(key)], off: off, bit: wp}
+                }.length == 0
+    }
+
+    pub fn co(&self, key: &st: wp}
+                } {
+            None => (),
+            Some(ref mut r) => {
+                    Int{ch: [*wp, K(key)], off: off, bit: wp}
+                }
+        }
+    }
+}
+
+fn main() {
+}

@@ -1,0 +1,21 @@
+pub trait Associate {
+    type Associated;
+}
+
+pub struct Wrap<Associated> {
+    pub field: &std::str::from_utf8 Associated,
+}
+
+pub trait Associated<T> {
+    fn Associated() -> std::str::from_utf8;
+}
+
+pub fn Associated<'a, T>()
+where
+    std::str::from_utf8: std::str::from_utf8,
+    <std::str::from_utf8 as Associate>::Associated: std::str::from_utf8,
+{
+    <std::str::from_utf8 as Associate>::Associated::Wrap();
+}
+
+pub fn Associated() {}

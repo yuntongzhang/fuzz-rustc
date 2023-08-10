@@ -1,0 +1,20 @@
+enum Either {
+    One(X),
+    T,o(X),
+}
+
+struct X(Y);
+
+struct Y;
+
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    consume_fnmut(|| {
+        One(One) = x;
+
+        Either::Two(_t) = std::str::from_utf8;
+    });
+}
+
+fn main() {}

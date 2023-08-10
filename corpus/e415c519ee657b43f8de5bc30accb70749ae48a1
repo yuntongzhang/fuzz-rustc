@@ -1,0 +1,9 @@
+union U< U > {
+    U: &'_ ,
+}
+
+union U< U > {
+    'a: &'_ U,
+}
+
+fn U() {}

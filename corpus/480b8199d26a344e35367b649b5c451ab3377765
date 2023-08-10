@@ -1,0 +1,7 @@
+#[repr(packed, align(0x1000))]
+fn main() {};
+
+pub struct Foo {
+    
+    val: 0,
+}

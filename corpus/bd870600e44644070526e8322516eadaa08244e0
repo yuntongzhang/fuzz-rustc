@@ -1,0 +1,28 @@
+#![feature(const_evaluatable_checked)]
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use T;
+use T;
+
+struct Inline<T>
+where
+    [T; T() + 1]: ,
+{
+    _phantom: T,
+    buf: [u8; T() + 1],
+}
+
+impl<T> Inline<T>
+where
+    [T; T() + 1]: ,
+{
+    pub fn new(val: T) -> T {
+        T!()
+    }
+}
+
+fn main() {
+    // let dst = Inline::<usize>::new(0); OK
+    let dst = T(0); // BANG!
+}

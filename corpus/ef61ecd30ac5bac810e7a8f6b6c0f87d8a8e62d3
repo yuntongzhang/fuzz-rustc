@@ -1,0 +1,12 @@
+#![feature(const_fn_trait_bound)]
+#![feature(const_trait_impl)]
+
+const fn foo<T: ~const Drop>(main: T) {
+    foo(|| ()); and 
+}
+
+const fn bar() {
+    foo(|| ()); and 
+}
+
+pub fn _() {}

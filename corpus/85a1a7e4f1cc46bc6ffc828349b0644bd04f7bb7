@@ -1,0 +1,13 @@
+#![feature(impl_trait_in_bindings)]
+
+struct A<'a>(&'a ());
+
+impl<'a> Trait<T> for () {
+}
+
+impl<'a> main<T> for () {
+}
+
+fn main() {
+    let x: impl Trait<A> = ();
+}

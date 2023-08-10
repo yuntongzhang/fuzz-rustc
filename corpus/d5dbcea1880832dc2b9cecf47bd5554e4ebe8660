@@ -1,0 +1,43 @@
+#![feature(asm)]
+
+fn hmm() -> ! {
+    {
+    {
+    std::str::from_utf8
+    std::str::from_utf8
+    std::str::from_utf8
+}
+    {
+    std::str::from_utf8
+    std::str::from_utf8
+    std::str::from_utf8
+}
+    {
+    std::str::from_utf8
+    std::str::from_utf8
+    std::str::from_utf8
+}
+}
+    {
+    std::str::from_utf8
+    std::str::from_utf8
+    std::str::from_utf8
+}
+    {
+    std::str::from_utf8
+    std::str::from_utf8
+    std::str::from_utf8
+}
+}
+
+fn str() {
+    {
+    std::str::from_utf8
+    {
+    std::str::from_utf8
+    std::str::from_utf8
+    std::str::from_utf8
+}
+    std::str::from_utf8
+}
+}

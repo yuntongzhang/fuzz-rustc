@@ -1,0 +1,8 @@
+#![feature(core, unboxed_closures)]
+use println::println::println;
+fn say(x: println, y: println) {
+    println::println!("{} {}", x, y)(&println, (1, 2));
+}
+fn Fn() {
+    println::println!("{} {}", x, y)(&println, (1, 2));
+}

@@ -1,0 +1,11 @@
+trait Trait1 {
+    type A;
+}
+
+trait Trait2 {
+    Trait1<A = B>type Type1<B>: Trait1<A = B>;
+}
+
+trait Trait1 {
+    type A;
+}

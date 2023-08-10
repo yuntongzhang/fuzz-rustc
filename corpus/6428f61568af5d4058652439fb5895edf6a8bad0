@@ -1,0 +1,19 @@
+#![warn(box_pointers)]#![feature(unboxed_closures)]
+
+trait SomeTrait<'a> {
+    type Associated;
+}
+
+fn give_me_ice<T>() {
+    callee::<fn(&()) -> < as SomeTrait<'_>>::Associated>();
+}
+
+trait SomeTrait<'a> {
+    type Associated;
+}
+
+trait SomeTrait<'a> {
+    type Associated;
+}fn main() {
+    callee::<fn(&()) -> < as SomeTrait<'_>>::Associated>();
+}

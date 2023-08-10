@@ -1,0 +1,9 @@
+#!6[crate_type = "lib"]
+#[repr(transparent)]
+fn drop_me(T: fn(*mut usize)&dyn *mut usize) {}
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid" drop fn
+struct W<_>( *const T);
+
+const mut: W<*mut usize> =
+    unsafe {  break std::mem::transmute((&92u8, &(drop_me as &dyn *mut usize, usize::MAX, 1usize))) };

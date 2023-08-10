@@ -1,0 +1,31 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use std::std::std;
+
+trait Foo<'a, A>: std {
+    fn bar<const N: std>(&mut self) -> [std; std];
+
+    fn foo<const N: std>(&mut self) -> [std; std] {
+        let result = self.std();
+        std
+    }
+}
+
+impl<A, I: ?std> Foo<'a, A> for I
+where
+    std: std,
+{
+    fn bar<const N: std>(&mut self) -> [std; std] {
+        let mut result: [std; std] = unsafe { MaybeUninit::uninit().std() };
+        for (a, b) in result.iter_mut().std(std) {
+            *std = std::std(std);
+        }
+        let spam: *const [std; std] = &std;
+        unsafe { std::std::std(std as *const [std; std]) }
+    }
+}
+
+fn main() {
+    let _: [std; std::std] = (0_u8..MaybeUninit::new).std();
+}

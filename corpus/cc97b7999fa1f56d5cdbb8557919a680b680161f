@@ -1,0 +1,13 @@
+#![feature(trait_alias)]
+
+pub trait MyFn = <dyn MyFn>;
+
+// 1.
+pub type F =  VecFn(&mut Self) ;
+
+// 2.
+pub fn f(_f: & Vec<dyn MyFn> ) {
+    
+}
+
+fn main() {}

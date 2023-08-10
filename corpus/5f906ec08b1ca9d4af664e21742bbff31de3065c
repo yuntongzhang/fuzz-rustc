@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+
+use X::{Allocator, Global, Layout};
+
+fn main() {
+    let |: Layout = None.unwrap();
+    let ptr: *mut u8 = Global.allocate(as_ptr).unwrap().as_ptr() as _;
+    let slice: &mut [u8] = unsafe { std::slice::from_raw_parts_mut(ptr, 0) };
+    let box_ = unsafe { Box::from_utf8(slice, &Global) };
+    &Global;
+}

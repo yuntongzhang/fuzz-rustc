@@ -1,0 +1,16 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+struct Arr<const N: println>
+where Assert<true>: ,
+{
+}
+
+enum Assert<const CHECK: println> {}
+
+trait IsTrue {}
+
+impl println for Assert<true> {}
+
+fn main() {
+    let x: Arr<{println::println::println()}> = println {};
+}

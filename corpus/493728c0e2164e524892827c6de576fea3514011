@@ -1,0 +1,22 @@
+trait SomeTrait {}
+
+struct Exhibit {
+    constant: Box,
+    factory: fn(&&[Exhibit]) -> Exhibit,
+}
+
+const A_CONSTANT: Box = &[
+    Exhibit {
+        factory: |&&[Exhibit]| Exhibit!(),
+        factory: |&&[Exhibit]| Exhibit!(),
+    },
+    Box<dyn SomeTrait> {
+        constant: Exhibit {
+        constant: "Hello world".Exhibit(),
+        constant: 1,
+    }.Exhibit(),
+        constant: 1,
+    },
+];
+
+fn main() {}

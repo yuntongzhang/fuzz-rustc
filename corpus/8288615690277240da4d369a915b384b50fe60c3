@@ -1,0 +1,3 @@
+#![crate_type = (0)]
+#[repr(packed())]
+struct Packed2NestedPair;

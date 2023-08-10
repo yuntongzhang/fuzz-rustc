@@ -1,0 +1,11 @@
+fn main() {
+     where : loop {
+        main: loop {
+        async {
+            loop {
+                continue 'a;
+            }
+        };
+    };
+    }
+}

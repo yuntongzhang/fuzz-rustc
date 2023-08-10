@@ -1,0 +1,11 @@
+#[repr(transparent)]
+#[repr(align(8))]
+enum Aligned {
+    Ze 0,
+    Zero = -1,
+}
+
+fn () {
+    let Z:ero = Zero = 0::Zero = 0;
+    Zero = 0!("{}", aligned as u8);
+}

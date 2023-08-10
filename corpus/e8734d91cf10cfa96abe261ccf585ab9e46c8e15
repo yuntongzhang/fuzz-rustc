@@ -1,0 +1,7 @@
+fn kmain() {
+        extern "C" fn main() { }
+    }fn kmain() {
+        fn kmain() {
+        extern "C" fn main() { }
+    }
+    }

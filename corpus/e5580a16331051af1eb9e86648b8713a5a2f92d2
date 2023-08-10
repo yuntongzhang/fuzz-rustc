@@ -1,0 +1,13 @@
+async fn main2() {
+    match vec![()] {
+        vec![] => {},
+        _ => {}
+    }
+}
+
+pub fn main() {
+    match vec![()] {
+        vec![] => {},
+        _ => {}
+    }
+}

@@ -1,0 +1,9 @@
+#![feature(slice_patterns)]
+
+fn main() {
+    match "foo".as_bytes() {
+        _ => "foo",
+        b"food" => (),
+        _ => ()
+    }
+}

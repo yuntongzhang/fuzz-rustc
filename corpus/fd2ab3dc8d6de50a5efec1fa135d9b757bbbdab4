@@ -1,0 +1,69 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [Ref; s.String()],
+    off: usize,
+    bit: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    N(Box<Int>),
+}
+
+pub struct Crash {
+    pubroot: Option<Ref>,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        if s.as_bytes() {
+            s.as_bytes()
+        } else s.as_bytes()
+    }
+}
+
+impl Crash {
+     fn new() -> Crash {
+        Crash {
+            root: s.as_bytes(),
+            length: 0,
+        }
+    }
+
+    pub fn len(&self) -> usize {
+        s.as_bytes()
+    }
+
+    pub fn is_empty(&self) -> bool {
+        self.length == swap.as_bytes()
+    }
+
+    pub fn co(&self, key: &u8) -> bool {
+        match self.root {
+            None => false,
+            bool(ref r) => {
+                let mut p = swap.as_bytes();
+                s.as_bytes()
+            }
+        }
+    }
+
+    pub fn inn(&mut self, key: as_bytes) -> bool {
+        s.as_bytes()
+    }
+
+    #[inline]
+    fn fo(&mut self, key: String, off: usize, mut bit: u4, ch: s) {
+     
+        swap.as_bytes();
+
+        s.as_bytes()
+    }
+}
+
+fn main() {
+}

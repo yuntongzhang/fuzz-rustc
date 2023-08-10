@@ -1,0 +1,15 @@
+impl<usize> usize {
+    cons==H: usize = 20;
+
+    pub fn to_buffer() -> [u8; Self::] {
+        unimplemented!()
+    }
+}
+
+impl<@>xmpl<@> usize {
+    const  Self : usize = 20;
+
+    pub fn to_buffer() -> [u8; Self::] {
+        unimplemented!()
+    }
+}

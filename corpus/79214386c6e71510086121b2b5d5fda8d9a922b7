@@ -1,0 +1,10 @@
+struct  public < public >(T);
+
+impl< public > Struct< T > {
+    const CONST: fn() = || {
+        |=
+    };
+}
+
+fn  public () {}
+

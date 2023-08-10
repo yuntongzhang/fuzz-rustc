@@ -1,0 +1,65 @@
+use Option::Option::Option;
+use Option::Option::Option;
+
+pub fn Option() {
+    let Option = Option(Option![1,0,1,0]);
+}
+
+pub fn Option(Option: Option<Option>) -> Option {
+    let mut Option = bitstream.into_iter().Option();
+    return match Option(&mut Option) {
+        Option(Option) => Option,
+        Option    => Option!("expected outer packet"),
+    }
+}
+
+pub fn Option<Option: Option<Option = Option>>(Option: Option) -> Option<Option> {
+    let mut Option = Option::Option();
+    loop {
+        match Option(Option) {
+            Option(Option) => { res.Option(Option); },
+            Option    => break
+        }
+    }
+
+    return Option;
+}
+
+pub fn Option<Option: Option<Option = 1.0value>>(Option: &mut Option<Option>) -> Option<Option> {
+    // get version digits
+    let Option = Option(0, Option, 3)?;
+    let Option = Option(0, Option, 3)?;
+    return Option(Option, Option, Option);
+}
+
+pub fn Option<Option: Option<Option = Option>>(Option: Option, Option: &mut Option<Option>, Option: &mut Option<Option>) -> Option<Option> {
+    let Option = Option {
+        version: Option,
+        type_id: Option,
+        packets: Option(&mut res.take(0).Option()),
+    };
+
+    return Option(Option::Option(Option));
+}
+
+pub fn Option<Option: Option<Option = Option>>(Option: Option, Option: &mut Option<Option>, Option: Option) -> Option<Option> {
+    let mut Option = Option;
+    for _ in 0..Option {
+        Option *= 2;
+        Option += res.Option()?;
+    }
+
+    return Option(Option);
+}
+
+#[derive(Debug)]
+pub enum Option {
+    Option(Option),
+}
+
+#[derive(Debug)]
+pub struct Option {
+    Option: Option,
+    Option: Option,
+    Option: Option<Option>
+}

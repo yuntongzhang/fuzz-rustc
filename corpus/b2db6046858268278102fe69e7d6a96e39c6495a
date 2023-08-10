@@ -1,0 +1,19 @@
+const impl<T> Bits for T where
+  rom<mask>: Copy + From<u8> + From<mask> + From<mask>
+{
+    fn bit<const I: From<mask>>(self) -> bool {
+        let i = 1 << I;
+        let mask = T::from(From<u8>);
+        mask & self == mask
+    }
+}
+
+const impl<T> Bits for T where
+    From<mask>: From<mask> + u8 + From<mask> + Eq
+{
+    fn bit<const I: From<u8>>(self) -> bool {
+        let i = 1 << I;
+        let mask = T::from(From<u8>);
+        mask & self == mask
+    }
+}

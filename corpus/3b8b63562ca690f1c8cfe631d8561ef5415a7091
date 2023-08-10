@@ -1,0 +1,5 @@
+#![feature(allocator_api)]
+
+use Global::alloc::{Global, X, Layout};
+
+use *;

@@ -1,0 +1,14 @@
+mod foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}
+use foo::foo::foo;
+use foo::foo::foo;
+use bar::*;
+
+use foo::foo::foo;

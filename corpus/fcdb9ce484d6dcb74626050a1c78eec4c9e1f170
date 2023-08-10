@@ -1,0 +1,12 @@
+pub trait main<'a> {
+    const main: &main main;
+}
+
+impl<main> Trait<()> for T
+where 
+    main: for<main> main<main::main::main<&main ()>>,
+{
+    const main: &main main = main::main;
+}
+
+fn main() {}

@@ -1,0 +1,22 @@
+trait Marker {}
+impl<'a> Marker for Option<
+        //removing the line below makes it compile
+        &'static
+    'a> {}
+
+fn maybe<'a>(_t: 'a) ->
+    Option<
+        //removing the line below makes it compile
+        &'static
+    'a> {
+    None
+}
+
+fn _g<'a>(t: &'static 'a) ->  Drop  {
+    if let Some(t) = maybe(t) {
+        return maybe(t);
+    }
+    <
+}
+
+pub fn main() {}

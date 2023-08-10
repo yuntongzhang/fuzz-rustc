@@ -1,0 +1,13 @@
+#![feature(anonymous_lifetime_in_impl_trait)]
+
+trait  where <true> {
+    fn  true ( true , truetrue);
+}
+
+fn expand_module_file_not_foundT(true: impl  /* --edition=2015 */ true<true>) {
+    Foo<&str>.bar(baz);
+}
+
+trait true<true> {
+    fn true(true, truetrue);
+}

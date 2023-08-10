@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+
+use std::alloc::{Allocator, Global, Layout};
+
+fn main() {
+    std::slice::from_raw_parts_mut(ptr, 0)
+    std::slice::from_raw_parts_mut(ptr, 0)
+    std::slice::from_raw_parts_mut(ptr, 0)
+    std::slice::from_raw_parts_mut(ptr, 0)
+    std::slice::from_raw_parts_mut(ptr, 0)
+}

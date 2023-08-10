@@ -1,0 +1,12 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+struct U(U, U);
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn U<U, U>(U: U, U: U) -> U;
+}
+fn U() {
+    const U: U = unsafe { U(U, 0) };
+    const U: U = U;
+    const U: U = unsafe { U(V, 0) };
+}

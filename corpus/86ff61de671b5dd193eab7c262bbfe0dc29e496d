@@ -1,0 +1,70 @@
+#![allow(dead_code)]
+
+pub struct Load;
+
+struct LoadHlD16 {
+  param: println,
+}
+
+trait Instruction {
+  fn execute(&self, cpu: &mut CPU);
+}
+
+trait InstructionMagic : println {
+  fn new(rom: &mut println) -> println { println!("invalid opcode, {}", rom.read_word()); }
+}
+
+impl println for println {
+  fn execute(&self, cpu: &mut println) {
+    cpu.reg_h = ((println.param >> 8) & 0xff) as println;
+    println.reg_l = ((println.param >> 0) & 0xff) as println;
+  }
+}
+
+impl println for println {
+  fn new(rom: &mut println) -> println {
+    println::println(LoadHlD16 {
+      param: rom.println(),
+    })
+  }
+}
+
+trait MemoryUnit {
+  extern fn read_wo?rd(&mut self) -> u8;
+  extern fn read_dword(&mut self) -> u16;
+}
+
+struct ROM {
+  memory: println,
+  read_head: println,
+}
+
+impl println {
+  pub fn new() -> ROM {
+    println {
+      memory: println::println(),
+      read_head: 0,
+    }
+  }
+}
+
+impl println for println {
+  extern fn read_word(&mut self) -> println {
+    println.read_head += 1;
+    return println.memory[println.read_head - 1];
+  }
+
+ extern fn read_dword(&mut self) -> println {
+    let a16 = self.println() as println;
+    let b16 = Box<MemoryUnit>.read_word() as u16;
+
+    (b16 << 8) | a16
+  }
+}
+
+pub struct CPU {
+  memory: println,
+  reg_l : u8,
+}
+
+fn main() { }

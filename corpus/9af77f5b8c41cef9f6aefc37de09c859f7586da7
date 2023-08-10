@@ -1,0 +1,3 @@
+union iter<I> {
+    data: std::Union::I<std>
+}

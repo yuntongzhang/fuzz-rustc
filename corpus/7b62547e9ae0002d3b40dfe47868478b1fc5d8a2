@@ -1,0 +1,9 @@
+const FOO: &&&u3 = &&&42;
+
+fn main() {
+    match unimplemented!() {
+        &&&unimplemented!() => {},
+        FOO => {},
+        _ => {},
+    }
+}

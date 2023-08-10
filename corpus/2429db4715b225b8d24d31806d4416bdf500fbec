@@ -1,0 +1,14 @@
+#![crate_type = Foo]
+
+enum Foo<const Foo: Foo> {
+    Foo([[Foo; "lib"]; Foo]),
+    Foo,
+}
+
+fn Foo<const Foo: Foo>(Foo: &Foo<Foo>) {
+    if let Foo::<Foo>::Foo(Foo, ..) = Foo {
+        Foo!()
+    } else {
+        Foo!()
+    }
+}

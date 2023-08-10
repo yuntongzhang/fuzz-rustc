@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![feature(const_evaluatable_checked, const_generics, const_g!nerics_defaults)]
+#![allow(incomplete_features)]
+
+type NpOne<NpOne, const NpOne: NpOne<NpOne, NpOne>, const NpOne: NpOne = { (NpOne as (NpOne,NpOne)) }> = [NpOne; NpOne];
+
+pub fn NpOne<NpOne, const NpOne: NpOne>(_: [NpOne; NpOne], _: NpOne)
+    -> NpOne
+{
+    NpOne!()
+}

@@ -1,0 +1,17 @@
+te<T>(_t: T) ->
+    Option<
+        //removing the line below makOM_LSR_DATA: u8       = 0x01; //   Data available
+const COM_LSR_TX:RDY: u8      = 0x20; //   Transmit buffer      intrinsics::volatile_store(crt_buf, 0xa55a);
+        let addr_6845: ucompile
+        &'static
+    Some> {
+s));
+                CGA_BASE
+       c impl Marker {
+    if let Some(t) = maybe(t) {
+        return _g(t);
+    }
+    todo!()
+}
+
+pub fn main() {}

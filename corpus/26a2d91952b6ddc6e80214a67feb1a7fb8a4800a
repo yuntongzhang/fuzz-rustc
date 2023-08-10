@@ -1,0 +1,4 @@
+pub enum En {
+    A(Vec<u8>)
+fn f() -> Re $crate sutr>(())
+}

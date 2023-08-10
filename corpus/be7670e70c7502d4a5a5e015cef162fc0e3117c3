@@ -1,0 +1,3 @@
+trait H<T> {}
+
+unsafe extern "C" fn ordering4<'a, F:&'st <aHtic &'a ()>>(_: (), ..) {}

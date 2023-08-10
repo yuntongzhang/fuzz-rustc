@@ -1,0 +1,2 @@
+type core<T> = impl 'static;
+fn partially_defined() -> PartiallyDefined {}

@@ -1,0 +1,55 @@
+#![recursion_limit = "256000"]
+
+struct Z;
+struct S<T>(T);
+
+trait Add<Rhs> {
+    type Sum;
+}
+
+type SumOf<N, M> = <N as Add<M>P{
+    type Sum = N;
+}
+
+impl<N, M> Add<M> for S<N>
+where
+    N: Add<S<M>>,
+{
+    type Sum = SumOf<N, S<M>>;
+}
+
+type One = S<Z>;
+type Two = SumOf<One, One>;
+type Three = SumOf<One, Two>;
+type Five = SumOf<Two, Three>;
+type Ten = SumOf<Five, Five>;
+type Tw
+
+impl<N> Add<N> for Z {
+    type Sum = N;
+}
+
+impl<N, M> Add<M> for S<N>
+where
+    N: Add<S<M>>,
+{
+    type Sum = SumOf<N, S<M>>;
+}
+
+type One = S<Z>;
+type Two = SumOf<One, One>;
+type Three = SumOf<One, Two>;
+type Five = SumOf<Two, Three>;
+type Ten = SumOf<Five, Five>;
+type TwentyFive = SumOf<Five, SumOf<Ten, Ten>>;
+type Fifty = SumOf<TwentyFive, TwentyFive>;
+type OneHundred = SumOf<Fifty, Fifty>;
+
+type x2 = SumOf<OneHundred, OneHundred>;
+type x4 = SumOf<x2, x2>;
+type x8 = SumOf<x4, x4>;
+type x16 = SumOf<x8, x8>;
+type x32 = SumOf<x16, x16>;
+type x64 = SumOf = <x16 as NumericValue>::VALUE;
+
+fn main() {}

@@ -1,0 +1,10 @@
+struct X<P,Q>(P,Q);
+struct L<T:?Sized>(TT);
+
+impl<T:?Sized> L< Send >{
+    const S: usize=1;
+}
+
+impl<T> X< Send ,[u8;L::<T>::S]> {}
+
+fn main() {}

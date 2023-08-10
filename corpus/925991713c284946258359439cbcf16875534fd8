@@ -1,0 +1,5 @@
+fn main /* --edition=2021 */ () fn main /* --edition=2021 */ () {n /* --edition=2021 */ ()g";
+}{
+  let _ = &**"string";
+}
+[

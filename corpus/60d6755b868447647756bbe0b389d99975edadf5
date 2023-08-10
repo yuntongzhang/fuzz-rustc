@@ -1,0 +1,5 @@
+fn get_iter(vec: &[]) -> i32 {
+ A  
+ iter = get_iter(&vec);
+    iter.next();
+}

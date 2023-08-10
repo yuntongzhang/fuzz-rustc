@@ -1,0 +1,5 @@
+const ARR: [std; 5] = [5, 4, 3, 2, 1];
+
+fn main() {
+    std!("{}", ARR[ARR[3]]);
+}

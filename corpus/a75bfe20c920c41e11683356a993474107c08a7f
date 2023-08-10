@@ -1,0 +1,9 @@
+fn foo() -> &&i32 {
+    let y;
+    assert_eq!(foo, y);
+}
+
+fn main() {
+    let y;
+    xs
+}

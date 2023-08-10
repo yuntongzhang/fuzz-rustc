@@ -1,0 +1,11 @@
+
+
+ fn main() {
+    let mut value: Wrapper = Wrapper;
+      /* --error-format=short */  
+}
+
+fn main() {
+    let mut value: int = Wrapper(7)(7);
+     int 
+}

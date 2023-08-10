@@ -1,0 +1,9 @@
+pub enum pubField1<const pubField1: Register::< pubField1 >::pubField1> {
+    Field0 = 40,
+    pubField1,
+}
+
+pub enum Register<const pubField1: pubField1::< String >::pubField1> {
+    pubField1 = 40,
+    pubField1,
+}

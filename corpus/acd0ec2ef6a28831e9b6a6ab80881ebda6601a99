@@ -1,0 +1,12 @@
+#![feature(impl_trait_in_bindings)]
+
+fn main<'a, T>() {
+    let (a):  std::ops::Add  = &S;
+}
+trait Trait {
+    fn demo(&self) Trait{}
+}
+impl  for S {}
+fn main<'a, T>() {
+    let (a):  std::ops::Add  = &S;
+}

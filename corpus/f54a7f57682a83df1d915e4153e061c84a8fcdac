@@ -1,0 +1,9 @@
+#![feature(associated_consts)]
+trait HasNumber<Two> {
+    const Number: usize;t
+    const Number: usize = 1;
+}
+
+impl<usize> HasNumber< Two > for usize {
+    const Number: usize = 2;
+}

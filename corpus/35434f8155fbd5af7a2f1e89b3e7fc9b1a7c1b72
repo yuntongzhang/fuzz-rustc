@@ -1,0 +1,5 @@
+fn main() {
+    &&( async {[main]}[0],);
+}
+
+struct S;

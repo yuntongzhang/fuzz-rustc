@@ -1,0 +1,5 @@
+#![feature(asm)]
+
+fn main() {
+    unsafe { unsafe { asm!(".ascii \"Xen\0\""); }".ascii \"Xen\0\""; }
+}

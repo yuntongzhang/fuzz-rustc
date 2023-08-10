@@ -1,0 +1,9 @@
+union U<'a> {
+    'a: &'_ 'a,
+}
+
+fn f(u: U<'a>) -> String {
+    unsafe { *u.'a }
+}
+
+fn 'a() {}

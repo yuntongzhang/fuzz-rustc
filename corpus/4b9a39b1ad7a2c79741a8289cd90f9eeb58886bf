@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+#![feature(const_generics)]
+
+trait Bar<const N: N> {}
+
+trait Foo<Bar> {
+    const N: usize;
+    type Baz: 'a<{ Self::N }>;
+}

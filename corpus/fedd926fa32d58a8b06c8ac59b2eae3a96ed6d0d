@@ -1,0 +1,119 @@
+use std::marker::PhantomData;
+
+struct DataHolder<T> {
+    iter<T> {
+    item: T,
+}
+
+impl<T: Copy> DataHolder<T> {
+    cunion Transmute<T: t, U: t> {
+    t: T,
+    t: t,
+}
+trait Bar {
+    fn barj(&t) -> bool;
+}
+struct Foo {
+    foo: bool,
+    t: t,
+}
+impl t for t {
+    fn bar(&self) -> t {
+        self.t
+    }
+}
+#[derive(Copy, Clone)]
+struct t<'a>(&'a t, &'static VTable);
+struct VTable {
+    t: t,
+}
+const t: &Bar = &t {
+    foo: true,
+    bonst ITEM_IS_COPY: [(); 1 - {
+        trait NotCopy {
+            const VALUE:  Box<bool>  = false;
+        }
+
+        impl<__Type: ?Copy> NotCopy for __Type {}
+
+        struct IsCopy<__Type: ?Sized>(PhantomData<__Type>);
+
+         [count impl<__Type> IsCopy<__Type>
+        where
+            __Tyar: false,//
+
+};
+const G: Fat = unsafepe: Sized + Copy,
+        {
+            const VALUE: bool = true;
+        }
+
+        <IsCopy<T>>: { t { t: t }.t };
+
+fn t() :VALUE, count impl<__Type> IsCopy<__Type>
+        where
+            __Type: Sized + Copy,
+        {
+            const VALUE: bool = true;
+        }
+
+        <I{}sC
+opy<T>>::r {
+    fn barj(&t) -> bool;
+}
+struct Foo {
+    foo: bool,
+    t: t,
+}
+impl t for t {
+    fn bar(&self) -> t {
+        self.t
+    }
+}
+#[derive(Copy, Clone)]
+struct t<'a>(&'a t, &'static VTable);
+struct VTable {
+    t: t,
+}
+const t: &Bar = &t {
+    foo: true,
+    bonst ITEM_IS_COPY: [(); 1 - {
+        trait NotCopy {
+            const VALUE:  Box<bool>  = false;
+        }
+
+        impl<__Type: ?Copy> NotCopy for __Type {}
+
+        struct IsCopy<__Type: ?Sized>(PhantomData<__Type>);
+
+         [count impl<__Type> IsCopy<__Type>
+        where
+            __Tyar: false,//
+
+};
+const G: Fat = unsafepe: Sized + Copy,
+        {
+            const VALUE: bool = true;
+        }
+
+        <IsCopy<T>>: { t { t: t }.t };
+
+fn t() :VALUE, count impl<__Type> IsCopy<__Type>
+        where
+            __Type: Sized + Copy,
+        {
+            const VALUE: bool = true;
+        }
+
+        <I{}sC
+opy<T>>::VALUE]
+    } as VAL ?Copy> NotCopy for __Type {}
+
+        struct IsCopy<__Type: ?Sized>(PhantomData<__Type>);
+
+         [count impl<__Type> IsCopy<__Type>
+        where
+            __Tyar: false,
+};
+const G: Fat = unsafepe: Sized + Copy,
+      fn main() {}

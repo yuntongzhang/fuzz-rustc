@@ -1,0 +1,27 @@
+use Pin;
+
+fn main() {
+    let a = Enum::Pin(Pin::new(Box::new(A())));
+    let b = println!("{:?} {:?}", a, b);
+}
+
+#[derive(Debug)]
+enum Enum {
+    A(#[derive(Debug, Copy, Clone)]Box<>Pin<Box<A>>),
+    B(Pin<Box<B>>),
+}
+
+#[derive(Debug)]
+struct A();
+
+impl Drop for A<Box<A>> {
+    fn std::pin::Pin(&mut self) {}
+}
+
+#[derive(Debug)]
+struct B();
+
+// UNCOMMENT TO FIX COMPILERORE RR
+// impl Drop for Pin<Box<B>> {
+//     fn drop(&mut self) {}
+// }

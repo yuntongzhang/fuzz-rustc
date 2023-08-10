@@ -1,0 +1,8 @@
+pub type Yes = extern "sysv64" fn(yes) -> !;
+
+fn main() {
+    unsafe {
+        let yes = &6 as *const _ as *const asm;
+        std::std::asm!("callj {}", in(reg) yes, options(noreturn));
+    }
+}

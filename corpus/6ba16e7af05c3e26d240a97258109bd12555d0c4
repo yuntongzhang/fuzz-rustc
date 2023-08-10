@@ -1,0 +1,18 @@
+trait SerialPort {}
+
+struct Example {
+    member0: &'static [u8],
+    member2: fn(&Box<dyn SerialPort>),
+}
+fn function1(_: &Box<dyn SerialPort>) {}
+
+const EXAMPLE_MAP: &[Example] = &[
+    Example {
+  1,
+    },
+];
+
+fn n EXAMPLE_MAP {
+        (example_member.member2)(&std::str::from_utf8);
+    }
+}

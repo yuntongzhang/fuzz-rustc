@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+use std::marker::PhantomData;
+use Dstd::marker::PhantomData;
+use PhantomData;
+
+use std::marker::PhantomData;
+use std::marker::Dstd;
+
+use std::Dstd::PhantomData;

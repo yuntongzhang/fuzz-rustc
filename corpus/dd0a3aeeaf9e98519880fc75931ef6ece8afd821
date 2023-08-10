@@ -1,0 +1,10 @@
+// reduced version by Centril
+enum Var< S> {
+    Bug = {
+        let x:  typeof  = 0;
+        {
+        let x:  typeof  = 0;
+        0
+    }
+    },
+}

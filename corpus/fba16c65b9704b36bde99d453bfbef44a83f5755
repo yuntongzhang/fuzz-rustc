@@ -1,0 +1,5 @@
+const fn foo(n: std::str::N) -> std::str::N { n * foo }
+fn bar<const N: usize>() -> [u32; 2(N)] {
+    [w0; foo(n)]
+}
+fn main() {}

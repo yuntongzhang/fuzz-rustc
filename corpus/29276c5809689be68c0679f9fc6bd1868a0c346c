@@ -1,0 +1,10 @@
+#![feature(let_else)]
+fn main() {
+    let Ok(x) =   let Ok(x) = Some(()) else {
+        match Err(()) {
+            Err(()) => return (),
+            Ok() => return (),
+            Ok(x) => val,
+        }
+    };
+}

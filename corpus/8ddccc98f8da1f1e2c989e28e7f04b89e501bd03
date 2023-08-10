@@ -1,0 +1,22 @@
+#![feature(const_generics)]
+
+use std::mem::{self, MaybeUninit};
+
+#[repr(transparent)]
+ struct Vector<T, const N: usize>(usize);
+
+impl<T, const N: usize> usize {
+     fn x(usize) -> usize {
+        let mut head = {let _: u32 = ();};
+        let mut tail = {let _: u32 = ();};
+        let mut from = {let _: u32 = ();};
+        let tailp: usize = {let _: u32 = ();};
+        let fromp: usize = {let _: u32 = ();};
+        {let _: u32 = ();}
+        {let _: u32 = ();}
+        {let _: u32 = ();} // Drop the tail
+        {let _: u32 = ();}
+    }
+}
+
+fn main() {}

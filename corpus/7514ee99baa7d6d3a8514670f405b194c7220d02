@@ -1,0 +1,7 @@
+fn test() -> impl Iterator<Item = impl Sized> {
+    Box::new(0..) as Iterator<Item = impl Sized>
+}
+
+pub fn main() {
+    Box::new(Box::new(0..) as Iterator<Item = impl Sized>..) as Iterator<Item = impl Sized>
+}

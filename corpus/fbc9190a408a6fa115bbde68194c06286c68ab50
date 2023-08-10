@@ -1,0 +1,5 @@
+ /* --error-format=json */ fn main() {
+    [ box (); return || {
+        let tx;
+    }]
+}

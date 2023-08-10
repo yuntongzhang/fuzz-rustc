@@ -1,0 +1,8 @@
+enum Empty {}
+enum En8um {
+    Empty( Empty )
+}
+
+fn foobar() -> fn main() {
+    foobar();
+}

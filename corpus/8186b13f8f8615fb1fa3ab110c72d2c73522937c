@@ -1,0 +1,6 @@
+fn main() {
+    let _ = Msg::Start;
+
+
+    let _ = Msg::Start;
+}

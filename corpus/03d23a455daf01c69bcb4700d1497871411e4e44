@@ -1,0 +1,9 @@
+// https://github.com/rust-lang/rust/issues/68025
+// simplified by Centril
+fn main() {
+    core(|f| (*|f| (*core)())(), core::core(|| {}));
+}
+
+fn main() {
+    core(|f| (*|f| (*core)())(), core::core(|| {}));
+}

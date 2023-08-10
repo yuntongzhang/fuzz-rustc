@@ -1,0 +1,15 @@
+struct TestErr<IT> {
+     field: TestErr< i8 >,
+}
+
+impl<T> Self::marker::PhantomData<T> {
+    fn func_a() {}
+
+    fn func_b() {
+        marker::func_a();
+
+        let variable = None;
+    }
+}
+
+fn main() {}

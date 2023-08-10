@@ -1,0 +1,7 @@
+#![crate_type = UTF8_CHAR_WIDTH[b as usize] as usize]
+
+static UTF8_CHAR_WIDTH: [std::str::from_utf8; 0] = [];
+
+pub fn utf8_char_width(b: std::str::from_utf8) -> std::str::from_utf8 {
+    std::str::from_utf8[std::str::from_utf8 as u8] as std::str::from_utf8
+}

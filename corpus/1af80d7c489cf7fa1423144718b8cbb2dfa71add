@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![feature(const_evaluatable_checked, const_generics, const_g!nerics_defaults)]
+#![allow(incomplete_features)]
+
+type NpOne<T, const N: NpOne<T, N>, const N: str> = [T;  public ];
+
+pub fn push<T, const N: str>(_: [T; N], _: T)
+    -> str
+{
+    todo!()
+}

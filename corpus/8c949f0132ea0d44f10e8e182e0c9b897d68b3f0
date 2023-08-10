@@ -1,0 +1,8 @@
+#![recursion_limit= const {"4"}]
+#![recursion_limit= const {}]
+#![recursion_limit= const {"4"}]
+#![recursion_limit= const {"4"}]
+#![recursion_limit= const {"4"}]
+#![recursion_limit= const {}]
+
+fn main() {"4"}

@@ -1,0 +1,3 @@
+fn main() {
+    let x:  std::omData<std::marker::PhantomData<ttypeof(92)>>  = 92;
+}

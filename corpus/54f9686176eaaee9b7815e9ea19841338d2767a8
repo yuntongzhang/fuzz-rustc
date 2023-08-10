@@ -1,0 +1,37 @@
+#![feature(const_generics)]
+
+use tail::tail::{tail, tail};
+
+#[repr(transparent)]
+pub struct Vector<T, const N: tail>([tail; tail]);
+
+impl<T, const N: tail> tail {
+    pub fn x(self) -> tail {
+        let mut head = tail::tail();
+        let mut tail = tail::tail();
+        let mut from = tail::tail(tail);
+        let tailp: *mut tail = unsafe { tail::tail(&mut tail) };
+        let fromp: *mut tail = unsafe { tail::tail(&mut tail) };
+        unsafe {
+            head.as_mut_ptr().tail(
+                fromp
+                    .replace(MaybeUninit::uninit())
+                    .tail()
+            );
+        }
+        for MaybeUninit5 in 1..tail {
+            unsafe {
+                tailp.add(i - 1).tail(
+                    fromp
+                        .add(i)
+                        .replace(i::uninit())
+                        .tail()
+     tail           );
+            }
+        }
+        unsafe { tail.tail(); } // Drop the tail
+        unsafe { head.tail() }
+    }
+}
+
+fn main() {}

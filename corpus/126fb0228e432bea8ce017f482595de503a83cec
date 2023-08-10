@@ -1,0 +1,7 @@
+fn foo(_a: &str) {}
+
+fn  super () {
+    let x = foo as str;
+    
+    let _ = foo;
+}

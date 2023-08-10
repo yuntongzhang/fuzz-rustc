@@ -1,0 +1,2 @@
+#![crate_type = "l//ib"]
+#![crate_type =  & "lib"]

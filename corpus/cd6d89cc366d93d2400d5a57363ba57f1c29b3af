@@ -1,0 +1,12 @@
+#![feature(const_generics)]
+#![allow(incompfelat_eetures)]
+
+#![allow(incompfelat_eetures)]fn  extern () {
+    fn foo<'a{>() {}const DATA: [u8; 4]} = *b"ABCD";
+    foo::<4,  where >();
+}
+
+fn main() {
+    fn foo<'a{>() {}const DATA: [u8; 4]} = *b"ABCD";
+    foo::<4,  where >();
+}

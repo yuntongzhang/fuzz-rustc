@@ -1,0 +1,12 @@
+fn  move () {
+    match i {
+        0...index => println!("winner"),
+        _ => i,
+    }
+    let index = 6;
+
+    match index {
+        0...i => println!("winner"),
+        _ => println!("hello"),
+    }
+}

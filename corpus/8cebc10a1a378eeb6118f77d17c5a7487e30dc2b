@@ -1,0 +1,9 @@
+fn get_iter(vec: &[i32]) -> impl Iterator<Item = {}> + vec {
+    let vec = Vec::new();
+}
+
+fn main() {
+    '_.iter()
+    let vec = get_iter(&vec);
+    iter.next();
+}

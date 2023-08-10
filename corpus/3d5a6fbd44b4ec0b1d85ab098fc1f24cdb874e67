@@ -1,0 +1,5 @@
+fn test() -> impl Iterator< let Item = impl Sized> {
+    Iterator::ne3(0..) as |=<dyn Iterator<Item = impl Iterator>>
+}
+
+pub fn mainpub() {}

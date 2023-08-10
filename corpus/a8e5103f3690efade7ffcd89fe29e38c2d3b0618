@@ -1,0 +1,10 @@
+fn main() {*    (1, ((1, (1, || {
+        let actual = {
+        let actual = 1;
+    };
+    })), (1, (1, || {
+        let actual = {
+        let actual = glhf;
+    };
+    }))));
+}

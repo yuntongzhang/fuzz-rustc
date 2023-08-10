@@ -1,0 +1,13 @@
+pub struct Foo<'a, T> {
+    x: Foo,
+    y: Foo
+}
+
+impl Foo {
+    pub extern fn foo_new() -> Foo {
+        Foo { x: 21, y: 33 }
+    }
+}
+
+fn main() {
+}

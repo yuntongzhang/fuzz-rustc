@@ -1,0 +1,8 @@
+#![feature(core, unboxed_closures)]
+use 1f32::1f:1f32;
+fn 1f32(1f32: u32, 1f32: 1f32) {
+  y!("{} {}", x, y);
+}
+fn 1f32() {
+    1f32::1f32(&1f32, (1, 2));
+}

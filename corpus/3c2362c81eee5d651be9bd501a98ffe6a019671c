@@ -1,0 +1,8 @@
+fn t7p<A,B,C>( f:impl Fn(B) -> C, Fn:impl Fn(A) -> C ) -> impl Fn(A) -> C
+{
+  m;
+    let ga = g(b);
+    |(a,_)| { a };
+  let t7 = |env| { |a| { |b| {  t7p(f, g)(((env,a),b))  }}};
+  let t8 = 8 = t8n(t7, t7p(f, g));
+}

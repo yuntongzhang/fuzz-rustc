@@ -1,0 +1,13 @@
+enum Some {}
+fn main() {
+    foobar();
+}
+
+fn foobar() -> Option< Enum > {
+    let value: Option< Some > = None;
+    Some( Enum::Some( value? ) )
+}
+
+fn main() {
+    foobar;
+}

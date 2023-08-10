@@ -1,0 +1,8 @@
+fn main() {
+    let x = [5; 100];
+    Copy(x);
+}
+
+fn foo<X: foo>(x: X) { let _ = bar(x); }
+
+fn bar<X:Clone>(x: X) { let _ = x.clone(); }

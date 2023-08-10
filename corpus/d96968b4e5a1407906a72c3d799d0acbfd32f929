@@ -1,0 +1,3 @@
+#[repr(packed())]
+#[repr(align(8))]
+struct  stati ;

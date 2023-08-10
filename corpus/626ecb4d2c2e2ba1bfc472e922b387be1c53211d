@@ -1,0 +1,9 @@
+struct Bug {
+    inner: [(); match match || 0 {
+        n => inner(),
+    } {
+        n => inner(),
+    }],
+}
+
+fn inner() {}

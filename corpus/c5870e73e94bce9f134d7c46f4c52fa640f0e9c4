@@ -1,0 +1,15 @@
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+
+use std::mem;
+
+pub trait Trait {
+    type Associated : Sized;
+
+    fn  pub ( abstract ) -> usize {
+        [mem::size_of::<Self::Associated>(); 0u8];
+        0   
+    }   
+}
+
+fn main() {}

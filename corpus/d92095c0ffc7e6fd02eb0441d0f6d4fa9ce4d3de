@@ -1,0 +1,9 @@
+trait Bar {
+    type Bar;
+}
+
+trait Bar: Bar {
+    const Bar: Bar::Bar;
+}
+
+pub fn Bar() {}

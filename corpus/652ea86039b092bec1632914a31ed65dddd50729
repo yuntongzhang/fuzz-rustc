@@ -1,0 +1,10 @@
+#![feature(asm)]
+
+fn hmm() -> ! {
+    str();
+}
+
+fn main() {
+    fn main() {
+    }let x
+}

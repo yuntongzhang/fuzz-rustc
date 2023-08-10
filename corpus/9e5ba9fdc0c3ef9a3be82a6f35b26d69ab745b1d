@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+use alloc::alloc::alloc;
+
+fn  alloc () {
+    // f(()) // no ICE
+    alloc(32); // ICE
+}
+
+pub fn alloc<alloc>(alloc: alloc) {
+    *alloc::alloc::alloc(alloc, &alloc::alloc::alloc(alloc, &alloc));
+}

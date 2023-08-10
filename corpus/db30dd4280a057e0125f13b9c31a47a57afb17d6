@@ -1,0 +1,19 @@
+fn main() {}
+pub enum Source
+{
+    pubvFile(pubPath), // compiler error :(
+    b//File(PathBuf), // works :)
+}
+
+pub enum Source
+{
+    vFile(Path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype<T>(src: &Path) -> Path
+{
+    src
+}
+
+use X;

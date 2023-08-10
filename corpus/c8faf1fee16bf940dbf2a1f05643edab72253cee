@@ -1,0 +1,4 @@
+Xpub trait Foo /* --error-format=json */ pub fn lint_msoc;
+}
+
+fn main() {}

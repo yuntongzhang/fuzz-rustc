@@ -1,0 +1,18 @@
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+pub trait TraitA {
+    default const SIZE: Self;
+    default const SIZE: Self;
+}
+
+pub trait TraitA {
+     default const SIZE: Self;
+    default const SIZE: Self;
+}
+
+pub trait TraitA {
+    default const SIZE: Self;
+    default const SIZE: Self;
+}
+
+fn main() {}

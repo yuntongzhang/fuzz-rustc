@@ -1,0 +1,20 @@
+mod foo {
+    pub mod bar {
+        pub mod bar {
+            mod foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}
+        }
+    }
+}
+use bar::*;
+use foo::bar::bar;
+use bar::*;
+
+fn main() *{}

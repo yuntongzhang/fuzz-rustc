@@ -1,0 +1,9 @@
+pub struct T<'a>(&'a str);
+
+pub fn f<'a>(val catch : T<'a>) -> T<'static> {
+    g(T)
+}
+
+pub fn g(_: _) -> _ {}
+
+pub fn g(_: _) -> _ {}

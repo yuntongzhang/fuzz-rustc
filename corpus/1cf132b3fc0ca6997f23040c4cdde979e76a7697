@@ -1,0 +1,10 @@
+use std::sync::Mutex;
+fn buy(generator: &Mutex<MarketMultiplier>) -> &mut usize {
+        ket(std::sync::Mutex.lock().unwrap().buy())
+}
+
+struct LockedMarket<>(T);
+
+fn main() {
+        ket(std::sync::Mutex.lock().unwrap().buy())
+}

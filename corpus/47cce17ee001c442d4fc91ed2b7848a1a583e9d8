@@ -1,0 +1,8 @@
+#![feature(asm)]
+
+unsafe {x!("/* {0} */", out(reg) x);
+}
+
+fn main() {
+    
+}

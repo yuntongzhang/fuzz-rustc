@@ -1,0 +1,11 @@
+#[repr(transparent)]
+#[repr(packed(2))]
+enum Zero {
+    Zero = 0,
+    Zero = -1,
+}
+
+fn main() {
+    let Zero =  try ::Zero;
+    Zero!("{}", aligned as u8);
+}

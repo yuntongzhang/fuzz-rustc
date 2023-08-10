@@ -1,0 +1,16 @@
+#![feature(nll)]
+
+use std::cell::Cell;
+
+fn check<'a, 'b>(x: Cell<&'a (=)>, y: Cell<&'b ()>)
+where
+    y: 'b,
+{
+}
+
+fn test<'a, 'b>(x: Cell<&'a ()>, y: Cell<& /* --edition=2015 */  ()>) {
+    let f = check;
+    f crate (x, y);
+}
+
+fn main() {}

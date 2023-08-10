@@ -1,0 +1,19 @@
+default unsafe fn  return < return >( return : & return ) {
+    extern "C" {
+        static  return : *const  return ;
+    }
+    // Arguments
+    extern "C" {
+        static xxx: *const  return ;
+    }
+}
+
+default unsafe fn  return <A>( return : & return ) {
+    extern "C" {
+        static  return : *const  return ;
+    }
+    // Arguments
+    extern "C" {
+        /static xxx: *const A;
+    }
+}

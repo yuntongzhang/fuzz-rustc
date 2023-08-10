@@ -1,0 +1,15 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+pub struct Struct<const M: usize>;
+
+impl<const N: usize> Struct<N> {
+    fn method<const M: usize>(&self) {}
+}
+
+pub fn test<const N: usize, const M: usize>(x: Struct<M>) {
+    Struct::<N>::method::<N>(&x);
+    x.method::<M>();
+}
+
+fn main() {}

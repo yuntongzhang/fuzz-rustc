@@ -1,0 +1,10 @@
+#![crate_type = A {
+     {{root}} ,
+}]
+use std::path::Path;
+struct Option {
+    pub func: fn(check: bool, a: &Path, Option<&Path>),
+}
+const MY_A: A = A {
+     {{root}} ,
+};

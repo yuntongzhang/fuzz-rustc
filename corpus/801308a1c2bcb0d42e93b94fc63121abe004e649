@@ -1,0 +1,14 @@
+#![feature(slice_patterns)]
+
+fn  String () {
+    match "foo". String () {
+        b"food" =>  String !("f!"),
+        [ String !("f!"), ..] => match "foo". String () {
+        b"food" =>  String !("f!"),
+        [ String !("f!"), ..] => match "foo". String () {
+        b"food" =>  String !("f!"),
+        [ String !("f!"), ..] => ()
+    }
+    }
+    }
+}

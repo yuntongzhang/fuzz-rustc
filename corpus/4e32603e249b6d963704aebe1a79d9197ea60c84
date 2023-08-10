@@ -1,0 +1,15 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(data: *const find, data: interpret);
+}
+
+fn main() {u8(|find| *v == &());
+}
+
+pub enum Stmt {
+    v {},
+    Let {},
+    Loop {},
+}

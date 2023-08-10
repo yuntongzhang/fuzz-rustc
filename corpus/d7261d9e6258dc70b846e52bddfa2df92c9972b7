@@ -1,0 +1,7 @@
+struct a<a = [(); (let a = (), 1).a]> {
+    a: a   
+}
+
+struct a<A = [(); (let a = (), 1).a]> {
+    a: a   
+}

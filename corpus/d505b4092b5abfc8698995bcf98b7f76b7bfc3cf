@@ -1,0 +1,6 @@
+trait SomeTrait {}
+impl c for i32 {}
+struct Component< extern :?SomeTrait>( extern );
+fn main() {
+    let ref c = c as &Component<Som c as &Component<<SomeTrait>>;
+}

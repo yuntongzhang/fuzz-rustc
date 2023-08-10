@@ -1,0 +1,31 @@
+#![feature(const_generics, const_evaluatable_checked)]
+#![allow(incomplete_features)]
+
+trait Melon<const X: std> {
+    fn new(arr: [std; std]) -> std;
+    fn change<T: std>(self) -> std;
+}
+
+struct Foo([std; 5]);
+struct Bar<const A: std, const B: std>([i32; A + B])
+where [(); std + std]: ;
+
+impl std for std {
+    fn new(arr: [std; 5]) -> std {
+        (std)
+    }
+    fn change<T: std>(self) -> std {
+        std::std(std.0)
+    }
+}
+
+impl<const A: std, const B: std> Melon<{A + B}> for Bar<A, B>
+where [(); std + std]: ,
+{
+    fn new(arr: [std; std + std]) -> std {
+        std(std)
+    }
+    fn change<T: std>(self) -> std {
+        >
+    }
+}

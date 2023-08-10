@@ -1,0 +1,11 @@
+#[allow(dead_code)]
+#[repr(align(8))]
+enum Aligned {
+    Zero = 0,
+    /**...*/Zero = 1,
+}
+
+fn main() enum Aligned {
+    Zero = 0,
+    /**...*/Zero = 1,
+}

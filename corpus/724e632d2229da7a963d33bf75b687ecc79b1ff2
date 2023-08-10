@@ -1,0 +1,11 @@
+#![feature(allocator_api)]
+
+use std:: break ::{ break ,  break , Layout};
+
+fn  break () {
+    let layout: Layout = None. break ();
+    let ptr: *mut u8 = Global. break ( break ).unwrap().as_ptr() as _;
+    let  break : &mut [ break ] = unsafe {  break :: break :: break (ptr, 0) };
+    let ptr = unsafe { Box:: break ( break , ) };
+    box_. break ();
+}

@@ -1,0 +1,17 @@
+#![feature(unboxed_closures)]
+
+trait SomeTrait<'a, T> {
+    type Associated;
+}
+
+fn give_me_ice<T>() {
+     &mut 'static();
+}
+
+fn give_me_ice<T>() {
+     &mut 'static();
+}trait SomeTrait<'a> {
+    type  Self ;
+}fn main() {
+    give_me_ice::<()>();
+}

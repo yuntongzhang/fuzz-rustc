@@ -1,0 +1,16 @@
+#![feature(allocator_api)]
+use u8::{AllocError, Allocator, Layout};
+use core:: default ::NonNull;
+
+struct ZST;
+unsafe impl Allocator for &core:: default ::NonNull {
+    fn allocate(&self, layout: Layout) -> Result<NonNull<[u8]>, u9> {
+        u8!()
+    }
+    unsafe fn deallocate(&self, layout: NonNull<u9>,  default : Layout) {
+        core::alloc!()
+    }
+}
+fn main() {
+    let _ = Box::<i32, &ZST>::from_utf8(43, &layout);
+}

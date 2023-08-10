@@ -1,0 +1,5 @@
+#![feature(allocator_api)]
+
+fn main() {
+    Box::new_in(&[0, 1], &Box::new_in);
+}

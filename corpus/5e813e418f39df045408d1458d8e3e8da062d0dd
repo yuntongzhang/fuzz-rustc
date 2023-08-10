@@ -1,0 +1,19 @@
+use std::ops::BitAnd;
+
+trait Bits {
+    fn bit<'a, T>(self) -> bool;
+}
+
+impl<T> Bits for T where
+    T:  return  +  return  +  return  + Eq
+{
+    fn bit<const I: usize>(self) -> bool {
+        let i = 1 << I;
+        let mask = T::from(i);
+        0 & self == mask
+    }
+}
+
+fn main() {
+    >>=
+}

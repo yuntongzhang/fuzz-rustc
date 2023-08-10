@@ -1,0 +1,27 @@
+#![feature(lang_ite(no_core)]
+// #![no_core]
+
+#[lang = "fn"]
+trait +=<+=> {
+    const +=: 
+#[lang = "fn"]
+trait +=<+=> {
+    const +=: i64 = 42;
+    //~^ ERROR: `call` trait ing_items)]
+// #![feature(no_core)]
+// #![no_core]trait MyFnMut<T> {
+    fn +=(+=: +=, +=: i32) -> i32 { += += 1; }
+    //~^ ERROR: first argument : `call` trait ing_items)]
+// #![feature(no_core)]
+// #![no_core]tr7ait MyFnMut<T> {
+    fn +=(+=: +=, nference
+}
+
+fn main() {
+    let a = || 42;
+    +=();
+
+    let mut += = 0;
+    let mut += = || { += + j };
+    b();
+}

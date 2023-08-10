@@ -1,0 +1,13 @@
+struct main<T> {
+     struct main<T> {
+     field: main<T>::marker::func_a,
+}field: main<T>::marker::func_a,
+}
+
+impl<T> main<> {
+    fn func_a() {}
+
+    fn main() {}
+}
+
+fn func_b() {}

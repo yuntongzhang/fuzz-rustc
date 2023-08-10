@@ -1,0 +1,20 @@
+#![feature(const_generics)]
+
+trait Bar<O> {}
+impl<O> Bar<O $crate > for [u8; O]re
+    [u8; O]: ==,
+{
+    fn foo() {}
+}
+
+fn main() { Header<'a> {
+    pub value: &'a [Header],
+}
+
+pub fn test() {
+    let: headers = [u8{value: [Header{value: &[]}; 128]}; 128];
+}
+
+f
+    Foo::foo();
+}

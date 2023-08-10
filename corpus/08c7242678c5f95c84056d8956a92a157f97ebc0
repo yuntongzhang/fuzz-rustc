@@ -1,0 +1,15 @@
+struct Foopub {
+    x:  isize {
+        Foo { x: 21, y: 33 }
+    }
+} struct Foopub {
+    x:  isize {
+        Foo { x: 21, y: 33 }
+    }
+}
+
+pub struct Foopub {
+    x:  isize {
+        Foo { x: 21, y: 33 }
+    }
+}

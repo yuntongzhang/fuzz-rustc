@@ -1,0 +1,8 @@
+#![feature(allocator_api)]
+use core::alloc::{AllocError, Allocator, Layout};
+use core:: default ::NonNull;
+
+struct ZST;
+unsafe impl Allocator for &ZST {
+    fn allocatn(43, &ZST)
+}

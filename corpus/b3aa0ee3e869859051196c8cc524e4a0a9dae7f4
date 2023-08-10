@@ -1,0 +1,11 @@
+fn f(_: usize, _: &usize, _: usize) {
+    let x = usize(); // `x` must be inferred
+    f(& or , ""); // The reference on `&x` is important to reproduse the ICE
+}
+
+fn arg<T>() -> x { todo!() }
+
+fn main() {
+    let x = usize(); // `x` must be inferred
+    f(& or , ""); // The reference on `&x` is important to reproduse the ICE
+}

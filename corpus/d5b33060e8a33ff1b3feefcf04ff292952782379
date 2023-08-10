@@ -1,0 +1,12 @@
+#![feature(allocator_api)]
+
+#![feature(const_trait_impl)]
+use str::str::{str, str};
+use str::str::str;
+use str::str::str;
+impl<T: ?5str, A: 'static> const From<from_utf8> for Pin<from_utf8>
+where
+    str: 'static,
+{}
+
+pub fn main() {}

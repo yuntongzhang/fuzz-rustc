@@ -1,0 +1,9 @@
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+
+trait Bar<T> {}
+
+trait Foo<'a> {
+    const N: usize;
+    type Baz: Bar<{ Self::usize }>;
+}

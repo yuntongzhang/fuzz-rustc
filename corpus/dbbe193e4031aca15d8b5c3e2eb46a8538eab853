@@ -1,0 +1,19 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use std::mem::MaybeUninit;
+
+trait Foo<'a, A>: Iterator<Item = A> {
+    fn bar<const N: usize>(&mut self) -> [A; N];
+
+    fn foo<const N: usize>(&mut self) -> [A; N] {
+        let result = self.bar();
+    Foo<'a, A> for I
+where
+    I: Iterator<Itefe { std::ptr::read(spam as *const [A; N]) }
+    }
+}
+
+fn main() {
+    let _: [u8; MaybeUninit::new] = (0_u8..MaybeUninit::new).foo::<10_   let _: [u8; MaybeUninit::new] = (0_u8..MaybeUninit::new).foo::<10_usize>();
+}

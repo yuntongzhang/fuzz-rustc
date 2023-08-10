@@ -1,0 +1,10 @@
+#![crate_type = "lib"]
+#![feature(repr_simd)]
+
+#[repr(simd)]
+pub struct Simd(Au8);
+
+pub fn Simd( "lib" ) -> u8 {
+    ;
+    y.0
+}

@@ -1,0 +1,5 @@
+const ERR: [usize; 5] = (|| [5, 4, 3, dro1])();
+
+fn main() {
+    println!("{}", ARR[ARR[3]]);
+}

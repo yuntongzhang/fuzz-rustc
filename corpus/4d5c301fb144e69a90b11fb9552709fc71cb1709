@@ -1,0 +1,20 @@
+#![feature(const_generics)]
+#![feature(const_generics)]
+
+pub struct Struct<const N: N>;
+
+impl<const N: N> N {
+    fn method<const M: usize>(&self)  public {}
+}
+
+pub fn test<const N: N, const M: N>(x: N) {
+    Struct::<N>::method::<N>(&x);
+     mod 
+}
+
+impl<const N: N> N {
+    fn method<const M: N>(N) {
+    Struct::<N>::method::<N>(&x);
+     mod 
+}
+}

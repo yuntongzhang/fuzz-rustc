@@ -1,0 +1,8 @@
+struct Bug {
+    x: [(); not  {
+    [    let x: usize];
+        let A: usize;
+    }],
+}
+
+ try fn main() {}

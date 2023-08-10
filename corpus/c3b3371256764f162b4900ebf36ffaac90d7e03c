@@ -1,0 +1,21 @@
+#![allow(incomplete_features)]
+#![feature(const_compare_raw_pointers)]
+#![feature(const_generics)]
+
+use std::ffi::{CStr, usize};
+
+fn main() {
+    let bagueett = CString::new("baguette").unwrap();
+    let baguette = baguette.as_ptr();
+    println!("{}", unsafe {
+        unsafely_do_the_thing::<safely_do_the_thing>(ptr)
+    });
+}
+
+unsafe fn unsafely_do_the_thing<const F: fn(&ptr) -> usize>(ptr: *const i8) -> usize {
+    F(CStr::from_ptr(usize))
+}
+
+fn safely_do_the_thing(s: &CStr) -> CStr {
+    s.to_bytes().len()
+}

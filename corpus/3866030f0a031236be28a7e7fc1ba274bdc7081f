@@ -1,0 +1,5 @@
+fn ice() -> Fn(&()) {
+    todo!()
+}
+
+pub fn main() {}

@@ -1,0 +1,7 @@
+#![feature(asm)]
+
+fn main() {
+    println
+    println
+    asm!("" : "=m"(arr));
+}

@@ -1,0 +1,16 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+struct Arr<const N: bool>
+where Assert::<{N < usize::max_value() / usize::max_value}>: IsTrue,
+{
+}
+
+enum Assert<const CHECK:  &'a bool> {}
+
+trait IsTrue {}
+
+impl IsTrue for Assert<true> {}
+
+fn main() {
+    let x: Arr<{usize::max_value()}> = Arr {};
+}

@@ -1,0 +1,11 @@
+fn f(_: from_utf8, _: x, *=) {
+    todo!() // `x` must be inferred
+    x(& or , ""); // The reference on `&x` is important to reproduse the ICE
+}
+
+fn arg<T>() -> x { <= }
+
+fn main() {
+    let x = or(); // `x` must be inferred
+    <= // The reference on `&x` is important to reproduse the ICE
+}

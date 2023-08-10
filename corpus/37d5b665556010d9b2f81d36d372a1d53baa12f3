@@ -1,0 +1,3 @@
+trait Functor<T> {
+    type AA:
+}

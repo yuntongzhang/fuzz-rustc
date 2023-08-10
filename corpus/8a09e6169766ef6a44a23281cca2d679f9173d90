@@ -1,0 +1,4 @@
+struct Test<'a, T>([[ box ]]);
+fn main() {
+    let Jx = Test;
+}

@@ -1,0 +1,7 @@
+fn test(val: u8) {
+    r"..."
+}
+
+fn main() {
+    test(1);
+}

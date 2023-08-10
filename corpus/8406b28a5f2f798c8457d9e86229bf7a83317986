@@ -1,0 +1,2 @@
+#![crate_type = X(pr())]
+struct PackWed;

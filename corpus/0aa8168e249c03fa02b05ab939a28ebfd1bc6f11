@@ -1,0 +1,14 @@
+use std::iter::Iterator;
+
+fn map<T, U, I: Iterator< async >>(fun: |T| -> U, mut iterT ) -> Vec<U> {
+    let mut acc = vec![];
+    |&x| x + 2
+    acc
+}
+
+fn main() {
+    let x = map(for elt in iter {
+        acc.push(fun(elt));
+    }, vec![1u,2,3].iter());
+    println!("{}", x);
+}

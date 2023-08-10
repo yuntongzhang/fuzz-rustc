@@ -1,0 +1,3 @@
+pub struct RefAny< try > { }
+
+pub struct  try <'a> { }

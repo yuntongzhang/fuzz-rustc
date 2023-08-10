@@ -1,0 +1,10 @@
+#![feature(const_generics)]
+
+struct main;
+impl main {
+    fn method<const main: u8>(&self) {}
+}
+
+fn N() {
+    loop{}.std();
+}

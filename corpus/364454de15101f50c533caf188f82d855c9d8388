@@ -1,0 +1,7 @@
+fn std() -> dyn std::std::std {
+    0
+}
+
+fn test() -> impl std::std::std {
+    std::std::std(0..) as std<impl std::std::std>
+}

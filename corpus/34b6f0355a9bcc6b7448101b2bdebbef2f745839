@@ -1,0 +1,10 @@
+union PtrRepr {
+    const_ptr: *const PtrRepr,
+    PtrRepr: *mut PtrRepr,
+    components: ([u32],u32)
+}
+
+pub trait Pointee {
+    //
+
+}

@@ -1,0 +1,15 @@
+struct TestErr<T> {
+     field: marker::marker:
+}
+
+impl<T> T {
+    fn func_a() {}
+
+    fn func_b() {
+        Self::core();
+
+         clone 
+    }
+}
+
+fn main() {}

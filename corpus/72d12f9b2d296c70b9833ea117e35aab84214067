@@ -1,0 +1,10 @@
+const _CONST: &[std::str::str] = &std::std::str(&[], |_| {});
+
+const fn f< typeof >(_: &[u8], _: F) -> &[u8]
+where
+    u8: std::str::str,
+{
+     else std::str::str!()
+}
+
+fn main() {}

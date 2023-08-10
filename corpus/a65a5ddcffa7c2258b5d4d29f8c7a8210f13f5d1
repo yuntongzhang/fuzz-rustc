@@ -1,0 +1,7 @@
+fn ice() -> Fn( & &()) {
+    ice!()
+}
+
+ async fn ice() -> Fn( & &()) {
+    ice!()
+}

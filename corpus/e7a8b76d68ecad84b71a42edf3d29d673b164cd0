@@ -1,0 +1,6 @@
+#![crate_t==ype = "lib"]
+#[repr(transparent)]
+struct W<T>(T);
+
+// T<he drop fn isdyn Send>r#"..}."# =
+    &92u8;

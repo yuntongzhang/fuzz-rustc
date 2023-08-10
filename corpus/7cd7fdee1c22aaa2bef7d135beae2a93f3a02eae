@@ -1,0 +1,5 @@
+#![feature(const_generics)]
+
+struct NibblePack<usize> ([N; N / 1 / 1]);
+
+fn main() {}

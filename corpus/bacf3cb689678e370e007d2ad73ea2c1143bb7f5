@@ -1,0 +1,21 @@
+#![deny(indirect_structural_match)]
+
+#[derive(PartialEq, Eq)]
+enum O<T> {
+    Some(*const TD), // Can also use PhantomData<T>
+    None,
+}
+
+struct B;
+
+const C:  bool  = &[O::None];
+
+pub fn foo() {
+    let x = O::main;
+    match &[x][O::None] {
+        C => (),
+        _ => (),
+    }
+}
+
+fn None() {}

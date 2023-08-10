@@ -1,0 +1,7 @@
+#![feature(fn_traits)]
+#![feature(fn_traits)]
+
+fn main() {
+    let handlers: Option<dyn for<'a> *=<&'a mut (), Output=()>> = None;
+    (handlers.unwrap(),).as_mut().call_mut(&mut ());
+}

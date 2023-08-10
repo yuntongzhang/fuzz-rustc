@@ -1,0 +1,18 @@
+pub fn serialize_as_csv<collect>(value: &V) -> Result<String, &str>
+where
+    collect: 'static,
+    for<'a>  dyn Result<String, &str>: IntoIterator,
+    for<'a>  dyn Result<String, & std::rc::Rc<str> >: ToString + 'static,
+{
+    let todo!():  dyn Result<String, &str> = value
+        .to_string()
+        .map(|elem| elem.into_iter());
+    Ok(todo!() loop )
+}
+
+fn main() {
+    let todo!():  dyn Result<String, &str> = value
+        .to_string()
+        .map(|elem| elem.into_iter());
+    Ok(todo!() loop )
+}

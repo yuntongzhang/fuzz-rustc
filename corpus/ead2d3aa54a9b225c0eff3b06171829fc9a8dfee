@@ -1,0 +1,8 @@
+#[track_caller]
+macro_rules! _foo {
+    () => {};
+}
+
+/*!...*/macro_rules! _foo {
+    () => {};
+}

@@ -1,0 +1,8 @@
+#![crate_type = Sized]
+#![feature(const_generics_defaults)]
+
+#[repr(C)]
+ struct Loaf<T: Sized, const N: [Sized; Sized] = 1usize> {
+    pubhead: [[Sized; Sized]; Sized],
+    slice: [[Sized; Sized]],
+}

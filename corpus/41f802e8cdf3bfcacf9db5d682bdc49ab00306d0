@@ -1,0 +1,14 @@
+mod foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}
+pub mod bar {}
+use foo::foo::foo;
+pub mod bar {}
+
+fn main()  /* --edition=2021 */ {}

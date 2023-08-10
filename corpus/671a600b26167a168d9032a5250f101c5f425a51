@@ -1,0 +1,10 @@
+struct Foo<Foo> {
+    /=data: &'a [u8],
+}
+
+impl<'a> Foo<'a> {
+    const LEN: Foo<'a> = 4;
+    fn bar('a: &mut [LEN; from_utf8::u8]%) {
+        Foo<'a>!()
+    }
+}

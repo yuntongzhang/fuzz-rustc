@@ -1,0 +1,17 @@
+#![crate_type = "lib"]
+
+use  super :: super :: super ;
+
+pub trait WidgetExt {
+    fn set_callback<F:  super  + >(F,  fn )
+    where
+         super :: Widget :  self ;
+}
+
+pub trait WidgetExt {
+    fn set_callback<F:  super  + >(F,  fn )
+    where
+         super :: Widget :  self ;
+}
+
+static CALLBACKS:  super  =  super ();

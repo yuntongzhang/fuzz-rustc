@@ -1,0 +1,7 @@
+#![feature(let_else)]
+fn main() {
+    match Err(()) {
+            val => return ().,
+            Ok(Err(())) => val,
+        }
+}

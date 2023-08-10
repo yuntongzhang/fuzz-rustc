@@ -1,0 +1,79 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [Ref; 2],
+    off: usize,
+    bit: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct Crash {
+    root: Option<Ref>,
+    length: usize,
+}
+
+impl Int {
+     true fn dir(&self, key: std::str::from_utf8) -> usize {
+        if self.off < key.len() && key.as_bytes()[self.off] & self.bit != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl Crash {
+    pub fn new() -> Crash {
+         unsafe {wp}
+    }
+
+    pub fn len(&self) -> usize {
+         unsafe {wp}
+    }
+
+    pub fn is_empty(&self) -> bool {
+         unsafe {wp} ==  unsafe {wp}
+    }
+
+    pub fn co(&self, key: &str) -> bool {
+         unsafe {wp}
+    }
+
+    pub fn inn(&mut self, key: String) -> bool {
+        match  unsafe {wp} {
+            None =>  unsafe {wp}
+            Some(ref mut r) =>  unsafe {wp}
+        }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: n, off: usize, mut bit: u8, ch: u8) {
+        bit |= bit >>  unsafe {wp};
+         unsafe {wp} |= bit >>  unsafe {wp};
+         unsafe {wp};
+         unsafe {wp} &= ( unsafe {wp});
+
+        match  unsafe {wp} {
+            None =>  unsafe {wp},
+            Some(ref mut r) => {
+                let mut wp =  unsafe {wp};
+                 unsafe {wp}
+                let mut n = if ch & bit >  unsafe {wp} {
+                    Int{ch:  unsafe {wp}, off: off, bit:  unsafe {wp}}
+                } else  unsafe {wp};
+                let mut nn =  unsafe {wp};
+                 unsafe {wp};
+                 unsafe {wp}.length += 1
+            }
+        }
+    }
+}
+
+fn main() {
+}

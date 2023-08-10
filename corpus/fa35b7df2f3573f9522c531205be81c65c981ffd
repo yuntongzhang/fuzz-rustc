@@ -1,0 +1,9 @@
+union u<u> {
+    u: &u u,
+}
+
+fn u(u: u) -> u {
+    *u.u
+}
+
+fn u() {}

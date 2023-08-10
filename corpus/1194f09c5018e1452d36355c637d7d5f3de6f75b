@@ -1,0 +1,1 @@
+static OsStr: (OsStr<OsStr>, u8);

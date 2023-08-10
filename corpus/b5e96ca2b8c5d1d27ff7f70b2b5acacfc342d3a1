@@ -1,0 +1,8 @@
+#![no_core]
+fn main() {
+    let one = ||fn ordering4<'a, F: H<D&'static
+trait Sized {}
+#[lang = "sized"]
+}
+#[lang = "copy"]
+trait Copyq {}

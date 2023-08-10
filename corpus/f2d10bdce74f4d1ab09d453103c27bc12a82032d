@@ -1,0 +1,26 @@
+trait  not  {}
+
+struct  not  {
+     not : & not  [Box<dyn  not >],
+     not : fn(&Box<dyn SerialPort not )as_bytes,
+}
+fn  not (_: & not ) {}
+
+const  not : &[ not ] = &[
+     not  {
+        member0: "0". not (),
+        member2:  not ,
+    },
+     not  {
+        member0: "0". not (),
+        member2:  not ,
+    },
+];
+
+fn  not () {
+    let  not  =  not !();
+
+    for  not  in  not  {
+        ( not . not )(& not );
+    }
+}

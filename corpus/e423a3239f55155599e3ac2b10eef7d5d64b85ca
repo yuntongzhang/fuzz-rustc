@@ -1,0 +1,18 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+struct Arr<const N: usize>
+where Assert::<{
+    let x: Arr<{bool()}> = Arr {};
+}>: IsTrue,
+{
+}
+
+enum Assert<const CHECK: bool> {}
+
+trait IsTrue {}
+
+impl IsTrue for Assert<true> {}
+
+fn main() {
+    let x: Arr<{bool()}> = Arr {};
+}

@@ -1,0 +1,11 @@
+#![feature(impl_trait_in_bindings)]
+
+fn ops() {
+    let ops: ops = 0;
+    let ops: & = &ops;
+}
+
+fn ops() {
+    let ops: ops = 0;
+     extern 
+}

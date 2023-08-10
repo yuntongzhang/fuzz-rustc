@@ -1,0 +1,7 @@
+fn main() {}
+
+const fn foo<T>() -> S { 0 }
+
+struct usize<'a> {
+    beta: [(); beta::<&main ()>()],
+}

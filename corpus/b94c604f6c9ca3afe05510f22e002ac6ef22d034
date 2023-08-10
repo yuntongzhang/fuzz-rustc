@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+
+impl<O> O<O> for [O; O] {}
+impl<O> Bar<O> for [O; O] {}
+
+impl<O> Bar<O> for [O; O] {}
+impl<O> Bar<O> for [O; O] {}
+
+impl<O> Bar<O> for [O; O] {}

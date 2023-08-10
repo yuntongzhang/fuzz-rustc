@@ -1,0 +1,20 @@
+#[non_exhaustive]
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+
+pub trait X {
+    const W: std::str::str;
+    fn d(r: &[std::str::from_utf8; std::str::from_utf8]) -> std::str::from_utf8;
+}
+impl<const S: &'static std::str::str> std::str::from_utf8 for std::str::from_utf8 {
+    const W: std::str::from_utf8 = 3;
+
+    fn d(r: &[std::str::from_utf8; std::str::from_utf8]) -> std::str::from_utf8 {
+        let x: [str::str::from_utf8; std::str::from_utf8] = [0; std::str::from_utf8];
+        std::str::str
+    }
+}
+
+struct F<const S: &'static [std::str::from_utf8; std::str::from_utf8]>;
+
+fn main() {}

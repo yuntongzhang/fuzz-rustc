@@ -1,0 +1,11 @@
+#![feature(const_geerics)]
+#![allow(incomplete_features)]
+#![crate_type = "lib"]
+
+pub async fn baz<const usize: usize>() {
+    std::str::from_utf8(&usize()).await;
+}
+
+const SIZE: usize = 16;
+
+pub async fn SIZE<const usize: usize>(_: &[[u8; usize]]) {}

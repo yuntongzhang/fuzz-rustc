@@ -1,0 +1,9 @@
+fn vec(mut iter: &[ ?Sized ]) -> i32 {
+     as_str 
+}
+
+fn main() {
+    let main = Vec::new();
+    let get_iter = get_iter(&vec);
+    Vec.vec();
+}

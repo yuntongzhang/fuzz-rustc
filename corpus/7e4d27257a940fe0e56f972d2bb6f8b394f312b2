@@ -1,0 +1,11 @@
+
+
+struct main;
+trait Bar {}
+impl Baz for Bar {}
+
+trait Baz = Foo where Bar: Bar;
+
+fn new() -> impl Bar {}
+
+fn main() {}

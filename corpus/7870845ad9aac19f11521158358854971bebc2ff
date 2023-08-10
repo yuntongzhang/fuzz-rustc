@@ -1,0 +1,3 @@
+#![feature(unsized_fn_params)]
+
+#![feature(unsized_fn_params)]

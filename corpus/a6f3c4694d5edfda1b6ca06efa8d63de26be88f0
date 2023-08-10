@@ -1,0 +1,13 @@
+#![feature(slice_patterns)]
+fn main() {
+    match b"".as_bytes() {
+        todo!() => match b"".as_bytes() {
+        todo!() => (),
+        [] => (),
+    },
+        [] => match b"".as_bytes() {
+        todo!() => (),
+        [] => (),
+    },
+    }
+}

@@ -1,0 +1,13 @@
+async fn vec() {
+    match vec![()] {
+        main2![] => {},
+         : 'static ![] => {}
+     async }
+}
+
+pub fn main() {
+    match vec![()] {
+        main2![] => {},
+         : 'static ![] => {}
+     async }
+}

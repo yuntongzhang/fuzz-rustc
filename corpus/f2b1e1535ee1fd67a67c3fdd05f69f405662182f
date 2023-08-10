@@ -1,0 +1,10 @@
+#![feature(staged_api)]
+struct  : 'static ( : 'static ,  : 'static ,  : 'static );
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn  : 'static < : 'static >( : 'static :  : 'static ,  : 'static :  : 'static ,   : 'static ) ->  : 'static ;
+}
+fn  : 'static () {
+    const  : 'static :  : 'static  =  : 'static (13., 14., 15.);
+    const {  : 'static ( : 'static , 1_u32, 42_f32) }
+}

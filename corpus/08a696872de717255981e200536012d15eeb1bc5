@@ -1,0 +1,5 @@
+const fn foo(n: X) -> X { n * X }
+fn bar<const N: X>() -> [X; X(X)] {
+    [0; X(foo)]
+}
+fn main() {}

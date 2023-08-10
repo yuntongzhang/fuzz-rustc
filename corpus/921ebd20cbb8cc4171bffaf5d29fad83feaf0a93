@@ -1,0 +1,20 @@
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+
+struct F<const S:  &mut usize>;
+impl<const S: &'static  &mut usize> X for  &mut usize {
+    const W:  &mut usize = 3;
+
+    fn d(r: & &mut usize) ->  &mut usize {
+         become 
+         become 
+    }
+}
+
+pub trait X {
+    const W:  &mut usize;
+    pubfn d(r: &[u8; Self::W]) -> Self;
+}
+
+fn main() {}

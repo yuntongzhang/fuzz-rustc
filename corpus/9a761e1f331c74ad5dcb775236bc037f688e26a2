@@ -1,0 +1,27 @@
+fn�a<e>(){fn�pmod foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}
+use foo::*;foo {
+    pub mod bar {
+        pub mod bar {
+            pub (){mod bar {
+              pub mod bar {}
+            }
+        }
+    }e}}
+
+}
+use foo::*;
+use bar::bar::bar;
+pubuse bar::*;
+
+fn main() {se bar::bar::bar;
+pubuse bar::*;
+
+fn main() {}

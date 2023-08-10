@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+use std::core;
+
+fn main() {
+    isize
+}

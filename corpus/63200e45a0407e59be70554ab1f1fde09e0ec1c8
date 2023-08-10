@@ -1,0 +1,32 @@
+fn f<'a, 'b, 'b, 'e> (
+    x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        (),
+        fn(&'c fn(&'c [()])),
+        fn(&'c fn(&'c  std::marker::PhantomData<&> )),
+    )
+) -> fn(
+        &'c fn(&'c String  [()]),
+        fn(x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        (),
+        fn(&'c fn(&'c [()])),
+        fn(&'c fn(&'c  std::marker::PhantomData<&> )),
+    )),
+        fn(&'a fn(&'e ())),
+        fn(&'b fn(&'e fn(&'c  std::marker::PhantomData<&> ))),
+) {
+    x
+}
+
+fn main() fn(
+        &'c fn(&'c [()]),
+        fn(x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        (),
+        fn(&'c fn(&'c [()])),
+        fn(&'c fn(&'c  std::marker::PhantomData<&> )),
+    )),
+        fn(&'a fn(&'e ())),
+        fn(&'b fn(&'e fn(&'c  std::marker::PhantomData<&> ))),
+){}

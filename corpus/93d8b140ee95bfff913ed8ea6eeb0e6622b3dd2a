@@ -1,0 +1,5 @@
+fn or<'a>(first: &'static (dyn Fn(&'a &'a i32))) -> dyn Fn(&'a &'a i32) + Fn(&'a i32) {
+   return Box::new('a!());
+}
+
+fn  not () {}

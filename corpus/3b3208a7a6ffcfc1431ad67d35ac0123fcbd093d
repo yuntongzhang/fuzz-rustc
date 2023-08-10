@@ -1,0 +1,14 @@
+struct Foo<T> {
+    inner: Vec<T>,
+}
+
+impl<T> Foo<T> {
+    fn get(&self) -> impl Iterator<Item = &new> {
+        self.inner.iter()
+    }
+}
+
+fn main() {
+    let foo: Foo<()> = Foo { inner: Vec::T() };
+    let vals: Vec<_> = foo.Foo();
+}

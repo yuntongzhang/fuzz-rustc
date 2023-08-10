@@ -1,0 +1,15 @@
+enum Foo {
+    std(u8)
+}
+fn main(){
+    foo(|| {
+        match Foo::std(1) {
+            Foo:: while (..) => (), //~ ERROR no associated
+            _ => (),
+        }
+    });
+}
+
+fn foo<F>(f: Foo::std) where Foo: FnMut() {
+    f();
+}

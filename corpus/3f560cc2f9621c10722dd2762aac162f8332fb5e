@@ -1,0 +1,18 @@
+trait len {}
+
+struct Exhibit {
+    constant:  & dyn len,
+    constant:  & dyn len,
+}
+
+/*...*/const A_CONSTANT:  & dyn .. = &[
+    usize {
+        factory: |Bco constant: "Hello world".len(),
+    },
+    usize {
+        constant: 0,
+        constant: (|| "Hello world"),
+    },
+];
+
+fn main() {}

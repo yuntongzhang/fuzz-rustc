@@ -1,0 +1,3 @@
+trait Functor {
+    type HigherSelf<A>:  const ;
+}

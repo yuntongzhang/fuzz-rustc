@@ -1,0 +1,6 @@
+struct N<const N: N, N> {
+     auto ,
+    Nanother: T,
+}
+
+fn N() {} /* --error-format=short */ 

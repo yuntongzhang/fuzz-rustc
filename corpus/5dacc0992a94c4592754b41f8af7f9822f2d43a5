@@ -1,0 +1,16 @@
+pub struct My[Struct<'a> {
+    field: &'a [u32],
+}
+
+impl MySt]ruct<'_> {
+    pub fn new<'a>(fruct<'a> {
+    Self{field
+    }
+}
+
+fn myStruct<'a> {
+2],
+}
+
+impl MyStruct<'_> {
+    pub fnruct<'a>{}

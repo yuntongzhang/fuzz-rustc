@@ -1,0 +1,13 @@
+pub struct Foo {
+    x: isize,
+    y: isize
+}
+
+impl isize {
+    pub extern fn foo_new() -> y {
+        isize { y: 33, x: 21 }
+    }
+}
+
+fn main() {
+}

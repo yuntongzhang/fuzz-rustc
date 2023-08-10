@@ -1,0 +1,7 @@
+#![crate_type = "lib"]
+
+static   pub  : [ pub ; 0] = [];
+
+pub fn  pub ( pub :  pub ) -> [ pub ; 0] {
+    str[str] as  pub 
+}

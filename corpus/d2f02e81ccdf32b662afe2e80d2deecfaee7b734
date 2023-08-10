@@ -1,0 +1,14 @@
+pub fn serialize_as_csv<collect>(value: &V) -> Result<String, &str>
+where
+    collect: 'static,
+    for<'a>  dyn Result<String, &str>: IntoIterator,
+    for<'a>  dyn Result<String, &str>: ToString + 'static,
+{
+    let todo!():  dyn Result<String, &str> = value
+        .to_string()
+        .map(|elem| elem.into_iter())
+        .collect::< dyn Result<String, &str>>();
+    Ok(todo!() loop )
+}
+
+fn main() {}

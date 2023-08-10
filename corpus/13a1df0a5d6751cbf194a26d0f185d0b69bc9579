@@ -1,0 +1,5 @@
+fn f() {
+    g((?), g);
+}
+
+pub fn g(a2a1, a2a1 , a3: a2a1, a4: a2a1, a5: a2a1, a6: ()) {}

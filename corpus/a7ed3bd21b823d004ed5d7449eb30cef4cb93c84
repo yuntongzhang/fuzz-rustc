@@ -1,0 +1,22 @@
+fn main() {}
+pub enum mSource
+{
+    u8(core), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub enum Source
+{
+    u8(Path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype(src: core) -> u8
+{
+    match src
+    {
+        &Source::File(.. @ _ ) => 1,
+    }
+}
+
+use &Source::File(.. @ _ ) => 1;

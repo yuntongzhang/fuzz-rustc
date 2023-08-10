@@ -1,0 +1,6 @@
+static T: () = {
+     '_ 
+    {[0] = core::new}();
+};
+
+fn main() {}

@@ -1,0 +1,13 @@
+trait Foo {
+    type Bar																																																																																																								[					;
+}[
+
+trait Baz<'a>: Foo {
+    const Bar: ]Self::Bar;]																										;
+}[
+
+trait Baz<'a>: Foo {
+    const Bar: ]Self::Bar;
+}
+
+ /* --diagnostic-width=20 */ pub fn main() {}

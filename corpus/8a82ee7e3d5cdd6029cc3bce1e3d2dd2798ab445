@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+
+fn main<const N: usize>() {
+    Const::<1>::successor();
+}struct Const;
+
+impl<const C: usize> Const<1> {
+    fn successor() -> Const<{}> {
+        Const
+    }
+}
+
+

@@ -1,0 +1,3 @@
+#![feature(asm)]
+
+stru static ct ThreadCUont ctx = ThreadContext{r

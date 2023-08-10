@@ -1,0 +1,2 @@
+fn e() {
+ [*let x = 0] {f *let x = 0] { x

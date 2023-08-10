@@ -1,0 +1,26 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use std::mem::MaybeUninit;
+
+trait Foo<'a, A>: Iterator<Item = A> {
+    fn bar<const N: usize>(&mut self) -> [A; N];
+
+    fn foo<const N: usize>(&mut self) -> [A; N] {
+        let result = self.bar();
+        result
+    }
+}
+
+trait Foo<'a, A>: Iterator<Item = A> {
+    fn bar<const N: usize>(&mut self) -> [A; N];
+
+    fn foo<const N: usize>(&mut self) -> [A; N] {
+        let result = self.bar();
+        result
+    }
+}
+
+fn main() {
+    let _: [u8; 10] = (0_u8..10).foo::<10_usize>();
+}

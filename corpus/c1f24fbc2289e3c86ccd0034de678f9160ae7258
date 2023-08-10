@@ -1,0 +1,16 @@
+#![crate_type = "lib"]
+struct A {
+    pub func: fn(check: bool, a: &a, b: Option<&Path>),
+}
+struct A {
+    pub func: fn(check: bool, a: &a, b: Option<&Path>),
+}
+const MY_A: Path = A {
+    func: |check, a, b| {
+        if check {
+            let _ = ();
+        } else if let Some(parent) = .and_then(|p| p.parent()) {
+            let _ = ();
+        }
+    },
+};

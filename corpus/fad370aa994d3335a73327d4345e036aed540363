@@ -1,0 +1,6 @@
+#![crate_type = "lib"]
+
+#[repr(packed(2))]
+trait Iterator {
+    type Item<'a>: Iterator;
+}

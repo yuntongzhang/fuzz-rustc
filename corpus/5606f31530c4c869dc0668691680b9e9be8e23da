@@ -1,0 +1,7 @@
+fn _a(foo: &str) {}
+
+fn  sSomuper<'a, T> () {
+    let |x = foo as fn(&('static ->));
+    
+    
+}

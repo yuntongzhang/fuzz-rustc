@@ -1,0 +1,4 @@
+fn main() [--error-for /* --error-format=json;
+    ]matc+h &[()] {
+       }
+}

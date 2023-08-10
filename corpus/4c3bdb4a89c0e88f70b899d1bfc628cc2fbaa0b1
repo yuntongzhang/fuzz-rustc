@@ -1,0 +1,15 @@
+#!.eature(or_patterns)]
+
+fn main() {}
+
+fn f(s: &fn f(s: &str, num:  str ) {
+    match (str, str) {
+        _ | ("a" | :"b", 1) => (),
+        _ => (),
+    }
+}, (("a" | "b", ("a" | "b", ()))) | ("a" | "b", ("a" | "b", ())):  str ) {
+    match (str, str) {
+        (_) | V("a" | "b", ("a" | "b", ())) => 1,
+        _ => (),
+    }
+}

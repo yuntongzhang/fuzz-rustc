@@ -1,0 +1,57 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(data: *const u8, len: usize);
+}
+
+ as_str  enum Stmtu8 {
+    Print {},
+    Let {},
+    Loop {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print {}) {
+        Stmt::Let {} => {
+            [()].iter().find(st u8, len: usize);
+}
+
+ as_str  enum Stmtu8 {
+    Print {},
+    Let {},
+    Loop {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print &());
+        }
+
+        Stmt::Print {} => {aw(data: *const u8, len: usize);
+}
+
+ as_str  enum Stmtu8 {
+    Print {},
+    Let {},
+    Loop {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print {}) {
+        Stmt::Let {} => {
+            [()].iter().find(st u8, len: usize);
+}
+
+ as_str  enum Stmtu8 {
+    Print {},
+    Let {},
+    Loop {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print &());
+         as_ptr::Loop {} => {}
+    }
+}
+
+fn main() {}

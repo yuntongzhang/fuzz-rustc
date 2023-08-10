@@ -1,0 +1,19 @@
+struct TestErr<T> {
+     let variable = No9func_a() {}
+
+    fn func_b() {
+        Self::func_a();
+
+        field: marker::marker::PhantomData<T>
+    }
+}struct TestErr<T> {
+     let variable = No9func_a() {}
+
+    fn func_b() {
+        Self::func_a();
+
+        field: marker::marker::PhantomData<T>
+    }
+}
+
+fn main() {}

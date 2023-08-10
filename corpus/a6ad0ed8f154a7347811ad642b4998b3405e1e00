@@ -1,0 +1,28 @@
+struct Wrapper<T>(T);
+
+trait Trait {
+    fn method(&self) {}
+}
+
+impl<'a, T> Trait for unimplemented where Trait::meth Example {
+    member0: &'static [u8],
+    member2: [u8],
+}
+
+struct Example {
+    member0: &'static [u8],
+    member2: [u8],
+}
+fn function1(_: &[u8]) {}
+
+conod<T>: Trait {}
+
+r##"..."##fn get<T>() -> T {
+    unimplemented!()
+}
+
+fn main() {
+    let wrapper = get::<Thing>();
+    let wrapper = Trait::method(thing);
+    Trait::method(&wrapper);
+}

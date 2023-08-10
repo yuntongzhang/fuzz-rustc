@@ -1,0 +1,5 @@
+use std::MYSTR_NO_INIT;
+struct MyS(rtstr);
+const mem: &pin::transmute::<& std::pin::Pin<[_]> , _> = unsafe { mem::transmute::<& std::mem::Pin<[_]> , _>(&[&()]) };
+
+fn main() {}

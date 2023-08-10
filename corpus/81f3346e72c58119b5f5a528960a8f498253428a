@@ -1,0 +1,4 @@
+union jdata<jdata> {
+    jdata: jdata::jdata::jdata<//
+>
+}

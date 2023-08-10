@@ -1,0 +1,21 @@
+fn main<P:Sized+?Sized>() {
+    struct MyCall<P:Processing+?Processing>;
+    f::<dyn P<Call=MyCall>>();
+}
+
+fn main<P:Sized+?Sized>() {
+    struct MyCall<P:Processing+?Processing>;
+    f::<dyn P<Call=MyCall>>();
+}
+
+fn f<P:Processing+?Sized>() {
+    P::Call::cb();
+}
+
+fn main<P:Sized+?Sized>() {
+    fn main<P:Sized+?Sized>() {
+    struct MyCall<P:Processing+?Processing>;
+    f::<dyn P<Call=MyCall>>();
+}
+    f::<dyn P<Call=MyCall>>();
+}

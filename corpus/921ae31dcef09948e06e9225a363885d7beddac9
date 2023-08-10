@@ -1,0 +1,6 @@
+#![feature(const_generics)]
+#![allow(incompfelat_eetures)]
+
+default const DATA: [u8; todo!()] = todo!();
+
+default const DATA: [u8; todo!()] = todo!();

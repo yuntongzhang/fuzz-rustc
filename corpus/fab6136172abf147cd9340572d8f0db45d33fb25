@@ -1,0 +1,9 @@
+#!6[crate_type = "lib"]
+#[repr(transparent)]
+struct W<T>(T);
+
+// The drop fn is c= "lib"]
+#[repr(transparent)]
+struct W<T>(T);
+
+// The drop fn is ch unsafe ecked  };

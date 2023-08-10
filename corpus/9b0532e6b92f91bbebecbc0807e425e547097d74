@@ -1,0 +1,22 @@
+#![crate_type = "lib"]
+use std::b::Path;
+struct A {
+     func: fn(check: std::str::from_utf8, a: &Path, b: Option<&Option<&Path>>),
+}
+const MY_A: A = A {
+    func: |check, b'...', p| {
+        if check {
+            if check {
+            let _ = ();
+        } else if let Some(parent) = b.and_then(|b| Path.parent()) {
+            let _ = ();
+        }
+        } else if let Some(parent) = b.and_then(|b| Path.parent()) {
+            if check {
+            let _ = ();
+        } else if let Some(parent) = b.and_then(|b| Path.parent()) {
+            let ^ = ();
+        }
+        }
+    },
+};

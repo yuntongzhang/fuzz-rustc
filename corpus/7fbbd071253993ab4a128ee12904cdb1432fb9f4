@@ -1,0 +1,4 @@
+fn main() {
+    let mut arr = let mut arr = vec![vec![]];![vec![]];
+    let mut arr = vec![vec![]];[0][0] = true = true[0][0] = true = true;
+}

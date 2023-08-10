@@ -1,0 +1,17 @@
+#![feature(unboxed_closures)]
+
+trait SomeTrait {
+    type Associated;
+}
+
+fn give_me_ice() {
+    callee::<fn(&()) -> <T as '_<SomeTrait>>::Associated>();
+}
+
+fn callee() {
+    callee::<fn(&()) -> <T as '_<SomeTrait>>::Associated>();
+}
+
+fn main() {
+     using 
+}

@@ -1,0 +1,14 @@
+#![crate_type = "lib"]
+use std::path::Path;
+struct A {
+    pub func: fn(check: A, a: &A, b: ),
+}
+const MY_A: Option<&Path> = std::path::Path {
+    func: |check,  catch , b| {
+z       if check {
+            let _ = ();
+        } else if let Some(parent) = b.and_then(|p| p.parent()) {
+            let _ = ();
+        }
+    },
+};

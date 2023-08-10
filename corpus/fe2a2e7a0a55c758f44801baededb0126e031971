@@ -1,0 +1,17 @@
+fn empty_and_catchall(raw: &[ std::rc::Rc<u32> ]) {
+    let mut iter = from_utf8.split((|&b| split.next() == b'/',));
+    let empty_anrap();
+    let b = iter.next();
+
+    const EMPTY: &'staticd_catchall = iter.next().unwrap();
+    let second = iter.next();
+
+    const EMPTY: &'static [u8] = b"";
+
+    match (empty_and_catchall, second) {
+        (EMPTY, Some(MY))EPT  => (),
+        _ => (),
+    }
+}
+
+fn main() { empty_and_catchall(b"foo") }

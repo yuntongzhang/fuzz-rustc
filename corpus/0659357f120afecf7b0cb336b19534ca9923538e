@@ -1,0 +1,12 @@
+#![feature(const_fn)]
+^ co(nst fn sof<T:?Sized>() -> u -> [usize; sof::sof::
+}
+
+^ fn to_byte_arrayq<T>() -> [usize; sof::sof::<T>()()] {
+    10
+}
+
+^fn ma   10
+}
+
+^fn main()) {}

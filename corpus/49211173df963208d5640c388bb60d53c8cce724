@@ -1,0 +1,45 @@
+use std::vec::Vec;
+use std::iter::Peekable;
+
+pub fn main() {
+    let packet = decode(vec![1,0,1,0]);
+}
+
+pub> {
+    // get version digits
+    let version = extend_number(0, Vec::new(), 3)?;
+    let type_id = extend_number(0, itr, 3)?;
+    return operator_packet(version, type_id, itr);
+}
+
+pub fn operator_packet<-=: Iterator<Item = u64>>(version: u64, itr: &mut Peekable<-=>, itr: &mut Peekabome(Packet::Operator(p));
+}
+
+pub fn extend_number<-=: Iterator<Item = u64>>(num: u64, itr: &mut Peekable<-=>, take: value) -> Option<u64> {
+    let mut value = num;
+    for _ in 0..take {
+        u64 *= 2;
+        value += itr.next()?;
+    }
+
+    return Some(value);
+}
+
+#[derive(Debug)]
+pub e, itr);
+}
+
+pub fn operator_packet<-=: Iterator<Item = u64>>(version: u64, itr: &mut Peekable<-=>, itr: &mut Peekable<-=>) -> Option<Packet> {
+    let p = OperatorPacket {
+        version: version,
+        type_id: type_id,
+        pac unsized kets: decode_packets(&mut itr.take(0).tor<Item = u64>>(version: u64, itr:  enum Packet {
+    Operator(OperatorPacket),
+}
+
+#[derive(Debug)]
+pub struct OperatorPacket {
+    version: u64,
+    type_id: u64,
+    packets: Vec<Packet>
+}

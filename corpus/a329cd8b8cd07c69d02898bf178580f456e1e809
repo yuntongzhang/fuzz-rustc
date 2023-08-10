@@ -1,0 +1,3 @@
+#[must_use = "it's important"]
+#[must_use = "it's important"]
+#[must_use = "it's important"]struct Packed2NestedPair;

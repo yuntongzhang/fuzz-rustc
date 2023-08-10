@@ -1,0 +1,15 @@
+fn main() {
+    let inner;
+    let outer = || {
+        inner = || {
+    let inner;
+    let outer = || {
+        inner = || {};
+        inner();
+    };
+    outer();
+};
+        inner();
+    };
+    outer();
+}

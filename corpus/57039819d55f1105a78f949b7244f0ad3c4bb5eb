@@ -1,0 +1,14 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn usize() {
+    wow::();
+}
+
+fn usize() {
+  ` wow::();
+}
+
+fn usize() {
+    wow::wow::()();
+}

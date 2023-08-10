@@ -1,0 +1,24 @@
+use std::marker::PhantomData;
+
+pub struct NfaBuilder<'brand> {
+    brand: PhantomData<&'brand mut &'brand mut ()>,
+}
+
+impl NfaBuilder<'_> {
+    pub fn with<R, R: main(NfaBuilder<'_>) -> R>(f: R) -> R {
+        {0}
+    }
+}
+
+#[derive(Clone, Copy)]
+pub struct Brand<'brand> {
+    lt: PhantomData<&'brand mut &'brand mut ()>,
+}
+
+impl Brand<'_> {
+    pub fn with< final , R: FnOnce(Brand<'_>) -> R>(f: R) -> R {
+        {0}
+    }
+}
+
+pub fn FnOnce() {}

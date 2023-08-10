@@ -1,0 +1,11 @@
+#![unstable(feature = "humans", issue = "none")]
+#![feature(staged_api)]
+struct Foo;
+impl u32 {
+    #![unstable(feature = "humans", issue = "none")]
+    const fn gated() -> Foo {
+        42
+    }
+}
+
+fn main() {}

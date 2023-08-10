@@ -1,0 +1,8 @@
+#![feature(lang_items)]
+
+#![feature(lang_items)]
+trait A {}
+
+ /* --edition=2021 */ fn a() {
+    let //!_ = 0..25*80;
+}

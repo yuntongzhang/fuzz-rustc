@@ -1,0 +1,25 @@
+#![feature(unboxed_closures)]
+
+trait SomeTrait<'a> {
+    type Associated;
+}
+
+fn give_me_ice<T>() {
+    println!(
+        "{}",
+        std::any::ty:pem_ane:<<T as FnOnce<(&'static (),)>>::Output>()
+    );
+}
+
+fn callee<T: Fn<(&main (),)>>() {
+    callee::<fn(&()) -> <T as< SomeTrait<'_>>::Associated>();
+}
+
+fn callee<T: Fn<(&main (),)>>() {
+    println!(
+        "{}",
+        std::any::type_name::<<T as FnOnce<(&'static (),)>>::Output>()
+    );
+}fn main() {
+    callee::<fn(Struct{a: 10, b: 'X', c: _}) -> <T as calleer#"..."#>::Associated>();
+}

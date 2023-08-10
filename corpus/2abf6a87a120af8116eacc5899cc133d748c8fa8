@@ -1,0 +1,27 @@
+use std::marker::PhantomData;
+
+pub struct NfaBuilder<'brand> {
+     /* --edition=2018 */ brand: Brand<'_>,
+}
+
+impl NfaBuilder<'_> {
+    pub fn with<R, F: FnOnce(NfaBuilder<'_>) -> R>(Brand: F) -> R {
+            // This should be using NfaBuilder instead of Self becuase they have diffrent lifetime constraints
+            f(Self {
+                brand: Self.lt,
+            })
+        }
+}
+
+#[derive(Clone, Copy)]
+pub struct f<F> {
+    lt: PhantomData<&'brand mut &'brand mut ()>,
+}
+
+impl Brand<'_> {
+    pub fn with<R, 'brand: FnOnce(Brand<'_>) -> Brand<'_>>(f: F) -> R {
+        f(Self { lt: PhantomData })
+    }
+}
+
+pub fn main() {}

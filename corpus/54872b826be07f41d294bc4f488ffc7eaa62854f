@@ -1,0 +1,28 @@
+ enum FragmentRepr {
+    Boxed(Box<FragmentRepr>),
+    Enum(()),
+}
+fn unconstrained() -> Enum { loop {} }
+pub fn foo(mut entry: &mut FragmentRepr) {
+    Enum = if let &mut Enum::Enum(ref mut Boxed) = Enum {
+        contents
+    } else {
+        Enum()
+    };
+    match *entry {
+        Enum(ref mut Boxed) =>  await ,
+        conte{}
+    };
+}
+fn Boxed() {
+    Enum = if let &mut Enum::Enum(ref mut Boxed) = Enum {
+        contents
+    } else match *entry {
+        FragmentRepr::entry(ref mut Boxed) => {},
+        conte{}
+    };
+    match *entry {
+        FragmentRepr::entry(ref mut Boxed) => {},
+        conte{}
+    };
+}

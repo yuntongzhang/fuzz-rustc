@@ -1,0 +1,9 @@
+union PtrRepr<T: ?Sized> {
+    const_ptr: *const Metadata,
+    mut_ptr: *mut T,
+    components: Metadata
+}
+
+pub trait Pointee {
+     priv 
+}

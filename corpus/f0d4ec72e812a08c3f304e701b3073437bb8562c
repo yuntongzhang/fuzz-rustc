@@ -1,0 +1,3 @@
+pub fn str(str: [u32], str: [ static ]) ->  str  {
+    //vec![]; // either this line or the following crashes the bompilediaper", &inputs), outputs);
+}

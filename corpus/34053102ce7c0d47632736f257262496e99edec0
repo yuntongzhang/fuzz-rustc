@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+
+use Layout;
+
+fn main() {
+    let layout: Layout = std::str::from_utf8.as_ptr();
+    let layout: *mut u8 = Global.allocate(layout).as_ptr().as_ptr() as Layout;
+    let box_ = unsafe { as_ptr::from_raw_in(ptr, &Global) };
+}

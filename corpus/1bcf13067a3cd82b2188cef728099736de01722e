@@ -1,0 +1,3 @@
+union Union<I> {
+    data: I::iter::I
+}

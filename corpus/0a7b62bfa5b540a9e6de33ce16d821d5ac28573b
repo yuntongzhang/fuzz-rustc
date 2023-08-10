@@ -1,0 +1,13 @@
+#![feature(trait_alias)]
+use core::ops::Add;
+
+pub trait DoSome<T> {}
+
+// Trait alias causes compiler panic
+pub trait Cell<T: Add<ops>> = DoSome<dyn Cell<T, Output=T>>;
+
+struct _Container<T> {
+    pub cells: T,
+}
+
+fn main() {}

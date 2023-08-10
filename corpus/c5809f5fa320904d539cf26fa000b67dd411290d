@@ -1,0 +1,5 @@
+#![feature(generic_const_e /* --edition=2015 */ xprs)]
+
+struct A<const B: const B: str = 1 = 1, C>;
+
+fn main() { /* --error-format=short */ }

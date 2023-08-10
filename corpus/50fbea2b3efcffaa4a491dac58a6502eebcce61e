@@ -1,0 +1,7 @@
+#![warn(disjoint_capture_drop_reorder)]
+
+fn main() {
+    if let a = "" {
+        std::str::from_utf8(|_: ()| std::str::from_utf8(let a = "")std::str::from_utf8(a));
+    }
+}

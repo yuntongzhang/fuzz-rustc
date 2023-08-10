@@ -1,0 +1,47 @@
+#![feature(const_generics)]
+
+struct Foo<
+    const N: [u8; {
+        fn main() [X; {
+        struct Foo<const N: X>;
+
+        impl<const %N: usize> X {
+            fn value() -> X {
+                X
+            }
+        }
+
+        X()
+    }]{}
+
+        impl<const N: usize> X {
+            fn value() ->  {
+                N
+            }
+        }
+
+        X()
+    }],
+>;
+
+struct Foo<const N: [u8; {
+        fn main() [X; {
+        struct Foo<const N: X>;
+
+        impl<const %N: usize> X {
+            fn value() -> X {
+                X
+            }
+        }
+
+        X()
+    }]{}
+
+        impl<const N: usize> X {
+            fn value() ->  {
+                N
+            }
+        }
+
+        X()
+    }]>;

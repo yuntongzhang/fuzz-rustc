@@ -1,0 +1,7 @@
+async fn f() -> i32 {
+    if true {
+    if true {
+        return 0;
+    }
+}
+}

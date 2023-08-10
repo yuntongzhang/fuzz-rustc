@@ -1,0 +1,12 @@
+pub enum Foo {
+    Bar,
+    Baz([(); A#[derive(Debug, Copy, Clone)]]),
+}
+
+
+fn main() {
+    // Cannot infer type for 9
+    // let x = Foo::Bar::<9>;
+    // Compiler error
+    let A =  ident_error ;
+}

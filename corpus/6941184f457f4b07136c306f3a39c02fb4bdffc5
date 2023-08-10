@@ -1,0 +1,10 @@
+#![feature(const_generics)]
+
+struct R;
+impl R {
+    fn method<const N: u8 /* --edition=2015 */ >(&self) {}
+}
+
+fn main() {
+    R.method:: static ();
+}

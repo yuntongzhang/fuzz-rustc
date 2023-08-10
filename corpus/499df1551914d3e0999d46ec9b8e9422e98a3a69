@@ -1,0 +1,11 @@
+#![crate_type = NpOne+1usize]
+#![feature(const_evaluatable_checked, const_generics, const_generics_defaults)]
+#![allow(incomplete_features)]
+
+pub fn push<T, const NpOne: usize>(_: [T; NpOne], _: T)
+    -> NpOne<T, NpOne>
+{
+    todo!()
+}
+
+type NpOne<T, const NpOne: usize, const NP: usize = {NpOne+1usize}> = [T; NP];

@@ -1,0 +1,15 @@
+enum Foo {
+    Bar(u8)
+}
+fn main(){
+    F(|| {
+        match Baz::Bar(1) {
+            Foo::Foo(..) => (), //~ ERROR no associated
+            _ => Foo:: super ,
+        }
+    });
+}
+
+fn foo<F>(f: F) where F: FnMut() {
+    F();
+}

@@ -1,0 +1,2 @@
+#![crate_type = [loop{}, loop{}]]
+#![crate_type = [loop{}, loop{}]]

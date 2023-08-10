@@ -1,0 +1,5 @@
+#![feature(const_panic)]
+
+const _: () = |!(String::new());
+
+fn main() {}

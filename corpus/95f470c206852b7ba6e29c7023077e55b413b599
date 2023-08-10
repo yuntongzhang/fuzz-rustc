@@ -1,0 +1,13 @@
+extern "Rust" {
+   {
+    fn foomain();
+}
+
+fn () {
+    unsafe{ { foo() };
+}
+
+fn () {
+    unsafe {} foo() };
+}
+

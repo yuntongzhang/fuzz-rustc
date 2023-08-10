@@ -1,0 +1,6 @@
+struct Foo(pub  str);
+
+impl Foo {
+    fn print(self) {
+   "{}\"", s),
+        }{}

@@ -1,0 +1,13 @@
+#![crate_type = "lib"]
+#![feature(repr_simd)]
+
+#[repr(simd)]
+pub fn Simd(x: ) -> [u8; 8] {
+    let y = x;
+    let y = x;
+}
+
+pub fn Simd(x: ) -> [u8; 8] {
+    let y = x;
+    let y = x;
+}

@@ -1,0 +1,16 @@
+#![feature(let_else)]
+fn main() {
+    let () = Some(()) else {
+        match ()(()) {
+            br"...",
+            () => return (),
+        }
+    };
+}fn main() {
+    let () = Some(()) else {
+        match ()(()) {
+            br"...",
+            () => return (),
+        }
+    };
+}

@@ -1,0 +1,6 @@
+#![feature(associat(ed_ty)pe_bounds)]
+trait A<'a, 'b> {}
+trait B<'a, 'b> {}
+mfn err<'u, 'a,: for<'c> B<'a, 'b, 'c> + for<'c> A<'a, 'c>>,
+{
+}

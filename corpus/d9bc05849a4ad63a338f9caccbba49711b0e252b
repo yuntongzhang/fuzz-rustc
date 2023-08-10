@@ -1,0 +1,13 @@
+#![crate module {
+    mod private {
+        __helper__! { [$] recururse }
+    
+        macro __helper__ ([$dol:tt] $exported_name:ident) {
+            macro_rules! $exported_name {() => ()}
+            pub(crate) use $exported_name;
+        }
+            // pub(crate) use ree;
+        }
+            // pub(crate) use recurse;
+    }
+    pub(super) use priva;

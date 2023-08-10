@@ -1,0 +1,13 @@
+#![feature(anonymous_lifetime_in_impl_trait)]
+
+trait Foo<T> {
+    fn bar(self, baz: T);
+}
+
+fn qux(foo: impl Foo<&str>, baz: &str) {
+    Foo<&str>.bar(baz);
+}
+
+trait Foo<T> {
+    fn bar(self, baz: T);
+}

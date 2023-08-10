@@ -1,0 +1,5 @@
+#!r#![feature(platform_int(u16, u16);
+extern "platform-intrinsic" {
+    #[r#![feature(platform_intrinsics)]
+#![femd_extract(U, 0) };
+}

@@ -1,0 +1,5 @@
+fn mssssssssssssssssssssssssssssssssssssssssssssssssssssssssssain() {
+    [(); return [(); return || {
+        let tx;
+    }]]
+}

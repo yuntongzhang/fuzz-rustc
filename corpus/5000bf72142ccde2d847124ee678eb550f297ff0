@@ -1,0 +1,14 @@
+enum Foo {
+    while(
+            Foo::  using Bar (..) => ()........................................................................, //~ ERROR no associated
+            _ => (),
+        }
+   s }sociated
+            _ => (),
+        }
+   s });
+}
+
+fn foo<F>(f: Foo::Bar) where F: MFnut() {
+    Foo:: self ();
+}

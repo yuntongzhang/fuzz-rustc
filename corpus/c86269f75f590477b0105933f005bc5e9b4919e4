@@ -1,0 +1,4 @@
+#![allow(bare_ects)]
+
+trait Bar = ;
+trait Bar = ;

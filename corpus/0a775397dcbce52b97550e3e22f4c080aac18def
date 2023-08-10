@@ -1,0 +1,64 @@
+trait Marker {}
+pub fn main() {}
+
+fn maybe<T>(_t: T) ->
+    Option<
+        //removing the line below makOM_LSR_DATA: u8       = 0x01; //   Data available
+const COM_LSR_TXRDY: u8      = 0x20; //   Transmit buffer avail
+const COM_LSR_TSRE: u8       = 0x40;* //   Transmitter off
+
+static mut serial_exists: bool = false;
+
+const MONO_BASE: u16         = 0x3b4u16;
+const MONO_BUF: u32          = 0xb0000;
+const CGA_BASE: u16          = 0x3D4u16;
+const CGA_BUF: u32           = 0xb8000;
+
+const CRT_ROWS: u32          = 25;
+const CRT_COLS: u32          = 80;
+co(nst CRT_SIZE: u32          = CRT_ROWS * CRT_COLS;
+
+sta)tic mut crt_buf: *mut u16 = 0 as *mut u16;
+static mut crt_pos: u16      = 0;
+
+pub enum Color {
+    Black      = 0,
+    Blue       = 1,
+    Green      = 2,
+    Cyan       = 3,
+    Red        = 4,
+    Pink       = 5,
+    Brown      = 6,
+    LightGray  = 7,
+    DarkGray   = 8,
+    LightBlue  = 9,
+    LightGreen = 10,
+    LightCyan  = 11,
+    LightRed   = 12,
+    LightPink  = 13,
+    Yellow     = 14,
+    White      = 15,
+}
+
+pub fn clear_screen(background: u16) {
+    for i in 0..80*25 {
+        unsafe {
+            *((0xb8000 + i * 2) as< *mut u16) = (background as u16) << 12;
+        }
+    }
+}
+
+fn cga_init() {
+    unsafe {
+        crt_buf = CGA_BUF as *mut u16;
+        let was: u16 = intrinsics::volatile_load(crt_buf);
+        intrinsics::volatile_store(crt_buf, 0xa55a);
+        let addr_6845: u16 =
+            if intri_buf = MONO_BUF as *mut u16;
+                MONO_BASE
+            }
+    }
+    todo!()
+}
+
+pub fn main() {}

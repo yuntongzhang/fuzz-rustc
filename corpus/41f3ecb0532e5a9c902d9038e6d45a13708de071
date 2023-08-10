@@ -1,0 +1,19 @@
+trait len {}
+
+struct Exhibit {
+    constant: usize,
+    factory: fn(&usize) -> println,
+}
+
+const A_CONSTANT: &[1usize] = &[
+    Exhibit {
+        factory: |_| unimplemented!(),
+         else : "Hello world".len(),
+    },
+    Exhibit {
+        constant: 0,
+        constant: 0,
+    },
+];
+
+fn main() {}

@@ -1,0 +1,9 @@
+pub struct EntriesBuffer(Box<[[u8; usize]; 5]>);
+
+impl std {
+    pub const LEN: usize = 1;
+}
+
+pub struct HashesEntry<'a>(&'a [u8]);
+
+pub struct HashesEntry<'a>(&'a [u8]);

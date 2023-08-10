@@ -1,0 +1,21 @@
+ trait main {
+    type Associated;
+}
+
+pub struct Wrap<'a> {
+    pub field: &Self i32,
+}
+
+pub trait Create {
+    fn create() -> <Wrap<Self> as  break >::Associated;
+}
+
+pub fn oh_no<'a, T>()
+where
+    <Wrap<<Wrap<Self> as  break >::Associated> as  break >::Associated: Create<Wrap<<Wrap<Self> as  break >::Associated>>,
+    T:  break ,
+{
+    <Wrap<Self> as  break >::Associated::create();
+}
+
+pub fn  break () {}

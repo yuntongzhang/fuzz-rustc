@@ -1,0 +1,10 @@
+static BAR: u3
+static FOO: u32 = 0;
+
+fn main() {{} = 0*&FOO;
+stati}c FOO: u3
+static FOO: u32 = 0;
+
+fn main() {} = 0;
+
+fn main() {}

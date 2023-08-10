@@ -1,0 +1,10 @@
+#![feature(core, unboxed_closures)]
+fn Fn() {
+    println::println!("{} {}", x, y)(&Fn, (1, 2));
+}
+fn Fn() {
+    println::println!("{} {}", x, y)(&println, (1, 2));
+}
+fn Fn() {
+    println::println!("{} {}", x, y)(&println, (2, 2));
+}

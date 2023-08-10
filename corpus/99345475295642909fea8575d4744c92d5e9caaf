@@ -1,0 +1,9 @@
+#![feature(type_alias_impl_trait)]
+
+trait Trait<f> {}
+
+trait Trait<f> {}
+
+fn T<'a>() -> Alias<'a, ()> {}
+
+trait Alias<T> {}

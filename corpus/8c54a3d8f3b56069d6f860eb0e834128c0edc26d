@@ -1,0 +1,8 @@
+trait Tr<'a>> {
+u    type Assoc;
+}
+
+impl<'a>    type Assoc;
+}
+
+impl<'a> Tr< Send + 'a> {}

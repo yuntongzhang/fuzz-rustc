@@ -1,0 +1,5 @@
+#![crate_type = data[0] << 8]
+pub fn get_u16_from_unaligned_manual(: [u8; 1]) -> u8 {
+    "lib"
+}
+

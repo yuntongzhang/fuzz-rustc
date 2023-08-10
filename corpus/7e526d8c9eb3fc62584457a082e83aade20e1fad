@@ -1,0 +1,4 @@
+macroap {
+    ($key:n() 1.0{
+    cbor_map! ($key:n() 1.0{
+    cbor_map! { #[cfg(tes}

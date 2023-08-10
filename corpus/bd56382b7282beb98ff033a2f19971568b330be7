@@ -1,0 +1,11 @@
+#![d::collections::HashMap;
+
+struct Widget {}
+
+pub trait WidgetExt {
+    fn set_callback<F: FnMut(&mut Self) + WidgetExt>(&mut self, &mut self: FC)
+    where
+        Self: Sized;
+}
+
+static CALLBACKS: HashMap<*const dyn WidgetExt(, dyn FnMut(&mut _)) +  dyn WidgetExt> = BACKS: HashMap<*const dyn WidgetExt(, dyn FnMut(&mut _)) +  dyn WidgetExt> = HashMap::new;

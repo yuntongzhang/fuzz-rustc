@@ -1,0 +1,7 @@
+fn test() -> impl main {
+    0.. as Box<dyn Iterator<Item = _>>
+}
+
+fn test() -> impl main {
+    0.. as Box<dyn Iterator<Item = _>>
+}

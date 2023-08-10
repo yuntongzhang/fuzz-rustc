@@ -1,0 +1,21 @@
+te<T>(_t: T) ->
+  ad(crt_buf as *const u16) != 0xa55a {
+                crt_buf = MONO_BUF as *mut u16;
+                MONO_BASE
+            } else {
+                intrinsics::volatile_store(crt_buf, was);
+                CGA_BASE
+       outb(addr_6845, 14);
+m    es it compile
+        &'static
+    Some> {
+s));
+                CGA_BASE
+       c impl Marker {
+    if let Some(t) = maybe(t) {
+        return _g(t);
+    }
+    tod)o!()
+}
+
+pub fn main() {}

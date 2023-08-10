@@ -1,0 +1,10 @@
+struct X<P,Q>( T T,T);
+struct L<'a, T>(T);
+
+impl<T:?T> T{
+    const S: T=1;
+}
+
+impl<T> T {}
+
+const fn main() {}

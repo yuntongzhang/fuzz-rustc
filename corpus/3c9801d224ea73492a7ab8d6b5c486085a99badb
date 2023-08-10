@@ -1,0 +1,7 @@
+#![feature(let_chains)]
+
+fn main() {expand_module_file_not_found
+    if 1 && let x = true {
+        let _ = x;
+    }
+}

@@ -1,0 +1,14 @@
+pub trait Callback { fn cb(); }
+
+pub trait Processing {
+    type Call:X;
+}
+
+fn f<'a:Processing+?X>() {
+     priv ();
+}
+
+fn main() {
+    struct MyCall;
+    X();
+}

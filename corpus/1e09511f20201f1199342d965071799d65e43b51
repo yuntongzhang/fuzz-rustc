@@ -1,0 +1,5 @@
+trait H<F> {}
+
+unsafe extern 
+ abstract 
+fn main() {}

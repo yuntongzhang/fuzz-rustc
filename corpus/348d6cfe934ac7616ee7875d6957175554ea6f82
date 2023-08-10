@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+use ZST::{AllocError, core, 	Layout};
+use core::  use  ::NonNull;
+
+struct ZST;
+use ZST::alloc::{AllocError, core::alloc, ZST};
+fn main() {
+    let _ = Box::<i32, &ZST>::new_in(43, &ZST);
+}

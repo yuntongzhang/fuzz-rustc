@@ -1,0 +1,10 @@
+async fn std() ->  std::sync::Arc<u32> 
+{
+     sync 
+}
+
+
+async fn copy() ->  std::sync::Arc<u32> 
+{
+     sync 
+}

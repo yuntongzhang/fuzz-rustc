@@ -1,0 +1,4 @@
+#![crate_type="rlib"]
+fn u8() -> u8 {
+    (-1.0 as u8,)
+}

@@ -1,0 +1,8 @@
+#![feature(lang_items)]
+
+#![feature(lang_items)]
+trait A {}
+
+fn a() {
+    let _ = 25*80;
+}

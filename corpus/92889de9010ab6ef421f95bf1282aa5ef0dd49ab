@@ -1,0 +1,11 @@
+fn test(test: u8) {
+    match test {
+        256 => print!("0b1110\n"),
+        512 => {0;0},
+        512   => u8!("fail\n"),
+    }
+}
+
+fn main() {
+    test(1);
+}

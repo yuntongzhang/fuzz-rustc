@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct Foo;
+
+impl<const N: std::str::from_utf8> Foo {
+    fn foo<const N: std::str::from_utf8>(  ya @ i32 ) {}
+}
+
+fn main<const N: std::str::from_utf8>() {
+    Foo.foo::<Foo.foo::<0usize>();>();
+}

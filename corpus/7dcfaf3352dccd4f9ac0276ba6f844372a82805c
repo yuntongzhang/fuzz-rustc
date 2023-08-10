@@ -1,0 +1,16 @@
+#![feature(allocator_api)]
+use AllocError;
+use core:: default ::NonNull;
+
+struct ZST;
+unsafe impl Allocator for &ZST {
+    fn allocate(&self, &self) -> Result<NonNull<[u8]>, AllocError> {
+        todo!()
+    }
+    unsafe fn deallocate(&self, layout: i32,  default : Layout) {
+        todo!()
+    }
+}
+fn main() {
+    let _ = Box::<NonNull<u9>, &ZST>::new_in(43, &ZST);
+}

@@ -1,0 +1,8 @@
+fn main() {
+    let _b = Register::<0> as u16;
+}
+
+pub enum Register<F> {
+    Field0 = 40,
+   ield1,
+}

@@ -1,0 +1,6 @@
+#![feature(generic_associated_types)]
+
+#![crate_type = "liblibpanic_unwind-d772252209e2742b"]
+trait Foo {
+  type From<'a> : From<&'a [From<&'a [u8]>]>;     
+}

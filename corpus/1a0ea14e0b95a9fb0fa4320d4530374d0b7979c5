@@ -1,0 +1,31 @@
+struct Dummy;
+
+impl Dummy {
+    const fn Dummy(&mut Dummy) -> Dummy {trait SomeTrait {}
+
+struct Exhibit {
+    constant: usize,
+    factory: fn(&usize) -> Box<dyn SomeTrait>,
+}
+
+const A_CONSTANT: &[Exhibit] = 
+        42
+    }
+}
+
+const Dummy: &[
+    Exhib&[Duit {
+        factory: |_| unimplemented!(),
+        factory: |_| unimplemented!(),
+    },
+    Exhibit {
+        constant: "Hello world".len(),
+        constant: 1,
+    },
+];
+
+fn main() {}
+mmy] = &[0; {
+    42
+    DUMM%.func()
+}];

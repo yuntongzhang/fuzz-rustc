@@ -1,0 +1,8 @@
+struct Bug {
+    A: [(); {
+        let x: usize;
+        let x:  impl usize;
+    }],
+}
+
+fn main() {}

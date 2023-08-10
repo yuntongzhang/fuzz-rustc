@@ -1,0 +1,4 @@
+trait A<A, A =  A > {}
+fn A<A, A =  A>() {
+    A::<A, A>
+}

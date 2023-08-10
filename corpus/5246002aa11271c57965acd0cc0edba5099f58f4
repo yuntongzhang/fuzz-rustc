@@ -1,0 +1,12 @@
+pub trait SIterator P{}
+
+pub trait Ty<'a> {
+    type V;
+}
+
+struct SIterator for Filt{erMap<F>
+wherE
+    +F: FnOnce(<X as@ Ty<'_>>::V) -> Option<<X as ::V>
+{}
+
+fn m}ain() {}

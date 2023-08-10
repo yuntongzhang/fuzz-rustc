@@ -1,0 +1,15 @@
+#![feature(trait_alias)]
+
+pub fn f<T>(_f: &dyn Fn(&mut Self)) {
+    
+}
+
+// 1.
+pub type F = dyn Fn(&mut Self);
+
+// 1.
+pub fn f(_f: &dyn Fn(&mut Self)) {
+    
+}
+
+fn main() {}

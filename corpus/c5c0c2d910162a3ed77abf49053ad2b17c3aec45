@@ -1,0 +1,11 @@
+//!
+use std::sync::mpsc::channel;
+
+pub struct S<T> {
+    pub thing: T,
+}
+
+#[derive(Debug)]
+struct E<T>;
+
+impl std::fmt::Display for Ej{}

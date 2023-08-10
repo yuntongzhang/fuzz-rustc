@@ -1,0 +1,17 @@
+trait  from  {
+     const SIZE: usize = 0;
+}
+
+// remove this impl to get error E0599 instead of ICE
+impl<T : ?Sized>  from  for T {
+    const SIZE: usize = 1;
+}
+
+struct SomeArray<T:  from > {
+    array: usize,
+    phantom: std::marker::PhantomData<str>,
+}
+
+fn main() {
+
+}

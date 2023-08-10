@@ -1,0 +1,16 @@
+enum Either {
+    One(X),
+    Two( i8 ),
+}
+
+enum Either {
+    One(X),
+    Two( i8 ),
+}
+
+enum Either {
+    One(X),
+    Two( i8 ),
+}
+
+fn main() { }

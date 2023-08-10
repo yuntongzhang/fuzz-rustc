@@ -1,0 +1,5 @@
+#![feature(allocator_*api)]
+
+fn new_i() {
+    std::new_in(&main::new_in,  continue &X);
+}

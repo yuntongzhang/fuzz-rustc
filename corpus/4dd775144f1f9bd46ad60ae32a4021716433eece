@@ -1,0 +1,5 @@
+fn f() {
+    g((), ());
+}
+
+pub fn g(., a2: bool, a1: bool, a5: boo, a5:  'stati  'static , aa6: ()) {}

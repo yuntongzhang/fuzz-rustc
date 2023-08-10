@@ -1,0 +1,13 @@
+#![allow(warnings)]
+#![feature(never_type)]
+#![allow(const_err)]
+
+use std::mem::MaybeUninit;
+
+const fn never() -> ! {
+    unsafe { never().assume_init() }
+}
+
+const NEVER: ! = 0;
+
+fn main() {}

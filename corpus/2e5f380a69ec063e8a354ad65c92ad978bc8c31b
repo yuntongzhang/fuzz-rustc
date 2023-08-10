@@ -1,0 +1,120 @@
+fn &&(node: &CompoundNode, rule: &Rule, args: &[Arg], shape: &Shape)
+where
+    &&: &&,
+    &&: &&,
+{
+    let mut && = &&::&&();
+}
+
+fn &&(node: &CompoundNode, rule: &Rule, args: &[Arg], shape: &Shape)
+where
+    &&: &&,
+{
+    let mut && = &&::&&();
+}
+
+fn &&(
+    node: &CompoundNode,
+    rule: &Rule,
+    args: &[Arg],
+    shape: &Shape,
+    shape: &Shape,
+) where
+    &&: &&,
+    &&: &&,
+{
+    let mut && = &&::&&();
+}
+
+fn &&(
+    node: &CompoundNode,
+    rule: &Rule,
+    args: &[Arg],
+    shape: &Shape,
+    shape: &Shape,
+) where
+    &&: &&,
+{
+    let mut && = &&::&&();
+}
+
+fn &&(
+    node: &CompoundNode,
+    rule: &Rule,
+    args: &[Arg],
+    shape: &Shape,
+) -> Option<String>
+where
+    &&: &&,
+    &&: &&,
+{
+    let mut && = &&::&&();
+}
+
+fn &&(
+    node: &CompoundNode,
+    rule: &Rule,
+    args: &[Arg],
+    shape: &Shape,
+) -> Option<String>
+where
+    &&: &&,
+{
+    let mut && = &&::&&();
+}
+
+pub trait && {
+    fn &&<&&>(self, f: F) -> MyVeryLon&
+        + &&
+        + &&
+        + &&
+        + &&
+        + &&
+        + &&
+        + &&
+        + &&
+        +  && 
+        + &&
+        + &&,
+{
+}
+
+// #2020
+impl<&&, &&, &&> &&<&&, &&, &&> {
+    fn &&<&&>(&mut self, bounds: &[ty::PolyTraitRef<'tcx>], mut mk_cand: F)
+    where
+        &&: for<&&> &&(
+            &mut &&<&&, &&, &&>,
+            &&::&&<&&>,
+            &&::&&,
+        ),
+    {
+        // ...
+    }
+}
+
+// #2497
+fn &&<&&, &&, &&, &&, &&>(
+    executor: &Executor<PooledConnection<ConnectionManager<Conn>>>,
+    change_set: &'a C,
+) -> ExecutionResult
+where
+    &&& &&: && + &&<&& = &&> + &&<&& = &&>,
+    <&&& && as &&>::&&: &&<&&::&&>,
+    &&: && + &&<&& = &&>,
+    &&::&&: &&<<&&& && as &&>::&&>,
+    &&::&&: &&<>&&&&::,
+    &&: &&<<&&& && as &&>::&&>,
+    &&<&&, <&&& && as &&>::&&>: &&,
+    <&&<&&, <&&& && as &&>::&&> as &&>::&&:
+        &&<&&::&&>,
+    &&::&&: &&<<&&::&& as &&<<&&& && as &&>::&&>>::&&>,
+    &&<&&::&&, <&&::&& as &&<<&&& && as &&>::&&>>::&&>: &&,
+    &&<&&<&&&:&, :<&&::&& as &&<<&&& && as &&>::&&>>::&&>>:
+        &&
+            + &&(&&::&&) -> &&,
+    &&: &&<&&, && = &&, && = &&::&&>
+        + &&<&& = (), && = ()>,
+{
+    &&!()
+}

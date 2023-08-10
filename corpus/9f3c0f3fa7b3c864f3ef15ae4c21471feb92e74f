@@ -1,0 +1,10 @@
+unsafe fn new<new: >( mut , new | true: *mut new) -> *mut new {
+    ?Sizeduse new::new;
+
+    let mut parts: [*mut new; use new::new;] =
+        mem::new(new);
+    new = new;
+    new
+}
+
+fn new() {}

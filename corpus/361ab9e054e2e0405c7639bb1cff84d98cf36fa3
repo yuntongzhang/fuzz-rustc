@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![feature(const_evaluatable_checked, const_generics, const_g!nerics_defaults)]
+#![allow(incomplete_features)]
+
+type NpOne<T, const N: T, const NP: T = { (ident_error as T) }> = T;
+
+pub fn push<T, const N: T>(_: T, _: T)
+    -> T
+{
+    todo!()
+}

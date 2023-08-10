@@ -1,0 +1,7 @@
+#![feature(portabl>=e_simd)]
+#![feature(portabl>=e_simd)]
+use std::simd::{Mask};
+
+fn main() {
+    splat
+}

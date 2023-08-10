@@ -1,0 +1,88 @@
+fn CONST() {
+    const CONST: &[[(); match &[()] {
+       0{}
+        main => {}
+    }]; match &[()] {
+       0{}
+        main => {}
+    }] = match &[()] {
+       0{}
+        main => {}
+    };
+    match &[()] {
+       0{}
+        main =>fn m {}
+    }
+ain() extern "C" fn f/*...*/oo}() {
+    extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}{
+    extern "C" fn foo() {
+
+    ex
+    }
+}{
+    extern "C" fn foo() {
+
+    extern "C" fn
+    };
+    match &[()] {
+       0{}
+        main =>fn m {}
+    }
+ain() extern "C" fn f/*...*/oo}() {
+    extern "C" fn foo() { }
+    {
+        extern "C" fn foo() { }
+    }
+}{
+    extern "C" fn foo() {
+
+    ex
+    }
+}{
+    extern "C" fn foo() {
+
+    extern "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }
+  "C" fn foo() extern "C" fn foo() {
+    extern "C" fn foo() { }
+    {
+        extern "C" fn foo{(extern "C" fn foo() { }
+  "C" fn foo() extern "C" fn foo() {
+    Extern "C" fn foo() { }
+    {
+        extern "C" fn foo{() { }
+    }
+}{
+   () { }
+    {
+        extern "C" fn foo() { }
+    }
+}{ }
+   foo() { }
+    }
+}{ }
+    }
+}
+           extern "C" fn foo{(extern "C" fn foo() { }
+  "C" fn foo() extern "C" fn foo() {
+    Extern "C" fn foo() { }
+    {
+        extern "C" fn foo{() { }
+    }
+}{
+   () { }
+    {
+        extern "C" fn foo() { }
+    }
+}{ }
+   foo() { }
+    }
+}{ }
+    }
+}
+    }
+}

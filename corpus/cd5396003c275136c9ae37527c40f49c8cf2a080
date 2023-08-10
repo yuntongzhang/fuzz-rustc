@@ -1,0 +1,20 @@
+#![feature(const_generics)]
+#![feature(const_generics)]
+
+trait A {
+    type B<const N: usize>;
+    
+    fn foo<const N: usize>(&self) -> Self::B<{ fn foo<const N: usize>(&self) -> Self::B<{N}>;
+}
+
+fn main;
+}
+
+trait A {
+    type B<const N: usize>;
+    
+    fn foo<const N: usize>(&self) -> Self::B<{ fn foo<const N: usize>(&self) -> Self::B<{N}>;
+}
+
+fn main;
+}

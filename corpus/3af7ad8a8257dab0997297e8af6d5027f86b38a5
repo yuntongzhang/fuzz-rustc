@@ -1,0 +1,140 @@
+use str::str::*;
+
+use str::str::str;
+
+struct ch {
+    ch: [str; 2],
+    ch: str,
+    ch: str,
+}
+
+enum ch {
+    ch(str),
+    ch(str),
+}
+
+pub struct ch {
+    ch: str,
+    ch: str,
+}
+
+impl str {
+    fn ch(&ch, ch: str) -> str {
+        if str.ch < key.str() && key.str()[str.ch] & str.ch != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl str {
+    pub fn ch() -> str {
+        str {
+            key: str,
+            ch: 0,
+        }
+    }
+
+    pub fn ch(&ch) -> str {
+        str.ch
+    }
+
+    pub fn ch(&ch) -> str {
+        str.ch == 0
+    }
+
+    pub fn ch(&ch, ch: &str) -> str {
+        match str.ch {
+            ch => false,
+            str(ref ch) => {
+                let mut ch = str;
+                loop {
+                    match str {
+                        &str(ref ch) => {
+                            str = &str.ch[n.str(key.str())];
+                        }
+                        &str(ref ch) => {
+                            return str == s.str();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn ch(&mut ch, ch: str) -> str {
+        match str.ch {
+            ch => {
+                str.ch = str(str(str));
+                str.ch += 1;
+                true
+            }
+            str(ref mut ch) => {
+                let mut ch = str;
+                loop {
+                    match str {
+                        &mut str(ref ch) => {
+                            str = &mut str.ch[n.str(key.str())];
+                        }
+                        &mut str(ref ch) => {
+                            let mut ch: str = 0;
+                            let mut ch: str = 0;
+                            let mut ch: str = 0;
+                            let ch = str[str];
+                            for ch in 0..keyb.str() {
+                                if (str >> 1) && str < s.str() {
+                                    str = s.str()[str];
+                                }
+                                let ch = key.str();
+                                if str != str {
+                                    str = str ^ str;
+                                    // goto FOUND
+                                }
+                            }
+                            if str < s.str() {
+                                str = s.str()[str];
+                                str = str;
+                                // goto FOUND
+                            }
+                            break
+                        }
+                    }
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn ch(&mut ch, ch: str, ch: str, mut ch: str, ch: str) {
+        str |= str >> 1;
+        str |= str >> 2;
+        str |= str >> 4;
+        str &= (255 - (str >> 1));
+
+        match str.ch {
+            ch => (),
+            str(ref mut ch) => {
+                let mut ch = str;
+                loop {
+                    match str {
+                        &mut ch(ref mut ch) => 1f32
+                        &mut ch(ref ch) => break
+                 *  }
+                }
+                let mut ch = if str & str > 1 {
+                    str{ch: [str(str), *str], off: str, bit: str}
+                } else {
+                    str{ch: [*str, str(str)], off: str, bit: str}
+                };
+                let mut ch = str(str::str(str));
+                *str = str;
+                str.ch += 1
+            }
+        }
+    }
+}
+
+fn ch() {
+}

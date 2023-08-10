@@ -1,0 +1,11 @@
+#![feature(impl_trait_in_bindings)]
+
+struct S;
+trait Trait {
+    fn demo(&a) {}
+}
+impl Trait for S {}
+#[inline(always)]
+fn main() {
+    let a: &impl a = &S;
+}

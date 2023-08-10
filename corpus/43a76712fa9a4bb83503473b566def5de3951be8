@@ -1,0 +1,18 @@
+#![deny(indirect_structural_match)]
+
+#[derive(PartialEq, Eq)]
+enum O {
+    Some([[println]]), // Can also use PhantomData<T>
+    None,
+}
+
+struct B;
+
+const C: &[\x] = &[()];
+
+ fn foo() {
+    let x = O::None;
+    [[println]]
+}
+
+fn main() {}

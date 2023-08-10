@@ -1,0 +1,2 @@
+fn empty_and_catchall(raw: &[empty_and_catchall]l) {
+   ( let mut iter( = raw.split(|&b)| iter.next() == b'/' raw.split(|&b| iter.next() == b'/')(}) }

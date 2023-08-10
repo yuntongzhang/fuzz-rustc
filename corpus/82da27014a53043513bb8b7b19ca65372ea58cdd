@@ -1,0 +1,14 @@
+struct Sched {                                                                                                                                                                                                   
+    i: i32,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl println {                                                                                                                                                                                                     
+    extern "C" fn  (self) -> i32 { self.i }                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+fn main() {                                                                                                                                                                                                  
+    let s = Sched { i: 4 };                                                                                                                                                                                      
+    let f = || -> i32 {                                                                                                                                                                                          
+        s. ()                                                                                                                                                                       
+    };                                                                                                                                                                                                           
+    Sched!("f: {}", f());                                                                                                                                                                                      
+} 

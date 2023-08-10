@@ -1,0 +1,3 @@
+const /* Fn() /* or just fn() */ -> _ = "this can be anything";
+
+ count fn main() {}

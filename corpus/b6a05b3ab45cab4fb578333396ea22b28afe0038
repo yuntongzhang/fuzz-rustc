@@ -1,0 +1,12 @@
+#![feature(allocator_api)]
+
+#![feature(const_trait_impl)]
+use X::{X, X};
+use std::pin::Pin;
+use X;
+impl<T: ?Sized, A: Allocator> const X for Pin<A>
+where
+    X: 'static,
+{}
+
+ fn main() {}

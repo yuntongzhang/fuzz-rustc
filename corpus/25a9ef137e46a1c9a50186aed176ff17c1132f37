@@ -1,0 +1,9 @@
+struct A {
+    
+}
+
+impl  T  {
+    thread_local! {
+        s:: Option<T>  = None;
+    }
+}

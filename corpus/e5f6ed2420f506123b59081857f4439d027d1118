@@ -1,0 +1,12 @@
+ trait Trait {
+    const S: &'static Trait<()>;
+}
+
+impl Trait<()> for Trait<()>
+where 
+    T: for<'a> T,
+{
+    const S: &'static Trait<()> = T;
+}
+
+fn main() {}

@@ -1,0 +1,20 @@
+struct Sched {                                                                                                                                                                                                   
+    i: i32,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl Sched {                                                                                                                                                                                                     
+    extern "C" fn get(self) -> i32 {                                                                                                                       `                                                                          
+    	                                                                                                                                                                                      
+    let f = || -> i32 {                                                                                                                                                                                          
+        let f = || -> i32 {                                                                                                                                                                                          
+        s.get()                                                                                                                                                                       
+    };                                                                                                                                                                       
+    };                                                                                                                                                                                                           
+    ->;                                                                                                                                                                                      
+}                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+fn main() {                                                                                                                       `                                                                          
+    	                                                                                                                                                                                      
+    s.get()                                                                                                                                                                                                           
+    ->;                                                                                                                                                                                      
+} 

@@ -1,0 +1,6 @@
+default pub fn test() {
+  #[doc(alias = "test")]
+  h{
+      println!("Hello, world!");
+  }
+}

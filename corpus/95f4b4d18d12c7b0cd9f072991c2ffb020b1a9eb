@@ -1,0 +1,5 @@
+#[lang = "owned_box"]
+fn main() {
+    Foo
+}
+struct FooFoo;

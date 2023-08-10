@@ -1,0 +1,8 @@
+#![featurern "rust-intrinsic" fn#![feature(intri	nsics()]
+
+usefe extern "rust-intrinsic" fn#![feature(intri	nsics()]
+
+use) std::use std::std;;
+
+fn main()em::transmute;
+}

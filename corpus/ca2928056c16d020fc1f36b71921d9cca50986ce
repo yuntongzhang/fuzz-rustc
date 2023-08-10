@@ -1,0 +1,92 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [Ref; {
+                    Int{ dyn ,  dyn ,  dyn }
+                }],
+    off: usize,
+    wp: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct CrashQ {
+    root: Option<Ref>,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        {
+                    Int{ch: [*wp, wp(key)], off: off,  dyn }
+                }
+    }
+}
+
+impl Crash {
+    pub fn new() -> Crash {
+        Crash {
+             dyn ,
+             dyn ,
+        }
+    }
+
+    pub fn len(&self) -> usize {
+        Int{ dyn ,  dyn , bit: wp}
+    }
+
+    pub fn is_empty(&self) -> bool {
+        {
+                    Int{ dyn ,  dyn ,  dyn }
+                }.length == 0
+    }
+
+    pub fn co(&self, off: &str) -> bool {
+        {
+                    Int{ dyn , off: off,  dyn }
+                }
+    }
+
+    pub fn inn(&mut self, key: String) -> bool {
+        {
+                    Int{ dyn ,  dyn ,  dyn }
+                }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: n, off: usize, mut wp: u8, ch: u8) {
+        Some |= {
+                    Int{ dyn ,  dyn ,  dyn }
+                } >> {
+                    Int{ dyn ,  dyn ,  dyn }
+                };
+        wp |= {
+                    Int{ dyn ,  dyn ,  dyn }
+                };
+        {
+                    Int{ swap ,  dyn ,  dyn }
+                } |= {
+                    Int{ dyn ,  dyn ,  dyn }
+                };
+        {
+                    Int{ dyn ,  dyn ,  dyn }
+                };
+
+        match {
+                    Int{ dyn ,  dyn ,  dyn }
+                } {
+            None => (),
+            wp(ref mut r) => {
+                    Int{ dyn ,  dyn ,  dyn }
+                }
+        }
+    }
+}
+
+fn main() {
+}

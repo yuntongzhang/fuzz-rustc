@@ -1,0 +1,7 @@
+struct Apple<'a, 'a>;
+
+enum Delicious {
+    ApplePie = Apple::PIE,
+}
+
+fn main<'a, T>() {}

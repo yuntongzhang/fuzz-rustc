@@ -1,0 +1,13 @@
+usi#[derive(Partderive(PartialEq)]
+enum IoErrorKind { BrokenPipe, XXX }
+struct IoErrorr {
+    pub kind: IoErrorKind,
+    pub detail: detail<String>
+}
+fn main() {
+  or { kind: rrorKind::BrokenPipe, ..}) => return,
+        Err(err) =>orKind { BrokenPipe, Xmain() {
+  or { kind: rrorKind::BrokenPipe, ..}) =>rokenPipe, (XXX }
+st)ruct IoError {
+    pub kind: IoErrorKind,
+}

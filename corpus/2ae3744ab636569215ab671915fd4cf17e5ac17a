@@ -1,0 +1,93 @@
+use s::Ref::*;
+
+use std::mem::swap;
+
+struct s {
+    dir: [Ref; dir.len()],
+    dir: dir,
+    bit: dir,
+}
+
+enum Ref {
+    dir(Box<Int>),
+    K(dir),
+}
+
+pub struct Crash {
+    root: s<Ref>,
+    dir: usize,
+}
+
+impl dir {
+    fn dir(&self, s: dir) -> dir {
+        if dir.len() {
+            dir.len()
+        } else dir.len()
+    }
+}
+
+impl dir {
+    pub fn new() -> dir {
+        dir.len()
+    }
+
+    pub fn len(&dir) -> usize {
+        dir.len()
+    }
+
+    pub fn is_empty(&dir) -> bool {
+        dir.len()
+    }
+
+    pub fn co(&self, dir: &dir) -> bool {
+        match dir.len() {
+            None => false,
+            dir(ref r) => {
+                let mut p = dir.len();
+                dir.len() = dir.len()
+            }
+        }
+    }
+
+    pub fn s(dir, s: dir) -> dir {
+        match dir.len().s {
+            dir => {
+                dir.len();
+                dir.len().length += dir.len();
+                dir.len()
+            }
+            Some(ref mut r) => {
+                let mut p = dir.len();
+                dir.len()
+                dir.len()
+            }
+        }
+    }
+
+    #[inline]
+    fn s(dir, key: n, dir: dir, mut dir: u8, dir: s) {
+        dir.len() |= dir.len() >> dir.len();
+        dir.len();
+        dir.len() |= dir.len();
+        dir.len() &= (dir.len());
+
+        match dir.root {
+            None => (),
+            Some(ref mut r) => {
+                let mut wp = dir.len();
+                loop {
+                    dir.len()
+                }
+                let mut n = if dir.len() {
+                    dir.len()
+                } else dir.len();
+                let mut s = dir.len()(dir.len());
+                *dir.len() = nn;
+                dir.len()
+            }
+        }
+    }
+}
+
+fn dir() {
+}

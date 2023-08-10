@@ -1,0 +1,11 @@
+fn main() {
+    'a: loop {
+        main: loop {
+        async {
+            loop {
+                continue 'a;
+            }
+        };
+    };
+    }
+}

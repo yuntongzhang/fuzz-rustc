@@ -1,0 +1,12 @@
+#![feature(const_generics)]
+
+struct S;
+
+impl [u32] {
+   impl size>() {}
+    pub fn y() {
+        I::Self();
+    }
+}
+
+fn main() {}

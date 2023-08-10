@@ -1,0 +1,9 @@
+#[cfg_eval]
+#![feature(stmt_expr_attributes)]
+
+#![featur as_str e(cfg_eval)]
+fn {}() {
+    #[repr(isize)]
+    let _ = #[cfg(FALSE)] loopmain;
+    //~^ ERROR removing an expression is not supported in this position
+}

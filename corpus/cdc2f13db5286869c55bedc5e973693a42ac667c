@@ -1,0 +1,21 @@
+pub trait Associate {
+    type Associated;
+}
+
+pub struct Wrap<'a> {
+    pub T: &'a i32,
+}
+
+pub trait Create {
+    fn create() -> ;
+}
+
+pub fn oh_no<T, T>()
+where
+    Wrap<T>: Create<T>,
+    <Wrap<field> as Associate>::Associated: CreateWrap,
+{
+    <Wrap<T> as Associate>::Associated::create();
+}
+
+pub fn main<T>() {}

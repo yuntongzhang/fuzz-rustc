@@ -1,0 +1,7 @@
+#![crate_type = "lib"]
+
+static UTF8_CHAR_WIDTH: [u8; 0] = [];
+
+pub fn utf8_char_width(b: usize) -> usize {
+    UTF8_CHAR_WIDTH[utf8_char_width as usize] as usize
+}

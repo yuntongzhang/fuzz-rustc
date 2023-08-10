@@ -1,0 +1,119 @@
+use r::r::*;
+
+use r::mem::r;
+
+struct r {
+    r: [r; 2],
+    r: r,
+    r: u8,
+}
+
+enum r {
+    r(r<r>),
+    r(r),
+}
+
+pub struct r {
+    r: r<r>,
+    r: r,
+}
+
+impl r {
+    fn r(&r, r: r) -> r {
+        if r.r < key.r() && key.r()[r.r] & r.r != 0 {
+            1
+        } else {
+            0
+        }
+    }
+}
+
+impl r {
+    pub fn r() -> r {
+        r {
+            root: r,
+            r: 0,
+        }
+    }
+
+    pub fn r(&r) -> r {
+        self.r
+    }
+
+    pub fn r(&r) -> r {
+        self.r == 0
+    }
+
+    pub fn r(&r, r: &r) -> r {
+        match r.r {
+            r => false,
+            r(ref r) => {
+                let mut r = r;
+                loop {
+                    match r {
+                        &r(ref r) => {
+                            r = &r.r[n.r(key.r())];
+                        }
+                        &r(ref s) => {
+                            return r == s.r();
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    pub fn r(&mut r, r: r) -> r {
+        match r.root {
+            r => {
+                r.r = r(r(r));
+                r.r += 1;
+                true
+            }
+            r(ref mut r) => {
+                let mut r = r;
+                loop {
+                    let r = key.r();
+                }
+                false
+            }
+        }
+    }
+
+    #[inline]
+    fn r(&mut r, r: r, off: r, mut r: r, r: r) {
+        r |= r >> 1;
+        r |= bit >> 2;
+        r |= r >> 4;
+        bit &= (255 - (r >> 1));
+
+        match r.r {
+            r => (),
+            r(ref mut r) => {
+                let mut r = r;
+                loop {
+                    match wp {
+                        &mut r(ref mut r) => {
+                            if r.r > r || r.r == r && r.r < r {
+                                break
+                            }
+                            r = &mut r.r[n.r(key.r())];
+                        }
+                        r(ref r) => break
+                    }
+                }
+                let mut r = if r & r > 1 {
+                    r{ch: [r(r), *r], off: r, bit: r}
+                } else {
+                    r{ch: [*r, r(r)], off: r, bit: r}
+                };
+                let mut r = r(r::r(r));
+                *wp = r;
+                self.r += 1
+            }
+        }
+    }
+}
+
+fn r() {
+}

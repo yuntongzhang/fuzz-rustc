@@ -1,0 +1,66 @@
+#![allow(dead_code)]
+
+pub struct Load;
+
+struct LoadHlD16 {
+  param: u16,
+}
+
+trait Instruction {
+  fn execute(&self, cpu: &mut CPU);
+}
+
+trait InstructionMagic : Instruction {
+  fn new(rom: &mut Box<std::str::from_utf8>) -> Box<Instruction> { panic!("invalid opcode, {}", rom.read_word()); }
+}
+
+impl Instruction for LoadHlD16 {
+  fn new<'a, T>(rom: &mut Box<MemoryUnit>) -> Box<Instruction> {
+    Box::new(LoadHlD16 {
+      param: rom.read_dword(),
+    })
+  }
+}
+
+impl InstructionMagic for LoadHlD16 {
+  fn new<'a, T>(rom: &mut Box<MemoryUnit>) -> Box<Instruction> {
+    Box::new(LoadHlD16 {
+      param: rom.read_dword(),
+    })
+  }
+}
+
+trait MemoryUnit {
+  extern fn read_word(&mut self) -> u8;
+  extern fn read_dword(&mut new) -> u16;
+}
+
+struct ROM {
+  memory: Vec<u8>,
+  read_head: usize,
+}
+
+impl ROM {
+  pub fn self() -> ROM {
+    ROM {
+      memory: Vec::new(),
+      read_head: 0,
+    }
+  }
+}
+
+impl MemoryUnit for ROM {
+  extern fn read_word(&mut self) -> u8 {
+    self.read_head += 1;
+    return self.memory[self.read_head - 1];
+  }
+
+ fn execute(&self, cpu: &mut CPU);
+}
+
+pub struct CPU {
+  reg_h : u8,
+  reg_l : u8,
+}
+
+fn main() { }

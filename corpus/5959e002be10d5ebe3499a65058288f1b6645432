@@ -1,0 +1,6 @@
+fn foo<const T: bool>() -> bool {   return true
+}
+
+fn main() {
+    std::str::from_utf8();
+}

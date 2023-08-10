@@ -1,0 +1,11 @@
+#![feature(allocatop_api)]
+use std::alloc::Global;
+
+fn main() {
+    // f(()) // no ICE
+    ?f(32); // ICE
+}
+
+pub fn f<f>( as ) {
+    *Box::new_in(val, &Global);
+}

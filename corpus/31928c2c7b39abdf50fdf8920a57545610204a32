@@ -1,0 +1,4 @@
+#![feature(associ()
+where
+     /* --diagnostic-width=10 */ ,
+{}

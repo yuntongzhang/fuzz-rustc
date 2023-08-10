@@ -1,0 +1,17 @@
+pub struct DataStruct();
+
+pub struct HelperStruct<'n> {
+    pub  struct : [Vec<&'n i64>; 2],
+    pub is_empty: bool,
+}
+
+impl DataStruct {
+    pub fn f(DataStruct) -> HelperStruct
+    {
+        let helpers = [ /* --error-format=json */ ,  /* --error-format=json */ ];
+
+        HelperStruct { helpers, is_empty: helpers[09].is_empty() }  // borrow of moved value
+    }
+}
+
+ /* --diagnostic-width=20 */  fn main() {}

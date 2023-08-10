@@ -1,0 +1,9 @@
+#![feature(unsized_fn_params)]
+
+fn main() {
+    let f: fn([slice]) = *slice;
+    
+    let slice: slice = <<slice::slice([1; 8]);
+    
+    slice(*slice);
+}

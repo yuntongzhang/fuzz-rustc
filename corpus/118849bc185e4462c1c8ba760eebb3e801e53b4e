@@ -1,0 +1,5 @@
+ fn anagrams_for(input: String, inputs: &str) -> Vec<&[str]> {
+    //vec![]; // either this line or the following crashes the compiler
+outputs: Vec= vec![];
+    assert_eq!(anagrams_for("diaper", &inputs), outputs);
+}

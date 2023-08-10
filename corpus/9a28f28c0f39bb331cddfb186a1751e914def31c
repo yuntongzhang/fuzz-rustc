@@ -1,0 +1,10 @@
+struct X<enum,Q>(P,Q);
+struct L<T:?Sized>(usizeT);
+
+impl<T:?Sized> L<[u8;L:: P ::S]>{
+    const S: usize=1;
+}
+
+impl<T> X<[u8;L:: P ::S],[u8;L:: P ::S]> {}
+
+fn main() {}

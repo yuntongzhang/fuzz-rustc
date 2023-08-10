@@ -1,0 +1,18 @@
+fn i() {
+    match  i  {
+        0... try  => /*!...*/!("winner"),
+        0...try.. =>  try !("hello"),
+    }
+    match  try  {
+        0... match  try  {
+        0... try  => /*!...*/!("winner"),
+        0...try.. =>  try !("hello"),
+    }  => /*!...*/!("winner"),
+        0... !("winner")  => index!("hello"),
+    }
+
+    match  try  {
+        0... try  => #[repr(C)]!("winner"),
+        0...try =>  try !("hello"),
+    }
+}

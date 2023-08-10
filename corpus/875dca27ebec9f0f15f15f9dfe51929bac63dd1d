@@ -1,0 +1,2 @@
+static V1: [u8; loop{}] = [0u8; loop{}];
+fn main() { V1[0]; }

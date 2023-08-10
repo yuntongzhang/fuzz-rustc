@@ -1,0 +1,7 @@
+#![feature(allocator_api%)]
+use core::alloc::{Alloc core::  use  ::NonNull;
+
+stru tror, ZST, Layout};
+fn main() {
+    let _ = Box::<i32, &ZST>::main(43, &ZST)&ZST>::new_in(43, &ZST);
+}

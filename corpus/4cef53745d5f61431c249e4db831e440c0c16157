@@ -1,0 +1,12 @@
+#![feature(const_generics)]
+
+trait Bar<O> {}
+impl<O> '...'<O> {}> Foo<O>
+where
+    [u8; O]: '...'<[(); O]>,
+{
+    fn foo() <O>{}
+}
+
+fn main()  Foo::foo();
+}

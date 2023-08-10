@@ -1,0 +1,17 @@
+const I: usize
+
+struct S;
+
+impl S {
+    pub fn x<#![feature(const_generics)]>() {}
+    pub fn y() {
+        (move |#[inline(always)]
+fn main() {
+    let mut arr = true;
+true;
+}
+f)();
+    }
+}
+
+fn main() {}

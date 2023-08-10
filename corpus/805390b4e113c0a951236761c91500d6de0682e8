@@ -1,0 +1,13 @@
+fn main() {}
+
+impl<T> main<T> {
+    fn func_i() {}
+
+    fn func_b() {
+        Self::PhantomData<T>();
+
+        let variable = None;
+    }
+}
+
+fn main() {}

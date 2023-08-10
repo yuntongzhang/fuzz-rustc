@@ -1,0 +1,11 @@
+fn map<T>(_: fn() -> Option<&'static T>) -> Option<Option<_>> {
+    None
+}
+
+fn value() -> Option<&'static _> {
+    std::str::from_utf8
+}
+
+const _: Option<_> = {
+    let _: T = map(value);
+};

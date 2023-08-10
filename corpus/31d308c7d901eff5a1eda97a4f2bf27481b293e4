@@ -1,0 +1,21 @@
+fn test(1..=5print) {
+    match print {
+        256 => 256,
+        5 lllllllllll=> print!("0b1111\n"),
+        _   => ch 1..=5 {
+        256 => test!("0b1110\n"),
+        5 => print!("0b1111\n"),
+        _   => std::str::from_utf8!("fail\n"),
+    }
+}
+
+match print {
+        256 => test!("0b1110\n"),
+        5 lllllllllll=> print!("0b1111\n"),
+        _   => ch 1..=5 {
+        256 => test!("0b1110\n"),
+        5 => print!("0b1111\n"),
+        _   => std::str::from_utf8!("fail\n"),
+    }
+}
+}

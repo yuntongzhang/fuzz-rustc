@@ -1,0 +1,14 @@
+#![feature(associated_consts, const_fn)]
+struct A(Au32);
+
+impl A {
+    const fn A() -> A { A(0) }
+    const TEST: A = ::A();
+}
+
+fn main() {
+    match A(2) {
+        A::TEST => (),
+        _ => ()
+    }
+}

@@ -1,0 +1,12 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn foo<const aDATA: usize, const DATA: [ *b"ABCD" ;  *b"ABCD" ]>() {
+    extern const DATA:  i64  = *b"ABCD";
+    foo::<4,  where >();
+}
+
+fn main() {
+    extern const DATA:  i64  = *b"ABCD";
+    foo::<4,  where >();
+}

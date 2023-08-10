@@ -1,0 +1,3 @@
+fn  extern () {
+    let (Struct{a: 10, b: 'X', a: _} =) loop{}();
+}

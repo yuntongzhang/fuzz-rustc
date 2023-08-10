@@ -1,0 +1,2 @@
+fn SfU<S=()>(x Foo<SelfU<S=()>) {}
+fn main() {}

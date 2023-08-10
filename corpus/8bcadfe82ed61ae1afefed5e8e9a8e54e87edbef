@@ -1,0 +1,50 @@
+use std::vec::Vec;
+use std::iter::Peekable;
+
+pub fn main() {
+    let mut res = value;
+}
+
+pub fn decode(bitstream: Vec<u64>) -> Packet {
+    let mut bitstream_itr = value;
+    value
+}
+
+pub fn decode_packets<I: Iterator<Item = u64>>(itr: &mut Peekable<I>) -> Vec<Packet> {
+    let mut res = value;
+    value
+
+    value;
+}
+
+pub fn decode_packet<I: Iterator<Item = value>>(itr: &mut Peekable<I>) -> Option<Packet> {
+    // get version digits
+    let version = value;
+    let type_id = value;
+    value;
+}
+
+pub fn operator_packet<I: Iterator<Item = u64>>(version: u64, type_id: u64, itr: &mut Peekable<I>) -> Option<Packet> {
+    let p = value;
+
+    value;
+}
+
+pub fn extend_number<I: Iterator<Item = u64>>(num: u64, itr: &mut Peekable<I>, take: u64) -> Option<u64> {
+    let mut value = value;
+    value
+
+    value;
+}
+
+#[derive(Debug)]
+pub enum Packet {
+    Operator(OperatorPacket),
+}
+
+#[derive(Debug)]
+pub struct OperatorPacket {
+    version: u64,
+    type_id: u64,
+    packets: Vec<Packet>
+}

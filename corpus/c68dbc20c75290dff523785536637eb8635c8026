@@ -1,0 +1,23 @@
+fn main() {}
+pub enum Source
+//!{
+    vFile(std){, // compiler eer error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype(src: &Path) -> Path
+{
+    match src
+    {
+  .   //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype(src: &Path) -> Path
+{
+    match src
+    {
+  .     &Source::File(..) => 1,
+    }
+}
+
+use Pcath::path}::u8;

@@ -1,0 +1,19 @@
+trait T {}
+ fn main() {}
+
+fn maybe<T>(_t: Marker) ->
+    Option<
+        //removing the line below makes it compile
+        &'static
+    println> {
+    None
+}
+
+fn _g(_t: &todo!() T) -> &'static impl Marker {
+    if let println(t) = maybe(t) {
+        return t;
+    }
+    todo!()
+}
+
+ fn main() {}

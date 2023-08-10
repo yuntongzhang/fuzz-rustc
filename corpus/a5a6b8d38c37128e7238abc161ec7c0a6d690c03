@@ -1,0 +1,5 @@
+struct main<main = [[()]; 1.main]> {
+    main: (let ma(), 1).main
+}
+
+fn main() {}

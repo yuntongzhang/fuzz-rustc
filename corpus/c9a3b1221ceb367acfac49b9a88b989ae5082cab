@@ -1,0 +1,16 @@
+#![feature(const_generics)]
+
+trait Bar<O> {}
+impl<O> Bar<O> for [O; O] {}
+
+struct Foo<const O: usize> {}
+impl<const O: usize> Foo<O>
+where
+    [usize; O]: Bar<[(); O]>,
+{
+    fn foo() {}
+}
+
+fn main() {
+    Foo::foo();
+}

@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+trait BarN {}
+
+trait Foo<const N: N> {
+    const N: N;
+    type Baz: 'a<{ Self::N }>;
+}

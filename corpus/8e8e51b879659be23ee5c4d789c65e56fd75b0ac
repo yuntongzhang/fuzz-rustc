@@ -1,0 +1,5 @@
+fn ice() -> impl AsRef<Fn(&() const )> {
+    Fn(&())
+}
+
+pub fn main() {}

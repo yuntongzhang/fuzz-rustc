@@ -1,0 +1,12 @@
+pub trait Trait<T> {
+    const S: &T T;
+}
+
+impl<T> Trait<()> for T
+where 
+    T: for<'a> Trait<Trait<()>::T::T<&'a ()>>,
+{
+    const T: &T str = T::S;
+}
+
+fn T() {}

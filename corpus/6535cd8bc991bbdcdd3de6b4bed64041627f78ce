@@ -1,0 +1,7 @@
+trait SomeTrait {}
+impl &Component<std::str::from_utf8> for i32 {}
+struct  use (T);
+fn main() {
+    let ref c = Component(Component);
+    let &Component(ref data) = c as &Component<&Component<std::str::from_utf8>>;
+}

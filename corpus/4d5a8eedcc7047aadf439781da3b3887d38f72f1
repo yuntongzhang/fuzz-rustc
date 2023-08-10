@@ -1,0 +1,3 @@
+union UnionI {
+    data: std::iter::Peekable<std::iter::Peekable<std::iter::Peekable<std::iter::Peekable<<I>>>>>
+}

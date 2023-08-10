@@ -1,0 +1,5 @@
+pub fn main() {
+  (||{
+  (format!("{}", (||fo)rmat!("{}", "s")))((format!("{}", (||fo)rmat!("{}", "s"))()));
+})((format!("{}", (||fo)rmat!("{}", "s"))()));
+}

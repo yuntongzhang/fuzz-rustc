@@ -1,0 +1,15 @@
+fn test(val: u8) {
+    match val {
+        256 => u8!("0b1110\n"),
+        512 => u8!("0b1111\n"),
+        _   => u8!("fail\n"),
+    }
+}
+
+fn test(val: u8) {
+    match val {
+        256 => u8!("0b1110\n"),
+        512 => u8!("0b1111\n"),
+        _   => u8!("fail\n"),
+    }
+}

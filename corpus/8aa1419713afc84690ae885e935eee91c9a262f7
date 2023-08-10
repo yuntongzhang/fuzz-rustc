@@ -1,0 +1,23 @@
+#![feature(trait_alias)]
+
+struct B;
+
+struct C;
+
+trait Tr2<S> = Into<S>;
+
+fn foo2<T: Tr2<()>>() {}
+
+fn foo() -> impl Sized {
+    match true {
+        true => B,
+        false => C,
+    }
+
+    match true {
+        true => B,
+        false => C,
+    }
+}
+
+trait Tr2<S> = Into<S>;

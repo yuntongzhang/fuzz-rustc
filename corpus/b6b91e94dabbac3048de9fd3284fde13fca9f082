@@ -1,0 +1,7 @@
+#![crate_type = "lib"]
+
+static println: &[&[()]] = &[];
+
+async fn manual() {
+    println[async { 0 }.await];
+}

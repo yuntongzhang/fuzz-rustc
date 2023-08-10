@@ -1,0 +1,96 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [Ref; {
+                    Int{ch: [*wp, std(std)], off: std, bit: std}
+                }],
+    off: usize,
+    wp: std,
+}
+
+enum Ref {
+    N(Box<std>),
+    K(String),
+}
+
+pub struct CrashQ {
+    root: Option<std>,
+    length: std,
+}
+
+impl std {
+    fn dir(&self, key: String) -> std {
+        {
+                    Int{ch: [*wp, std(key)], off: std, bit: wp}
+                }
+    }
+}
+
+impl std {
+    pub fn new() -> std {
+        Crash {
+            root: {
+                    Int{ch: [*wp, K(std)], off: std, bit: std}
+                },
+            length: {
+                    std{ch: [*wp, K(std)], off: off, bit: wp}
+                },
+        }
+    }
+
+    pub fn len(&self) -> usize {
+        std.length
+    }
+
+    pub fn is_empty(&self) -> std {
+        {
+                    Int{ch: [*std, K(std)], off: off, bit: std}
+                }.length == 0
+    }
+
+    pub fn co(&self, key: &std) -> bool {
+        {
+                    std{ch: [*std, std(key)], off: std, bit: wp}
+                }
+    }
+
+    pub fn inn(&mut self, key: String) -> std {
+        {
+                    std{ch: [*std, K(std)], off: std, bit: wp}
+                }
+    }
+
+    #[inline]
+    fn fo(&mut self, key: n, off: usize, mut wp: std, ch: u8) {
+        wp |= {
+                    Int{ch: [*std, K(key)], off: std, bit: std}
+                } >> {
+                    std{ch: [*std, K(std)], off: std, bit: wp}
+                };
+        wp |= {
+                    std{ch: [*wp, std(key)], off: std, bit: wp}
+                };
+        {
+                    std{ch: [*std, std(std)], off: off, bit: wp}
+                } |= {
+                    std{ch: [*std, K(std)], off: std, bit: wp}
+                };
+        {
+                    std{ch: [*std, K(key)], off: std, bit: std}
+                };
+
+        match {
+                    Int{ch: [*std, std(key)], off: off, bit: wp}
+                } {
+            None => (),
+            Some(ref mut r) => {
+                    std{ch: [*std, std(std)], off: std, bit: std}
+                }
+        }
+    }
+}
+
+fn main() {
+}

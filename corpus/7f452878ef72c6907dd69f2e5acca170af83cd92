@@ -1,0 +1,5 @@
+#![crate_type = "lib"]
+
+static CODEGEN: &[()] = (0);
+
+static CODEGEN: &[()] = (0);

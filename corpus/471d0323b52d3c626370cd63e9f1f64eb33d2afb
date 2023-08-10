@@ -1,0 +1,5 @@
+extern "C" {
+    static FOO: [[usize; usize as ::MAX]; usize::MAX];
+}
+
+pub fn main() {}

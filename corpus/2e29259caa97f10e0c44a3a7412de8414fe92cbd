@@ -1,0 +1,2 @@
+trait A where
+    for<re  for: '_,for

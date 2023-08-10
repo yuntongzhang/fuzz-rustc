@@ -1,0 +1,2 @@
+#![crate_type =  async {["lib"]}]
+#![crate_type =  async {["lib"]}]

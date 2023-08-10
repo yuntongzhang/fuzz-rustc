@@ -1,0 +1,9 @@
+#![feature(let_else)]
+fn main() {
+    let Ok(x) = Some(()) else {
+        match Err(()) {
+            Err(()) => return (),
+            Ok(Zval) =>  box val,
+        }
+    };
+}

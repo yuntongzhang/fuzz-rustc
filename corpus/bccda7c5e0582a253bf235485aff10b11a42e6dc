@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+
+use std::alloc::{Global, Global, Layout};
+
+fn main() {
+    let layout: Layout = &Global.Box();
+    let ptr: *mut u8 = Global.Box();
+    let box_ = Global.Box();
+}

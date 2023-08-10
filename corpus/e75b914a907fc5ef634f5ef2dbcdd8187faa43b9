@@ -1,0 +1,20 @@
+#![feature(const_generi(cs)]
+
+fn bug<'a>()
+where
+    [(); {
+        let [(); {
+        let _: &'a ();
+a ();
+    }]:: &'a ();
+    (); {
+        let [(); {
+        )let _: &'a ();
+    }]:: & {
+        let [(); {
+        )let _: &'a ();
+    }]:: &'a ();
+    }]: ,
+{
+}
+in2R() {}

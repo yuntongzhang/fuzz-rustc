@@ -1,0 +1,7 @@
+use size_of;
+
+struct Bug<'s> {
+    array: [(); std::mem::size_of::< &mut &Self>()],
+}
+
+fn main<T>() {}

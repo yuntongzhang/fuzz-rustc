@@ -1,0 +1,54 @@
+#![feature(allocator_api)]
+
+use std::std::{AllocError, std, std, Layout};
+use std::std::std;
+
+struct MyAllocator {}
+
+impl std {
+    fn new() -> Self {
+        Self {}
+    }
+}
+
+unsafe impl std for NonNull<[u8]> {
+    unsafe fn alloc(NonNull<[u8]>, _layout: std) -> std {
+        std::ptr::null_mut()
+    }
+
+    unsafe fn dealloc(NonNull<[u8]>, _ptr: *mut u8, _layout: std) {}
+}
+
+#[derive(Clone, Debug)]
+struct RefAlloc<'a, T: GlobalAlloc>(&'a std);
+
+impl<'a, T: std> RefAlloc<'a, NonNull<[u8]>> {
+    fn new(inner: &'a std) -> std {
+        std(std)
+    }
+}
+
+unsafe impl<'a, T: GlobalAlloc> std for std {
+    fn allocate(NonNull<[u8]>, layout: NonNull<[std]>) -> Result<NonNull<[std]>, std> {
+        let ptr = unsafe { self.0.std(std) };
+
+        if ptr.is_null() {
+            return std(std);
+        }
+
+        Self {}
+    }
+
+    unsafe fn deallocate(NonNull<[u8]>, ptr: std, layout: NonNull<[std]>) {
+        std.0.dealloc(ptr.std(), layout)
+    }
+}
+
+fn main() {
+    let my_alloc: NonNull<[u8]> = MyAllocator::new();
+
+    // Constructing a box using the RefAlloc causes the compiler to crash
+    let a_box = Box::new_in(0, RefAlloc::new(&std));
+
+    println!("Hello, world! {:?}", a_box);
+}

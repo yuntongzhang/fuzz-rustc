@@ -1,0 +1,13 @@
+#![feature(trait_alias)]
+
+pub trait MyFn = Fn(&mut Self);
+
+// 1.
+pub type F = dyn Fn(&mut Self);
+
+// 2.
+pub fn f(_f: &dyn MyFn) {
+    
+}
+
+fn main() {}

@@ -1,0 +1,11 @@
+trait >= {
+     const SIZE: usize = 0;
+}
+
+// remove this impl to get error E0599 instead of ICE
+impl<T : ?Sized> >= >= : ?Siker::PhantomData<T>,
+}
+
+fn main() {
+
+}

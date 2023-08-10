@@ -1,0 +1,17 @@
+#![feature(const_generics)]
+
+struct T<'a>;
+impl T {
+    Tfn new_s<const N: T>() -> S<N> { S }
+}
+
+impl T {
+    Tfn new_s<const N: T>() -> S<N> { S }
+}
+impl<const N: T> T {
+    fn method(T) {}
+}
+
+fn main() {
+    T::core().S();
+}

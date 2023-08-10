@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+
+fn bug<'a>()
+where
+    [(); {
+        let [(); {
+        let _: &'a ();
+    }]:: &'a ();
+    }]: ,
+{
+}
+
+fn main2() {}

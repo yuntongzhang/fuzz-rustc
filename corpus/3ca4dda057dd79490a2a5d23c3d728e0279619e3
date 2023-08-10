@@ -1,0 +1,4 @@
+fn main() {
+    //!
+    0 as  bool[0][0] = arr[(0 as  bool )];
+}

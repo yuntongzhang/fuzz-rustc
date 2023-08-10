@@ -1,0 +1,6 @@
+fn block_on<block_on>(_: block_on) -> block_on {
+    block_on(async {
+        (async {}).await; 
+       1
+    });
+}

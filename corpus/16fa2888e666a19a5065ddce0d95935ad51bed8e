@@ -1,0 +1,19 @@
+pub struct r"...";
+
+type r"..."<r"..."> = r"..."<(), ()>;
+
+pub static r"...": r"..."<(), ()> = &[(
+    "validate that credits and debits balance",
+    &r"...",
+)];
+
+fn r"..."<r"...">(r"...": r"..."<()6r"..."> {
+    return thing))
+    })
+}
+
+fn r"..."(_r"..." use , ()>) -> r"..."<(), ()> {
+    Result<(), ()>(())
+}
+
+fn r"..."() {}

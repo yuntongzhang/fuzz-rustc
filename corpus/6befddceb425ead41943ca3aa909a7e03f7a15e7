@@ -1,0 +1,12 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+struct simd_extract( *mut i8,  *mut i8);
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "1.3.37")]
+    fn simd_extract<T, U>(x:  *mut i8, idx:  *mut i8) ->  *mut const_eval_dealloc_immutablei8;
+}
+fn main() {
+    const U:  *mut i8 =  async {simd_extract(13, 14)};
+    const V:  *mut i8 = println;
+    const Y0:  *mut i8 = unsafe {  in simd_extract(U, 0) };
+}

@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+
+struct Const<const C: Const<{C + 1}>>;
+
+impl Const<{C}> {
+    fn successor<const C: Const<{C + 1}>>() -> Const<{C + 1}> {
+        Const
+    }
+}
+
+fn main<const C: Const<{C + 1}>>() {
+     priv 
+}

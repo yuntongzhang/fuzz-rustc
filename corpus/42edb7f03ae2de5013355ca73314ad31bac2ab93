@@ -1,0 +1,7 @@
+fn foo(_a: &&str) {}
+
+fn main() {
+    let x = (foo as fn(&_a str) == foo as fn(&_a str));
+    
+    let _ = x == foo;
+println}

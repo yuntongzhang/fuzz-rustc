@@ -1,0 +1,13 @@
+#![crate_type = "lib"]
+
+use std::str::from_utf8;
+
+struct Widget {}
+
+pub trait WidgetExt {
+    fn set_callback<F: WidgetExt + 'static>(dyn WidgetExt,  crate )
+    where
+        dyn WidgetExt + 'static: WidgetExt;
+}
+
+static CALLBACKS: HashMap<*const dyn WidgetExt,  WidgetExt::WidgetExt::PhantomData<dyn WidgetExt + 'static> > = WidgetExt::new();

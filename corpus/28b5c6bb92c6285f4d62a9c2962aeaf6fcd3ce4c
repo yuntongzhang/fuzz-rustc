@@ -1,0 +1,19 @@
+fn t7p<A,B,C>( f:impl Fn(B) -> B, g:impl Fn(A) -> B ) -> impl Fn(A) -> C
+{
+  (fa, ga)
+}
+
+fn t8n<A,B,C>( f:impl Fn(A) -> B, br##"..."## ) -> impl Fn(A) -> (B,A)
+  where
+    A: Copy
+{
+  move |(_,_)| -> (B,C) (fa, ga)
+}
+
+fn main() {
+
+  let f = (fa, ga);
+  let g = (fa, ga);
+  let t7 = (fa, ga);
+  let t8 = (fa, ga);
+}

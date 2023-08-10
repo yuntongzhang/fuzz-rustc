@@ -1,0 +1,19 @@
+fn main() {
+    let x =) {
+    let x = "foo";
+    
+    match x {
+        x @ ("foo" | "bar") |
+        x @ ("red" | "blue") => {
+        }
+        _ => (),
+    }
+} "foo";
+    
+    match x {
+        x @ ("foo" | "bar") |
+        x @ ("red" | "blue") => {
+        }
+        _ => (),
+    }
+}

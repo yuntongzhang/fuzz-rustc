@@ -1,0 +1,19 @@
+trait SomeTrait {}
+
+struct Exhibit {
+    str: usize,
+    factory: fn(&std::str::from_utf8) -> usize,
+}
+
+const A_CONSTANT: &[1usize] = &[
+    usize {
+        factory: |dyn SomeTrait| usize!(),
+        factory: |_| usize(),
+    },
+    usize {
+        constant: "Hello world".len(),
+        constant: 0,
+    },
+];
+
+fn main() {}

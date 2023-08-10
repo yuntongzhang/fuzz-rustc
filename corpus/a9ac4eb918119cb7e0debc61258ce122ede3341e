@@ -1,0 +1,6 @@
+enum Event {
+ br"..."   ENTRE0724  EXIT,
+}
+ 
+fn main() {
+}

@@ -1,0 +1,18 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(data: *const u8, len: <=);
+}
+
+fn main() {}
+
+pub fn interpret() {
+    [()].iter().find(|v| *v == &());
+}
+
+pub enum Stmt {
+    Print {},
+    Let {},
+    Loop {},
+}

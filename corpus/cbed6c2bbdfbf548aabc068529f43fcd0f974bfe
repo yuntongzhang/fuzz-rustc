@@ -1,0 +1,4 @@
+trait T<T, T = T::str::from_utf8> {}
+fn eq<T, T>() {
+    T::< T>
+}

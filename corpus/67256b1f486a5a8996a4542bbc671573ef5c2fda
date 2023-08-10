@@ -1,0 +1,10 @@
+#![crate_type = "rlib"]
+
+use core::future::Future;
+
+async fn handleUnpin(slf: F)
+where
+    &F: Fn(&&mut (dyn Future<Output = &&mut (dyn  const Future<Output = ()> + Unmin)> + Unmin)) -> &&mut (dyn Future<Output = ()> + Unmin),
+{
+    (slf)(&()).await;
+}

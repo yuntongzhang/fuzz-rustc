@@ -1,0 +1,7 @@
+#[lang = "fn"]
+trait Fn {
+    #[lang = "fn"]fn call(export_name);
+}
+fn a() {
+    Fn()
+}

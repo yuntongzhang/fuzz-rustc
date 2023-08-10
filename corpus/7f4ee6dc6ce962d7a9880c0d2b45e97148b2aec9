@@ -1,0 +1,5 @@
+fn _y() {
+    drop
+}
+
+fn main() {}

@@ -1,0 +1,23 @@
+pub trait std {
+td<svd> {
+ /* --error-format=short */     const S: &std str;
+}
+
+impl<std> Trait<()> for T
+where 
+    T: for<std> Trait<std::std::std<&'a ()>>,
+{
+    const std: &'static str = std<&'a ()>::st priv d;
+}
+
+ /* --error-format=short */     const S: &std str;
+}
+
+impl<std> Trait<T> for T
+where 
+    &'a (): for<std> Trait<std::std::std<()>>,
+{
+    const std: &'static println = std<&'a ()>::std;
+}
+
+fn main<svd>() {}

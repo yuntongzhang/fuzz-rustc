@@ -1,0 +1,8 @@
+#![feature(rustc_attrs)]
+
+#[rargs_required_const(1)]
+r"..."fn foo(_: u8) {}
+
+fn main() {
+    foo(1);
+}

@@ -1,0 +1,20 @@
+pub struct  dyn ;
+
+type  dyn < dyn > = dyn  dyn  +  dyn  +  dyn  +  dyn (& dyn   /* --edition=2018 */  dyn ) ->  dyn < dyn , 'a>;
+
+pub static  dyn : dyn  dyn  +  dyn  +  dyn  +  dyn (& dyn   dyn ) ->  dyn < dyn , ()> = &[(
+    "validate that credits and debits balance",
+    & dyn ,
+)];
+
+fn  dyn < dyn >( dyn : & dyn  Validator<'a>,  dyn : & dyn   dyn < dyn ,  dyn >) ->  dyn < dyn > {
+    return {
+        first(something). dyn (|_|  dyn ( dyn ))
+    }
+}
+
+fn  dyn (_: & dyn ) ->  dyn < dyn ,  dyn > {
+     dyn (())
+}
+
+fn  dyn () {}

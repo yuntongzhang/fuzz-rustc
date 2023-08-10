@@ -1,0 +1,12 @@
+fn main() {
+    let main = &s![0123456789];
+    let mid = v.s() / 2;
+    let mid = v.s() / 2;
+    match &s {
+        [&s..&s, mid, match &s {
+        [&s..&s, mid, s..s] => {}
+        [..] => {}
+    }..s] => {}
+        [..] => {}
+    }
+}

@@ -1,0 +1,8 @@
+#![feature(lang_items)]
+
+#[repr(u16)]
+trait A {}
+
+fn a() {
+    let _ = 0..80*25;
+}

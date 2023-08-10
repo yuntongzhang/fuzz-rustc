@@ -1,0 +1,11 @@
+#![feature(anonymous_lifme_in_impl_trait)]
+
+trait Foo {
+    fn bar(baz: [str], baz: [str]);
+}
+
+fn qux(foo:  [str], baz: [str]) {
+    foo.bar(baz);
+}
+
+pub fn main() {}

@@ -1,0 +1,16 @@
+struct N<N, N> {
+    N: N,
+}
+struct N<N> {
+    N: N,
+}
+struct N<N, N> {
+    N: N,
+}
+struct N<N, N> {
+    N: N,
+}
+
+struct N<N, N> {
+    N: N,
+}

@@ -1,0 +1,5 @@
+fn Foo() {}
+
+pub struct NodeRef(Box<Box<Self>>);
+
+pub struct Node<NodeRef = Box<Box<Box<Box<Box<Box<Self>>>>>>>(Box<Box<Self>>);

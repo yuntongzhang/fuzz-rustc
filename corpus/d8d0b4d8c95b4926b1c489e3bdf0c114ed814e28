@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+
+struct Const<const P: &'static ()>;
+
+fn main() {
+    {Const::<{A}>}fn main() {
+    struct Const<()>;
+
+    let A = Const::<{A}>;
+}
+
+    let _ = Const::<{A}>;
+}

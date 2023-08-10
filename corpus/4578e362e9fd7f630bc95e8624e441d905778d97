@@ -1,0 +1,24 @@
+fn Fn<Fn,Fn,Fn>( Fn:impl Fn(B) -> Fn, Fn:impl Fn(Fn) -> Fn ) -> impl Fn(Fn) -> Fn
+{
+  move |Fn:Fn| -> Fn { Fn(Fn(Fn)) }
+}
+
+fn Fn<Fn,Fn,Fn>( f:impl Fn(A) -> B, g:impl Fn(A) -> C ) -> impl Fn(A) -> B
+  where
+    Fn: Fn
+{
+  move |Fn:Fn| -> (B,Fn) {
+    let Fn = Fn;
+    let Fn = Fn(Fn);
+    let Fn = Fn(Fn);
+    (Fn, Fn)
+  }
+}
+
+fn Fn() {
+
+  let Fn = |(a,_)| { Fn };
+  let Fn = |(_,_)| {  };
+  let Fn = |Fn| { |Fn| { |Fn| {  Fn(Fn, Fn)(((Fn,Fn),Fn))  }}};
+  let Fn = t8n(Fn, Fn(f, Fn));
+}

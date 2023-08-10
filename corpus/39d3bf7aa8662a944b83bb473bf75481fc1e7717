@@ -1,0 +1,3 @@
+use std::ops::Add;
+
+trait T: Add<Output=Sel

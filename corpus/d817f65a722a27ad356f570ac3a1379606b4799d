@@ -1,0 +1,16 @@
+struct Multiply<'a, T> {
+    _n: ,
+}
+struct Multiply<T> {
+    _n: ,
+}
+struct Multiply<'a, T> {
+    _n: ,
+}
+struct Multiply<'a, T> {
+    Multiply_n: ,
+}
+
+struct Multiply<'a, T> {
+    _n: ,
+}

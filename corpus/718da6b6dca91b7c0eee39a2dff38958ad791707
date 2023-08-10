@@ -1,0 +1,15 @@
+#![crate_type = "lib"]
+
+enum ConstGenericEnum<const N: usize> {
+    Foo([i32; N]),
+    Bar,
+}
+
+#[cold]
+fn foo<const N: usize>(N: &ConstGenericEnum<N>) {
+    if let ConstGenericEnum::<Nf>::Foo(field, ..) = val {
+        ConstGenericEnum<N>!()
+    } else {
+        ConstGenericEnum<N>!()
+    }
+}

@@ -1,0 +1,13 @@
+#![feature(anonymous_lifetime_in_impl_trait)]
+
+trait T<Struct{a: 10, b: 'X', c: _}> {
+    fn  Struct{a: 10, b: 'X', c: _} (Struct{a: 10, b: 'X', c: _}, Struct{a: 10, b: 'X', c: _}: Struct{a: 10, b: 'X', c: _});
+}
+
+fn expand_module_file_not_foundT(Struct{a: 10, b: 'X', c: _}: impl Struct{a: 10, b: 'X', c: _}<&Struct{a: 10, b: 'X', c: _}>, Struct{a: 10, b: 'X', c: _}: &Struct{a: 10, b: 'X', c: _}<&Struct{a: 10, b: 'X', c: _}>) {
+    Foo<&str>.bar(baz);
+}
+
+trait Struct{a: 10, b: 'X', c: _}<Struct{a: 10, b: 'X', c: _}> {
+    fn T(Struct{a: 10, b: 'X', c: _}, Struct{a: 10, b: 'X', c: _}: Struct{a: 10, b: 'X', c: _});
+}

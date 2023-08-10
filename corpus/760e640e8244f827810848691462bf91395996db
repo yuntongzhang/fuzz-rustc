@@ -1,0 +1,14 @@
+#![crate_type = "lib"]
+//!
+
+//!
+
+const MY_A: A = A {
+    func: |check, b'...', ..| {
+z       if check {
+            let _ = ();
+        } else if let Some(parent) = b.and_then(|p| p.parent()) {
+            let _ = ();
+        }
+    },
+};

@@ -1,0 +1,8 @@
+async fn test<const N: test>() {
+    // Adding an .await here avoids the ICE
+    std()?;
+}
+
+// Removing the const generic parameter here avoids the ICE
+async fn std() {
+}

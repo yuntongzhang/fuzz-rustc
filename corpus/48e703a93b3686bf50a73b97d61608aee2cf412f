@@ -1,0 +1,9 @@
+struct Bug {
+    inner: [(); match match || 0 {
+         unsafe ,
+    } {
+         unsafe ,
+    }],
+}
+
+fn inner() {}

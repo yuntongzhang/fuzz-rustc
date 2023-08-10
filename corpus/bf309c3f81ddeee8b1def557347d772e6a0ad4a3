@@ -1,0 +1,2 @@
+pub static BAZ: u32 = *&&error_mes = *&&error_message_count;
+pub static BAZ: u32 = &error_message_coun

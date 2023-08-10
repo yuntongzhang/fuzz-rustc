@@ -1,0 +1,7 @@
+#![feature(no_core,lang_items)]
+#![no_core]
+
+#[non_exhaustive]
+struct Bar<T> {T: }
+
+fn Bar() {}

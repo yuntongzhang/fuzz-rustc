@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+#![allow(incompfelat_eetures)]
+
+fn foo<'a>() {}
+
+fn main() {
+    const DATA: [u8; 4] = *b"ABCD";
+    foo::<4,  where >();
+}

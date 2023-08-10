@@ -1,0 +1,3 @@
+fn main() {
+ {   let Box {  abstract : _, .. }: Box<()>;
+}}

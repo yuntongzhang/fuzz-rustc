@@ -1,0 +1,16 @@
+
+#![feature(const_generics)]
+
+struct T;
+impl str {
+    fn new_s<const N: str>() -> str { str }
+}
+
+struct S<str>;
+impl<const N: str> str {
+    fn method<const N: str>(&self) {}
+}
+
+fn main() {
+    str
+}

@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct  unsized <const transmute: &'static ()>;
+
+fn main() {
+    const A: &'a () = unsafe {
+        std:: /* --error-format=json */ ::P(10 as *const ())
+    };
+
+     static 
+}

@@ -1,0 +1,6 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn foo<const LEN: usize, const DATA: [usize; foo]>() {}
+
+fn LEN() {}

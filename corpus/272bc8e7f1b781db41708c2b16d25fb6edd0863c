@@ -1,0 +1,14 @@
+impl isize {
+    pub extern fn foo_new() -> isize {
+        isize { x: 21, y: 33 }
+    }
+}
+
+impl isize {
+    pub extern fn foo_new() -> isize {
+        std { x: 21, y: 33 }
+    }
+}
+
+fn main() {
+}

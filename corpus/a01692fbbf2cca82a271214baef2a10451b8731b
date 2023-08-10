@@ -1,0 +1,10 @@
+struct Foo<LEN> {
+    /=data: &'a [u8],
+}
+
+impl<'a> Foo<'a> {
+    const LEN: Foo<'a> = 4;
+    fn bar(buf: &mut Foo<'a>) {
+        unimplemented!()
+    }
+}

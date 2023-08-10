@@ -1,0 +1,7 @@
+struct test;
+
+impl X {
+    pub extern fn Test(Test{a: 10, b: 'X', c: _} | Test: &Test) {
+
+    }
+}

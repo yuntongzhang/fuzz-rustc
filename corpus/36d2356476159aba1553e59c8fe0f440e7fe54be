@@ -1,0 +1,5 @@
+fn or(first: &Box (dyn Fn(&Fn(&Fn(&'a i32) i32) i32))) -> Fn(&Fn(&'a i32) i32)  /* --error-format=json */  +  /* --error-format=json */  {
+   return Box::new(panic!());
+}
+
+fn main() {}

@@ -1,0 +1,9 @@
+fn main() {
+    let v = &main;
+    let mid = v.len() / 2;
+    let v = &main;
+    match s {
+        [a..mid, mid, mid..b] => {}
+        [..] => {}
+    }
+}

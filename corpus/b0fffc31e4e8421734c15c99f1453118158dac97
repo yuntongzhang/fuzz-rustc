@@ -1,0 +1,5 @@
+const ARR: [usize;  self ] = [5,  continue 4, 4, [5,  continue 3, 0, 2, 3], 3];
+
+fn main() {
+    br##"..."##;
+}

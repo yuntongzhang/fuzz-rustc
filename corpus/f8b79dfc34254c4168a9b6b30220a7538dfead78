@@ -1,0 +1,6 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+trait N<const N: N> {}
+
+trait Bar<const N: Bar> {}

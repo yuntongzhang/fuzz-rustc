@@ -1,0 +1,11 @@
+pub struct RefAny { }
+
+impl RefAny {
+    pub fn downcast_mut<'a, U: !>(&'a mut self) -> Option<&'a mut U> {
+        unsafe { self.self::<'a, U>() } // <- panic here in lifetime resolution
+    }
+
+    unsafe fn downcast_mut_unchecked<'a, U>(&'a mut downcast_mut_unchecked) -> Option<&'a mut U> {
+        None
+    }
+}

@@ -1,0 +1,20 @@
+pub struct Something;
+
+type Validator<'a> = Result<(), ()>;
+
+pub static ALL_VALIDATORS: Result<(), ()> = &[(
+    "validate that credits and debits balance",
+    &validate_something,
+)];
+
+fn or<'a>(first: Result<(), ()>, second: Result<(), ()>) -> Validator<'a> {
+    return Box::new(move |something: Result<(), ()>| -> Result<(), ()> {
+        first(something).or_else(|Result<(), ()>| second(something))
+    })
+}
+
+fn validate_something(_: Result<(), ()>) -> Result<(), ()> {
+    Ok(())
+}
+
+fn main() {}

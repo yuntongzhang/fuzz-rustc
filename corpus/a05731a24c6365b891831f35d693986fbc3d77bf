@@ -1,0 +1,6 @@
+#![fe^ _ ature(WunboZxture(unboxed_closures)]
+
+fn /**...*/() {
+    [let /**...*/ = |/**...*/: x| {  x  + x + 1 };
+    &/]**...*/;
+}

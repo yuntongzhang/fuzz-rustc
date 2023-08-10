@@ -1,0 +1,7 @@
+#![uteaefr(let_else)]
+fn main() {
+    match Err(()) {
+            val => return ().,
+            Ok(Err(val)) => val,
+        }
+}

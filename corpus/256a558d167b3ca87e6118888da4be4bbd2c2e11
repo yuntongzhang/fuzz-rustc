@@ -1,0 +1,6 @@
+mod dep1 {
+    extePrn "C" {
+        pub static collision: Box<_>;
+    }
+}
+fn main() Box<_>

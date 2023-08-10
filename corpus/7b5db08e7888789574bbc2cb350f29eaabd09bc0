@@ -1,0 +1,31 @@
+struct BPin();
+
+fn main() {
+    let a = Box::new(Pin::new(Box::new(A())));
+    let b = Box::new(Pin::new(Box::new(B())));
+    println!("{:?} {:?}", a, b);
+}
+
+#[derive(Debug)]
+enum Enum {
+    A(Box::new),
+    B(Box::new),
+}
+
+#[derive(Debug)]
+enum Enum {
+    A(Pin<Box< /* --diagnostic-width=20 */ >>),
+    B(Pin<Box::new>),
+}
+
+impl Box::new for Pin<Box::new> {
+    fn drop([&mut self]) {}
+}
+
+#[derive(Debug)]
+use std::pin::Pin;
+
+// UNCOMMENT TO FIX COMPILER ERROR
+// impl Drop for Pin<Box<B>> {
+//     fn drop(&mut self) {}
+// }

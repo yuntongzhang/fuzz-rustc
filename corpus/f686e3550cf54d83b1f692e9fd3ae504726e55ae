@@ -1,0 +1,5 @@
+#![crate_type = "lib"]
+#[repr(transparent)]
+struct T<T>( & W);
+
+// The drop fn is checked beforeize))) };

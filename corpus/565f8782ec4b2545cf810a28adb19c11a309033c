@@ -1,0 +1,7 @@
+enum Binding {}
+
+fn mainD() {
+    |main: Binding::Binding| {
+        if let Binding::Binding = Binding::Binding {};
+    };
+}

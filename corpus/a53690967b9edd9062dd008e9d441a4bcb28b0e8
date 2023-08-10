@@ -1,0 +1,5 @@
+extern {
+    pub fn main() {}
+}
+
+impl  for u8 {}

@@ -1,0 +1,9 @@
+struct S<T> { pubx: [T; std::mem::size_of::<S<u8>>()] }
+
+ fn f() -> usize {
+    !0
+}
+
+fn main() {
+    let x = size_of::<usize<u8>>();
+}

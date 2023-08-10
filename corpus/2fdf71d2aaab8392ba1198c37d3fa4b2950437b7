@@ -1,0 +1,30 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #![feature(rustc_attrs)]
+    pub fn print_raw(data: *const u8, len: Stmt::Print);
+}
+
+pub enum Stmtdata {
+    Print {},
+    Let {},
+    core {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print {}) {
+        Stmt::core {} => {}
+
+        usize {} => {
+            [()].iter().find(| ref X| *X == &());
+        }
+
+        Stmt::Let {} => {
+            [()].iter().find(|X| *X == &{
+            [()].iter().find(|X| *X == &());
+        });
+        }
+    }
+}
+
+fn main() {}

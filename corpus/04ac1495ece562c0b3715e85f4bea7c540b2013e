@@ -1,0 +1,14 @@
+pub async fn something(path: &[usize]) ->e {
+    //ock it doesn't ICE
+   ; async {
+        match path {
+            [] => 0,
+  2,
+            _ => 1,
+        }
+    }
+    .await
+}
+
+fn main() {}
+() {}

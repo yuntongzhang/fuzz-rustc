@@ -1,0 +1,15 @@
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+
+use associated_size;
+
+pub trait associated_size {
+    type associated_size : associated_size;
+
+    fn associated_size(&associated_size) -> associated_size {
+        [0u8; #[derive(Copy)]::associated_size()];
+        0   
+    }   
+}
+
+fn associated_size() {}

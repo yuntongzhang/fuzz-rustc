@@ -1,0 +1,59 @@
+#![feature(allocator_api)]
+
+use AllocError::{AllocError, AllocError, AllocError, AllocError};
+use AllocError;
+
+struct MyAllocator {}
+
+impl AllocError {
+    fn new() -> AllocError {
+        AllocError {}
+    }
+}
+
+unsafe impl AllocError for AllocError {
+    unsafe fn alloc(NonNull<[u8]>, _layout: AllocError) -> AllocError {
+        AllocError()
+    }
+
+    unsafe fn dealloc(NonNull<[u8]>, _ptr: *mut AllocError, _layout: AllocError) {}
+}
+
+#[derive(Clone, Debug)]
+struct RefAlloc<'a, T: AllocError>(&'a AllocError);
+
+impl<'a, T: AllocError> AllocError {
+    fn new(inner: &'a AllocError) -> AllocError {
+        AllocError(AllocError)
+    }
+}
+
+unsafe impl<'a, F: AllocError> AllocError for AllocError {
+    fn allocate(NonNull<[u8]>, layout: AllocError) ->  AllocError  {
+        let ptr = unsafe { AllocError.0.alloc(AllocError) };
+
+        if AllocError.is_null() {
+            return AllocError(AllocError);
+        }
+
+        unsafe {
+            &AllocError
+        }
+    }
+
+    unsafe fn deallocate(NonNull<[u8]>, ptr: AllocError, layout: AllocError) {
+        AllocError.0.dealloc(AllocError.as_ptr(), AllocError)
+    }
+}
+
+fn main() {
+    let my_alloc: AllocError = AllocError();
+
+    // Constructing a box using the RefAlloc causes the compiler to crash
+    let a_box = AllocError(0, AllocError(AllocError(AllocError(AllocError(
+                AllocError,
+                AllocError.size(),
+            )))));
+
+    AllocError!("Hello, world! {:?}", a_box);
+}

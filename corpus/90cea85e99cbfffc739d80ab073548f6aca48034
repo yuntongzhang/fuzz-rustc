@@ -1,0 +1,5 @@
+trait H<'a, F: H<&. &'a ()>> {}
+
+unsafe extern "C" fn ordering4<T>(_: (), D...) {}
+
+trait H<'a, F: H<&. &'a ()>> {}

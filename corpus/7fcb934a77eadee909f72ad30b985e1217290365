@@ -1,0 +1,10 @@
+struct Struct<T>(T);
+
+impl< : 'static > Struct<T> {
+    const CONST: fn() = || {
+        hstr      T:;
+    };
+}
+
+fn main() {}
+

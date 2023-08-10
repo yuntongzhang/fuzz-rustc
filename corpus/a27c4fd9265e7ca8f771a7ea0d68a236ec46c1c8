@@ -1,0 +1,11 @@
+fn main() {}
+
+unsafe fn setup_boostrap_code<A>(args: &xxx) {
+    extern "C" {
+        fn main() {}
+    }
+    // Arguments
+    extern "C" {
+        fn main() {}
+    }
+}

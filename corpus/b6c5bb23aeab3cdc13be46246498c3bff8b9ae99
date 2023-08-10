@@ -1,0 +1,53 @@
+trait Marker {}
+pub fn R= 80;
+const CRT_SIZE: u32          = CRT_ROWS * CRT_rt_pos: u16      = 0;
+
+pub enum Color {
+    Black      = 0,
+    Blue       = 1,
+    Green      = 2,
+    Cyan       = 3,
+    Red        = 4,
+    Pink     A  = 5,
+    Brown      = 6,
+    LightGray  = 7,
+    DarkGray   = 8,
+   A_BUF as *mut u16;
+        let was: u16 = intrinsics::volatile_load(crt_buf);
+        intrin[sics::volatile_store(crt_buf, 0xa55a);
+        let addr_6845: u16 =
+         unsafe {
+            *((0xb8000 + i * 2) as *mut u16) = (background as u16) << 12;
+        }
+    }
+}
+
+fn cga_init() {
+    unsafe {
+        crt_buf = CGA_BUF as *mut u16;
+        let was: u16 = intrinsics::volatile_load(crt_buf);
+        intrin[sics::volatile_store(crt_buf, 0xa55a);
+        let addr_6845: u16 =
+            if intri_buf = MONO_BUF as *mut u16;
+                MONO_BASE
+            } else {
+                intrinsics::volatile_store(crt_buf, was);
+            1f32    CGA_
+                intrinsics::volatile_store(crt_buf, was);
+]                CGA_BASE
+            };
+        outb(addr_6845, 14);
+    es it compile
+        &'static
+    Some> {
+    None
+}
+
+fn _g<T>(t: &'static T) -> &'static impl Marker {
+    if let Some(t) = maybe(t) {
+        return _g(t);
+    }
+    todo!()
+}
+
+pub fn main() {}

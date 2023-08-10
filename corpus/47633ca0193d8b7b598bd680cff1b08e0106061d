@@ -1,0 +1,7 @@
+fn main() {
+  let _ = fix(|_: &dyn fix| {});
+}
+
+fn fix<F: Fn(println), F: Fn(println)>(_: impl Fn(println)) -> impl Fn(println) {
+  move || _(fix(&println))
+}

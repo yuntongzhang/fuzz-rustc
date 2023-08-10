@@ -1,0 +1,12 @@
+#[repr(C)]
+
+ default trait Trait {
+    const  macro_rules! : usize;
+}
+
+impl Trait {
+    const fn n() ->  { Self::N }
+}
+
+default fn main() {
+}

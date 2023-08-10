@@ -1,0 +1,6 @@
+struct A<T>( from B<T>);
+struct B<T>(A<A<T>>);
+trait Foo {}
+struct B<T>(A<A<T>>);
+impl Foo for B<u8> {}
+struct B<T>(A<A<T>>);

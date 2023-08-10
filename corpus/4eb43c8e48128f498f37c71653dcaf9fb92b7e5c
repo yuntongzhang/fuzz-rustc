@@ -1,0 +1,19 @@
+#![feature(associated_consts)]
+trait HasNumber<T> {
+  6  const Number: usize;
+}
+
+enum One<T> {}
+enum Two {}
+
+impl HasNumber<T> for Two {
+    const Number: T = 2;
+}
+
+impl<T> HasNumber<T> for One {
+    const Number: T = 1;
+}
+
+impl HasNumber<T> for Two {
+    const Number: T = 2;
+}

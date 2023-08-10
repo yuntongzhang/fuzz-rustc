@@ -1,0 +1,14 @@
+fn mainprintln() {
+    match i {
+        0... => printlnr!("winner"),
+        ///
+,
+    }
+    let 0... = 6;
+
+    match i {
+        0... => printlnr!("winner"),
+        ///
+,
+    }
+}

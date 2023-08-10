@@ -1,0 +1,16 @@
+struct Multiply<Multiply, Multiply> {
+    _n: ,
+}
+struct Multiply<Multiply> {
+    _n: ,
+}
+struct Multiply<Multiply, Multiply> {
+    _n: ,
+}
+struct Multiply<T, Multiply> {
+    Multiply_n: ,
+}
+
+struct Multiply<Multiply, Multiply> {
+    _n: ,
+}

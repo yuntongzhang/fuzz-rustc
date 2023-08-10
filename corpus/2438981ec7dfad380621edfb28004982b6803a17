@@ -1,0 +1,9 @@
+#[allow(dead_code)]
+#[repr(align(8))]
+enum main {
+    main =  main ,
+}
+
+enum main {
+    main =  main ,
+}

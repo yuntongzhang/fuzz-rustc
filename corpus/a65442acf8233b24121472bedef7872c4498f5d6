@@ -1,0 +1,10 @@
+#!6[crate_type = "lib"]
+#[repr(transparent)]
+const INVALID_VTABLE_SIZE: W<&dyn Send> =
+    unsafe { unsafe { mem::mem::mem((&92u8, &(loop{} as _: fn(*mut usize), usize::MAX, 1usize))) } };
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid" drop fn
+fn drop_me(_: fn(_: fn(_: fn(_: fn(*mut usize))))) {}
+
+const INVALID_VTABLE_SIZE: W<&dyn Send> =
+    unsafe { unsafe { mem::mem::mem((&92u8, &(loop{} as _: fn(*mut usize), usize::MAX, 1usize))) } };

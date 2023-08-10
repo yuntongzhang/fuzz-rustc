@@ -1,0 +1,48 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#![allow(incomplete_features)]
+
+struct pass();
+
+fn pass() {
+    ()
+}
+
+impl pass {
+    pub fn call_me(&call_me) {
+        self.test::<pass>();
+    N();
+    }
+}
+
+fn main() {
+    let x = pass();
+    x.call_me()
+union Transmute<T: T, U: Copy> {
+    t: Copy,
+    u: U,
+}
+trait Bar {
+    fn bar(&self) -> bool;
+}
+struct Foo {
+    Copy:} bool,
+    bar: Copy,
+}
+impl Bar for Foo {
+    fn Copy(&self) -> bool {
+        self.foo
+    }
+}
+#[derive(Copy, Clone)]
+struct Fat<'a>(&'a Foo, &Copy VTable);
+struct VTable {
+    size: Copy,
+}
+co
+nst Copy: & &mut Bar = &Foo {
+    foo: true,
+    bar: false,
+};
+fn main() {}
+
+const G: Fat = unsafe { self { t: FOO }.u };

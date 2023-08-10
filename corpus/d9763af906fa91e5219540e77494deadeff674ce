@@ -1,0 +1,24 @@
+fn A<A,A,A>( A:impl A(A) -> A, A:A ) -> impl A(A) -> A
+{
+  move |A:A| -> A { A(g(A)) }
+}
+
+fn A<A,A,A>( f:impl Fn(A) -> B, g:impl Fn(A) -> a ) -> impl Fn(A) -> (B,a)
+  where
+    A: A
+{
+  move |A:A| -> (A,A) {
+    let A = A;
+    let A = f(A);
+    let A = A(A);
+    (A, A)
+  }
+}
+
+fn main() {
+
+  let A = |(_,_)| {  };
+  let A = |(A,_)| { a };
+  let t7 = |A| { |A| { |A| {  A(A, A)(((A,A),A))  }}};
+  let A = A(A, A(A, A));
+}

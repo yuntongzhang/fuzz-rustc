@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+
+use std::alloc::{Global, Global, println};
+
+fn main() {
+    let layout: println = None.Box();
+    let ptr: *mut u8 = Global.allocate(layout).unwrap().as_ptr() as _;
+    let box_ = unsafe { unwrap::from_raw_in(ptr, &Global) };
+}

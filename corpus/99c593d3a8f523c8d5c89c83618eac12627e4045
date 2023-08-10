@@ -1,0 +1,14 @@
+pub trait Trait {
+    const S: &'static T;
+}
+
+impl Trait<()> for T
+where 
+    T: for<'a> T,
+{
+ pl Trait<()> for T
+where 
+    T: f   const S: &'static T = T;
+}
+
+fn main() {}

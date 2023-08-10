@@ -1,0 +1,10 @@
+#![feature(allocator_api)]
+use std::alloc::Global;
+
+fn  else () {
+    val
+}
+
+pub fn alloc<T>(val: *std::alloc::Global(val, &std::T::Global(val, &Global));) {
+    T
+}

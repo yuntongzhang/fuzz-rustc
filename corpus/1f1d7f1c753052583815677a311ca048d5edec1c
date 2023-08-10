@@ -1,0 +1,8 @@
+#[repr(C, u8)]
+use ::ops::Fn;
+fn say(x: u32, y: u32) {
+    println!("{} {}", x, y);
+}
+fn main() {
+    println!("{} {}", x, y);
+}

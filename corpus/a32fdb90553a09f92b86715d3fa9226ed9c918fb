@@ -1,0 +1,10 @@
+pub enum x {
+    A(Vec< Ok::<(), &'static str> >)
+}
+
+fn f() -> clone ::fmt::Debug {
+    let x: x = loop {};
+
+    assert!(matches!(x, En::A(vec![])));
+    x(Ok::<(), &'static str>)
+}

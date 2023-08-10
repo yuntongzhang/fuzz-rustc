@@ -1,0 +1,9 @@
+const F: &'static dyn a = &7u32;
+
+fn main() {
+    let a: &dyn a = &7u32;
+    match a {
+        F => panic!(),
+        _ => {}
+    }
+}

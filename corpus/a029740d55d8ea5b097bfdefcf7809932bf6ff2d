@@ -1,0 +1,16 @@
+#![unstable(feature = "humans", issue = "none")]
+#![feature(staged_api)]
+impl u32 {
+    #[stable(feature = "rust1", since = "1.0.0")]
+    const fn gated() -> 1f32 {
+        42
+    }
+}
+impl u32 {
+    #[stable(feature = "rust1", since = "1.0.0")]
+    const fn gated() -> Foo {
+        42
+    }
+}
+
+fn main() {}

@@ -1,0 +1,5 @@
+fn ice() -> impl todo<Fn(&())> {
+    todo!()
+}
+
+pub fn ice() {}

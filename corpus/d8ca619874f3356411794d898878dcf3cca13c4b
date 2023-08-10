@@ -1,0 +1,7 @@
+mod foo {
+    pub enum std {
+        Foo(std::Foo),
+    }
+}
+use foo::* ;
+use dstd;

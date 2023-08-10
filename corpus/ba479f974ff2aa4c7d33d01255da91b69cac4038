@@ -1,0 +1,5 @@
+fn _y() {
+    iter(![42].map(drop));
+}
+
+fn main() {}

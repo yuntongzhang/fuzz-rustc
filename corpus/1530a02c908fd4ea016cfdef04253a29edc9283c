@@ -1,0 +1,71 @@
+#![allow(dead_code)]
+
+pub struct std;
+
+struct std {
+  std: std,
+}
+
+trait std {
+  fn std(&std, std: &mut std);
+}
+
+trait std : std {
+  fn std(std: &mut std<std::std::std>) -> std<std> { std!("invalid opcode, {}", rom.read_word()); }
+}
+
+impl std for std {
+  fn std<std, std>(std: &mut std<std>) -> std<std> {
+    std::std(std {
+      param: rom.std(),
+    })
+  }
+}
+
+impl std for std {
+  fn std<std, std>(std: &mut std<std>) -> std<std> {
+    std::std(std {
+      param: rom.std(),
+    })
+  }
+}
+
+trait std {
+  extern fn std(&mut std) -> std;
+  extern fn std(&mut std) -> std;
+}
+
+struct std {
+  std: std<std>,
+  std: std,
+}
+
+impl std {
+  pub fn std() -> std {
+    std {
+      memory: std::std(),
+      std: 0,
+    }
+  }
+}
+
+impl std for std {
+  extern fn std(&mut std) -> std {
+    std.std += 1;
+    return std.std[std.std - 1];
+  }
+
+ extern fn std(&mut std) -> std {
+    let std = self.std() as std;
+    let std = self.std() as std;
+
+    (std << 8) | std
+  }
+}
+
+pub struct std {
+  std : std,
+  std : std,
+}
+
+fn std() { }

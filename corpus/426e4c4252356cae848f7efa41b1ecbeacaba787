@@ -1,0 +1,15 @@
+fn main() {
+    let x = "foo";
+    
+    match x {
+        x @ [1, _, _] |
+        x @ ("red" | match x {
+        x @ [1, _, _] |
+        x @ ("red" | "blue") => {
+        }T
+        _ => (),
+    }) => {
+        }T
+        _ => (),
+    }
+}

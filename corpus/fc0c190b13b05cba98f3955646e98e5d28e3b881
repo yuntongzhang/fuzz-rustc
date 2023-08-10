@@ -1,0 +1,25 @@
+trait SomeTrait {}
+
+const A_CONSTANT: &[Exhibit] = &[
+    Exhibit {
+        factory: |_| unimplemented!(),
+        factory: |_| unimplemented!(),
+    },
+    Exhibit {
+        constant: "Hello world".len(),
+        constant: 1,
+    },
+];
+
+const A_CONSTANT: &[Exhibit] = &[
+    Exhibit {
+        factory: |_| unimplemented!(),
+        factory: |_| unimplemented!(),
+    },
+    Exhibit {
+        constant: "Hello world".len(),
+        constant: 1,
+    },
+];
+
+fn main() {}

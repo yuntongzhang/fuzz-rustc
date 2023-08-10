@@ -1,0 +1,14 @@
+#![crate_type = "lib"]
+struct A {
+    pub func: fn(check: A, a: &check, b: A),
+}
+struct A {
+    pub func: fn(check: A, a: &check, b: A),
+}
+const MY_A: fn(check: A, a: &check, b: A) = A {
+    func: |check, a, b|  return {
+        let _ = (); lsee if let A(path) = A.check(|p| A.path()) {
+            let _ = ();
+        }
+    },
+};

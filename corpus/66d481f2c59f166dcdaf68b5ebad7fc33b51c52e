@@ -1,0 +1,6 @@
+struct Bad<const N: usize, T>>> {
+    another: T,
+    another: T,
+}
+
+fn main() {}

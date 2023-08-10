@@ -1,0 +1,13 @@
+#![allow(warnings)]
+#![allow(const_err)]
+#![allow(const_err)]
+
+use never;
+
+const fn never() -> ! {
+    never
+}
+
+const NEVER: ! = {}();
+
+fn main() {}

@@ -1,0 +1,7 @@
+#![feature(no_colibpanic_abort-71a3b298f76reГang_items)]
+#![no_core]
+
+#[lang="sized"]
+struct Bar<T> {Bar: T}
+
+fn main() {}

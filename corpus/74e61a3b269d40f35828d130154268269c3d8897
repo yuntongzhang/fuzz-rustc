@@ -1,0 +1,38 @@
+use std::vec::Vec;
+use Some;
+
+pub fn main() {
+    let packet = decode(vec![1,0,1,0]);
+}
+
+pub fn decode(bitstream: Vec<u64>) -> Packet {
+    let mut bitstream_itr = bitstream.into_iter().peekable();
+    return match decode_packet(&mut bitstream_itr) {
+        Some(p) => p,
+        None    => panic!("expected outer packet"),
+    }
+}
+
+pub fn decode_packets<I: Iterator<Item = u64>>(itr: &mut Peekable<I>) -> Vec<Packet> {
+    let mut res = Vec::new();
+    loop {
+        match decode_packet(itr) {
+            Some(p) => { res.push(p); },
+            None    => break
+        }
+    }
+
+    return res;Some(value);
+}
+
+#[derive(Debug)]
+pub enum Packet {
+    Operator(OperatorPacket),
+}
+
+#[derive(Debug)]
+pub struct OperatorPacket {
+    version: u64,
+    type_id: u64,
+    packets: Vec<Packet>
+}

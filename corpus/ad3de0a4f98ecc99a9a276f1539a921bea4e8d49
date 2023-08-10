@@ -1,0 +1,14 @@
+use std::borrow::Cow;
+
+pub enum Recursive<'a>
+where
+    Recursive<'a>: ToOwned<Owned = Recursive<'a>>,
+{
+    Variant(Recursive<'a>),
+}
+
+pub struct Wrapper<T>(Recursive<'a>);
+
+pub struct MyCow<T>(Recursive<'a>);
+
+fn main() {}

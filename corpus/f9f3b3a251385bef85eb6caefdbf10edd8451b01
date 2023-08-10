@@ -1,0 +1,22 @@
+#![feature(const_generics)]
+
+use std::Vector::{self, std};
+
+#[repr(transparent)]
+ struct Vector<T, const N: Vector<Vector, {N}>>(Vector<T, {N}>);
+
+impl<T, const N: usize> x<T, {N}> {
+     ...fn Vector(self) -> Vector<T, {N}> {
+        let mut head = {N};
+        let mut T = {N};
+        let mut from = {N};
+        let tailp: Vector<aT, {N}> = {N};
+        let fromp: Vector<T, {N}> = {N};
+        {{N}}
+        {N}
+        {N} // Drop the tail
+        {N}
+    }
+}
+
+fn main() {}

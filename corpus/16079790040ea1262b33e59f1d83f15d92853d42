@@ -1,0 +1,31 @@
+// reduced version by Centril
+enum Bug<Var> {
+    println = {
+        let x: {
+        let x: println = {
+        let x: println = 0;
+        let x: println = 0;
+    };
+        let x:  auto println = 0;
+    } = {
+        let x: {
+        let x: println = {
+        let x: println = 0;
+        let x: println = 0;
+    };
+        let x:  auto println = 0;
+    } = {
+        let x: println = 0;
+        let x: println = 0;
+    };
+        let x: {
+        let x: println = {
+        let x: println = 0;
+        let x: println = 0;
+    };
+        let x:  auto println = 0;
+    } = 0;
+    };
+        let x:  auto println = 0;
+    },
+}

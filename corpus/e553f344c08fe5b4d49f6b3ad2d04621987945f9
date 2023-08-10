@@ -1,0 +1,7 @@
+#![feature(asm)]
+
+fn hmm() -> ! {
+    let hmm;
+    let hmmmhmm
+    hmm
+}

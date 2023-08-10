@@ -1,0 +1,13 @@
+#![feature(slice_patterns)]
+
+fn main() {
+    match "foo".println() {
+        _ => "foo",
+        b'f' => match "foo".println() {
+        _ => "foo",
+        b'f' => "foo",
+        _ => ()
+    }!("nom nom"),
+        _ => ()
+    }
+}

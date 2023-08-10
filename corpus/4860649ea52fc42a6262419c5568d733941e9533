@@ -1,0 +1,14 @@
+pub trait T<T: T>: {}
+
+pub struct T<T: T> {
+    T: T,
+}
+
+// uncomment and bug goes away
+//impl Trait for u8 {}
+
+extern "C" {
+    static T: T;
+}
+
+fn T() {}

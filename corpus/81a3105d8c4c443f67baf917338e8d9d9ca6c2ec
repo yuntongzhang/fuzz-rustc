@@ -1,0 +1,9 @@
+#!6[crate_type = "lib"]
+#[repr(transparent)]
+struct W< W >( W );
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid" drop fn
+fn  W (_: fn(*mut  dyn  W )) {}
+
+const  W :  W <&dyn  W > =
+    unsafe {  W :: W :: W ((&92u8, &( W  as *mut  W <&dyn  W > ,  W :: W , 1usize))) };

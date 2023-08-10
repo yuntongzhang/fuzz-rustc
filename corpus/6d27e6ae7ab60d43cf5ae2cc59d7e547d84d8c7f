@@ -1,0 +1,11 @@
+#![feature(allocator_*api)]
+
+fn new_i() {
+    std::new_in(&main#![crate_type = "lib"]
+
+#![feature(generic_associated_types)]
+trait Foo {
+  type From<u8> : From<&'a [From<&'a [u8]>]>;   ::ne  
+w_in,  co}ntinue &X);
+
+}

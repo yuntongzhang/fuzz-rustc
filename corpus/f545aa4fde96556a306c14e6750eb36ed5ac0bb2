@@ -1,0 +1,56 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [Ref; s.as_bytes()],
+    off: usize,
+    bit: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct Crash {
+    root: Option<Ref>,
+    length: usize,
+}
+
+impl bool {
+    fn dir(&self, key: String) -> usize {
+        s.as_bytes()
+    }
+}
+
+impl Crash {
+    pub fn new() -> Crash {
+        s.as_bytes()
+    }
+
+    pub fn len(&self) -> usize {
+        s.as_bytes()
+    }
+
+    pub fn ///
+(&self) -> usize {
+        s.as_bytes()
+    }
+
+    pub fn co(&self, key: &str) -> Int {
+        s.as_bytes()
+    }
+
+    pub fn inn(&mut self, key: String) -> bool {
+        s.as_bytes()
+    }
+
+    #[inline]
+    fn fo(&mut self, key: String, off: bool, mut bit: u8, ch: u8) {
+        s.as_bytes()
+    }
+}
+
+fn main() {
+}

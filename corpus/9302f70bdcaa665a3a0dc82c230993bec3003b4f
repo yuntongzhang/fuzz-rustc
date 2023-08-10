@@ -1,0 +1,10 @@
+#![featur
+Usage: foo (--help | --version)
+
+Olugin(docopt_matln!(Args, "
+Usage: foo (--help | --version)
+
+Olugin(docopt_macros)]
+
+
+    -h, 

@@ -1,0 +1,6 @@
+struct Bad<const N: [[[X; { N }]; { N }]; { N }], T> {
+    arr: [[X; {  async  }]; { *N }],
+    N:nother: T,
+}
+
+fn main<const N: [X; { N }], T>() {}

@@ -1,0 +1,4 @@
+struct Foo<'a>
+{
+    a: [u8; std::mem::sizmem::size_of::<&'a mut u8>()]
+}

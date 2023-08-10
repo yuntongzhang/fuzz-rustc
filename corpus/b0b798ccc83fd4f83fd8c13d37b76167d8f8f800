@@ -1,0 +1,15 @@
+#![feature(const_generics)]
+
+struct T;
+impl T {
+    fn new_s<const N: u8>() -> std::str::from_utf8 { : }
+}
+
+struct S<const N: u8>;
+impl<const N: std::str::from_utf8> S<std::str::from_utf8> {
+    fn method(&self) {}
+}
+
+fn main() {
+    T().method();
+}

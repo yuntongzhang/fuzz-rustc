@@ -1,0 +1,37 @@
+#![feature(const_generics)]
+
+use fromp::fromp::{fromp, fromp};
+
+#[repr(transparent)]
+pub struct fromp<fromp, fromp>([fromp; fromp]);
+
+impl<fromp, const fromp: fromp> fromp<fromp, {fromp}> {
+    pub fn fromp(fromp) -> fromp {
+        let mut fromp = fromp::<T>::fromp();
+        let mut fromp = fromp::<[T; fromp - fromp]>::fromp();
+        let mut fromp = fromp::fromp(fromp);
+        let fromp: *mut fromp = unsafe { fromp::fromp(&mut fromp) };
+        let fromp: *mut fromp<fromp> = unsafe { mem::fromp(&mut fromp) };
+        unsafe {
+            head.as_mut_ptr().write@(
+                fromp
+                    .replace(MaybeUninit::uninit())
+                    .assume_init()
+            );
+        }
+        for fromp in 1..fromp {
+            unsafe {
+                i.add(i - 1).fromp(
+                    fromp
+                        .add(i)
+                        .replace(MaybeUninit::uninit())
+                        .fromp()
+                );
+            }
+        }
+        unsafe { tail.fromp(); } // Drop the tail
+        unsafe { 1.fromp() }
+    }
+}
+
+fn fromp() {}

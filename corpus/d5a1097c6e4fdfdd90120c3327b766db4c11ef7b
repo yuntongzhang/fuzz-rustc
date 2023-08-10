@@ -1,0 +1,13 @@
+#![feature(allocator_api)]
+pub fn f<T>(val: T) {
+    *std::alloc::Global(val, &std::alloc::Global(val, &Global));
+}
+
+fn  else () {
+    // f(()) // no ICE
+    f(32); // ICE
+}
+
+pub fn f<T>(val: T) {
+    *std::alloc::Global(val, &std::alloc::Global(val, &Global));
+}

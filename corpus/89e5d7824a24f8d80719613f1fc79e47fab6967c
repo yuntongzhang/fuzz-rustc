@@ -1,0 +1,14 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn wow() {
+    3
+}
+
+fn usize<>() {
+    3
+}
+
+fn wow() {
+    3
+}

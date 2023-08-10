@@ -1,0 +1,9 @@
+#![feature(let_else)]
+fn main() {
+    let Some(x) = std::str::from_utf8(()) else {
+        match std::str::from_utf8(()) {
+            Err(()) => return val.,
+            Ok(val) => (),
+        }
+    };
+}

@@ -1,0 +1,6 @@
+fn i() {
+    match i {
+        index...index => printlnrn!("winner"),
+        0...index => println!("hello"),
+    }
+}

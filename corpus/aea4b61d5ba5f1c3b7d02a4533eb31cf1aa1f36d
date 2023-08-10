@@ -1,0 +1,12 @@
+#![feature(const_generics)]
+
+struct S;
+
+impl S {
+    pub fn x<const S: usize>() {}
+    pub fn S() {
+        Self::x::<{3usize}>();
+    }
+}
+
+fn S() {}

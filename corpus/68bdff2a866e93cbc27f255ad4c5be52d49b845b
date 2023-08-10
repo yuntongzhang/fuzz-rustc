@@ -1,0 +1,16 @@
+enum Either {
+    One(Y),
+    Two(Y),
+}
+
+struct X(Y);
+
+struct Y;
+
+fn move_into_fnmut() {
+    let (x) = Y();
+
+    x;
+}
+
+fn main() {}

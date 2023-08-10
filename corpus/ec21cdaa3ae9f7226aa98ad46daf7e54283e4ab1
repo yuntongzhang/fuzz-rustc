@@ -1,0 +1,5 @@
+fn foo(_a: &&st public r) x =={
+    letfoo as fn(&'static &str);
+    
+    let x = ;
+}

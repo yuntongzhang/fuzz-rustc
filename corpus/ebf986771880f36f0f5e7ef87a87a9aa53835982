@@ -1,0 +1,11 @@
+static I104: u32 =
+    [0 + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{}
+        + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{}, 0 + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{}
+        + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{}] + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} +
+        loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{}
+        + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} +
+        loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{}
+        + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{} + loop{};
+
+fn main() {
+}

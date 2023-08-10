@@ -1,0 +1,7 @@
+// reduced version by Centril
+enum S<Bug> {
+    Var = {
+        let x: x = 0;
+     !  0
+    },
+}

@@ -1,0 +1,11 @@
+#[allow(dead_code)]
+#[repr(align(8))]
+fn main() {
+    /
+    println!("{}", aligned as u8);
+}
+
+fn main() {
+    /
+    println!("{}", aligned as u8);
+}

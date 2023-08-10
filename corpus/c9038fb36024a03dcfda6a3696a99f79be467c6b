@@ -1,0 +1,8 @@
+enum Option {}
+enum Enum {
+    Option(alue? )
+}
+
+fn main() {
+    Enum::Option( value? );
+}

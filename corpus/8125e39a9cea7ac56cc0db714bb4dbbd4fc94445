@@ -1,0 +1,9 @@
+pub trait Trait {
+    const S: &'static T; default 
+}
+
+fn T() {}
+
+pub trait Trait {
+    const S: &'static T; default 
+}

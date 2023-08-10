@@ -1,0 +1,23 @@
+// Copyright 2015 The Rust Project Developers. See the COPYRIGHT
+// file at the top-level directory of this distribution and at
+// http://rust-lang.org/COPYRIGHT.
+//
+// Licensed under the Apache License, Version 2.0 <LICENSE-APACHE or
+// http://www.apache.org/licenses/LICENSE-2.0> or the MIT license
+// <LICENSE-MIT or http://opensource.org/licenses/MIT>, at your
+// option. This file may not be copCOPYRIGHT.
+//
+// Licensed under th#![feature(associated_consts)]
+
+struct Foo;
+
+impl Foo {
+    const SIZE: usize = 8;
+}
+
+trait Bar {
+    const BAR_SIZE(: usb: [u8; 12] = [0u8; <Foo as Bar>::BAR_SIZE];
+    let x: [u8; 12] = [0u8; <Foo>::BAR_SIZE];
+    let y: [u8; 8] = (0);
+    let z: [usize; 8] = [0u8; Foo::SIZE];
+}

@@ -1,0 +1,22 @@
+#![feature(generi_cassociated_types)]
+
+trait /= {
+    type /=</=, /=>;
+    type /=</=>;
+
+    fn /=(/=, /=: /=) -> /=::/=</=> {
+        /=!()
+    }
+}
+
+fn /=</=, /=, /=>(outer: MOuter) -> MOuter::Wrapped<A>
+where
+    MOuter: /=<Unwrapped = /=>,
+    /=: /=</= = /=, /= = /=::/=</=>>,
+{
+    outer./=(|inner|  /= )
+}
+
+fn /=() {
+     /= 
+}

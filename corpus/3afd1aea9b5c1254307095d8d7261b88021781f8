@@ -1,0 +1,65 @@
+use  else :: else :: else ;
+use  else :: else :: else ;
+
+pub fn  else () {
+    let mut  else  =  else :: else ();
+}
+
+pub fn  else ( else :  else < else >) ->  else  {
+    let mut  else  = bitstream.into_iter(). else ();
+    return match  else (&mut  else ) {
+         else ( else ) =>  else ,
+         else     =>  else !("expected outer packet"),
+    }
+}
+
+pub fn  else < else :  else < else  =  else >>( else : &mut  else ) ->  else < else > {
+    let mut  else  =  else :: else ();
+    loop {
+        match  else ( else ) {
+             else ( else ) => { res. else ( else ); },
+             else     => break
+        }
+    }
+
+    return  else ;
+}
+
+pub fn  else < else :  else < else  =  else >>( else : &mut  else < else >) ->  else < else > {
+    // get version digits
+    let  else  =  else (0,  else , 3)?;
+    let mut  else  = bitstream.into_iter(). else ();
+    return  else ( else ,  else ,  else );
+}
+
+pub fn  else < else :  else < else  =  else >>( else :  else ,  else :  else ,  else : &mut  else < else >) ->  else < else > {
+    let  else  =  else  {
+        version:  else ,
+        type_id:  else ,
+        packets:  else (&mut itr.take(0). else ()),
+    };
+
+    return  else ( else :: else ( else ));
+}
+
+pub fn  else < else :  else < else  =  else >>( else :  else ,  else : &mut  else < else >,  else :  else ) ->  else < else > {
+    let mut  else  =  else ;
+    for _ in 0.. else  {
+         else  *= 2;
+         else  += itr. else ()?;
+    }
+
+    return  else ( else );
+}
+
+#[derive(Debug)]
+pub enum  else  {
+     else ( else ),
+}
+
+#[derive(Debug)]
+pub struct  else  {
+     else :  else ,
+     else :  else ,
+     else :  else < else >
+}

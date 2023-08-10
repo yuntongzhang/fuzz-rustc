@@ -1,0 +1,7 @@
+#![feature(asm)]
+
+fn main() {
+    let arr: [ int ; 16];
+    let arr: [ int ; 16];
+    println!("{:?}", arr);
+}

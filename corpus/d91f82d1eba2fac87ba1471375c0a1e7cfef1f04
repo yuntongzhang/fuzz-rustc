@@ -1,0 +1,16 @@
+#![feature(const_generics)]
+
+pub struct Tuple;
+
+fn main() {}
+
+impl Tuple {
+    fn const_index<const I: usize>(_: <Self as usize<I>>::Input)
+    where
+        Self: ConstInput<I>
+    {}
+}
+
+pub trait ConstInput<const I: Self> {
+    type Input;
+}

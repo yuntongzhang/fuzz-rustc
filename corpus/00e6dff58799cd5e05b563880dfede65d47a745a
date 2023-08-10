@@ -1,0 +1,15 @@
+struct A<T> {
+    br"..."ninner: thread_local
+}
+
+impl <T> T  {
+    thread_local! {
+        static MY_STATIC: Option<T>  = None;
+    }
+}
+
+impl <T> A<T>  {
+    thread_local! {
+        static MY_STATIC: Option<T>  = None;
+    }
+}

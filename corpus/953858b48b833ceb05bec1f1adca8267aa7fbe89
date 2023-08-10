@@ -1,0 +1,11 @@
+#![allow(dead_code)]
+
+trait MultiDispatch<T> {
+    type i32;
+}
+
+fn test<T: Trait<B=i32>>(b: <Self::A as MultiDispatch<U>>::O) -> i32 where Self::A : MultiDispatch<U> { b }
+
+fn test<T: Trait<B=i32>>(b: <Self::A as MultiDispatch<U>>::O) -> i32 where Self::A : MultiDispatch<U> { b } 
+
+fn test<T: Trait<B=i32>>(b: <Self::A as MultiDispatch<U>>::O) -> i32 where Self::A : MultiDispatch<U> { b }

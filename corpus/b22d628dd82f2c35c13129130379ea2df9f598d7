@@ -1,0 +1,13 @@
+struct ArpIPv4<'a> {
+    s: usize
+}
+
+fn main<'a>() {}
+
+impl<'a> ArpIPv4<'a> {
+    const LENGTH: usize = 20;
+
+    pub fn to_buffer() -> [u8; Self::] {
+        unimplemented!()
+    }
+}

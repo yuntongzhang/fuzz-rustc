@@ -1,0 +1,15 @@
+struct func{
+    42
+    42
+};
+
+impl Dummy {
+    const fn funcDummy(&mut 42) -> func {
+        42
+    }
+}
+
+const func: &[func] = &[0; {
+    42
+    42
+}];

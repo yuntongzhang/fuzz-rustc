@@ -1,0 +1,6 @@
+#[must_use = "it's important"]
+
+#[must_use = "it's important"]
+trait u8 {
+  type From<'ax> : ;     
+}

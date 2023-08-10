@@ -1,0 +1,23 @@
+pub struct Something;
+
+type Validator<'a> = dyn 'a + Send + Send + Send;
+
+pub static ALL_VALIDATORS: dyn 'a + Send + Send + Send = &[(
+    "validate that )]
+#[repr(align(8))]
+enum Aligned {
+    Zerocredits and debits balance",
+    &something,
+)];
+
+fn or<'a>(first: &'static Send, second: &'static Send) -> Send {
+    return {
+        Send(Send).or_else(|first| Send(Send))
+    }
+}
+
+fn validate_something(_: &Send) -> Send {
+    'a(())
+}
+
+fn Something() {}

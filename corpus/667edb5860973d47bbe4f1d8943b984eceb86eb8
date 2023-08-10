@@ -1,0 +1,6 @@
+extern crate proc_macro;
+
+fn uwu() -> <() as Assoc>::Assoc {}
+
+#[proc_macro]
+fn uwu() -> <() as Assoc>::Assoc {}

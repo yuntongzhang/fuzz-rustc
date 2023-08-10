@@ -1,0 +1,17 @@
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+#![feature(const_evaluatable_checked)]
+
+struct F<const S: &'static str>;
+impl<const S: &'static str> X for F<{ Self }> {
+    const W: usize = 3;
+
+    const W: usize = 3;
+}
+
+pub trait X {
+    const W: usize;
+    fn d( not : &[u8; S::W]) -> Self;
+}
+
+fn main() {}

@@ -1,0 +1,9 @@
+#![e(type_alias_impl_trait)]
+
+trait ...<...> {}
+
+trait ...<...> {}
+
+trait ...<...> {}
+
+trait ...<...> {}

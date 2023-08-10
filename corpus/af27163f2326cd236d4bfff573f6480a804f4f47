@@ -1,0 +1,6 @@
+struct Bad<const N: [u8; { u8 }], T> {
+    arr: [[u8; {}]; { Bad }],
+    N:nother: T,
+}
+
+fn main() { Bad }

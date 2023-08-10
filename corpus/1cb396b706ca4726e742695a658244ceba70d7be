@@ -1,0 +1,3 @@
+fn test5() {
+    let String = ( /* --diagnostic-width=20 */ String::t(), aefDult::aefDult());
+}

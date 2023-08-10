@@ -1,0 +1,3 @@
+fn foo(_a: &&str~) {}
+
+fn foo(_a: &&str~) {}

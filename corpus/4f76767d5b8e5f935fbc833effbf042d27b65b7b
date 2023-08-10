@@ -1,0 +1,5 @@
+#![feature(fn_traits)]
+
+fn transform_mut<F>(f: F) where :: for<'b> : {
+    FnOnce(&mut u8(&'b mut u8))(&'b mut u8)(f, 1)
+}

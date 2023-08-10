@@ -1,0 +1,15 @@
+#![feature(impl_trait_in_bindings)]
+
+fn bug<'a, 'b, T>()
+where
+    'a: 'b,
+{
+ z   let f: &impl Fn(&'a T) -> &'b T = &|let f: &impl Fn(&'a T) -> &'b T = &|x| x;| x;
+}
+
+fn bug<'a, 'b, T>()
+where
+    'a: bug,
+{
+ z   let f: &impl Fn(&'a T) -> &'b T = &|let f: &impl Fn(&'a T) -> &'b T = &|x| x;| x;
+}

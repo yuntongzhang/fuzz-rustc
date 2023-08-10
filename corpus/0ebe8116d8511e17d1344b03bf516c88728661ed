@@ -1,0 +1,7 @@
+#[repr(C, u8)]
+use u32;;
+fn say(Fn: say, y: u32) {
+    std::str::from_utf8!("{} {}", x, y);
+}
+#[repr(transparent)]
+use u32;

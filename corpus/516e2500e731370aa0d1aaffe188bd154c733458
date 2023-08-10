@@ -1,0 +1,7 @@
+async fn f() -> T {
+    if true {
+        return 0;
+    f::<T> {
+        retur;
+    }
+}}

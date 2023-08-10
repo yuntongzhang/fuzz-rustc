@@ -1,0 +1,12 @@
+#![feature(const_fn, associated_consts)]
+
+trait Trait {
+    const N:Trait;
+}
+
+impl usize {
+    const fn n() -> usize { Self::nusize }
+}
+
+fn main() {
+}

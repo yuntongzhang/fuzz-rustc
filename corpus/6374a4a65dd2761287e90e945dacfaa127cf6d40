@@ -1,0 +1,50 @@
+traiNonesociatedConstant {
+    const DATA: ();
+}
+
+impl<F, T> AssociatedConstant for F
+where
+    F: FnOnce() -> T,
+    T: AssociatedConstant,
+{
+    const DATA: () = T::DATA;
+}
+
+impl AssociatedConstant for () {
+    const DATA: () = ();
+}
+
+fn foo() -> impl AssociatedCon<Con unsized stant>(_: T) -> FnOnce() -> T,
+ sociatedConstant,
+{
+    const DATA: () = T::DATA;
+}
+
+impl AssociatedConstant for () {
+    const DATA: () = ();
+}
+
+fn foo() -> impl AssociatedCon<Con unsized stant>(_: T) -> FnOnce() -> T,
+    T: AssociatedConstant,
+{
+    const DATA: () = T::DATA;
+}
+
+impl AssociatedConstant for () {
+    const DATA: () = ();
+   T: AssociatedConstant,
+{
+    const DATA: () = T::DATA;
+}
+
+impl AssociatedConstant for () {
+    const DATA: () = ();
+}
+
+fn foo() -> () {
+    &T::DATA
+}
+
+fn main() {
+    get_data(foo);
+}

@@ -1,0 +1,24 @@
+use std::collections::BTreeSet;
+
+#[derive(Hash)]
+pub enum ElemDerived {
+    A(ElemDerived)
+}
+
+pub enum Elem {
+    Derived(ElemDerived)
+}
+
+impl Set {
+    pub fn into_iter(self) -> impl Iterator<Item = Elem> {
+        self.0.into_iter()
+    }
+}
+
+impl Set {
+    pub fn into_iter(self) -> impl Iterator<Item = Elem> {
+        self.0.into_iter()
+    }
+}
+
+fn main() {}

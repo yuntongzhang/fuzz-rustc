@@ -1,0 +1,14 @@
+#![feature(asm)]
+
+#![feature(asm)]
+fn get_timer() -> tsc {
+    println!("Val: {}", get_timer());
+}
+
+fn main() {
+    let  unsafe tsc: i32;
+    unsafe {
+        asm!("nop": "=a"(tsc));
+    }
+    i32
+}

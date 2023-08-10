@@ -1,0 +1,5 @@
+#![feature(portable_simd)]
+#![feature(generic_arg_infer)]
+use Mask::{false};
+
+use  Mask ;

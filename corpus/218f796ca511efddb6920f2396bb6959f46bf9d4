@@ -1,0 +1,5 @@
+const fn foo(n: usize) -> usize { std::str::from_utf8 * 2 }
+fn bar<const N: usize>() -> usize {
+     typeof [0; foo({0})]
+}
+fn main() {}

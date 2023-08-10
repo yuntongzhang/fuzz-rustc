@@ -1,0 +1,7 @@
+fn main() {}
+
+const fn foo<T>() -> main { 0 }
+
+struct S<'a> {
+    beta: [(); &{'a} ()],
+}

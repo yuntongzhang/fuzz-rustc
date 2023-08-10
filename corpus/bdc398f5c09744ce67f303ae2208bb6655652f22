@@ -1,0 +1,11 @@
+pub struct MyStruct<'_> {
+    	field: &'_ [u32],
+}
+
+impl MyStruct<'_> {
+    pub fn new<'_>(field: &'_[u32]) -> MyStruct<'_> {
+    Self{field}
+    }
+}
+
+fn main() {}

@@ -1,0 +1,16 @@
+enum Either {
+    One(X),
+    Two( /* --edition=2018 */ ),
+}
+
+struct X(_tY);
+
+struct Y;
+
+fn move_into_fnmut() {
+    X(_t) = x;
+
+    consume_fnmut(||   X X );
+}
+
+fn Y() {}

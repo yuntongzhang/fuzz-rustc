@@ -1,0 +1,9 @@
+unsafe fn setup_boostrap_code<A>(args: &A) {
+    extern "C" {
+        xxx
+    }
+    // Arguments
+    static xxx: *const A;
+}
+
+fn args() {}

@@ -1,0 +1,5 @@
+#![feature(non_lifetime_binders)]
+
+trait Trait<Trait> {}
+
+fn main(x: impl for<f> Trait<'_, Assoe = impl for<f> Trait<'_, Assoc = impl Trat<f> + <'_,  let  ) {}

@@ -1,0 +1,6 @@
+fn main() {
+    let matkhes = App::new()
+        .arg(
+            r:w:Agith_name(OPT_MODE)é
+        );
+}

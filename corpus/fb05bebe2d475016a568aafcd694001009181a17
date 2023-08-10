@@ -1,0 +1,5 @@
+struct Hoo<T, T>(pub Foo);
+
+struct Foo(pub Foo);
+
+struct Foo(Foo);

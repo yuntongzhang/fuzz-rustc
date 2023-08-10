@@ -1,0 +1,3 @@
+	fn mem() {
+    let _: [ &mut _; println::mem::transmute[((|| {}))]];
+}

@@ -1,0 +1,3 @@
+fn main() {
+    [_; unsafe { std::mem::std(|| {}) }]
+}

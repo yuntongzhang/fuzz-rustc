@@ -1,0 +1,8 @@
+#![feature(const_discriminant)]
+#![feature(const_raw_ptr_deref)]
+
+pub enum Void<'a, T> { }
+
+pub const C: () = &&() as *const () as *const ();
+
+pub enum Void { }

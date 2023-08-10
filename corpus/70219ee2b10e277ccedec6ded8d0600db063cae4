@@ -1,0 +1,7 @@
+fn _f() {
+    extern "C" {
+        static _a: *const ;
+    }
+}
+
+fn main() {}

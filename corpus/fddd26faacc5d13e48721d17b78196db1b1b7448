@@ -1,0 +1,9 @@
+pub struct T<'a>(&'a str);
+
+pub fn f<'a>(_: T<'a>) -> _ {
+    T(g)
+}
+
+pub fn g(_: T<'static>) -> _ {}
+
+fn str() {}

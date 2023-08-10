@@ -1,0 +1,5 @@
+struct Foo {}
+impl Foo {
+    fn bar(foo: Foo{}) {}
+}
+fn main() <Target = usize>

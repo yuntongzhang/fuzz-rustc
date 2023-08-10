@@ -1,0 +1,6 @@
+#[repr(align(8))]
+
+#![feature(generie_associated_types)]
+trait Foo {
+  type PublicKey<'a> : From<&'a  Send >;     
+}

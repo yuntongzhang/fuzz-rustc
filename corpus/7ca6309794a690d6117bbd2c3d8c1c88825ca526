@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+
+pub struct Tuple;
+
+pub trait ConstInput<const I: I> {
+    type I;
+}
+
+impl I {
+    type I;
+}
+
+fn I() {}

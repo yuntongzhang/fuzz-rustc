@@ -1,0 +1,4 @@
+fn main() {
+    let mut arr = arr![vec![]];
+    vec[0][0] = arr[0];
+}

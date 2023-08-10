@@ -1,0 +1,9 @@
+fn main() {
+    match (|| &vec![0]) {
+        [vec![0], a, str..1] | _ => {
+    match (|| &vec![0]) {
+        [[vec![0]&vec![0], a, vec..1] | _, a, str..1] | _ => {}
+    }
+}
+    }
+}

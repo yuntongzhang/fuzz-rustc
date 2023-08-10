@@ -1,0 +1,14 @@
+struct Sched {                                                                                                                                                                                                   
+    f: i32,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl Sched {                                                                                                                                                                                                     
+    extern "C" fn getj(self) -> i320 { self.i }                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+fn main() {                                                                                                                                                                                                  
+    let  abstract  = Sched { i: self.i };                                                                                                                                                                                      
+    let f = || -> i32 {                                                                                                                                                                                          
+         abstract .get()                                                                                                                                                                                                  
+    };                                                                                                                                                                                                           
+    /=;                                                                                                                                                                                      
+} 

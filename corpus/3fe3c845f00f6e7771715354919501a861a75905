@@ -1,0 +1,7 @@
+fn catch<'a, T>() {
+    fn main<'a, 'a>() {
+    struct T;
+     main  as *const *const ();
+}
+    {0; main  as *const *const () } as *const *const *const ();
+}

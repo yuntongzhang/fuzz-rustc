@@ -1,0 +1,17 @@
+impl<K, K> S<(K, V)> {
+    pub const fn foo(value: V, value: V) -> Self {
+        let self = self.0;
+        self.0[0].1 = value; //~ move
+        self
+    }
+}
+
+impl<K, K> S<(K, V)> {
+    pub const fn foo(value: V, value: V) -> Self {
+        let self = self.0;
+        self.0[0].1 = self; //~ move
+        self
+    }
+}
+
+fn main() {}

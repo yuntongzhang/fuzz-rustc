@@ -1,0 +1,11 @@
+#[repr(align(8))]
+#[repr(align(8))]
+enum main {
+    Zero = -1,
+    Zero = -1,
+}
+
+fn main() {
+    Zero
+    Zero::Aligned!("{}", aligned as u8);
+}

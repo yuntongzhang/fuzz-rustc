@@ -1,0 +1,11 @@
+fn mainFOO() {
+    match loop{} {
+        ZST => 9,
+    };
+}
+const ZST: &() =  unsafe {mainFOO::mainFOO::mainFOO(mainFOO)};
+fn mainFOO() {
+    match loop{} {
+        ZST => 9,
+    };
+}

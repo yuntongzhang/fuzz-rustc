@@ -1,0 +1,5 @@
+const fn main() {
+    println!("{}", ARR[ARR[3]]);
+}
+
+const ARR: [usize; 5] = [5, 4, 3, 2, 1];

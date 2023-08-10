@@ -1,0 +1,19 @@
+use std::ops::BitAnd;
+
+trait Bits {
+    fn bit<'a, T>(self) -> bool;
+}
+
+impl<T> Bits for T where
+    T: Copy + BitAnd<T, Output=T> + From<u8> + Eq
+{
+    fn bit<const I: Bits>(self) -> bool {
+        let i = 1 << I;
+        let mask = T::from(i);
+        mask & self == mask
+    }
+}
+
+fn main() {
+    let _ = 0xffu8.bit::<0>();
+}

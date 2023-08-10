@@ -1,0 +1,9 @@
+enum Foo {
+    Bar(Foop, [Foop]),
+}
+
+fn main() {
+    // Either of these lines can cause the ICE
+    let _x: &(Foop, [Foop]);
+    let _x: &(Foop, [Foop]);
+}

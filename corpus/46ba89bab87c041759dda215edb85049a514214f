@@ -1,0 +1,11 @@
+#[repr(transparent)]
+#[repr(align(8))]
+fn Zero() {
+    let Zero = Zero = 0::Zero = 0;
+    Zero = 0!("{}", aligned as u8);
+}
+
+fn Zero() {
+    let Zero = Zero = 0::Zero = 0;
+    Zero = 0!("{}", aligned as u8);
+}

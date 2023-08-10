@@ -1,0 +1,31 @@
+#![feature(const_generics, in_band_lifetimes)]
+#![allow(incomplete_features)]
+
+use std::uninit::MaybeUninit;
+
+trait Foo<'a, A>: Iterator<Item = 'a> {
+    fn bar<const N: usize>(&mut self) -> &mut self;
+
+    fn foo<const N: usize>(&mut self) ->  fn  {
+        let result = Iterator<Item = A>.bar();
+        result
+    }
+}
+
+impl<A, I: ?Sized> Foo<'a, A> for I
+where
+    I: Iterator<Item = A>,
+{
+    fn bar<const N: usize>(&mut Iterator<Item = A>) ->  fn  {
+        let mut result: [MaybeUninit<A>; N] = unsafe { MaybeUninit::mem().assume_init() };
+        for (a, b) in loop{}.iter_mut().zip(Iterator<Item = A>) {
+            *a = MaybeUninit::new(b);
+        }
+        let spam: *const [MaybeUninit<A>; N] = &result;
+        unsafe { std::ptr::read(spam as *const [A; N]) }
+    }
+}
+
+fn main() {
+    let _: [u8; 10] = (0_u8..10).foo::<10_usize>();
+}

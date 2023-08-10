@@ -1,0 +1,3 @@
+ /* --diagnostic-width=20 */ #[repr(packed())]
+#[repr(align(8))]
+#[repr(al(8))]struct  static ;

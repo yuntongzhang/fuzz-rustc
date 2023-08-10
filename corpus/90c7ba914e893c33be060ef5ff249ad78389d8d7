@@ -1,0 +1,11 @@
+fn test(val: val) {
+    match val {
+        256 => continue test,
+        [continue test, _, _] => continue test,
+        _   => continue test,
+    }
+}
+
+fn main() {
+     continue test(continue test);
+}

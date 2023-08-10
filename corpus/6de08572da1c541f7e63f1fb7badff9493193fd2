@@ -1,0 +1,7 @@
+#![crateruct Fixed64(i64); _ 
+ / 0;
+}
+div(f: Fixed64) {
+    f.0 / 0;iv(f: Fixed64) {
+    f.0 / 0;
+}

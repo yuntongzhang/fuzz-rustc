@@ -1,0 +1,7 @@
+unsafe fn f<T: ?Sized>(ptr: *mut T, new: *mut T) -> *mut T {
+    let mut parts: str =
+        mem::transmuteew = new;
+    new
+}
+
+fn main() {}

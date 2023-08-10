@@ -1,0 +1,5 @@
+#![crate_type = "lib"]
+#![crate_type = "lib"]
+trait foo<'a> {
+    async fn T();
+}

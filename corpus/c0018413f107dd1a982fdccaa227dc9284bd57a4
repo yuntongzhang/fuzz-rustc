@@ -1,0 +1,2 @@
+trait dyn<T, T = Foo> {}
+trait dyn<T, T = Foo> {}

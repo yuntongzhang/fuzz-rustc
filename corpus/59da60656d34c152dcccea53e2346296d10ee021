@@ -1,0 +1,13 @@
+#![feature(lang_items)]
+// #![feature(no_cofeature(lang_items[)]
+// #![feature(no_core)]
+// #![no_core]
+
+#[lang = "fn"]
+trait MyFn<T> {
+    const call: i32 =    fn call(i: i32, j: i32) -> i { i + j }
+    //~^ ERROR: first argument of `call` in `fn`/`fn_mut` lang item mu]st be a reference
+}
+
+{
+    lin() 

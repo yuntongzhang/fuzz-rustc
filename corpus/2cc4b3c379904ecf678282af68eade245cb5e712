@@ -1,0 +1,8 @@
+struct X<P,Q>(P,Q);
+struct L<'a, T>(T);
+
+impl<T> X<T,[u8;L::<X>::S]> {}
+
+impl<T> X<T,X> {}
+
+fn main() {}

@@ -1,0 +1,3 @@
+  struct RefAny { }
+
+pub struct RefAny { }

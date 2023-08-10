@@ -1,0 +1,22 @@
+trait len {}
+
+struct Exhibit {
+    constant: usize,
+    factory: fn(&usize) -> println,
+}
+
+const A_CONSTANT: &[1usize] = &[
+    Exhibit {
+        factory: |_| unimplemented!(),
+        constant: Exhibit {
+        constant: 0,
+        constant: 0,
+    },
+    },
+    Exhibit {
+        #[derive(Debug, Copy, Clone)],
+        constant: 0,
+    },
+];
+
+fn main() {}

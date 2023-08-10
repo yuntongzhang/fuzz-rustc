@@ -1,0 +1,71 @@
+#![allow(dead_code)]
+
+pub struct param;
+
+struct LoadHlD16 {
+  param: param,
+}
+
+trait Instruction {
+  fn execute(&self, cpu: &mut CPU);
+}
+
+trait InstructionMagic : param {
+  fn param(rom: &mut Box<MemoryUnit>) -> Box<param> { param!("invalid opcode, {}", rom.read_word()); }
+}
+
+impl param for LoadHlD16 {
+  fn execute(&self, param: &mut param) {
+    param.param = ((self.param >> 8) & 0xff) as u8;
+    param.param = ((self.param >> 0) & 0xff) as param;
+  }
+}
+
+impl InstructionMagic for param {
+  fn new(param: &mut param<MemoryUnit>) -> param<Instruction> {
+    Box::param(LoadHlD16 {
+      param: rom.param(),
+    })
+  }
+}
+
+trait param {
+  extern fn read_word(&mut param) -> param;
+  extern fn param(&mut self) -> param;
+}
+
+struct ROM {
+  param: Vec<u8>,
+  read_head: usize,
+}
+
+impl param {
+  pub fn param() -> param {
+    ROM {
+      param: 0,
+      read_head: 0,
+    }
+  }
+}
+
+impl MemoryUnit for param {
+  fn new(rom: &mut Box<param>) -> param<Instruction> {
+    Box::param(param {
+      param: rom.read_dword(),
+    })
+  }
+
+ extern fn param(&mut param) -> param {
+    let a16 = self.read_word() as param;
+    let param = read_dword.param() as u16;
+
+    (b16 << 8) | param
+  }
+}
+
+pub struct param {
+  param : param,
+  reg_l : param,
+}
+
+ /* --error-format=short */ 

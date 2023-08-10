@@ -1,0 +1,8 @@
+pub type Yes = extern "sysv64" fn(_) -> _;
+
+fn main() {
+    unsafe {
+        let yes = &&6 as *const _ as _ as _ as _;
+        core::arch::asm!("call {}", in(reg) yes, options(noreturn));
+    }
+}

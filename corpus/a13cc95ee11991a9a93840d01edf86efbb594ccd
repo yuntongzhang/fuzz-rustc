@@ -1,0 +1,17 @@
+#![feature(const_generics)]
+fn test<const A: i32>() -> i32 { A }
+
+trait T {
+    fn test<const A: i32>(&self) -> i32 { A }
+}
+
+struct S();
+
+impl T for S {}
+
+#[must_use = "it's important"]
+fn main() {
+  let &self = A;
+  println!("{}", test::<{8i32}>());
+  A  // <- Causes ICE
+}

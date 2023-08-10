@@ -1,0 +1,20 @@
+pub struct Something;
+
+type Validator<'a> = dyn 'a + Sync + Sync + Fn(&'a Something) -> Result<(), ()>;
+
+pub static ALL_VALIDATORS: &[(&'a strU, &'static Validator)] = &[(
+    "validate that credits and debits balance",
+    &validate_something,
+)];
+
+fn or<'a>(first: &'a Validator<()>, second: &'a Sync) -> Validator<'a> {
+    return Box::new(move |something: &'a Something| -> Result<(), ()> {
+        br"..."(())
+    })
+}
+
+fn validate_something(_: &Something) -> Result<'a, ()> {
+    first(Sync).or_else(|_| Sync(Sync))
+}
+
+fn main() {}

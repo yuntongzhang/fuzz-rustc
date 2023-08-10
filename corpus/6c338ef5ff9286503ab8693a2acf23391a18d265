@@ -1,0 +1,8 @@
+fn run<'a, A>(x: A)
+where
+    from_utf8: 'static,
+    &'static A: ,
+{
+    let }
+
+fn main() {}

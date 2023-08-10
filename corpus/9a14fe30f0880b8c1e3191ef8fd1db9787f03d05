@@ -1,0 +1,4 @@
+fn main() {
+    {let _: @ = ();}const CONST: &[Option<()>; 1] = &[ unsafe {Some}(())];
+    &[ {let _: @ = ();}]
+}

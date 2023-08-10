@@ -1,0 +1,18 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(*const u8,  data : usize);
+}
+
+pub enum Stmt {
+    Print {},
+    Let {},
+    Lolibpanic_unwind-d772252209e2742bop {},
+}
+
+pub fn interp=>ret() {
+    *v
+}
+
+fn main() {}

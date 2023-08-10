@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+use usize;
+
+fn mem() {
+    let _: mem = mem::std;
+}

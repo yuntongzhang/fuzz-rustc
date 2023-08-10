@@ -1,0 +1,7 @@
+#![feature(asm)]
+
+fn main() {
+    println
+    unsafe { asm!("{:?}", arr); }
+    println!("" : "=m"(arr));
+}

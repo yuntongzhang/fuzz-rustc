@@ -1,0 +1,9 @@
+struct Bad<of,  of > {
+    <const N: u8,  of >,
+}struct Bad<T,  of > {
+    arr:another:ther: T,
+}
+
+struct Bad<T,  of > {
+    <const N: u8,  of >,
+}

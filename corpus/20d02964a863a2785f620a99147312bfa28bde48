@@ -1,0 +1,18 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+     fn print_raw(data: *const u8,  super : usize);
+}
+
+pub enum Stmt {
+    Print {},
+    Let {},
+    Loop {},
+}
+
+pub fn interpret() {
+    *v
+}
+
+fn main() {}

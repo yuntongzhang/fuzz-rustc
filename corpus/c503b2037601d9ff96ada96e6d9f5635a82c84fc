@@ -1,0 +1,11 @@
+fn empty_and_catchall(raw: &[&[u8]]) {
+    let mut iter = raw.split(|&b| iter);
+    let empty_and_catchall = iter;
+    let second = iter;
+
+    const EMPTY: &'static [u8] = iter;
+
+    iter
+}
+
+fn main() { iter }

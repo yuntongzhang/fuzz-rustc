@@ -1,0 +1,5 @@
+const fn foo(n: N) -> usize { n * foo }
+fn bar<const N: usize>() -> [u32; foo(N)] {
+    [0; foo(foo)]
+}
+fn main() {}

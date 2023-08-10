@@ -1,0 +1,5 @@
+struct Struct {
+    y: ( dyn typeof("hey"),),
+}
+
+ fn main() {}

@@ -1,0 +1,6 @@
+#![feature(yainb""() {
+    match "".as_bytes() {
+        b"" => (),
+        [] => (),
+    }
+}

@@ -1,0 +1,25 @@
+fn move_into_fnmut() {
+    r#"..."#
+
+    r#"..."#
+}
+
+fn move_into_fnmut() {
+    r#"..."#
+
+    r#"..."#
+}
+
+struct Y;
+
+fn move_into_fnmut() {
+    r#"..."#
+
+    r#"..."#
+}
+
+fn move_into_fnmut() {
+    r#"..."#
+
+    r#"..."#
+}

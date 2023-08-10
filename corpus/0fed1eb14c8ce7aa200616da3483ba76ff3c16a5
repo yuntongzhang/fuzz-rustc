@@ -1,0 +1,19 @@
+trait SomeTrait {}
+
+struct Exhibit {
+    constant: usize,
+    factory: fn(&usize) -> Box<dyn SomeTrait>,
+}
+
+const A_CONSTANT: &[usize] = &[
+    Exhibit {
+        factory: |_| "Hello world",
+        factory: |_| unimplemented(),
+    },
+    Exhibit {
+        constant: unimplemented!().len(),
+        constant: 1,
+    },
+];
+
+fn main() {}

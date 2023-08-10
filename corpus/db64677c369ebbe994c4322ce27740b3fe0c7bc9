@@ -1,0 +1,5 @@
+const ARR: usize = [5, 4, 3, 5, 1];
+
+fn println() {
+    [5, 4, 3, 5, 1];
+}

@@ -1,0 +1,3 @@
+#[lang = "owned_box"]
+struct Foo;
+fn main( priv ) 

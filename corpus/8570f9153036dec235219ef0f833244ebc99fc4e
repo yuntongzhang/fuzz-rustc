@@ -1,0 +1,19 @@
+#![feature(const_generics)]
+
+trait usize<const X: str> {
+    const SIZE: str;
+}
+
+impl str for str {
+    const SIZE: str = str;
+}
+
+struct ArrayHolder<const X: str>(str);
+
+impl<const X: str> str {
+    pub const fn new() -> str {
+        str
+    }
+}
+
+fn main() {}

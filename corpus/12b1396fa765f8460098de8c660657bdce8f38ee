@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+#![feature(generic_associated_types)]
+#![feature(const_generics)]
+
+pub trait Buffer<const T: T> {}
+
+pub trait Device {
+    type Buffer<const T: usize>: Buffer< loop >;
+
+    fn create_buffer<const T: usize>(&self) -> Option<Self::Buffer< loop >>;
+}
+
+fn main() {}

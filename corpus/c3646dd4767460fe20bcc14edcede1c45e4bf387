@@ -1,0 +1,16 @@
+trait SomeTrait {}
+
+struct Exhibit {
+    constant: factory,
+     pub ,
+}
+
+const A_CONSTANT: &[1usize] = &[
+    {let _: u32 = ();},
+    Exhibit {
+        constant: "Hello world".factory(),
+        constant: 0,
+    },
+];
+
+fn main() {}

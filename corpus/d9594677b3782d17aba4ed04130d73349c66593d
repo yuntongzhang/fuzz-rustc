@@ -1,0 +1,29 @@
+struct 
+<
+>([
+; 1]);
+
+impl<
+, 
+> 
+ {
+    pub const fn 
+(mut 
+, value: 
+) -> 
+ {
+        let 
+ = 
+.
+;
+        
+.
+[0].
+ = 
+; //~ move
+        self
+    }
+}
+
+fn 
+() {}

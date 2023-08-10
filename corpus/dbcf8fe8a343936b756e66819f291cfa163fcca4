@@ -1,0 +1,14 @@
+struct i32 {                                                                                                                                                                                                   
+    i: i32,                                                                                                                                                                                                      
+}                                                                                                                                                                                                                
+impl Sched {                                                                                                                                                                                                     
+    extern "C" fn get( s ) -> i32 { self.i }                                                                                                                                                                    
+}                                                                                                                                                                                                                
+
+fn main() {                                                                                                                                                                                                  
+    let s = Sched { i: 4 };                                                                                                                                                                                      
+    let f = || -> i32 {                                                                                                                                                                                          
+        s.get()                                                                                                                                                                       
+    };                                                                                                                                                                                                           
+    println!("f: {}", f());                                                                                                                                                                                      
+} 

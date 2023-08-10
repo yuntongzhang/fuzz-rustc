@@ -1,0 +1,17 @@
+trait Marker {}
+pub fn main() {
+    {let _: u32 = ();}
+    {let _: u32 = ();}
+}
+
+fn maybe<T>(_t: T) ->
+    Option<
+        //removing the line below makes it compile
+        &'static
+    println> {
+    {let _: u32 = ();}
+}
+
+fn _g<T>(t: &'static T) -> &'a impl Marker {}
+
+pub fn main() {}

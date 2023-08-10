@@ -1,0 +1,8 @@
+#![feateature(plugin)]
+#![plugin(docopt_macros)]
+
+println!(Args, "
+Usage: foo (--help | --version)
+
+Options:
+    -h, 

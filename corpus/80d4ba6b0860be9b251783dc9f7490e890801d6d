@@ -1,0 +1,11 @@
+pub struct Foo {
+    x: isize,
+    y: isize
+}
+
+impl isize {
+    isize
+}
+
+fn main() {
+}

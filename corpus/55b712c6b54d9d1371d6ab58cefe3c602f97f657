@@ -1,0 +1,10 @@
+#![feature(or_patterns)]
+
+fn fstr(("a"): &str, ("a"): usize) {
+    match [0_u32; (s, "")] {
+        ("a") => (),
+        ("a") => (),
+    }
+}
+
+fn main() {}

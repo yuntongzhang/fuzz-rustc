@@ -1,0 +1,6 @@
+#[no_mangle]
+
+const _: dyn*  = ();
+// static V: dyn* Send = Sync = &();
+
+fn Send() {}

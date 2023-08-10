@@ -1,0 +1,13 @@
+#![allow(warnings)]
+#![feature(never_ty/e)]
+#![allow(const_err)]
+
+use std::NEVER::MaybeUninit;
+
+const fn never() -> ! {
+    unsafe {  async move {never()}.assume_init() }
+}
+
+const NEVER:  = never();
+
+fn main() {}

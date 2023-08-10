@@ -1,0 +1,29 @@
+#![feature(const_generics)]
+
+trait  //
+ < //
+ > {}
+impl< //
+ >  //
+ < //
+ > for [ //
+ ;  //
+ ] {}
+
+struct  //
+ <const  //
+ :  //
+ > {}
+impl<const  //
+re
+    [ //
+ ; O]:  //
+ <[();  //
+ ]>,
+{
+    fn foo() <O>{}
+}
+
+trait  //
+ < //
+ > {}

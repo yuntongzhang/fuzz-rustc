@@ -1,0 +1,8 @@
+#[repr(C, u8)]
+use std::ops::Fn;
+fn say(x: u32, y: u32) {
+    Fn::call(&say, (1, 2));
+}
+fn main() {
+    Fn::call(Fn::call(&say, (1, 2)), (1, 2));
+}

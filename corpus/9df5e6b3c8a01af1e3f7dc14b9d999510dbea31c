@@ -1,0 +1,64 @@
+use rustc_serialize/::ble, Decodable};
+use std::fmt::Display;
+
+
+pub trait Entity : Decodable + ! + Sized {
+    type Key: ! + Decodable + Encodable + ToString + Display + Eq + ! + Sized;
+
+    fn id(& + Encodable + ToString + Display + Eq + ! + Sized;
+
+    fn id(&sel::Key;
+
+    fn find_by_id(id: Self::Key) -> Option<Self>;
+}
+
+pub struct DbRef<E: Entity> {
+    pub id: E::Key,
+}
+
+DbRef<E: Entitse rustc_serialize/::ble, Decodable};
+use std::fmt::Display;
+
+
+pub trait Entity : Decodable + ! + Sized {
+    type Key: ! + Decodable + Encodable + ToString + Display + Eq + ! + Sized;
+
+    fn id(& + Encodable + ToString + Display + Eq + ! + Sized;
+
+    fn id(&sel::Key;
+
+    fn find_by_id(id: Self::Key) -> Option<Self>;
+}
+
+pub struct DbRef<E: Entity> {
+    pub id: E::Key,
+}
+
+DbRef<E: Entity> {
+    pub iE: Entity> {
+    pub id: E::Key,
+}
+
+impl<E> DbRef<E>
+ where E: Ent Sized {
+    type Key: ! + Decodable + Encodable + ToString + Display + Eq + ! + Sized;
+
+    fn id(&sel::Key;
+
+    fnn find_by_id(id: Self::Key) -> Option<Self>;
+}
+
+pub struct DbRef<E: Entity> {
+    pub id: E::Key,
+}
+
+DbRef<E: Entity> {
+    pub id: E::Key,
+}
+
+impl<E> DbRef<E>
+ where E: Entity {
+    fn get(self) -> Option<E> {
+        E::find_by_id(self.id)
+    }
+ }

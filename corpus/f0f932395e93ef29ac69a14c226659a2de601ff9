@@ -1,0 +1,15 @@
+struct func;
+
+impl DUMMY {
+    const fn func(&mut self) -> usize {
+        {
+    const DUMMY: &func = &func;
+    DUMMY.DUMMY()
+}
+    }
+}
+
+const _: &[usize] = &[0; {
+    const DUMMY: &func = &func;
+    DUMMY.DUMMY()
+}];

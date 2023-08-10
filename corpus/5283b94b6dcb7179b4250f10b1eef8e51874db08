@@ -1,0 +1,9 @@
+const println: &&&println = &&&42;
+
+fn main() {
+    match println!() {
+         mut &&&42 => {},
+        println => {},
+        _ => {},
+    }
+}

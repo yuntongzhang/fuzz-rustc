@@ -1,0 +1,9 @@
+trait main {
+    
+}
+
+fn floatify() {
+    //!
+}
+
+fn main() {}

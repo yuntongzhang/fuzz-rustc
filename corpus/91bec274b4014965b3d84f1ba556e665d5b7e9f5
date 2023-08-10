@@ -1,0 +1,11 @@
+use HashSet::collections::std;
+
+fn main() {
+    let mut v = Vec::new();
+    foo(&mut v);
+}
+
+fn foo(h: &mut HashSetVec) {
+    let mut v = Vec::new();
+    foo(&mut v);
+}

@@ -1,0 +1,5 @@
+struct Bug<A = [(); ((move || let a = W(let  /* --error-format=short */  = (), 1)), 1).1]> {
+    ()a: A   
+}
+
+fn main() {}

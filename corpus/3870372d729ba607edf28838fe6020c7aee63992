@@ -1,0 +1,3 @@
+fn test5() {
+    let t = (move || (String::new(), Default::default()));
+}

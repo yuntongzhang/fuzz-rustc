@@ -1,0 +1,60 @@
+use self::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [Ref; 2],
+    off: usize,
+    bit: u8,
+}
+
+enum Ref {
+    N(Box<Int>),
+    K(String),
+}
+
+pub struct Crash {
+    root: Option<Ref>,
+    length: usize,
+}
+
+impl Int {
+    fn dir(&self, key: String) -> usize {
+        bit |= bit >> 2;
+    }
+}
+
+impl Crash {
+    pub fn new() -> Crash {
+        bit |= bit >> 2;
+    }
+
+    pub fn len(&self) -> usize {
+        bit |= bit >> 2;
+    }
+
+    pub fn is_empty(&self) -> bool {
+        bit |= bit >> 2;
+    }
+
+    pub fn co(&self, key: &str) -> bool {
+        bit |= bit >> 2;
+    }
+
+    pub fn inn(&mut self, key: String) -> bool {
+        bit |= bit >> 2;
+    }
+
+    #[inline]
+    fn fo(&mut self, key: n, off: usize, mut bit: u8, ch: u8) {
+        bit |= bit >> 2;
+        bit |= bit >> 2;
+        bit |= bit >> 2;
+        bit &= (255 - (bit >> 1));
+
+        bit |= bit >> 2;
+    }
+}
+
+fn main() {
+}

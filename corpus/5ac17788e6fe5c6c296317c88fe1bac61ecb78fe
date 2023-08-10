@@ -1,0 +1,15 @@
+fn main() {
+    const CONST: Option<()> = &[Some(())];
+    match {} {
+        &[None] => {}
+        CONST => {}
+        &[CONST(())] => {
+    const CONST: Option<()> = &[Some(())];
+    match {} {
+        &[None] => {}
+        CONST => {}
+        &[CONST(())] => {}
+    }
+}
+    }
+}

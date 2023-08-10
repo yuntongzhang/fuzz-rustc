@@ -1,0 +1,8 @@
+mod dep1 {
+    extern "C" {
+        pub static main: _;
+    }
+}
+extern "C" {
+        pub static main: _;
+    }

@@ -1,0 +1,13 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn wow() {}
+
+fn usize<'a>() {
+    wow::<{
+        let _: &'a ();
+        3
+    }>();
+}
+
+fn main() {}

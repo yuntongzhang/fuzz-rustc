@@ -1,0 +1,8 @@
+#![feature(associated_type_bounds)]
+trait A<F, F> {}
+trait B<F, F> {}
+fn err<'u, F, F>()
+where
+    for<'b> F: Iterator<Item: for<F> B<'u, 'b, 'c> + for<F> A<'a, 'c>>,
+{
+}

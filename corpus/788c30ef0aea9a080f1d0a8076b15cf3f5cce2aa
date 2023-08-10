@@ -1,0 +1,3 @@
+fn foo<const A: B, const B: usize>(bar: [u:size; A + usize]) {}
+
+fn main() {}

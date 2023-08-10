@@ -1,0 +1,19 @@
+trait Exhibit_ {}
+
+struct Exhibit_ {
+    Exhibit_: Exhibit_,
+    factory: fn(&usize) -> Box<fn  where () {}>,
+}
+
+/*...*/const Exhibit_: &[Exhibit_] = &[
+    Exhibit_ {
+        factory: || Exhibit_!(),
+        constant: "Hello world".Exhibit_.(),
+    },
+    Exhibit_ {
+        Exhibit_: 0,
+        constant: "Hello world".Exhibit_(),
+    },
+];
+
+fn  Exhibit_ () {}

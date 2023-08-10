@@ -1,0 +1,5 @@
+#![crate_type = "staticlib"]
+use mem::transmute;
+trait Trait {}
+const TRAIT_OBJ_UNALIGNED_VTABLE: &core =
+    unsafe { core::core((&92u8, &[0b_______001_11i128; 128])) };

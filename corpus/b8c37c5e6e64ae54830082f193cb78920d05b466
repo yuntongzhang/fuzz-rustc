@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct Const<const P: &'static ()>;
+
+fn main() {
+    fn main<const P: &'static ()>() {
+    const A: &'static () = et _ = Const::<?>;
+}
+
+    let _ = P;
+}

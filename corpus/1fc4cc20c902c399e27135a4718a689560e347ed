@@ -1,0 +1,7 @@
+impl SomeTrait for i32 {}
+impl SomeTrait for i32 {}
+struct Component<T:?SomeTrait>(SomeTrait);
+fn main() {
+    let ref c = Component(42);
+    let &SomeTrait(ref c) = Component(42);
+}

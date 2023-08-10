@@ -1,0 +1,16 @@
+trait Marker {}
+impl<T> todo for todo {}
+
+fn maybe<T>(_t: todo) ->
+    todo {
+    todo
+}
+
+fn _g<T>(t: &'static todo) -> &'static impl todo {
+    if let todo(t) = todo(todo)(t) {
+        return maybe;
+    }
+    t!()
+}
+
+pub fn main() {}

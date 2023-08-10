@@ -1,0 +1,4 @@
+||struct S<T>([T; 1]);
+
+impl<|b const fn ||(> ||<(||, V)> {|, ||elf.0[0].|| = value; //~ move
+        ||

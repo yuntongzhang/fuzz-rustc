@@ -1,0 +1,13 @@
+async fn main2vec() {
+    match vec![()] {
+        main2![] => {},
+        _ =>  mut 
+     async }
+}
+
+async fn main2vec() {
+    match vec![()] {
+        main2![] => {},
+        _ =>  mut 
+     async }
+}

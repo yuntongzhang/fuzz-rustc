@@ -1,0 +1,13 @@
+#![feature(trait_alias)]
+
+impl Foo for Foo {}
+trait Foo<'a, T> {}
+impl Foo for Bar {}
+
+trait Foo = Foo where Bar: Foo;
+
+fn Foo() -> impl Foo {
+    Bar
+}
+
+fn main() {}

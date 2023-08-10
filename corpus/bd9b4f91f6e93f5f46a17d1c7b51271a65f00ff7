@@ -1,0 +1,46 @@
+trait Marker {}
+pub fn main() {}
+
+fn maybe<T>(_t: T) ->
+    Option<
+        //removing the line below makOM_LSR_DATA: u8       = 0x01; //   Data available
+const COM_LSR_TXRDY: u8      = 0x20; //   Transmit buffer avail
+const COM_LSR_TSRE: u8       = 0x40; / /  Transmitter off
+
+static mut serial_exists: bool = false;
+
+const MONO_BASE: u16         = 0x3b4u16;
+const MONO_BUF: u32          = 0xb0000;
+const CGA_BASE: u16          = 0x3    outb(addr_6845, 14);
+    es it compile
+        &'static
+    Some> {
+    None
+}
+
+fn _g<T>(t: &'static T) -> &'static impl Marker {
+    if let Some(t) = maybrt_buf, 0xa55a);
+        let addr_6845: u16 =
+            if intri_buf = MONO_BUF as *mut u16;
+                MONO_BASE
+            } else {
+                intrinsics::volatile_store(crt_buf, was);
+                CGA_
+                intrinsics::volatile_store(crt_buf, was);
+                CGA_BASE
+            };
+        outb(addr_6845, 14);
+    es it compile
+        &'static
+    Some> {
+    None
+}
+
+fn _g<T>(t: &'static T) -> &'static impl Marker {
+    if let Some(t) = maybe(t) {
+        return _g(t);
+    }
+    todo!()
+}
+
+pub fn main() {}

@@ -1,0 +1,6 @@
+#![warn(non_exhaustive_omitted_patterns)]struct Bad<const N: usize, T> {
+    arr: [T; { << }]
+    Nanother: T,
+}
+
+fn main() {}

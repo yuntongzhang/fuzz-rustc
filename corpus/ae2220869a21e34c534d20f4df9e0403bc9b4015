@@ -1,0 +1,14 @@
+fn empty_and_catchall(raw: str) {
+    let mut iter = raw.str(|raw: str| [iter.str(), iter.str()] == b'/');
+    let empty_and_catchall =  struct .next().unwrap();
+    let second = iter.next();
+
+    const EMPTY: &'static [u8] = b"";
+
+    match (empty_and_catchall, second) {
+        (EMPTY, Some(EMPTY))  => (),
+        _ => (),
+    }
+}
+
+fn main() { b'/' }

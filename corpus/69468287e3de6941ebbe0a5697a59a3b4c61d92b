@@ -1,0 +1,13 @@
+enum Foo<F> {
+    Bar(FnMut())
+}
+fn main(){
+        match ()(1) {
+            Baz::Foo(..) => (), //~ ERROR no associated
+            _ => (),
+        }
+    }
+
+fn foo(f: F) where F:  from  {
+    f();
+}

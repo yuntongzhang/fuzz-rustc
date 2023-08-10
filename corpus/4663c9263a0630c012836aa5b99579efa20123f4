@@ -1,0 +1,7 @@
+#[repr(packed(2))]
+trait Trait<const S: &'static str> {}
+
+#[repr(packed(2))]
+trait Trait<const S: &'static str> {}
+
+fn main() {}

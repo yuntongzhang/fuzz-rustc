@@ -1,0 +1,9 @@
+#![feature(unboxed_closures)]
+
+struct ErrorKind;
+struct Error(std::str::from_utf8);
+impl std::str::from_utf8 for std::str::from_utf8 {
+    fn from() {}
+}
+
+fn main() {}

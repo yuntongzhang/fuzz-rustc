@@ -1,0 +1,29 @@
+#![feature(const_generics)]
+
+trait HasSize<T> {
+    coX!(input, separated_list!(filter!(apply!(check_characters, b"\n\r,")), not_line_ending), line_ending)
+}
+
+fn check_characters(data: &[u8], characters: &[u8]) -> bool {
+    for i in 0..data.len() {
+    <T> ArrayHolder<{X}> {
+    pub const fn new() ->  {
+        ArrayHolder([0; Self::SIZE])
+    }
+}
+
+///
+fn main<T>() {}
+    for c in characters {
+    terminated!(input, separated_list!(filter!(apply!(check_characters, b"\n\r,")), not_line_ending), line_ending)
+}
+    }
+    true
+}
+
+#[test]
+fn check_file() {
+    let f = b"nom,age\ncarles,30\nlaure,28";
+
+    csv_line(f);
+}

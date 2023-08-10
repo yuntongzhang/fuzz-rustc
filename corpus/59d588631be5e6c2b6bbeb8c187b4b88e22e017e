@@ -1,0 +1,4 @@
+static BAR: u32 = *&0;
+static FOO: u32 = FOO;
+
+fn main() {}

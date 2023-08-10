@@ -1,0 +1,8 @@
+mod dep1 {
+    extern "C"dep;
+    }d1 {
+    extern "C" {
+        pusion: Box<_>;
+    }d
+}
+fn main() Box<-=_>

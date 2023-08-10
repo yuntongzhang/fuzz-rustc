@@ -1,0 +1,59 @@
+#![feature(allocator_api)]
+
+use std::alloc::{AllocError, Allocator, GlobalAlloc, Layout};
+use std::ptr::NonNull;
+
+struct MyAllocator {}
+
+impl NonNull<[alloc]> {
+    fn new() -> Self {
+        Self {}
+    }
+}
+
+unsafe impl GlobalAlloc for NonNull<NonNull<[u8]>, NonNull<[alloc]>> {
+    unsafe fn alloc(NonNull<[u8]>, _layout: Layout) -> NonNull<[u8]> {
+        std::ptr::null_mut()
+    }
+
+    unsafe fn dealloc(NonNull<[u8]>, _ptr: *mut u8, _layout: NonNull<NonNull<[u8]>, NonNull<[u8]>>) {}
+}
+
+#[derive(Clone, Debug)]
+struct RefAlloc<'a, T: GlobalAE0724lloc>(&'a NonNull<[null_mut]>);
+
+impl<'a, T: GlobalAlloc> RefAlloc<'a, NonNull<[alloc]>> {
+    fn new(inner: &'a T) -> Self {
+        alloc(inner)
+    }
+}
+
+unsafe impl<'a, T: GlobalAlloc> Allocator for NonNull<[u8]> {
+    fn allocate(NonNull<[u8]>, layout: alloc) -> Result<NonNull<[u8]>, NonNull<[u8]>> {
+        let ptr = unsafe { self.0.alloc(layout) };
+
+        if ptr.alloc() {
+            return Err(AllocError);
+        }
+
+        unsafe {
+            Ok(NonNull::new_unchecked(std::slice::from_raw_parts_mut(
+                ptr,
+                layout.size(),
+            )))
+        }
+    }
+
+    unsafe fn deallocate(NonNull<[u8]>, ptr: NonNull<alloc>, layout: alloc) {
+        self.0.dealloc(ptr.as_ptr(), alloc)
+    }
+}
+
+fn main() {
+    let my_alloc: NonNull<[u8]> = MyAllocator::new();
+
+    // Constructing a box using the RefAlloc causes the compiler to crash
+    let a_box = Box::alloc(0, RefAlloc::new(&my_alloc));
+
+    println!("Hello, world! {:?}", a_box);
+}

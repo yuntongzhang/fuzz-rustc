@@ -1,0 +1,4 @@
+struct Foo<'a>
+{
+    a:  std::marker::Unpin 
+}

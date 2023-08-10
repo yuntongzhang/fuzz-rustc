@@ -1,0 +1,8 @@
+struct Inv {
+    x: &u8 'a
+}
+pub trait Foo<'a> {
+    
+}
+
+fn main() {}

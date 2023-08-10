@@ -1,0 +1,7 @@
+#![feature(const_generics)]
+
+fn fact<F>() {
+    fact:: {{root}} ();
+}
+
+fn main() {}

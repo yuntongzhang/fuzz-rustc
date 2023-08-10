@@ -1,0 +1,9 @@
+#![warn(noop_method_call)]#![feature(const_generics)]
+
+fn main() {}
+
+///
+trait HasSize {f {
+         'a ([0; Self::SIZE])
+    }
+}

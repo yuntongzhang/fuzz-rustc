@@ -1,0 +1,3 @@
+#[repr(isize)]
+
+println!("f!")

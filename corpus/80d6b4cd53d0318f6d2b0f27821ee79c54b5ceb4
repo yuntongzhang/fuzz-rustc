@@ -1,0 +1,7 @@
+pub struct RefAny { }
+
+impl RefAny {
+     type 
+
+     type 
+}

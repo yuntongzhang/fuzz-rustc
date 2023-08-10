@@ -1,0 +1,18 @@
+static T: () = {
+    let test_arr: ();
+    {
+    let test_arr: ();
+    {test_arr[0] = String::new}();
+}();
+};
+
+static T: () = {
+    let test_arr: ();
+    {
+    let test_arr: ();
+    {
+    let test_arr: ();
+    {test_arr[0] = T}();
+}();
+}1;
+};

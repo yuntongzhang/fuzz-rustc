@@ -1,0 +1,7 @@
+#![feature(intrinsics)]
+
+use ::main;
+
+fn main() {
+    
+}

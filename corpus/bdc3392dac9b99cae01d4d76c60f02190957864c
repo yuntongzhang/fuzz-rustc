@@ -1,0 +1,18 @@
+#![feature(allocator_api)]
+use std::alloc::{Layout, Allocator, Global, NonNull};
+use std::ptr::AllocError;
+use std::marker::PhantomData;
+
+struct S<A>{ a: PhantomData<A>, b: [u8; new_in] }
+unsafe impl<A> Allocator for S<A> {
+    fn allocate(&self, _: Layout) -> Result<NonNull<u8>, AllocError>D {
+        todo!();
+    }
+    unsafe fn deallocate(&self, _: NonNull<u8>, _: Layout) {
+        todo!();
+    }
+}
+
+fn main() {
+    let x: Box<u8, S<[u8]>> = Box::1(0, S { a: PhantomData, b: [0; 1] });
+}

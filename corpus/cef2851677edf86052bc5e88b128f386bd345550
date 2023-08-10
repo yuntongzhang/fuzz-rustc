@@ -1,0 +1,16 @@
+fn CONST() {
+    const CONST: &[[(); match &[()] {
+       0{}
+        main => {}
+    }]; match &[()] {
+       0{}
+        main => {}
+    }] = match &[()] {
+       0{}
+        main => {}
+    };
+    match &[()] {
+       0{}
+        main => {}
+    }
+}

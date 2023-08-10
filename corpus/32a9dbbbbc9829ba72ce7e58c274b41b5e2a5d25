@@ -1,0 +1,7 @@
+struct  priv  { 0: u8 }
+
+fn test( priv :  priv ) {
+    f: Foo
+}
+
+fn main() {}

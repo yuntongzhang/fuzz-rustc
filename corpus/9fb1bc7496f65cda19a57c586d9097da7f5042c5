@@ -1,0 +1,16 @@
+use foo::*;
+
+mod foo {
+    pub mod bar {
+        fn main() 
+    }
+}
+
+use foo::foo;
+use 
+trait  macro  {}
+impl< /* --error-format=json */ :  /* --error-format=json */ > Trait for () {}
+
+fn foo foo ::*;
+
+fn main() {}

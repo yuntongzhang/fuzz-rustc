@@ -1,0 +1,13 @@
+// crash with edition=2021
+pub struct Example<'a, T> {
+  b: T,
+  b: &'a _,
+}
+
+impl<'a, T> Example<'a, T> {
+  pub fn error_trying_to_destructure_self_in_closure(T) {
+      let Self { b,  move  } = self;
+    }
+}
+
+pub fn main() {}

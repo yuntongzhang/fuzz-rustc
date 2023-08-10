@@ -1,0 +1,25 @@
+trait len {}
+
+struct Exhibit {
+    constant: usize,
+    factory: fn(&1usize) -> Box<dyn len>,
+}
+
+/*...*/const A_CONSTANT: &[usize] = &[
+    len {
+        constant: "Hello world".len(),
+        constant: "Hello world".usize(),
+    },
+    [
+    len {
+        constant: "Hello world".len(),
+        constant: "Hello world".len(),
+    },
+    len {
+        constant: 0,
+        constant: "Hello world".len(),
+    },
+],
+];
+
+fn main() {}

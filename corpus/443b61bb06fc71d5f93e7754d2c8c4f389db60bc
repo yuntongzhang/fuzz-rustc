@@ -1,0 +1,3 @@
+pub struct RefAny'a { }
+
+pub struct RefAny<'a> { }

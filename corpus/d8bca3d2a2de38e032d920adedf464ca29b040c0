@@ -1,0 +1,12 @@
+macr fn o_rules! b[ug {
+    ($expr:expr) => {
+       ( #[rustc_dummy = $expr] / (acro call `X` that's more complex tng pressions containing {macro call `X` that's more c}omplex tng macro tse
+    ($expr:expr) => {
+       ( #[rustc_dummy = $expr] / (acro call `X` that's more complex tng pressions containing {macro call `X` that's more c}omplex tng macro tself.
+// Parenthesesns containing macro callK hsns containin(g macro callK hesea(inimgn ac mut ro call `X` that's more complex tng pressions containing macs more complex tng macro tself.
+// Pare Parenthesesns containing macro callK `X` that's more complex tng macro tself.
+// Pareself.
+// Parenthe)ses will work.^=
+)bug!((line!()));
+
+fn main() {}

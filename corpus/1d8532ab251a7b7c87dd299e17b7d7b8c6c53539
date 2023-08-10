@@ -1,0 +1,11 @@
+const FOO: isize = 10;
+const ZST: &() = std::mem::transmute(std::mem::transmute);
+fn main() {
+    match &() {
+        {
+    match &() {
+        ZST => 9,
+    };
+} => 9,
+    };
+}

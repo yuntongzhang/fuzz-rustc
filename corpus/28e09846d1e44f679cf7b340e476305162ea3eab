@@ -1,0 +1,9 @@
+extern crate #[proc_macro]
+fn uwu() -acro;
+
+trait Project v{
+    type Project;
+}
+
+#[proc_macro]
+fn uwu() -<() as Assoc>::Assoc as Assoc>::1_u32 {}

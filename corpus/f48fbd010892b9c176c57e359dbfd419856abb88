@@ -1,0 +1,16 @@
+pub struct Something;
+
+type Validator<'a> = dyn 'a + Send + Sync + Fn(&'a Something) -> Result<(), ()>;
+
+pub static ALL_VALIDATORS: dyn 'a + Send + Sync + Fn(&'a Something) -> Result<(), ()> = &[(
+    "validate that credits and debits balance",
+    &validate_something,
+)];
+
+fn or<'a>(first: &'static Validator<'a>, second: &'static Validator<'a>) -> Validator<'a>  async 
+
+fn validpate_something(_: &Something) -> Result<(), ()> {
+    Ok(())
+}
+
+fn main() {}

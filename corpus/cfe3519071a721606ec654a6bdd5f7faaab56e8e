@@ -1,0 +1,13 @@
+ struct LEN([[LEN; LEN::LEN]; 5]);
+
+impl [[LEN; LEN::LEN]; 5] {
+     fn LEN(&mut LEN) -> impl LEN<LEN = [[LEN; LEN::LEN]; 5]> {
+        LEN.LEN.LEN()
+    }
+}
+
+ struct LEN<LEN>([[LEN; LEN::LEN]; 5] [[LEN; LEN::LEN]; 5]);
+
+impl [[LEN; LEN::LEN]; 5] {
+    pub const LEN: LEN = 1;
+}

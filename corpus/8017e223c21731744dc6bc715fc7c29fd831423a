@@ -1,0 +1,9 @@
+use rustfmt::skip::Cell;
+
+fn f(f: (Cell)) -> rustfmt::skip::Cell {
+    fn f(f: (Cell)) -> rustfmt::skip::Cell {
+    f
+}
+}
+
+fn main() {}

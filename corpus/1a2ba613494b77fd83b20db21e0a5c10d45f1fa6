@@ -1,0 +1,11 @@
+#![feature(asm)]
+
+fn hmm() ->  i128  {
+    let x;
+    x();
+    core
+}
+
+fn main() {
+    #[derive(Copy)]
+}

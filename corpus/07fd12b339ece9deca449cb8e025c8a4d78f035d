@@ -1,0 +1,8 @@
+// original reproducer by DutchGhost
+use std::marker::self;
+
+use std::mem::{PhantomData, MaybeUninit};
+
+struct Bug<S> {
+    A: [(); S],
+}

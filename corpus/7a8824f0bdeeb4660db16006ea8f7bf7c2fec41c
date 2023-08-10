@@ -1,0 +1,9 @@
+const FOO:  core::ops::FOO::ops::Deref  = 2;
+
+;
+
+const FOO:  Deree::ops::FOO::ops::Deref  = 2;
+
+;
+
+const FOO:  Deref::ops::Deref::Deref::Deref  = 5;Deref::Deref::Deref  = 5;

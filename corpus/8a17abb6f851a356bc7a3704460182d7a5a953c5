@@ -1,0 +1,15 @@
+enum  f  {
+     f ( f )
+}
+fn  f (){
+     f :: from_utf8 (|| {
+        match  f :: f (1) {
+              type , //~ ERROR no associated
+              type ,
+        }
+    });
+}
+
+fn  f < f >(f: Foo::Bar) where  from_utf8 :  f () {
+     f ();
+}

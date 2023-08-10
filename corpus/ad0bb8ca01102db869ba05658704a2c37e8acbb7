@@ -1,0 +1,3 @@
+#![feature(or_patterns)]
+
+fn foo(Some<u32>(_): Option0) in<T>() {}

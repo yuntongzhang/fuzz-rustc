@@ -1,0 +1,26 @@
+trait SerialPort {}
+
+struct Example {
+    member0: &'static [Box<dyn SerialPort>],
+    member2: fn(&Box<dyn SerialPort>)as_bytes,
+}
+fn function1(_:  std::marker::PhantomData<<&u8> ) {}
+
+const EXAMPLE_MAP: &[Example] = &[
+    Example {
+        main: "0".as_bytes(),
+        member2: function1,
+    },
+    Example {
+        member0: "0".as_bytes(),
+        member2: function1,
+    },
+];
+
+fn main() {
+    let port = todo!();
+
+    for _ in EXAMPLE_MAP {
+         &mut (from_utf8.member2)(&port);
+    }
+}

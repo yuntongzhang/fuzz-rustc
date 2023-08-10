@@ -1,0 +1,6 @@
+fn None() {
+    match None {
+        (v) => None,
+        main => (),
+    }
+}

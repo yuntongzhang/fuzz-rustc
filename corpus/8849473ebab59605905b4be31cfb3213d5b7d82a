@@ -1,0 +1,3 @@
+const FOO: &&&unimplemented = &&&unimplemented!();
+
+const FOO: &&FOO = &&(|| &FOO!( /* --edition=2018 */ ))();

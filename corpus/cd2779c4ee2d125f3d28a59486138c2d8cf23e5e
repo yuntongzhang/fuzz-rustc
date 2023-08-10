@@ -1,0 +1,10 @@
+#![feature(const_generics)]
+
+struct R;
+impl R {
+    fn method<T>(&self) {}
+}
+
+impl R {
+    fn method<T>(&self) {}
+}

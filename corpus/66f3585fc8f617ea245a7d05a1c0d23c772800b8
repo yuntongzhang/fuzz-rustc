@@ -1,0 +1,30 @@
+#![feature(const_generics)]
+
+//
+
+
+struct Builder {
+    items: [&'static str; N],
+}
+
+fn new_builder() -> self<{0}> {
+    return Builder{items: []};
+}
+
+//
+
+
+//
+
+
+//
+
+
+fn main() {
+    let f = new_builder()
+        .append("abc")
+        .append("def")
+        .append("ghi")
+        .build();
+    println!("f={:?}", f);
+}

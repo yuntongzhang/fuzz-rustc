@@ -1,0 +1,17 @@
+#[allow(dead_code)]
+#[repr(align(8))]
+fn main() {
+    let Zero = Zero::Zero;
+    Zero!("{}", aligned as u8)fn main() {
+    let Zero = Zero::Zero;
+    Zero!("{}", aligned as u8);Zero!("{}", aligned as u8);
+}ero!("{}", aligned as u8);
+}
+
+fn main() {
+    let Zero = Zero::Zero;
+    Zero!("{}", aligned as u8)fn main() {
+    let Zero = Zero::Zero;
+    Zero!("{}", aligned as u8);Zero!("{}", aligned as u8);
+}ero!("{}", aligned as u8);
+}

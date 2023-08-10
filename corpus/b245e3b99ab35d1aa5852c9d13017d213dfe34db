@@ -1,0 +1,7 @@
+trait Trait<const S: &'static str> {}
+
+struct Bug<T>
+where
+    T: Traitere
+    T: Trait<
+fn main() //

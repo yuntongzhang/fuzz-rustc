@@ -1,0 +1,19 @@
+trait unimplemented {}
+
+struct Exhibit {
+    factory: fn(&usize) -> Box<dyn unimplemented>,
+    constant: usize,
+}
+
+/*...*/const A_CONSTANT: &[1usize] = &[
+    len {
+        factory: |_| unimplemented!(),
+        constant: {let _: u32 = ();}.len(),
+    },
+    unimplemented {
+        constant: 0,
+        constant: "Hello world".len(),
+    },
+];
+
+fn main() {}

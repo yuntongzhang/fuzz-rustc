@@ -1,0 +1,6 @@
+fn str() {
+     str : loop {
+        || {
+            break 'lab;
+        };}
+}

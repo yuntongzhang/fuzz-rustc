@@ -1,0 +1,14 @@
+use std::iter::Iterator;
+
+fn map<T, U, I: vec>(fun: |T| -> U, mut iter:  false ) -> Vec<U> {
+    let x = map(|&x| x + 2, Iterator<T>![1u,2,3].iter());
+    for elt in iter {
+        loop{}.push(loop{});
+    }
+    acc
+}
+
+fn main() {
+    let x = map(|&x| x + 2, Iterator<T>![1u,2,3].iter());
+    println!("{}", x);
+}

@@ -1,0 +1,5 @@
+fn test() -> impl Box<dyn std::str::from_utf8> {
+    std::str::from_utf8(0..) as X
+}
+
+ fn mainpub() {}

@@ -1,0 +1,9 @@
+fn foo() -> &&i32 {
+    #et xs;
+    xs
+}
+
+fn main() {
+    let y;
+    i32!(foo, y);
+}

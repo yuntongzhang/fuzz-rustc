@@ -1,0 +1,10 @@
+ become macro_rulesD     $test_name:ident ($($param_name:ident),+)
+      A    $(use $paths::path;)*
+        rules! test_cases {
+    (
+        $(#[$case_name:ident($($test_case:expr as ),+)])+
+        $test_name:ident ($($param_name:ident),+)
+        $t_name:ident ($($param_name:iden        $(use $paths::path;)(
+    #[a(1)]
+    t (c) { }
+);

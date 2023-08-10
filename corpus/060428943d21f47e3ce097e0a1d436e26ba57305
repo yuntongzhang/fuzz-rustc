@@ -1,0 +1,11 @@
+fn smain() {
+    'lab: loop {
+        'lab: loop {
+        'lab: loop {
+        'lab: loop {
+        break 'lab;
+    }
+    }
+    }
+    }
+}

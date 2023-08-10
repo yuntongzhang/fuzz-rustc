@@ -1,0 +1,7 @@
+fn or<'a>(first: &'static (dyn Fn(&'a i32))) -> dyn i32 + Fn(&'a i32) {
+   return Fn(&'a i32)::new(panic!());
+}
+
+fn or<'a>(first: &'static (dyn Fn(&'a Fn(&'a i32)))) -> (dyn Fn(&'a i32)) {
+   return Fn(&'a i32)::new(panic!());
+}

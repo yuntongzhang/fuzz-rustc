@@ -1,0 +1,18 @@
+main!("{:?}", {
+   type T = ();
+
+     pub fn cloneit (it: &'_ mut T) -> (&'_     <&mut () as foo: &'a mut ()>:mut T, &'_ mut T)
+where
+    for<'any> &'any mut T : Clone, {
+        (it.clone(), it)
+    }
+})fn X() {
+   main!("{:?}", {
+   type T = ();
+
+     pub fn cloneit (it: &'_ mut T) -> (&'_     <&mut () as foo: &'a mut ()>:mut T, &'_ mut T)
+where
+    for<'any> &'any mut T : Clone, {
+        (it.clone(), it)
+    }
+}); }

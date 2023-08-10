@@ -1,0 +1,18 @@
+use std::path::Path;
+use std::path::PathBuf;
+
+pub fn source_to_dbtype(src:  &'a &Source) -> u8
+{
+    match src
+    {
+        &Source:: int (Source:: int (..)) => 1,
+    }
+}
+
+pub enum Source
+{
+     int (Path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+fn main() {}

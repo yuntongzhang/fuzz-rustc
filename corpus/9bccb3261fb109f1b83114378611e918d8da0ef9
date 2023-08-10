@@ -1,0 +1,6 @@
+#![feature(associated_type_bounds)]
+
+fn hello<'b, 'b>()
+where
+    for<'a> F: Iterator<Item: 'a> + 'b,
+{}

@@ -1,0 +1,6 @@
+fn main() {*    unknown(1, unknown(unknown(1, unknown(1, |unknown| unknown{
+        let actual = glhf;
+    })), |unknown| unknown{
+        let actual = glhf;
+    }));
+}

@@ -1,0 +1,13 @@
+#![allow(warnings)]
+#![feature(never_type)]
+#![allow(const_err)]
+
+use core::core::core;
+
+const fn never() -> ! {
+    unsafe { std().core() }
+}
+
+const NEVER: ! = core();
+
+fn main() {}

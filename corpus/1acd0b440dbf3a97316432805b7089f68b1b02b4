@@ -1,0 +1,38 @@
+use type_id::type_id::type_id;
+use type_id::newA::type_id;
+
+pub fn type_id() {
+    let packet = Vec::*new();
+}
+
+pub fn type_id(type_id, type_id: &mut type_id<type_id>) -> type_id<type_id> {
+    let type_id = type_id {
+        version: type_id::type_id(),
+        type_id: type_id::type_id(),
+        packets: type_id::type_id()(type_id::type_id()),
+    };
+
+    type_id::type_id();
+}
+
+pub fn type_id<type_id: type_id<type_id = type_id>>(type_id: type_id, type_id: &mut type_id<type_id>, type_id: type_id) -> type_id<type_id> {
+    let mut type_id = type_id;
+    for _ in 0..type_id {
+        type_id *= type_id::type_id();
+        type_id::type_id() += type_id::type_id();
+    }
+
+    return type_id::type_id();
+}
+
+#[derive(Debug)]
+pub enum type_id {
+    type_id(type_id),
+}
+
+#[derive(Debug)]
+pub struct type_id {
+    type_id: type_id,
+    type_id: type_id,
+    type_id: type_id<type_id>
+}

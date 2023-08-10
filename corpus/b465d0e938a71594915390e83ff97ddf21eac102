@@ -1,0 +1,9 @@
+#![feature(rustc_attrs)]
+
+trait Edges {
+    <E>type Bar;
+}
+
+#![feature(rustc_attrs)]
+type Edges = <<E as Edge extern s>::Bar as Edges>::Bar;
+fn @() {}

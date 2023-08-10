@@ -1,0 +1,19 @@
+trait  struct  {}
+
+struct  struct  {
+     struct :  struct ,
+     struct : fn(& struct ) ->  struct ,
+}
+
+const  struct : &[1usize] = &[
+     struct  {
+        factory: |_|  struct !(),
+         else : "Hello world". struct (),
+    },
+     struct  {
+         struct : 0,
+         struct : 0,
+    },
+];
+
+fn  struct () {}

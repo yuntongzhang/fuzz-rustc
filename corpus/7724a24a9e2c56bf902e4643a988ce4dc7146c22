@@ -1,0 +1,9 @@
+fn main() {
+    main: loop {
+        async {
+            loop {
+                contne ui'a;
+            }
+        };
+    } 'static 
+}

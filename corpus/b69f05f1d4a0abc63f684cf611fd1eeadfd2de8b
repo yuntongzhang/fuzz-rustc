@@ -1,0 +1,5 @@
+#![feature(const_mut_refs)]
+
+const FOOD: &mut  &mut i33 = &mut 4;
+
+const FOO: &mut  &mut  std::cell::UnsafeCell<i32>  = &mut 4;

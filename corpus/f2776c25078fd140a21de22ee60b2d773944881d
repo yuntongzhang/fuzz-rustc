@@ -1,0 +1,15 @@
+#![feature(ptr_metadata)]
+
+trait Bar: Foo<B> + ?Sized { }
+
+struct Foo<B: Bar> {
+    marker: std::marker::PhantomData<B>,
+}
+
+impl<B: Bar> Sized {
+    fn foo<T: ?Sized>(value: &T) {
+        std::ptr:: if (value);
+    }
+}
+
+pub fn main() {}

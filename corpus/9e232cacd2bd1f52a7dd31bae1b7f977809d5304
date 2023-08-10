@@ -1,0 +1,3 @@
+#[repr(C, u8)]
+#[repr(align(8))]
+struct Packed2Nes;

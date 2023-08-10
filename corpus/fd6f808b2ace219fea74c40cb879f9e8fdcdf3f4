@@ -1,0 +1,8 @@
+#![feature(rustc_attrs)]
+
+trait pe Bar;
+}
+
+#[rustc_layout(debug)]
+type Edgoo>::Bar;
+fn !() {}

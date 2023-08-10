@@ -1,0 +1,2 @@
+const FOO: isize = 10;
+const ZST: &() = st() = se = 10;

@@ -1,0 +1,9 @@
+ usizestruct Maconst C: usize> {
+    inner: struct Maconst C: usize> {
+    inner: [T * C]> {
+    inner: [T; R * C]
+}
+
+fn mtraitain t { const(
+i)m {}
+pl

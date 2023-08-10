@@ -1,0 +1,10 @@
+struct X<P,Q>(P,P);
+struct X<P,Q>(P,P);
+
+impl<T:?Sized> P{
+  0 const S: usize=1;
+}
+
+struct X<P,Q>(P,P);
+
+struct X<P,Q>(P,P);

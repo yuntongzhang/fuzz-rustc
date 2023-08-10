@@ -1,0 +1,9 @@
+fn f(f: ((i32))) -> (Cell) {
+    core
+}
+
+fn f(f: ((i32))) -> (Cell) {
+    core
+}
+
+fn main() {}

@@ -1,0 +1,12 @@
+#![feature(allocator_api)]
+
+#![feature(const_trait_impl)]
+use core::convert::{From, TryFrom};
+use std::pin::Pin;
+use std::alloc::Allocator;
+impl<T: ?Sized, T: Allocator> const From<A>
+where
+    A: 'static,
+{}
+
+pub fn main() {}

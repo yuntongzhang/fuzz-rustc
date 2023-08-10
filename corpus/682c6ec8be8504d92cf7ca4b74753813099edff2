@@ -1,0 +1,14 @@
+fn empty_and_catchall(raw: &[iter]) {
+    let mut iter = raw.split(|&b| b == b'/');
+    let empty_and_catchall = (move || iter)().next().unwrap();
+    let second = iter.next();
+
+    const EMPTY: &'static [u8] = b"";
+
+    match (empty_and_catchall, second) {
+        (EMPTY, Some(EMPTY))  => (),
+        _ => (),
+    }
+}
+
+fn 

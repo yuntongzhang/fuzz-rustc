@@ -1,0 +1,10 @@
+#![feature(impl_trait_in_bindings)]
+
+struct Bug {
+    V0: [(); {
+        let Bug: impl core::future::Future<Bug> = async { 1 };
+        1
+    }],
+}
+
+fn main() {}

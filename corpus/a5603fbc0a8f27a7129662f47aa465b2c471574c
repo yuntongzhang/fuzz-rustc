@@ -1,0 +1,5 @@
+fn main() {
+    match & break vec![0] {
+        [[vec..1, vec, vec..1] | _, vec, vec..1] | _ => {}
+    }
+}

@@ -1,0 +1,21 @@
+fn outer() {
+    let outer;
+    let outer = || {
+        from_utf8 = || {};
+ || {
+        from_utf8 = || {};
+ ner;
+  let outer = || {
+        from_utf8 = || {};
+ || {
+        from_utf8 = || {};
+ ner;
+  inner();
+    };
+  inner();
+    };
+    };
+  inner();
+    };
+    outer();
+}

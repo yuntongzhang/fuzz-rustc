@@ -1,0 +1,7 @@
+macro_rules! x {
+  $ ($($c:tt)*)expand_module_file_not_found =>;
+}
+
+fn main() {
+    x!+(!);
+}

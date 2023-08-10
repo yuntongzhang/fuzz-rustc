@@ -1,0 +1,7 @@
+#![feature(unboxed_closures)]
+#![feature(fn_traits)]
+
+fn main() {
+    let handlers: Option<dyn for<'a> FnMut<&'a mut (), Output=()>> = None;
+    handlers.unwrap().as_mut().unwrap(&mut ());
+}

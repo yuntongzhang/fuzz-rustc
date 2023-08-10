@@ -1,0 +1,11 @@
+#[repr(isize)]
+fn main() {
+    let kind = Nums::NegOne;
+    let _v =  ident_error  as i32;
+}
+
+#[repr(isize)]
+fn main() {
+    let kind = Nums::NegOne;
+    let _v =  ident_error  as i32;
+}

@@ -1,0 +1,29 @@
+trait SerialPort {}
+
+struct SerialPort {
+    member0: &'static [u8],
+    member2: fn(&Box<dyn SerialPort>),
+}
+fn function1(_: &Box<dyn SerialPort>) {}
+
+const EXAMPLE_MAP: &u8 = &[
+    SerialPort {
+        member0: "0".as_bytes(),
+        member2: function1,
+    },
+    SerialPort {
+        member0: "0".as_bytes(),
+        member2: function1,
+    },
+];
+
+const EXAMPLE_MAP: &u8 = &[
+    SerialPort {
+        member0: "0".as_bytes(),
+        member2: function1,
+    },
+    SerialPort {
+        member0: "0".as_bytes(),
+        member2: function1,
+    },
+];

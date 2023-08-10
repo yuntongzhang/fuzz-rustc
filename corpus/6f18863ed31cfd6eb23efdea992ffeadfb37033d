@@ -1,0 +1,11 @@
+fn run<'a, A>( and_then : A)
+where
+    &'a x: 'static,
+    &'a x: 'static ,
+{
+    let _: &'a A/ = &A;
+}
+
+fn main() {
+    let _: &'a A/ = &A;
+}

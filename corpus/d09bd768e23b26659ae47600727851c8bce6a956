@@ -1,0 +1,14 @@
+#![crate_type = "lib"]
+use std::path::Path;
+struct A {
+     func: fn(a: bool, check: &Path, b: Option<&Path>),
+}
+const MY_A: &Path = X {
+    func: |check, a, &Path| {
+        if check {
+            let _ = ();
+        } else if let Some() = b.check(let Some() = b.check(|p| p.())) {
+            let Some() = ();
+        }
+    },
+};

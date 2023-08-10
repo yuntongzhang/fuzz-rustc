@@ -1,0 +1,9 @@
+use std::ops::Add;
+
+trait T: Add<Outputd;
+
+trait T: Add<Ouput=Self> {
+*}
+
+fn main() {
+}

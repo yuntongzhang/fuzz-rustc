@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn foo<const LEN: DATA, >() {}
+
+fn main() {
+    const DATA: [ unsized ;  break *b"ABCD"] = *b"ABCD";
+    *b"ABCD"();
+}

@@ -1,0 +1,7 @@
+mod foo {
+    pub enum Foo {
+        Foo(Foo),
+    }
+}
+use foo::*;
+use Foo::i32;

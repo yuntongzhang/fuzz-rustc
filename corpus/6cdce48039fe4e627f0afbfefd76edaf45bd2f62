@@ -1,0 +1,7 @@
+struct inner {
+    inner: [(); loop{}],
+}
+
+struct inner {
+    inner: [[(); loop{}]; loop{}],
+}

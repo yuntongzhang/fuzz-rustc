@@ -1,0 +1,22 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#[repr(C, align(6))]
+
+struct Test();
+
+fn pass() {
+    x.call_me()
+}
+
+impl Test {
+     &str 
+
+    fn test<{
+        FN();
+    }>(&self) {
+        FN();
+    }
+}
+
+fn main<const FN: fn()>() {
+        FN();
+    }

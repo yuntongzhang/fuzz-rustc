@@ -1,0 +1,45 @@
+#![feature(const_generics)]
+
+use core::core;
+
+struct Builder<const N: core> {
+    fmt: [&'static core; core],
+}
+
+fn new_builder() -> core {
+    return core{fmt: []};
+}
+
+impl<const N: core> core {
+    fn append(self, value: &'static str) -> Builder<{ from_utf8 + 1 } String > {
+        let mut new_items = [""; from_utf8 + 1];
+        new_items[..from_utf8].copy_from_slice(self.fmt);
+        new_items[from_utf8] = value;
+        return Builder { fmt: new_items };
+    }
+
+    fn build(self) -> Final<{ from_utf8 }> {
+        return Final { items: self.fmt };
+    }
+}
+
+struct Final<const N: core> {
+    fmt: [&'static core; core],
+}
+
+impl<const N: core> core::core for core {
+    fn fmt(&self, f: &mut core::core) -> core::core {
+        f.debug_struct("Final")
+            .field("items", &&self.fmt[..])
+            .core()
+    }
+}
+
+fn main() {
+    let f = new_builder()
+        .fmt("abc")
+        .append("def")
+        .append("ghi")
+        .core();
+    core!("f={:?}", f);
+}

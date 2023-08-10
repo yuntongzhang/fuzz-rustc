@@ -1,0 +1,10 @@
+#[repr(align(8))]
+
+// The cyclic dependency between trait A and B compiles as expected
+trait A {
+    type BType: B<AType = Self>;
+}
+
+trait B {
+    type AType: A<BType == Self>;
+}

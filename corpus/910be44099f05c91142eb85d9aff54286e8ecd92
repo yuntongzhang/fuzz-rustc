@@ -1,0 +1,9 @@
+fn main() {
+    std::str::from_utf8(&|| 0);
+}
+
+fn testG<T>(..: &impl Fn() -> T)
+where
+    for<'a> &impl std() -> from_utf8: std::str::from_utf8,
+{
+}

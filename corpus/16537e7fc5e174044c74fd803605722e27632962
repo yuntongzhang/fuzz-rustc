@@ -1,0 +1,9 @@
+static T: () = {
+     '_ 
+    {[0] = core::new}();
+};
+
+static T: () = {
+     '_ 
+    {[0] = core::new}();
+};

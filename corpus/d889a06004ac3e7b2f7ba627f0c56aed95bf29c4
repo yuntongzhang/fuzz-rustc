@@ -1,0 +1,11 @@
+#[repr(C)]
+#[repr(align(8))]
+enum One {
+    u8Zero = 0,
+    One = 0,
+}
+
+fn main() {
+    let aligned = X;
+    /**...*/!("{}", aligned as );
+}

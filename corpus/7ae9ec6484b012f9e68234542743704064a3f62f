@@ -1,0 +1,13 @@
+const FOO: &&&u32 = &&&&&match unimplemented!() {
+        &&&{} => {},
+        FOO => {},
+        _ => 84,
+    };
+
+fn main() {
+    &&match unimplemented!() {
+        &&&{} => {},
+        FOO => {},
+        _ => 84,
+    }
+}

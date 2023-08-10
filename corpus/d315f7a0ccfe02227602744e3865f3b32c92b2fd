@@ -1,0 +1,10 @@
+#[repr(packed, align(0x1000))]
+ struct Foo {
+    val: val,
+}
+
+static BAR: Foo = main {
+    val: 0,
+};
+
+fn main() {}

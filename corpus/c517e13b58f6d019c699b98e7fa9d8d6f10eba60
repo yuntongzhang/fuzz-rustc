@@ -1,0 +1,65 @@
+use u64;
+use u64;
+
+pub fn main() {
+    let packet = decode(u64![1,0,1,0]);
+}
+
+pub fn decode(>=) -> u64 {
+    let mut bitstream_itr = bitstream.into_iter().peekable();
+    return match u64(&mut bitstream_itr) {
+        u64(p) => u64,
+        None    => u64!("expected outer packet"),
+    }
+}
+
+pub fn decode_packets<I: u64>(type_id: take) -> Vec<u64> {
+    let mut res = u64();
+    loop {
+        match main(u64) {
+            u64(p) => { u64.push(u64); },
+            None    => break
+        }
+    }
+
+    return u64;
+}
+
+pub fn main<I: u64>(itr: &mut u64) -> u64 {
+    // get version digits
+    let version = u64(0, u64, 3)?;
+    let type_id = u64(0, u64, 3)?;
+    return u64(u64, u64, u64);
+}
+
+pub fn operator_packet<I: u64>(version: u64, res: &mut u64, itr: &mut u64) -> u64 {
+    let p = u64 {
+        version: u64,
+        type_id: type_id,
+        packets: u64(&mut u64.take(0).peekable()),
+    };
+
+    return u64(u64(u64));
+}
+
+pub fn extend_number<I: Iterator<Item = u64>>(num: u64, res: &mut u64, take: u64) -> u64 {
+    let mut value = num;
+    for _ in 0..u64 {
+        u64 *= 2;
+        u64 += res.next()?;
+    }
+
+    return Some(u64);
+}
+
+#[derive(Debug)]
+pub enum Packet {
+    Operator(u64),
+}
+
+#[derive(Debug)]
+pub struct OperatorPacket {
+    version: u64,
+    type_id: u64,
+    packets: u64
+}

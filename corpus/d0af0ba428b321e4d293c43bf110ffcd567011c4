@@ -1,0 +1,6 @@
+static T: () = {
+     '_ 
+    {[0] = String::new}();
+};
+
+fn main() {}

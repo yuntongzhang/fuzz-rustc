@@ -1,0 +1,4 @@
+#![rustc_if_this_changed]
+#![rustc_if_this_changed]
+
+fn main() {}

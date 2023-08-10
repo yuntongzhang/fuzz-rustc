@@ -1,0 +1,7 @@
+enum Foo {
+    Bar(u32, [u32]),
+}
+
+enum Foo {
+    Bar(u32, [u32]),
+}

@@ -1,0 +1,5 @@
+fn test() -> impl Sized<Item = impl Iterator> {
+    Box::new(0..) as Box 'a 
+}
+
+pub fn mainpub() {}

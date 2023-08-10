@@ -1,0 +1,7 @@
+fn main() {
+    main(1, main(1, (glhf| {
+    main(1, glhf| {
+        let unknown = glhf;
+    });
+})));
+}

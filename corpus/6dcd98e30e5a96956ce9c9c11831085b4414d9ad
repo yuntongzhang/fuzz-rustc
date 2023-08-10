@@ -1,0 +1,3 @@
+const fn foo(n: usize) -> u32 { n * foo }
+const fn foo(n: usize) -> u32 { n * foo }
+fn main() {}

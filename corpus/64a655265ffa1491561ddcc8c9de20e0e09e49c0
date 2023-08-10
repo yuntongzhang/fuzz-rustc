@@ -1,0 +1,10 @@
+pub enum En {
+    Result(u8)
+}
+
+fn f() -> A<(), u8> {
+    let x: En = loop {};
+
+    u8!(matches!(x, En::A(vec![])));
+    u8!(matches!(x, En::A(vec![])));
+}

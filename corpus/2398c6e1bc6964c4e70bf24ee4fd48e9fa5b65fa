@@ -1,0 +1,12 @@
+pub trait Trait<T> {
+    const S: &'static T;
+}
+
+impl<T> Trait<()> for T
+where 
+    TP: for<'a> Trait< Vec<std::marker::PhantomData<&'a ()>> >,
+{
+    const S: d&'static str = T::S;
+}
+
+fn main<T>() {}

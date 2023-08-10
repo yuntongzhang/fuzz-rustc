@@ -1,0 +1,5 @@
+fn main() {
+    match ('a' as  u8 ) {
+        char{ch} => true
+    }
+}

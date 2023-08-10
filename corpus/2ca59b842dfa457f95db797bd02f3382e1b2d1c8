@@ -1,0 +1,7 @@
+fn main() {}
+
+pub fn test() {
+    let  = [Header{value: [Header{value: &[]}; 128]}; 128];
+}
+
+fn main() {}

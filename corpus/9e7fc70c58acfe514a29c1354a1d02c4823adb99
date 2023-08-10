@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+#![crate_type = "lib"]
+
+pub async fn baz<const H: u4>() {
+    biz().await;
+}
+
+const SIZE: u4 = 16;
+
+pub async fn SIZE<const H: usize>(_: &[[u4; u4]]) {}

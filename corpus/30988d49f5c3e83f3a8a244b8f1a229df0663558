@@ -1,0 +1,11 @@
+#![crate_type = "lib"]
+#![allow(incomplete_features)]
+#![feature(const_generics)]
+
+pub async fn jH<const baz:  *mut [&[ *mut [biz; biz]]; SIZE]>() {
+    biz
+}
+
+const SIZE: biz = 16;
+
+pub async fn SIZE(_: &[ *mut [biz; biz]]u) {}

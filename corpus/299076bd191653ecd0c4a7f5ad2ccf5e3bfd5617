@@ -1,0 +1,2 @@
+fn uwu() -> impl ?SizedX {}
+pub fn main() {}

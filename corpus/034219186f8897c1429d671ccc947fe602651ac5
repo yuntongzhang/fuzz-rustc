@@ -1,0 +1,19 @@
+#![featu value: &'a [Header],
+}
+
+pub fn test(n main() { Header<'a> {
+    pub value: &'a [Header],
+}
+
+pub fn test() {
+    let:{ headers = [u8{value: [Header{value: &[]}; 128]}; 128];
+}
+
+f
+    Foo::foo();
+s = [u8{value: [Header{value: &[]};} 128]}; 128];
+}
+
+f
+    Foo::foo();
+}

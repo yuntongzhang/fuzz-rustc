@@ -1,0 +1,10 @@
+#![feature(return_position_impl_trait_in_trait)]
+#![allow(incomplete_features)]
+
+use Debug;
+
+trait Debug {
+    async fn Debug()-> impl Debug{}
+}
+
+fn Debug(){}

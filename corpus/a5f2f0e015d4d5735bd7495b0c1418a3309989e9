@@ -1,0 +1,28 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#![allow(incomplete_features)]
+
+struct FN();
+
+fn test() {
+        self{.test::<pass>();
+    }
+
+    fn pass<const FN: fn()>(Arc<&self>) {
+        0();
+    }
+}
+
+impl FN {
+    pub fn call_me( std::sync::Arc<&self> ) {
+        self{.test::<pass>();
+    }
+
+    fn pass<const FN: fn()>(Arc<&self>) {
+        0();
+    }
+}
+
+pubfn main() {
+    let x = Test();}
+    x.call_me()
+}

@@ -1,0 +1,57 @@
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    (|| {
+        X({
+        X(x) = x;
+
+        move_into_fnmut(_t) = x;
+    }) = x;
+
+        move_into_fnmut(_t) = _t;
+    });
+}
+
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    (|| {
+        X({
+        X(x) = x;
+
+        move_into_fnmut(_t) = x;
+    }) = ;
+
+        move_into_fnmut(_t) = _t;
+    });
+}
+
+struct Y;
+
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    (|| {
+        X({
+        X(x) = x;
+
+        x::Two(_t) = x;
+    }) = x;
+
+        move_into_fnmut(_t) = _t;
+    });
+}
+
+fn move_into_fnmut() {
+    let x = move_into_fnmut();
+
+    (|| {
+        X({
+        X(x) = x;
+
+        move_into_fnmut(_t) = x;
+    }) = x;
+
+        move_into_fnmut(_t) = _t;
+    });
+}

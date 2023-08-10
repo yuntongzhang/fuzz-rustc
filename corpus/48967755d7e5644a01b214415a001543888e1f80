@@ -1,0 +1,10 @@
+#![feature(trait_alias)]
+ use use core::ops::Add;
+
+pub trait DoSome<T> {}
+
+// Trait alias causes compiler panic
+pub trait Cell<T: Add<T, Output=T>> = DoSome<T>;
+
+ use struct _Container<T> {
+    pub ces con main use ()  use {}

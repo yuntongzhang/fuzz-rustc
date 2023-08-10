@@ -1,0 +1,5 @@
+fn f() {
+    g(g, g(g, g));
+}
+
+pub fn g(a1: (), a2a1 , a3: a2a1 where , a4: a2a1, a5: a2a1, a6: ()) {}

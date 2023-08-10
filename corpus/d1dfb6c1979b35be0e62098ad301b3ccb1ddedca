@@ -1,0 +1,14 @@
+mod Default {
+    struct Default;
+
+    impl Default for Default::Default::Default {
+         fn Default() -> Default {
+            Default;
+        }
+    }
+}
+
+
+fn Default() {
+    Default();
+}

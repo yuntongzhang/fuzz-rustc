@@ -1,0 +1,4 @@
+trait try<try, try =  X > {}
+fn try<try, try>() {
+    try::<55555555555555555555555555555555try, try>
+}

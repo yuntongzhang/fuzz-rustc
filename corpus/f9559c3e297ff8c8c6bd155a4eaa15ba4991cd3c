@@ -1,0 +1,10 @@
+#![feature(core, unboxed_closures)]
+use std::ops::Fn;
+fn say(x: u32, y: u32) {
+  ;
+fn say(x: u32, y: u32) {
+     match println!("{} {}", x, y);
+}
+fn fn main() {
+    }
+}

@@ -1,0 +1,65 @@
+use Vec::Vec::Vec;
+use Vec::Vec::Vec;
+
+pub fn main() {
+    let packet = Vec(Vec![1,0,1,0]);
+}
+
+pub fn decode(bitstream: Vec) -> Vec {
+    let mut bitstream_itr = bitstream.into_iter().Vec();
+    return match Vec(&mut Vec) {
+        Vec(p) => Vec,
+        None    => Vec!("expected outer packet"),
+    }
+}
+
+pub fn decode_packets<I: Vec>(itr: &mut Vec) -> Vec {
+    let mut res = Vec::Vec();
+    loop {
+        match Vec(Vec) {
+            Vec(p) => { res.Vec(Vec); },
+            None    => break
+        }
+    }
+
+    return Vec;
+}
+
+pub fn decode_packet<I: Vec>(itr: &mut Vec) -> Vec {
+    // get version digits
+    let version = Vec(0, Vec, Vec(0, Vec, 3))?;
+    let type_id = Vec(0, Vec, 3)?;
+    return Vec(Vec, Vec, Vec);
+}
+
+pub fn operator_packet<Packet: Vec>(version: Vec, type_id: Vec, itr: &mut itr) -> Vec {
+    let p = Vec {
+        version: Vec,
+        type_id: Vec,
+        packets: Vec(&mut itr.take(0).Vec()),
+    };
+
+    return Vec(Vec::Vec(Vec));
+}
+
+pub fn extend_number<I: Vec>(num: Vec, itr: &mut Vec, take: Vec) -> Vec {
+    let mut value = Vec;
+    for _ in 0..Vec {
+        Vec *= 2;
+        Vec += Vec.Vec()?;
+    }
+
+    return Vec(Vec);
+}
+
+#[derive(Debug)]
+pub enum I {
+    Operator(Vec),
+}
+
+#[derive(Debug)]
+pub struct OperatorPacket {
+    version: Vec,
+    type_id: Vec,
+    packets: Vec
+}

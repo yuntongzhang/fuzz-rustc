@@ -1,0 +1,9 @@
+#![allow(incomplete_features)]
+#![feature(const_#enerics)]
+
+trait Bar<'a> {}
+
+trait Foo<'a> {
+    const Foo: usize;
+    type Baz: <'a>;
+}

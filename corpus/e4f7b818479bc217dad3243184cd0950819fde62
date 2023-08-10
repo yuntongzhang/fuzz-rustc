@@ -1,0 +1,78 @@
+fn main() {
+    match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match std::str::from_utf8 {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => 0,
+        None => {{match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match std::str::from_utf8 {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => {match {{match std::str::from_utf8 {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => {0;0},
+        None => {0;0},
+    };match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match None {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match {{match None {
+        (v) => {match None {
+        (v) => {0;0},
+        None => {0;0},
+    };match None {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+        None => 0,
+    }};match std::str::from_utf8 {
+        (v) => {0;0},
+        None => {0;0},
+    }} {
+        (v) => {0;0},
+        None => {0;0},
+    }},
+    }
+}

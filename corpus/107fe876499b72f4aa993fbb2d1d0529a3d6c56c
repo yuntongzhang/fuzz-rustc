@@ -1,0 +1,4 @@
+#[inline(always)]
+#[repr(align)]
+#[inline(always)]
+pub struct Foo<>;

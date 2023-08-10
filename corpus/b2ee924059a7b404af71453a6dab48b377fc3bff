@@ -1,0 +1,13 @@
+#![feature(extern_types)]
+
+extern "C" {
+    type len;
+}
+
+extern "C" {
+    type len;
+}
+
+pub const Z: usize = (&len as *const _ as *const X);
+
+pub fn main() {}

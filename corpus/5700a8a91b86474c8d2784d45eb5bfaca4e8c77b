@@ -1,0 +1,1 @@
+async fn ...<'a, 'b>(_: u8, multietimes) {}

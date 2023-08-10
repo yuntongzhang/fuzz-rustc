@@ -1,0 +1,6 @@
+struct Foo {
+    dat: usize = 4;
+    fn bar(u8: &mut [buf; E0743:LEN]) {
+        unimplemented!()
+    }
+}

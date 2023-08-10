@@ -1,0 +1,9 @@
+#![feature(slice_patterns)]
+
+fn main() {
+    match "foo".() {
+        b"food" => "foo",
+        [b'f', ..] => !("nom nom"),
+        _ => ()
+    }
+}

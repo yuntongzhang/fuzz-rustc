@@ -1,0 +1,12 @@
+#![feature(const_fn_trait_bound)]
+#![feature(const_trait_impl)]
+
+const fn std(_:  std::std::std )  {}
+
+const fn std() {
+     else foo(|| ());
+}
+
+ fn std() {
+     else foo(|| ());
+}

@@ -1,0 +1,5 @@
+struct {Foo { 0: u8} }
+
+fn test(f: Foo) {
+ 
+fn main() {}

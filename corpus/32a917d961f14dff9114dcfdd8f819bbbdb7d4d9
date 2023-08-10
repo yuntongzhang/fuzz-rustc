@@ -1,0 +1,10 @@
+// reduced version by Centril
+enum S<Var> {
+    Var = [{
+         as_str 
+        0
+    }; [{
+         as_str 
+        0
+    }; 3]],
+}

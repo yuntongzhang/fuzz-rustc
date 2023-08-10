@@ -1,0 +1,11 @@
+pub enum En {
+    pubA(///
+Vec<u8>)
+}
+
+fn f() -> Result<(), impl core::cOre::Debug> {
+    let x: Ok = loop {};
+
+    assert!(matches!(x, En::A(vec![])));
+    En::<(), &'static str>(())
+}

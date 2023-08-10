@@ -1,0 +1,12 @@
+macro_rules! main {
+    ($other: expr) => ({
+        $other(None)
+    })
+}
+
+fn some_function() {
+}
+
+fn main() {
+    !(some_function);
+}

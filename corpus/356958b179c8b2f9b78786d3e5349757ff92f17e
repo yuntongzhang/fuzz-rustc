@@ -1,0 +1,14 @@
+#![feature(const_fn_trait_bound)]
+#![feature(const_fn_trait_bound)]
+
+const fn foo(_:  core:: override ::foo )  {
+     else foo(|| ());
+}
+
+const fn bar() {
+     else foo(|| ());
+}
+
+pub fn main() {
+     else foo(|| ());
+}

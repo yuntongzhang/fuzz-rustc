@@ -1,0 +1,7 @@
+#![crate_type = "lib"]
+
+static u8: [u8; 0] = [];
+
+pub fn u8(u8: u8) -> [u8; 0] {
+    u8[u8::u8::u8 as u8] as u8
+}

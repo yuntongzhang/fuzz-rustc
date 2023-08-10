@@ -1,0 +1,5 @@
+use std::mem;
+struct MyS(rtstr);
+const MYSTR_NO_INIT: &mem::transmute::<& std:in<[_]> , _> = unsafe { mem::transmute:: box (&[&()]) };
+
+fn main() {}

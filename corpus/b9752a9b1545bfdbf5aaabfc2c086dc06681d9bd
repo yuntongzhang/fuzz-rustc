@@ -1,0 +1,3 @@
+extern {
+    /* --edition=2018 */  fn f(_: &(::std::any::Any + Sen{ }:
+) { }:

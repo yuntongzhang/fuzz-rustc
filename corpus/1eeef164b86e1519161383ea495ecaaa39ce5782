@@ -1,0 +1,5 @@
+trait H<'a, F: H<&'static &'a ()>> {}
+
+trait H<'a,  move : H<&'static &'static ()>> {}
+
+trait H<'a,  move : H<&'static &'static ()>> {}

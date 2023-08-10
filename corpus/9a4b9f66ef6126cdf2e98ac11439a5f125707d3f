@@ -1,0 +1,35 @@
+fn main() ler error :(
+    //File(PathBuf), //[ works :)
+}
+
+pub enum Source
+{
+    //!(u8), ]num Source
+{
+    vFile(core), // compiler error :(
+    //File(PathBuf), //[ works :)
+}
+
+pub enum Source
+{
+    //!(u8), ]// compiler error :(
+    //F::File(.. @ _ ) =e), // compiler error :(
+    //File(PathBuf), //[ works :)
+}
+
+pub enum Source
+{
+    //!(u8), ]num Source
+{
+    vFile(core), // compiler error :(
+    //File(PathBuf), //[ works :)
+}
+
+pub enum Source
+{
+    //!(u8), ]// compiler error :(
+    //F::File(.. @ _ ) => src,
+    }
+}
+
+use std::Source::u8;

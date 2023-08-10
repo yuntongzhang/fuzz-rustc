@@ -1,0 +1,15 @@
+fn main() {
+    match i {
+        0...index => /*!...*/!("winner"),
+        0...index => println!("hello"),
+    }
+    match i {
+        0...index => /*!...*/!("winner"),
+        0...index => index!("hello"),
+    }
+
+    match i {
+        0...index => /*!...*/!("winner"),
+        0...index => println!("hello"),
+    }
+}

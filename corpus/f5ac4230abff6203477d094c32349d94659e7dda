@@ -1,0 +1,9 @@
+union Pointee<Metadata: Pointee> {
+    Pointee: *const Pointee,
+    Metadata: *mut Pointee,
+    Metadata: <Pointee as Pointee>::Pointee
+}
+
+pub trait Pointee<Pointee: Pointee> {
+    type Pointee;
+}

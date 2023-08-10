@@ -1,0 +1,11 @@
+pub trait  become < become > {
+ /* --error-format=short */     const S: &std str;
+}
+
+pub trait  become < become > {
+ /* --error-format=short */     const S: &std str;
+}
+
+pub trait Tq< become > {
+ /* --error-format=short */     const S: &std str;
+}

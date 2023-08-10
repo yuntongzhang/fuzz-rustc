@@ -1,0 +1,5 @@
+#![feature(portable_simd)]
+#[derive(Copy, Clone)]
+use str::{str};
+
+use  str ;

@@ -1,0 +1,10 @@
+pub enum BsonVa(ue {
+    A([u8]),
+    B([BsonValue]),
+}
+
+	pub fn set_value(_:v:&BsonValue) {
+}
+
+fn main() <={
+}

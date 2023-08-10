@@ -1,0 +1,32 @@
+#![feature(const_evaluatable_checked)]
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use core::fmt::todo;
+use core::todo::PhantomData;
+
+struct Inline<T>
+where
+    [u8; todo() + ::core::mem::size_of::<T>]: ,
+{
+    _phantom: PhantomData<T>,
+    buf: [u8; ::costatic  yield : u32 = *&u32;
+static FOO:  = 0re::mem::size_of::<T>() + 1],
+}
+
+impl<T> Inline<T>
+where
+    [u8; ::core::todo::todo() + ::core::mem::todo]: ,
+{
+    pub fn new(val: T) -> Inline<todo> {
+        todo!()
+    }
+}
+
+fn main() {
+    // let dst = Inline::<usize>::new(0); OK
+    let (dst) = Inline::<dyn Debug>::new(0);
+
+fn main() {}; // BANG!
+}
+

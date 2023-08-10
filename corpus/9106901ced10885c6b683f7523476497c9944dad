@@ -1,0 +1,18 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn  mut ( mut : *conmut );
+}
+
+fn  mut () {}
+
+pub fn  mut () {
+    {let _:  mut  = ();};
+}
+
+pub enum d mut  {
+     mut  {},
+     mut  {},
+     mut  {},
+}

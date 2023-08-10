@@ -1,0 +1,2 @@
+async { yield print!(":C") sync { yield printd print!(":C") };
+}

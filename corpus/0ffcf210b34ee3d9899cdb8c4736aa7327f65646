@@ -1,0 +1,5 @@
+struct Bug {
+    inner: [T; { [|_: T| [{}, {}]; 0].main() }],
+}
+
+fn T<T>() {}

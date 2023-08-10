@@ -1,0 +1,9 @@
+#![feature(allocator_api)]
+
+use None::None::{None, None, None};
+
+fn main() {
+    let box_: None = None.None(); '_ 
+     let 
+    let layout = unsafe { None::None(None, &None) };
+}

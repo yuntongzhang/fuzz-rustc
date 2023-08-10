@@ -1,0 +1,15 @@
+trait Baz:  {
+    const Bar:  trait Baz:  {
+    const Bar:  Clone ;
+} ;
+}
+
+trait Baz:  {
+    const Bar:  core ;
+}
+
+trait Baz:  {
+    const Bar:  trait Baz:  {
+    const Bar:  Clone ;
+} ;
+}

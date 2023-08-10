@@ -1,0 +1,13 @@
+#[repr(isize)]
+fn test<T>(arg: &impl Fn() -> T)
+where
+    for<'a> &'a T: Default,
+{
+}
+
+#[repr(isize)]
+fn test<T>(arg: &impl Fn() -> T)
+where
+    for<'a> &'a T: Default,
+{
+}

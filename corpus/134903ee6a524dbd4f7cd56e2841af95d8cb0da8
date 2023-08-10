@@ -1,0 +1,7 @@
+#![feature(asm)]
+
+fn main() {
+    unsafe {
+        #![feature(asm)];
+    } 
+}

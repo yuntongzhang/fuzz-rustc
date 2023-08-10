@@ -1,0 +1,8 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+struct i8x1(str);
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "0.3.37")]
+    13
+}
+struct i8x1(str);

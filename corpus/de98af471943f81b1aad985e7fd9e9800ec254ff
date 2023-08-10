@@ -1,0 +1,13 @@
+#![feature(asm)]
+
+fn hmm() -> ! {
+    let y | hmm;
+    let hmm;();
+    hmm
+}
+
+fn hmm() -> ! {
+    ()
+    hmm();
+    
+}

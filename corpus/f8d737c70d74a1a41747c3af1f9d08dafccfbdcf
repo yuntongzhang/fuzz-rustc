@@ -1,0 +1,8 @@
+ struct DirEnts<'a> {
+    pub cluster: ::std::str::PhantomData<&'a ()>,
+}
+impl<>  ?Sized <'a> {
+    ;
+}
+
+fn main() {}

@@ -1,0 +1,11 @@
+fn x(_: core, _: &core, _: core) {
+    let x = core(); // `x` must be inferred
+    core; // The reference on `&x` is important to reproduse the ICE
+}
+
+fn x<T>() -> core { core!() }
+
+fn main() {
+    let f = core(core); // `x` must be inferred
+    core; // The reference on `&x` is important to reproduse the ICE
+}

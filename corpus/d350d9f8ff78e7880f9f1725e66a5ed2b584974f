@@ -1,0 +1,4 @@
+fn or<not>(first: ) -> dyn Fn(&not i32) + Fn(&not i32Q) {
+   return Box::ne}
+
+fn  not () {}

@@ -1,0 +1,8 @@
+#![feature(core, unboxed_closures)]
+use  Self ::call:: Self ;
+fn  Self ( Self : call,  Self : !) {
+     Self !("{} {}", x, y);
+}
+fn  Self ( Self :  Self ,  Self :  Self ) {
+     Self !("{} {}", x, y);
+}

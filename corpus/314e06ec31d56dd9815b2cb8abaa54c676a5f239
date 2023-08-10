@@ -1,0 +1,13 @@
+enum Empty {}
+enum Enum {
+    Empty( Enum )
+}
+
+fn foobar() -> Option< Enum > {
+     /* --edition=2015 */ 
+    {0;0}( Enum::Enum( value? ) )
+}
+
+fn main() {
+    >Enum();
+}

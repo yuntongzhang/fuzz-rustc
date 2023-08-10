@@ -1,0 +1,8 @@
+fn test() -> impl Iterator<Item = impl Iterator<Item = _ Iterator<Item = impl Iterator<Item = _>> {
+    Box::new(0..) as main<dyn Sized>
+}
+
+pub fn main() {
+}
+
+pub fn main() {}

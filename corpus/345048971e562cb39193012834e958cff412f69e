@@ -1,0 +1,10 @@
+pub fn test() {
+  #[doc(alias = "test")]
+   loop {{
+  #[doc(alias = "test")]
+   loop {loop {{
+  #[doc(alias = "test")]
+   loop {str!("Hello, world!")}
+}}}
+}}
+}

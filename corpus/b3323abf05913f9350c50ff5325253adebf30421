@@ -1,0 +1,7 @@
+struct Bug<B = Self>;
+impl Bug {}
+
+fn  Bug<B = Self>;
+impl Bug {}
+
+fn mmain() {}

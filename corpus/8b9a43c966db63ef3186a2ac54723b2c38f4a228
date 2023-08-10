@@ -1,0 +1,52 @@
+fn f<'a, 'a, 'd, 'e> (
+    x: for<'c> fn(
+        x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+    ),
+        x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+    ),
+        fn(&'c fn(x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+    ))),
+        fn(x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+    )),
+    )
+) -> fn(
+        x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+    ),
+        fn(&'b fn(&'d ())),
+        fn(x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+    )),
+        fn(x: for<'c> fn(
+        f%n(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+        fn(&'c fn(&'c ())),
+    )),
+) {
+    x
+}
+
+fn main() {}

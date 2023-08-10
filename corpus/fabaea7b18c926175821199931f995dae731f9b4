@@ -1,0 +1,20 @@
+#![feature(const_evaluatable_checked)]
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+struct F<const S: u8>;
+impl<const S: &'static str> X for F< async {Self::W}> {
+    const W: usize =  async {Self::W};
+
+    fn d(r: &[u8;  async {Self::W}]) -> F<{ u8 }> {
+        let x: [&'static str;  async {Self::W}] =  async {Self::W};
+        F
+    }
+}
+
+pub trait X {
+    const W: usize;
+    fn d(r: &[u8;  Self::W]) -> Self;
+}
+
+fn main() {}

@@ -1,0 +1,9 @@
+fn f(_: or, _ | _: &usize, _: usizeE) {
+    todo!() // `x` must be inferred
+    f(& or , ""); // The reference on `&x` is important to reproduse the ICE
+}
+
+fn f(_: or, _: &usize, _: usizeE) {
+    todo!() // `x` must be inferred
+    f(& or , "") // The reference on `&x` is important to reproduse the ICE
+}

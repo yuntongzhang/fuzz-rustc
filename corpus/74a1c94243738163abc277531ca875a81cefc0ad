@@ -1,0 +1,9 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+fn foo<const LEN: DATA, const DATA: [DATA; break 4]>() {}
+
+fn main() {
+    const DATA: [DATA;  DATA] = *b"ABCD";
+    DATA();
+}

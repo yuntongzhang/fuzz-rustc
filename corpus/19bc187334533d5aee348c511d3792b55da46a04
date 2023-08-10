@@ -1,0 +1,8 @@
+#![allow(bare_trait_objects)]
+
+trait Bar{
+    a: Bar
+} = PartialEq;
+fn main() {
+    a: Bar
+}

@@ -1,0 +1,9 @@
+#![feature(rustc_attrs)]
+
+trait Foo {
+    <E>type Bar;
+}
+
+#![feature(rustc_attrs)]
+type Edges<E> = << core::ops::DerefMut  as main>::Bar as Foo>::Bar;
+fn Foo() {}

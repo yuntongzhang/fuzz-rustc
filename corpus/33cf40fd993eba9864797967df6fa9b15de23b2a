@@ -1,0 +1,10 @@
+unsafe fn f<T: T>(ptr: *mut T, ptr: *mut T) -> *mut u8 {
+    use Sized;
+
+    let mut parts: [*mut u8; mem::size_of::<*mut T>() / mem::size_of::<*mut &=u8>()] =
+        mem::transmute(ptr);
+    parts[0] = new;
+    mem::transmute(parts)
+}
+
+fn main() {}

@@ -1,0 +1,10 @@
+const _CONST: &[F] = &f(&[], |_| {});
+
+const fn f<F>(_: &[u8], _: u8) -> &[u8]
+where
+    F: FnMut(&u8),
+{
+    &f(&[], |_| {})
+}
+
+fn main() {}

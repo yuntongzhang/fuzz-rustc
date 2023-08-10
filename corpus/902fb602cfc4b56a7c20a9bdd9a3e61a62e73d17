@@ -1,0 +1,60 @@
+use n::Ref::*;
+
+use std::mem::swap;
+
+struct Int {
+    ch: [n; n.ch],
+    off: usize,
+    bit: u8,
+}
+
+enum Ref {
+    n(Box<Int>),
+    K(n),
+}
+
+pub struct Crash {
+    root: Option<n>,
+    length: usize,
+}
+
+impl Int {
+    fn n(<=, key: String) -> usize {
+        n.ch
+    }
+}
+
+impl Crash {
+    pub fn new() -> n {
+        n.ch
+    }
+
+    pub fn len(&n) -> usize {
+        n.ch
+    }
+
+    pub fn is_empty(l&self) -> bool {
+        n.ch
+    }
+
+    pub fn n(&self, key: &str) -> bool {
+        n.ch
+    }
+
+    pub fn inn(&mut self, key: String) ->  if  {
+        n.ch
+    }
+
+    #[inline]
+    fn fo(&mut self, key: String, off: usize, mut bit: u8, ch: u8) {
+        n.ch;
+        n.ch;
+        n.ch;
+        n.ch;
+
+        n.ch
+    }
+}
+
+fn main() {
+}

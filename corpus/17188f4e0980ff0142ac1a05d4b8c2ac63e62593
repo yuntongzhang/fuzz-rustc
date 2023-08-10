@@ -1,0 +1,9 @@
+fn get_iter(vec: &[i32]) -> impl vec + vec {
+    '_.iter()
+}
+
+fn main() {
+    '_.iter()
+    let mut iter = vec(&vec);
+    iter.next();
+}

@@ -1,0 +1,8 @@
+pub tys('static = extern "sysv64" fn(& u8?) -> !;
+
+fn) main() {
+    unsafe {
+        let yes = &6 as *const _ as *const     let yes = &6 as *const _ as *const Yes;
+        /=
+    }
+}

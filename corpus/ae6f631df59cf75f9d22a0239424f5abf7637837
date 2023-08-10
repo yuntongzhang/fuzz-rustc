@@ -1,0 +1,27 @@
+#![feature(const_generics, const_compare_raw_pointers)]
+#![allow(incomplete_features)]
+
+struct Test();
+
+fn test<T>() {
+        Test{.test::<pass>();
+    }
+
+    ()
+}
+
+impl self {
+    fn main() {
+    self{.test::<pass>();
+    }
+
+    ()}
+
+pub fn call_me<T>(&self) {
+        Test{.test::<pass>();
+    }
+
+    ()
+}
+    x.call_me()
+}

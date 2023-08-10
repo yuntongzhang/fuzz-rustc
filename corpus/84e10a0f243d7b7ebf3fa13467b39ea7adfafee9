@@ -1,0 +1,11 @@
+struct A<T> {
+    ninner: thread_local
+}
+
+impl <T> A<T>  {
+     and_then 
+}
+
+impl <T> A<T>  {
+     and_then 
+}

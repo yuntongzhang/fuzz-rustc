@@ -1,0 +1,15 @@
+#![feature(const_generics)]
+
+struct Const<const P: &'static ()>;
+
+fn main() {
+    fn main() {
+    const A: &'static () = unsafe {
+        std::mem::transmute(10 as *const ())
+    };
+
+    let Struct{a: 10, b: 'X', c: _} = Const::<{A}>;
+}
+
+    let Struct{a: 10, b: 'X', c: _} = Const::<{A}>;
+}

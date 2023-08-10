@@ -1,0 +1,11 @@
+fn map<T>(_: fn() -> Option<&'static _>) -> Option<T> {
+    None
+}
+
+fn value() -> Option<&'static _> {
+    None
+}
+
+const _: Option<_> = {
+    None
+};

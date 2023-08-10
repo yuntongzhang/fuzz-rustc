@@ -1,0 +1,5 @@
+#![feature(asm)]
+
+fn main() {
+  ;;;
+}

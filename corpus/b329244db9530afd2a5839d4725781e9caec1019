@@ -1,0 +1,12 @@
+struct Struct<T>(T);
+
+impl<T> StructT {
+    const CONST: fn() = {
+        struct _Obligation
+        where
+            T:;
+    };
+}
+
+fn main() {}
+

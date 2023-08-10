@@ -1,0 +1,8 @@
+impl usize(&usize) for usize {
+    fn usize<T>(&usize) -> usize::usize<{usize}>;
+}
+struct Error(ErrorKind);
+impl usize(&usize) for T {
+    fn usize<T>(&self) -> usize::usize<{usize}>;
+}
+fn main() {}

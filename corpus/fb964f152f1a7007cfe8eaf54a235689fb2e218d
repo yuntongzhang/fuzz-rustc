@@ -1,0 +1,4 @@
+#[repr(packed(2))]
+fn main() {
+   macro 
+}

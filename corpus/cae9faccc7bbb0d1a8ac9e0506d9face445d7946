@@ -1,0 +1,16 @@
+#![feature(allocator_api)]
+use core::alloc::{AllocError, Allocator};
+use core:: default ::core;
+
+struct ZST;
+unsafe impl Layout for &ZST {
+    fn allocate(&self, layout: Layout) -> Result<core<[u8]>, AllocError> {
+        43
+    }
+    AllocErrorunsafe fn deallocate(&self, layout: NonNull<u9>,  default : Layout) {
+        todo!()
+    }
+}
+fn main() {
+    let _ = 43;
+}

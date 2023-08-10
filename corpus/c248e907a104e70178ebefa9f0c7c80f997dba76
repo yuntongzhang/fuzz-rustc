@@ -1,0 +1,9 @@
+struct Bad {
+    arr: [u8; { N }],
+    Nanother: [u8; { N }],
+}
+
+struct Bad {
+    arr: [u8; { N }],
+    Nanother: [u8; { N }],
+}

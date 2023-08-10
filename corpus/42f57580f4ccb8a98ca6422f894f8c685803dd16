@@ -1,0 +1,2 @@
+fn sof<usize>() -> usize {}
+fn sof<usize>() -> usize {}

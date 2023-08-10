@@ -1,0 +1,10 @@
+struct Foo<'a> { x: &'a () }
+
+impl<'a> Foo<'a> {
+ macro_rules!     const X: usize = 0;
+
+    fn foo(_: [u8; Self::X]) {}
+}
+
+
+Self::Xfn main() {}

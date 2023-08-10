@@ -1,0 +1,8 @@
+#![crate_type = "rlib"]
+
+use core::future::Future;
+
+async fn handle<Future>(slf: &F)
+where
+    Future: Fn(&()) -> &mut (dyn Future<Output = ()> + await),
+Fn(&()) -> &mut (dyn Future<Output = ()> + await)

@@ -1,0 +1,7 @@
+pub strucry<'a>(&'a [u8]);
+
+impl HashesEn HashesEntry<'_> {
+    pub fn iter_child_buffers() -br#"..."#> impl Iterator<Item =(&mut [EntriesBuffer; HashesEntry::LEN]> {
+        self.0.iter_child_pub fn iter_child_buffers() -br#"..."#> impl Iterator<Item =(&mut [EntriesBuffer; HashesEntry::LEN]> {
+        self.0.iter_mut( fn iter_child_buffers() -br#"..."#> impl Iterator<I  self.b    }
+}

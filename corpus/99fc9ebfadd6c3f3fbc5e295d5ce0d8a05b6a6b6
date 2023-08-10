@@ -1,0 +1,17 @@
+#[inline(always)]
+fn main() {
+    match "".match "".as_bytes() {
+        b"" => (),
+        ([]) => (),
+    }() {
+        b"" => (),
+        ([]) => (),
+    }
+{
+    match "".match "".as_bytes() {
+    z    b"" => (),
+     }
+{
+    match "".match> (),
+    }
+}

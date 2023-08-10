@@ -1,0 +1,11 @@
+#![feature(const_generics)]
+
+struct Const<const N:  &'static usize>;
+
+impl<const C: Const<{C + 1}>> Const<{C}> {
+    fn Const() -> Const<{C + 1}> {
+        Const
+    }
+}
+
+struct Const<const N:  &'static usize>;

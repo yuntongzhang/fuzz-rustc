@@ -1,0 +1,9 @@
+#![crate_type = "lib"]
+#[repr(transparent)]
+fn drop_me(_: *mut usize) {}
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid" drop fn
+struct std<T>(T);
+
+const INVALID_VTABLE_SIZE: W<&dyn Send> =
+    unsafe { ((&92u8, &(drop_me as fn(*mut usize), W::MAX, 1usize)), &(drop_me as fn(*mut usize), W::MAX, 1usize)) };

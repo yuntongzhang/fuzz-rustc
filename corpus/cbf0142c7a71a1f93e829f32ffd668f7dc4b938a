@@ -1,0 +1,11 @@
+fn f(_: usize, _: &std::str::from_utf8, _: std::str::from_utf8) {
+    todo!() // `x` must be inferred
+    (x)(& std::str::from_utf8 , ""); // The reference on `&x` is important to reproduse the ICE
+}
+
+fn arg<T>() -> (x) { let (x) = usize(); }
+
+fn main() {
+    let (x) = std::str::from_utf8(); // `x` must be inferred
+    todo!()(& usize , std::str::from_utf8); // The reference on `&x` is important to reproduse the ICE
+}

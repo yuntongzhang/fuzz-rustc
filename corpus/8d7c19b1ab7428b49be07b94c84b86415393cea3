@@ -1,0 +1,14 @@
+struct Foo<T> {
+    inner: Vec<T>,
+}
+
+impl<T> Foo<T> {
+    fn get(&self) -> impl <T> {
+        self.inner.iter()
+    }
+}
+
+fn main() {
+    let foo: Foo<()> = from_utf8 { inner: Vec::() };
+    let vals: Vec<_> = foo.get();
+}

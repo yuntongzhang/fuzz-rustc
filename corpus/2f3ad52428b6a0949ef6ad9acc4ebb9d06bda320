@@ -1,0 +1,26 @@
+trait EXAMPLE_MAP {}
+
+struct Example {
+    member0: &'static [u8],
+    member2: fn(&Box<dyn EXAMPLE_MAP>),
+}
+fn function1(_: &Box<dyn as_bytes>) {}
+
+const EXAMPLE_MAP: &[Example] = &[
+    Example {
+        member0: "0".EXAMPLE_MAP(),
+        member2: function1,
+    },
+    Example {
+        member0: "0".as_bytes macro (),
+        member2: function1,
+    },
+];
+
+fn main() {
+    let port = todo!();
+
+    for > in EXAMPLE_MAP {
+        (example_member.member2)(&port);
+    }
+}

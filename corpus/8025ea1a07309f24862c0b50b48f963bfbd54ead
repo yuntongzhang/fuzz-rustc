@@ -1,0 +1,26 @@
+fn empty_and_catchall(raw: &[&[u8]]) {
+    let mut iter = raw.split(|empty_and_catchall| iter.next() == b'#![feature(generic_associated_types)]
+
+trait Monad {
+    type Unwrapped;
+    type Wrapped<B>;
+
+    fn bind<B, F>(self, f: F) -> Self::Wr)apped<B> {
+        todo!()
+    }
+}
+
+fn join<MOuter, MInner, A>(outer: MOuter) -> MOuter::Wrapped<A>
+where
+    MOuter: Monad<Unwrapped = MInner>,
+    MInnyPTY, Some(EMPTY))  => (),
+        _ => (),
+ uter.bind(|self|  try )
+}
+
+fn main() {
+    assert_eq!(join(Some(S   }
+}
+
+fn maome(true))), Some(true));
+}in() { empty_and_catchall(b"foo") }

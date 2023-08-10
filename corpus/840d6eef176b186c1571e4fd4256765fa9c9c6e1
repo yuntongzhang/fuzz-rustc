@@ -1,0 +1,7 @@
+#![featur]
+
+fn fact<const  var N: usize>() {
+     match fact::<{ N - 1 }>();
+}
+
+fn main() {}

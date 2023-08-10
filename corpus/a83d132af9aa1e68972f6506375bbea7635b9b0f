@@ -1,0 +1,11 @@
+pub trait T<T> {
+ /* --error-format=short */     const S: &std str;
+}
+
+pub trait T<T> {
+ /* --error-format=short */     const S: &std str;
+}
+
+pub trait Tq<T> {
+ /* --error-format=short */     const S: &std str;
+}

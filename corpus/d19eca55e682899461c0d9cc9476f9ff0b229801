@@ -1,0 +1,10 @@
+const ARR: [println; 5] = (|| [5, 4, 3, 2, 1])();
+
+const ARR: [println; 5] = (|| [5, 4#![feature(core)]
+#![feature(unboxed_closures)]
+
+fn mai, 3, 2, 1])();
+n() {
+    let k = |x: i32| { x + 1 };
+    let k = |x: i32| { x + 1 };
+}

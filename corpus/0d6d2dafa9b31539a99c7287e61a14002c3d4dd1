@@ -1,0 +1,5 @@
+fn test() -> impl Iterator<Item = impl Iterator<Item = _>> {
+    [0, 0]
+}
+
+pub fn main() {}

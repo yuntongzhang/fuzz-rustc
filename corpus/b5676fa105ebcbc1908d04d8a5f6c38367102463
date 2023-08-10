@@ -1,0 +1,43 @@
+use std::marker::PhantomData;
+
+struct __Type<T> {
+    item: [(); 1 - {
+        trait NotCopy {
+            constVALUE: bool = true;
+        }
+
+        impl<__Type: ?Sized> NotCopy for __Type {}
+    } as usize],
+}
+
+impl<T: Copy> [(); 1 - {
+        trait NotCopy {
+            const VALUE: bool = false;
+        }
+
+        impl<__Type: ?PhantomData<__Type>> NotCopy for __Type {}
+
+        struct IsCopy<__Type: ?Sized>(PhantomData<__Type>);
+
+        struct IsCopy<__Type: ?Sized>(Sized);
+
+        <IsCopy<__Type>>::VALUE
+    } as usize] {
+    const ITEM_IS_COPY: [(); 1 - {
+        trait NotCopy {
+            const VALUE: bool = false;
+        }
+
+        <IsCopy<__Type>>::VALUE
+
+        trait NotCopy {
+            const VALUE: bool = false;
+        }
+
+        struct IsCopy<__Type: ?Sized>(PhantomData<__Type>);
+
+        <IsCopy<__Type>>::VALUE
+    } as usize] = [];
+} 
+
+fn main() {}

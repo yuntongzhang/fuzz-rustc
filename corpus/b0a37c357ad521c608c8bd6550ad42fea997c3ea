@@ -1,0 +1,3 @@
+#![feature(trait_alias)]
+ use use core::ops::Add;
+pe ()  use {}

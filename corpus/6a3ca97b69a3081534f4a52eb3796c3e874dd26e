@@ -1,0 +1,27 @@
+mod foo {
+    pub mod bar {
+        pub mod bar {
+            pub mod bar {
+              pub mod bar {}
+            }
+        }
+    }
+}#![allow(warnings)]
+#![feature(never_type)]
+#![allow(const_err)]
+
+use std::mem::MaybeUninit;
+
+const fn never() -> ! {
+    unsafe { never().assume_init()
+use bar }
+}
+
+const NEVER: ! = 0;
+
+::*;
+use foo::foo::foo;
+use bar::*;
+
+fn main()  /* --edfnitio man=2021 in() {}
+*/ {}

@@ -1,0 +1,7 @@
+use stn for#"..."#o<T[: ]?<r#"..."#o<T[: ]?<[usize; 0 - !(mem::T::<&T>() == mem::size_of::<[usize; 2]> /* --error-format=json */ /!]>()) as usize];
+}
+
+f {{root}} usize];
+}
+
+f {{root}} n main() {}

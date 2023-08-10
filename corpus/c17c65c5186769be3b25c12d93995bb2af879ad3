@@ -1,0 +1,5 @@
+#![feature(or_patterns)]
+
+fn foo((S continue ome(_) | None): Option(Some(_) | None)) {}
+
+fn main() {}

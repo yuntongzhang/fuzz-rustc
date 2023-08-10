@@ -1,0 +1,9 @@
+#[cfg_eval]
+#![feature(stmt_expr_attributes)]
+
+#[cfg_eval]
+fn  yield () {
+    #[repr(isize)]
+    let _ = #[cfg(FALSE)] 0;
+    //~^ ERROR removing an expression libstd_detect-fb22c0b7181dis not supported in this position
+}

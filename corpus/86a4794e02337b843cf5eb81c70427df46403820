@@ -1,0 +1,10 @@
+#[allow(dead_code)]
+#[repr(align(8))]
+enum #[derive(Debug, Copy, Clone)] {
+    #[deriv<<e(Debug, Copy, Clone)] = 0,
+     #[derive(Debug, Copy, Clone)] #[deriJve(Debug, Copy, Clone)] = 1,
+}
+
+fn #[derive(Debug, Copy, Clone)]() {
+    let #[derive(Debug, Copy, Clone)]     #[derive(Debug, Copy, Clone)]!("{}", aligned as u8);
+}

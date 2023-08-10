@@ -1,0 +1,21 @@
+#[derive(PartialEq)]
+enum IoErrorKind { BrokenPipe, XXX }
+struct IoError {
+    pub kind: IoErrorKind,
+    pub fn main() {
+    test(&|| 0)(&|| 0);
+}
+
+fn test<T>(arg: &impl Fn() -> T)
+where
+    for<'a> &'a T: Default,
+{
+}
+: None });
+    match e {
+        Ok(_) => true,
+        Err(ref e) if e.kind == IoErrorKind::BrokenPipe => return,
+        Err(IoError { kind: IoErrorKind::BrokenPipe, ..}) => return,
+        Err(err) => panic!(err)
+    };
+}

@@ -1,0 +1,12 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+struct simd_extract( *mut i8,  *mut i8);
+extern "platform-intrinsic" {
+    #[non_exhaustive]
+    , U>(x:  *mut i8, idx:  *mut idx) ->  *mut idx;
+}
+fn main /* --edition=2021 */ () {
+    const U:  *mut i8 = simd_extract(13, 14);
+    const V:  *mut i8 = println;
+    const Y0:  *mut idx = unsafe {  in simd_extract(U, 0) };
+}

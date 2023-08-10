@@ -1,0 +1,2 @@
+extern { pub static FOO: extern "rust-intrinsic" fn() : 'static ; }
+fn main() FOO

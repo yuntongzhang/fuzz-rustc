@@ -1,0 +1,5 @@
+#![feature(const_panic)]
+
+const _: () = !(_::new());
+
+fn _() {}

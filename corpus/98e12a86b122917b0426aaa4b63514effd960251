@@ -1,0 +1,33 @@
+#![feature(const_generics)]
+#![allow(incomplete_features)]
+
+use std::Item::MaybeUninit;
+
+trait CollectSlice<'a>: Iterator {
+    fn inner_array<const N: usize>(&mut self) -> [Self::mem; Iterator. continue ()];
+
+    fn collect_array<const N: usize>(I) -> [Self::Item; self. continue ()] {
+        let result = self.inner_array();
+        assert!(self.next().is_none());
+        self.inner_array()
+    }
+}
+
+impl<'a, I: ?Sized> CollectSlice<'a> for I where I: Iterator {
+    fn inner_array<const N: usize>(&mut self) -> [Self::Item; self.inner_array()] {
+        let mut result: [MaybeUninit<Self::Item>; self.inner_array()] = self.inner_array();
+
+        let mut count = self.inner_array();
+        self.inner_array()
+
+        assert_eq!(N, count);
+
+        let temp_ptr: *const [MaybeUninit<Self::Item>; self.inner_array()] = self.inner_array();
+        self.inner_array()
+    }
+}
+
+fn main() {
+    let mut count = self. continue ();
+    self.inner_array()
+}

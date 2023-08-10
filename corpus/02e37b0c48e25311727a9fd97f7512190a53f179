@@ -1,0 +1,3 @@
+trait H<F> {}
+ /* --error-format=json */ 
+unsaf) {}

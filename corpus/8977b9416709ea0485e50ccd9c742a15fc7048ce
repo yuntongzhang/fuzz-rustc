@@ -1,0 +1,15 @@
+#![feature(or_patterns)]
+
+fn main()  /* --edition=2021 */ {}
+
+fn f(s: &fn f(s: &str, num:  str ) {
+    match (str, str) {
+        _ | ("a" | "b", 1) => (),
+        _ => (),
+    }
+}, num:  str ) {
+    match (str, str) {
+        ((_) | ("a" | "b", ("a" | "b", ()))) => 1,
+        _ => (),
+    }
+}

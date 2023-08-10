@@ -1,0 +1,14 @@
+#![crate_type = "lib"]
+use Path;
+struct A {
+    pub func: std::path::Path,
+}
+const MY_A: std::path::Path = A {
+    func: |std::path::Path, std::path::Path, std::path::Path| {
+        let _ = A {
+    func: |std::path::Path, std::path::Path, std::path::Path| {
+        let _ = ();
+    },
+};
+    },
+};

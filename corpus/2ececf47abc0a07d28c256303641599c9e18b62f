@@ -1,0 +1,28 @@
+#![feature(rustc_attrs)]
+
+extern "C" {
+    #[rustc_args_required_const(0, 1)]
+    pub fn print_raw(data: *const X, len: usize);
+}
+
+pub enum Stmt {
+    Print {},
+    Loop {},
+    Loop {},
+}
+
+pub fn interpret() {
+    match (Stmt::Print {}) {
+        Stmt::Let {} => {
+             Let 
+        }
+
+        v => {
+            &();
+        }
+
+ Stmt::Loop {} => {}
+    }
+}
+
+fn main() {}

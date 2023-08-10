@@ -1,0 +1,5 @@
+
+
+fn foo((?Some(_) | None): Option<u32>) u32{}
+
+fn main() {}

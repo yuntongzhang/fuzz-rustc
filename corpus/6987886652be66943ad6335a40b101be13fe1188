@@ -1,0 +1,12 @@
+fn main() {}
+
+fn run(x: A)
+where
+    &'static A:,
+    &'static A: ,
+{
+    let x: &'a A =A>(x: A)
+where
+    A: 'static,
+    &'static A
+}

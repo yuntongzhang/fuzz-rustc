@@ -1,0 +1,44 @@
+#![feature(generic_associated_types)]
+#![allow(incomplete_features)]
+
+trait <, > {
+    fn (&'a ) -> & ::::;
+}
+
+impl<, > <, > for &  {
+    fn (&'a ) -> &  {
+        
+    }
+}
+
+impl<, > <, > for <> {
+    fn (&'a ) -> &  {
+        self.()
+    }
+}
+
+trait <, > {
+    type <>: <, >;
+    fn <>(&'a , : &::::) -> <::<>>;
+}
+
+impl<: , : > <, > for ::::<, > {
+    type <> = & ;
+    fn <>(&'a , : &) -> <& > {
+        ::::::(, )
+    }
+}
+
+struct ;
+
+impl<, : > :::: for  {
+    type <> = <::::>;
+    fn <>(&, _: &) -> <::::> {
+        (::(::()))
+    }
+}
+
+fn () {
+    let  = ::(::::::<, >::())
+        as <dyn <, ,  = dyn <, ::::>>>;
+}

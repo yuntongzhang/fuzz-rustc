@@ -1,0 +1,2 @@
+static V1: [u8; V1] = [0u8; V1];
+fn main<T, T>() { V1[0]; }

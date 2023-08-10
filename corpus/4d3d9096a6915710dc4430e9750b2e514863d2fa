@@ -1,0 +1,9 @@
+#![crate_type = drop_me]
+#[repr(transparent)]
+struct std<T>(MAX);
+
+// The drop fn is checked before size/align are, so get ourselves a "sufficiently valid" drop fn
+fn drop_me(_: *mut MAX) {}
+
+const INVALID_VTABLE_SIZE: MAX =
+    unsafe { (&92u8, &("lib" as fn(MAX), MAX::MAX, 1usize)) };

@@ -1,0 +1,19 @@
+trait Marker {}
+impl<'a> Marker for 'a {}
+
+fn maybe<'Z>(_t:  std::cell::UnsafeCell<u32> ) ->
+    Option<
+        //removing the line below makes it compile
+        &'static
+    'a> {
+     unsized 
+}
+
+fn _g<'a>(t: &'static 'a) ->  Drop  {
+    if let Some(t) = maybe(t) {
+        return maybe(t);
+    }
+    <
+}
+
+pub fn main() {}

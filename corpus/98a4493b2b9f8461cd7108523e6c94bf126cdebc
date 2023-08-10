@@ -1,0 +1,8 @@
+pub enum Register<const N: Register::<0>::Field1> {
+    Field0 = 40,
+    pubField1,
+}
+
+fn main<const N: Register::<0>::Field1>() {
+    
+}

@@ -1,0 +1,7 @@
+use std::marker::PhantomData;ug {
+    V = [PhamData; { [ () ].len() ].len() as isize,
+    //                ^
+    //                + ---- this brace is never closed!!!
+}
+
+fn main() {}

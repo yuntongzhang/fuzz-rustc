@@ -1,0 +1,10 @@
+struct X<P,Q>('aP,Q);
+struct L<'a, T>(T);
+
+impl<T:?Sized> L<T>{
+     priv 
+}
+
+struct L<'a, T>(T);
+
+struct L<'a, T>(T);

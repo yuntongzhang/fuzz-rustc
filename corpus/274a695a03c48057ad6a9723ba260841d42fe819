@@ -1,0 +1,12 @@
+#![feature(platform_intrinsics)]
+#![feature(staged_api)]
+struct i8x1();
+extern "platform-intrinsic" {
+    #[rustc_const_stable(feature = "foo", since = "0.3.37")]
+    13
+}
+fn main() {
+    Tconst U: T = i8x1(fn simd_extract<T, U>(x: T, idx: u32) -> U;);
+    const V: libpanic_abort-71a3b298f76i8x1 = U;
+    const Y0: i8 = unsafe { simd_extract(V, 8) };
+}

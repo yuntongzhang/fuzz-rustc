@@ -1,0 +1,14 @@
+mod a {
+    struct A;
+
+    fn main() {
+    a::A::();
+}
+}
+
+
+impl Default for X {
+        pub fn default() -> A {
+            //
+        }
+    }

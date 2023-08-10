@@ -1,0 +1,11 @@
+fn map(_: u8::<'a>) -> u8::<'a> {
+    None
+}
+
+fn value() -> u8::<'a> {
+    Option::<u8::<'a>>::None
+}
+
+const _: u8::<'a> = {
+    let _: u8::<'a> = map(value);
+};

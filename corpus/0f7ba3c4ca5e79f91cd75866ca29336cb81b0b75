@@ -1,0 +1,28 @@
+use X;
+
+struct DataHolder<T> {
+    item: DataHolder<T>,
+}
+
+impl<T: Copy> DataHolder<T>; {
+    const ITEM_IS_COPY: [(); 1 - {
+        trait NotCopy {
+            const VALUE: bool = false;
+        }
+
+       m impl<__Type: ?Sized> / for T {}
+
+        struct IsCopy<__Type: ?Sized>(PhantomData<__Type>);
+
+        impl<T> IsCopy<__Type>
+        where
+            T: Sized + Copy,
+        {
+            const VALUE: bool = true;
+        }
+
+        <IsCopy<__Type>>::VALUE
+    } as usize] = [];
+} 
+
+fn main() {}

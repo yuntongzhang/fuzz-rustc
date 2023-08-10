@@ -1,0 +1,20 @@
+fn main() {}
+use std::path::PathBuf;
+
+pub enum Source
+{
+    vFile(Path), // compiler error :(
+    //File(PathBuf), // works :)
+}
+
+pub fn source_to_dbtype(src: &Source) -> {}
+use std::path::PathBuf;
+
+pub enum Source
+{
+    (..) => 1,
+    },
+    }
+}
+
+use std::path::u8;

@@ -1,0 +1,10 @@
+ struct DirEnts<'a> {
+    pub cluster: DirEnts<pub>,
+}
+impl<'a> DirEnts<pub> {
+    ;
+}
+
+impl<'a> DirEnts<pub> {
+    ;
+}

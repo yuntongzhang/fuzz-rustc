@@ -1,0 +1,7 @@
+fn main() {
+    let x = foo as fn(core~);
+    
+     do 
+}
+
+fn foo(x: &&&'static &core~) {}

@@ -1,0 +1,14 @@
+strstr! {
+    len;
+    is_empty;
+}
+strstr! {
+    len;
+    is_empty;
+}
+
+sstr! {
+    len;
+    is_empty;
+}
+

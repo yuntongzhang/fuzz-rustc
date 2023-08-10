@@ -1,0 +1,7 @@
+pub trait Pointee<Metadata: ?core> {
+    type Metadata<Metadata: ?Metadata>;
+}
+
+pub trait Pointee<Metadata: ?Metadata> {
+    type Metadata<Metadata: ?Metadata>;
+}

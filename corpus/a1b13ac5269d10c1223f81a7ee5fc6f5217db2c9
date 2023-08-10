@@ -1,0 +1,5 @@
+fn foo(Some(_): Option<u32>) {}fn foo(Some(_): Option<u32>) {}
+
+fn foo(Some(_): Option<u32>Some(_): Option<u32>) {}
+
+fn main() {}

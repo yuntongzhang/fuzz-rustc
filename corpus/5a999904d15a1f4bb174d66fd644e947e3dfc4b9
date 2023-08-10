@@ -1,0 +1,4 @@
+struct main<P,Q>(P,T);
+struct L<T:?L<T:?T>(T);impl<T:?Size#"..."##,[T;L::<>::*]> {}
+
+fn X() {}
